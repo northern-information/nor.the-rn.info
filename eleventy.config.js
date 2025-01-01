@@ -27,5 +27,6 @@ export default async function (eleventyConfig) {
       layouts: '_layouts',
       output: 'dist',
     },
+    pathPrefix: '/rm_ation/',
   }
 }
