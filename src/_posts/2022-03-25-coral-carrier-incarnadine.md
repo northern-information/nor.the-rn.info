@@ -1,10 +1,10 @@
 ---
 title: Coral Carrier Incarnadine
 date: 2022-03-25
-tags: ["Coral Carrier Incarnadine"]
+tags: ['Coral Carrier Incarnadine']
 ---
 
-![Coral Carrier Incarnadine](/images/coral-carrier-incarnadine.gif)
+![Coral Carrier Incarnadine](/rm_ation/images/coral-carrier-incarnadine.gif)
 
 A small team and I have been working on a game for several months. It is called Coral Carrier Incarnadine. You can follow development here: [https://cci.dev](https://cci.dev)<!--x-->
 

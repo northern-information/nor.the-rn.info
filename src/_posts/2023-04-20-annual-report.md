@@ -1,10 +1,10 @@
 ---
 title: Annual Report
 date: 2023-04-20
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Annual Report](/images/annual-report-2023.jpg)
+![Annual Report](/rm_ation/images/annual-report-2023.jpg)
 
 ## Summary
 
@@ -26,7 +26,7 @@ In short, I'm saying "no" much more than usual. The increased focus and slower p
 
 ## Channels
 
-![Northern Information](/images/website-portrait-2022-04-19.jpg)
+![Northern Information](/rm_ation/images/website-portrait-2022-04-19.jpg)
 
 I share my work on multiple channels. [https://nor.the-rn.info](https://nor.the-rn.info) continues to be the primary source for updates. The website [featured heavy redesigns this year](https://github.com/tyleretters/nor.the-rn.info).
 
@@ -36,7 +36,7 @@ Tertiary channels include the [email newsletter](https://us1.campaign-archive.co
 
 ## Stuxnet
 
-![Annual Report](/images/fade-scatter-replicate.jpg)
+![Annual Report](/rm_ation/images/fade-scatter-replicate.jpg)
 
 The Stuxnet project continues.
 
@@ -48,13 +48,13 @@ And the long-heralded "Kowloon City" mix may finally see the light of dawn....
 
 ## Coral Carrier Incarnadine
 
-![Coral Carrier Incarnadine](/images/coral-carrier-incarnadine.gif)
+![Coral Carrier Incarnadine](/rm_ation/images/coral-carrier-incarnadine.gif)
 
 The [CCI](https://cci.dev) project continues at an intentionally glacial pace. Last year included deep explorations into cryptography-based game mechanics, web interfaces, state management, and collaborative world building. There was a rather substantial (and surprising) side-quest to build the [soot sprite library](https://github.com/northern-information/soot). We also watched a few movies together on the Discord.
 
 ## Klang Magazine
 
-![Klang Magazine](/images/klang-magazine.png)
+![Klang Magazine](/rm_ation/images/klang-magazine.png)
 
 In January, Max and I launched [klangmag.co](https://klangmag.co). We've been publishing articles, sound packs, software, and memes each week.
 
@@ -72,7 +72,7 @@ Ryan and I are up to our old shenanigans again.
 
 ## Online Events
 
-![They Became What They Beheld](/images/they-became-what-they-beheld.jpg)
+![They Became What They Beheld](/rm_ation/images/they-became-what-they-beheld.jpg)
 
 Aside from the final [Flash Crash](https://flashcrash.net) events and a few ad-hoc programming livestreams I held relatively few online events. I briefly ran the [CRYPTOPYRE](https://www.youtube.com/playlist?list=PLe1BFUbUceS0MXSMcspF9k85ttjM4G0Mw) series. I also performed [one concert](https://www.youtube.com/watch?v=pN-PgfJKYy4).
 

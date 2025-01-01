@@ -1,10 +1,10 @@
 ---
 title: Synergy Beat
 date: 2018-10-31
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![Synergy Beat](/images/synergy-beat.jpg)
+![Synergy Beat](/rm_ation/images/synergy-beat.jpg)
 
 I just completed the soundtrack for [Synergy Beat: Future World Digest](https://synergybeat.club/), a cyberpunk anime zine from the mind of Gage Lindsten. The project assembles many talented artists and we did the whole thing in just a couple weeks. For each track, I assumed the role of a (silly) fictitious band:
 

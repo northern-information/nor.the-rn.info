@@ -1,10 +1,10 @@
 ---
 title: The COVID-19 Pandemic, Day 25
 date: 2020-04-04
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
-![X Marks the Distance](/images/x-marks-the-distance.jpg)
+![X Marks the Distance](/rm_ation/images/x-marks-the-distance.jpg)
 
 Time feels funny. Slow burn perpetual crisis. Asymmetric anguish: internet, grocer, family, self. Back up the chain. All plans waylaid. The sudden cancelation of the future. How far forward should we clear our calendars?
 

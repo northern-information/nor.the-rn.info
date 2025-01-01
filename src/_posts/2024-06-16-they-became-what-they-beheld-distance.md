@@ -1,10 +1,10 @@
 ---
 title: They Became What They Beheld, Distance
 date: 2024-06-16
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![Distance](/images/distance.jpg)
+![Distance](/rm_ation/images/distance.jpg)
 
 New music from They Became What They Beheld: [Distance](https://theybecamewhattheybeheld.bandcamp.com/album/distance)<!--x-->
 

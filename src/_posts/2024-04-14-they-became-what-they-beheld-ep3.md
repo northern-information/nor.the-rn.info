@@ -1,10 +1,10 @@
 ---
 title: They Became What They Beheld, EP3
 date: 2024-04-14
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![EP3](/images/ep3.jpg)
+![EP3](/rm_ation/images/ep3.jpg)
 
 [History doesn't repeat, but it does rhyme.](https://theybecamewhattheybeheld.bandcamp.com/album/ep3) I wear my influences on my sleeve: William Basinski, The Caretaker, early Sons of Magdalene.<!--x-->
 

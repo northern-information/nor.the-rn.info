@@ -1,10 +1,10 @@
 ---
 title: KOWLOON WALLED CITY GIGA MIX
 date: 2024-12-21
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![KOWLOON WALLED CITY GIGA MIX](/images/kowloon-walled-city-giga-mix.png)
+![KOWLOON WALLED CITY GIGA MIX](/rm_ation/images/kowloon-walled-city-giga-mix.png)
 
 Total runtime: 9 hrs 55 min 19 sec
 

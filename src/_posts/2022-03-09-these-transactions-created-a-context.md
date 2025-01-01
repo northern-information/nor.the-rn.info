@@ -1,10 +1,10 @@
 ---
 title: These Transactions Created a Context
 date: 2022-03-09
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Text Transcript Below](/images/yuri-beats.jpg)
+![Text Transcript Below](/rm_ation/images/yuri-beats.jpg)
 
 [@Yuri_Beats](https://twitter.com/Yuri_Beats), on Twitter:
 

@@ -1,7 +1,7 @@
 ---
-title: "Personal Mythologies III: Toonami"
+title: 'Personal Mythologies III: Toonami'
 date: 2020-01-05
-tags: ["Mythologies"]
+tags: ['Mythologies']
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SpTe49f5b1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,7 +26,7 @@ This video has consistently been something of a psalm for me. A sacred hymn for 
 
 Just read the YouTube comments. I wasn't alone. Hundreds of other 12 year olds were having the same experience:
 
-![YouTube Commnets](/images/broken-promise-youtube-comments.png)
+![YouTube Commnets](/rm_ation/images/broken-promise-youtube-comments.png)
 
 I unabashadely embrace the earnestness of this video, the music, the message. In an age where irony, sarcasm, and apathy are the defaults, this is a healing salve.
 

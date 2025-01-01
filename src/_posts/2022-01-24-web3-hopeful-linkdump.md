@@ -1,10 +1,10 @@
 ---
 title: Web3 Hopeful Linkdump
 date: 2022-01-24
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![channel.xyz](/images/channel.xyz.png)
+![channel.xyz](/rm_ation/images/channel.xyz.png)
 
 2015-ish. A Bitcoin seller's account is punched up on the Wells Fargo ATM. Several hundred USD cash in my sweaty hand. I couldn't do it. Too sketch...
 

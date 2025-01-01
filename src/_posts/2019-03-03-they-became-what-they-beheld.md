@@ -1,10 +1,10 @@
 ---
 title: They Became What They Beheld
 date: 2019-03-03
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![EP1](/images/ep1.jpg)
+![EP1](/rm_ation/images/ep1.jpg)
 
 I've just [released an EP](https://theybecamewhattheybeheld.bandcamp.com/album/ep1) under the monkier "They Became What They Beheld". I don't have much to say about this one other than I've been working on this project for several years. I hope you enjoy listening as much as I enjoyed making it.<!--x-->
 

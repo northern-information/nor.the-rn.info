@@ -1,10 +1,10 @@
 ---
-title: "Timm Etters: All My Love & All My Burning Tears"
+title: 'Timm Etters: All My Love & All My Burning Tears'
 date: 2021-09-06
-tags: ["S♯A♯B∞"]
+tags: ['S♯A♯B∞']
 ---
 
-![Timm Etters & Tyler Etters](/images/timm-etters-and-tyler-etters.jpg)
+![Timm Etters & Tyler Etters](/rm_ation/images/timm-etters-and-tyler-etters.jpg)
 
 Timm Etters died on September 4th, 2021.
 
@@ -14,13 +14,13 @@ This is the final picture of us. It was taken March 2nd, 2020.
 
 That night he picked me up from my therapist's office. It was a cold and shitty Chicago night. I took him back to my place and then we went out for pizza (our tradition) at The Boiler Room. We took a short hike around Logan so I could share some of my favorite graffiti. Of course, Timm being Timm, he knew some of the writers.
 
-![Timm Etters Graffiti Adventure 1](/images/timm-etters-graffiti-adventure-1.jpg)
+![Timm Etters Graffiti Adventure 1](/rm_ation/images/timm-etters-graffiti-adventure-1.jpg)
 
-![Timm Etters Graffiti Adventure 2](/images/timm-etters-graffiti-adventure-2.jpg)
+![Timm Etters Graffiti Adventure 2](/rm_ation/images/timm-etters-graffiti-adventure-2.jpg)
 
-![Timm Etters Graffiti Adventure 3](/images/timm-etters-graffiti-adventure-3.jpg)
+![Timm Etters Graffiti Adventure 3](/rm_ation/images/timm-etters-graffiti-adventure-3.jpg)
 
-![Timm Etters Graffiti Adventure 4](/images/timm-etters-graffiti-adventure-4.jpg)
+![Timm Etters Graffiti Adventure 4](/rm_ation/images/timm-etters-graffiti-adventure-4.jpg)
 
 Aside from my parents, Timm was the singularly most influential role model / human / mentor / artist / source-of-positivity in my life. According to our bloodline, he was my uncle, but our relationship was always more of a big brother/little brother thing. And not just any big brother. The cool big brother. The big brother that let you stay up late with him and order pizza and watch David Lynch's Dune when you were 10.
 
@@ -34,11 +34,11 @@ Today, I put on bvdub's new album and the tears came. Great heaving sobs and eve
 
 ## Timm's Love & Influence
 
-![Pizza Tank](/images/timm-etters-pizza-tank.jpg)
+![Pizza Tank](/rm_ation/images/timm-etters-pizza-tank.jpg)
 
-![Emperor](/images/timm-etters-emperor.jpg)
+![Emperor](/rm_ation/images/timm-etters-emperor.jpg)
 
-![Emperor](/images/timm-etters-rogue-squadron.jpg)
+![Emperor](/rm_ation/images/timm-etters-rogue-squadron.jpg)
 
 Timm was one of the most passionate people who ever lived. He was a voracious consumer of All Things Cool. My first memory of him was going to his apartment with my dad when I was 3 or 4. And what does he do? He pulls out a Teenage Mutant Ninja Turtle "pizza tank" for me.
 
@@ -46,9 +46,9 @@ Once I got a little older, I would spend a weekend with him once or twice a year
 
 ## Working with Timm
 
-![Lift](/images/timm-etters-lift.jpg)
+![Lift](/rm_ation/images/timm-etters-lift.jpg)
 
-![Tyler Painting](/images/timm-etters-tyler-painting-at-whs.jpg)
+![Tyler Painting](/rm_ation/images/timm-etters-tyler-painting-at-whs.jpg)
 
 Timm let me go to work with him. Timm was [a prolific muralist](https://timmetters.com/murals) and often worked at schools. He loved working during school hours because he got to talk with all the kids. But sometimes he'd go in at night, blast hip-hop, and paint paint paint. Above we can see me following in is footsteps and painting a mural at my own high school.
 
@@ -58,13 +58,13 @@ We spent a lot of time together. And a good percentage of that time was in his t
 
 ## Music & Film
 
-![The Journey](/images/timm-etters-the-journey.jpg)
+![The Journey](/rm_ation/images/timm-etters-the-journey.jpg)
 
 Timm was there with me when I bought my first instrument: turntables.
 
 Timm was a true 80s b-boy. Timm was a DJ. Timm was a living hip-hop and electronic music encyclopedia. On our drives, he'd always pull out the most eclectic and unique music. I was just a kid and totally hypnotized. From Kraftwerk to The Art of Noise; Seal to Run-DMC; Brian Eno to Herbie Hancock; Dancing Fantasy to Enigma; The Flying Steps to Linkin Park; DJ Shadow to Afrika Bambaataa. I could go on and on.
 
-![Linkin Park](/images/timm-etters-before-linkin-park.jpg)
+![Linkin Park](/rm_ation/images/timm-etters-before-linkin-park.jpg)
 
 Timm took me to my first concert: Linkin Park in 2004. I was 16 and had braces and spiky hair.
 
@@ -74,11 +74,11 @@ Timm introduced me to all the right films at just the points in my life. Star Wa
 
 As I grew up, it was a joy to share my music with him. He could trace every influence and homage. This was one of our last text message exchanges:
 
-![Final Messages](/images/timm-etters-imessage.jpg)
+![Final Messages](/rm_ation/images/timm-etters-imessage.jpg)
 
 ## Death
 
-![Wedding](/images/timm-etters-at-my-wedding.jpg)
+![Wedding](/rm_ation/images/timm-etters-at-my-wedding.jpg)
 
 Timm,
 

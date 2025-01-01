@@ -1,10 +1,10 @@
 ---
 title: Web3 Skeptic Linkdump
 date: 2022-01-11
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Change My Mind](/images/change-my-mind.png)
+![Change My Mind](/rm_ation/images/change-my-mind.png)
 
 To kick things off, some orientation [Chris Dixon](https://future.a16z.com/why-web3-matters/):
 

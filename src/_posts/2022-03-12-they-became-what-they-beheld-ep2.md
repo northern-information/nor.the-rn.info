@@ -1,10 +1,10 @@
 ---
 title: They Became What They Beheld, EP2
 date: 2022-03-12
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![EP2](/images/ep2.jpg)
+![EP2](/rm_ation/images/ep2.jpg)
 
 [Staggering through the canyon, diskette in hand, the tracks, the next two tracks.](https://theybecamewhattheybeheld.bandcamp.com/album/ep2) Does this clear things up? Or make matters worse?<!--x-->
 
@@ -16,6 +16,6 @@ I dueled with a KUSC radio broadcast of "Giovanni Gabrieli - Sanctus: VI. Hosann
 
 ## Excerpt from My First Roll of Film
 
-![Love at First Light](/images/love-at-first-light.jpg)
+![Love at First Light](/rm_ation/images/love-at-first-light.jpg)
 
 While sourcing images for the release I happened across the first roll of 35mm film I ever processed myself. The above image, "Love at First Light" is from that roll. That year was also the birth of Northern Information.

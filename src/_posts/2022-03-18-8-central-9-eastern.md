@@ -1,10 +1,10 @@
 ---
 title: 8 Central / 9 Eastern
 date: 2022-03-18
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Ren & Stimpy](/images/ren-and-stimpy.jpg)
+![Ren & Stimpy](/rm_ation/images/ren-and-stimpy.jpg)
 
 "Hey kids! Tune in for Ren & Stimpy at 8 central, 9 eastern!"
 

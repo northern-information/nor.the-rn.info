@@ -1,10 +1,10 @@
 ---
 title: The COVID-19 Pandemic, Day 2
 date: 2020-03-12
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
-![Chicago, March 12](/images/covid-19-pandemic-day-2.jpg)
+![Chicago, March 12](/rm_ation/images/covid-19-pandemic-day-2.jpg)
 
 Suddenly, reality seems real again.
 
@@ -16,11 +16,11 @@ Hand shakes and hugs are things of a the past. It happened in hours. Last night,
 
 I'm not on many social networks but the memes are on fire right now.
 
-![The car is on fire](/images/the-car-is-on-fire.jpg)
+![The car is on fire](/rm_ation/images/the-car-is-on-fire.jpg)
 
 And, sorry, this is to apropos to not share. The post office by my studio:
 
-![And the flags are all dead at the top of their poles](/images/the-flags-are-all-dead.jpg)
+![And the flags are all dead at the top of their poles](/rm_ation/images/the-flags-are-all-dead.jpg)
 
 Other beauties of the zeitgeist:
 
@@ -37,7 +37,7 @@ I feel hope and solidarity with humanity. I believe we will pass through this an
 
 **Addendum**
 
-![2007 Ford Mustang GT & McDonalds](/images/mustang-and-mcdonalds.jpg)
-_2007 Ford Mustang GT & McDonalds_
+![2007 Ford Mustang GT & McDonalds]/rm*ation/images/mustang-and-mcdonalds.jpg)
+\_2007 Ford Mustang GT & McDonalds*
 
 My father-in-law and I went on an adventure today. This is his 2007 Ford Mustang GT outside McDonalds. The cashiers wore different disposable gloves for each transaction. Patrons were still using the touchscreens to order their food. (I paid with Apple Pay.) It is Shamrock Shake season.

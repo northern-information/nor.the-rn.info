@@ -1,14 +1,14 @@
 ---
 title: Ending a Game
 date: 2023-11-19
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
 It is with a heavy and clear heart I am announcing the end of [Coral Carrier Incarnadine](https://llllllll.co/t/51866).
 
 I started development of the game in 2022 knowing it was unfathomably large, that by the time it was complete most of the coral reefs could be dead, that it would be an endurance testing multi-media and multi-decade endeavor.<!--x-->
 
-![CCI RIP](/images/cci-rip.jpg)
+![CCI RIP](/rm_ation/images/cci-rip.jpg)
 
 What I didn't know is that so much of the problem-spaces inherent in game development would hold so little of my interest. It is for this reason alone I am throwing in the towel, raising the white flag, and letting it sink into the abyss of forgetting. To me, this is ultimately an act of energy-protecting selfishness and radical self-kindness.
 
@@ -49,7 +49,7 @@ Here are some of the other problems I didn't want to solve, but knew I had to:
 
 At some point CCI had become a deep-time MMORPG, would be primarily played in the browser, had interconnected norns components, was sorta like crypto-sudoku, and would also be a card game. Last year around this time I made a dependency map:
 
-![CCI Dependency Map](/images/cci-dependency-map.jpg)
+![CCI Dependency Map](/rm_ation/images/cci-dependency-map.jpg)
 
 If I were to update this for today it would be ten times the size.
 
@@ -77,6 +77,6 @@ No, it is my wish for _CCI: The Game_ to fade away with as little fanfare as pos
 
 Perhaps I will return to the world of CCI one day, but now I need to write this post, share it with you all, hit the power switches, let the pumps fail, and watch it all sink into the sea.
 
-![CCI End](/images/cci-end.jpg)
+![CCI End](/rm_ation/images/cci-end.jpg)
 
 I feel the weight lifting already.

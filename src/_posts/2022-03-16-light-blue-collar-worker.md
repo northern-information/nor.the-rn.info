@@ -1,10 +1,10 @@
 ---
 title: Light Blue Collar Worker
 date: 2022-03-16
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Dirty Hands Clean Money](/images/dirty-hands-clean-money.jpg)
+![Dirty Hands Clean Money](/rm_ation/images/dirty-hands-clean-money.jpg)
 
 I consciously realized my blue collar affinities in 2019. A tradesman in Chicago was sporting a bright orange "Dirty Hands, Clean Money" [Troll Co](https://trollcoclothing.com/) shirt. Ahh, the pain. I had a white collar job. If my hands were clean... then my money must be dirty.<!--x-->
 
@@ -16,7 +16,7 @@ This is how I felt working at the print shop a decade ago. Though I was usually 
 
 I took my job very seriously. I always made sure blacks were pure and not some RGB simulacrum. I hand-vectored people's logos (for free) because it would look better in print. I worked late to meet deadlines and overcome scheduling oversights. In retrospect it was a strange liminal threshold between the white and blue worlds.
 
-![AlphaGraphics](/images/alphagraphics.jpg)
+![AlphaGraphics](/rm_ation/images/alphagraphics.jpg)
 
 White collar suggests cocaine, dry-cleaning, stuffy lobbies, Microsoft Excel, the Starbucks Power Trip.
 
@@ -24,7 +24,7 @@ Blue collar suggests hangovers, mud-caked boots, sleet, Craftsmen toolboxes, the
 
 Both sides of my family were blue collar. Lower-middle class. My grandfather was a bricklayer and my father followed in his footsteps. The fathers of my friends were carpenters, electricians, or plumbers. I inherited an ambient contempt for the white collar dads who had to wear ties to work.
 
-![Your Cubicle Sucks](/images/your-cubicle-sucks.jpg)
+![Your Cubicle Sucks](/rm_ation/images/your-cubicle-sucks.jpg)
 
 A certain species of toxicity and antagonism is readily on display in Troll Co's messaging. "Your Cubicle Sucks" is both offensive and objectively true! Their message is clear: we're tough and honest and scrappy. You're just a fucken [yuppie](https://www.urbandictionary.com/define.php?term=Yuppie).
 

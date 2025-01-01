@@ -13,7 +13,7 @@ My name is Tyler Etters. In 2024 I'm:
 - releasing music as [They Became What They Beheld](https://tbwtb.com)
 - appreciating my framed BFA in graphic design from [Columbia College Chicago](https://colum.edu)
 
-![Northern Information Applied Sciences & Phantasms Working Division](/applied-sciences-and-phantasms-working-division.png)
+![Northern Information Applied Sciences & Phantasms Working Division](/rm_ation/images/applied-sciences-and-phantasms-working-division.png)
 
 My accounts:
 

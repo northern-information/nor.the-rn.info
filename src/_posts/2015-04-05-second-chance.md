@@ -1,10 +1,10 @@
 ---
 title: second chance
 date: 2015-04-05
-tags: ["Music Technology", "Art"]
+tags: ['Music Technology', 'Art']
 ---
 
-![second chance](/images/second-chance.jpg)
+![second chance](/rm_ation/images/second-chance.jpg)
 
 Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](http://gli.tc/h/2112/). Don't fall.
 

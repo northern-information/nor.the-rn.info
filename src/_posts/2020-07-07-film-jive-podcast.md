@@ -1,10 +1,10 @@
 ---
 title: Film Jive Podcast
 date: 2020-07-07
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
-![Film Jive](/images/film-jive.jpg)
+![Film Jive](/rm_ation/images/film-jive.jpg)
 
 I was invited to participate in the latest episode of Film Jive. It was a great experience and I'm really moved to have been asked to be a part of it.
 

@@ -1,10 +1,10 @@
 ---
 title: Low-tech Web
 date: 2021-12-14
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![The Tower of Babylon](/images/anker.jpg)
+![The Tower of Babylon](/rm_ation/images/anker.jpg)
 
 Behold what the various design trends, legal forces, and technologies have imposed upon the average web user. This image was neither scripted nor staged. I was simply researching the technical specifications of a thank-you-for-being-our-partner gift from [Gaslight](https://teamgaslight.com/).
 

@@ -1,10 +1,10 @@
 ---
-title: "On the Failure of One Small Community in Achieving its Own Ill-defined Dreams and/or Goals..."
+title: 'On the Failure of One Small Community in Achieving its Own Ill-defined Dreams and/or Goals...'
 date: 2023-01-01
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Born into Trouble as the Sparks Fly Upward](/images/zion.jpg)
+![Born into Trouble as the Sparks Fly Upward](/rm_ation/images/zion.jpg)
 
 Below is the complete transcript of the poster included in Thee Silver Mt. Zion Memorial Orchestra's 2001 opus _Born into Trouble as the Sparks Fly Upward_. I have it framed and hanging up in the water closet. I meditate on it often.
 

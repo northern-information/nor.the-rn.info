@@ -1,7 +1,7 @@
 ---
 title: The Lost Roll
 date: 2019-06-27
-tags: ["Art"]
+tags: ['Art']
 ---
 
 I can't believe it has been six years since I shot film. I used to go out just about every week. I forgot how much I enjoyed it. Each roll became something of a time capsule and, like my tattoos, helped me move through time.
@@ -18,14 +18,14 @@ Anyhow, I've been aware of this undeveloped roll in for years and the thought of
 
 The scans just came back and I feel like I've unlocked a time capsule. This roll contains my usual adventures in Chicago, plus travels to San Francisco and Tennessee. This is back when [Sage](https://sageetters.com) had her head shaved! Here are some highlights.
 
-![San Francisco](/images/lost-roll-1.jpg)
+![San Francisco](/rm_ation/images/lost-roll-1.jpg)
 
-![Chicago](/images/lost-roll-2.jpg)
+![Chicago](/rm_ation/images/lost-roll-2.jpg)
 
-![Sage in Dinosaur Ribcage](/images/lost-roll-3.jpg)
+![Sage in Dinosaur Ribcage](/rm_ation/images/lost-roll-3.jpg)
 
-![The Road](/images/lost-roll-4.jpg)
+![The Road](/rm_ation/images/lost-roll-4.jpg)
 
-![Bunting](/images/lost-roll-5.jpg)
+![Bunting](/rm_ation/images/lost-roll-5.jpg)
 
 I also found dozen unshot rolls...

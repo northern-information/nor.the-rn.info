@@ -1,10 +1,10 @@
 ---
 title: Swing State Farewell
 date: 2015-02-27
-tags: ["Events"]
+tags: ['Events']
 ---
 
-![Swing State Farewell](/images/2015-02-27.jpg)
+![Swing State Farewell](/rm_ation/images/2015-02-27.jpg)
 
 The end of an age.
 

@@ -1,7 +1,7 @@
 ---
-title: "Personal Mythologies I: Tao Te Ching"
+title: 'Personal Mythologies I: Tao Te Ching'
 date: 2019-09-08
-tags: ["Mythologies"]
+tags: ['Mythologies']
 ---
 
 > The more clever and crafty the men,  
@@ -25,7 +25,7 @@ I am an existential athiest with a frosting of Taoism and Zen to account for the
 
 I've had numerous translations over the years. My favorite is the John C. H. Wu translation. I keep a pocket version of it with me all the time.
 
-![Tao Te Chings](/images/tao-te-ching.jpg)
+![Tao Te Chings](/rm_ation/images/tao-te-ching.jpg)
 
 I think this makes me something of a materialist-naturalist-mystic. I don't believe in a spiritual world. I believe the fundamental interactions (electromagnetism, gravity, strong and weak nuclears) are sufficient describe the happenings in the material world.
 

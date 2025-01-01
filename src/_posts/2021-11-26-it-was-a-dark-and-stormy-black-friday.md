@@ -1,10 +1,10 @@
 ---
 title: It Was a Dark and Stormy Black Friday
 date: 2021-11-26
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
-![High Voltage](/images/high-voltage.jpg)
+![High Voltage](/rm_ation/images/high-voltage.jpg)
 
 It was a dark and stormy Black Friday.
 
@@ -32,7 +32,7 @@ The other element of Wauconda's logo is an illustration of an indigenous person,
 
 The logo is stupid. Here's a photo of it. Cyberpunk collage, I guess. I cannot think of a better example for the state of much design in our world.
 
-![Wauconda Logo](/images/wauconda.jpg)
+![Wauconda Logo](/rm_ation/images/wauconda.jpg)
 
 I commend the decision to imbue a bit of history and flair... but on a street sign? And just why does a town need a logo, anyways?
 

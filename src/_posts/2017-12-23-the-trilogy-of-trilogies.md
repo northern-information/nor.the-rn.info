@@ -1,10 +1,10 @@
 ---
 title: The Trilogy of Trilogies
 date: 2017-12-23
-tags: ["Releases"]
+tags: ['Releases']
 ---
 
-![Tyler Etters illustration by Gage Lindsten](/images/tyler-etters-illustration.jpg)
+![Tyler Etters illustration by Gage Lindsten](/rm_ation/images/tyler-etters-illustration.jpg)
 
 This fantastic illustration was created by [Gage Lindsten](https://gagelindsten.tumblr.com/) to commemorate the completion of The Trilogy of Trilogies. We collaborated on the concept and details for a few months. It was a joy to work with him.
 

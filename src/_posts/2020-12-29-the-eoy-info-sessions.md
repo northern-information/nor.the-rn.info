@@ -1,10 +1,10 @@
 ---
 title: The EOY Info Sessions
 date: 2020-12-29
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Summer, 1974](/images/summer-1974.png)
+![Summer, 1974](/rm_ation/images/summer-1974.png)
 
 I tire of reading about this year, thinking about this year, considering what this year "means" in the broader historical context of this bewildering project known as The Human Race. But, alas, it would be unfair to my future self to not document my lived experience while inhabiting this particular fold of temporality.
 
@@ -22,7 +22,7 @@ One thought I cannot shake: things are going to get objectively worse, for a lon
 
 ---
 
-![Fall, 2006](/images/fall-2006.png)
+![Fall, 2006](/rm_ation/images/fall-2006.png)
 
 Despite a record high number of sleepless nights, "Is this real life?" moments, and other existentia, this year was a creative renaissance for me. I haven't had a year like this since that golden summer of 2009 when Endless Field Studios burst onto the scene.
 
@@ -36,17 +36,17 @@ I moved to California.
 
 ---
 
-![Winter, 2026](/images/winter-2026.png)
+![Winter, 2026](/rm_ation/images/winter-2026.png)
 
 The most unexpected phenomenon of this time is how many new friends I've made. The [norns study group](https://norns.study.online) has been a true joy and source of geniune connection and learning.
 
 On NYE we shall celebrate with the [4th Lines Community Stream](https://llllllll.co/t/4th-lines-community-stream-nye-edition/39473).
 
-![Sunset Twenty Twenty](/images/sunset-twenty-twenty.jpg)
+![Sunset Twenty Twenty](/rm_ation/images/sunset-twenty-twenty.jpg)
 
 ---
 
-![Spring, 2146](/images/spring-2146.png)
+![Spring, 2146](/rm_ation/images/spring-2146.png)
 
 These images of plants are screenshots from my last script of the year. It cycles through the seasons, playing generative music. Oddly, it fills me with incredible hope seeing the years tick up.
 

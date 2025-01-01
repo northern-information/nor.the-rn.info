@@ -27,6 +27,7 @@ export default async function (eleventyConfig) {
       layouts: '_layouts',
       output: 'dist',
     },
+    markdownTemplateEngine: 'liquid',
     pathPrefix: '/rm_ation/',
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: Social Fast / OPSEC / Loose Lips Sink Ships
 date: 2022-04-27
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
 I'm traveling soon. Why not pair with a social fast? Then it hit me: _everyone should social fast while traveling._ I owe a huge thanks to artist and friend [Gage Lindsten](https://www.instagram.com/gage_lindsten/) for reminding me social network fasts are a thing. Three reasons why you should social fast while traveling:<!--x-->
@@ -12,7 +12,7 @@ I'm traveling soon. Why not pair with a social fast? Then it hit me: _everyone s
 
 ## Pop quiz! Are You In WWIII?
 
-![Loose Lips Might Sink Ships](/images/loose-lips-might-sink-ships.jpg)
+![Loose Lips Might Sink Ships](/rm_ation/images/loose-lips-might-sink-ships.jpg)
 
 For almost a decade, I have considered myself an active participant in WWIII. In the last ten years:
 
@@ -29,7 +29,7 @@ And that is exactly my point. Because we are all active participants WWIII, some
 
 ## Nothing is Good Enough
 
-![Department of Defense Architecture Framework](/images/dodaf.jpg)
+![Department of Defense Architecture Framework](/rm_ation/images/dodaf.jpg)
 
 _This wild infographic is allegedly owes provenance to the [Department of Defense Architecture Framework](https://www.kotaku.com.au/2014/05/the-beauty-of-weird-military-infographics/)._
 
@@ -55,7 +55,7 @@ All these measures are not good enough. My answer to, "Pop Quiz! Are You in WWII
 
 ## Why Social Fast While Traveling?
 
-![Depth](/images/depth.jpg)
+![Depth](/rm_ation/images/depth.jpg)
 
 Imagine...
 

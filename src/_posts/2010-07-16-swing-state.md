@@ -1,7 +1,7 @@
 ---
 title: Swing State
 date: 2010-07-16
-tags: ["Events"]
+tags: ['Events']
 ---
 
-![Swing State](/images/2010-07-16.jpg)
+![Swing State](/rm_ation/images/2010-07-16.jpg)

@@ -1,10 +1,10 @@
 ---
 title: The Capitalist Nihilism of Alien & Squid Game
 date: 2021-10-24
-tags: ["Thinkpieces"]
+tags: ['Thinkpieces']
 ---
 
-![Burke, Aliens](/images/capitalist-nihilism-1.jpg)
+![Burke, Aliens](/rm_ation/images/capitalist-nihilism-1.jpg)
 
 If sacrificing a child for personal monetary gain is not an example of capitalist nihilism, I don't know what is.
 
@@ -22,13 +22,13 @@ Burke, of course, has no interest in buying the safety of the world, or otherwis
 
 ## Would You Play Squid Game?
 
-![Oh Il-nam, Squid Game](/images/capitalist-nihilism-2.jpg)
+![Oh Il-nam, Squid Game](/rm_ation/images/capitalist-nihilism-2.jpg)
 
 "I've often talked about how I'd sell off my organs to pay my debt," Sage said, "So, would I play Squid Game? Probably. But I don't think I'd have a good chance at winning. Because debt makes you look at the world and daily life in a completely different way. Constantly hanging over your head every moment. You never get respite from it. And often times it feels like there's no way out. It is very hard to see the light at the end of the tunnel. I've often said I'll die before my student loans are paid off because that is how grimly I look at the situation. So for these people [in Squid Game] it is a very similar situation. There is no light at the end of the tunnel and Sang-woo for instance was already going down the suicide path in the bathtub scene before he got the card again. He didn't want to go back to that facing life. All the players that came back didn't really have a way out so... Fuck it! I'm just gonna try!"
 
 ## I Think We Oughta Discuss the Bonus Situation
 
-![Parker, Alien](/images/capitalist-nihilism-3.jpg)
+![Parker, Alien](/rm_ation/images/capitalist-nihilism-3.jpg)
 
 > "I hate to bring this up, but this is a commercial ship, not a rescue ship. It is not in my contract to do this kind of duty... And what about the money? If you want to give me some money to do it I'd be happy to." &mdash; Parker
 
@@ -44,7 +44,7 @@ Their friendships: of convenience.
 
 ## On What, or Whom, Do These People Spend Their Money?
 
-![Burke](/images/capitalist-nihilism-4.jpg)
+![Burke](/rm_ation/images/capitalist-nihilism-4.jpg)
 
 Here and there through the various films, characters will make mention of, "wife and kids." This is absurd. Decades of hypersleep are necessary for deep space travel. Your wife and kids are gone. We cannot possibly take these statements for at face value.
 
@@ -52,13 +52,13 @@ The opening scene (and childhood flashbacks) in Prometheus are so out of place t
 
 ## CCK's Video About Berserk, Nietzsche, and Tragedy Made Me Think of You
 
-![Squid Game](/images/capitalist-nihilism-5.jpg)
+![Squid Game](/rm_ation/images/capitalist-nihilism-5.jpg)
 
 "I have at times," Sage said, "researched how much certain organs are worth, and how to plan for it. Cuz, you cannot legally do that here. So where can I go? What organs do I feel like I can part with? Then I can feel like I can pay off all my debt. I'm serious."
 
 ## "You get what you're contracted for like everyone else..."
 
-![Burke](/images/capitalist-nihilism-6.jpg)
+![Burke](/rm_ation/images/capitalist-nihilism-6.jpg)
 
 No, it would appear as though the manifest destiny colonialism of Weyland-Yutani was a staggering success. To fathom the megastructures of Fiorina "Fury" 161 and Acheron (LV-426) were just plopped down on orbiting backwater stars... the financial implications are staggering.
 
@@ -68,7 +68,7 @@ Or perhaps they too, like everyone in Squid Game, is drowning in debt?
 
 ## "... Yes, but everyone else gets more than us."
 
-![Burke](/images/capitalist-nihilism-7.jpg)
+![Burke](/rm_ation/images/capitalist-nihilism-7.jpg)
 
 "What do you think about Squid Game?" Sage said.
 

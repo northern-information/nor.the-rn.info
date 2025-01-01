@@ -1,7 +1,7 @@
 ---
 title: Coordinated Universal Time
 date: 2019-05-24
-tags: ["Art"]
+tags: ['Art']
 ---
 
 As I type, episode one of [Coordinated Universal Time](https://apodcastfornow.com) is merrily propagating its little way through the RSS mycelium of the internet. We uploaded it to [Anchor.fm](https://anchor.fm/apodcastfornow) a couple days ago.
@@ -10,7 +10,7 @@ As I type, episode one of [Coordinated Universal Time](https://apodcastfornow.co
 
 On April 3rd, I shared an idea in the Locutory:
 
-![UTC Origin](/images/utc-origin.png)
+![UTC Origin](/rm_ation/images/utc-origin.png)
 
 Four days later we had a 10 minute demo completed. There were only three segments. [@argotechnica](https://twitter.com/argotechnica), [@notinferno](https://twitter.com/ntnfrno), and I each read some words into our field recorders. A fresh dub-techno track that [@MatthewTheStoat](https://twitter.com/MatthewTheStoat) and I worked on the previous day became the intro background music. I mixed it in under an hour.
 
@@ -87,7 +87,7 @@ One morning, I found myself at the Pacific Ocean before sunrise. Instead of enjo
 
 Later that day, we had the breakthrough for the name:
 
-![UTC Name](/images/utc-name.png)
+![UTC Name](/rm_ation/images/utc-name.png)
 
 The acronym is beautiful. It represents a compromise between different groups of people to sacrifice their individual preferences in service to a greater standardized signifier:
 
@@ -101,15 +101,15 @@ There are a million more tiny stories like this. Each equally profound. Each equ
 
 We designed and coded a website.
 
-![UTC Website](/images/utc-website-1.png)
+![UTC Website](/rm_ation/images/utc-website-1.png)
 
 [@MatthewTheStoat](https://twitter.com/MatthewTheStoat) finished the logo.
 
-![UTC Logo](/images/utc-logo.jpg)
+![UTC Logo](/rm_ation/images/utc-logo.jpg)
 
 We made some lockups:
 
-![UTC Lockups](/images/utc-lockups.png)
+![UTC Lockups](/rm_ation/images/utc-lockups.png)
 
 We interviewed some people.
 
@@ -125,7 +125,7 @@ We launched a [Nextcloud](https://nextcloud.com) server.
 
 We documented some architecture:
 
-![UTC Architecture](/images/utc-architecture.png)
+![UTC Architecture](/rm_ation/images/utc-architecture.png)
 
 We wrote more original music.
 
@@ -149,7 +149,7 @@ We shared these with increasingly discerning circles of ears and minds. The feed
 
 We re-designed the website.
 
-![UTC Website](/images/utc-website-2.png)
+![UTC Website](/rm_ation/images/utc-website-2.png)
 
 We strove for consensus. That gets you the best results, but it is also the most work. I think we did a damn good job.
 

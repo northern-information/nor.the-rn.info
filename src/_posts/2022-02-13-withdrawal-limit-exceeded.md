@@ -1,10 +1,10 @@
 ---
 title: Withdrawal Limit Exceeded
 date: 2022-02-13
-tags: ["Thinkpieces"]
+tags: ['Thinkpieces']
 ---
 
-![Withdrawal Limit Exceeded](/images/withdrawal-limit-exceeded.jpg)
+![Withdrawal Limit Exceeded](/rm_ation/images/withdrawal-limit-exceeded.jpg)
 
 _They say every driveway in the United States of America is connected._
 
@@ -14,7 +14,7 @@ _I think the SSRI withdrawals are finally over._
 
 My helmet's primary visor is open but the polarized visor is down. It is 90 degrees Fahrenheit and I am driving directly into the sun, boiling alive in my leather jacket. It was gifted to me by folk-hero tattoo artist Doc Finn. He used to run with the Ghost Riders back in the amphetamine fever dream world that was the 1970s. How many nights did he sleep in this jacket? Illinois prairies all around, stars overhead, belly full of whiskey, motorcycle cooling off from a hard ride...
 
-![Rainbows via leaded glass window refraction.](/images/perfecto.jpg)
+![Rainbows via leaded glass window refraction.](/rm_ation/images/perfecto.jpg)
 
 The jacket is one of my few authentically sentimental possessions. It is a Schott NYC Perfecto. It was wonderfully broken in when Doc gave it to me. During the transition rituals, it drank entire bottle of diluted baby oil - an offering that yielded another half century of life. In most contexts, the leather jacket — that eternal symbol of rebellion — is a loud fashion statement. But when you're riding a motorcycle, it is just another piece of life-saving technology.
 
@@ -22,7 +22,7 @@ I use ear protection while riding. Simple DayGlo plugs, the kind that come in th
 
 But these pieces of armor are insignificant in the greater game. They increase my chances of survival, sure, but it doesn't matter what I'm wearing if all 18 wheels of a semi-truck get a chance to say anything about it.
 
-![Covid test center at the Palm Springs Airport](/images/covid-test.jpg)
+![Covid test center at the Palm Springs Airport](/rm_ation/images/covid-test.jpg)
 
 So, not lane splitting, always wearing safety gear, always riding defensively, going the speed limit, avoiding potholes, and just surrending to the flow of traffic (as slow as it may be and as much as my left hand may hurt from the clutch) are not difficult decisions for me. I find slowdowns like these to be a feature of the experience, not a bug.
 
@@ -36,7 +36,7 @@ To be on a highway is to be a blood cell: free, floating, and fearless.
 
 ## Borrowed Untime
 
-![Mackenzie Davis in Station Eleven](/images/station-eleven.jpg)
+![Mackenzie Davis in Station Eleven](/rm_ation/images/station-eleven.jpg)
 
 Every day I wake up and feel a rush of excitement because I get to see yet another day of our grand and tiny cosmic drama unfold.
 
@@ -60,7 +60,7 @@ I also wanted to be like my father and have a small cash emergency fund. I went 
 
 ## Capitalist Unrealism
 
-![Remember when the ocean was literally on fire in early 2021?](/images/lets-buy-a-house.jpg)
+![Remember when the ocean was literally on fire in early 2021?](/rm_ation/images/lets-buy-a-house.jpg)
 
 Sage and I did everything "right." We finished high school with honors. We went to college. Got good grades. Magna cum laude both. A BA for her and a BFA for me.
 
@@ -76,7 +76,7 @@ _There is no trust fund at the end of the rainbow. There is no generational weal
 
 Rent on our a two bedroom apartment in Los Angeles county is about 40% of my take-home pay. The idea of ever owning a home is beyond absurd. (A house even smaller than our apartment costs around 10x what we make in a year.) Having a three bedroom apartment or even a two car garage would be a luxury beyond our wildest dreams. Heck, having a one car garage that we can jam both a Yaris and a Harley into feels absolutely opulent.
 
-![https://www.longtermtrends.net/home-price-median-annual-income-ratio/](/images/home-to-income-ratio.png)
+![https://www.longtermtrends.net/home-price-median-annual-income-ratio/](/rm_ation/images/home-to-income-ratio.png)
 
 _Tyler, just move somewhere else you idiot._
 
@@ -112,7 +112,7 @@ I'm grateful for my privileges. I'm also ready to play a new game and perhaps he
 
 ## Crypto
 
-![NFT Use Cases](/images/nft-use-cases.jpg)
+![NFT Use Cases](/rm_ation/images/nft-use-cases.jpg)
 
 A few weeks ago I posted my [skeptical synthesis of NFTs.](/2022/01/11/web3-skeptic-linkdump/) In [the time since](/2022/01/24/web3-hopeful-linkdump/), my thinking has evolved.
 

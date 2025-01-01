@@ -1,10 +1,10 @@
 ---
 title: Failed Blog Posts
 date: 2022-12-18
-tags: ["Wildcard"]
+tags: ['Wildcard']
 ---
 
-![Dark Souls 3](/images/dark-souls-3.jpg)
+![Dark Souls 3](/rm_ation/images/dark-souls-3.jpg)
 
 Too many blog posts on hospice. Fiddled with them too much. Lost the plot. I opened each markdown file, in turn... and decided the best course of action was to simply rename the directory `failed blog posts`, place it in my 2022 archive, and move on. Some embers need to be released, though:<!--x-->
 

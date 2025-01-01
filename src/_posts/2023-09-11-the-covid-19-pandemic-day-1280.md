@@ -1,7 +1,7 @@
 ---
 title: The COVID-19 Pandemic, Day 1280
 date: 2023-09-11
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
 [Dougald Hine, from his 2023 book At Work in the Ruins:](https://www.chelseagreen.com/product/at-work-in-the-ruins/)
@@ -12,7 +12,7 @@ Elsewhere in the book:
 
 > The work of science can and should inform the decisions we make, but to put science in the position of leading, while the rest of us fall in behind and follow, is to go beyond what can be asked of it.
 
-![Via Johns Hopkins](/images/covid-tracker.png)
+![Via Johns Hopkins](/rm_ation/images/covid-tracker.png)
 
 This long one:
 

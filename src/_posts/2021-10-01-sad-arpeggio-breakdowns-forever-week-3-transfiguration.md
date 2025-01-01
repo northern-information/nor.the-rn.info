@@ -1,10 +1,10 @@
 ---
-title: "S♯A♯B∞ Week 3: Transfiguration"
+title: 'S♯A♯B∞ Week 3: Transfiguration'
 date: 2021-10-01
-tags: ["S♯A♯B∞"]
+tags: ['S♯A♯B∞']
 ---
 
-![Transfiguration](/images/sab-transfiguration.jpg)
+![Transfiguration](/rm_ation/images/sab-transfiguration.jpg)
 
 Week three; act three. I am not on a commuter train today, but I am at O'hare. If you asked me how I was doing I might reply with, "cellular exhaustion." This trip has been beautiful and horrifying and gorgeous and wonderful and draining and terrifying and inspiring and absolutely too much but also precisely just enough and exactly what I needed.
 
@@ -16,19 +16,19 @@ I am a testing junky. When was my last test? Where is my next test coming from? 
 
 ## Day 16: Half Hidden
 
-![Half Hidden](/images/sab-hidden.jpg)
+![Half Hidden](/rm_ation/images/sab-hidden.jpg)
 
 It is the final day of [half hidden](https://halfhidden.co)'s month long opening. There is a seven hour performance from [Emily Sprague](https://mlesprg.info/), an art gallery, a metaphysics reading room, dogs. Dan and I are on music room duty. We teach the public and kids about monome gear and show them how to make music. It is so much fun to see kids play with the instruments I've built. They are so open and happy and fully of energy and enthusiasm.
 
 ## Day 17: Meadow
 
-![Meadow](/images/sab-meadow.jpg)
+![Meadow](/rm_ation/images/sab-meadow.jpg)
 
 Private.
 
 ## Day 18: 9/11 Memorial
 
-![9/11 Memorial](/images/sab-memorial.jpg)
+![9/11 Memorial](/rm_ation/images/sab-memorial.jpg)
 
 As frequent readers of Northern Information may be aware, 9/11 is an important aspect of my personal mythologies. In my layover in NYC I visit the memorial. Last time I was here it was still under construction. For some reason, I thought going to the memorial would give me closure. Everything would make sense and I could move on. Poof. Trauma gone.
 
@@ -40,13 +40,13 @@ Instead I walk around the two pools in an infinity symbol just crying and saying
 
 ## Day 19: The Hotel Where All the Clocks Were Wrong
 
-![Michigan Ave](/images/sab-michigan.jpg)
+![Michigan Ave](/rm_ation/images/sab-michigan.jpg)
 
 Back in Chicago, back to Highland. Jon and I spend the morning reflecting on how much the pandemic has cost us. Emotionally, spiritually, relationally. The business is fine. We're not. We walk by the old Highland office. I'm pointing to where I used to sit, on the 10th floor looking out over the Art Institute and into the celestial blue of Lake Michigan.
 
 ## Day 20: Central Camera
 
-![Central Camera](/images/sab-central.jpg)
+![Central Camera](/rm_ation/images/sab-central.jpg)
 
 Katie-Sue and I walk down to the lake and smoke a joint. We've had an incredibley challenginging year together keeping Highland running. We make an awesome team.
 
@@ -54,7 +54,7 @@ We walk back to have dinner and pass Central Camera - one of the key locations i
 
 ## Day 21: Pocket Universes
 
-![Pocket Universes](/images/sab-pocket.jpg)
+![Pocket Universes](/rm_ation/images/sab-pocket.jpg)
 
 I wake up and head to work. It's an intense day of cleaning, IT, organizing, getting the network setup, prepping for an all team meeting the following day.
 
@@ -90,7 +90,7 @@ I walk back into my hotel and feel like I just got away with something - like I 
 
 ## Day 22: Thin Blue Line
 
-![Test](/images/sab-test.jpg)
+![Test](/rm_ation/images/sab-test.jpg)
 
 This morning's test was the most emotional. A positive result would mean I couldn't fly. I couldn't go home.
 

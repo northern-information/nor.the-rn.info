@@ -1,7 +1,7 @@
 ---
-title: "Learning Max: My Voynich Manuscript"
+title: 'Learning Max: My Voynich Manuscript'
 date: 2020-04-28
-tags: ["Music Technology"]
+tags: ['Music Technology']
 ---
 
 If you want to skip a head to the end of this post, you can see the path I took to learn Max. If you want to hear about my experience, start here.
@@ -22,18 +22,18 @@ Paradoxically, my degree of comfort over both electronic music and programming m
 
 Like the indecipherable Voynich Manuscript, Max was impenetrable and without reference points. But unlike the Voynich Manuscript, there were lots of people and resources out there ready to help me.
 
-![Voynich Manuscript](/images/voynich-manuscript.jpg)
-_Voynich Manuscript, circa 15th century._
+![Voynich Manuscript]/rm*ation/images/voynich-manuscript.jpg)
+\_Voynich Manuscript, circa 15th century.*
 
-![Early Max Patch](/images/nsequencer.png)
-_One of my early patches, circa 2018._
+![Early Max Patch]/rm*ation/images/nsequencer.png)
+\_One of my early patches, circa 2018.*
 
 ## The Electronic Musician Angle
 
 I've been creating electronic music for over half my life. I started with cracked programs like Hammerhead. These were downloaded from [Limewire](https://en.wikipedia.org/wiki/LimeWire) and installed off CD-Rs of questionable provenance from Russia in the early 2000s. Over time I moved through DAWs, hardware, and different rigs for performances.
 
-![Hammerhead](/images/hammerhead.jpg)
-_Hammerhead. You never forget your first love._
+![Hammerhead]/rm*ation/images/hammerhead.jpg)
+\_Hammerhead. You never forget your first love.*
 
 I adopted Ableton Live as my primary DAW in 2009. The learning curve was frustrating and steep. It wasn't until about 2011 that I actually felt somewhat comfortable with the program. Now, in 2020, I'm still reluctant to call myself an expert, but I've certainly put in my 10,000 hours towards mastery.
 
@@ -43,11 +43,11 @@ This mastery does not come without drawbacks. My mind was very much locked into 
 
 Similarly, I've been performing with (and often without) a laptop since the mid 2000s. My live rig has gone through more iterations than I can count. At one extreme end of the spectrum was the maximalist shenanigans of the Northern Information Movement. At the other end I would go all the way down to a single delay pedal for of a solo ambient DJ set.
 
-![Northern Information Movement](/images/tyler-etters-adam-moore-paul-petrosyan-rakes-end.jpg)
-_Northern Information Movement, 2013_
+![Northern Information Movement]/rm*ation/images/tyler-etters-adam-moore-paul-petrosyan-rakes-end.jpg)
+\_Northern Information Movement, 2013*
 
-![Solo Set at The Hideout](/images/solo-set-at-the-hideout.jpg)
-_Setting up for a show at [The Hideout](https://www.hideoutchicago.com/), 2014_
+![Solo Set at The Hideout]/rm*ation/images/solo-set-at-the-hideout.jpg)
+\_Setting up for a show at [The Hideout](https://www.hideoutchicago.com/), 2014*
 
 Because I've used so many different types of electronic music software and hardware that all follow similar paradigms for so many years, Max was utterly alien to me.
 
@@ -66,7 +66,7 @@ Just compare these two [hello world](https://en.wikipedia.org/wiki/%22Hello,_Wor
 This code would be saved to a file such as `scripts.js` and then referenced via an HTML page and viewed in a browser.
 
 ```js
-console.log("Hello, World!");
+console.log('Hello, World!')
 ```
 
 ### Max
@@ -85,7 +85,7 @@ gwleXl0Yo1B5Wt.hoZpPqtSQYyCqqAIokhVN74qUF8As63m3ekIgl9N
 -----------end_max5_patcher-----------
 ```
 
-![Hello, World!](/images/hello-world.png)
+![Hello, World!](/rm_ation/images/hello-world.png)
 
 I had a lot of ideas about how to structure programs, orthogonal design, inheritance, abstractions... Many of these principals apply in Max, but you have to dance differently. The formalism of my programming skills got in the way of allowing me to embrace the inherit "messiness" of Max patching. Sure, you can make beautiful and architecturally-sound patches, but the experience of doing so feels really different than methodically writing unit tests and committing your source code to version control.
 

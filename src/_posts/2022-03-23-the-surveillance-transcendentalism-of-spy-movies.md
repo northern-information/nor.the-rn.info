@@ -1,16 +1,16 @@
 ---
 title: The Surveillance Transcendentalism of Spy Movies
 date: 2022-03-23
-tags: ["Thinkpieces"]
+tags: ['Thinkpieces']
 ---
 
-![The Bourne Legacy](/images/the-bourne-legacy.jpg)
+![The Bourne Legacy](/rm_ation/images/the-bourne-legacy.jpg)
 
 The pandemic has forced me to evolve new methods of escapism. As any of my [Instagram](https://instagram.com/tyleretters) followers know, I am a glutton for action and thriller movies. And the "spy action-thriller" is one of my favorite sub-genres because they get to play with a very specific and unique set of rules. Last night, THE BOURNE LEGACY (2012) was on the docket. Spoilers for the decade-old blockbuster ahead...<!--x-->
 
 It is hard to remember, but 2012 was pre-Snowden, post-crash, pre-Trump, post-Deepwater Horizon, pre-Benghazi. What's interesting about this is, even in 2012 (before the Snowden revelations), spy movies were offering a new type of narrative to meet the libidinal desires spurred on by the ultimate post-9/11 antagonist: surveillance.
 
-![Goldeneye](/images/the-bourne-legacy-goldeneye.jpg)
+![Goldeneye](/rm_ation/images/the-bourne-legacy-goldeneye.jpg)
 
 In popular media, British spies fulfill the repressed desires of global dominion while American spies fulfill the repressed desires of transcending "the system." It is, "the sun never sets on the British Empire," versus, "We're trapped in the belly of this horrible machine, and the machine is bleeding to death."
 
@@ -20,7 +20,7 @@ The dialog is... awful. Edward Norton manages to deliver his exposition with sta
 
 Rachel Weisz conveys a measure of grace and authenticity while Oscarr Isaac is erudite as ever. (Isaac should've come back in act three as the antagonist.)
 
-![The Bourne Legacy](/images/the-bourne-legacy-tension.jpg)
+![The Bourne Legacy](/rm_ation/images/the-bourne-legacy-tension.jpg)
 
 Nevertheless, THE BOURNE LEGACY offers plenty of kicks from an intoxicating doctor/patient romance to rugged survivalist milieu in an arctic wilderness. And I will never ever get sick of successfully picking up the cache of cash, weapons, and papers in from a car in the long-term parking garage at the airport! Evergreen!
 
@@ -30,7 +30,7 @@ Unlike BOURNE, entries in the BOND (1962 - 2021) franchise have only the thinnes
 
 So, what themes and tropes make these spy movies tick?
 
-![Mission Impossible](/images/the-bourne-legacy-mission-impossible.jpg)
+![Mission Impossible](/rm_ation/images/the-bourne-legacy-mission-impossible.jpg)
 
 First and foremost, spy movies offer us the power-fantasy of operating above, beyond, or outside any laws or jurisdiction. You can go anywhere and kill anyone. Assume a new identity at will. Lie to whomever. It is all permissible. Even _killing your boss_ is on the table in spy movies. ("He was a double-agent! I had to!") The paranoia of wondering who you can trust is the funnest part of the genre. Anyone could be kompromat. TINKER TAILOR SOLIDER SPY (2011) is perhaps my favorite for this very reason.
 

@@ -1,7 +1,7 @@
 ---
-title: "Personal Mythologies II: 9/11"
+title: 'Personal Mythologies II: 9/11'
 date: 2019-09-11
-tags: ["Mythologies"]
+tags: ['Mythologies']
 ---
 
 Where were you when it happened?
@@ -26,15 +26,15 @@ In 2011 I found myself in New York City. I had been dispatched with a small cadr
 
 It has been difficult for me to suppress developing superstitious beliefs from this coincidence.
 
-![Times Square 1](/images/times-square-1.jpg)
+![Times Square 1](/rm_ation/images/times-square-1.jpg)
 
-![Times Square 2](/images/times-square-2.jpg)
+![Times Square 2](/rm_ation/images/times-square-2.jpg)
 
-![Freedom Tower 1](/images/freedom-tower-1.jpg)
+![Freedom Tower 1](/rm_ation/images/freedom-tower-1.jpg)
 
-![Freedom Tower 2](/images/freedom-tower-2.jpg)
+![Freedom Tower 2](/rm_ation/images/freedom-tower-2.jpg)
 
-![Statue of Liberty](/images/statue-of-liberty.jpg)
+![Statue of Liberty](/rm_ation/images/statue-of-liberty.jpg)
 
 ---
 
@@ -48,9 +48,9 @@ I visited the [Vietnam Traveling Memorial Wall](http://www.travelingwall.us/) th
 
 Maybe I ought to plan a pilgrimage to the 9/11 memorial.
 
-![Vietnam Traveling Memorial](/images/vietnam-traveling-memorial.jpg)
+![Vietnam Traveling Memorial](/rm_ation/images/vietnam-traveling-memorial.jpg)
 
-![American Flag Forest](/images/american-flag-forest.jpg)
+![American Flag Forest](/rm_ation/images/american-flag-forest.jpg)
 
 ---
 

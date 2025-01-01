@@ -1,7 +1,7 @@
 ---
 title: The House Cafe
 date: 2009-12-26
-tags: ["Events"]
+tags: ['Events']
 ---
 
-![The House Cafe](/images/2009-12-26.jpg)
+![The House Cafe](/rm_ation/images/2009-12-26.jpg)

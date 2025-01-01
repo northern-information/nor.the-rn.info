@@ -1,7 +1,7 @@
 ---
 title: The COVID-19 Pandemic, Day 53
 date: 2020-05-02
-tags: ["Collapse"]
+tags: ['Collapse']
 ---
 
 [Kim Stanley Robinson writing for The New Yorker:](https://www.newyorker.com/culture/annals-of-inquiry/the-coronavirus-and-our-future)
@@ -22,20 +22,20 @@ Crown was one of my favorite bars. It was a cultural institution and the type of
 
 Digital mourning gallery:
 
-![Google Streetview](/images/crown-google-streetview.png)
-_Google Streetview_
+![Google Streetview]/rm*ation/images/crown-google-streetview.png)
+\_Google Streetview*
 
-![Via Stacie K. on Yelp](/images/crown-via-stacie-k-on-yelp.jpg)
-_Via Stacie K. on Yelp_
+![Via Stacie K. on Yelp]/rm*ation/images/crown-via-stacie-k-on-yelp.jpg)
+\_Via Stacie K. on Yelp*
 
-![Neobeat](/images/crown-neobeat.jpg)
-_[Neobeat](http://neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played..._
+![Neobeat]/rm*ation/images/crown-neobeat.jpg)
+*[Neobeat](http://neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played...\_
 
-![Gaming with the guys](/images/crown-gaming.jpg)
-_Gaming with the guys._
+![Gaming with the guys]/rm*ation/images/crown-gaming.jpg)
+\_Gaming with the guys.*
 
-![Via Phill C. on Yelp](/images/crown-via-phill-c-on-yelp.jpg)
-_Via Phill C. on Yelp_
+![Via Phill C. on Yelp]/rm*ation/images/crown-via-phill-c-on-yelp.jpg)
+\_Via Phill C. on Yelp*
 
 ---
 
@@ -43,6 +43,6 @@ In positive news, I decided it was time to invest in a [Monome Grid](https://mon
 
 Indeed, when I opened the box I had an experience of "correctness" that I haven't felt before. I imagine (fantasize) it is what guitar prodigies feel like when they first picked the instrument up. I would describe it as an intoxicating rush of possibility, joy, and awe. I haven't felt that about an instrument before. Last night I literally laughed out loud with happiness as I was learning how to patch with it. There is something special about programming with interactive hardware that is immensely satisfying.
 
-![Bunting playing Monome Grid](/images/bunting-playing-monome-grid.jpg)
+![Bunting playing Monome Grid](/rm_ation/images/bunting-playing-monome-grid.jpg)
 
 The pandemic giveth, and the pandemic taketh away.
