@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+a:link,
+a:visited {
+  color: theme('colors.blue.700');
+  text-decoration: underline;
+}
+
+a:hover,
+a:active {
+  color: theme('colors.blue.900');
+  text-decoration: none;
+}

@@ -1,0 +1,6 @@
+{
+  "eleventyComputed": {
+    "layout": "post.liquid",
+    "permalink": "/{{ page.date | dateToUTC }}/{{ page.fileSlug }}/index.html"
+  }
+}
