@@ -23,8 +23,8 @@ export default async function (eleventyConfig) {
   return {
     dir: {
       input: 'src',
-      includes: '_includes',
-      layouts: '_layouts',
+      includes: 'includes',
+      layouts: 'layouts',
       output: 'dist',
     },
     markdownTemplateEngine: 'liquid',
