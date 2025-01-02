@@ -1,19 +1,35 @@
 import { DateTime } from 'luxon'
 
+export const DIRECTORIES = {
+  INPUT: 'src',
+  OUTPUT: 'dist',
+  INCLUDES: 'includes',
+  LAYOUTS: 'layouts',
+  PAGES: 'pages',
+  POSTS: 'posts',
+  IMAGES: 'images',
+}
+
 export default async function (eleventyConfig) {
   eleventyConfig.addCollection('posts', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('src/_posts/*')
+    return collectionApi.getFilteredByGlob(
+      `${DIRECTORIES.INPUT}/${DIRECTORIES.POSTS}/*`
+    )
   })
 
   eleventyConfig.addCollection('pages', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('src/_pages/*')
+    return collectionApi.getFilteredByGlob(
+      `${DIRECTORIES.INPUT}/${DIRECTORIES.PAGES}/*`
+    )
   })
 
   eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
     return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(format)
   })
 
-  eleventyConfig.addPassthroughCopy('src/images')
+  eleventyConfig.addPassthroughCopy(
+    `${DIRECTORIES.INPUT}/${DIRECTORIES.IMAGES}`
+  )
 
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
@@ -22,10 +38,10 @@ export default async function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'src',
-      includes: 'includes',
-      layouts: 'layouts',
-      output: 'dist',
+      input: DIRECTORIES.INPUT,
+      includes: DIRECTORIES.INCLUDES,
+      layouts: DIRECTORIES.LAYOUTS,
+      output: DIRECTORIES.OUTPUT,
     },
     markdownTemplateEngine: 'liquid',
     pathPrefix: '/rm_ation/',
