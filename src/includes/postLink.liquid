@@ -1,6 +1,5 @@
 <a href="{{ post.url | url }}" class="hover:bg-blue-700 hover:text-white block cursor-pointer">
-  {% comment %} {{ post.data.title }} {% endcomment %}
-  {{ post.url | url }}
+  {{ post.data.title }}
   <br>
-  {% comment %} <span class="text-sm">{{ post.data.date | dateToUTC }}</span> {% endcomment %}
+  <span class="text-sm">{{ post.data.date | dateToUTC }}</span>
 </a>
