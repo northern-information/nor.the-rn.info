@@ -4,16 +4,16 @@ permalink: /
 ---
 <h1>nor.the-rn.info/rm_ation</h1>
 
-<h1>Pages</h1>
+<h2>Pages</h2>
 <ul>
   {% for page in collections.pages %}
-    <li>{% include pageLink %}</li>
+    <li>{% render pageLink, page: page %}</li>
   {% endfor %}
 </ul>
 
 <h2>Posts</h2>
-<ul>
+<ul class="bg-red-50">
   {% for post in collections.posts reversed %}
-    <li>{% include postLink %}</li>
+    <li>{% render postLink, post: post %}</li>
   {% endfor %}
 </ul>

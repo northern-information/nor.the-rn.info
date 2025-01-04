@@ -27,7 +27,21 @@ export default {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        spectrumAnimation: {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
+      },
+      animation: {
+        spectrum: 'spectrumAnimation 48s linear infinite',
+      },
+      backgroundSize: {
+        '600%': '600% 600%',
+      },
+    },
   },
   plugins: [],
 }
