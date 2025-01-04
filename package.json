@@ -10,7 +10,7 @@
     "pretty": "prettier --write .",
     "eleventy:base": "npx @11ty/eleventy",
     "eleventy:build": "npm run eleventy:base",
-    "eleventy:watch": "npm run eleventy:base -- --serve",
+    "eleventy:watch": "npm run eleventy:base -- --serve --quiet",
     "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css",
     "css:build": "npm run css:base -- --minify",
     "css:watch": "npm run css:base -- --watch"

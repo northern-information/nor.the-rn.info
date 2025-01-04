@@ -1,16 +1,23 @@
 import { DateTime } from 'luxon'
 
 export const DIRECTORIES = {
-  INPUT: 'src',
-  OUTPUT: 'dist',
+  DATA: 'data',
+  IMAGES: 'images',
   INCLUDES: 'includes',
+  INPUT: 'src',
   LAYOUTS: 'layouts',
+  OUTPUT: 'dist',
   PAGES: 'pages',
   POSTS: 'posts',
-  IMAGES: 'images',
 }
 
 export default async function (eleventyConfig) {
+  // eleventyConfig.addFilter('log', (value) => {
+  //   console.log('================')
+  //   console.log(value)
+  //   return value
+  // })
+
   eleventyConfig.addCollection('posts', function (collectionApi) {
     return collectionApi.getFilteredByGlob(
       `${DIRECTORIES.INPUT}/${DIRECTORIES.POSTS}/*`
