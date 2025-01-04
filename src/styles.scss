@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: theme('colors.stone.950');
+}
+
+.container {
+  background: white;
+}
+
 main {
   a,
   a:link,
