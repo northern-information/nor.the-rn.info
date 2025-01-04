@@ -12,12 +12,6 @@ export const DIRECTORIES = {
 }
 
 export default async function (eleventyConfig) {
-  // eleventyConfig.addFilter('log', (value) => {
-  //   console.log('================')
-  //   console.log(value)
-  //   return value
-  // })
-
   eleventyConfig.addCollection('posts', function (collectionApi) {
     return collectionApi.getFilteredByGlob(
       `${DIRECTORIES.INPUT}/${DIRECTORIES.POSTS}/*`

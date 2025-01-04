@@ -1,9 +1,12 @@
-<nav class="border-l-2 border-r-2 border-solid border-stone-950">
+<nav class="container border-l-2 border-r-2 border-solid border-stone-950">
   {% render fragments/rule %}
   {% render fragments/spectrum %}
   {% render fragments/rule %}
   {% render fragments/masthead %}
   {% render fragments/rule %}
+  {% render fragments/path page: page post: post %}
+  {% render fragments/rule %}
   {% render fragments/spectrum %}
   {% render fragments/rule %}
 </nav>
+<pre>{{ this }}</pre>
