@@ -1,7 +1,7 @@
 ---
 title: The EOY Info Sessions
 date: 2020-12-29
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Summer, 1974](/rm_ation/images/summer-1974.png)

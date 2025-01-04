@@ -1,7 +1,7 @@
 ---
 title: Sediment of Attachment
 date: 2019-03-24
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Sediment of Attachment Illustration](/rm_ation/images/sediment.jpg)

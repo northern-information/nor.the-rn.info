@@ -1,7 +1,7 @@
 ---
 title: KOWLOON WALLED CITY GIGA MIX
 date: 2024-12-21
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![KOWLOON WALLED CITY GIGA MIX](/rm_ation/images/kowloon-walled-city-giga-mix.png)

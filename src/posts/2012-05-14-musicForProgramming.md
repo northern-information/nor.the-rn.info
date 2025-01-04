@@ -1,7 +1,7 @@
 ---
 title: musicForProgramming();
 date: 2012-05-14
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![musicForProgramming();](/rm_ation/images/musicforprogramming.jpg)](http://musicforprogramming.net/)

@@ -1,7 +1,7 @@
 ---
-title: 'S♯A♯B∞ Week 2: Sublimation'
+title: "S♯A♯B∞ Week 2: Sublimation"
 date: 2021-09-24
-tags: ['S♯A♯B∞']
+tags: ["S♯A♯B∞"]
 ---
 
 ![Graffiti](/rm_ation/images/sab-graffiti.jpg)

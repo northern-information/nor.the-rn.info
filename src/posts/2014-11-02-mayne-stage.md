@@ -1,7 +1,7 @@
 ---
 title: Mayne Stage
 date: 2014-11-02
-tags: ['Events']
+tags: ["Events"]
 ---
 
 ![Mayne Stage, Nov 20](/rm_ation/images/2014-11-20.jpg)

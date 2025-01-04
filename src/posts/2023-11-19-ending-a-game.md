@@ -1,7 +1,7 @@
 ---
 title: Ending a Game
 date: 2023-11-19
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 It is with a heavy and clear heart I am announcing the end of [Coral Carrier Incarnadine](https://llllllll.co/t/51866).

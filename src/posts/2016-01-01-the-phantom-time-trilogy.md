@@ -1,7 +1,7 @@
 ---
 title: the phantom time trilogy
 date: 2016-01-01
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![the phantom time trilogy](/rm_ation/images/the-phantom-time-trilogy.jpg)](https://open.spotify.com/album/0kpDme6grGlpudBK2ioy6Q)

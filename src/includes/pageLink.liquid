@@ -1,3 +1,5 @@
 <a href="{{ page.url | url }}" class="hover:bg-blue-700 hover:text-white block cursor-pointer">
-  {{ page.data.title }}
+  {% comment %} {{ page.data.title }}
+  {% endcomment %}
+  {{ page.url | url }}
 </a>

@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, Rocket Summer
 date: 2024-04-28
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![Rocket Summer](/rm_ation/images/rocket-summer.jpg)

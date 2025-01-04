@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, List of Stars in Cancer
 date: 2024-07-10
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![List of Stars in Cancer](/rm_ation/images/list-of-stars-in-cancer.jpg)

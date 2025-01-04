@@ -1,7 +1,7 @@
 ---
 title: Some Inspiration for Us
 date: 2020-05-08
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Hill with Sunshine](/rm_ation/images/some-inspiration-for-us.jpg)

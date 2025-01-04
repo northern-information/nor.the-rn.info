@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, Radio Free Albemuth
 date: 2024-05-26
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![Radio Free Albemuth](/rm_ation/images/radio-free-albemuth.jpg)

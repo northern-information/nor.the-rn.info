@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, EP3
 date: 2024-04-14
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![EP3](/rm_ation/images/ep3.jpg)

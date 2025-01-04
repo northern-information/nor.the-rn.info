@@ -1,7 +1,7 @@
 ---
 title: 8 Central / 9 Eastern
 date: 2022-03-18
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Ren & Stimpy](/rm_ation/images/ren-and-stimpy.jpg)

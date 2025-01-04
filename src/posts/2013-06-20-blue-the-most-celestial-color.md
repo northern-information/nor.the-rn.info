@@ -1,7 +1,7 @@
 ---
 title: blue, the most celestial color
 date: 2013-06-20
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![blue, the most celestial color](/rm_ation/images/blue-the-most-celestial-color.jpg)](https://northerninformation.bandcamp.com/album/blue-the-most-celestial-color)

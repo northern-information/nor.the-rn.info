@@ -1,7 +1,7 @@
 ---
-title: 'Learning Max: My Voynich Manuscript'
+title: "Learning Max: My Voynich Manuscript"
 date: 2020-04-28
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 If you want to skip a head to the end of this post, you can see the path I took to learn Max. If you want to hear about my experience, start here.
@@ -66,7 +66,7 @@ Just compare these two [hello world](https://en.wikipedia.org/wiki/%22Hello,_Wor
 This code would be saved to a file such as `scripts.js` and then referenced via an HTML page and viewed in a browser.
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!")
 ```
 
 ### Max

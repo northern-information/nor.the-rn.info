@@ -1,0 +1,8 @@
+**/.git
+.vscode
+.wrangler
+dist
+package-lock.json
+node_modules
+src/images
+

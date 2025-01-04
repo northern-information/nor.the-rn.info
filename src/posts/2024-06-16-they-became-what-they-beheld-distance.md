@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, Distance
 date: 2024-06-16
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![Distance](/rm_ation/images/distance.jpg)

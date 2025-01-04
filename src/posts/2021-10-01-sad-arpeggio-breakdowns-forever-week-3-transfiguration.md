@@ -1,7 +1,7 @@
 ---
-title: 'S♯A♯B∞ Week 3: Transfiguration'
+title: "S♯A♯B∞ Week 3: Transfiguration"
 date: 2021-10-01
-tags: ['S♯A♯B∞']
+tags: ["S♯A♯B∞"]
 ---
 
 ![Transfiguration](/rm_ation/images/sab-transfiguration.jpg)

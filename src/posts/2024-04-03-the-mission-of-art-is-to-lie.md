@@ -1,7 +1,7 @@
 ---
 title: The Mission of Art is to Lie
 date: 2024-04-03
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Terminus Tyler](/rm_ation/images/terminus-tyler-500x.jpg)

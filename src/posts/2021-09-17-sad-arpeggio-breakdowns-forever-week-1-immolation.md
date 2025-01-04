@@ -1,7 +1,7 @@
 ---
-title: 'S♯A♯B∞ Week 1: Immolation'
+title: "S♯A♯B∞ Week 1: Immolation"
 date: 2021-09-17
-tags: ['S♯A♯B∞']
+tags: ["S♯A♯B∞"]
 ---
 
 ![Glass](/rm_ation/images/sab-glass.jpg)

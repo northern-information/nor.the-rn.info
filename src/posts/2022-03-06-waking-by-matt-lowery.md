@@ -1,7 +1,7 @@
 ---
 title: '"waking" by Matt Lowery'
 date: 2022-03-06
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![Matt Lowery waking](/rm_ation/images/matt-lowery-waking.jpg)

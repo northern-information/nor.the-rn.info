@@ -1,7 +1,7 @@
 ---
 title: senescence
 date: 2013-09-23
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![senescence](/rm_ation/images/senescence.jpg)](https://northerninformation.bandcamp.com/album/senescence)

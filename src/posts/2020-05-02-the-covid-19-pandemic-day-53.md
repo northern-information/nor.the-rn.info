@@ -1,7 +1,7 @@
 ---
 title: The COVID-19 Pandemic, Day 53
 date: 2020-05-02
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 [Kim Stanley Robinson writing for The New Yorker:](https://www.newyorker.com/culture/annals-of-inquiry/the-coronavirus-and-our-future)

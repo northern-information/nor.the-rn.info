@@ -1,7 +1,7 @@
 ---
 title: I Know Not Who Reads These Words
 date: 2022-03-04
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Cards, dice, shells](/rm_ation/images/cards.jpg)

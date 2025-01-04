@@ -1,7 +1,7 @@
 ---
 title: generative
 date: 2014-07-28
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![generative](/rm_ation/images/generative.gif)

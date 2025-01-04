@@ -1,7 +1,7 @@
 ---
 title: Four Techno Recommendations
 date: 2022-03-01
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ## Birth of a New Day, 2015

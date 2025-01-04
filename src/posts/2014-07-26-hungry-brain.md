@@ -1,7 +1,7 @@
 ---
 title: Hungry Brain
 date: 2014-07-26
-tags: ['Events']
+tags: ["Events"]
 ---
 
 ![Hungry Brain](/rm_ation/images/2014-07-28.jpg)

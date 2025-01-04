@@ -1,7 +1,7 @@
 ---
 title: the phantoms of our lost cause
 date: 2015-01-01
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![the phantoms of our lost cause](/rm_ation/images/the-phantoms-of-our-lost-cause.jpg)](https://northerninformation.bandcamp.com/album/the-phantoms-of-our-lost-cause)

@@ -1,7 +1,7 @@
 ---
-title: 'Guilt Rolls Downhill'
+title: "Guilt Rolls Downhill"
 date: 2021-12-26
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Silent Hill 2](/rm_ation/images/silent-hill-2.jpg)

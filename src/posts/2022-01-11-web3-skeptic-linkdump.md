@@ -1,7 +1,7 @@
 ---
 title: Web3 Skeptic Linkdump
 date: 2022-01-11
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Change My Mind](/rm_ation/images/change-my-mind.png)

@@ -1,7 +1,7 @@
 ---
 title: "Encountering the Other: My Kingdom's Fall to COVID-19 Four Years Later"
 date: 2024-03-27
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 ![And Then We Saw the Daughter of The Minotaur, by Leonora Carrington 1953](/rm_ation/images/and-then-we-saw-the-daughter-of-the-minotaur-1953-leonora-carrington.jpg)

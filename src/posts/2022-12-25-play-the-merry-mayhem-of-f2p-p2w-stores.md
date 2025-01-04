@@ -1,7 +1,7 @@
 ---
-title: 'P(l)ay: The Merry Mayhem of F2P/P2W Stores'
+title: "P(l)ay: The Merry Mayhem of F2P/P2W Stores"
 date: 2022-12-25
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Call of Duty MW2, Merry Mayhem](/rm_ation/images/cod-01-merry-mayhem.jpg)

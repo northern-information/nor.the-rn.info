@@ -1,7 +1,7 @@
 ---
 title: Withdrawal Limit Exceeded
 date: 2022-02-13
-tags: ['Thinkpieces']
+tags: ["Thinkpieces"]
 ---
 
 ![Withdrawal Limit Exceeded](/rm_ation/images/withdrawal-limit-exceeded.jpg)

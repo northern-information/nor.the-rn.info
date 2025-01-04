@@ -1,7 +1,7 @@
 ---
 title: Building an Interactive Discography
 date: 2024-01-04
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 [![Final Result](/rm_ation/images/discography-00-final.png)](/rm_ation/images/discography-00-final.png)

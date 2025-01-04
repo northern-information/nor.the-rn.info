@@ -1,7 +1,7 @@
 ---
-title: 'the #shadow_fi trilogy'
+title: "the #shadow_fi trilogy"
 date: 2014-01-15
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![the #shadow_fi trilogy](/rm_ation/images/the-shadow-fi-trilogy.jpg)](https://open.spotify.com/artist/6sbjf88uIA5dFemPeCamJa)

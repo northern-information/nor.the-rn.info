@@ -1,7 +1,7 @@
 ---
-title: 'On the Failure of One Small Community in Achieving its Own Ill-defined Dreams and/or Goals...'
+title: "On the Failure of One Small Community in Achieving its Own Ill-defined Dreams and/or Goals..."
 date: 2023-01-01
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Born into Trouble as the Sparks Fly Upward](/rm_ation/images/zion.jpg)

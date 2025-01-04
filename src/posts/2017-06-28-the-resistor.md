@@ -1,7 +1,7 @@
 ---
 title: The Resistor
 date: 2017-06-28
-tags: ['Events']
+tags: ["Events"]
 ---
 
 [![The Resistor](/rm_ation/images/2017-07-14.jpg)](https://www.facebook.com/events/242495859571819/)

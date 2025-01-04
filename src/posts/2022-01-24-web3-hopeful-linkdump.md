@@ -1,7 +1,7 @@
 ---
 title: Web3 Hopeful Linkdump
 date: 2022-01-24
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![channel.xyz](/rm_ation/images/channel.xyz.png)

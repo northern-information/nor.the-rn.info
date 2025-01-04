@@ -1,7 +1,7 @@
 ---
 title: They Became What They Beheld, EP2
 date: 2022-03-12
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 ![EP2](/rm_ation/images/ep2.jpg)

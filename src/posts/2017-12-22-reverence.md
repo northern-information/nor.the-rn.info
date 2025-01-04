@@ -1,7 +1,7 @@
 ---
 title: reverence
 date: 2017-12-22
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![reverence](/rm_ation/images/reverence.jpg)](https://northerninformation.bandcamp.com/album/reverence)

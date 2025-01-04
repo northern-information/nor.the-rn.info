@@ -1,7 +1,7 @@
 ---
 title: dispatches from the prime meridian
 date: 2017-12-21
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![dispatches from the prime meridian](/rm_ation/images/dispatches-from-the-prime-meridian.jpg)](https://northerninformation.bandcamp.com/album/dispatches-from-the-prime-meridian)

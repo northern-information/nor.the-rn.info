@@ -1,7 +1,7 @@
 ---
 title: The Future is an Infinite Succession of Presents
 date: 2024-09-16
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 A quote from [Howard Zinn](https://en.wikipedia.org/wiki/Howard_Zinn) from Everyday Utopia by [Kristen R. Ghodsee](https://en.wikipedia.org/wiki/Kristen_Ghodsee):

@@ -1,7 +1,7 @@
 ---
 title: My Third Patch
 date: 2020-06-17
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 ![My third patch](/rm_ation/images/my-third-patch.jpg)

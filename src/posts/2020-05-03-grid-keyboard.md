@@ -1,7 +1,7 @@
 ---
 title: Grid Keyboard
 date: 2020-05-03
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 ![Grid Keyboard](/rm_ation/images/grid-keyboard.png)

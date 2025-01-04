@@ -1,7 +1,7 @@
 ---
 title: These Transactions Created a Context
 date: 2022-03-09
-tags: ['Wildcard']
+tags: ["Wildcard"]
 ---
 
 ![Text Transcript Below](/rm_ation/images/yuri-beats.jpg)

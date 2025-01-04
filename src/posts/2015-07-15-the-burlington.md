@@ -1,7 +1,7 @@
 ---
 title: The Burlington
 date: 2015-07-15
-tags: ['Events']
+tags: ["Events"]
 ---
 
 [![Dial In /// EP Release Show](/rm_ation/images/2015-08-13.jpg)](https://www.facebook.com/events/1423137928016099/)

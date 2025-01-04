@@ -1,7 +1,7 @@
 ---
 title: Brexit and the Wall
 date: 2020-02-01
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 ![Brexit](/rm_ation/images/brexit-big-ben.png)

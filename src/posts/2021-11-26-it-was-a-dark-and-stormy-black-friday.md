@@ -1,7 +1,7 @@
 ---
 title: It Was a Dark and Stormy Black Friday
 date: 2021-11-26
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 ![High Voltage](/rm_ation/images/high-voltage.jpg)

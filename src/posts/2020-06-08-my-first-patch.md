@@ -1,7 +1,7 @@
 ---
 title: My First Patch
 date: 2020-06-08
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 ![My first patch](/rm_ation/images/my-first-patch.jpg)

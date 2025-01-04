@@ -1,7 +1,7 @@
 ---
 title: The Capitalist Nihilism of Alien & Squid Game
 date: 2021-10-24
-tags: ['Thinkpieces']
+tags: ["Thinkpieces"]
 ---
 
 ![Burke, Aliens](/rm_ation/images/capitalist-nihilism-1.jpg)

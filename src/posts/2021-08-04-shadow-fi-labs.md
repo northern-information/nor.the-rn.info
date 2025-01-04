@@ -1,7 +1,7 @@
 ---
 title: Shadow Fi Labs
 date: 2021-08-04
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 ![Schematic](/rm_ation/images/shadow-fi-labs-schematic.jpg)

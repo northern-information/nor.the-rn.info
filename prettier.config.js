@@ -9,6 +9,15 @@ const config = {
   tabWidth: 2,
   semi: false,
   singleQuote: true,
+  plugins: ['@shopify/prettier-plugin-liquid'],
+  overrides: [
+    {
+      files: ['*.liquid', '*.html', '*.md'],
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
 }
 
 export default config

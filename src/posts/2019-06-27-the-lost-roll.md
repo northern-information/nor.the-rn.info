@@ -1,7 +1,7 @@
 ---
 title: The Lost Roll
 date: 2019-06-27
-tags: ['Art']
+tags: ["Art"]
 ---
 
 I can't believe it has been six years since I shot film. I used to go out just about every week. I forgot how much I enjoyed it. Each roll became something of a time capsule and, like my tattoos, helped me move through time.

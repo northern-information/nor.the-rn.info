@@ -1,7 +1,7 @@
 ---
 title: Markov Chain
 date: 2020-04-30
-tags: ['Music Technology']
+tags: ["Music Technology"]
 ---
 
 ![Markov Chains](/rm_ation/images/markov-chains.png)

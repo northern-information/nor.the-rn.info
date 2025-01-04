@@ -1,7 +1,7 @@
 ---
 title: The COVID-19 Pandemic, Day 14
 date: 2020-03-24
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 ![Spread Love Not Germs](/rm_ation/images/spread-love-not-germs.jpg)

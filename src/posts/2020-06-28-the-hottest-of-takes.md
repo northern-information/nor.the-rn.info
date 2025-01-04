@@ -1,7 +1,7 @@
 ---
 title: The Hottest of Takes
 date: 2020-06-28
-tags: ['Collapse']
+tags: ["Collapse"]
 ---
 
 ![Europa & Jupiter](/rm_ation/images/europa-jupiter.jpg)

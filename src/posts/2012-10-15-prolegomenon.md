@@ -1,7 +1,7 @@
 ﻿---
 title: Prolegomenon
 date: 2012-10-15
-tags: ['Releases']
+tags: ["Releases"]
 ---
 
 [![Prolegomenon](/rm_ation/images/prolegomenon.jpg)](http://connectednesslocus.bandcamp.com/album/prolegomenon)
