@@ -6,30 +6,48 @@ body {
   background: theme('colors.stone.950');
 }
 
-.container {
-  background: white;
-}
-
-.from-markdown {
-  img,
-  p {
-    @apply mb-2;
-  }
+.content {
   img {
     @apply h-auto w-full;
   }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  ol {
+    @apply mb-2 text-stone-50;
+  }
+  a {
+    @apply text-yellow-300 underline;
+  }
+  a:hover {
+    @apply text-yellow-500 no-underline;
+  }
+  ul,
+  ol {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
 }
 
-main,
+.page-blog {
+  a {
+    @apply text-yellow-300 underline;
+  }
+  a:hover {
+    @apply text-yellow-500 no-underline;
+  }
+}
+
 footer {
   a {
-    color: theme('colors.blue.700');
-    text-decoration: underline;
+    @apply text-blue-700 underline;
   }
-
   a:hover {
-    color: theme('colors.blue.900');
-    text-decoration: none;
+    @apply text-blue-900 no-underline;
   }
 }
 

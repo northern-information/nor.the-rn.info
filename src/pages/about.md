@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page.liquid
+layout: pageAbout.liquid
 page_excerpt_overload: Midwestern musician holed-up in the mountains by Los Angeles.
 ---
 
@@ -10,11 +10,9 @@ My name is Tyler Etters. In 2024 I'm:
 - mixing as [DJ Stuxnet](https://stuxnet.me)
 - causing mayhem at [Circular Ruin DSP](https://circularruindsp.com)
 - producing tunes for [RGB](https://untitled.stream/library/project/RoTfZpW8dHvJVVpmd6kpf)
-- engineering for the [record store](https://discogs.com)
+- engineering for [Discogs](https://discogs.com)
 - releasing music as [They Became What They Beheld](https://tbwtb.com)
-- appreciating my framed BFA in graphic design from [Columbia College Chicago](https://colum.edu)
-
-![Northern Information Applied Sciences & Phantasms Working Division](/images/applied-sciences-and-phantasms-working-division.png)
+- appreciating my framed BFA from [Columbia College Chicago](https://colum.edu)
 
 My accounts:
 
