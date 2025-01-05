@@ -26,4 +26,5 @@ npm run deploy
 eleventy.config.js
 ./src/pages/pages.json
 ./src/posts/posts.json
+./sr/data/site.js
 ```
