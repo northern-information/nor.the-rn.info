@@ -9,11 +9,13 @@ export const META = {
   EMAIL: 'tyler@etters.co',
   TITLE: 'Northern Information',
   DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
-  CANONICAL: 'https://nor.the-rn.info/rm_ation/',
+  CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
+  FAVICON: 'favicon.ico',
+  APPLE_TOUCH_ICON: 'apple-touch-icon.png',
 }
 
-export const DIRECTORIES = {
+export const DIRS = {
   DATA: 'data',
   IMAGES: 'images',
   INCLUDES: 'includes',
@@ -28,15 +30,11 @@ export default async function (eleventyConfig) {
   // COLLECTIONS
 
   eleventyConfig.addCollection('posts', function (collectionApi) {
-    return collectionApi.getFilteredByGlob(
-      `${DIRECTORIES.INPUT}/${DIRECTORIES.POSTS}/*`
-    )
+    return collectionApi.getFilteredByGlob(`${DIRS.INPUT}/${DIRS.POSTS}/*`)
   })
 
   eleventyConfig.addCollection('pages', function (collectionApi) {
-    return collectionApi.getFilteredByGlob(
-      `${DIRECTORIES.INPUT}/${DIRECTORIES.PAGES}/*`
-    )
+    return collectionApi.getFilteredByGlob(`${DIRS.INPUT}/${DIRS.PAGES}/*`)
   })
 
   // FILTERS
@@ -75,11 +73,10 @@ export default async function (eleventyConfig) {
 
   // MISCELLANEOUS
 
-  eleventyConfig.addPassthroughCopy(`${DIRECTORIES.INPUT}/favicon.ico`)
-  eleventyConfig.addPassthroughCopy(`${DIRECTORIES.INPUT}/apple-touch-icon.png`)
-  eleventyConfig.addPassthroughCopy(
-    `${DIRECTORIES.INPUT}/${DIRECTORIES.IMAGES}`
-  )
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
 
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
@@ -90,11 +87,11 @@ export default async function (eleventyConfig) {
     markdownTemplateEngine: 'liquid',
     pathPrefix: PATH_PREFIX,
     dir: {
-      input: DIRECTORIES.INPUT,
-      data: DIRECTORIES.DATA,
-      includes: DIRECTORIES.INCLUDES,
-      layouts: DIRECTORIES.LAYOUTS,
-      output: DIRECTORIES.OUTPUT,
+      input: DIRS.INPUT,
+      data: DIRS.DATA,
+      includes: DIRS.INCLUDES,
+      layouts: DIRS.LAYOUTS,
+      output: DIRS.OUTPUT,
     },
   }
 }
