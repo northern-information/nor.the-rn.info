@@ -40,6 +40,7 @@ export default async function (eleventyConfig) {
   return {
     dir: {
       input: DIRECTORIES.INPUT,
+      data: DIRECTORIES.DATA,
       includes: DIRECTORIES.INCLUDES,
       layouts: DIRECTORIES.LAYOUTS,
       output: DIRECTORIES.OUTPUT,
