@@ -1,8 +1,15 @@
 ---
 layout: base.liquid
 ---
-<ul>
-  {% for post in collections.posts reversed %}
-    <li>{% render postLink, post: post %}</li>
+<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  {% for group in collections.postsByYear %}
+    <div class="md:pe-2">
+      <h2 class="mb-2 text-4xl font-semibold">{{ group.year }}</h2>
+      <ul>
+        {% for post in group.posts %}
+          <li class="mb-2">{% render postLink, post: post %}</li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>

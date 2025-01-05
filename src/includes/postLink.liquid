@@ -1,5 +1,8 @@
-<a href="{{ post.url }}" class="block cursor-pointer hover:bg-blue-700  hover:text-white">
-  {{ post.data.title }}
+<a
+  href="{{ post.url }}"
+  class="block cursor-pointer border-4 border-solid border-white hover:border-blue-700 hover:bg-blue-700 hover:text-white"
+>
+  <span class="font-semibold">{{ post.data.title }}</span>
   <br>
-  <span class="text-sm">{{ post.data.date | dateToUTC }}</span>
+  <span class="text-sm">{{ post.data.date | date: '%B %d, %Y' }}</span>
 </a>

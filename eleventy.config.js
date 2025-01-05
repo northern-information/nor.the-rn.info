@@ -37,24 +37,28 @@ export const DIRS = {
   POSTS: 'posts',
 }
 
-export default async function (eleventyConfig) {
-  // COLLECTIONS
+export default async (eleventyConfig) => {
+  eleventyConfig.addCollection('postsByYear', (collectionApi) => {
+    const posts = collectionApi.getFilteredByGlob(
+      `${DIRS.INPUT}/${DIRS.POSTS}/*`
+    )
+    const grouped = posts.reduce((acc, post) => {
+      const year = post.date.getFullYear()
+      if (!acc[year]) {
+        acc[year] = []
+      }
+      acc[year].push(post)
+      return acc
+    }, {})
 
-  eleventyConfig.addCollection('posts', function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`${DIRS.INPUT}/${DIRS.POSTS}/*`)
+    return Object.entries(grouped)
+      .map(([year, posts]) => ({ year, posts }))
+      .sort((a, b) => b.year - a.year)
   })
-
-  eleventyConfig.addCollection('pages', function (collectionApi) {
-    return collectionApi.getFilteredByGlob(`${DIRS.INPUT}/${DIRS.PAGES}/*`)
-  })
-
-  // FILTERS
 
   eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
     return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(format)
   })
-
-  // PLUGINS
 
   eleventyConfig.addPlugin(IdAttributePlugin)
 
@@ -81,8 +85,6 @@ export default async function (eleventyConfig) {
       },
     },
   })
-
-  // MISCELLANEOUS
 
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
