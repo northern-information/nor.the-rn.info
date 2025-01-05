@@ -41,6 +41,9 @@ export default {
       backgroundSize: {
         '600%': '600% 600%',
       },
+      backgroundImage: {
+        'four-oh-four': "url('/rm_ation/images/crown-via-phill-c-on-yelp.jpg')",
+      },
     },
   },
   plugins: [],

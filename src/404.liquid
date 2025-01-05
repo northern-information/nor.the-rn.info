@@ -3,4 +3,12 @@ title: 404
 layout: base.liquid
 permalink: 404.html
 ---
-<h1 class="text-center text-9xl">404</h1>
+<div class="bg-four-oh-four -mx-2 -my-2 flex h-[400px] flex-col justify-center gap-5 bg-cover bg-no-repeat text-center text-white md:h-[800px] ">
+  <h1 class="text-center text-4xl font-semibold">404 Error</h1>
+  <p class="">The requested page could not be found.</p>
+  <p>
+    <a href="/" class="text-yellow-300 hover:text-yellow-500">Stumble home...</a>
+    <br>
+    <a href="{{ site.META.GITHUB_URL }}" class="text-yellow-300 hover:text-yellow-500">Try to fix it?</a>
+  </p>
+</div>
