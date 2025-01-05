@@ -4,7 +4,7 @@ date: 2020-04-30
 tags: ["Music Technology"]
 ---
 
-![Markov Chains](/rm_ation/images/markov-chains.png)
+![Markov Chains](/images/markov-chains.png)
 
 [Sean Booth via an interview on Resident Advisor](https://www.residentadvisor.net/features/2756):
 

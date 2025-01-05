@@ -4,7 +4,7 @@ date: 2024-05-26
 tags: ["Releases"]
 ---
 
-![Radio Free Albemuth](/rm_ation/images/radio-free-albemuth.jpg)
+![Radio Free Albemuth](/images/radio-free-albemuth.jpg)
 
 New music from They Became What They Beheld: [Radio Free Albemuth](https://theybecamewhattheybeheld.bandcamp.com/album/radio-free-albemuth)<!--x-->
 

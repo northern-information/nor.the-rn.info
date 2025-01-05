@@ -4,7 +4,7 @@ date: 2024-03-27
 tags: ["Collapse"]
 ---
 
-![And Then We Saw the Daughter of The Minotaur, by Leonora Carrington 1953](/rm_ation/images/and-then-we-saw-the-daughter-of-the-minotaur-1953-leonora-carrington.jpg)
+![And Then We Saw the Daughter of The Minotaur, by Leonora Carrington 1953](/images/and-then-we-saw-the-daughter-of-the-minotaur-1953-leonora-carrington.jpg)
 
 "Why am I so exhausted?" I said, collapsing into bed two hours before my usual Sunday bedtime. I had spent the entire day doing nothing but sweeping the balcony, watering plants, and napping. I smudged some palo santo <!--x-->around the room, an ancient ritual I rarely conduct anymore, and crashed. At 4 A.M., I awoke uncomfortable and feverish. Sage took my temperature and gave me a COVID test.
 
@@ -34,7 +34,7 @@ Warning: unreliable narrator, imperfect first-person, slippery tense.
 
 ## COVID: The Virus
 
-![Zdzislaw Beksinski](/rm_ation/images/zdzislaw-beksinski-1.jpg)
+![Zdzislaw Beksinski](/images/zdzislaw-beksinski-1.jpg)
 
 They are in my body and they are communing with me.
 
@@ -48,7 +48,7 @@ Though I know I have several days of biological combat ahead of me, I take comfo
 
 ## COVID: The Symbol
 
-![Zdzislaw Beksinski](/rm_ation/images/zdzislaw-beksinski-2.jpg)
+![Zdzislaw Beksinski](/images/zdzislaw-beksinski-2.jpg)
 
 COVID: The Symbol was constructed layer-by-layer, by millions of people. We all spun the myth together like so many wasps meticulously layering newspaper scraps into a nest. A headline of lockdown orders here. A grim photograph of bodies overflowing the freezers there. Crucially, at the nest's very core lies a dark mystery - for even now in 2024 there is no consensus as to where the virus actually came from, making it all the more terrifying. And the misinformation is so snarled in with everything I question many of my own memories.
 
@@ -60,7 +60,7 @@ It is important for me to separate these aspects as categorically distinct from 
 
 ## COVID: The Hyperobject
 
-![Zdzislaw Beksinski](/rm_ation/images/zdzislaw-beksinski-3.jpg)
+![Zdzislaw Beksinski](/images/zdzislaw-beksinski-3.jpg)
 
 The third head of the COVID cerebus is a hyperobject - a thing so massively distributed in time and space that it defies traditional categorization and taxonomy.
 
@@ -90,7 +90,7 @@ Following this story and seeing this video (apparently around October 5, 2020) i
 
 ## Memories of a Broken Future
 
-![The Concert in the Egg, by Hieronymus Bosh, 1480](/rm_ation/images/the-concert-in-the-egg-1480-hieronymus-bosch.jpg)
+![The Concert in the Egg, by Hieronymus Bosh, 1480](/images/the-concert-in-the-egg-1480-hieronymus-bosch.jpg)
 
 All of this gets me thinking about hauntology. The idea that the future we were promised never quite arrived, that things are sliding sideways or even backwards in time, that we have arrived at the end of history and it is unsatisfactory and untenable.
 

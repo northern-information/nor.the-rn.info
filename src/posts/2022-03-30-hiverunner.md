@@ -6,4 +6,4 @@ tags: ["Art"]
 
 Illustration was one of my first mediums. I made this the other night. It was my first "capital D" Drawing in many moons. The color was done with a red marker and LED light. Photoshop was only for levels and contrast.<!--x-->
 
-![HIVERUNNER](/rm_ation/images/hiverunner.jpg)
+![HIVERUNNER](/images/hiverunner.jpg)

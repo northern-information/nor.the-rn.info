@@ -4,7 +4,7 @@ date: 2023-05-27
 tags: ["Music Technology"]
 ---
 
-![Always Has Been](/rm_ation/images/community-json.jpg)
+![Always Has Been](/images/community-json.jpg)
 
 About [two years ago](/2021/04/09/building-norns-community) we built [https://norns.community](https://norns.community). It was a massive project, both conceptually and technically. It served us well, but after a needlessly complex server migration earlier this year, we started talking about how to simplify.<!--x-->
 
@@ -20,7 +20,7 @@ With all this in mind, [Brian](https://nnnnnnnn.co) started a thread with [Jorda
 
 We unanimously agreed with the approach and got to work. It is now several months later and I'm happy to share that we've just launched the rebuild.
 
-![norns community v2 home](/rm_ation/images/norns-community-v2.png)
+![norns community v2 home](/images/norns-community-v2.png)
 
 Some of the points I'm most excited about:
 
@@ -32,7 +32,7 @@ Some of the points I'm most excited about:
 - Maintenance is clearly documented and open.
 - [TypeScript](https://github.com/monome-community/norns-community/blob/main/assets/javascript/script.ts) ensures future browsers and community members will have a better chance of understanding the interactive features.
 
-![norns community v2 explore](/rm_ation/images/norns-community-v2-explore.png)
+![norns community v2 explore](/images/norns-community-v2-explore.png)
 
 What follows is the [combo-README-about page](https://norns.community/about) as it exists today, copied here for posterity:
 

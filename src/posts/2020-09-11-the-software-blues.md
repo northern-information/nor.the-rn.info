@@ -8,7 +8,7 @@ I'm going to be giving a talk for [Babycastles](https://babycastles.com) on Sept
 
 <!--x-->
 
-![The Software Blues](/rm_ation/images/the-software-blues.png)
+![The Software Blues](/images/the-software-blues.png)
 
 > Software is hard and making art is already hard enough. There are problems of starting, problems of continuing, and problems of finishing. Add to all that mess dependency hells, self-esteem issues, aesthetic merit, questions of authenticity... chart these waters with confidence and you'll be rewarded with fulfillment and joy. Misstep and risk years of mumbling, "Someday, I'll finish that thing."
 >

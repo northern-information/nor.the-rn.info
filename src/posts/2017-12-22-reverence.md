@@ -4,7 +4,7 @@ date: 2017-12-22
 tags: ["Releases"]
 ---
 
-[![reverence](/rm_ation/images/reverence.jpg)](https://northerninformation.bandcamp.com/album/reverence)
+[![reverence](/images/reverence.jpg)](https://northerninformation.bandcamp.com/album/reverence)
 
 Released the day after the winter solstice, when the light begins her steady march to summer.
 

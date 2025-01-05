@@ -12,7 +12,7 @@ We open the update with a canonical short story written by Coral Carrier Incarna
 
 ## Obibe's Descent
 
-![The Pacific](/rm_ation/images/cci-update-pacific.jpg)
+![The Pacific](/images/cci-update-pacific.jpg)
 
 > _This story is sung between the whales, it is one of their oldest songs._
 >
@@ -24,7 +24,7 @@ We open the update with a canonical short story written by Coral Carrier Incarna
 
 ## New Paradigms
 
-![Santa Muerta](/rm_ation/images/cci-update-santa-muerta.jpg)
+![Santa Muerta](/images/cci-update-santa-muerta.jpg)
 
 When I started this project in January of 2022, I dove directly into execution mode. This was more or less how my other norns scripts emerged. Something was different this time, though. I kept stalling out. I'd write a few lines of code and have no clue how to progress. Slowly, it dawned on me.
 
@@ -32,7 +32,7 @@ I didn't know what the hell I was building.
 
 In order to write code you need "business logic" &mdash; an industry term for the arbitrary policy or legal rules needed in a feature. "Send invoices on the last day of the month," is a wonderfully dry example of business logic. If it were up to a developer to determine the day, she might decide the 1st or the 15th so that every month could be exactly the same. But, because the company chose the last day, now she needs to write code that has some notion of "last day" and the complexity multiplies...
 
-![Seaspray](/rm_ation/images/cci-update-seaspray.jpg)
+![Seaspray](/images/cci-update-seaspray.jpg)
 
 Me? I was writing code before I even knew if there _were_ invoices.
 
@@ -44,41 +44,41 @@ My thinking evolved into several concurrent streams.
 
 ## Inspiration
 
-![Manuals](/rm_ation/images/cci-update-manuals.jpg)
+![Manuals](/images/cci-update-manuals.jpg)
 
 CCI contains gene sequences from all the games I've ever played. What are the touchstones the game is anchored in? Who's made similar games? Who's told similar stories? What can I learn from them?
 
 Growing up, Magic: The Gathering, Battlefleet: Gothic, and Warhammer 40,000 were some of my favorite tabletop games. Metal Gear Solid, Starcraft, Doom, Diablo 2, Resident Evil, Armored Core, Abe's Odyssey, Another World, Flashback, Humans, Kings Quest IV, and MechWarrior were some of my favorite video games. I got a GameBoy Color and Pokemon: Blue right when they came out came out and was hooked for years...
 
-![Battlefleet Gothic](/rm_ation/images/cci-update-battlefleet-gothic.jpg)
+![Battlefleet Gothic](/images/cci-update-battlefleet-gothic.jpg)
 
-![Battlefleet Gothic, Inside](/rm_ation/images/cci-update-battlefleet-gothic-inside.jpg)
+![Battlefleet Gothic, Inside](/images/cci-update-battlefleet-gothic-inside.jpg)
 
-![Pokemon](/rm_ation/images/cci-update-pokemon.jpg)
+![Pokemon](/images/cci-update-pokemon.jpg)
 
-![Skaven Under Empire](/rm_ation/images/cci-update-skaven-under-empire.jpg)
+![Skaven Under Empire](/images/cci-update-skaven-under-empire.jpg)
 
-![Starcraft](/rm_ation/images/cci-update-starcraft.jpg)
+![Starcraft](/images/cci-update-starcraft.jpg)
 
 And any of my [Instagram](https://instagram.com/tyleretters) followers know I'm way into Kentucky Route Zero, Elden Ring, and Bloodborne.
 
-![Bloodborne](/rm_ation/images/cci-update-bloodborne.jpg)
+![Bloodborne](/images/cci-update-bloodborne.jpg)
 
 It has been an absolute joy to return to my old strategy guides and rulebooks with "developer tools enabled." All these games look so different through this lens. ([Did you know Magic is Turing complete?](https://arxiv.org/abs/1904.09828))
 
-![Prince of Persia](/rm_ation/images/cci-update-prince-of-persia.jpg)
+![Prince of Persia](/images/cci-update-prince-of-persia.jpg)
 
 ## Community
 
 Creating space for folks like [@pleco](https://llllllll.co/u/pleco) and you to contribute and carving out small chunks of actionable creativity and keeping everyone connected has been a top priority [since day one](https://l.llllllll.co/cci).
 
-![Species](/rm_ation/images/cci-update-species.jpg)
+![Species](/images/cci-update-species.jpg)
 
 ## World-building
 
 Who and what lives in the world of CCI? What are their names? What are their motives? This all takes place in the far future of our own timeline, so what is this world's future history? What recognizable fragments and plastic garbage survived all the eons?
 
-![Story](/rm_ation/images/cci-update-story.jpg)
+![Story](/images/cci-update-story.jpg)
 
 Presently, around 90% of my CCI energy is spent on world-building. This, too, has been riddled with challenge.
 
@@ -112,13 +112,13 @@ Who is the story about?
 
 What are the conflicts? Is there only one ending? Or multiple?
 
-![Twenty Year Storm](/rm_ation/images/cci-update-twenty-year-storm.jpg)
+![Twenty Year Storm](/images/cci-update-twenty-year-storm.jpg)
 
 ## Game Design
 
 Which aspects of the world show up in the game? What are the mechanics? How can I minimize the impact of un-fun random number generators?
 
-![Sepulchre Punk](/rm_ation/images/cci-update-sepulchre-punk.jpg)
+![Sepulchre Punk](/images/cci-update-sepulchre-punk.jpg)
 
 I am just now getting into designing how the main "game loop" works. A game loop can be thought of as a "turn cycle" or a sequence of events that repeats. If we're talking in musical terms it could be compared to a measure or bar. The game loop of Chess is: white, black. In basketball: pass, dribble, shoot. In Magic: untap, upkeep, draw, main, combat, main, end.
 
@@ -140,7 +140,7 @@ Chart, depart, passage, arrive. Think about storms and hostile waters. And just 
 
 How do are the game mechanics communicated to the player? How do they interact with the world?
 
-![Shield](/rm_ation/images/cci-update-shield.jpg)
+![Shield](/images/cci-update-shield.jpg)
 
 ## Programming & Architecture
 
@@ -150,7 +150,7 @@ Syntax, logic, booleans, and version control.
 
 I've shared many sketches and designs. I'm thinking about this project as something of my thesis in user interface and user experience design. With only 8,192 pixels to work with on a given screen this has proven to be an especially brutal challenge!
 
-![Build](/rm_ation/images/cci-update-build.jpg)
+![Build](/images/cci-update-build.jpg)
 
 [@ngwese](https://llllllll.co/u/ngwese)'s latest `screen.display_image_region()` feature arrived _just in time_ for this and has enabled me to design with [sprites](<https://en.wikipedia.org/wiki/Sprite_(computer_graphics)>) in mind. (With arcologies and yggdrasil, I programed each glyph pixel-by-pixel.)
 
@@ -160,7 +160,7 @@ Only a few concepts have made it all the way to programming spikes. A "spike" is
 
 Once a feature is complete... Does it work? Is it fun?
 
-![Signed](/rm_ation/images/cci-update-signed.jpg)
+![Signed](/images/cci-update-signed.jpg)
 
 ## The Fragmentum
 

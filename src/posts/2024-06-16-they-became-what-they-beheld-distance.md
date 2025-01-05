@@ -4,7 +4,7 @@ date: 2024-06-16
 tags: ["Releases"]
 ---
 
-![Distance](/rm_ation/images/distance.jpg)
+![Distance](/images/distance.jpg)
 
 New music from They Became What They Beheld: [Distance](https://theybecamewhattheybeheld.bandcamp.com/album/distance)<!--x-->
 

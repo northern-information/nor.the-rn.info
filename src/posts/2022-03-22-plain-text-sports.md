@@ -4,7 +4,7 @@ date: 2022-03-22
 tags: ["Wildcard"]
 ---
 
-![Plain Text Sports ](/rm_ation/images/plain-text-sports.jpg)
+![Plain Text Sports ](/images/plain-text-sports.jpg)
 
 A sports fan I am not, but [plaintextsports.com](https://plaintextsports.com/) is simply stunning. Touting, "Instant live sports scores, play-by-play, and box scores" there is so much to love:<!--x-->
 

@@ -4,7 +4,7 @@ date: 2020-03-14
 tags: ["Collapse"]
 ---
 
-![John Hopkins COVID-19 Dashboard](/rm_ation/images/coronavirus-dashboard.png)
+![John Hopkins COVID-19 Dashboard](/images/coronavirus-dashboard.png)
 
 So many rumors flying around, it is hard to know what to believe.
 

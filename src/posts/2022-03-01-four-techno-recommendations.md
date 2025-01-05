@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ## Birth of a New Day, 2015
 
-![Birth of a New Day](/rm_ation/images/birth-of-a-new-day.jpg)
+![Birth of a New Day](/images/birth-of-a-new-day.jpg)
 
 2814's 2015 opus is the logical sublimation of all vaporwave: glossy, nip/tucked, baked. But is it techno? Maybe.<!--x-->
 
@@ -14,7 +14,7 @@ tags: ["Wildcard"]
 
 ## Rhythm & Sound, 2001
 
-![Rhythm & Sound](/rm_ation/images/rhythm-and-sound.jpg)
+![Rhythm & Sound](/images/rhythm-and-sound.jpg)
 
 The Beatles were to rock 'n roll what Rhythm & Sound were to to dub techno. If not carefully monitored, what begins as required listening becomes inadvertent lifestyle.
 
@@ -22,7 +22,7 @@ The Beatles were to rock 'n roll what Rhythm & Sound were to to dub techno. If n
 
 ## Serenity, 2012
 
-![Serenity](/rm_ation/images/serenity.jpg)
+![Serenity](/images/serenity.jpg)
 
 This one from bvdub is sensual, passionate, intoxicating stuff. [He's got an online show next weekend.](https://bvdub.bandcamp.com/merch/thirteen-trips-around-the-sky-a-live-reinterpretation-of-we-were-the-sun?from=NORTHERN_INFORMATION)
 
@@ -30,7 +30,7 @@ This one from bvdub is sensual, passionate, intoxicating stuff. [He's got an onl
 
 ## Boundary Object, 2022
 
-![Boundary Object](/rm_ation/images/boundary-object.jpg)
+![Boundary Object](/images/boundary-object.jpg)
 
 It came out six days ago but ago days six out came it.
 

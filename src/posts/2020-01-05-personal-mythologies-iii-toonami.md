@@ -26,7 +26,7 @@ This video has consistently been something of a psalm for me. A sacred hymn for 
 
 Just read the YouTube comments. I wasn't alone. Hundreds of other 12 year olds were having the same experience:
 
-![YouTube Commnets](/rm_ation/images/broken-promise-youtube-comments.png)
+![YouTube Commnets](/images/broken-promise-youtube-comments.png)
 
 I unabashadely embrace the earnestness of this video, the music, the message. In an age where irony, sarcasm, and apathy are the defaults, this is a healing salve.
 

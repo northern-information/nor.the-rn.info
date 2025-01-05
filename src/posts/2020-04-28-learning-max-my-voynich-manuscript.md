@@ -85,7 +85,7 @@ gwleXl0Yo1B5Wt.hoZpPqtSQYyCqqAIokhVN74qUF8As63m3ekIgl9N
 -----------end_max5_patcher-----------
 ```
 
-![Hello, World!](/rm_ation/images/hello-world.png)
+![Hello, World!](/images/hello-world.png)
 
 I had a lot of ideas about how to structure programs, orthogonal design, inheritance, abstractions... Many of these principals apply in Max, but you have to dance differently. The formalism of my programming skills got in the way of allowing me to embrace the inherit "messiness" of Max patching. Sure, you can make beautiful and architecturally-sound patches, but the experience of doing so feels really different than methodically writing unit tests and committing your source code to version control.
 

@@ -4,7 +4,7 @@ date: 2019-03-24
 tags: ["Wildcard"]
 ---
 
-![Sediment of Attachment Illustration](/rm_ation/images/sediment.jpg)
+![Sediment of Attachment Illustration](/images/sediment.jpg)
 
 I drew this picture yesterday. It is how I experience entities. People, places, food, music, a hangnail, a hole in a sock. I start at the top, on the surface, and the go deeper. I think layers 1 (Ignorance) and 5 (Integration) are the sweet spots.
 

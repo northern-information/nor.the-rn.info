@@ -4,7 +4,7 @@ date: 2024-01-04
 tags: ["Wildcard"]
 ---
 
-[![Final Result](/rm_ation/images/discography-00-final.png)](/rm_ation/images/discography-00-final.png)
+[![Final Result](/images/discography-00-final.png)](/images/discography-00-final.png)
 
 Over winter break, I decided to get certified in [React](https://react.dev/), setup an S3 bucket, and build an interactive discography for myself.
 
@@ -28,7 +28,7 @@ The final result can be explored at: [discography.tyleretters.com](https://disco
 
 ## Step 1: Start with the Data
 
-[![YML to Json](/rm_ation/images/discography-01-yml-to-json.png)](/rm_ation/images/discography-01-yml-to-json.png)
+[![YML to Json](/images/discography-01-yml-to-json.png)](/images/discography-01-yml-to-json.png)
 
 The domain of "discographies" is rich. Individuals are can be part of many different projects/bands/orchestras/etc. Each project can release multiple albums, singles, and remixes. Each release has album art, notes, credits, and multiple tracks. Each track has a title, a duration, and an audio file. It is a domain I know intimately well.
 
@@ -40,7 +40,7 @@ I then wrote a [YML to JSON converter in Python](https://github.com/tyleretters/
 
 ## Step 2: Publish to NPM
 
-[![Publishing to NPM](/rm_ation/images/discography-02-npm.png)](/rm_ation/images/discography-02-npm.png)
+[![Publishing to NPM](/images/discography-02-npm.png)](/images/discography-02-npm.png)
 
 I then published the package to NPM. Now, anytime I want to work with my discography I can simply run:
 
@@ -55,7 +55,7 @@ The package is [publicly available on npm](https://www.npmjs.com/package/@tylere
 
 ## Step 3: React and a Basic Layout
 
-[![Consuming from NPM](/rm_ation/images/discography-03-consume.png)](/rm_ation/images/discography-03-consume.png)
+[![Consuming from NPM](/images/discography-03-consume.png)](/images/discography-03-consume.png)
 
 I created a new React app and installed my `@tyleretters/discography` package. Since the package is written in TypeScript, I made sure to export the `Release` and `Track` interfaces. Ensuring my React components adhered to these interfaces made development fun because everything seemed to "just work." Here's what the interfaces look like as of writing:
 
@@ -91,7 +91,7 @@ export interface Track {
 
 From there it was really quick work setup a basic layout:
 
-[![Basic Styles](/rm_ation/images/discography-04-basic-styles.png)](/rm_ation/images/discography-04-basic-styles.png)
+[![Basic Styles](/images/discography-04-basic-styles.png)](/images/discography-04-basic-styles.png)
 
 I configured GitHub Pages to serve my application so I could test it out on my phone. I always like setting up CI/CD as early as possible in a project so that I have plenty of time to work out the nuances as I go. There is nothing worse than scrambling to do your "first deployment" when you're ready to be done with the project.
 
@@ -99,7 +99,7 @@ Alright, I have my data, a React app, a URL serving the app... but what about im
 
 ## Step 4: S3 Bucket & Better Styles
 
-[![Images and s3cmd](/rm_ation/images/discography-05-images-s3cmd.png)](/rm_ation/images/discography-05-images-s3cmd.png)
+[![Images and s3cmd](/images/discography-05-images-s3cmd.png)](/images/discography-05-images-s3cmd.png)
 
 I wanted all images and music to be hosted in a public S3 bucket. I named the bucket "Intertext" because that is my [one-man, non-label](https://intertext.bandcamp.com). After configuring permissions I was able to create a simple workflow to easily sync assets with the `s3cmd` utility:
 
@@ -108,13 +108,13 @@ cd ~/projects/intertext
 s3cmd sync . s3://intertext --exclude ".DS_Store"
 ```
 
-[![Better Styles](/rm_ation/images/discography-06-better-styles.png)](/rm_ation/images/discography-06-better-styles.png)
+[![Better Styles](/images/discography-06-better-styles.png)](/images/discography-06-better-styles.png)
 
 I spent another half-day harvesting images, updating the NPM package accordingly, and was able to readily consume the assets in my React app.
 
 ## Step 7: Declare MVP
 
-[![Release Details](/rm_ation/images/discography-08-mvp.png)](/rm_ation/images/discography-08-mvp.png)
+[![Release Details](/images/discography-08-mvp.png)](/images/discography-08-mvp.png)
 
 It quickly became clear this was going to be one of those "lifetime projects" I'll curate for many years to come. In these cases, it is important for me to declare a MVP (minimum viable product) and give it the old `v1.0.0` release number sooner than later.
 

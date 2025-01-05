@@ -4,4 +4,4 @@ date: 2010-05-22
 tags: ["Events"]
 ---
 
-![Swing State](/rm_ation/images/2010-05-22.jpg)
+![Swing State](/images/2010-05-22.jpg)

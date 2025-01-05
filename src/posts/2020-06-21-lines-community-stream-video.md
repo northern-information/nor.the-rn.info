@@ -8,4 +8,4 @@ tags: ["Music Technology", "Events"]
 
 Our first show since 2018. It was a joy to play with [@johnlovetron](https://instagram.com/johnlovetron) & [@argotechnica](https://twitter.com/argotechnica).
 
-![Technical Supplement](/rm_ation/images/technical-supplement.jpg)
+![Technical Supplement](/images/technical-supplement.jpg)

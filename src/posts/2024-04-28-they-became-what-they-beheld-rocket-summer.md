@@ -4,7 +4,7 @@ date: 2024-04-28
 tags: ["Releases"]
 ---
 
-![Rocket Summer](/rm_ation/images/rocket-summer.jpg)
+![Rocket Summer](/images/rocket-summer.jpg)
 
 New music from They Became What They Beheld: [Rocket Summer](https://theybecamewhattheybeheld.bandcamp.com/album/rocket-summer)
 

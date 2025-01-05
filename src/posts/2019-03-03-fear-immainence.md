@@ -43,7 +43,7 @@ I got off the bus and my mom was outside gardening and listening to NPR. She had
 
 The ramifications of what happened didn't really dawn on me until two years later. Another Midwest overcast day at Wauconda High School with a hint of electricity in the wind. Another third period current events class. Everyone got a newspaper each day and we picked columns or stories to follow. Wrote about them. This, too, was before cell phones. I had been assigned the escalating tensions in Iraq.
 
-![U.S. Strikes Iraq](/rm_ation/images/us-strikes-iraq.jpg)
+![U.S. Strikes Iraq](/images/us-strikes-iraq.jpg)
 [March 20, 2003 via Chicago Tribune](https://www.newspapers.com/clip/28044307/chicago_tribune/)
 
 I have this memory of listening to the radio as we invaded. And yes, that word "we..." I was a participant, suddenly.

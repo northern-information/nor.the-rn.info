@@ -12,7 +12,7 @@ Elsewhere in the book:
 
 > The work of science can and should inform the decisions we make, but to put science in the position of leading, while the rest of us fall in behind and follow, is to go beyond what can be asked of it.
 
-![Via Johns Hopkins](/rm_ation/images/covid-tracker.png)
+![Via Johns Hopkins](/images/covid-tracker.png)
 
 This long one:
 

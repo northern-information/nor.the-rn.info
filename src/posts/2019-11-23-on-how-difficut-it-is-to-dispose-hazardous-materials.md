@@ -10,7 +10,7 @@ I believe that if you sell a thing you ought to be obligated to also dispose of 
 
 My wife and I moved this year. Part of the process involved unearthing an exceptionally old container of photography chemicals. D76. You know. The really poisonous stuff.
 
-![Chemicals](/rm_ation/images/chemicals.jpg)
+![Chemicals](/images/chemicals.jpg)
 
 The easy option is to throw the box in the dumpster. It magically disappears and we never have to think about it again.
 

@@ -4,7 +4,7 @@ date: 2024-04-22
 tags: ["Releases"]
 ---
 
-![Respect for the Medium](/rm_ation/images/respect-for-the-medium.jpg)
+![Respect for the Medium](/images/respect-for-the-medium.jpg)
 
 New music from They Became What They Beheld: [Respect for the Medium](https://theybecamewhattheybeheld.bandcamp.com/album/respect-for-the-medium)
 

@@ -4,7 +4,7 @@ date: 2020-05-08
 tags: ["Wildcard"]
 ---
 
-![Hill with Sunshine](/rm_ation/images/some-inspiration-for-us.jpg)
+![Hill with Sunshine](/images/some-inspiration-for-us.jpg)
 
 Brian Crabtree via the [monome](https://monome.org) newsletter:
 

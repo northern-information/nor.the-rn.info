@@ -4,7 +4,7 @@ date: 2021-12-26
 tags: ["Wildcard"]
 ---
 
-![Silent Hill 2](/rm_ation/images/silent-hill-2.jpg)
+![Silent Hill 2](/images/silent-hill-2.jpg)
 
 I used to work at a print shop.
 
@@ -23,11 +23,11 @@ But irregular specs were by far the largest producer of waste: say someone wante
 
 If the layout had no bleeds (color going all the way to the edges) the print layout would look like this:
 
-![Wasted Paper](/rm_ation/images/happy-holidays.jpg)
+![Wasted Paper](/images/happy-holidays.jpg)
 
 And if the layout had bleeds, due to the mechanics of rollers needing bite around the perimeter, we'd have to run like this:
 
-![Wasted Paper Bleeds](/rm_ation/images/happy-holidays-bleeds.jpg)
+![Wasted Paper Bleeds](/images/happy-holidays-bleeds.jpg)
 
 A lot of paper got thrown out.
 

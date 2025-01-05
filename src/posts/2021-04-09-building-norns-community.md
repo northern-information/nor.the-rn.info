@@ -6,7 +6,7 @@ tags: ["Music Technology"]
 
 ## Overview
 
-![norns community home](/rm_ation/images/norns-community-home.jpg)
+![norns community home](/images/norns-community-home.jpg)
 
 This is a visual account of building [https://norns.community](https://norns.community). It is divded into 4 sections:
 
@@ -29,13 +29,13 @@ I'm really proud of the work we did, how quickly we did it, and how we much fun 
 
 [llllllll.co](https://llllllll.co) (read: _lines_) is an electronic music forum. Among many other things, lines is the primary destination for [norns](https://monome.org/norns) script authors to share their work and norns owners to find new scripts. The site runs on [Discourse](https://www.discourse.org/about), is very well moderated, and has been a bastion of joy for me during the pandemic. Threads with new comments float to the top of the list and there are plenty of category and tag features built in:
 
-![lines home](/rm_ation/images/norns-community-lines-home.jpg)
+![lines home](/images/norns-community-lines-home.jpg)
 
-![lines tag 1](/rm_ation/images/norns-community-lines-tag-1.jpg)
+![lines tag 1](/images/norns-community-lines-tag-1.jpg)
 
-![lines tag 2](/rm_ation/images/norns-community-lines-tag-2.jpg)
+![lines tag 2](/images/norns-community-lines-tag-2.jpg)
 
-![lines script](/rm_ation/images/norns-community-lines-script.jpg)
+![lines script](/images/norns-community-lines-script.jpg)
 
 The Discourse platform was designed for nurturing communities and having engaging discussions. Scripts, however, are essentially "products" that you have to "shop" for. (Even though all the scripts are open source and free, you still have to find the script, figure out if it is something you're interested in, make the decision to install it, learn how to use it, etc.) This requires a whole new set of features that go beyond what Discourse was designed to do:
 
@@ -70,11 +70,11 @@ My heuristics:
 2. Keep it [orthagonal](<https://en.wikipedia.org/wiki/Orthogonality_(programming)>).
 3. Keep [tags](https://en.wikipedia.org/wiki/Tag_soup) to a minimum.
 
-![norns community sitemap](/rm_ation/images/norns-community-sitemap.jpg)
+![norns community sitemap](/images/norns-community-sitemap.jpg)
 
-![norns community tags](/rm_ation/images/norns-community-tags.jpg)
+![norns community tags](/images/norns-community-tags.jpg)
 
-![norns community mobile](/rm_ation/images/norns-community-mobile.jpg)
+![norns community mobile](/images/norns-community-mobile.jpg)
 
 ---
 
@@ -118,11 +118,11 @@ We implemented all this with an `iframe` and a GET parameter.
 </iframe>
 ```
 
-![pull request](/rm_ation/images/norns-community-pr.jpg)
+![pull request](/images/norns-community-pr.jpg)
 
-![norns community artist](/rm_ation/images/norns-community-artist.jpg)
+![norns community artist](/images/norns-community-artist.jpg)
 
-![norns community sequencers](/rm_ation/images/norns-community-sequencers.jpg)
+![norns community sequencers](/images/norns-community-sequencers.jpg)
 
 ---
 
@@ -138,15 +138,15 @@ wiki.js doesn't support custom themes but it does allow you to inject CSS and JS
 
 I was sure to add some fun stuff in, too. The login page features a technical schematic of the norns and the favicon is an abstracted norns. (Sorry [shield](https://monome.org/docs/norns/shield/) crew.)
 
-![norns community wireframe](/rm_ation/images/norns-community-wireframe.jpg)
+![norns community wireframe](/images/norns-community-wireframe.jpg)
 
-![norns community css](/rm_ation/images/norns-community-css.jpg)
+![norns community css](/images/norns-community-css.jpg)
 
-![norns community fun](/rm_ation/images/norns-community-fun.jpg)
+![norns community fun](/images/norns-community-fun.jpg)
 
-![logo](/rm_ation/images/norns-community-logo.jpg)
+![logo](/images/norns-community-logo.jpg)
 
-![norns community script](/rm_ation/images/norns-community-script.jpg)
+![norns community script](/images/norns-community-script.jpg)
 
 ---
 
@@ -160,9 +160,9 @@ Dan setup authentication to work with both GitHub and Discord so people didn't h
 
 wiki.js allows you to connect permission levels with the type of authentication. So authors can edit their "author" pages, but editors cannot, etc. It was a beautiful, clean solution.
 
-![norns community instructions](/rm_ation/images/norns-community-instructions.jpg)
+![norns community instructions](/images/norns-community-instructions.jpg)
 
-![study](/rm_ation/images/norns-community-study.jpg)
+![study](/images/norns-community-study.jpg)
 
 ---
 

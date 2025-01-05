@@ -1,4 +1,7 @@
+import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import { DateTime } from 'luxon'
+
+export const PATH_PREFIX = '/rm_ation/'
 
 export const DIRECTORIES = {
   DATA: 'data',
@@ -12,6 +15,11 @@ export const DIRECTORIES = {
 }
 
 export default async function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+    baseHref: PATH_PREFIX,
+    extensions: 'html,md',
+  })
+
   eleventyConfig.addCollection('posts', function (collectionApi) {
     return collectionApi.getFilteredByGlob(
       `${DIRECTORIES.INPUT}/${DIRECTORIES.POSTS}/*`
@@ -38,6 +46,8 @@ export default async function (eleventyConfig) {
   })
 
   return {
+    markdownTemplateEngine: 'liquid',
+    pathPrefix: PATH_PREFIX,
     dir: {
       input: DIRECTORIES.INPUT,
       data: DIRECTORIES.DATA,
@@ -45,7 +55,5 @@ export default async function (eleventyConfig) {
       layouts: DIRECTORIES.LAYOUTS,
       output: DIRECTORIES.OUTPUT,
     },
-    markdownTemplateEngine: 'liquid',
-    pathPrefix: '/rm_ation/',
   }
 }

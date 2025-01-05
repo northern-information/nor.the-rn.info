@@ -4,7 +4,7 @@ date: 2022-03-21
 tags: ["Wildcard"]
 ---
 
-![Man from Utopia](/rm_ation/images/man-from-utopia.jpg)
+![Man from Utopia](/images/man-from-utopia.jpg)
 
 > "gotta tombstone hand anna graveyard mind just twenny two an ah don't mind dye'in" <!--x-->
 
@@ -24,4 +24,4 @@ The two year anniversary of the pandemic hit me really hard.
 
 In talking to a dear friend the other day, we concluded a trip is in order. Whether psychedelic or cartographic remains to be augured.
 
-![America a Prophecy](/rm_ation/images/america-a-prophecy.jpg)
+![America a Prophecy](/images/america-a-prophecy.jpg)

@@ -4,7 +4,7 @@ date: 2020-06-28
 tags: ["Collapse"]
 ---
 
-![Europa & Jupiter](/rm_ation/images/europa-jupiter.jpg)
+![Europa & Jupiter](/images/europa-jupiter.jpg)
 
 Every fucking second we waste fighting (and writing blogs) about race, politics, gender, religion, and sex is a second we will never get back.
 

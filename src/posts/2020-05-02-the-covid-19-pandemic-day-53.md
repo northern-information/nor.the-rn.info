@@ -43,6 +43,6 @@ In positive news, I decided it was time to invest in a [Monome Grid](https://mon
 
 Indeed, when I opened the box I had an experience of "correctness" that I haven't felt before. I imagine (fantasize) it is what guitar prodigies feel like when they first picked the instrument up. I would describe it as an intoxicating rush of possibility, joy, and awe. I haven't felt that about an instrument before. Last night I literally laughed out loud with happiness as I was learning how to patch with it. There is something special about programming with interactive hardware that is immensely satisfying.
 
-![Bunting playing Monome Grid](/rm_ation/images/bunting-playing-monome-grid.jpg)
+![Bunting playing Monome Grid](/images/bunting-playing-monome-grid.jpg)
 
 The pandemic giveth, and the pandemic taketh away.

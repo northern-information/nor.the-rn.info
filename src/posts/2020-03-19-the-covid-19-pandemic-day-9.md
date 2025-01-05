@@ -4,7 +4,7 @@ date: 2020-03-19
 tags: ["Collapse"]
 ---
 
-![Self Isolation](/rm_ation/images/self-isolation.jpg)
+![Self Isolation](/images/self-isolation.jpg)
 
 Sage and I have been self isolating all week. I left the house for the first time yesterday to make copies of keys and mail them to my mom. She is going to rescue my plants. I do not expect to return to Chicago for months.
 

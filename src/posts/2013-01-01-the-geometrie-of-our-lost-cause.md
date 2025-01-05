@@ -4,7 +4,7 @@ date: 2013-01-01
 tags: ["Releases"]
 ---
 
-[![the geometrie of our lost cause](/rm_ation/images/the-geometrie-of-our-lost-cause.jpg)](https://northerninformation.bandcamp.com/album/the-geometrie-of-our-lost-cause)
+[![the geometrie of our lost cause](/images/the-geometrie-of-our-lost-cause.jpg)](https://northerninformation.bandcamp.com/album/the-geometrie-of-our-lost-cause)
 
 ```
      _______________________________________________

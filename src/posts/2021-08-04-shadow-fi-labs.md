@@ -4,7 +4,7 @@ date: 2021-08-04
 tags: ["Music Technology"]
 ---
 
-![Schematic](/rm_ation/images/shadow-fi-labs-schematic.jpg)
+![Schematic](/images/shadow-fi-labs-schematic.jpg)
 
 The Teletype Study Group asks that you complete the [monome studies](https://monome.org/docs/teletype/studies-1/), then proceed to work on a thesis. My first thesis was titled `antithesis`. I challenged myself for several weeks to not save my Teletype scenes. Start from scratch every time. Build up the muscle memory.
 
@@ -18,12 +18,12 @@ After 4 days of development I'm happy to report the system has become self aware
 
 The above linked schematic has the entire program and general gear layout. Here are futher reference photos:
 
-![Mars Mapcore Deck](/rm_ation/images/shadow-fi-labs-mars-mapcore-deck.jpg)
+![Mars Mapcore Deck](/images/shadow-fi-labs-mars-mapcore-deck.jpg)
 
-![Phobos, Demos, and Maths Pods](/rm_ation/images/shadow-fi-labs-phobos-demos-and-maths-pods.jpg)
+![Phobos, Demos, and Maths Pods](/images/shadow-fi-labs-phobos-demos-and-maths-pods.jpg)
 
-![Octatrack & Launch Control XL](/rm_ation/images/shadow-fi-labs-octatrack-and-launch-control-xl.jpg)
+![Octatrack & Launch Control XL](/images/shadow-fi-labs-octatrack-and-launch-control-xl.jpg)
 
-![Peak, Digitone, Holy Grail, Microdream](/rm_ation/images/shadow-fi-labs-peak-digitone-holy-grail-microdream.jpg)
+![Peak, Digitone, Holy Grail, Microdream](/images/shadow-fi-labs-peak-digitone-holy-grail-microdream.jpg)
 
-![Whiteboard](/rm_ation/images/shadow-fi-labs-whiteboard.jpg)
+![Whiteboard](/images/shadow-fi-labs-whiteboard.jpg)

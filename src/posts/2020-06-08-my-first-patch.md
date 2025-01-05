@@ -4,7 +4,7 @@ date: 2020-06-08
 tags: ["Music Technology"]
 ---
 
-![My first patch](/rm_ation/images/my-first-patch.jpg)
+![My first patch](/images/my-first-patch.jpg)
 
 I've made the plunge into modular.<!--x--> This is my first patch: [Doepfer A-110-1 Standard VCO](http://www.doepfer.de/home_e.htm) into [Intellijel Outs](https://intellijel.com/shop/eurorack/outs/). The result? A sine wave and bottomless joy.
 
