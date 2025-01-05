@@ -1,0 +1,38 @@
+<footer class="container overflow-hidden border-l-4 border-r-4 border-solid border-stone-950">
+  {% render rule %}
+  {% render spectrum %}
+  {% render rule %}
+  <div class="grid lg:grid-cols-4">
+    <div class="border-b-4 border-stone-950 px-2 py-2 lg:border-b-0 lg:border-r-4 lg:border-solid ">
+      <p>{{ site.META.TITLE }}</p>
+      <p>
+        2008 &mdash; {{ site.META.YEAR }}
+        <a href="{{ site.META.CREATIVE_COMMONS }}">CC BY 4.0</a>
+      </p>
+      <p>{{ site.META.INVOCATION }}</p>
+    </div>
+    <div class="border-b-4 border-solid border-stone-950 px-2 py-2 lg:col-span-2 lg:border-b-0 lg:border-r-4">
+      <p>Build Time: {{ site.META.BUILD_TIME }}</p>
+      <p>
+        Source Code:
+        <a href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}">{{ site.META.GIT_HASH_SHORT }}</a>
+      </p>
+      <p>
+        Atom Feed:
+        <a href="{{ site.META.CANONICAL }}{{ site.META.FEED }}">
+          {{- site.META.CANONICAL -}}
+          {{- site.META.FEED -}}
+        </a>
+      </p>
+    </div>
+    <a
+      href="{{ site.META.DAUNTLESS_CHOIR_URL }}"
+      class="flex h-full w-full items-center justify-center px-2 py-2 hover:bg-red-500"
+    >
+      <img src="/images/dc.svg" class="h-20 w-20">
+    </a>
+  </div>
+  {% render rule %}
+  {% render spectrum %}
+  {% render rule %}
+</footer>

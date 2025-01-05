@@ -1,18 +1,29 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
 import { feedPlugin } from '@11ty/eleventy-plugin-rss'
 import { DateTime } from 'luxon'
+import { execSync } from 'child_process'
 
 export const PATH_PREFIX = '/rm_ation/'
 
 export const META = {
-  AUTHOR: 'Tyler Etters',
-  EMAIL: 'tyler@etters.co',
-  TITLE: 'Northern Information',
-  DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
-  CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
-  LOGO: 'applied-sciences-and-phantasms-working-division.png',
-  FAVICON: 'favicon.ico',
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
+  AUTHOR: 'Tyler Etters',
+  BUILD_TIME: new Date().toISOString(),
+  CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
+  CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
+  DAUNTLESS_CHOIR_URL:
+    'https://gist.github.com/tyleretters/3743b6d5e27ee50d51b7da9f9293c40f',
+  DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
+  EMAIL: 'tyler@etters.co',
+  FAVICON: 'favicon.ico',
+  FEED: 'feed.xml',
+  GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),
+  GIT_HASH: execSync('git rev-parse HEAD').toString().trim(),
+  GITHUB_URL: 'https://github.com/tyleretters/rm_ation',
+  INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
+  LOGO: 'applied-sciences-and-phantasms-working-division.png',
+  TITLE: 'Northern Information',
+  YEAR: new Date().getUTCFullYear(),
 }
 
 export const DIRS = {
@@ -54,7 +65,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: 'atom',
-    outputPath: '/feed.xml',
+    outputPath: `/${META.FEED}`,
     collection: {
       name: 'posts',
       limit: 10,
