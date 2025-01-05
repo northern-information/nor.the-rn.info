@@ -10,6 +10,16 @@ body {
   background: white;
 }
 
+.from-markdown {
+  img,
+  p {
+    @apply mb-2;
+  }
+  img {
+    @apply h-auto w-full;
+  }
+}
+
 main,
 footer {
   a {
