@@ -1,5 +1,6 @@
 ---
 title: About
+layout: page.liquid
 page_excerpt_overload: Midwestern musician holed-up in the mountains by Los Angeles.
 ---
 

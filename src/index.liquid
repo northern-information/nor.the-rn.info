@@ -3,18 +3,4 @@ layout: index.liquid
 permalink: /
 ---
 {{ site.foo }}
-{{ site.metaDescription }}
-
-<h2>Pages</h2>
-<ul>
-  {% for page in collections.pages %}
-    <li>{% render pageLink, page: page %}</li>
-  {% endfor %}
-</ul>
-
-<h2>Posts</h2>
-<ul>
-  {% for post in collections.posts reversed %}
-    <li>{% render postLink, post: post %}</li>
-  {% endfor %}
-</ul>
+{{ site.META.DESCRIPTION }}

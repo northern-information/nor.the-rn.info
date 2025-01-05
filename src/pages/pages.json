@@ -1,6 +1,5 @@
 {
   "eleventyComputed": {
-    "layout": "page.liquid",
     "permalink": "/{{ page.fileSlug }}/index.html"
   }
 }

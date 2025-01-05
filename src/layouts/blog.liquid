@@ -1,0 +1,9 @@
+---
+layout: base.liquid
+---
+<h2>Posts</h2>
+<ul>
+  {% for post in collections.posts reversed %}
+    <li>{% render postLink, post: post %}</li>
+  {% endfor %}
+</ul>

@@ -1,5 +1,6 @@
 ---
 title: Discography
+layout: page.liquid
 page_excerpt_overload: Discography dates back to 2006.
 ---
 

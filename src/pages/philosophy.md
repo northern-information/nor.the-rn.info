@@ -1,5 +1,6 @@
 ---
 title: Philosophy
+layout: page.liquid
 page_excerpt_overload: Don't give up.
 ---
 

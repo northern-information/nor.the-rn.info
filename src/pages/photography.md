@@ -1,5 +1,6 @@
 ---
 title: Photography
+layout: page.liquid
 page_excerpt_overload: 35mm photography.
 ---
 
