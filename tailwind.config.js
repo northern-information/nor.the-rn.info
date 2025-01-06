@@ -3,6 +3,31 @@ export default {
   content: ['./src/**/*.liquid'],
   theme: {
     fontFamily: {
+      humanist: [
+        'Seravek',
+        'Gill Sans Nova',
+        'Ubuntu',
+        'Calibri',
+        'DejaVu Sans',
+        'source-sans-pro',
+        'sans-serif',
+      ],
+      mono: [
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        'Liberation Mono',
+        'Courier New',
+        'monospace',
+      ],
+      olde: [
+        'Iowan Old Style',
+        'Palatino Linotype',
+        'URW Palladio L',
+        'P052',
+        'serif',
+      ],
       sans: [
         '-apple-system',
         'BlinkMacSystemFont',
@@ -14,14 +39,12 @@ export default {
         'Helvetica Neue',
         'sans-serif',
       ],
-      mono: [
-        'SFMono-Regular',
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        'Liberation Mono',
-        'Courier New',
-        'monospace',
+      serif: [
+        'Charter',
+        'Bitstream Charter',
+        'Sitka Text',
+        'Times New Roman',
+        'serif',
       ],
     },
     container: {
@@ -42,6 +65,7 @@ export default {
         '600%': '600% 600%',
       },
       backgroundImage: {
+        'red-robin': "url('/rm_ation/images/IMG_3876.jpg')",
         'four-oh-four': "url('/rm_ation/images/crown-via-phill-c-on-yelp.jpg')",
       },
     },

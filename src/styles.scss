@@ -38,6 +38,9 @@ body {
   code {
     @apply overflow-scroll rounded border border-solid border-yellow-300 bg-stone-800 text-yellow-300;
   }
+  blockquote {
+    @apply ml-2 border-l-2 border-solid border-stone-400 pl-2;
+  }
 }
 
 footer {
