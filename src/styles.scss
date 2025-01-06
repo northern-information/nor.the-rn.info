@@ -10,7 +10,7 @@ body {
   img {
     @apply h-auto w-full;
     &.about-logo {
-      @apply m-auto max-w-[200px];
+      @apply my-2 max-w-[200px];
     }
   }
   p,
