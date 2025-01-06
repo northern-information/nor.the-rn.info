@@ -14,7 +14,6 @@ export const META = {
   DAUNTLESS_CHOIR_URL:
     'https://gist.github.com/tyleretters/3743b6d5e27ee50d51b7da9f9293c40f',
   DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
-  EMAIL: 'tyler@etters.co',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
   GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),

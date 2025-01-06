@@ -1,5 +1,7 @@
 ---
 layout: base.liquid
 ---
-<h1 class="mb-1 text-4xl text-stone-50">{{ title }}</h1>
-{{ content }}
+{% render pageTitle, title: title %}
+<div class="content">
+  {{ content }}
+</div>

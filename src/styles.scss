@@ -9,6 +9,9 @@ body {
 .content {
   img {
     @apply h-auto w-full;
+    &.about-logo {
+      @apply m-auto max-w-[200px];
+    }
   }
   p,
   h1,
@@ -33,15 +36,6 @@ body {
   }
 }
 
-.page-blog {
-  a {
-    @apply text-yellow-300 underline;
-  }
-  a:hover {
-    @apply text-yellow-500 no-underline;
-  }
-}
-
 footer {
   a {
     @apply text-blue-700 underline;
@@ -52,8 +46,8 @@ footer {
 }
 
 ::selection {
-  background: yellow;
-  color: black;
+  background: theme('colors.yellow.300');
+  color: theme('colors.slate.950');
 }
 
 @layer utilities {

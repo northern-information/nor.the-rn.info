@@ -1,11 +1,39 @@
 ---
-layout: page.liquid
+layout: base.liquid
 ---
-<div class="page-about content grid bg-stone-950 md:grid-cols-2">
-  <div>
+{% render pageTitle, title: title %}
+<div class="grid bg-stone-950 md:grid-cols-2">
+  <div class="content">
     {{ content }}
+    <img
+      src="/images/applied-sciences-and-phantasms-working-division.png"
+      alt="Northern Information Applied Sciences & Phantasms Working Division"
+      class="about-logo"
+    >
+    <p>My accounts:</p>
+    <ul>
+      <li><a href="{{ site.ACCOUNTS.BANDCAMP }}">Bandcamp</a></li>
+      <li><a href="{{ site.ACCOUNTS.BLUESKY }}">Bluesky</a></li>
+      <li><a href="{{ site.ACCOUNTS.DISCORD }}">Discord</a></li>
+      <li><a href="{{ site.ACCOUNTS.GEMINI }}">Gemini</a></li>
+      <li><a href="{{ site.ACCOUNTS.GITHUB }}">GitHub</a></li>
+      <li><a href="{{ site.ACCOUNTS.INSTAGRAM }}">Instagram</a></li>
+      <li><a href="{{ site.ACCOUNTS.LINKEDIN }}">LinkedIn</a></li>
+      <li><a href="{{ site.ACCOUNTS.MASTODON }}">Mastodon</a></li>
+      <li><a href="{{ site.ACCOUNTS.NEWSLETTER }}">Newsletter</a></li>
+      <li><a href="{{ site.ACCOUNTS.SOUNDCLOUD }}">SoundCloud</a></li>
+      <li><a href="{{ site.ACCOUNTS.TWITCH }}">Twitch</a></li>
+      <li><a href="{{ site.ACCOUNTS.X }}">X</a></li>
+      <li><a href="{{ site.ACCOUNTS.YOUTUBE }}">YouTube</a></li>
+    </ul>
+    <p>For bookings and other mischief:</p>
+    <ul>
+      <li>
+        <a href="mailto:{{ site.ACCOUNTS.EMAIL }}">{{ site.ACCOUNTS.EMAIL }}</a>
+      </li>
+    </ul>
   </div>
-  <div class="">
+  <div>
     <a href="/images/abstraction-tyler-1235x.png"><img src="/images/abstraction-tyler-1235x.png" alt="Tyler Etters"></a>
   </div>
 </div>
