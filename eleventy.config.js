@@ -37,29 +37,12 @@ export const DIRS = {
 }
 
 export default async (eleventyConfig) => {
-  eleventyConfig.addCollection('postsByYear', (collectionApi) => {
-    const posts = collectionApi.getFilteredByGlob(
-      `${DIRS.INPUT}/${DIRS.POSTS}/*`
-    )
-    const grouped = posts.reduce((acc, post) => {
-      const year = post.date.getFullYear()
-      if (!acc[year]) {
-        acc[year] = []
-      }
-      acc[year].push(post)
-      return acc
-    }, {})
-
-    return Object.entries(grouped)
-      .map(([year, posts]) => ({
-        year,
-        posts: posts.sort((a, b) => b.date - a.date),
-      }))
-      .sort((a, b) => b.year - a.year)
-  })
-
   eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
     return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(format)
+  })
+
+  eleventyConfig.addFilter('toJson', (json) => {
+    return JSON.stringify(json, null, 2)
   })
 
   eleventyConfig.addPlugin(IdAttributePlugin)
@@ -96,6 +79,27 @@ export default async (eleventyConfig) => {
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
     dynamicPartials: false,
+  })
+
+  eleventyConfig.addCollection('postsByYear', (collectionApi) => {
+    const posts = collectionApi.getFilteredByGlob(
+      `${DIRS.INPUT}/${DIRS.POSTS}/*`
+    )
+    const grouped = posts.reduce((acc, post) => {
+      const year = post.date.getFullYear()
+      if (!acc[year]) {
+        acc[year] = []
+      }
+      acc[year].push(post)
+      return acc
+    }, {})
+
+    return Object.entries(grouped)
+      .map(([year, posts]) => ({
+        year,
+        posts: posts.sort((a, b) => b.date - a.date),
+      }))
+      .sort((a, b) => b.year - a.year)
   })
 
   return {

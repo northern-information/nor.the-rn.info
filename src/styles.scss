@@ -34,6 +34,10 @@ body {
     list-style-type: disc;
     list-style-position: inside;
   }
+  pre,
+  code {
+    @apply overflow-scroll rounded border border-solid border-yellow-300 bg-stone-800 text-yellow-300;
+  }
 }
 
 footer {

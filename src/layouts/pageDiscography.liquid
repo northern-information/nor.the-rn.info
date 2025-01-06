@@ -1,0 +1,10 @@
+---
+layout: base.liquid
+---
+{% render pageTitle, title: title %}
+<div class="content">
+  {{ content }}
+  <pre>
+    {{ site.DISCOGRAPHY | toJson | escape }}
+  </pre>
+</div>
