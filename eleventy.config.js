@@ -37,6 +37,10 @@ export const DIRS = {
 }
 
 export default async (eleventyConfig) => {
+  eleventyConfig.addShortcode('getTimestamp', () => {
+    return Math.floor(new Date().getTime() / 1000)
+  })
+
   eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
     return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(format)
   })
