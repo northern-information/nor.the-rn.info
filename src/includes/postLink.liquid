@@ -1,6 +1,10 @@
 <a
   href="{{ post.url }}"
-  class="block cursor-pointer border-4 border-solid border-transparent text-yellow-300 hover:border-red-500 hover:bg-red-500 hover:text-stone-50"
+  {% if thisPost %}
+    class="block cursor-pointer border-4 border-solid border-transparent bg-red-500 text-stone-50"
+  {% else %}
+    class="block cursor-pointer border-4 border-solid border-transparent text-yellow-300 hover:border-red-500 hover:bg-red-500 hover:text-stone-50"
+  {% endif %}
 >
   <span class="font-semibold">{{ post.data.title }}</span>
   <br>

@@ -1,4 +1,26 @@
 ---
 layout: base.liquid
 ---
-{{ content }}
+{% assign postDate = page.date | date: '%Y' %}
+<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  <div class="md:order-2 md:col-span-2 xl:col-span-4">
+    {% render pageTitle, title: title %}
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+  {% for group in collections.postsByYear %}
+    {% if postDate == group.year %}
+      <div class="md:order-1 md:pe-2">
+        <ul class="list-none">
+          {% for post in group.posts %}
+            {% assign thisPost = post.url == page.url %}
+            <li class="mb-2">
+              {% render postLink, post: post, thisPost: thisPost %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

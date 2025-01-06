@@ -51,7 +51,10 @@ export default async (eleventyConfig) => {
     }, {})
 
     return Object.entries(grouped)
-      .map(([year, posts]) => ({ year, posts }))
+      .map(([year, posts]) => ({
+        year,
+        posts: posts.sort((a, b) => b.date - a.date),
+      }))
       .sort((a, b) => b.year - a.year)
   })
 
