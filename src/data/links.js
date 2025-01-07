@@ -14,6 +14,7 @@ export default [
   { url: 'https://bridgesofkonigsberg.bandcamp.com', title: 'Bridges of Königsberg', },
   { url: 'https://canyonsofstatic.bandcamp.com', title: 'Canyons of Static' },
   { url: 'https://channel.xyz', title: 'channel' },
+  { url: 'https://circularruindsp.com', title: 'Circular Ruin DSP' },
   { url: 'https://components.one', title: 'Components One' },
   { url: 'https://criticalengineering.org', title: 'Critical Engineering Manifesto', },
   { url: 'https://cthdrl.co', title: 'CTHDRL' },
