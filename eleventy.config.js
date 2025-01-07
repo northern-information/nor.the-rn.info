@@ -1,5 +1,6 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
 import { feedPlugin } from '@11ty/eleventy-plugin-rss'
+import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
 
@@ -47,6 +48,16 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('toJson', (json) => {
     return JSON.stringify(json, null, 2)
+  })
+
+  const markdownLib = markdownIt({
+    html: true,
+  })
+
+  eleventyConfig.setLibrary('md', markdownLib)
+
+  eleventyConfig.addFilter('markdown', (content) => {
+    return markdownLib.render(content)
   })
 
   eleventyConfig.addPlugin(IdAttributePlugin)

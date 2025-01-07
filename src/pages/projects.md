@@ -1,7 +1,5 @@
 ---
 title: Projects
-layout: page.liquid
+layout: pageProjects.liquid
 page_excerpt_overload: Major creative projects.
 ---
-
-Soon...

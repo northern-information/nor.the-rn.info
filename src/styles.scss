@@ -65,11 +65,12 @@ body {
   code {
     @apply overflow-scroll rounded border border-solid border-yellow-300 bg-stone-800 text-yellow-300;
   }
-  pre {
+  pre,
+  code {
     @apply px-2 py-2;
   }
   pre code {
-    @apply border-none;
+    @apply border-none px-0 py-0;
   }
   blockquote {
     @apply ml-2 border-l-2 border-solid border-stone-400 pl-2;
