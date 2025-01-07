@@ -2,14 +2,14 @@
   "name": "northern-information",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run eleventy:watch\" \"npm run css:watch\"",
+    "dev": "concurrently 'npm run eleventy:watch' 'npm run css:watch'",
     "build": "npm run css:build && npm run eleventy:build",
     "preview": "npm run build && wrangler pages dev ./dist",
     "deploy": "npm run build && wrangler pages deploy ./dist",
     "pretty": "prettier --write .",
     "eleventy:base": "npx @11ty/eleventy",
     "eleventy:build": "npm run eleventy:base",
-    "eleventy:watch": "SITE_URL='https://localhost:8080' npm run eleventy:base -- --serve",
+    "eleventy:watch": "SITE_URL='https://localhost:8080' npm run eleventy:base -- --serve --quiet",
     "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css",
     "css:build": "npm run css:base -- --minify",
     "css:watch": "npm run css:base -- --watch"

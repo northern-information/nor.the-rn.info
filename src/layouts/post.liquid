@@ -5,9 +5,11 @@ layout: base.liquid
 <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
   <div class="md:order-2 md:col-span-2 xl:col-span-4">
     {% render pageTitle, title: title %}
-    <div class="content">
+    <div class="content mb-10">
       {{ content }}
+      {% render spectrum %}
     </div>
+
   </div>
   {% for group in collections.postsByYear %}
     {% if postDate == group.year %}

@@ -7,11 +7,33 @@ body {
 }
 
 .content {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  img,
+  ul,
+  ol,
+  code,
+  pre,
+  iframe {
+    @apply mb-2;
+  }
   img {
     @apply h-auto w-full;
     &.about-logo {
       @apply my-2 max-w-[200px];
     }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-xl;
   }
   p,
   h1,
@@ -21,7 +43,7 @@ body {
   h5,
   ul,
   ol {
-    @apply mb-2 text-stone-50;
+    @apply text-stone-50;
   }
   a {
     @apply text-yellow-300 underline;
@@ -29,14 +51,22 @@ body {
   a:hover {
     @apply text-yellow-500 no-underline;
   }
+  ul {
+    list-style-type: disc;
+  }
   ul,
   ol {
-    list-style-type: disc;
     list-style-position: inside;
   }
   pre,
   code {
     @apply overflow-scroll rounded border border-solid border-yellow-300 bg-stone-800 text-yellow-300;
+  }
+  pre {
+    @apply px-2 py-2;
+  }
+  pre code {
+    @apply border-none;
   }
   blockquote {
     @apply ml-2 border-l-2 border-solid border-stone-400 pl-2;
