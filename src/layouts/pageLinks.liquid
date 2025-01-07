@@ -1,0 +1,23 @@
+---
+layout: base.liquid
+---
+{% render pageTitle, title: title %}
+<div class="content">
+  {{ content }}
+</div>
+<ul class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 list-none">
+  {% for link in links %}
+    <li class="mb-2">
+      <a href="{{ link.url }}" target="_blank" class="font-semibold block cursor-pointer border-4 border-solid border-transparent text-yellow-300 hover:border-red-500 hover:bg-red-500 hover:text-stone-50">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% render pageTitle, title: 'Webring' %}
+<div class="content grid grid-cols-1 md:grid-cols-3">
+  <div class="grid-cols-1">
+    <p>This <a href="https://webring.xxiivv.com">webring</a>
+      is an attempt to inspire artists &amp; developers to build their own website and share traffic among each other. The ring welcomes personalized websites such as diaries, wikis &amp; portfolios.</p>
+    <p>To add yourself to the ring, submit a <a href="https://github.com/XXIIVV/webring#join-the-webring">pull request</a>.</p>
+    <a href="https://webring.xxiivv.com/" class="webring"><img src="https://webring.xxiivv.com/icon.white.svg" /></a>
+  </div.
+</div>

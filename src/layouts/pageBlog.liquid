@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 {% render pageTitle, title: title %}
-<div class="page-blog grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
   {% for group in collections.postsByYear %}
     <div class="md:pe-2">
       <h2 class="mb-2 text-4xl text-stone-50">{{ group.year }}</h2>
