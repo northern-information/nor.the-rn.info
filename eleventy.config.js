@@ -19,7 +19,7 @@ export const META = {
   FEED: 'feed.xml',
   GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),
   GIT_HASH: execSync('git rev-parse HEAD').toString().trim(),
-  GITHUB_URL: 'https://github.com/tyleretters/rm_ation',
+  GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
   TITLE: 'Northern Information',
