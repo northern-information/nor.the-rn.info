@@ -38,6 +38,10 @@ export const DIRS = {
 }
 
 export default async (eleventyConfig) => {
+  eleventyConfig.addShortcode('getTitle', (title) => {
+    return `${title} | ${META.TITLE}`
+  })
+
   eleventyConfig.addShortcode('getTimestamp', () => {
     return Math.floor(new Date().getTime() / 1000)
   })

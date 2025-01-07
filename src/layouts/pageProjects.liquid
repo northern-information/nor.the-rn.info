@@ -2,22 +2,26 @@
 layout: base.liquid
 ---
 {% render pageTitle, title: title %}
-<ul class="content grid grid-cols-1 -mx-2 -my-2">
+<ul class="content grid grid-cols-1">
   {% for project in projects %}
     <li class="mb-10">
-      <div class="mb-8 grid grid-cols-1 md:grid-cols-3">
-        <div>
+      {% if project.title != 'Circular Ruin DSP' %}
+        <div class="-mx-2 h-10">
+          {% render spectrum %}
+        </div>
+      {% endif %}
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="md:pr-4">
           <h2>{{ project.title }}</h2>
           <p>{{ project.dates }}</p>
           {{ project.content | markdown }}
         </div>
         <div class="md:col-span-2">
-          <img src="{{ project.image }}" alt="{{ project.title }}">
+          <a href="{{ project.image }}">
+            <img src="{{ project.image }}" alt="{{ project.title }}" class="!mb-0">
+          </a>
         </div>
       </div>
-      {% if project.title != 'Hollow Moon Studios' %}
-        {% render spectrum %}
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
