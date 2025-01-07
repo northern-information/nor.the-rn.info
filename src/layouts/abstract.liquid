@@ -3,7 +3,7 @@
   <head>
     {% render metaTags, site: site %}
     <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
-    <title>{{ title }}</title>
+    <title>{{ title }} | {{ site.META.TITLE }}</title>
   </head>
   <body>
     {{ content }}
