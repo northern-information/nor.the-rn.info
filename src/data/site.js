@@ -1,10 +1,8 @@
 import { META } from '../../eleventy.config.js'
-import discography from '@tyleretters/discography'
 
 // prettier-ignore
 export default {
   META,
-  DISCOGRAPHY: discography,
   ACCOUNTS: {
     BANDCAMP: 'https://intertext.bandcamp.com',
     BLUESKY: 'https://bsky.app/profile/tyleretters.bsky.social',

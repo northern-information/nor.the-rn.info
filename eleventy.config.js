@@ -3,6 +3,7 @@ import { feedPlugin } from '@11ty/eleventy-plugin-rss'
 import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
+import implicitFigures from 'markdown-it-implicit-figures'
 
 export const PATH_PREFIX = '/rm_ation/'
 
@@ -54,8 +55,8 @@ export default async (eleventyConfig) => {
     return JSON.stringify(json, null, 2)
   })
 
-  const markdownLib = markdownIt({
-    html: true,
+  const markdownLib = markdownIt({ html: true }).use(implicitFigures, {
+    figcaption: false,
   })
 
   eleventyConfig.setLibrary('md', markdownLib)
