@@ -101,6 +101,10 @@ export default async (eleventyConfig) => {
     dynamicPartials: false,
   })
 
+  eleventyConfig.addCollection('posts', (collectionApi) => {
+    return collectionApi.getFilteredByGlob(`${DIRS.INPUT}/${DIRS.POSTS}/*`)
+  })
+
   eleventyConfig.addCollection('postsByYear', (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob(
       `${DIRS.INPUT}/${DIRS.POSTS}/*`
