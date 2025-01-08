@@ -6,8 +6,6 @@ tags: ["Collapse"]
 
 I came to terms with my mortality at a young age. It was 2006. I was 18, commuting to college on the Metra, reading Stephen King's _The Dark Tower_. (I think it was book five, but I'm not sure.)
 
-<!--x-->
-
 I put the book down and looked out the window: _"I am going to die."_
 
 It was a slight whisper of a thought at first. Then it grew. I repeated it in my mind with increased confidence and certainty. After five or six iterations I was at peace with the finality.

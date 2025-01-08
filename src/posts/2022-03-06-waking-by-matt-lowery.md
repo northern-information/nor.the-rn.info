@@ -6,7 +6,7 @@ tags: ["Releases"]
 
 ![Matt Lowery waking](/images/matt-lowery-waking.jpg)
 
-I had the pleasure of designing album artwork with [Matt Lowery](https://mattlowery.bandcamp.com/album/waking) for his [Mystery Circles](https://mysterycircles.com/) release. Though the core of every project is based on trust and my relationships, the processes for each project differs wildly based on a number of factors:<!--x-->
+I had the pleasure of designing album artwork with [Matt Lowery](https://mattlowery.bandcamp.com/album/waking) for his [Mystery Circles](https://mysterycircles.com/) release. Though the core of every project is based on trust and my relationships, the processes for each project differs wildly based on a number of factors:
 
 **Who am I working with?** Matt is a peer and a friend.
 

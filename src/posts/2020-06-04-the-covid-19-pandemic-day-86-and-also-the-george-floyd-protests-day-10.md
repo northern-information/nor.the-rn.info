@@ -6,8 +6,6 @@ tags: ["Collapse"]
 
 What is the role of the artist in these times?
 
-<!--x-->
-
 To create meaning.
 
 To inspire others to create meaning.

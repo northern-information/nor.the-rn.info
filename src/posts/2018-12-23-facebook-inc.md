@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 Deleting your account is no longer subversive. As recently as a year or two ago, my friends would generally respond with incredulous horror when I floated the idea by them. But now, the same people shrug and mumble something in the sympathetic affirmative. Deleting your account has gone from the fringe to the mainstream. Case in point: I'm not even going to go through my reasons for leaving because I'm willing to bet you already know them.
 
-<!--x-->
-
 I remember signing up in 2006 the moment I got my Columbia College Chicago email address. During what felt like the main attraction of my orientation tour, four extremely beautiful seniors told us how great it was. I remember them sitting on the edge of the stage, oozing with cool and years of collegian social experience. Indeed, they confirmed, the rumors were true: Facebook, Inc. was where all the action happened.
 
 Facebook, Inc. has been really good to me. My first message to my wife was there. Friends, family, communities, etc. Everyone has the same story, the same complex relationship with Facebook, Inc. And that is why it is time to leave.

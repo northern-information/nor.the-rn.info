@@ -4,7 +4,7 @@ date: 2023-11-20
 tags: ["Wildcard"]
 ---
 
-I had very different dreams before 2020. I mean this both literally and metaphorically. After sharing some finer points about this matter with my best friend, he gently inquired if I suffered from PTSD. I had to think about that for a minute.<!--x-->
+I had very different dreams before 2020. I mean this both literally and metaphorically. After sharing some finer points about this matter with my best friend, he gently inquired if I suffered from PTSD. I had to think about that for a minute.
 
 I'm sitting up in bed, heartbeat racing from another nightmare. This one was a tangle of lost friends, failed drugstore bathroom lip-piercing operations, unread but undoubtedly horrible text messages, shame, and familial dissolution. I think back. Any triggering events today? Not really... except for dynamiting [this leviathan psychic logjam](/2023/11/19/ending-a-game/). Ah. Yes. Such things always have unforeseen consequences downstream with me.
 

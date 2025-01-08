@@ -10,8 +10,6 @@ tags: ["Music Technology"]
 
 Drones I wanted, and drones I created.
 
-<!--x-->
-
 ## TIL
 
 I like Maths.

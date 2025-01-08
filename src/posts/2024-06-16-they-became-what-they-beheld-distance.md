@@ -6,7 +6,7 @@ tags: ["Releases"]
 
 ![Distance](/images/distance.jpg)
 
-New music from They Became What They Beheld: [Distance](https://theybecamewhattheybeheld.bandcamp.com/album/distance)<!--x-->
+New music from They Became What They Beheld: [Distance](https://theybecamewhattheybeheld.bandcamp.com/album/distance)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LK9NpQ7QSoo?si=vnoM1S6xXbCTWX-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

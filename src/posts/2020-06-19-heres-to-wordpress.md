@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 Until last night, I've had WP servers running continuously since 2009. Yes, I destroyed my last server. It was a long time coming. This is an ode to WP, the platform that jump-started my career and welcomed my plunge into web technology.
 
-<!--x-->
-
 Here's to you WP, you and your beautiful community.
 
 Here's to the punk-zine ethos and empowerment I think we all felt in the early days.

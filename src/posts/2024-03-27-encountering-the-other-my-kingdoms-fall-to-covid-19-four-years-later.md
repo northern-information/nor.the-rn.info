@@ -6,7 +6,7 @@ tags: ["Collapse"]
 
 ![And Then We Saw the Daughter of The Minotaur, by Leonora Carrington 1953](/images/and-then-we-saw-the-daughter-of-the-minotaur-1953-leonora-carrington.jpg)
 
-"Why am I so exhausted?" I said, collapsing into bed two hours before my usual Sunday bedtime. I had spent the entire day doing nothing but sweeping the balcony, watering plants, and napping. I smudged some palo santo <!--x-->around the room, an ancient ritual I rarely conduct anymore, and crashed. At 4 A.M., I awoke uncomfortable and feverish. Sage took my temperature and gave me a COVID test.
+"Why am I so exhausted?" I said, collapsing into bed two hours before my usual Sunday bedtime. I had spent the entire day doing nothing but sweeping the balcony, watering plants, and napping. I smudged some palo santo around the room, an ancient ritual I rarely conduct anymore, and crashed. At 4 A.M., I awoke uncomfortable and feverish. Sage took my temperature and gave me a COVID test.
 
 "Remind me how this one works again?" Sage said. It's been a while since we've tested ourselves.
 

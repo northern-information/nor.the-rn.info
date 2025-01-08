@@ -4,7 +4,7 @@ date: 2022-04-27
 tags: ["Wildcard"]
 ---
 
-I'm traveling soon. Why not pair with a social fast? Then it hit me: _everyone should social fast while traveling._ I owe a huge thanks to artist and friend [Gage Lindsten](https://www.instagram.com/gage_lindsten/) for reminding me social network fasts are a thing. Three reasons why you should social fast while traveling:<!--x-->
+I'm traveling soon. Why not pair with a social fast? Then it hit me: _everyone should social fast while traveling._ I owe a huge thanks to artist and friend [Gage Lindsten](https://www.instagram.com/gage_lindsten/) for reminding me social network fasts are a thing. Three reasons why you should social fast while traveling:
 
 1. We're at war.
 2. Nothing is good enough.

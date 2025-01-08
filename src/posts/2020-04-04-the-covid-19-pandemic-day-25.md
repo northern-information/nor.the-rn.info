@@ -8,8 +8,6 @@ tags: ["Collapse"]
 
 Time feels funny. Slow burn perpetual crisis. Asymmetric anguish: internet, grocer, family, self. Back up the chain. All plans waylaid. The sudden cancelation of the future. How far forward should we clear our calendars?
 
-<!--x-->
-
 Are we just getting started or are we just starting to get it?
 
 A sigil of hope appeared yesterday. In the checkout line at the grocery store I saw a magazine. Printed on the cover (I certainly didn't touch it) was saccharine copy about the impacts of the virus on families the world over. "At least," I thought, "this means it didn't end before print caught up to it all."

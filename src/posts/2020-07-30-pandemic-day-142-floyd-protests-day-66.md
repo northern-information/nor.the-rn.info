@@ -6,8 +6,6 @@ tags: ["Collapse"]
 
 A magnitude 4.2 earthquake woke us up today. I spent the first 32 years of my life in the midwest. There are no earthquakes in the midwest. This is a new experience for me. Though, according to my mother, I was in San Diego in the early 90s when a large earthquake hit. I have no recollection of this event.
 
-<!--x-->
-
 It was a primal sensation. I wasn't afraid. It was more a sense of respect; the same type of respect I have for large bodies of water and fire. Someday, I hope to be able to lie directly on the ground during an earthquake and to feel it in my bones.
 
 ---

@@ -6,8 +6,6 @@ tags: ["Collapse"]
 
 [Kim Stanley Robinson writing for The New Yorker:](https://www.newyorker.com/culture/annals-of-inquiry/the-coronavirus-and-our-future)
 
-<!--x-->
-
 > Now comes this disease that can kill anyone on the planet. It's invisible; it spreads because of the way we move and congregate. Instantly, we've changed. As a society, we're watching the statistics, following the recommendations, listening to the scientists. Do we believe in science? Go outside and you'll see the proof that we do everywhere you look. We're learning to trust our science as a society. That's another part of the new structure of feeling.
 
 ---

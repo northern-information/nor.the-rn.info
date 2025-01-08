@@ -6,8 +6,6 @@ tags: ["Collapse"]
 
 [Al Tenhundfeld writing on Simple Thread's blog](https://www.simplethread.com/your-team-is-smoldering/):
 
-<!--x-->
-
 > At work, your team is smoldering. At home, your family is smoldering. Your friends are smoldering. Everyone you know and love and care about is smoldering. As a nation, we are smoldering.
 >
 > By smoldering, I mean we are on the edge of burnout. We have used up our reservoirs of resilience, our ability to take setbacks and keep trucking. Some parts of our society have already crossed that threshold.

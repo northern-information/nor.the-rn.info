@@ -6,7 +6,7 @@ tags: ["Releases"]
 
 ![EP3](/images/ep3.jpg)
 
-[History doesn't repeat, but it does rhyme.](https://theybecamewhattheybeheld.bandcamp.com/album/ep3) I wear my influences on my sleeve: William Basinski, The Caretaker, early Sons of Magdalene.<!--x-->
+[History doesn't repeat, but it does rhyme.](https://theybecamewhattheybeheld.bandcamp.com/album/ep3) I wear my influences on my sleeve: William Basinski, The Caretaker, early Sons of Magdalene.
 
 I finally figured out that KUSC radio broadcast of "Giovanni Gabrieli - Sanctus: VI. Hosanna in excelsis." Iranian missiles were in the air. Disintegrating YouTube video loops of a world traded, center stage.
 

@@ -9,5 +9,3 @@ tags: ["Wildcard"]
 > "In celestial spaces shadows cannot fail to fall, and the solid earth must now and then intercept them."
 >
 > — Mabel Loomis Todd, 1897
-
-<!--x-->

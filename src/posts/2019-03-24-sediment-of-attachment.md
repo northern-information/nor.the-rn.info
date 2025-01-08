@@ -8,8 +8,6 @@ tags: ["Wildcard"]
 
 I drew this picture yesterday. It is how I experience entities. People, places, food, music, a hangnail, a hole in a sock. I start at the top, on the surface, and the go deeper. I think layers 1 (Ignorance) and 5 (Integration) are the sweet spots.
 
-<!--x-->
-
 1. **Ignorance**: I am blissfully unaware of the entity.
 2. **Suspicion**: I suspect an entity might exist. Maybe I saw everyone in the office eating strawberries at their desk, so I hypothesize a communal bowl of strawberries is in the kitchen.
 3. **Awareness**: I have indeed discovered a bowl of strawberries in the kitchen.

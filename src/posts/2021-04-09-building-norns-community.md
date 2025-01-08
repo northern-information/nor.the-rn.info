@@ -10,8 +10,6 @@ tags: ["Music Technology"]
 
 This is a visual account of building [https://norns.community](https://norns.community). It is divded into 4 sections:
 
-<!--x-->
-
 1. Overview
 2. The Design Challenge
 3. A Solution

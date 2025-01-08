@@ -6,8 +6,6 @@ tags: ["Mythologies"]
 
 Where were you when it happened?
 
-<!--x-->
-
 > During first period English class, our social studies teacher popped his head into the room and announced, "A plane has hit the world trade center," and promptly disappeared like a prairie gopher. We were dumbfounded. What is the World Trade Center? Why did a plane hit it?
 >
 > In the hall, our normally jubilant and compassionate health teacher was weeping. Her partner was apparently a pilot for American Airlines and flying the east coast that day. This was before cell phones.

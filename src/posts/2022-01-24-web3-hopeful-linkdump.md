@@ -8,7 +8,7 @@ tags: ["Wildcard"]
 
 2015-ish. A Bitcoin seller's account is punched up on the Wells Fargo ATM. Several hundred USD cash in my sweaty hand. I couldn't do it. Too sketch...
 
-Aside from mining it yourself, that was just about the only way to get crypto back then. Things are different now.<!--x--> I made a Coinbase account a few nights ago. Excellent UX. Fast. High trust. Felt leagues better than my fiat bank's website.
+Aside from mining it yourself, that was just about the only way to get crypto back then. Things are different now. I made a Coinbase account a few nights ago. Excellent UX. Fast. High trust. Felt leagues better than my fiat bank's website.
 
 Why did I open a Coinbase account?
 

@@ -8,7 +8,7 @@ tags: ["Wildcard"]
 
 ![Birth of a New Day](/images/birth-of-a-new-day.jpg)
 
-2814's 2015 opus is the logical sublimation of all vaporwave: glossy, nip/tucked, baked. But is it techno? Maybe.<!--x-->
+2814's 2015 opus is the logical sublimation of all vaporwave: glossy, nip/tucked, baked. But is it techno? Maybe.
 
 [https://2814.bandcamp.com/album/birth-of-a-new-day](https://dreamcatalogue.bandcamp.com/album/--18)
 

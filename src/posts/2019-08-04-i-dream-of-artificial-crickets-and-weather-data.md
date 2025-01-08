@@ -6,8 +6,6 @@ tags: ["Music Technology", "Art"]
 
 I read a quote the other day: never go to sleep without asking your subconscious something. I've been doing this for a few nights now and am happy to report the results are remarkable. Last night my ask was to figure out how to get unstuck for the next episode of [UTC](https://apodcastfornow.com).
 
-<!--x-->
-
 I had a dream about crickets and the weather and it all snapped into place. I woke up, got further inspiration from the [Critical Engineering Manifesto](https://criticalengineering.org/), and made this in about two hours:
 
 ![api.weather.gov](/images/api.weather.gov.png)

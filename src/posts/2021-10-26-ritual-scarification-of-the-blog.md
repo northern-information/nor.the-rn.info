@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 I recently removed the "[IBM Plex](https://fonts.google.com/specimen/IBM+Plex+Sans)" font and reverted to the [Digital Ocean Sans-Serif CSS Font Stack](https://www.digitalocean.com/community/tutorials/css-system-font-stack). I'd paraphrase for you but this is all gold:
 
-<!--x-->
-
 > Fonts on a website can easily become a large part of the total bundle size that browsers have to download before being able to display a page in its final look and form. Plus, we need to worry about all kinds of things like the infamous Flash of Unstyled Text (FOUT). Arguably, though, part of this whole issue has been resolved, thanks to the font-display property.
 >
 > Added to that is the fact that the text found on a website is almost always the most important part, so we don't want text that doesn't look right or that's hard to read. What's a savvy web designer to do to satisfy both performance as well as look and feel?

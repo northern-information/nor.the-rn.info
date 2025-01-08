@@ -6,7 +6,7 @@ tags: ["Releases"]
 
 ![EP2](/images/ep2.jpg)
 
-[Staggering through the canyon, diskette in hand, the tracks, the next two tracks.](https://theybecamewhattheybeheld.bandcamp.com/album/ep2) Does this clear things up? Or make matters worse?<!--x-->
+[Staggering through the canyon, diskette in hand, the tracks, the next two tracks.](https://theybecamewhattheybeheld.bandcamp.com/album/ep2) Does this clear things up? Or make matters worse?
 
 I dueled with a KUSC radio broadcast of "Giovanni Gabrieli - Sanctus: VI. Hosanna in excelsis" for _years_ but each time I was bested. So, pummeled into this hecatomb-cocoon of 2022, I reached back 32 years. It was the only way forward.
 

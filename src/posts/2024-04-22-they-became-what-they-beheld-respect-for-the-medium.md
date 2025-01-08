@@ -8,7 +8,7 @@ tags: ["Releases"]
 
 New music from They Became What They Beheld: [Respect for the Medium](https://theybecamewhattheybeheld.bandcamp.com/album/respect-for-the-medium)
 
-The fundamental audio loop is more Gabrieli.<!--x-->
+The fundamental audio loop is more Gabrieli.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nzW5i-ifn5g?si=nEgFG8FmWsvw0DJC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

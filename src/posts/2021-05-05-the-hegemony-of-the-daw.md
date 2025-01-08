@@ -6,8 +6,6 @@ tags: ["Music Technology"]
 
 [Michael Terren, in The Hegemony of the DAW:](https://disclaimer.org.au/contents/where-and-how-to-gather/the-hegemony-of-the-daw)
 
-<!--x-->
-
 > Further, American musicologist Robin James suggests that the uptake of DAWs in popular music practice, and its subsequent emphasis on timbre as opposed to melodic or rhythmic innovation, parallels the 'cognitive turn' of capitalism. Timbre is a diffuse concept that is often defined by what it is not: all the qualities of a sound except for pitch or loudness, many of which are subjective and informed by cultural and historical factors. By assigning parameters to timbre and making them measurable, repeatable, and subject to automation, DAWs offer a protocol of control for the characteristics of sound that cannot be described by consensus. 'The interfaces of these electronic instruments,' James writes, 'make explicit and quantitatively specific some dimensions of timbre that were implicit, qualitative features of traditional notation and instruments … and make them work as one of the central engines of musical composition and expression.' Just as cognitive capitalism monetises subjectivity, the DAW instrumentalises the inherent subjectivity of sound.
 >
 > [...]

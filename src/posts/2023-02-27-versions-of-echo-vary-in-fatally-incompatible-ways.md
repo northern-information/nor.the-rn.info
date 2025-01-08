@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 I've been getting back to the basics lately. The following excerpt is from [opengroup.org](https://pubs.opengroup.org/onlinepubs/000095399/utilities/echo.html). `echo` is out. `printf` is in. I think I remember learning from my mentor, Stu, about 10 years ago...
 
-But instead of integrating this somber fact, I invented all sorts of silly reasons to not adopt `printf` over `echo`. One less character. Easier to<!--x--> type. Sounds cooler. Is actually a word. I like delay pedals. Whatever. I wish I had gotten curious about my beliefs instead of rationalizing towards whatever I wanted to be true.
+But instead of integrating this somber fact, I invented all sorts of silly reasons to not adopt `printf` over `echo`. One less character. Easier to type. Sounds cooler. Is actually a word. I like delay pedals. Whatever. I wish I had gotten curious about my beliefs instead of rationalizing towards whatever I wanted to be true.
 
 > **APPLICATION USAGE**
 >

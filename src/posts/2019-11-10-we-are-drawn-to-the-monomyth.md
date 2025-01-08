@@ -6,8 +6,6 @@ tags: ["Thinkpieces"]
 
 We are drawn to the monomyth because it makes sense and our lives simply don't. We're afraid of our own stories because they are unlike the stories we're familiar with. These two forces create a feedback loop.
 
-<!--x-->
-
 The monomyth is the "only story" there is to tell. It is the hero's journey: a step into the unknown, meeting a mentor, the darkest hour, then triumph, the return home.
 
 Homer's Iliad is one of the oldest stories to follow this template. You learn about these intricacies whenever you take a fiction writing class. It isn't a secret. It is just the mechanics of how good stories work. Do it right, and your audience will feel comfort, cohesion, and continuity.

@@ -4,7 +4,7 @@ date: 2022-03-05
 tags: ["Wildcard"]
 ---
 
-Question: When is a tornado siren not a bad portent?<!--x-->
+Question: When is a tornado siren not a bad portent?
 
 Answer: When it is a test run, on the first Tuesday of the month, in the midwestern region of the United States of America.
 

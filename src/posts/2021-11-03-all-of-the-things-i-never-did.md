@@ -6,8 +6,6 @@ tags: ["Thinkpieces"]
 
 My grandfather offered me a wooden toy he made with his own hands I shook my head no because it looked fragile and I didn't want to break it and dishonor him but then never have I seen someone so sad when he put it back on the top shelf of his workshop a few years later he died and I never did see that toy again.
 
-<!--x-->
-
 ---
 
 My close friend had taken too many drugs and was having a bad trip that halloween and I needed a break from babysitting so I went to the gas station to get a vitamin water and protein bar and when I got back everyone else decided to call an ambulance and I was angry because we just had to ride the acid out a few more hours but instead we got The System involved and he came down alone securely strapped in hospital bed somewhere but I wasn't there and our friendship never recovered after that.

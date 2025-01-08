@@ -8,8 +8,6 @@ tags: ["S♯A♯B∞"]
 
 It is important for me to see the city. [Last I was here](/2020/03/12/the-covid-19-pandemic-day-2/) things were quite grim. That paranoid, phantom city haunted me.
 
-<!--x-->
-
 But Chicago has healed, adapted, moved on. I'm ashamed I ever doubted it.
 
 I'm here in the magical two week window between summer and fall. Everything is beautiful and alive. The weather is perfect.

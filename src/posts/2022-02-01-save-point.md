@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 [Gahlord Dewald, writing for his newsletter:](https://gahlorddewald.com/)
 
-> The culture we make as a society is a reflection. It reflects our values, our hopes, our vision, our fears. We dream of travel and so we make airplanes and cars and trains, devise a myriad of social practices and language to encode it in our society—highways, rush hour, morning commute, stuck in traffic.<!--x-->
+> The culture we make as a society is a reflection. It reflects our values, our hopes, our vision, our fears. We dream of travel and so we make airplanes and cars and trains, devise a myriad of social practices and language to encode it in our society—highways, rush hour, morning commute, stuck in traffic.
 >
 > Recently Neil Young and Joni Mitchell reminded us of one way music and business rituals intertwine. Young feels that his music should not be the loss leader used to pay for messages that are dangerous to his community.
 >

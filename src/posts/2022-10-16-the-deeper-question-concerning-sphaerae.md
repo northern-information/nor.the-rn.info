@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 [Mike Edmunds, writing for Inference:](https://inference-review.com/article/a-mirror-of-nature)
 
-> From my own perspective, the deeper question concerning sphaerae is to what extent the development of this technology prompted the Greeks and Romans into a new worldview. The technology may have affected not only mathematics, but also the idea that the universe itself is in some sense mechanical — and long before the so-called scientific revolution of the Renaissance. For Samuel Sambursky,<!--x--> the question is
+> From my own perspective, the deeper question concerning sphaerae is to what extent the development of this technology prompted the Greeks and Romans into a new worldview. The technology may have affected not only mathematics, but also the idea that the universe itself is in some sense mechanical — and long before the so-called scientific revolution of the Renaissance. For Samuel Sambursky, the question is
 >
 > > whether these models are only convenient means of illustration, devices adapted to our needs for an ordered description, or whether they represent to a greater or lesser degree some faithful image of a physical reality corresponding to them.
 >

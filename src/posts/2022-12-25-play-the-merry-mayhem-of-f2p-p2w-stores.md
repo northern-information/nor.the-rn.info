@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ![Call of Duty MW2, Merry Mayhem](/images/cod-01-merry-mayhem.jpg)
 
-Free-to-play (F2P) and Pay-to-win (P2W) games are a relatively recent innovation in the interactive media space. F2P games allow players to download and play without spending money. But, each time you login, you will be confronted with increasingly elaborate, confounding, and garish online shoppes, hawking virtual wares for your virtual avatar. These items are generally cosmetic or non-functional - they don't give you an edge in gameplay, but they certainly give you<!--x--> a dopamine hit.
+Free-to-play (F2P) and Pay-to-win (P2W) games are a relatively recent innovation in the interactive media space. F2P games allow players to download and play without spending money. But, each time you login, you will be confronted with increasingly elaborate, confounding, and garish online shoppes, hawking virtual wares for your virtual avatar. These items are generally cosmetic or non-functional - they don't give you an edge in gameplay, but they certainly give you a dopamine hit.
 
 Like F2P games, P2W games are typically "free" but also contain micro-transactions which yield higher-quality items and abilities. These are always somehow _better than_ their free analogs: guns that shoot further, armor with more hit points, special shoes that make you run faster. You get the idea.
 

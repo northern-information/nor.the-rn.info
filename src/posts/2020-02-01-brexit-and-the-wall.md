@@ -8,8 +8,6 @@ tags: ["Collapse"]
 
 Just 31 days into the new decade, at 11:00PM GMT, Britain left the European Union. Recorded bells from Big Ben - currently under renovation - pealed in the new era. Only time will tell what comes next, what this all means.
 
-<!--x-->
-
 ![Brexit](/images/brexit-celebration.png)
 
 ![The Wall](/images/the-wall.jpg)

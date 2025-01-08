@@ -6,7 +6,7 @@ tags: ["Releases"]
 
 ![Radio Free Albemuth](/images/radio-free-albemuth.jpg)
 
-New music from They Became What They Beheld: [Radio Free Albemuth](https://theybecamewhattheybeheld.bandcamp.com/album/radio-free-albemuth)<!--x-->
+New music from They Became What They Beheld: [Radio Free Albemuth](https://theybecamewhattheybeheld.bandcamp.com/album/radio-free-albemuth)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rT82FIPARv0?si=xxHluGfCH0SE_cSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 [Simon Sarris, writing for The Map is Mostly Water:](https://simonsarris.substack.com/p/start-with-creation)
 
-> So it is an error to wait around for inspiration, or to demand some feeling of readiness for an undertaking, or for a teacher or some other golden opportunity. I think these slouching inclinations come partly from an overly-systematized experience during childhood school years, and partly from a fear of failure.<!--x--> In fact, when you stop waiting for others—for either their permission or instruction—and instead begin on your own, fumbling through, regardless of how ready you are, this could be considered one of the true beginnings of adulthood.
+> So it is an error to wait around for inspiration, or to demand some feeling of readiness for an undertaking, or for a teacher or some other golden opportunity. I think these slouching inclinations come partly from an overly-systematized experience during childhood school years, and partly from a fear of failure. In fact, when you stop waiting for others—for either their permission or instruction—and instead begin on your own, fumbling through, regardless of how ready you are, this could be considered one of the true beginnings of adulthood.
 >
 > I think there is value in pushing learning and doing as close together as possible. I wish to learn like an apprentice with no fixed master, instead with repeated trial and sharing the results. If no teacher is found along the way, then the mistakes will be my teacher. Every undertaking is a series of questions and experiments. I believe every hard thing you do, for that matter, acts as a multiplier on the rest of your knowledge.
 >

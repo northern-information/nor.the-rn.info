@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ![Terminus Tyler](/images/terminus-tyler-500x.jpg)
 
-The mission of art is to lie. And through these lies, to service a greater truth. A certain truth which a purely objective<!--x--> recollection of events could never approach. To encode these events not as they actually happened, but as they _should_ have happened, in these hypertext reveries.
+The mission of art is to lie. And through these lies, to service a greater truth. A certain truth which a purely objective recollection of events could never approach. To encode these events not as they actually happened, but as they _should_ have happened, in these hypertext reveries.
 
 But the myths dissolve, as they always do, when communities can no longer maintain a critical mass of family, fans, users, supplicants, or faithful to tell their own stories.
 

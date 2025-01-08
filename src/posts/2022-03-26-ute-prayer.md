@@ -8,7 +8,7 @@ tags: ["Wildcard"]
 > as the grasses are stilled with light.
 >
 > Earth teach me suffering<br>
-> as old stones suffer with memory.<!--x-->
+> as old stones suffer with memory.
 >
 > Earth teach me humility<br>
 > as blossoms are humble with beginning.

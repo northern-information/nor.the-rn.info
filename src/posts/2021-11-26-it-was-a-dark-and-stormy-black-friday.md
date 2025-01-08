@@ -10,8 +10,6 @@ It was a dark and stormy Black Friday.
 
 Somewhere in Wichita, Kansas a woman typed in a `20PERCENT` discount code for a holiday calendar with images automatically pulled from her iCloud.
 
-<!--x-->
-
 Somewhere in Spokane, Washington a COVID-widowed man grappled for purchase with his Best Buy boxes and decided today would be his first time eating out alone.
 
 Somewhere in Wauconda, Illinois a man could not leave to get his RTX 3080 Ti because a willow tree collapsed from a sudden morning frost and destroyed his car.

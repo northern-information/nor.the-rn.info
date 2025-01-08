@@ -20,7 +20,7 @@ I built it with these values in mind:
 - Pragmatism
 - Aesthetic Minimalism
 
-This project was heavily inspired by<!--x--> [my experience building norns.community](/2023/05/27/rebuilding-norns-community/).
+This project was heavily inspired by [my experience building norns.community](/2023/05/27/rebuilding-norns-community/).
 
 The source code for the [React frontend is here](https://github.com/tyleretters/discography-frontend) and the [@tyleretters/discography NPM package is here](https://github.com/tyleretters/discography).
 

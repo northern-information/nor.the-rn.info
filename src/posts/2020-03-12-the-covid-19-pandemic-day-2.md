@@ -8,8 +8,6 @@ tags: ["Collapse"]
 
 Suddenly, reality seems real again.
 
-<!--x-->
-
 WHO declared COVID-19 a pandemic yesterday. Now, the air is charged with something. To some - heck to a former _me_ - this charge would register as fear and anxiety. But now it registers as life. I am saddened by those who have died. It is tragic. But through this tragedy, things matter again. Things seem possible again. I suppose all it took was March Madness being cancelled to snap us out of the capitalistic reveries of the 21st century.
 
 Hand shakes and hugs are things of a the past. It happened in hours. Last night, I went out for drinks with colleagues and we already knew the avant rituals: fist bumps, elbow taps, and feet slogs.

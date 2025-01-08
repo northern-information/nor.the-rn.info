@@ -8,7 +8,7 @@ tags: ["Wildcard"]
 
 "Hey kids! Tune in for Ren & Stimpy at 8 central, 9 eastern!"
 
-"Mom, what's '8 central, 9 eastern' mean?"<!--x-->
+"Mom, what's '8 central, 9 eastern' mean?"
 
 "Those are timezones. We're in central."
 

@@ -8,8 +8,6 @@ tags: ["Music Technology"]
 
 [Sean Booth via an interview on Resident Advisor](https://www.residentadvisor.net/features/2756):
 
-<!--x-->
-
 > [...] but it might at least resemble the way a person thinks. It's funny, I've been reading about Markov models and Markov chains recently, the results from Markov Chains are remarkably similar to what you get out of Watson or DeepMind, these super advanced language modelling things. And this article was about how unwieldy that kind of mega-gigantic, expensive AI is, because you can actually achieve very close results using Markov chains, and they're really fucking simple, they're computationally really easy to deal with, they're what people use for Twitterbots and things like that. So in some ways these simple conditional responses can resemble very high-end AI. Even though it's very simple, the result is close enough not to matter.
 
 I built a simple [Markov chain](https://en.wikipedia.org/wiki/Markov_chain) patch that I wanted to share. I'm going to extend this into delay units and sequencers.

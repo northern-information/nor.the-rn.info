@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 A collection of links and threads that demand pursuit // cannot be pursued.
 
-<!--x-->
-
 ## Eco Futurism
 
 Eco Futurism Corporation just announced _Life in Warp_ by A lake by the mõõn, [check it out here](https://eco-futurism-corp.bandcamp.com/album/life-in-warp).

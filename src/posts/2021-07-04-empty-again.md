@@ -6,8 +6,6 @@ tags: ["Art"]
 
 Four weeks ago we were [inspired](https://www.youtube.com/playlist?list=PLDeicGW8SQOx1PM5iAuSNZVw28XyyawCJ). Three weeks ago we started to [understand](https://northern-information.github.io/mapcore/). Two weeks ago we decided to make an [album](https://mapcorps.bandcamp.com/album/mapsquest-2). One week ago we planned a [party](https://youtu.be/pDPxkfbZWdw/). Today I woke up empty, again.
 
-<!--x-->
-
 For many, the start never happens. The blank canvas is too overwhelming or the "idea of the idea" is too intoxicating. After all, to never start is to never fail.
 
 For others, the middle is agony. Endless revisions, lost in the hall of mirrors and self doubt. We conflate work with progress.

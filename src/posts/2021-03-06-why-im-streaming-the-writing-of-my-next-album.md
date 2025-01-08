@@ -6,8 +6,6 @@ tags: ["Music Technology"]
 
 I'm live streaming the making of my next album on [Twitch](https://twitch.tv/tyleretters).
 
-<!--x-->
-
 ![Streaming the Album](/images/streaming-album.png)
 
 Some streams will be focused on sound design. We'll listen to the same loop over and over again while I finely adjust various sonic parameters.

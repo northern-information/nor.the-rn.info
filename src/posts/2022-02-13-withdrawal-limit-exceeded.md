@@ -8,7 +8,7 @@ tags: ["Thinkpieces"]
 
 _They say every driveway in the United States of America is connected._
 
-Northbound on the five. Saturday afternoon gridlock. Lane splitting — while legal in California — is a power I reserve for only the direst of biological situations. The art of riding is fundamentally the art of one single task:<!--x--> increase the of odds of not dying, every second, with utter vigilance, ad infinitum.
+Northbound on the five. Saturday afternoon gridlock. Lane splitting — while legal in California — is a power I reserve for only the direst of biological situations. The art of riding is fundamentally the art of one single task: increase the of odds of not dying, every second, with utter vigilance, ad infinitum.
 
 _I think the SSRI withdrawals are finally over._
 

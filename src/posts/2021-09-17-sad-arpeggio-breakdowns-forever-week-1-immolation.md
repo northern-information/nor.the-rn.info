@@ -8,8 +8,6 @@ tags: ["S♯A♯B∞"]
 
 "Can I bum one?" I ask Uncle Wayne.
 
-<!--x-->
-
 I don't smoke. Well, I only smoke if I'm drunk and out on the town with the boys, or - apparently - at funerals of my closest loved ones. He obliges and passes me a Marlboro 100.
 
 My eyes are swollen and puffy from all the tears. I shared memories about Timm with hundreds of his closest friends and family. I got laughs out of everyone which is what Timm would have wanted. I made eye contact and gesticulated and did all the things you're supposed to do while public speaking.

@@ -10,8 +10,6 @@ I used to work at a print shop.
 
 On a normal day, the shop would generate a couple 55 GAL garbage bags of paper. Sometimes the paper was ruined because of spent toner or poor registration. Sometimes we'd blow a whole ream from a single bad cut. Sometimes it'd be a typo caught in QA.
 
-<!--x-->
-
 But irregular specs were by far the largest producer of waste: say someone wanted a couple hundred custom 4" x 4" holiday cards _but_ on a fancy stock exclusively available at 8.5" x 11". With this geometry, each sheet would yield only four invites. This results in 32% of the stock ending up as waste because:
 
 ```

@@ -8,7 +8,7 @@ tags: ["Wildcard"]
 
 [@Yuri_Beats](https://twitter.com/Yuri_Beats), on Twitter:
 
-> At that time in my life, I spent all my money on music and jazz cigarettes. Got into a fight at bleaker bobs when they offered to sell me a rare leadbelly 45 for 20 bucks and I told em to shove it. I stuck to the dollar bin.<!--x-->
+> At that time in my life, I spent all my money on music and jazz cigarettes. Got into a fight at bleaker bobs when they offered to sell me a rare leadbelly 45 for 20 bucks and I told em to shove it. I stuck to the dollar bin.
 >
 > These transactions created a context that connected me to the music and gave me a tool to navigate an unmanageable inner life while walking around downtown because I didn't like being at home. I used music to construct myself to myself, it wasn't often social.
 >

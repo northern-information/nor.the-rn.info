@@ -8,8 +8,6 @@ tags: ["Wildcard"]
 
 I tire of reading about this year, thinking about this year, considering what this year "means" in the broader historical context of this bewildering project known as The Human Race. But, alas, it would be unfair to my future self to not document my lived experience while inhabiting this particular fold of temporality.
 
-<!--x-->
-
 <iframe src="https://open.spotify.com/embed/playlist/12uTS1AQt209R1QI8KBmp8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 One thought I cannot shake: things are going to get objectively worse, for a long while, before they get objectively better. [Just today:](https://www.theguardian.com/world/2020/dec/29/who-warns-covid-19-pandemic-is-not-necessarily-the-big-one)

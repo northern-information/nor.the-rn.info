@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 According to dictionary.com:
 
-<!--x-->
-
 > Lacuna
 > _noun, plural_ **la·cu·nae** [*luh*-**kyoo**-nee], **la·cu·nas.**
 >

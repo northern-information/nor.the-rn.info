@@ -10,7 +10,7 @@ I know not who reads these words.
 
 I uninstalled Google Analytics some time ago.
 
-I am my own audience, now.<!--x-->
+I am my own audience, now.
 
 If I can make one tiny fucking hole in their dataweb, one unexpected [`rng`](https://en.wikipedia.org/wiki/Random_number_generation), one tiny source of curiosity and mystery and wonder &mdash; if I can do that &mdash; then my purpose is accomplished.
 

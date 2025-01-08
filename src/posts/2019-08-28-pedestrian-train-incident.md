@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 I wonder if they knew it was going to happen? Or if they were caught by surprise? Worse... if they weren't. Was it a tragic slip? A fatal miscalculation? Or was it pre-meditated?
 
-<!--x-->
-
 I live in Fox River Grove, Illinois. Fox River Grove is famous for two things. The first is the tallest point in McHenry County - the Norge Ski Jump. The second is the horrific school bus train incident that resulted in numerous fatalities in the early nineties. I don't know the details. I have a story in my head that the incident resulted in the mandate (law?) that all school bus drivers have to stop and look both ways before crossing train tracks. Apocryphal or no, I think about it often.
 
 There is still a memorial to the kids, almost 30 years later. I pass it twice a day.

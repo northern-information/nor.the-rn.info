@@ -6,7 +6,7 @@ tags: ["Music Technology"]
 
 ![Always Has Been](/images/community-json.jpg)
 
-About [two years ago](/2021/04/09/building-norns-community) we built [https://norns.community](https://norns.community). It was a massive project, both conceptually and technically. It served us well, but after a needlessly complex server migration earlier this year, we started talking about how to simplify.<!--x-->
+About [two years ago](/2021/04/09/building-norns-community) we built [https://norns.community](https://norns.community). It was a massive project, both conceptually and technically. It served us well, but after a needlessly complex server migration earlier this year, we started talking about how to simplify.
 
 A few of the complexities we were wrestling with:
 

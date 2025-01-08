@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 From Greg Graffin's Punk Manifesto:
 
-<!--x-->
-
 1. Determine whether you care about the general well-being of society (If you do not, skip to step 7, if you do, continue on)
 2. Determine whether you are a privileged citizen (If you are not, then proceed to step number 6, if you are, read steps 3, 4, and 5 only)
 3. Examine not how well you will fare if a given issue is voted into law, but how poorly the under-privileged will suffer (no matter which laws pass a vote or who is voted into office, you will probably always still be better off than the people you fear you'll become, namely the under-privileged).

@@ -10,8 +10,6 @@ Timm Etters died on September 4th, 2021.
 
 This is the final picture of us. It was taken March 2nd, 2020.
 
-<!--x-->
-
 That night he picked me up from my therapist's office. It was a cold and shitty Chicago night. I took him back to my place and then we went out for pizza (our tradition) at The Boiler Room. We took a short hike around Logan so I could share some of my favorite graffiti. Of course, Timm being Timm, he knew some of the writers.
 
 ![Timm Etters Graffiti Adventure 1](/images/timm-etters-graffiti-adventure-1.jpg)

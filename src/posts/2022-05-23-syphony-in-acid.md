@@ -8,4 +8,4 @@ tags: ["Wildcard"]
 
 > This is an interactive website promoting a track Symphony in Acid from the album Unspoken Words by Max Cooper. Animation and code done by Ksawery Komputery.
 
-This is some of the most hard hitting new-media art I've felt in a long time.<!--x-->
+This is some of the most hard hitting new-media art I've felt in a long time.

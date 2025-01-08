@@ -6,7 +6,7 @@ tags: ["Music Technology"]
 
 ![Grid Keyboard](/images/grid-keyboard.png)
 
-Here's a patch to convert the bottom row of Grid into a piano keyboard.<!--x--> You can pan up and down the keyboard with the end buttons or the "Range" dial. This was about 2 or 3 hours of work. Lots of improvements can be made (as always) but it was a fun project.
+Here's a patch to convert the bottom row of Grid into a piano keyboard. You can pan up and down the keyboard with the end buttons or the "Range" dial. This was about 2 or 3 hours of work. Lots of improvements can be made (as always) but it was a fun project.
 
 ```max
 ----------begin_max5_patcher----------

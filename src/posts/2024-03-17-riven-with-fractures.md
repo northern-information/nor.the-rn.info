@@ -8,7 +8,7 @@ Two wonderful quotes from [John Doran at The Quietus about Squarepusher's latest
 
 The first is about _genre_:
 
-> Autechre pre-cognitively side-stepped this whole affair with the release of Confield in 2001, by retreating so far from, or advancing so far past, genre conventions that their deep influences and source material can now only be glimpsed as if from the inside of a multi-faceted gem, riven with fractures <!--x-->– all temporal, spatial information prismatically disrupted way past the threshold of rational categorisation.
+> Autechre pre-cognitively side-stepped this whole affair with the release of Confield in 2001, by retreating so far from, or advancing so far past, genre conventions that their deep influences and source material can now only be glimpsed as if from the inside of a multi-faceted gem, riven with fractures – all temporal, spatial information prismatically disrupted way past the threshold of rational categorisation.
 
 ... and the second is about _IDM_:
 

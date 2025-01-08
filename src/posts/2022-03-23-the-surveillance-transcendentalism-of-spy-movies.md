@@ -6,7 +6,7 @@ tags: ["Thinkpieces"]
 
 ![The Bourne Legacy](/images/the-bourne-legacy.jpg)
 
-The pandemic has forced me to evolve new methods of escapism. As any of my [Instagram](https://instagram.com/tyleretters) followers know, I am a glutton for action and thriller movies. And the "spy action-thriller" is one of my favorite sub-genres because they get to play with a very specific and unique set of rules. Last night, THE BOURNE LEGACY (2012) was on the docket. Spoilers for the decade-old blockbuster ahead...<!--x-->
+The pandemic has forced me to evolve new methods of escapism. As any of my [Instagram](https://instagram.com/tyleretters) followers know, I am a glutton for action and thriller movies. And the "spy action-thriller" is one of my favorite sub-genres because they get to play with a very specific and unique set of rules. Last night, THE BOURNE LEGACY (2012) was on the docket. Spoilers for the decade-old blockbuster ahead...
 
 It is hard to remember, but 2012 was pre-Snowden, post-crash, pre-Trump, post-Deepwater Horizon, pre-Benghazi. What's interesting about this is, even in 2012 (before the Snowden revelations), spy movies were offering a new type of narrative to meet the libidinal desires spurred on by the ultimate post-9/11 antagonist: surveillance.
 

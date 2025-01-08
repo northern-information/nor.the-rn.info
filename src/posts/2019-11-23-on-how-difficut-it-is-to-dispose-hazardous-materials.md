@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 I believe that if you sell a thing you ought to be obligated to also dispose of that thing.
 
-<!--x-->
-
 My wife and I moved this year. Part of the process involved unearthing an exceptionally old container of photography chemicals. D76. You know. The really poisonous stuff.
 
 ![Chemicals](/images/chemicals.jpg)

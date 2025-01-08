@@ -8,8 +8,6 @@ tags: ["Music Technology"]
 
 [Plaits](https://mutable-instruments.net/modules/plaits/) feels like cheating. I yearn for drones.
 
-<!--x-->
-
 ## TIL
 
 Today I learned a lot about triggers.

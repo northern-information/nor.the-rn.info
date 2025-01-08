@@ -6,8 +6,6 @@ tags: ["Music Technology"]
 
 If you want to skip a head to the end of this post, you can see the path I took to learn Max. If you want to hear about my experience, start here.
 
-<!--x-->
-
 I think learning [Max](https://cycling74.com) was especially difficult for me because I approached the task simultaneously as both an electronic musician and as a programmer.
 
 It felt like at every step of my learning I would be met with an obstacle.

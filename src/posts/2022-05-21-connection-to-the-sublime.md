@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 [Venkatesh Rao at Ribbonfarm](https://www.ribbonfarm.com/2022/05/18/crisis-mindsets/):
 
-> On the other hand, if you're an older adult in a place that was peaceful through much of your life, but is unraveling into a generalized crisis in your old age, you face a different problem<!--x--> — though your crisis bandwidth has expanded with age, it is not up to the challenge the times are throwing at you in your old age. You will be overwhelmed.
+> On the other hand, if you're an older adult in a place that was peaceful through much of your life, but is unraveling into a generalized crisis in your old age, you face a different problem — though your crisis bandwidth has expanded with age, it is not up to the challenge the times are throwing at you in your old age. You will be overwhelmed.
 >
 > We seem to be entering a historical period where crisis circumstances are more common than normalcy. This means crisis mindsets will increasingly be the default, not flourishing mindsets.
 >

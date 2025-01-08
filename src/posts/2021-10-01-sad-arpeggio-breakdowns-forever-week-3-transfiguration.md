@@ -8,8 +8,6 @@ tags: ["S♯A♯B∞"]
 
 Week three; act three. I am not on a commuter train today, but I am at O'hare. If you asked me how I was doing I might reply with, "cellular exhaustion." This trip has been beautiful and horrifying and gorgeous and wonderful and draining and terrifying and inspiring and absolutely too much but also precisely just enough and exactly what I needed.
 
-<!--x-->
-
 I'm headed "almost" home. I'm going to quarantine for three days in a crummy 2 star hotel until I can get a rapid PCR test. Testing on the road has been quite the experience. I've frequently shared my test results and adventures on social media.
 
 I am a testing junky. When was my last test? Where is my next test coming from? Gotta test today gotta test today... It was a nice thing to talk about with people, how to travel responsibly. Most folks were pretty suprised with the lengths I went to on my tour. I'm vaccinated. I wear a mask everywhere. I PCR every week. I rapid before I leave any domain.

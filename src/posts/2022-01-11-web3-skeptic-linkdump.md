@@ -10,7 +10,7 @@ To kick things off, some orientation [Chris Dixon](https://future.a16z.com/why-w
 
 > Web1 (roughly 1990-2005) was about open protocols that were decentralized and community-governed. Most of the value accrued to the edges of the network — users and builders.
 >
-> Web2 (roughly 2005-2020) was about siloed, centralized services run by<!--x--> corporations. Most of the value accrued to a handful of companies like Google, Apple, Amazon, and Facebook.
+> Web2 (roughly 2005-2020) was about siloed, centralized services run by corporations. Most of the value accrued to a handful of companies like Google, Apple, Amazon, and Facebook.
 >
 > We are now at the beginning of the web3 era, which combines the decentralized, community-governed ethos of web1 with the advanced, modern functionality of web2.
 

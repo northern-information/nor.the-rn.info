@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 I've avoided writing or talking about this for almost half my life. Sometimes, parts would seep out in conversation with loved ones, therapists, band-mates, or colleagues. This was scary because part of my irrationality posited the very act of talking about it would cause it to accelerate. A self fulfilling prophecy, a magic spell. But it isn't. It is just a simple fear. Let's go into the fear together and see what there is to see, eh?
 
-<!--x-->
-
 Recommended listening for this post: [http://northerninformation.bandcamp.com/album/reverence](http://northerninformation.bandcamp.com/album/reverence)
 
 ## Shadow of the Towers

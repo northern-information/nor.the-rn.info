@@ -4,7 +4,7 @@ date: 2022-03-31
 tags: ["Wildcard"]
 ---
 
-Operation March is over. 30 posts in 31 days. (I finished an EP somewhere in there which explains the missing post.) What did I learn? What was the experiment? The hypothesis?<!--x-->
+Operation March is over. 30 posts in 31 days. (I finished an EP somewhere in there which explains the missing post.) What did I learn? What was the experiment? The hypothesis?
 
 I knew I could share something each day. Putting words to bytes has never been a blocker. I was curious if I could share something _meaningful_ or _interesting_ each day?
 

@@ -8,8 +8,6 @@ tags: ["Music Technology"]
 
 The Teletype Study Group asks that you complete the [monome studies](https://monome.org/docs/teletype/studies-1/), then proceed to work on a thesis. My first thesis was titled `antithesis`. I challenged myself for several weeks to not save my Teletype scenes. Start from scratch every time. Build up the muscle memory.
 
-<!--x-->
-
 The day I decided it was time for a new thesis, someone accidetnally deleted my channel. A wonderfully apt synchronicity for a project about impermanence.
 
 My second thesis is entitled `Shadow Fi Labs`. With [Flash Crash](https://flashcrash.net) coming up this Saturday, I wanted to push the envelope a bit and do live music for all the interstitial sequences.

@@ -8,7 +8,7 @@ tags: ["Releases"]
 
 New music from They Became What They Beheld: [Rocket Summer](https://theybecamewhattheybeheld.bandcamp.com/album/rocket-summer)
 
-Photograph & video loops of an actual space rocket launch over my apartment, 2024.<!--x-->
+Photograph & video loops of an actual space rocket launch over my apartment, 2024.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fMIaOFiwhM?si=SfrXMEKmxQzNKdVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

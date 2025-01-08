@@ -7,8 +7,6 @@ tags: ["Collapse"]
 ![Cyberpunk AF]/rm*ation/images/cyberpunk-af.jpg)
 \_Cyperpunk AF.*
 
-<!--x-->
-
 ![ORD, March 15]/rm*ation/images/ord-march-15.jpg)
 \_ORD, March 15.*
 

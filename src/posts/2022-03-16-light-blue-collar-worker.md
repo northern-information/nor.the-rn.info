@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ![Dirty Hands Clean Money](/images/dirty-hands-clean-money.jpg)
 
-I consciously realized my blue collar affinities in 2019. A tradesman in Chicago was sporting a bright orange "Dirty Hands, Clean Money" [Troll Co](https://trollcoclothing.com/) shirt. Ahh, the pain. I had a white collar job. If my hands were clean... then my money must be dirty.<!--x-->
+I consciously realized my blue collar affinities in 2019. A tradesman in Chicago was sporting a bright orange "Dirty Hands, Clean Money" [Troll Co](https://trollcoclothing.com/) shirt. Ahh, the pain. I had a white collar job. If my hands were clean... then my money must be dirty.
 
 Troll Co proudly markets to the blue collar, the near (and far) right, [the silent majority](https://en.wikipedia.org/wiki/Silent_majority). As their [origin story reads](https://trollcoclothing.com/pages/new-our-story):
 

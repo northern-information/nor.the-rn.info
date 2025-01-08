@@ -8,8 +8,6 @@ tags: ["Collapse"]
 
 Every fucking second we waste fighting (and writing blogs) about race, politics, gender, religion, and sex is a second we will never get back.
 
-<!--x-->
-
 I write from a place of privilege. I'm white, skinny, cis, hetero. I've had a great life. I've always had food to eat and a roof over my head. My experience with police officers is pretty firmly relegated to being chased out of nature preserves after curfew when I was 13.
 
 I, of course, believe that my views are correct. That Black Lives Matter. That LGBTQIA+ folks are just like everyone else. That religion is fine until precisely the point you start harming others. That all sex is great as long as everything going on is consensual. I wish that everyone who is trying to uphold the white patriarchy and oppresion would just snap out of it and see it my way. And I'm pretty sure that everyone wishing the same thing is precisely the problem.

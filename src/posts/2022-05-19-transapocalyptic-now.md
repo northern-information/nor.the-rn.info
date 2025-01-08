@@ -6,7 +6,7 @@ tags: ["Collapse"]
 
 [Alex Steffen, writing for The Snap Forward](https://alexsteffen.substack.com/p/the-transapocalyptic-now):
 
-> Of all the fairy tales that have blinded us to the realities of this new era, this is the most seductive — that the future ahead of us offers a simple, stark moral choice with a simple, stark outcome: we will rise to triumph and all will be well, or<!--x--> we will fall. Victory, or death!
+> Of all the fairy tales that have blinded us to the realities of this new era, this is the most seductive — that the future ahead of us offers a simple, stark moral choice with a simple, stark outcome: we will rise to triumph and all will be well, or we will fall. Victory, or death!
 >
 > In this just-so story, we get to cast ourselves as the heroes. Those of us fighting for climate action and ecological sanity are — against steep odds — the ones rescuing humanity (and all other living creatures). Our opponents are evil. The end of the story can only be our success, because for us to fail means the end of everything. (Man, there is no drug like self-righteousness.)
 >

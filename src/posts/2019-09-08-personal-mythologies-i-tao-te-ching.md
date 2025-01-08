@@ -11,8 +11,6 @@ tags: ["Mythologies"]
 
 Ain't it the truth? My anxiety of the news on any given day is allayed by these two lines.
 
-<!--x-->
-
 [We teleported a photon to a satellite?](https://www.technologyreview.com/s/608252/first-object-teleported-from-earth-to-orbit/) Of course we did.
 
 [We maybe figured out how to cure aging?](https://www.independent.co.uk/news/science/biological-clock-ageing-turn-back-reverse-study-new-a9094261.html) Okie-dokie. Excuse me while I devise a strategy to forget these 500 ethical questions about that one...

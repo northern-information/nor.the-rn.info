@@ -6,8 +6,6 @@ tags: ["Wildcard"]
 
 Any cursory dip into oneirology will present a number of myths about dreams. Believing these myths, I have found myself especially bewildered when I have experiences of the contrary.
 
-<!--x-->
-
 **Myth #1: You Can't Read**
 
 The illegibilty of words is a common dream myth. Supposedly, books ought to be empty, signs ought to be unreadable, and numbers ought to make no sense. For me, this is entirely false. Perhaps it was studying typography in college? Perhaps it is how much I read for pleasure? Much of my dream scripture has worked its way into my music, song titles, short stories, and even this blog.

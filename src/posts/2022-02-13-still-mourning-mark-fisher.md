@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 [Simon Reynolds, writing for blissblog:](https://blissout.blogspot.com/2022/01/hows-things.html?m=1)
 
-> I don't have much to say apart from the fairly selfish thought that I'd love to know what Mark would have had to say about things. <!--x-->
+> I don't have much to say apart from the fairly selfish thought that I'd love to know what Mark would have had to say about things.
 >
 > Things in the specific sense - cultural products. Like the Dry Cleaning album, or SOPHIE's music. Feted television series or films - which ones would have excited him or seemed indicative of a condensation of popular desire, a shift in consciousness, an ideological glitch, worth taking the measure of? What things would have stirred his delicious scorn? And how would he have reacted to The Caretaker becoming a TikTok meme?
 >
