@@ -4,7 +4,7 @@ layout: pageAbout.liquid
 page_excerpt_overload: Midwestern musician holed-up in the mountains by Los Angeles.
 ---
 
-My name is Tyler Etters. In 2024 I'm:
+My name is Tyler Etters. In 2025 I'm:
 
 - operating out of 𝐿𝑜𝑠 𝐴𝑛𝑔𝑒𝑙𝑒𝑠
 - mixing as [DJ Stuxnet](https://stuxnet.me)
