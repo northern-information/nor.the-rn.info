@@ -17,7 +17,7 @@ export const META = {
   BUILD_TIME: new Date().toISOString(),
   CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
-  DAUNTLESS_CHOIR_URL: 'https://gist.github.com/tyleretters/3743b6d5e27ee50d51b7da9f9293c40f',
+  DAUNTLESS_CHOIR_URL: '/dauntless-choir/',
   DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',

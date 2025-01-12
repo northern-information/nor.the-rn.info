@@ -62,7 +62,7 @@ body {
   h5,
   ul,
   ol {
-    @apply text-stone-50;
+    @apply text-slate-50;
   }
   a {
     @apply text-yellow-300 underline;
@@ -82,7 +82,7 @@ body {
   }
   pre,
   code {
-    @apply overflow-scroll rounded border border-solid border-yellow-300 bg-stone-800 text-yellow-300;
+    @apply overflow-scroll rounded border border-solid border-yellow-300 bg-slate-800 text-yellow-300;
   }
   pre,
   code {
@@ -92,7 +92,7 @@ body {
     @apply border-none px-0 py-0;
   }
   blockquote {
-    @apply ml-2 border-l-2 border-solid border-stone-400 pl-2;
+    @apply ml-2 border-l-2 border-solid border-slate-400 pl-2;
   }
   p {
     @apply w-full md:w-2/3 lg:w-3/5;
