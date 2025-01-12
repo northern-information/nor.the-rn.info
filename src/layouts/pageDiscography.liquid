@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 {% render pageTitle, title: title %}
-{% render discographyToggle, isList: true %}
+{% render discographyToggle, mode: 'list' %}
 <ul class="list-none">
   {% for release in collections.discographyPages %}
     <li class="mb-5 flex justify-center">

@@ -63,18 +63,32 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('toTitleCase', (input) => {
     // prettier-ignore
-    const exceptions = ["of", "a", "the", "and", "in", "on", "with", "at", "by", "from"];
-    const ignoreList = ['E.P.', 'FCIV']
+    const exceptions = ['of', 'a', 'the', 'and', 'in', 'on', 'with', 'at', 'by', 'from', 'to']
+    const ignoreList = [
+      'EP1',
+      'EP2',
+      'EP3',
+      'E.P.',
+      'FCIV',
+      'the geometrie of our lost cause',
+      'blue, the most celestial color',
+      'senescence',
+      'the phantoms of our lost cause',
+      'zulu',
+      'and though the soft apocalypse may yet overtake',
+      'the legacy of our lost cause',
+      'dispatches from the prime meridian',
+      'reverence',
+    ]
+    if (ignoreList.includes(input)) {
+      return input
+    }
     return input
       .split(' ')
       .map((word, index) => {
-        if (ignoreList.includes(word)) {
-          return word
-        }
         if (/^[A-Z]\.[A-Z](\.[A-Z])?$/i.test(word)) {
           return word.toUpperCase()
         }
-
         if (index === 0 || !exceptions.includes(word.toLowerCase())) {
           return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
         }

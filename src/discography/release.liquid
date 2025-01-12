@@ -8,24 +8,30 @@ permalink: /discography/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
-<div class="content">
-  <h1>{{ release.title }}</h1>
-  <p><strong>Project:</strong> {{ release.project }}</p>
-  <p><strong>Released:</strong> {{ release.released }}</p>
-  <p><strong>Type:</strong> {{ release.type }}</p>
-  <p><strong>Label:</strong> {{ release.label }}</p>
-  <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover">
-
-  <h2>Tracks</h2>
-  <ul>
-    {% for track in release.tracks %}
-      <li>{{ track.title }} - {{ track.length }}</li>
-    {% endfor %}
-  </ul>
-
-  <h2>Notes</h2>
-  {{ release.notes }}
-
-  <h2>Credits</h2>
-  {{ release.credits }}
+{% render pageTitle, title: title %}
+{% render discographyToggle, title: title, showBack: true %}
+<div class="flex flex-col place-items-center my-10 w-full md:max-w-[616px] xl:max-w-[800px] m-auto">
+  <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="w-full h-auto md:w-[616px] xl:w-[800px]">
+  {% render releaseList, release: release, mode: 'red-stone' %}
+  <div class="text-sm text-stone-50 text-center">
+    <h3 class="uppercase text-red-500 mb-2">Tracks</h3>
+    <ol class="mb-10">
+      {% for track in release.tracks %}
+        <li class="mb-2">{{ track.title }}<br/><span class="font-serif italic text-stone-500">{{ track.length }}</span></li>
+      {% endfor %}
+    </ol>
+    {% if release.streams.size > 0 %}
+    <h3 class="uppercase text-red-500 mb-2">Listen</h3>
+    <ol class="mb-10">
+      {% for stream in release.streams %}
+        <li class="mb-2">{{ stream.platform }}<br/><a href="{{ stream.url }}" class="font-serif italic text-stone-500 hover:text-red-500 hover:underline" target="_blank">{{ stream.url }}</a></li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+    <h3 class="uppercase text-red-500 mb-2">Notes</h3>
+    <div class="mb-10">{{ release.notes }}</div>
+    <h3 class="uppercase text-red-500 mb-2">Credits</h3>
+    <div class="mb-10">{{ release.credits }}</div>
+  </div>
 </div>
+
