@@ -1,12 +1,20 @@
-<li class="mb-5 flex justify-center">
+{% if isLink %}
   <a
     href="/discography/{{ release.slug }}"
-    class="group block w-fit cursor-pointer border-4 border-solid border-transparent text-center text-red-500 hover:border-yellow-300 hover:bg-yellow-300 hover:text-stone-950"
+    class="group block w-fit cursor-pointer border-4 border-solid border-transparent p-4 text-center hover:border-red-500"
   >
-    <h2 class="font-olde text-xl font-semibold md:text-4xl">{{ release.title | toTitleCase }}</h2>
-    <h3 class="text-sm text-stone-50 no-underline group-hover:text-stone-950">{{ release.project }}</h3>
-    <p class="font-serif italic text-stone-500">
-      {{ release.released | stripLeadingZero | dateToUTC | date: '%B 0%Y' }}, {{ release.type }}
-    </p>
+{% else %}
+  <div class="block w-fit border-4 border-solid border-transparent p-4 text-center">
+{% endif %}
+<h2 class="font-olde text-xl font-semibold text-red-500 group-hover:underline md:text-4xl">
+  {{ release.title | toTitleCase }}
+</h2>
+<h3 class="text-sm text-stone-50 no-underline">{{ release.project }}</h3>
+<p class="font-serif italic text-stone-500">
+  {{ release.released | stripLeadingZero | dateToUTC | date: '%B 0%Y' }}, {{ release.type }}
+</p>
+{% if isLink %}
   </a>
-</li>
+{% else %}
+  </div>
+{% endif %}

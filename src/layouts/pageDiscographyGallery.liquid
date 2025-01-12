@@ -1,0 +1,13 @@
+---
+layout: base.liquid
+permalink: /discography/gallery/
+---
+{% render pageTitle, title: title %}
+{% render discographyToggle, isList: false %}
+<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  {% for release in collections.discographyPages %}
+    <li class="mb-10">
+      {% render releaseGallery, release: release %}
+    </li>
+  {% endfor %}
+</ul>
