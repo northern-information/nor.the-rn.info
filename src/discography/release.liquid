@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 {% render pageTitle, title: title %}
 {% render discographyToggle, title: title, showBack: true %}
-<div class="flex flex-col place-items-center my-10 w-full md:max-w-[616px] xl:max-w-[800px] m-auto">
+<div class="flex flex-col place-items-center my-10 w-auto md:max-w-[616px] xl:max-w-[800px] m-auto">
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="w-full h-auto md:w-[616px] xl:w-[800px]">
   {% render releaseList, release: release, mode: 'red-stone' %}
   <div class="text-sm text-stone-50 text-center">
