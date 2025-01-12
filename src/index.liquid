@@ -2,8 +2,8 @@
 layout: base.liquid
 permalink: /
 ---
-<div class="-mx-2 -my-2 flex h-[400px] flex-col gap-5 bg-powerlines bg-cover bg-no-repeat md:h-[800px]">
-  <div class="mx-2 my-2 md:mx-8 md:my-8">
+<div class="-mx-2 -my-2 flex h-[400px] flex-col gap-5 bg-powerlines bg-cover bg-no-repeat md:h-[800px] xl:h-[1000px]">
+  <div class="mx-2 my-2 md:mx-8 md:my-8 w-2/3">
     <h2 class="inline bg-slate-950 text-2xl font-semibold !leading-[2rem] text-stone-50 md:text-4xl md:!leading-[3.25rem] lg:text-6xl lg:!leading-[4.75rem]">
       <span class="font-serif">&ldquo;</span> We build our computer systems the way we build our cities: over time,
       without a plan, on top of ruins.<span class="font-serif">&rdquo;</span> &mdash;
@@ -22,8 +22,35 @@ permalink: /
   {% render rule %}
 </div>
 
+<div class="home-grid md:-mx-2 mx-0 grid grid-cols-1 md:grid-cols-3 gap-10 my-10 py-2 md:py-0">
+  <a href="/discography/dj-stuxnet/kowloon-walled-city-giga-mix/" class="group">
+    <img src="/images/kowloon-walled-city-giga-mix.png" alt="KOWLOON WALLED CITY GIGA MIX" class="group-hover:opacity-50">
+  </a>
+  <a href="/2017/12/20/northern-information-movement-photos/" class="md:col-span-2 group bg-black place-items-center">
+    <img src="/images/mayne-stage.jpg" alt="Tyler Etters" class="group-hover:opacity-50">
+  </a>
+  <a href="/discography/stuxnet/long-live-the-lost-ones/" class="group">
+    <img src="/images/long-live-the-lost-ones.jpg" alt="LONG LIVE THE LOST ONES" class="group-hover:opacity-50">
+  </a>
+  <a href="/projects/#circular-ruin-dsp" class="group">
+    <img src="/images/circular-ruin.svg" alt="Circular Ruin DSP" class="group-hover:opacity-50 w-full">
+  </a>
+ <a href="/discography/dj-stuxnet/list-of-stars-in-cancer/" class="group">
+    <img src="/images/list-of-stars-in-cancer.jpg" alt="List of Stars in Cancer" class="group-hover:opacity-50">
+  </a>
+  <a href="/projects/#yggdrasil" class="md:col-span-2 group bg-black place-items-center">
+    <img src="/images/yggdrasil.png" alt="Yggdrasil" class="group-hover:opacity-50">
+  </a>
+  <a href="/discography/northern-information/the-arecibo-lamentations/" class="group bg-black place-items-center">
+    <img src="/images/the-arecibo-lamentations.jpg" alt="The Arecibo Lamentations" class="group-hover:opacity-50">
+  </a>
+    <a href="/photography/" class="md:col-span-3 group place-items-center">
+    <img src="/images/R1-9-1.jpg" alt="Manifesto" class="group-hover:opacity-50">
+  </a>
+</div>
+
 <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
-  <div class="">
+  <div>
     <h3 class="text-xl text-slate-50">Latest Music</h3>
     <hr class="mb-2">
     <ul class="list-none">
@@ -34,7 +61,7 @@ permalink: /
       {% endfor %}
     </ul>
   </div>
-  <div class="">
+  <div>
     <h3 class="text-xl text-slate-50">Latest Posts</h3>
     <hr class="mb-2">
     <ul class="list-none">

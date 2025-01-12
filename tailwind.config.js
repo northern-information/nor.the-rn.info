@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.liquid'],
+  content: ['./src/**/*.liquid', './src/index.liquid'],
   theme: {
     fontFamily: {
       mono: [

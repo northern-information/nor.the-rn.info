@@ -16,6 +16,15 @@ body {
   @apply bg-slate-950;
 }
 
+.home-grid {
+  a {
+    @apply cursor-pointer;
+    img {
+      @apply h-full object-cover transition-opacity;
+    }
+  }
+}
+
 .content {
   p,
   h1,

@@ -49,7 +49,7 @@ Shot with the trusty Canon AE-1 my mom pawned and passed down to me:
 
 [![R1-6](/images/R1-6.jpg)](/images/R1-6.jpg)
 
-[![R1-9-1](/images/R1-9-1.jpg)](/assets/R1-9-1.jpg)
+[![R1-9-1](/images/R1-9-1.jpg)](/images/R1-9-1.jpg)
 
 [![R1-9](/images/R1-9.jpg)](/images/R1-9.jpg)
 
