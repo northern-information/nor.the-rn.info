@@ -10,10 +10,10 @@ eleventyComputed:
 ---
 {% render pageTitle, title: title %}
 {% render discographyToggle, title: title, showBack: true %}
-<div class="flex flex-col place-items-center my-10 w-auto md:max-w-[616px] xl:max-w-[800px] m-auto">
+<div class="flex flex-col place-items-center my-10 w-auto md:max-w-[616px] xl:max-w-[800px] m-auto overflow-hidden">
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="w-full h-auto md:w-[616px] xl:w-[800px]">
   {% render releaseList, release: release, mode: 'red-stone' %}
-  <div class="text-sm text-stone-50 text-center">
+  <div class="w-full text-sm text-stone-50 text-center">
     <h3 class="uppercase text-red-500 mb-2">Tracks</h3>
     <ol class="mb-10">
       {% for track in release.tracks %}
@@ -22,16 +22,16 @@ eleventyComputed:
     </ol>
     {% if release.streams.size > 0 %}
     <h3 class="uppercase text-red-500 mb-2">Listen</h3>
-    <ol class="mb-10">
+    <ol class="mb-10 w-full">
       {% for stream in release.streams %}
-        <li class="mb-2">{{ stream.platform }}<br/><a href="{{ stream.url }}" class="font-serif italic text-stone-500 hover:text-red-500 hover:underline" target="_blank">{{ stream.url }}</a></li>
+        <li class="mb-2 w-full overflow-ellipsis">{{ stream.platform }}<br/><a href="{{ stream.url }}" class="font-serif italic text-stone-500 hover:text-red-500 hover:underline" target="_blank">{{ stream.url }}</a></li>
       {% endfor %}
     </ol>
     {% endif %}
     <h3 class="uppercase text-red-500 mb-2">Notes</h3>
-    <div class="mb-10">{{ release.notes }}</div>
+    <div class="release-notes mb-10 text-justify">{{ release.notes }}</div>
     <h3 class="uppercase text-red-500 mb-2">Credits</h3>
-    <div class="mb-10">{{ release.credits }}</div>
+    <div class="release-credits mb-10 text-justify">{{ release.credits }}</div>
   </div>
 </div>
 

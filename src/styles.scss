@@ -93,6 +93,13 @@ body {
   }
 }
 
+.release-notes,
+.release-credits {
+  p {
+    @apply mb-2;
+  }
+}
+
 footer {
   a {
     @apply text-blue-700 underline;
