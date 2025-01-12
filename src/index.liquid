@@ -2,18 +2,41 @@
 layout: base.liquid
 permalink: /
 ---
-<div class="-mx-2 -my-2 flex h-[400px] flex-col gap-5 bg-red-robin bg-cover bg-no-repeat md:h-[800px] ">
+<div class="-mx-2 -my-2 flex h-[400px] flex-col gap-5 bg-powerlines bg-cover bg-no-repeat md:h-[800px]">
   <div class="mx-2 my-2 md:mx-8 md:my-8">
-    <span class="bg-slate-950 text-2xl font-semibold !leading-[2rem] text-stone-50 md:text-4xl md:!leading-[3.25rem] lg:text-6xl lg:!leading-[4.75rem]"
-      ><span class="font-serif">&ldquo;</span> We build our computer systems the way we build our cities: over time,
-      without a plan, on top of ruins.<span class="font-serif">&rdquo;</span>
-      &mdash;
-      <a
-        class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
-        href="https://en.wikipedia.org/wiki/Ellen_Ullman"
-        target="_blank"
-        >Ellen Ullman</a
-      ></span
-    >
+    <h2 class="bg-slate-950 text-2xl font-semibold !leading-[2rem] text-stone-50 md:text-4xl md:!leading-[3.25rem] lg:text-6xl lg:!leading-[4.75rem] inline">
+      <span class="font-serif">&ldquo;</span> We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.<span class="font-serif">&rdquo;</span>
+      &mdash; <a class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline" href="https://en.wikipedia.org/wiki/Ellen_Ullman" target="_blank">Ellen Ullman</a>
+    </h2>
+  </div>
+</div>
+<div class="-mx-2">
+  {% render rule %}
+  {% render spectrum %}
+  {% render rule %}
+</div>
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+  <div class="">
+    <h3 class="text-slate-50 text-xl">Latest Music</h3>
+    <hr class="mb-2" />
+    <ul class="list-none">
+      {% for release in collections.discographyPages limit: 3 %}
+        <li class="mb-5 flex justify-center">
+          {% render releaseList, release: release, isLink: true %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="">
+    <h3 class="text-slate-50 text-xl">Latest Posts</h3>
+    <hr class="mb-2" />
+    <ul class="list-none">
+      {% assign posts = collections.posts | reverse %}
+      {% for post in posts limit: 5 %}
+        <li class="mb-2">{% render postLink, post: post %}</li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

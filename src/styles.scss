@@ -13,7 +13,7 @@
 }
 
 body {
-  background: theme('colors.stone.950');
+  @apply bg-slate-950;
 }
 
 .content {
@@ -110,8 +110,7 @@ footer {
 }
 
 ::selection {
-  background: theme('colors.yellow.300');
-  color: theme('colors.slate.950');
+  @apply bg-yellow-300 text-slate-950;
 }
 
 @layer utilities {

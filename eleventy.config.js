@@ -42,72 +42,88 @@ export const DIRS = {
   POSTS: 'posts',
 }
 
-export const getReleaseSlug = (release) => {
+export const getReleaseSlug = memoize((release) => {
   const project = slugify(release.project, { lower: true, strict: true })
   const title = slugify(release.title, { lower: true, strict: true })
   return `${project}/${title}/`
-}
+})
 
 export default async (eleventyConfig) => {
-  eleventyConfig.addShortcode('getTitle', (title) => {
-    return `${title} | ${META.TITLE}`
-  })
-
-  eleventyConfig.addShortcode('getReleaseSlug', (release) =>
-    getReleaseSlug(release)
+  eleventyConfig.addShortcode(
+    'getTitle',
+    memoize((title) => {
+      return title ? `${title} | ${META.TITLE}` : META.TITLE
+    })
   )
 
-  eleventyConfig.addShortcode('getTimestamp', () => {
-    return Math.floor(new Date().getTime() / 1000)
-  })
+  eleventyConfig.addShortcode(
+    'getReleaseSlug',
+    memoize((release) => getReleaseSlug(release))
+  )
 
-  eleventyConfig.addFilter('toTitleCase', (input) => {
-    // prettier-ignore
-    const exceptions = ['of', 'a', 'the', 'and', 'in', 'on', 'with', 'at', 'by', 'from', 'to']
-    const ignoreList = [
-      'EP1',
-      'EP2',
-      'EP3',
-      'E.P.',
-      'FCIV',
+  eleventyConfig.addShortcode(
+    'getTimestamp',
+    memoize(() => {
+      return Math.floor(new Date().getTime() / 1000)
+    })
+  )
+
+  eleventyConfig.addFilter(
+    'toTitleCase',
+    memoize((input) => {
+      // prettier-ignore
+      const ignoreList = [
+      'EP1', 'EP2', 'EP3', 'E.P.', 'FCIV',
       'the geometrie of our lost cause',
-      'blue, the most celestial color',
-      'senescence',
-      'the phantoms of our lost cause',
-      'zulu',
+      'blue, the most celestial color', 'senescence',
+      'the phantoms of our lost cause', 'zulu',
       'and though the soft apocalypse may yet overtake',
       'the legacy of our lost cause',
-      'dispatches from the prime meridian',
-      'reverence',
+      'dispatches from the prime meridian', 'reverence',
     ]
-    if (ignoreList.includes(input)) {
+      if (ignoreList.includes(input)) {
+        return input
+      }
+      // prettier-ignore
+      const exceptions = ['of', 'a', 'the', 'and', 'in', 
+      'on', 'with', 'at', 'by', 'from', 'to']
       return input
-    }
-    return input
-      .split(' ')
-      .map((word, index) => {
-        if (/^[A-Z]\.[A-Z](\.[A-Z])?$/i.test(word)) {
-          return word.toUpperCase()
-        }
-        if (index === 0 || !exceptions.includes(word.toLowerCase())) {
-          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-        }
-        return word.toLowerCase()
-      })
-      .join(' ')
-  })
+        .split(' ')
+        .map((word, index) => {
+          if (/^[A-Z]\.[A-Z](\.[A-Z])?$/i.test(word)) {
+            return word.toUpperCase()
+          }
+          if (index === 0 || !exceptions.includes(word.toLowerCase())) {
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+          }
+          return word.toLowerCase()
+        })
+        .join(' ')
+    })
+  )
 
-  eleventyConfig.addFilter('stripLeadingZero', (input) => {
-    return input.replace('0', '')
-  })
+  eleventyConfig.addFilter(
+    'stripLeadingZero',
+    memoize((input) => {
+      return input.replace('0', '')
+    })
+  )
 
-  eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
-    return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(format)
-  })
+  eleventyConfig.addFilter(
+    'dateToUTC',
+    memoize((date, format = 'yyyy/MM/dd') => {
+      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
+        format
+      )
+    })
+  )
 
-  eleventyConfig.addFilter('toJson', (json) => {
-    return JSON.stringify(json, null, 2)
-  })
+  eleventyConfig.addFilter(
+    'toJson',
+    memoize((json) => {
+      return JSON.stringify(json, null, 2)
+    })
+  )
 
   const markdownLib = markdownIt({ html: true }).use(implicitFigures, {
     figcaption: false,
@@ -115,34 +131,18 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.setLibrary('md', markdownLib)
 
-  eleventyConfig.addFilter('markdown', (content) => {
-    return markdownLib.render(content)
-  })
+  eleventyConfig.addFilter(
+    'markdown',
+    memoize((content) => {
+      return markdownLib.render(content)
+    })
+  )
 
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     baseHref: PATH_PREFIX,
     extensions: 'html,md,scss',
-  })
-
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: 'atom',
-    outputPath: `/${META.FEED}`,
-    collection: {
-      name: 'posts',
-      limit: 10,
-    },
-    metadata: {
-      language: 'en',
-      title: META.TITLE,
-      subtitle: META.DESCRIPTION,
-      base: META.CANONICAL,
-      author: {
-        name: META.AUTHOR,
-        email: META.EMAIL,
-      },
-    },
   })
 
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
@@ -155,13 +155,6 @@ export default async (eleventyConfig) => {
     jsTruthy: true,
     dynamicPartials: false,
   })
-
-  eleventyConfig.addLiquidFilter(
-    'htmlEntities',
-    memoize((str) => {
-      return encode(str)
-    })
-  )
 
   eleventyConfig.addCollection('discographyPages', (collectionApi) => {
     return discography.default.map((release) => ({
@@ -193,6 +186,25 @@ export default async (eleventyConfig) => {
         posts: posts.sort((a, b) => b.date - a.date),
       }))
       .sort((a, b) => b.year - a.year)
+  })
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: 'atom',
+    outputPath: `/${META.FEED}`,
+    collection: {
+      name: 'posts',
+      limit: 10,
+    },
+    metadata: {
+      language: 'en',
+      title: META.TITLE,
+      subtitle: META.DESCRIPTION,
+      base: META.CANONICAL,
+      author: {
+        name: META.AUTHOR,
+        email: META.EMAIL,
+      },
+    },
   })
 
   return {
