@@ -12,13 +12,14 @@
     "eleventy:watch": "SITE_URL='https://localhost:8080' npm run eleventy:base -- --serve --quiet",
     "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css",
     "css:build": "npm run css:base -- --minify",
-    "css:watch": "npm run css:base -- --watch"
+    "css:watch": "npm run css:base -- --watch",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@shopify/prettier-plugin-liquid": "^1.6.3",
-    "@tyleretters/discography": "^1.0.3",
+    "@tyleretters/discography": "^1.0.4",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.2",
     "luxon": "^3.5.0",
@@ -29,5 +30,8 @@
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.17",
     "wrangler": "^3.99.0"
+  },
+  "dependencies": {
+    "memoize": "^10.0.0"
   }
 }

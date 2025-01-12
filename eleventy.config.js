@@ -4,6 +4,9 @@ import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
 import implicitFigures from 'markdown-it-implicit-figures'
+import slugify from 'slugify'
+import discography from '@tyleretters/discography'
+import memoize from 'memoize'
 
 export const PATH_PREFIX = '/rm_ation/'
 
@@ -32,10 +35,17 @@ export const DIRS = {
   IMAGES: 'images',
   INCLUDES: 'includes',
   INPUT: 'src',
+  FONTS: 'fonts',
   LAYOUTS: 'layouts',
   OUTPUT: 'dist',
   PAGES: 'pages',
   POSTS: 'posts',
+}
+
+export const getReleaseSlug = (release) => {
+  const project = slugify(release.project, { lower: true, strict: true })
+  const title = slugify(release.title, { lower: true, strict: true })
+  return `${project}/${title}/`
 }
 
 export default async (eleventyConfig) => {
@@ -43,8 +53,38 @@ export default async (eleventyConfig) => {
     return `${title} | ${META.TITLE}`
   })
 
+  eleventyConfig.addShortcode('getReleaseSlug', (release) =>
+    getReleaseSlug(release)
+  )
+
   eleventyConfig.addShortcode('getTimestamp', () => {
     return Math.floor(new Date().getTime() / 1000)
+  })
+
+  eleventyConfig.addFilter('toTitleCase', (input) => {
+    // prettier-ignore
+    const exceptions = ["of", "a", "the", "and", "in", "on", "with", "at", "by", "from"];
+    const ignoreList = ['E.P.', 'FCIV']
+    return input
+      .split(' ')
+      .map((word, index) => {
+        if (ignoreList.includes(word)) {
+          return word
+        }
+        if (/^[A-Z]\.[A-Z](\.[A-Z])?$/i.test(word)) {
+          return word.toUpperCase()
+        }
+
+        if (index === 0 || !exceptions.includes(word.toLowerCase())) {
+          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        }
+        return word.toLowerCase()
+      })
+      .join(' ')
+  })
+
+  eleventyConfig.addFilter('stripLeadingZero', (input) => {
+    return input.replace('0', '')
   })
 
   eleventyConfig.addFilter('dateToUTC', (date, format = 'yyyy/MM/dd') => {
@@ -69,7 +109,7 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     baseHref: PATH_PREFIX,
-    extensions: 'html,md',
+    extensions: 'html,md,scss',
   })
 
   eleventyConfig.addPlugin(feedPlugin, {
@@ -95,10 +135,25 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.FONTS}`)
 
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
     dynamicPartials: false,
+  })
+
+  eleventyConfig.addLiquidFilter(
+    'htmlEntities',
+    memoize((str) => {
+      return encode(str)
+    })
+  )
+
+  eleventyConfig.addCollection('discographyPages', (collectionApi) => {
+    return discography.default.map((release) => ({
+      ...release,
+      slug: getReleaseSlug(release),
+    }))
   })
 
   eleventyConfig.addCollection('posts', (collectionApi) => {

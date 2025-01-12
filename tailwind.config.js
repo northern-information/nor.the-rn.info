@@ -3,15 +3,6 @@ export default {
   content: ['./src/**/*.liquid'],
   theme: {
     fontFamily: {
-      humanist: [
-        'Seravek',
-        'Gill Sans Nova',
-        'Ubuntu',
-        'Calibri',
-        'DejaVu Sans',
-        'source-sans-pro',
-        'sans-serif',
-      ],
       mono: [
         'SFMono-Regular',
         'Menlo',
@@ -22,6 +13,7 @@ export default {
         'monospace',
       ],
       olde: [
+        'GoudyTextMTStd',
         'Iowan Old Style',
         'Palatino Linotype',
         'URW Palladio L',

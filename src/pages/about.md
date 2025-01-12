@@ -1,7 +1,6 @@
 ---
 title: About
 layout: pageAbout.liquid
-page_excerpt_overload: Midwestern musician holed-up in the mountains by Los Angeles.
 ---
 
 My name is Tyler Etters. In 2025 I'm:

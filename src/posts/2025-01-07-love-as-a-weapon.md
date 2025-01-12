@@ -20,6 +20,6 @@ But there's no way to increase your "listenings per minute."
 
 I happen to be part of the caste that can wield, what I think I am arguing, is the most powerful time-traveling and multi-dimensional tool known to man. This is not hyperbole. This is `git`.
 
-So I leave myself treats like `date: 02012-12-12` to force my future self into writing little functions like `utcToLongNow()` for the rest of my life.
+So I leave myself treats like `date: 02012-12-12` to force my future self into writing little functions like `longNowToUtc()` for the rest of my life.
 
 It's play.

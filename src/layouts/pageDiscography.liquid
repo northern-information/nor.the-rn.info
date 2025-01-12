@@ -2,9 +2,8 @@
 layout: base.liquid
 ---
 {% render pageTitle, title: title %}
-<div class="content">
-  {{ content }}
-  <pre>
-    {{ discography | toJson | escape }}
-  </pre>
-</div>
+<ul class="list-none">
+{% for release in collections.discographyPages %}
+  {% render releaseList release: release %}
+{% endfor %}
+</ul>

@@ -1,7 +1,6 @@
 ---
 title: Photography
 layout: page.liquid
-page_excerpt_overload: 35mm photography.
 ---
 
 Shot with the trusty Canon AE-1 my mom pawned and passed down to me:
