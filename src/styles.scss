@@ -18,9 +18,9 @@ body {
 
 .home-grid {
   a {
-    @apply cursor-pointer;
+    @apply h-full w-full cursor-pointer;
     img {
-      @apply h-full object-cover transition-opacity;
+      @apply h-full w-full object-cover transition-opacity;
     }
   }
 }
