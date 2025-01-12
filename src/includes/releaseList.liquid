@@ -1,9 +1,12 @@
-<li class="flex mb-5 justify-center">
+<li class="mb-5 flex justify-center">
   <a
     href="/discography/{{ release.slug }}"
-    class="text-center group block w-fit cursor-pointer border-4 border-solid border-transparent text-red-500 hover:border-yellow-300 hover:bg-yellow-300 hover:text-stone-950">
-    <h2 class="font-semibold text-xl md:text-4xl font-olde">{{ release.title | toTitleCase }}</h2>
-    <h3 class="text-sm group-hover:text-stone-950 text-stone-50 no-underline">{{ release.project }}</h3>
-    <p class="italic text-stone-500 font-serif">{{ release.released | stripLeadingZero | dateToUTC | date: '%B 0%Y' }}, {{ release.type }}</p>
+    class="group block w-fit cursor-pointer border-4 border-solid border-transparent text-center text-red-500 hover:border-yellow-300 hover:bg-yellow-300 hover:text-stone-950"
+  >
+    <h2 class="font-olde text-xl font-semibold md:text-4xl">{{ release.title | toTitleCase }}</h2>
+    <h3 class="text-sm text-stone-50 no-underline group-hover:text-stone-950">{{ release.project }}</h3>
+    <p class="font-serif italic text-stone-500">
+      {{ release.released | stripLeadingZero | dateToUTC | date: '%B 0%Y' }}, {{ release.type }}
+    </p>
   </a>
 </li>

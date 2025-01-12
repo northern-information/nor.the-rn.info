@@ -9,23 +9,23 @@ eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
 <div class="content">
-<h1>{{ release.title }}</h1>
-<p><strong>Project:</strong> {{ release.project }}</p>
-<p><strong>Released:</strong> {{ release.released }}</p>
-<p><strong>Type:</strong> {{ release.type }}</p>
-<p><strong>Label:</strong> {{ release.label }}</p>
-<img src="{{ release.cover_url }}" alt="{{ release.title }} Cover">
+  <h1>{{ release.title }}</h1>
+  <p><strong>Project:</strong> {{ release.project }}</p>
+  <p><strong>Released:</strong> {{ release.released }}</p>
+  <p><strong>Type:</strong> {{ release.type }}</p>
+  <p><strong>Label:</strong> {{ release.label }}</p>
+  <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover">
 
-<h2>Tracks</h2>
-<ul>
-  {% for track in release.tracks %}
-    <li>{{ track.title }} - {{ track.length }}</li>
-  {% endfor %}
-</ul>
+  <h2>Tracks</h2>
+  <ul>
+    {% for track in release.tracks %}
+      <li>{{ track.title }} - {{ track.length }}</li>
+    {% endfor %}
+  </ul>
 
-<h2>Notes</h2>
-{{ release.notes }}
+  <h2>Notes</h2>
+  {{ release.notes }}
 
-<h2>Credits</h2>
-{{ release.credits }}
+  <h2>Credits</h2>
+  {{ release.credits }}
 </div>

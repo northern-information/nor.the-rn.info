@@ -3,7 +3,7 @@ layout: base.liquid
 ---
 {% render pageTitle, title: title %}
 <ul class="list-none">
-{% for release in collections.discographyPages %}
-  {% render releaseList release: release %}
-{% endfor %}
+  {% for release in collections.discographyPages %}
+    {% render releaseList, release: release %}
+  {% endfor %}
 </ul>
