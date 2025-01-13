@@ -104,6 +104,7 @@ export default [
   { url: 'https://www.srulirecht.com', title: 'Sruli Recht' },
   { url: 'https://acko.net', title: 'Steven Wittens' },
   { url: 'https://www.suzannetreister.net', title: 'Suzanne Treister' },
+  { url: 'https://swiftp.cc/', title: 'swiftp' },
   { url: 'https://swimignorantfire.bandcamp.com', title: 'Swim Ignorant Fire' },
   { url: 'https://tai-studio.org', title: 'TAI Studio' },
   { url: 'https://taylorgarron.com', title: 'Taylor Garron' },
