@@ -4,12 +4,12 @@ pagination:
   data: collections.discographyPages
   size: 1
   alias: release
-permalink: /discography/{{ release.slug }}
+permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
 {% render pageTitle, title: title %}
-{% render discographyToggle, title: title %}
+{% render discography, title: title %}
 <div class="m-auto my-10 flex w-auto flex-col place-items-center overflow-hidden md:max-w-[616px] xl:max-w-[800px]">
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full md:w-[616px] xl:w-[800px]">
   {% render releaseList, release: release, mode: 'red-stone' %}

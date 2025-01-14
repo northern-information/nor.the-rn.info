@@ -1,0 +1,19 @@
+---
+layout: base.liquid
+---
+{% render pageTitle, title: title %}
+{% render discography, discographyPages: collections.discographyPages, mode: 'list' %}
+{% render pageTitle, title: 'Playlists' %}
+<ul class="content grid grid-cols-1 md:grid-cols-3">
+  {% for playlist in playlists %}
+    <li class="mb-10">
+      <h2>{{ playlist.title }}</h2>
+      <ol>
+        {% for track in playlist.tracks %}
+          <li>{{ track }}</li>
+        {% endfor %}
+      </ol>
+    </li>
+  {% endfor %}
+</ul>
+

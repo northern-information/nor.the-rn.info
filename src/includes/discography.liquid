@@ -1,5 +1,5 @@
 <div class="mb-5 flex gap-4">
-  <a href="/discography" class="group flex flex-row place-items-center">
+  <a href="/music/" class="group flex flex-row place-items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -16,7 +16,7 @@
     </svg>
     <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">List</span>
   </a>
-  <a href="/discography-gallery" class="group flex flex-row place-items-center">
+  <a href="/music/gallery/" class="group flex flex-row place-items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -35,3 +35,21 @@
     <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">Gallery</span>
   </a>
 </div>
+{% if mode contains 'list' %}
+<ul class="list-none">
+  {% for release in discographyPages %}
+    <li class="mb-5 flex justify-center">
+      {% render releaseList, release: release, isLink: true %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% if mode contains 'gallery' %}
+<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  {% for release in discographyPages %}
+    <li class="mb-10">
+      {% render releaseGallery, release: release %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
