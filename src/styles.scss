@@ -94,7 +94,10 @@ body {
   blockquote {
     @apply ml-2 border-l-2 border-solid border-slate-400 pl-2;
   }
-  p {
+  p,
+  ol,
+  ul,
+  hr {
     @apply w-full md:w-2/3 lg:w-3/5;
     code {
       @apply p-[2px];

@@ -11,7 +11,9 @@ eleventyComputed:
 {% render pageTitle, title: title %}
 {% render discography, title: title %}
 <div class="m-auto my-10 flex w-auto flex-col place-items-center overflow-hidden md:max-w-[616px] xl:max-w-[800px]">
-  <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full md:w-[616px] xl:w-[800px]">
+  <a href="{{ release.cover_url }}" target="_blank">
+    <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full md:w-[616px] xl:w-[800px]">
+  </a>
   {% render releaseList, release: release, mode: 'red-stone' %}
   <div class="w-full text-center text-sm text-slate-50">
     <h3 class="mb-2 uppercase text-red-500">Tracks</h3>
