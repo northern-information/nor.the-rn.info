@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 {% render pageTitle, title: title %}
-{% render discography, discographyPages: collections.discographyPages, mode: 'list' %}
+{% render discography, discographyPages: collections.discographyPages, mode: 'list', site: site %}
 {% render pageTitle, title: 'Playlists' %}
 <ul class="content grid grid-cols-1 md:grid-cols-3">
   {% for playlist in playlists %}

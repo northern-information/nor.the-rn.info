@@ -26,6 +26,7 @@ export const META = {
   GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
+  DISCOGRAPHY_URL: 'http://npmjs.com/package/@tyleretters/discography',
   TITLE: 'Northern Information',
   YEAR: new Date().getUTCFullYear(),
 }
