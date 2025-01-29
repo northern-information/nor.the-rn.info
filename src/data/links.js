@@ -67,6 +67,7 @@ export default [
   { url: 'https://lunarday.bandcamp.com', title: 'Lunar Day' },
   { url: 'https://machineproject.com', title: 'Machine Project' },
   { url: 'https://mark-beasley.com', title: 'Mark Beasley' },
+  { url: 'https://mattohare.com/', title: 'Matt O\'Hare' },
   { url: 'https://www.mengqimusic.com', title: 'Mengqi Music' },
   { url: 'https://linktr.ee/monikabielskyte', title: 'Monika Bielskyte' },
   { url: 'https://monome.org', title: 'monome' },
