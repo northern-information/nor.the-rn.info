@@ -1,7 +1,9 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
+<div class="content mb-10">
+  {% render pageTitle, title: title %}
+</div>
 <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
   {% for group in collections.postsByYear %}
     <div class="md:pe-2">

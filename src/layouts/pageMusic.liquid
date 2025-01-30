@@ -1,12 +1,14 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
+<div class="content">
+  {% render pageTitle, title: title %}
+</div>
 {% render discography, discographyPages: collections.discographyPages, mode: 'list', site: site %}
 {% render pageTitle, title: 'Playlists' %}
-<ul class="content grid grid-cols-1 md:grid-cols-3">
+<ul class="grid grid-cols-1 xl:grid-cols-3">
   {% for playlist in playlists %}
-    <li class="mb-10">
+    <li class="content max-w-none mb-10">
       <h2>{{ playlist.title }}</h2>
       <ol>
         {% for track in playlist.tracks %}
@@ -16,4 +18,3 @@ layout: base.liquid
     </li>
   {% endfor %}
 </ul>
-

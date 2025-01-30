@@ -1,15 +1,10 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
 <div class="grid bg-slate-950 md:grid-cols-2">
-  <div class="content">
+  <div class="content md:pe-5">
+    {% render pageTitle, title: title %}
     {{ content }}
-    <img
-      src="/images/applied-sciences-and-phantasms-working-division.png"
-      alt="Northern Information Applied Sciences & Phantasms Working Division"
-      class="about-logo"
-    >
     <p>My accounts:</p>
     <ul>
       <li><a href="{{ site.ACCOUNTS.BANDCAMP }}">Bandcamp</a></li>

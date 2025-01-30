@@ -35,31 +35,38 @@
     <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">Gallery</span>
   </a>
   <a href="{{ site.META.DISCOGRAPHY_URL }}" target="_blank" class="group flex flex-row place-items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="
-        size-8 p-1
-        text-red-500 group-hover:text-slate-950 group-hover:bg-red-500
-        mr-1 cursor-pointer rounded
-      ">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-      </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="
+        mr-1 size-8
+        cursor-pointer rounded p-1
+        text-red-500 group-hover:bg-red-500 group-hover:text-slate-950
+      "
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+    </svg>
     <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">NPM</span>
   </a>
 </div>
 {% if mode contains 'list' %}
-<ul class="list-none">
-  {% for release in discographyPages %}
-    <li class="mb-5 flex justify-center">
-      {% render releaseList, release: release, isLink: true %}
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="list-none">
+    {% for release in discographyPages %}
+      <li class="mb-5 flex justify-center">
+        {% render releaseList, release: release, isLink: true %}
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}
 {% if mode contains 'gallery' %}
-<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
-  {% for release in discographyPages %}
-    <li class="mb-10">
-      {% render releaseGallery, release: release %}
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+    {% for release in discographyPages %}
+      <li class="mb-10">
+        {% render releaseGallery, release: release %}
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}

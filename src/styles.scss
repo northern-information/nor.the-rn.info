@@ -26,82 +26,12 @@ body {
 }
 
 .content {
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  img,
-  ul,
-  ol,
-  code,
-  pre,
-  iframe {
-    @apply mb-2;
-  }
-  img {
-    @apply h-auto w-full;
-    &.about-logo {
-      @apply my-2 max-w-[200px];
-    }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-xl;
-  }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  ul,
-  ol {
-    @apply text-slate-50;
-  }
+  @apply prose prose-slate prose-invert lg:prose-xl;
   a {
     @apply text-yellow-300 underline;
   }
   a:hover {
     @apply text-yellow-500 no-underline;
-  }
-  ul {
-    @apply list-disc;
-  }
-  ol {
-    @apply list-decimal;
-  }
-  ul,
-  ol {
-    list-style-position: inside;
-  }
-  pre,
-  code {
-    @apply overflow-scroll rounded border border-solid border-yellow-300 bg-slate-800 text-yellow-300;
-  }
-  pre,
-  code {
-    @apply px-2 py-2;
-  }
-  pre code {
-    @apply border-none px-0 py-0;
-  }
-  blockquote {
-    @apply ml-2 border-l-2 border-solid border-slate-400 pl-2;
-  }
-  p,
-  ol,
-  ul,
-  hr {
-    @apply w-full md:w-2/3 lg:w-3/5;
-    code {
-      @apply p-[2px];
-    }
   }
 }
 

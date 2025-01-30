@@ -1,8 +1,10 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
-<ul class="content grid grid-cols-1">
+<ul class="grid grid-cols-1">
+  <div class="content">
+    {% render pageTitle, title: title %}
+  </div>
   {% for project in projects %}
     <li class="mb-10">
       {% if project.title != 'Circular Ruin DSP' %}
@@ -11,7 +13,7 @@ layout: base.liquid
         </div>
       {% endif %}
       <div class="grid grid-cols-1 md:grid-cols-3">
-        <div class="md:pr-4">
+        <div class="content max-w-none md:pr-4">
           <h2>{{ project.title }}</h2>
           <p>{{ project.dates }}</p>
           {{ project.content | markdown }}

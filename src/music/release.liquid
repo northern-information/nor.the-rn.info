@@ -8,7 +8,9 @@ permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
-{% render pageTitle, title: title %}
+<div class="content">
+  {% render pageTitle, title: title %}
+</div>
 {% render discography, title: title %}
 <div class="m-auto my-10 flex w-auto flex-col place-items-center overflow-hidden md:max-w-[616px] xl:max-w-[800px]">
   <a href="{{ release.cover_url }}" target="_blank">

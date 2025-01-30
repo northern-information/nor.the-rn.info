@@ -1,5 +1,7 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
-{% render discography, discographyPages: collections.discographyPages mode: 'gallery', site: site %}
+<div class="content">
+  {% render pageTitle, title: title %}
+</div>
+{% render discography, discographyPages: collections.discographyPages, mode: 'gallery', site: site %}
