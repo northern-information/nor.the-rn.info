@@ -60,6 +60,7 @@ export default [
   { url: 'https://kylemcdonald.net', title: 'Kyle McDonald' },
   { url: 'https://lakeradio.bandcamp.com', title: 'LAKE R▲DIO' },
   { url: 'https://lawrencelek.com', title: 'Lawrence Lek' },
+  { url: 'https://www.marekpoliks.com', title: 'Marek Poliks' },
   { url: 'https://manovich.net', title: 'Lev Manovich' },
   { url: 'https://www.liamwong.com', title: 'Liam Wong' },
   { url: 'https://ritualdust.com', title: 'Lizbeth Poirier' },
