@@ -15,6 +15,7 @@ export default [
   { url: 'https://canyonsofstatic.bandcamp.com', title: 'Canyons of Static' },
   { url: 'https://circularruindsp.com', title: 'Circular Ruin DSP' },
   { url: 'https://components.one', title: 'Components One' },
+  { url: 'https://corysalveson.com', title: 'Cory Salveson' },
   { url: 'https://criticalengineering.org', title: 'Critical Engineering Manifesto', },
   { url: 'https://cthdrl.co', title: 'CTHDRL' },
   { url: 'https://damaged.bleu255.com', title: 'Damaged Earth Catalog' },
