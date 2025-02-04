@@ -33,6 +33,9 @@ body {
   a:hover {
     @apply text-yellow-500 no-underline;
   }
+  img {
+    @apply h-auto w-full;
+  }
 }
 
 .release-notes,
