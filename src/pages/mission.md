@@ -1,7 +1,9 @@
 ---
-title: Philosophy
+title: Mission
 layout: page.liquid
 ---
+
+My mission is to inspire others with music.
 
 I believe artists have two jobs:
 
