@@ -2,7 +2,7 @@
   "name": "northern-information",
   "type": "module",
   "scripts": {
-    "dev": "SITE_URL=http://localhost:8080/rm_ation PATH_PREFIX=/rm_ation npm run eleventy:watch",
+    "dev": "concurrently 'SITE_URL=http://localhost:8080/rm_ation PATH_PREFIX=/rm_ation npm run eleventy:watch' 'npm run css:watch'",
     "build": "SITE_URL=https://nor.the-rn.info/rm_ation PATH_PREFIX=/rm_ation npm run css:build && npm run eleventy:build",
     "pretty": "prettier --write .",
     "eleventy:base": "npx @11ty/eleventy",

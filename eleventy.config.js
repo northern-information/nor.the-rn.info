@@ -8,14 +8,13 @@ import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 
-const IS_LOCAL = process.env.SITE_URL?.includes('localhost')
 export const PATH_PREFIX = '/rm_ation/'
 
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
   BUILD_TIME: new Date().toISOString(),
-  CANONICAL: process.env.SITE_URL || `https://nor.the-rn.info${PATH_PREFIX}`,
+  CANONICAL: 'https://nor.the-rn.info/rm_ation/',
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DAUNTLESS_CHOIR_URL: '/dauntless-choir/',
   DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
@@ -216,7 +215,7 @@ export default async (eleventyConfig) => {
       data: DIRS.DATA,
       includes: DIRS.INCLUDES,
       layouts: DIRS.LAYOUTS,
-      output: IS_LOCAL ? DIRS.OUTPUT : `${DIRS.OUTPUT}${PATH_PREFIX}`,
+      output: `${DIRS.OUTPUT}${PATH_PREFIX}`,
     },
   }
 }
