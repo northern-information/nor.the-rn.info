@@ -1,3 +1,5 @@
+import { PATH_PREFIX } from './eleventy.config.js'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.liquid', './src/index.liquid'],
@@ -57,9 +59,9 @@ export default {
         '600%': '600% 600%',
       },
       backgroundImage: {
-        powerlines: "url('/images/000558300025.jpg')",
-        'red-robin': "url('/images/IMG_3876.jpg')",
-        'four-oh-four': "url('/images/crown-via-phill-c-on-yelp.jpg')",
+        powerlines: `url('${PATH_PREFIX}images/000558300025.jpg')`,
+        'red-robin': `url('${PATH_PREFIX}images/IMG_3876.jpg')`,
+        'four-oh-four': `url('${PATH_PREFIX}images/crown-via-phill-c-on-yelp.jpg')`,
       },
     },
   },
