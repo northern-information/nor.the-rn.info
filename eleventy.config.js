@@ -9,7 +9,7 @@ import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 
 const IS_LOCAL = process.env.SITE_URL?.includes('localhost')
-export const PATH_PREFIX = IS_LOCAL ? '/' : '/rm_ation/'
+export const PATH_PREFIX = '/rm_ation/'
 
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
