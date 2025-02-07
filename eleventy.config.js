@@ -8,14 +8,14 @@ import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 
-export const PATH_PREFIX = '/rm_ation/'
+const IS_LOCAL = process.env.SITE_URL?.includes('localhost')
+export const PATH_PREFIX = IS_LOCAL ? '/' : '/rm_ation/'
 
-// prettier-ignore
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
   BUILD_TIME: new Date().toISOString(),
-  CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
+  CANONICAL: process.env.SITE_URL || `https://nor.the-rn.info${PATH_PREFIX}`,
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DAUNTLESS_CHOIR_URL: '/dauntless-choir/',
   DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
@@ -68,6 +68,10 @@ export default async (eleventyConfig) => {
       return Math.floor(new Date().getTime() / 1000)
     })
   )
+
+  eleventyConfig.addFilter('absoluteUrl', (path) => {
+    return `${PATH_PREFIX}${path.replace(/^\//, '')}`
+  })
 
   eleventyConfig.addFilter(
     'toTitleCase',
@@ -216,7 +220,7 @@ export default async (eleventyConfig) => {
       data: DIRS.DATA,
       includes: DIRS.INCLUDES,
       layouts: DIRS.LAYOUTS,
-      output: `${DIRS.OUTPUT}${PATH_PREFIX}`,
+      output: IS_LOCAL ? DIRS.OUTPUT : `${DIRS.OUTPUT}${PATH_PREFIX}`,
     },
   }
 }
