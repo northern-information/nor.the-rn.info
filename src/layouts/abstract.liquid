@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% render metaTags, site: site %}
-    <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
+    <link rel="stylesheet" href="{{ site.META.CANONICAL }}/styles.css?ver={% getTimestamp %}">
     <title>{% getTitle title %}</title>
   </head>
   <body>
