@@ -69,10 +69,6 @@ export default async (eleventyConfig) => {
     })
   )
 
-  eleventyConfig.addFilter('absoluteUrl', (path) => {
-    return `${PATH_PREFIX}${path.replace(/^\//, '')}`
-  })
-
   eleventyConfig.addFilter(
     'toTitleCase',
     memoize((input) => {
