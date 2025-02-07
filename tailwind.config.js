@@ -1,4 +1,4 @@
-import { PATH_PREFIX } from './eleventy.config.js'
+const PATH_PREFIX = process.env.PATH_PREFIX || '/'
 
 /** @type {import('tailwindcss').Config} */
 export default {
