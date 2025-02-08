@@ -221,7 +221,7 @@ export default async (eleventyConfig) => {
       data: DIRS.DATA,
       includes: DIRS.INCLUDES,
       layouts: DIRS.LAYOUTS,
-      output: DIRS.OUTPUT,
+      output: `${DIRS.OUTPUT}${PATH_PREFIX}`,
     },
   }
 }
