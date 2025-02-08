@@ -57,9 +57,9 @@ export default {
         '600%': '600% 600%',
       },
       backgroundImage: {
-        powerlines: `url('rm_ation/images/000558300025.jpg')`,
-        'red-robin': `url('rm_ation/images/IMG_3876.jpg')`,
-        'four-oh-four': `url('rm_ation/images/crown-via-phill-c-on-yelp.jpg')`,
+        powerlines: `url('/images/000558300025.jpg')`,
+        'red-robin': `url('/images/IMG_3876.jpg')`,
+        'four-oh-four': `url('/images/crown-via-phill-c-on-yelp.jpg')`,
       },
     },
   },
