@@ -16,9 +16,7 @@ npm run build
 
 ## Deploy
 
-```zsh
-npm run deploy
-```
+Automatic on push to `main` via Cloudflare integration.
 
 ### Files to Remember
 
