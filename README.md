@@ -24,5 +24,5 @@ Automatic on push to `main` via Cloudflare integration.
 eleventy.config.js
 ./src/pages/pages.json
 ./src/posts/posts.json
-./sr/data/site.js
+./src/data/site.js
 ```
