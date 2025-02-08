@@ -49,6 +49,12 @@ export const getReleaseSlug = memoize((release) => {
 })
 
 export default async (eleventyConfig) => {
+  eleventyConfig.addGlobalData(
+    'siteUrl',
+    process.env.SITE_URL || 'http://localhost:8080'
+  )
+  eleventyConfig.addGlobalData('pathPrefix', process.env.PATH_PREFIX || '')
+
   eleventyConfig.addShortcode(
     'getTitle',
     memoize((title) => {
@@ -215,7 +221,7 @@ export default async (eleventyConfig) => {
       data: DIRS.DATA,
       includes: DIRS.INCLUDES,
       layouts: DIRS.LAYOUTS,
-      output: `${DIRS.OUTPUT}${PATH_PREFIX}`,
+      output: DIRS.OUTPUT,
     },
   }
 }
