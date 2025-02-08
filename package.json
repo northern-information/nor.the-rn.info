@@ -2,13 +2,13 @@
   "name": "northern-information",
   "type": "module",
   "scripts": {
-    "dev": "concurrently 'SITE_URL=http://localhost:8080/rm_ation PATH_PREFIX=/rm_ation npm run eleventy:watch' 'npm run css:watch'",
+    "dev": "concurrently 'npm run eleventy:watch' 'npm run css:watch'",
     "build": "npm run css:build && npm run eleventy:build",
     "pretty": "prettier --write .",
     "eleventy:base": "npx @11ty/eleventy",
     "eleventy:build": "npm run eleventy:base",
     "eleventy:watch": "npm run eleventy:base -- --serve --quiet",
-    "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/rm_ation/styles.css",
+    "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css",
     "css:build": "npm run css:base -- --minify",
     "css:watch": "npm run css:base -- --watch",
     "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"

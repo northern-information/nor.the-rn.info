@@ -8,8 +8,6 @@ import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 
-export const PATH_PREFIX = '/rm_ation/'
-
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
@@ -49,12 +47,6 @@ export const getReleaseSlug = memoize((release) => {
 })
 
 export default async (eleventyConfig) => {
-  eleventyConfig.addGlobalData(
-    'siteUrl',
-    process.env.SITE_URL || 'http://localhost:8080'
-  )
-  eleventyConfig.addGlobalData('pathPrefix', process.env.PATH_PREFIX || '')
-
   eleventyConfig.addShortcode(
     'getTitle',
     memoize((title) => {
@@ -147,7 +139,6 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
-    baseHref: PATH_PREFIX,
     extensions: 'html,md,scss',
   })
 
@@ -215,13 +206,12 @@ export default async (eleventyConfig) => {
 
   return {
     markdownTemplateEngine: 'liquid',
-    pathPrefix: PATH_PREFIX,
     dir: {
       input: DIRS.INPUT,
       data: DIRS.DATA,
       includes: DIRS.INCLUDES,
       layouts: DIRS.LAYOUTS,
-      output: `${DIRS.OUTPUT}${PATH_PREFIX}`,
+      output: DIRS.OUTPUT,
     },
   }
 }
