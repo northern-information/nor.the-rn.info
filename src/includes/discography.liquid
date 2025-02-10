@@ -8,13 +8,13 @@
       stroke="currentColor"
       class="
         size-8 p-1
-        {% if mode == 'list' %}text-slate-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-slate-950 group-hover:bg-red-500{% endif %}
+        {% if mode == 'list' %}text-stone-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-stone-950 group-hover:bg-red-500{% endif %}
         mr-1 cursor-pointer rounded
       "
     >
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
     </svg>
-    <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">List</span>
+    <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">List</span>
   </a>
   <a href="/music/gallery/" class="group flex flex-row place-items-center">
     <svg
@@ -25,14 +25,14 @@
       stroke="currentColor"
       class="
         size-8 p-1
-        {% if mode == 'gallery' %}text-slate-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-slate-950 group-hover:bg-red-500{% endif %}
+        {% if mode == 'gallery' %}text-stone-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-stone-950 group-hover:bg-red-500{% endif %}
         mr-1 cursor-pointer rounded
       "
     >
       <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
     </svg>
-    <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">Gallery</span>
+    <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">Gallery</span>
   </a>
   <a href="{{ site.META.DISCOGRAPHY_URL }}" target="_blank" class="group flex flex-row place-items-center">
     <svg
@@ -44,12 +44,12 @@
       class="
         mr-1 size-8
         cursor-pointer rounded p-1
-        text-red-500 group-hover:bg-red-500 group-hover:text-slate-950
+        text-red-500 group-hover:bg-red-500 group-hover:text-stone-950
       "
     >
       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
     </svg>
-    <span class="font-serif italic text-slate-500 group-hover:text-red-500 group-hover:underline">NPM</span>
+    <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">NPM</span>
   </a>
 </div>
 {% if mode contains 'list' %}

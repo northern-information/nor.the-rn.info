@@ -17,14 +17,14 @@ eleventyComputed:
     <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full md:w-[616px] xl:w-[800px]">
   </a>
   {% render releaseList, release: release, mode: 'red-stone' %}
-  <div class="w-full text-center text-sm text-slate-50">
+  <div class="w-full text-center text-sm text-stone-50">
     <h3 class="mb-2 uppercase text-red-500">Tracks</h3>
     <ol class="mb-10">
       {% for track in release.tracks %}
         <li class="mb-2">
           {{ track.title -}}
           <br>
-          <span class="font-serif italic text-slate-500">{{ track.length }}</span>
+          <span class="font-serif italic text-stone-500">{{ track.length }}</span>
         </li>
       {% endfor %}
     </ol>
@@ -37,7 +37,7 @@ eleventyComputed:
             <br>
             <a
               href="{{ stream.url }}"
-              class="font-serif italic text-slate-500 hover:text-red-500 hover:underline"
+              class="font-serif italic text-stone-500 hover:text-red-500 hover:underline"
               target="_blank"
             >
               {{- stream.url -}}

@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply bg-slate-950;
+  @apply bg-stone-950;
 }
 
 .home-grid {
@@ -26,7 +26,7 @@ body {
 }
 
 .content {
-  @apply prose prose-slate prose-invert lg:prose-xl;
+  @apply prose prose-stone prose-invert lg:prose-xl;
   a {
     @apply text-yellow-300 underline;
   }
@@ -55,7 +55,7 @@ footer {
 }
 
 ::selection {
-  @apply bg-yellow-300 text-slate-950;
+  @apply bg-yellow-300 text-stone-950;
 }
 
 @layer utilities {

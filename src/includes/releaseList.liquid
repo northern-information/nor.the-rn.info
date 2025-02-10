@@ -9,8 +9,8 @@
 <h2 class="font-olde text-xl font-semibold text-red-500 group-hover:underline md:text-4xl">
   {{ release.title | toTitleCase }}
 </h2>
-<h3 class="text-sm text-slate-50">{{ release.project }}</h3>
-<p class="font-serif italic text-slate-500">
+<h3 class="text-sm text-stone-50">{{ release.project }}</h3>
+<p class="font-serif italic text-stone-500">
   {{ release.released | stripLeadingZero | dateToUTC | date: '%B 0%Y' }}, {{ release.type }}
 </p>
 {% if isLink %}
