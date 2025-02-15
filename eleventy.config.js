@@ -15,7 +15,7 @@ export const META = {
   CANONICAL: 'https://nor.the-rn.info/rm_ation/',
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DAUNTLESS_CHOIR_URL: '/dauntless-choir/',
-  DESCRIPTION: 'Midwestern musician holed-up in the mountains by Los Angeles.',
+  DESCRIPTION: 'LONG LIVE THE LOST ONES',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
   GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),
