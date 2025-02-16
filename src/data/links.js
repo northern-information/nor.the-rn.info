@@ -31,6 +31,7 @@ export default [
   { url: 'https://disquiet.com', title: 'Disquiet' },
   { url: 'https://djmeisner.com', title: 'DJ Meisner' },
   { url: 'https://dominofactory.net', title: 'Domino Factory' },
+  { url: 'https://emenel.ca/', title: 'Matt Nish-Lapidus' },
   { url: 'https://www.effixx.studio', title: 'EFFIXX' },
   { url: 'https://egressac.wordpress.com', title: 'Egress' },
   { url: 'https://emilysegal.net', title: 'Emily Segal' },
