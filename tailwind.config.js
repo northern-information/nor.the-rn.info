@@ -60,6 +60,8 @@ export default {
         powerlines: `url('/images/000558300025.jpg')`,
         'red-robin': `url('/images/IMG_3876.jpg')`,
         'four-oh-four': `url('/images/crown-via-phill-c-on-yelp.jpg')`,
+        'caution-stripes':
+          'repeating-linear-gradient(45deg, #fde047 0px, #fde047 10px, black 10px, black 20px)',
       },
     },
   },
