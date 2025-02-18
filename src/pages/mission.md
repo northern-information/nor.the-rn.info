@@ -3,9 +3,11 @@ title: Mission
 layout: page.liquid
 ---
 
-My mission is to inspire others with music.
+## Don't give up.
 
-I believe artists have two jobs:
+Our mission is to inspire with music.
+
+Artists have two jobs:
 
 1. To not give up.
 2. To help others not give up.
