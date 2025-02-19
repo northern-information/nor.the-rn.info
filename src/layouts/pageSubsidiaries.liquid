@@ -5,22 +5,22 @@ layout: base.liquid
   <div class="content">
     {% render pageTitle, title: title %}
   </div>
-  {% for project in projects %}
+  {% for subsidiary in subsidiaries %}
     <li class="mb-10">
-      {% if project.title != 'Circular Ruin DSP' %}
+      {% if subsidiary.title != 'Circular Ruin DSP' %}
         <div class="-mx-2 h-10">
           {% render spectrum %}
         </div>
       {% endif %}
       <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="content max-w-none md:pr-4">
-          <h2>{{ project.title }}</h2>
-          <p>{{ project.dates }}</p>
-          {{ project.content | markdown }}
+          <h2>{{ subsidiary.title }}</h2>
+          <p>{{ subsidiary.dates }}</p>
+          {{ subsidiary.content | markdown }}
         </div>
         <div class="md:col-span-2">
-          <a href="{{ project.image }}">
-            <img src="{{ project.image }}" alt="{{ project.title }}" class="!mb-0">
+          <a href="{{ subsidiary.image }}">
+            <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0">
           </a>
         </div>
       </div>

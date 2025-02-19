@@ -58,6 +58,7 @@ export default {
       },
       backgroundImage: {
         powerlines: `url('/images/000558300025.jpg')`,
+        foxfires: `url('/images/foxfires-kybalion.png')`,
         'red-robin': `url('/images/IMG_3876.jpg')`,
         'four-oh-four': `url('/images/crown-via-phill-c-on-yelp.jpg')`,
         'caution-stripes':
