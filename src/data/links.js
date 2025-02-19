@@ -10,6 +10,7 @@ export default [
   { url: 'https://arthurzdrinc.com', title: 'Arthur Zdrinc' },
   { url: 'https://bcchang.com', title: 'Ben Chang' },
   { url: 'https://brandonbandy.com', title: 'Brandon Bandy' },
+  { url: 'https://www.brandontani.com', title: 'Brandon Tani' },
   { url: 'https://nnnnnnnn.co', title: 'Brian Crabtree' },
   { url: 'https://bridgesofkonigsberg.bandcamp.com', title: 'Bridges of Königsberg', },
   { url: 'https://canyonsofstatic.bandcamp.com', title: 'Canyons of Static' },
