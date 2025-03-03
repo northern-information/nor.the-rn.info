@@ -84,6 +84,7 @@ export default [
   { url: 'https://nowheregallery.co', title: 'Nowhere Gallery' },
   { url: 'https://paulpear.bandcamp.com', title: 'Paul Pear' },
   { url: 'https://www.punctr.art', title: 'PUNCTR ART' },
+  { url: 'https://www.punk.ist', title: 'punk.ist' },
   { url: 'https://pullahs.bandcamp.com', title: 'Pullahs' },
   { url: 'https://www.nobadmemories.com', title: 'Rachel Simone Weil' },
   { url: 'https://kokorobot.ca', title: 'Rekka Bellum' },
