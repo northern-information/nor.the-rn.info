@@ -154,7 +154,7 @@ export default async (eleventyConfig) => {
   })
 
   eleventyConfig.addCollection('discographyPages', (collectionApi) => {
-    return discography.default.map((release) => ({
+    return discography.map((release) => ({
       ...release,
       slug: getReleaseSlug(release),
     }))
