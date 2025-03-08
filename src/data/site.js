@@ -6,7 +6,7 @@ export default {
   ACCOUNTS: {
     BANDCAMP: 'https://intertext.bandcamp.com',
     BLUESKY: 'https://bsky.app/profile/tyleretters.bsky.social',
-    DISCORD: 'https://discord.gg/nYycWdsT5n',
+    DISCORD: 'https://discord.gg/FHDdUJugzU',
     EMAIL: 'tyler@etters.co',
     GEMINI: 'gemini://tilde.club/~tse/',
     GITHUB: 'https://github.com/tyleretters',
