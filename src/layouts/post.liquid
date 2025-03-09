@@ -5,7 +5,8 @@ layout: base.liquid
 <div class="grid grid-cols-1 xl:grid-cols-4">
   <div class="mb-10 xl:col-span-3">
     <div class="content">
-      {% render pageTitle, title: title %}
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}" class="text-stone-300">{{ page.date | date: '%B %d, %Y' }}</time>
+      <h1 class="mb-1 text-4xl text-stone-50">{{ title }}</h1>
       {{ content }}
     </div>
   </div>
