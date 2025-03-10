@@ -45,15 +45,6 @@ body {
   }
 }
 
-footer {
-  a {
-    @apply text-blue-700 underline;
-  }
-  a:hover {
-    @apply text-blue-900 no-underline;
-  }
-}
-
 ::selection {
   @apply bg-yellow-300 text-stone-950;
 }
