@@ -3,7 +3,7 @@ title: About
 layout: pageAbout.liquid
 ---
 
-My name is Tyler Etters — a midwesterner holed-up in the mountains by 𝐿𝑜𝑠 𝐴𝑛𝑔𝑒𝑙𝑒𝑠 with [my wife](https://etters.co) and two cats. In 2025 I'm:
+My name is Tyler Etters. In 2025 I'm:
 
 - engineering for [Discogs](https://discogs.com)
 - causing mayhem at [Circular Ruin DSP](https://circularruindsp.com)
