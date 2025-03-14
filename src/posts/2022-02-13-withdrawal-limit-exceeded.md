@@ -54,7 +54,7 @@ The way I see it, if I'm opting into a system that can just magick away 20% of m
 
 _At least I'll always know the score._
 
-So I took the disbursement, paid off some long-term debt, paid off my motorcycle, put some in savings, started a new investment strategy based on Ethereum and adjacent technology.
+So I took the disbursement, paid off some long-term debt, paid off my motorcycle, put some in savings.
 
 I also wanted to be like my father and have a small cash emergency fund. I went to the bank and learned about withdrawal limits.
 
@@ -109,45 +109,6 @@ Here's the part where I would normally share everything I'm thankful for: friend
 I help them where I can. I offer material and emotional aid. I make art that confronts these issues. I write blog posts like this.
 
 I'm grateful for my privileges. I'm also ready to play a new game and perhaps help build a new world in the shell of the old.
-
-## Crypto
-
-![NFT Use Cases](/images/nft-use-cases.jpg)
-
-A few weeks ago I posted my [skeptical synthesis of NFTs.](/2022/01/11/web3-skeptic-linkdump/) In [the time since](/2022/01/24/web3-hopeful-linkdump/), my thinking has evolved.
-
-My final answer was: "NFTs are just Beanie Babies that also destroy the planet. Change my mind."
-
-_I have changed my mind._
-
-My argument hinged on two points: the utility of the technology itself and environmental impact.
-
-### Utility
-
-As the above diagram hints, the utility of NFTs is _enormous_. I couldn't see it because I was blinded by "art" from the BAYCs and the ostentatious grift from the Hit Pieces. Now that I have some first-hand experience and have participated in [channel Season 0](https://channel.xyz), I suspect username/password forms will be replaced by NFT-like technology within the next few years.
-
-(!)
-
-_And that's just one application of the technology._
-
-So, NFTs have immense utility. I was wrong.
-
-### Environmental Impact
-
-My environmental take is alarmist and something of a straw man. I've since learned (due in no small part to the saintly patience of thought leaders like [New Models](https://newmodes.io), [Interdependece](https://interdependence.fm/), and [Joshua Citarella](http://joshuacitarella.com/)) that if I want to critique the environmental impact of crypto, I am also priced into critiquing the environmental impact of well... _everything_.
-
-How much energy do we burn on Fortnight?
-
-What about The Office comfort-binges?
-
-Defense?
-
-See where this is going? Casting crypto as energy-pariah is a garden variety [bad faith](https://en.wikipedia.org/wiki/Bad_faith) [straw-man](https://yourlogicalfallacyis.com/strawman).
-
-We're utterly dependent on electricity. No political, social, or environmental cataclysm will change this. I've decided to simply become "pro nuclear energy" and remove this entire class of discourse from my internal dialogues. Further information:
-
-- [Ethereum Energy Numbers are in! Moral calculations and web 3 critiques with Kyle McDonald](https://interdependence.fm/episodes/ethereum-energy-numbers-are-in-moral-calculations-and-web-3-critiques-with-kyle-mcdonald)
-- [Early internet energy panics, Brandolini's Law, and getting the numbers right with Dr. Jonathan Koomey](https://interdependence.fm/episodes/early-internet-energy-panics-brandolinis-law-and-getting-the-numbers-right-with-dr-jonathan-koomey)
 
 ## Unreal City
 
