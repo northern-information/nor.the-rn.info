@@ -10,7 +10,6 @@ layout: pageDauntless.liquid
 ## Instructions
 
 - Please wait in the #𝑒𝑚𝑝𝑡𝑦-𝑤𝑎𝑟𝑒ℎ𝑜𝑢𝑠𝑒 until we clear you.
-- Once inside, the **BENEVOLENT CHOIRMISTRESS FOR LIFE** will introduce you to the 𝔠𝔥𝔬𝔦𝔯!
 - There are no rules here, but you are all **HONORED GUESTS**.
 
 ## Choruses
