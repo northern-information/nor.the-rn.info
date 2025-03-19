@@ -28,7 +28,7 @@ Eco Futurism Corporation just announced _Life in Warp_ by A lake by the mõõn, 
 
 ## Pasha Petrosyan
 
-[Pasha Petrosyan was fatured on Honest Jams Podcast.](https://www.buzzsprout.com/819931/8163474-episode-31-mutation-with-pasha-petrosyan-pasha-pear-the-crustations)
+[Pasha Petrosyan was featured on Honest Jams Podcast.](https://www.buzzsprout.com/819931/8163474-episode-31-mutation-with-pasha-petrosyan-pasha-pear-the-crustations)
 
 ## Erik Davis
 
