@@ -7,7 +7,11 @@
       <p>{{ site.META.TITLE }}</p>
       <p>
         2008 &mdash; {{ site.META.YEAR }}
-        <a href="{{ site.META.CREATIVE_COMMONS }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">CC BY 4.0</a>
+        <a
+          href="{{ site.META.CREATIVE_COMMONS }}"
+          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+          >CC BY 4.0</a
+        >
       </p>
       <p>{{ site.META.INVOCATION }}</p>
     </div>
@@ -15,11 +19,19 @@
       <p>Build Time: {{ site.META.BUILD_TIME }}</p>
       <p>
         Source Code:
-        <a href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">{{ site.META.GIT_HASH_SHORT }}</a>
+        <a
+          href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}"
+          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+        >
+          {{- site.META.GIT_HASH_SHORT -}}
+        </a>
       </p>
       <p>
         Atom Feed:
-        <a href="{{ site.META.CANONICAL }}{{ site.META.FEED }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">
+        <a
+          href="{{ site.META.CANONICAL }}{{ site.META.FEED }}"
+          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+        >
           {{- site.META.CANONICAL -}}
           {{- site.META.FEED -}}
         </a>
@@ -29,11 +41,11 @@
       href="/"
       class="flex h-full w-full items-center justify-center px-2 py-2 hover:bg-red-500"
     >
-    <img
-      src="/images/applied-sciences-and-phantasms-working-division.svg"
-      alt="Northern Information Logo"
-      class="mr-2 h-[90px] w-[90px]"
-    >
+      <img
+        src="/images/applied-sciences-and-phantasms-working-division.svg"
+        alt="Northern Information Logo"
+        class="mr-2 h-[90px] w-[90px]"
+      >
     </a>
   </div>
   {% render rule %}
