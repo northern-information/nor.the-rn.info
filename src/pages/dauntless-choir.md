@@ -10,8 +10,8 @@ layout: pageDauntless.liquid
 ## Instructions
 
 - Please wait in the #𝑒𝑚𝑝𝑡𝑦-𝑤𝑎𝑟𝑒ℎ𝑜𝑢𝑠𝑒 until we clear you.
-- There are no rules here, but you are all **HONORED GUESTS**.
-- Remember: you are here because *I want you to be here* and I want you be here with everyone else.
+- There are no rules here but there are [community heuristics](#community-heuristics).
+- Remember: you are here because _I want you to be here_ and I want you be here with everyone else.
 
 ## Choruses
 
