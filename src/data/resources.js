@@ -1,5 +1,11 @@
 export default [
   {
+    url: 'https://northerninformation.s3.us-east-2.amazonaws.com/mixtape.svg',
+    size: '2KB',
+    title: 'Mixtape Logo (SVG)',
+    description: 'Inspired by both the MiniDisc and MIDI logos.',
+  },
+  {
     url: 'https://northerninformation.s3.us-east-2.amazonaws.com/the-gateway-experience.zip',
     size: '11.19GB',
     title: 'The Gateway Experience',
