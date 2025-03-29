@@ -16,7 +16,7 @@ To kick things off, some orientation [Chris Dixon](https://future.a16z.com/why-w
 
 [Moxie Marlinspike](https://moxie.org/2022/01/07/web3-first-impressions.html), founder of Signal, doesn't buy it:
 
-> "It's early days still" is the most common refrain I see from people in the web3 space when discussing matters like these. In some ways, cryptocurrency's failure to scale beyond relatively nascent engineering is what makes it possible to consider the days "early," since objectively it has already been a decade or more.
+> _It's early days still_ is the most common refrain I see from people in the web3 space when discussing matters like these. In some ways, cryptocurrency's failure to scale beyond relatively nascent engineering is what makes it possible to consider the days "early," since objectively it has already been a decade or more.
 >
 > However, even if this is just the beginning (and it very well might be!), I'm not sure we should consider that any consolation. I think the opposite might be true; it seems like we should take notice that from the very beginning, these technologies immediately tended towards centralization through platforms in order for them to be realized
 >

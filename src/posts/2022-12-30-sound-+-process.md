@@ -10,11 +10,9 @@ Dan:
 
 > if you've spent any time [here](https://llllllll.co) in the last two years, the guests of this episode are likely already known to you `:slight_smile:`
 >
-> in july of 2020, `@tyleretters` put out a request for contributions to start a project for norns named [Dronecaster](https://llllllll.co/t/dronecaster/34737). the proposed script's mission was simple:
+> in july of 2020, `@tyleretters` put out a request for contributions to start a project for norns named [Dronecaster](https://llllllll.co/t/dronecaster/34737). the proposed script's mission was simple: _cast drones for hours, send it out to your gear and `.wav` whatever beauty returns_
 >
-> > _cast drones for hours, send it out to your gear and `.wav` whatever beauty returns_
->
-> he found his first collaborator in `@license`, who helped build a SuperCollider template which not only deployed Tyler's initial vision, but made it easy for others to contribute as well. among those was `@infinitedigits`, whose norns scripts [Blndr ](https://llllllll.co/t/blndr/35106) and [Barcode ](https://llllllll.co/t/barcode/35297) were already instant classics among y'all `:sparkles:`
+> he found his first collaborator in `@license`, who helped build a SuperCollider template which not only deployed Tyler's initial vision, but made it easy for others to contribute as well. among those was `@infinitedigits`, whose norns scripts [Blndr](https://llllllll.co/t/blndr/35106) and [Barcode](https://llllllll.co/t/barcode/35297) were already instant classics among y'all `:sparkles:`
 >
 > the energy exchanged between these three artists, all collaborating remotely in the early days of the pandemic, helped establish a lines-centric chapter for the polymyth of [Northern Information](https://nor.the-rn.info), which has become home to a growing group of musicians and developers navigating the late stages of the Anthropocene.
 >

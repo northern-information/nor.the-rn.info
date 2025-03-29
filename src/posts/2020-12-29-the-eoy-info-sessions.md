@@ -16,7 +16,7 @@ One thought I cannot shake: things are going to get objectively worse, for a lon
 >
 > The "destiny" of the virus is to become endemic, even as vaccines begin to be rolled out in the US and UK, says Professor David Heymann, the chair of the WHO's strategic and technical advisory group for infectious hazards.
 >
-> "The world has hoped for herd immunity. [...] It appears the destiny of SARS-CoV-2 [Covid-19] is to become endemic, as have four other human coronaviruses, and that it will continue to mutate as it reproduces in human cells, especially in areas of more intense admission. [...]"
+> The world has hoped for herd immunity. [...] It appears the destiny of SARS-CoV-2 [Covid-19] is to become endemic, as have four other human coronaviruses, and that it will continue to mutate as it reproduces in human cells, especially in areas of more intense admission. [...]
 
 ---
 

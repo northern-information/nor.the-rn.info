@@ -6,6 +6,6 @@ tags: ["Wildcard"]
 
 ![Solar Eclipse Sketch](/images/solar-eclipse-889-jan-01-corona-todd.png)
 
-> "In celestial spaces shadows cannot fail to fall, and the solid earth must now and then intercept them."
->
-> — Mabel Loomis Todd, 1897
+> In celestial spaces shadows cannot fail to fall, and the solid earth must now and then intercept them.
+
+— Mabel Loomis Todd, 1897

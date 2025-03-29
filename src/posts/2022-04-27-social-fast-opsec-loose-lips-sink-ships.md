@@ -1,5 +1,5 @@
 ---
-title: Social Fast / OPSEC / Loose Lips Sink Ships
+title: Social Media Fast / OPSEC / Loose Lips Sink Ships
 date: 2022-04-27
 tags: ["Wildcard"]
 ---
@@ -53,7 +53,7 @@ I think of myself as a careful and technical fellow. I lean chaotic-good with mo
 
 All these measures are not good enough. My answer to, "Pop Quiz! Are You in WWIII?" is the same as yours. (All our answers are the same, remember.)
 
-## Why Social Fast While Traveling?
+## Why Social Media Fast While Traveling?
 
 ![Depth](/images/depth.jpg)
 
@@ -89,7 +89,7 @@ Things are not going to _stop_ happening. Sharing what you're doing while travel
 
 "Security through obscurity," is the philosophical notion that you are safest if you reveal as little information as possible. Secrecy is your primary armor. While appealing on the surface, this has been rejected by military and security professionals for decades. Many of them ascribe to the [NIST](https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology) recommendation:
 
-> "System security should not depend on the secrecy of the implementation or its components."
+> System security should not depend on the secrecy of the implementation or its components.
 
 Meaning it shouldn't matter if you know I use a strong password and 2FA to access a particular website. The strong password and 2FA should be resilient enough on their own. (Tangent: this is one of the reasons why we get to worry about so called "quantum supremacy," a situation in which a world power gains the capability to crack all existent security protocols with a new type of quantum computer.)
 

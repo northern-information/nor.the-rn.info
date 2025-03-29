@@ -9,7 +9,7 @@ tags: ["Collapse", "Art"]
 
 The great struggles of my life have always been near the peak of [Maslow's hierarchy of needs](https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs). To quote Wikipedia:
 
-> "What a man can be, he must be." This quotation forms the basis of the perceived need for self-actualization. This level of need refers to the realization of one's full potential. Maslow describes this as the desire to accomplish everything that one can, to become the most that one can be.
+> _What a man can be, he must be._ This quotation forms the basis of the perceived need for self-actualization. This level of need refers to the realization of one's full potential. Maslow describes this as the desire to accomplish everything that one can, to become the most that one can be.
 
 Recommended listening for this post: [http://northerninformation.bandcamp.com/album/blue-the-most-celestial-color](http://northerninformation.bandcamp.com/album/blue-the-most-celestial-color)
 

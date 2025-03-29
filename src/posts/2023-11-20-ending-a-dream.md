@@ -8,23 +8,23 @@ I had very different dreams before 2020. I mean this both literally and metaphor
 
 I'm sitting up in bed, heartbeat racing from another nightmare. This one was a tangle of lost friends, failed drugstore bathroom lip-piercing operations, unread but undoubtedly horrible text messages, shame, and familial dissolution. I think back. Any triggering events today? Not really... except for dynamiting [this leviathan psychic logjam](/2023/11/19/ending-a-game/). Ah. Yes. Such things always have unforeseen consequences downstream with me.
 
-> "Autocomplete is already fascism."
->
-> — Anon
+> Autocomplete is already fascism.
+
+— Anon
 
 Unable to find the comforting quote I am looking for with my usual, privacy-oriented search engine, I resort to Google. I type the author's name and am greeted with several suggestions. In my weakened and suggestive state I tap on the first autocompleted query.
 
 A barrage of listicles ensnares me for five minutes before I wrestle free and regain my agency, back out, and refine my query with intent and a double-shot of anger. Several more failures before I begin writing this post. Now, it is time to share the quote but I don't have it loaded onto my clipboard. I give it the Tyler Etters _Akashic Hail Mary_: clumsily recalling every word to the best of my memory. Dry and raw and damn the author's name and damn the grammar. Only word proximity and the potpourri jouissance matter. Like a composite criminal sketch via eyewitness accounts, each weeks stale. I type, "in the 20th century we must regard everyone we meet as the walking wounded." A hit! Ah. Yes. It was Robert Anton Wilson, not Hunter S. Thompson. No wonder my queries were failing:
 
-> "Under the present brutal and primitive conditions on this planet, every person you meet should be regarded as one of the walking wounded. We have never seen a man or woman not slightly deranged by either anxiety or grief. We have never seen a totally sane human being."
->
-> — Robert Anton Wilson
+> Under the present brutal and primitive conditions on this planet, every person you meet should be regarded as one of the walking wounded. We have never seen a man or woman not slightly deranged by either anxiety or grief. We have never seen a totally sane human being.
+
+— Robert Anton Wilson
 
 Knowing this quote is about a half a century old makes it sting even more. Well, good thing I have a head full of Hunter S. Thompson now:
 
-> "Music has always been a matter of Energy to me, a question of Fuel. Sentimental people call it Inspiration, but what they really mean is Fuel. I have always needed Fuel. I am a serious consumer. On some nights I still believe that a car with the gas needle on empty can run about fifty more miles if you have the right music very loud on the radio."
->
-> — Hunter S. Thompson
+> Music has always been a matter of Energy to me, a question of Fuel. Sentimental people call it Inspiration, but what they really mean is Fuel. I have always needed Fuel. I am a serious consumer. On some nights I still believe that a car with the gas needle on empty can run about fifty more miles if you have the right music very loud on the radio.
+
+— Hunter S. Thompson
 
 Making the right music. That's the new dream now. The old ones, the pre-2020 ones, the ones about my career and my family and my friends and my lifestyle and my aspirations and how the world could be and (even worse) how the world is — those dreams are all dead.
 
@@ -40,9 +40,9 @@ But death is a form of change and change is perhaps the only constant. I accept 
 
 It is becoming increasingly clear I've been trapped in exactly this sort of prison for several years. And my old dreams, no matter how innocent and pure, are just as effective prison bars as any.
 
-> "Beware of looking for goals: look for a way of life. Decide how you want to live and then see what you can do to make a living WITHIN that way of life."
->
-> — Hunter S. Thompson
+> Beware of looking for goals: look for a way of life. Decide how you want to live and then see what you can do to make a living WITHIN that way of life.
+
+— Hunter S. Thompson
 
 Making the right music... I think about the discographies of artists like [Celer](https://celer.bandcamp.com/), [bvdub](https://bvdub.bandcamp.com/), and [Leyland Kirby](https://haftw.bandcamp.com/). I smile. They get it. Or at least, I _project_ that they get it.
 
@@ -50,9 +50,9 @@ Listening to music, asynchronous or otherwise, is a communal act. And the practi
 
 If the Golden Age of _music_ social media was heralded by the the MySpaces, Discogs, and last.fms, the Silver Age's avatars were the SoundClouds, Bandcamps, Spotifys. It then follows are must be in Dark Age. Subcultures can still spread like ivy or lichen across the glossy cubes of Silicon Valley, despite the oppression of the algorithms. Their glass façades can be warm in the sun, even comfortable, if you can follow the changes.
 
-> "You won't find reasonable men on the tops of tall mountains."
->
-> — Hunter S. Thompson
+> You won't find reasonable men on the tops of tall mountains.
+
+— Hunter S. Thompson
 
 Ending a Dream of Slumber is easy. Simply wake up.
 

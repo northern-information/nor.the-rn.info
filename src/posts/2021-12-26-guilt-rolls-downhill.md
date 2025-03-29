@@ -35,4 +35,4 @@ I asked the owner about this. He was a sympathetic to my concerns but his hands 
 
 So, each night, I took out the garbage and felt guilty. Ten years later and my head is still spinning at the incentive structures in this system. Stafford Beer (emphasis mine):
 
-> "According to the cybernetician, **the purpose of a system is what it does.** This is a basic dictum. It stands for bald fact, which makes a better starting point in seeking understanding than the familiar attributions of good intention, prejudices about expectations, moral judgment, or sheer ignorance of circumstances."
+> According to the cybernetician, **the purpose of a system is what it does.** This is a basic dictum. It stands for bald fact, which makes a better starting point in seeking understanding than the familiar attributions of good intention, prejudices about expectations, moral judgment, or sheer ignorance of circumstances.

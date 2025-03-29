@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ![Man from Utopia](/images/man-from-utopia.jpg)
 
-> "gotta tombstone hand anna graveyard mind just twenny two an ah don't mind dye'in"
+> gotta tombstone hand anna graveyard mind just twenny two an ah don't mind dye'in
 
 A pair of loaded dice. The sun is shining on it and there's nothing to say. Forty-seven miles of barbed wire. [Rick Griffin](https://en.wikipedia.org/wiki/Rick_Griffin) saw something. I look at his work and cannot shake the overwhelming sense of _familiarity_ despite its utterly alien grotesquerie. This comic has been rattling around in my head for about a week. Today, a colleague at work mentioned the Zappa album sharing the same name.
 

@@ -28,7 +28,7 @@ Burke, of course, has no interest in buying the safety of the world, or otherwis
 
 ![Parker, Alien](/images/capitalist-nihilism-3.jpg)
 
-> "I hate to bring this up, but this is a commercial ship, not a rescue ship. It is not in my contract to do this kind of duty... And what about the money? If you want to give me some money to do it I'd be happy to." &mdash; Parker
+> I hate to bring this up, but this is a commercial ship, not a rescue ship. It is not in my contract to do this kind of duty... And what about the money? If you want to give me some money to do it I'd be happy to. - Parker
 
 I largely read the the Alien films through a feminist, pro-choice lens. There is so much to pull from: the strength of Ripley, the non-assignment of genders in the original script, the medical pod that "is not configured" for women, life forms that reproduce through non-consensual means. Setting that lens aside for a moment, let us turn to capital.
 

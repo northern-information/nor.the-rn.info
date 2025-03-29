@@ -6,8 +6,8 @@ tags: ["Mythologies"]
 
 > The more clever and crafty the men,  
 > The oftener strange things happen.
->
-> _Tao Te Ching, Ch. 57, John C. H. Wu Translation_
+
+- Tao Te Ching, Ch. 57, John C. H. Wu Translation
 
 Ain't it the truth? My anxiety of the news on any given day is allayed by these two lines.
 

@@ -70,7 +70,9 @@ The worst that can happen is your supervisor will be forced to speak aloud the c
 
 There's a quote from a dubious author I am quite fond of:
 
-> "Under the present brutal and primitive conditions on this planet, every person you meet should be regarded as one of the walking wounded. We have never seen a man or woman not slightly deranged by either anxiety or grief. We have never seen a totally sane human being." — Robert Anton Wilson
+> Under the present brutal and primitive conditions on this planet, every person you meet should be regarded as one of the walking wounded. We have never seen a man or woman not slightly deranged by either anxiety or grief. We have never seen a totally sane human being.
+
+— Robert Anton Wilson
 
 While I don't share these conclusions, I sympathize with the sentiment. To me, the idea is to give people grace. Everyone is going through varying degrees of Quite Serious to Horrendously Serious shit right now. Assume your colleagues genuinely want to help each other, to do the right thing, to be a good teammate.
 
