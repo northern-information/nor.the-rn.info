@@ -36,6 +36,10 @@ body {
   img {
     @apply h-auto w-full;
   }
+  code::before,
+  code::after {
+    content: '';
+  }
 }
 
 .release-notes,
