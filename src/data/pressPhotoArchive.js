@@ -1,5 +1,44 @@
 export default [
   {
+    url: '/images/edgelord-vertical.jpg',
+    title: 'Edgelord, 2025',
+    photographer: 'Jeremy Tsipouras',
+    year: 2025,
+  },
+  {
+    url: '/images/abstraction-tyler-1235x.png',
+    title: 'Abstraction, 2024',
+    year: 2024,
+  },
+  {
+    url: '/images/stuxnet.jpg',
+    title: 'STUXNET, 2022',
+    photographer: 'Sage Etters',
+    photographerUrl: 'https://sageetters.com',
+    year: 2023,
+  },
+  {
+    url: '/images/flare1-web.jpg',
+    title: 'Flare, 2022',
+    photographer: 'Sage Etters',
+    photographerUrl: 'https://sageetters.com',
+    year: 2022,
+  },
+  {
+    url: '/images/anthropocene.jpg',
+    title: 'Anthropocene, 2021',
+    photographer: 'Sage Etters',
+    photographerUrl: 'https://sageetters.com',
+    year: 2021,
+  },
+  {
+    url: '/images/powerlines.jpg',
+    title: 'Powerlines, 2021',
+    photographer: 'Sage Etters',
+    photographerUrl: 'https://sageetters.com',
+    year: 2021,
+  },
+  {
     url: '/images/tyler-etters-illustration.jpg',
     title: 'Tyler Etters illustration by Gage Lindsten, 2017',
     photographer: 'Gage Lindsten',
@@ -58,19 +97,6 @@ export default [
     year: 2013,
   },
   {
-    url: '/images/adam-paul-tyler-arthur.jpg',
-    title:
-      'Adam Moore, Pasha Petrosyan, Tyler Etters and Arthur Zdrinc at Ultra Lounge, 2013',
-    participants: [
-      'Adam Moore',
-      'Pasha Petrosyan',
-      'Tyler Etters',
-      'Arthur Zdrinc',
-    ],
-    location: 'Ultra Lounge',
-    year: 2013,
-  },
-  {
     url: '/images/tyler-etters-magic-beach.jpg',
     title: 'Tyler Etters at Magic Beach © Sage Etters, 2013',
     photographer: 'Sage Etters',
@@ -80,14 +106,14 @@ export default [
   },
   {
     url: '/images/tyler-etters-and-arthur-zdrinc.jpg',
-    title: 'Arthur Zdrinc & Tyler Etters, 2013',
+    title: 'Tyler Etters & Arthur Zdrinc, 2013',
     participants: ['Arthur Zdrinc', 'Tyler Etters'],
     photographerUrl: 'http://arthurzdrinc.com',
     year: 2013,
   },
   {
     url: '/images/tyler-etters-live.jpg',
-    title: 'Tyler Etters / Connectedness Locus live, 2011',
+    title: 'Tyler Etters / Connectedness Locus at Dirtroom, 2011',
     participants: ['Tyler Etters'],
     year: 2011,
   },
@@ -108,6 +134,16 @@ export default [
     url: '/images/inocula.jpg',
     title: 'Inocula, 2008',
     year: 2008,
+  },
+  {
+    url: '/images/l_6c4220799719533e3064b7eae3f9cf8f.jpg',
+    title: 'AJ Sugg & Tyler Etters / Amber Darkly, 2007',
+    year: 2007,
+  },
+  {
+    url: '/images/l_f844c99936ad05c519433a7048f6d5ed.jpg',
+    title: 'Inocula, 2007',
+    year: 2007,
   },
   {
     url: '/images/tyler-etters-a-glass-reality.jpg',
