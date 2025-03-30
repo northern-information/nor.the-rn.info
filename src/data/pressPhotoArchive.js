@@ -11,6 +11,11 @@ export default [
     year: 2024,
   },
   {
+    url: '/images/terminus-tyler-1240x.jpg',
+    title: 'Terminus, 2024',
+    year: 2024,
+  },
+  {
     url: '/images/stuxnet.jpg',
     title: 'STUXNET, 2022',
     photographer: 'Sage Etters',
@@ -32,7 +37,7 @@ export default [
     year: 2021,
   },
   {
-    url: '/images/powerlines.jpg',
+    url: '/images/tyler-etters-mask.jpg',
     title: 'Powerlines, 2021',
     photographer: 'Sage Etters',
     photographerUrl: 'https://sageetters.com',
@@ -132,6 +137,11 @@ export default [
   },
   {
     url: '/images/inocula.jpg',
+    title: 'Inocula, 2008',
+    year: 2008,
+  },
+  {
+    url: '/images/healthy-outlets.jpg',
     title: 'Inocula, 2008',
     year: 2008,
   },

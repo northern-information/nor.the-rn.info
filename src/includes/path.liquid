@@ -1,6 +1,6 @@
 {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
 <div class="bg-stone-950 font-mono text-stone-50">
-  <a href="{{path}}" class="flex hover:bg-yellow-300 hover:text-stone-950">
+  <a href="{{ path }}" class="flex hover:underline hover:text-yellow-300">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
     </svg>
