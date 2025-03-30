@@ -2,8 +2,20 @@
 layout: base.liquid
 permalink: /
 ---
-<div class="-mx-2 -my-2  grid h-[400px] grid-cols-1 place-content-center gap-4 bg-foxfires bg-cover bg-no-repeat p-2 text-center md:h-[800px] xl:h-[1000px]">
-  <h3>
+<div class="-mx-2 -my-2">
+  <video autoplay loop muted playsinline class="h-auto w-full filter saturate-[25]">
+    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.mp4" type="video/mp4">
+    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.webm" type="video/webm">
+    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  {% render rule %}
+  {% render spectrum %}
+  <div class="p-2 content">
+    <h2 class="font-mono">"We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."</h2>
+    <p class="font-mono">&mdash; Ellen Ullman</p>
+  </div>
+  {% comment %} <h3>
     <span class="text-md bg-stone-950 px-2 font-semibold italic  text-stone-300">New Original Music from STUXNET</span>
   </h3>
   <h2>
@@ -71,5 +83,5 @@ permalink: /
         >YouTube &rarr;</a
       >
     </li>
-  </ul>
+  </ul> {% endcomment %}
 </div>
