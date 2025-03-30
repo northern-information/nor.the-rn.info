@@ -15,18 +15,18 @@ permalink: /
     <h2 class="font-mono">Latest Releases</h2>
   </div>
   <div class="w-full overflow-x-auto scroll-smooth">
-    <ul class="w-[2400px] h-[240px] list-none pb-5">
+    <ul class="w-[1800px] h-[190px] md:w-[2300px] md:h-[240px] list-none pb-5">
       {% for release in collections.discographyPages limit:10 %}
-        <li class="block float-left h-[200px] w-[200px] me-2">
+        <li class="block float-left h-[150px] w-[150px] md:h-[200px] md:w-[200px] md:me-2">
           <a
             href="/music/{{ release.slug }}"
-            class="block cursor-pointer border-4 border-solid border-transparent p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950 h-[200px] w-[200px]"
+            class="block cursor-pointer border-4 border-solid border-transparent md:p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950 h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
           >
-            <img src="{{ release.cover_url }}" alt="{{ release.title }}" class="h-[160px] w-[160px]">
+            <img src="{{ release.cover_url }}" alt="{{ release.title }}" class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]">
           </a>
         </li>
       {% endfor %}
-      <li class="block float-left h-[200px] w-[200px] me-2">
+      <li class="block float-left h-[150px] w-[150px] md:h-[200px] md:w-[200px] me-2">
         <a
           href="/music"
           class="flex h-full text-stone-50 font-mono place-items-center hover:underline hover:text-yellow-300">
@@ -43,73 +43,3 @@ permalink: /
     <h2 class="font-mono">"We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."</h2>
     <p class="font-mono">&mdash; Ellen Ullman</p>
   </div>
-  {% comment %} <h3>
-    <span class="text-md bg-stone-950 px-2 font-semibold italic  text-stone-300">New Original Music from STUXNET</span>
-  </h3>
-  <h2>
-    <span class="bg-stone-950 px-2 text-4xl font-semibold text-red-500  lg:text-6xl">FOXFIRES / KYBALION</span>
-  </h2>
-  <p>
-    <span class="text-md bg-stone-950 px-2 font-serif font-semibold italic text-stone-300"
-      >"Written while my city burned."</span
-    >
-  </p>
-  <ul>
-    <li>
-      <a
-        href="https://www.amazon.com/dp/B0DWWZ3JRF"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >Amazon &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://music.apple.com/us/album/foxfires-kybalion-ep/1796608668"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >Apple Music &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://stuxnet.bandcamp.com/album/foxfires-kybalion"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >Bandcamp &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://www.deezer.com/us/album/711748271"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >Deezer &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://www.iheart.com/artist/stuxnet-610225/albums/     <li>foxfires-kybalion-313385710/"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >iHeartRadio &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://open.spotify.com/album/7mh0Vr0dbBsndXQEHMPrmq"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >Spotify &rarr;</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://www.youtube.com/watch?v=wr4PfhW2S3g"
-        target="_blank"
-        class="mt-10 bg-stone-950 px-2 text-2xl text-yellow-300 underline hover:bg-yellow-500 hover:text-stone-950  hover:no-underline"
-        >YouTube &rarr;</a
-      >
-    </li>
-  </ul> {% endcomment %}
-</div>
