@@ -147,6 +147,7 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.FONTS}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
 
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
