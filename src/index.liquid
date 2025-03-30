@@ -12,6 +12,34 @@ permalink: /
   {% render rule %}
   {% render spectrum %}
   <div class="p-2 content">
+    <h2 class="font-mono">Latest Releases</h2>
+  </div>
+  <div class="w-full overflow-x-auto scroll-smooth">
+    <ul class="w-[2400px] h-[240px] list-none pb-5">
+      {% for release in collections.discographyPages limit:10 %}
+        <li class="block float-left h-[200px] w-[200px] me-2">
+          <a
+            href="/music/{{ release.slug }}"
+            class="block cursor-pointer border-4 border-solid border-transparent p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950 h-[200px] w-[200px]"
+          >
+            <img src="{{ release.cover_url }}" alt="{{ release.title }}" class="h-[160px] w-[160px]">
+          </a>
+        </li>
+      {% endfor %}
+      <li class="block float-left h-[200px] w-[200px] me-2">
+        <a
+          href="/music"
+          class="flex h-full text-stone-50 font-mono place-items-center hover:underline hover:text-yellow-300">
+            See All
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+            </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  {% render spectrum %}
+  <div class="p-2 content">
     <h2 class="font-mono">"We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."</h2>
     <p class="font-mono">&mdash; Ellen Ullman</p>
   </div>
