@@ -12,7 +12,7 @@ Released: December 21, 2024
 
 Music: [direct](https://stuxnet.me) & [untitled.stream](https://untitled.stream/library/project/5Dni4VMX9Qyt1ZvokMYqq)
 
-Video: [direct](https://intertext.s3.us-west-1.amazonaws.com/stuxnet/kowloon-city-giga-mix/mobile-kowloon-city-leyline.mp4)
+Video: [direct](https://d107e1o0dn11sc.cloudfront.net/stuxnet/kowloon-city-giga-mix/mobile-kowloon-city-leyline.mp4)
 
 1. 𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯
 2. 𝓀𝒶𝓉𝒶𝒷𝒶𝓉𝒾𝒸 𝓌𝒾𝓃𝒹

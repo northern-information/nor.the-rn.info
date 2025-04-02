@@ -3,24 +3,28 @@ layout: base.liquid
 permalink: /
 ---
 <div class="-mx-2 -my-2">
-  <video autoplay loop muted playsinline class="h-auto w-full saturate-[25] filter">
-    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.mp4" type="video/mp4">
-    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.webm" type="video/webm">
-    <source src="https://dop82cmkdnrqr.cloudfront.net/video/owl-pair.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-  </video>
+  {% render rule %}
+  <div class="bg-powerlines w-full h-auto bg-cover min-h-[400px] md:min-h-[600px] lg:min-h-[800px] pt-4 ps-4">
+    <div class="content">
+      <h2 class="font-mono m-0 bg-stone-950 inline">
+        "We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."
+      </h2>
+      <br/>
+      <p class="font-mono m-0 bg-stone-950 inline">&mdash; Ellen Ullman</p>
+    </div>
+  </div>
   {% render rule %}
   {% render spectrum %}
   <div class="content p-2">
-    <h2 class="font-mono">Latest Releases</h2>
+    <h2 class="font-mono !my-2">Latest Releases</h2>
   </div>
   <div class="w-full overflow-x-auto scroll-smooth">
-    <ul class="h-[190px] w-[1800px] list-none pb-5 md:h-[240px] md:w-[2300px]">
+    <ul class="w-[1800px] list-none pb-5 h-[230px] md:h-[260px] md:w-[2300px]">
       {% for release in collections.discographyPages limit: 10 %}
         <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
           <a
             href="/music/{{ release.slug }}"
-            class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] md:p-4"
+            class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
           >
             <img
               src="{{ release.cover_url }}"
@@ -28,6 +32,7 @@ permalink: /
               class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
             >
           </a>
+          <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
         </li>
       {% endfor %}
       <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
@@ -49,12 +54,5 @@ permalink: /
         </a>
       </li>
     </ul>
-  </div>
-  {% render spectrum %}
-  <div class="content p-2">
-    <h2 class="font-mono">
-      "We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."
-    </h2>
-    <p class="font-mono">&mdash; Ellen Ullman</p>
   </div>
 </div>
