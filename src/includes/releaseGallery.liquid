@@ -1,5 +1,9 @@
 <a
-  href="/music/{{ release.slug }}"
+  {% if release.slug contains 'dj-stuxnet' %}
+    href="/mixes/{{ release.slug }}"
+  {% else %}
+    href="/music/{{ release.slug }}"
+  {% endif %}
   class="block cursor-pointer border-4 border-solid border-transparent p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950"
 >
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">

@@ -1,0 +1,20 @@
+---
+layout: base.liquid
+---
+<div class="content">
+  {% render pageTitle, title: title %}
+</div>
+{% render discography, releases: collections.mixPages, mode: 'list', site: site %}
+{% render pageTitle, title: 'Playlists' %}
+<ul class="grid grid-cols-1 gap-1 xl:grid-cols-3 xl:gap-3">
+  {% for playlist in playlists %}
+    <li class="content mb-10 max-w-none">
+      <h2>{{ playlist.title }}</h2>
+      <ol>
+        {% for track in playlist.tracks %}
+          <li>{{ track }}</li>
+        {% endfor %}
+      </ol>
+    </li>
+  {% endfor %}
+</ul>

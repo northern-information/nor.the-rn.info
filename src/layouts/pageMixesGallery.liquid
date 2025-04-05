@@ -4,8 +4,7 @@ layout: base.liquid
 <div class="content">
   {% render pageTitle, title: title %}
 </div>
-{% render discography, discographyPages: collections.discographyPages, mode: 'list', site: site %}
-{% render pageTitle, title: 'Playlists' %}
+{% render discography, releases: collections.mixPages, mode: 'gallery', site: site %}
 <ul class="grid grid-cols-1 gap-1 xl:grid-cols-3 xl:gap-3">
   {% for playlist in playlists %}
     <li class="content mb-10 max-w-none">

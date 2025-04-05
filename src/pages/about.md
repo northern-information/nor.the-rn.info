@@ -3,6 +3,12 @@ title: About
 layout: pageAbout.liquid
 ---
 
+Mission:
+
+- Inspire with music.
+- Don't give up.
+- Help others not give up.
+
 My name is Tyler Etters. In 2025 I'm:
 
 - engineering for [Discogs](https://discogs.com)

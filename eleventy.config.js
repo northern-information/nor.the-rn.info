@@ -154,11 +154,22 @@ export default async (eleventyConfig) => {
     dynamicPartials: false,
   })
 
-  eleventyConfig.addCollection('discographyPages', (collectionApi) => {
-    return discography.map((release) => ({
-      ...release,
-      slug: getReleaseSlug(release),
-    }))
+  eleventyConfig.addCollection('discographyPages', () => {
+    return discography
+      .filter((release) => release.type != 'Mix')
+      .map((release) => ({
+        ...release,
+        slug: getReleaseSlug(release),
+      }))
+  })
+
+  eleventyConfig.addCollection('mixPages', () => {
+    return discography
+      .filter((release) => release.type === 'Mix')
+      .map((release) => ({
+        ...release,
+        slug: getReleaseSlug(release),
+      }))
   })
 
   eleventyConfig.addCollection('posts', (collectionApi) => {

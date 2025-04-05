@@ -1,8 +1,12 @@
 ---
-title: garden
+title: Welcome to the Northern Information Data Gardens
 layout: pageGarden.liquid
 ---
 
 > A man sets out to draw the world. As the years go by, he peoples a space with images of provinces, kingdoms, mountains, bays, ships, islands, fishes, rooms, instruments, stars, horses, and individuals. A short time before he dies, he discovers that the patient labyrinth of lines traces the lineaments of his own face.
 
 ― Jorge Luis Borges, The Aleph and Other Stories
+
+- [𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯](/dauntless-choir)
+- [Resources](/resources)
+- [Press Photo Archive](/press-photo-archive)

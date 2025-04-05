@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.liquid', './src/index.liquid'],
+  safelist: ['md:border-r-4'],
   theme: {
     fontFamily: {
       mono: [

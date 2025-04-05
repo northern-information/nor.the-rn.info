@@ -1,21 +1,4 @@
-<div class="mb-5 flex gap-4">
-  <a href="/music/" class="group flex flex-row place-items-center">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="
-        size-8 p-1
-        {% if mode == 'list' %}text-stone-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-stone-950 group-hover:bg-red-500{% endif %}
-        mr-1 cursor-pointer rounded
-      "
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
-    </svg>
-    <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">List</span>
-  </a>
+{% comment %} <div class="mb-5 flex gap-4">
   <a href="/music/gallery/" class="group flex flex-row place-items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +17,23 @@
     </svg>
     <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">Gallery</span>
   </a>
+  <a href="/music/list/" class="group flex flex-row place-items-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="
+        size-8 p-1
+        {% if mode == 'list' %}text-stone-950 bg-red-500{% elsif mode == 'release' %}text-red-500{% else %}text-red-500 group-hover:text-stone-950 group-hover:bg-red-500{% endif %}
+        mr-1 cursor-pointer rounded
+      "
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+    </svg>
+    <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">List</span>
+  </a>
   <a href="{{ site.META.DISCOGRAPHY_URL }}" target="_blank" class="group flex flex-row place-items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -51,10 +51,10 @@
     </svg>
     <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">NPM</span>
   </a>
-</div>
+</div> {% endcomment %}
 {% if mode contains 'list' %}
   <ul class="list-none">
-    {% for release in discographyPages %}
+    {% for release in releases %}
       <li class="mb-5 flex justify-center">
         {% render releaseList, release: release, isLink: true %}
       </li>
@@ -63,7 +63,7 @@
 {% endif %}
 {% if mode contains 'gallery' %}
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
-    {% for release in discographyPages %}
+    {% for release in releases %}
       <li class="mb-10">
         {% render releaseGallery, release: release %}
       </li>
