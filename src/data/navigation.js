@@ -8,7 +8,7 @@ export default [
   {
     url: '/mixes/gallery',
     label: 'Mixes',
-    match: 'equals',
+    match: 'contains',
     class: 'md:border-r-4',
   },
   {
