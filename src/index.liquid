@@ -2,7 +2,94 @@
 layout: base.liquid
 permalink: /
 ---
-<div class="-mx-2 -my-2">
+<div class="-mx-2 -my-2 flex flex-col">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-1/2">
+      <div class="content p-2">
+        <h2 class="!my-0">Latest Music</h2>
+      </div>
+      <div class="w-full overflow-x-auto scroll-smooth">
+        <ul class="w-[1800px] list-none pb-5 h-[230px] md:h-[260px] md:w-[2300px]">
+          {% for release in collections.discographyPages limit: 10 %}
+            <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
+              <a
+                href="/music/{{ release.slug }}"
+                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
+              >
+                <img
+                  src="{{ release.cover_url }}"
+                  alt="{{ release.title }}"
+                  class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
+                >
+              </a>
+              <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
+            </li>
+          {% endfor %}
+          <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
+            <a
+              href="/music"
+              class="flex h-full place-items-center font-mono text-stone-50 hover:text-yellow-300 hover:underline"
+            >
+              See All
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="content p-2">
+        <h2 class="!my-0">Latest Mixes</h2>
+      </div>
+      <div class="w-full overflow-x-auto scroll-smooth">
+        <ul class="w-[1800px] list-none pb-5 h-[230px] md:h-[260px] md:w-[2300px]">
+          {% for release in collections.mixPages limit: 10 %}
+            <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
+              <a
+                href="/mixes/{{ release.slug }}"
+                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
+              >
+                <img
+                  src="{{ release.cover_url }}"
+                  alt="{{ release.title }}"
+                  class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
+                >
+              </a>
+              <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
+            </li>
+          {% endfor %}
+          <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
+            <a
+              href="/music"
+              class="flex h-full place-items-center font-mono text-stone-50 hover:text-yellow-300 hover:underline"
+            >
+              See All
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% render spectrum %}
   {% render rule %}
   <div class="bg-powerlines w-full h-auto bg-cover min-h-[400px] md:min-h-[600px] lg:min-h-[800px] pt-4 ps-4">
     <div class="content">
@@ -12,47 +99,5 @@ permalink: /
       <br/>
       <p class="font-mono m-0 bg-stone-950 inline">&mdash; Ellen Ullman</p>
     </div>
-  </div>
-  {% render rule %}
-  {% render spectrum %}
-  <div class="content p-2">
-    <h2 class="font-mono !my-2">Latest Releases</h2>
-  </div>
-  <div class="w-full overflow-x-auto scroll-smooth">
-    <ul class="w-[1800px] list-none pb-5 h-[230px] md:h-[260px] md:w-[2300px]">
-      {% for release in collections.discographyPages limit: 10 %}
-        <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
-          <a
-            href="/music/{{ release.slug }}"
-            class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
-          >
-            <img
-              src="{{ release.cover_url }}"
-              alt="{{ release.title }}"
-              class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
-            >
-          </a>
-          <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
-        </li>
-      {% endfor %}
-      <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
-        <a
-          href="/music"
-          class="flex h-full place-items-center font-mono text-stone-50 hover:text-yellow-300 hover:underline"
-        >
-          See All
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-          </svg>
-        </a>
-      </li>
-    </ul>
   </div>
 </div>
