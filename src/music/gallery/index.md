@@ -1,4 +1,4 @@
 ---
-title: Music
+title: Music Releases
 layout: pageMusicGallery.liquid
 ---

@@ -1,5 +1,41 @@
 export default [
   {
+    title: 'DISSOLUTION',
+    tracks: [
+      'Not Afraid by アンジェラ (Vo.Alisa)',
+      'In The Air Tonight by Phil Colins',
+      'Straight Up by Paula Abdul',
+      'Give It All - Redux by The Amity Affliction',
+      'Dead End by In Flames',
+      'Pete Standing Alone by Boards of Canada',
+      'Alberto Balsalm by Aphex Twin',
+      'Decode by Paramore',
+      'The World Engulfed In Flames by Darkest Hour',
+      'This Is What It Feels Like by BANKS',
+      '2•GOLDEN DAWN•7 by Die Antwoord',
+      'Goodbye by Ulrich Schnauss',
+      'Hiru no Tsuki by Akino Arai',
+    ],
+  },
+  {
+    title: 'Elegies for Ashley',
+    tracks: [
+      'Lips Like Mrophine by Kill Hannah',
+      'Razorblade Kiss by HIM',
+      'Raindrops + Sunshowers by The Smashing Pumpkins',
+      'The Hollow by A Perfect Circle',
+      'Alibi by BANKS',
+      'Sell Your Soul by Hollywood Undead',
+      'sLeepwALkeR by The Pretty Wild',
+      'Circle With Me by Spiritbox',
+      '17 Crimes by AFI',
+      'Going Under by Evanescence',
+      'Chasing Ghosts by The Amity Affliction',
+      "Heaven's a Lie by Lacuna Coil",
+      'Another Love by bvdub',
+    ],
+  },
+  {
     title: 'Kowloon City: Ｌｅｙｌｉｎｅ',
     url: 'https://stuxnet.me/',
     tracks: [
