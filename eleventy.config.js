@@ -149,27 +149,18 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.FONTS}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
 
-  eleventyConfig.setLiquidOptions({
-    jsTruthy: true,
-    dynamicPartials: false,
-  })
+  eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 
   eleventyConfig.addCollection('discographyPages', () => {
     return discography
       .filter((release) => release.type != 'Mix')
-      .map((release) => ({
-        ...release,
-        slug: getReleaseSlug(release),
-      }))
+      .map((release) => ({ ...release, slug: getReleaseSlug(release) }))
   })
 
   eleventyConfig.addCollection('mixPages', () => {
     return discography
       .filter((release) => release.type === 'Mix')
-      .map((release) => ({
-        ...release,
-        slug: getReleaseSlug(release),
-      }))
+      .map((release) => ({ ...release, slug: getReleaseSlug(release) }))
   })
 
   eleventyConfig.addCollection('posts', (collectionApi) => {
@@ -200,19 +191,13 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPlugin(feedPlugin, {
     type: 'atom',
     outputPath: `/${META.FEED}`,
-    collection: {
-      name: 'posts',
-      limit: 10,
-    },
+    collection: { name: 'posts', limit: 10 },
     metadata: {
       language: 'en',
       title: META.TITLE,
       subtitle: META.DESCRIPTION,
       base: META.CANONICAL,
-      author: {
-        name: META.AUTHOR,
-        email: META.EMAIL,
-      },
+      author: { name: META.AUTHOR, email: META.EMAIL },
     },
   })
 
