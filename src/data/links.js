@@ -51,6 +51,7 @@ export default [
   { url: 'https://www.interdependence.fm', title: 'Interdependence' },
   { url: 'https://www.thejaymo.net', title: 'Jay Springett' },
   { url: 'https://jcjcjc.hotglue.me', title: 'JC Leisure' },
+  { url: 'https://www.jessedubay.com', title: 'Jesse Dubay' },
   { url: 'http://systemsapproach.net/', title: 'Jon Cates' },
   { url: 'https://jonrafman.com/', title: 'Jon Rafman' },
   { url: 'https://julian-charriere.net', title: 'Julian Charrière' },
