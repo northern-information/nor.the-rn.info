@@ -24,8 +24,8 @@ We create what we consume. We're raised with these futures and then go about our
 
 What do all these stories have in common? Besides Will Smith, most of these cast humans as victims to some type of "Other" force. An alien invasion, time travel mishap, ruptured conspiracy, or other MacGuffin triggers a call to action and eventually culminates in a paradigm shift. Things are changed forever. Through struggle, violence, and brainpower the scrappy humans prevail. Some brave new reality emerges; a reality without whatever bad guy just took a M79 grenade launcher to the chest fell into a of molten steel, a reality where the sun rises over the ruined alien motherships.
 
-![Congratulations!]/rm*ation/images/congratulations.jpg)
-\_Congratulations!*
+![Congratulations!](/rm_ation/images/congratulations.jpg)
+_Congratulations!_
 
 Before I started thinking critically about the media I consume and what it might be doing to me, I was a just another nerdy kid. I was really into science fiction movies, fantasy books, military video games... Independence Day and Men in Black were probably my family's favorite VHS tapes, right behind My Neighbor Totoro. I'll write more on what an incredible panacea that one is another time. In middle school I was already reading a lot of Lovecraft, Dune, Tolkien. I was 12 or so when I exposed myself to Neon Genesis Evangelion and the existential/eschatological horrors of the final few acts. My best friend and I were very keen on warning our classmates and teachers of the impending 2012 apocalypse.
 
@@ -66,8 +66,8 @@ If my life were to be made a movie, 9/11 would be the MacGuffin. That cataclysmi
 
 Somewhere in my confusion and anger I fell down the conspiracy theory rabbit hole. I was obsessed with finding the truth and the answers to everything. After school and work, I'd come home and continue the _real_ work. I'd merrily bounce from learning about true age of the Great Pyramid to the machinations of secret societies, from archaeological proof of alien civilizations on Mars to 9/11 conspiracy theories, from harrowing tales former Area 51 employees on Coast to Coast AM to... you get the point. I was extremely convicted to the veracity of my newfound knowledge.
 
-![Timewave Zero]/rm*ation/images/timewave-zero.jpg)
-\_You can make any data prove your point if you work backwards.*
+![Timewave Zero](/rm_ation/images/timewave-zero.jpg)
+_You can make any data prove your point if you work backwards._
 
 It took a while to let go of these beliefs. And hey, just because I'm no longer _convinced_ aliens built the pyramids, it doesn't mean I'm not _open_ to it, yeah?
 
@@ -75,8 +75,8 @@ I now understand engaging with conspiracy theories is a compulsion and coping me
 
 I am thankful I had a good support system of family and friends. I worked through everything in my head, a little shaken but ultimately OK. Let go of a lot of things. My healthy outlets for venting outnumbered my unhealthy ones. Music has always been at the core of all my catharses.
 
-![Me performing, circa 2008.]/rm*ation/images/healthy-outlets.jpg)
-\_Me performing, circa 2008.*
+![Me performing, circa 2008.](/rm_ation/images/healthy-outlets.jpg)
+_Me performing, circa 2008._
 
 It is wild to think that 2008 is closer to 2001 than 2019 is to 2008. Time's funny like that, ain't it?
 
@@ -98,8 +98,8 @@ For whatever reason, I thought that there was some link between these conversati
 
 I contracted a similar affliction around 2012. Whenever I read the word "AI" I would have a panic attack. I had nightmares that a recursive algorithm I wrote at work went haywire and became self aware. I had to do deep work on myself to get over that one: mainly reading and learning about the different types of AI and what leaders in the field had to say about it. I went into the fear and came out wiser and calmer.
 
-![GFAJ-1]/rm*ation/images/gfaj-1.jpg)
-\_It's happening!*
+![GFAJ-1](/rm_ation/images/gfaj-1.jpg)
+_It's happening!_
 
 One time this happened it was actually a positive experience. In 2010, one could be forgiven for reading the headlines about [GFAJ-1, the supposed "arsenic based life form"](https://en.wikipedia.org/wiki/GFAJ-1), as proof of alien life. First I felt the stabs fear and anxiety, but they were quickly replaced by love and acceptance. I spent the next few minutes in a state of utter rapture and joy. It is still among the top three the happiest moments of my life (the other two being when I accepted my mortality and when I married Sage.) I was alone in my bedroom and laughing aloud. If alien life was proven, what would that mean for all of humanity? What would that mean for all our wars and religions and differences and struggles? How powerful of a unifying force would such knowledge be? In my minds eye, I played out the next weeks, months, years. Unification, a new grand project. We're going to space and we're going together.
 

@@ -85,7 +85,7 @@ Niagra Falls, Nov 30, 2015 @ Niagra Falls, New York
 ![Bourbon Street](/images/bourbon-street.jpg)
 Bourbon Street, Nov 6, 2015 @ New Orleans, Louisiana
 
-![Another World]/rm*ation/images/another-world.jpg)
+![Another World](/rm_ation/images/another-world.jpg)
 Another World, Jul 25, 2015 @ MS-DOS [Another World](<https://en.wikipedia.org/wiki/Another_World*(video_game)>)
 
 ![Mayne Stage](/images/mayne-stage-billboard.jpg)

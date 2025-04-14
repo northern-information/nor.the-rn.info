@@ -35,7 +35,7 @@ I feel hope and solidarity with humanity. I believe we will pass through this an
 
 **Addendum**
 
-![2007 Ford Mustang GT & McDonalds]/rm*ation/images/mustang-and-mcdonalds.jpg)
-\_2007 Ford Mustang GT & McDonalds*
+![2007 Ford Mustang GT & McDonalds](/rm_ation/images/mustang-and-mcdonalds.jpg)
+_2007 Ford Mustang GT & McDonalds_
 
 My father-in-law and I went on an adventure today. This is his 2007 Ford Mustang GT outside McDonalds. The cashiers wore different disposable gloves for each transaction. Patrons were still using the touchscreens to order their food. (I paid with Apple Pay.) It is Shamrock Shake season.

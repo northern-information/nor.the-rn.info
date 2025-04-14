@@ -20,18 +20,18 @@ Paradoxically, my degree of comfort over both electronic music and programming m
 
 Like the indecipherable Voynich Manuscript, Max was impenetrable and without reference points. But unlike the Voynich Manuscript, there were lots of people and resources out there ready to help me.
 
-![Voynich Manuscript]/rm*ation/images/voynich-manuscript.jpg)
-\_Voynich Manuscript, circa 15th century.*
+![Voynich Manuscript](/rm_ation/images/voynich-manuscript.jpg)
+_Voynich Manuscript, circa 15th century._
 
-![Early Max Patch]/rm*ation/images/nsequencer.png)
-\_One of my early patches, circa 2018.*
+![Early Max Patch](/rm_ation/images/nsequencer.png)
+_One of my early patches, circa 2018._
 
 ## The Electronic Musician Angle
 
 I've been creating electronic music for over half my life. I started with cracked programs like Hammerhead. These were downloaded from [Limewire](https://en.wikipedia.org/wiki/LimeWire) and installed off CD-Rs of questionable provenance from Russia in the early 2000s. Over time I moved through DAWs, hardware, and different rigs for performances.
 
-![Hammerhead]/rm*ation/images/hammerhead.jpg)
-\_Hammerhead. You never forget your first love.*
+![Hammerhead](/rm_ation/images/hammerhead.jpg)
+_Hammerhead. You never forget your first love._
 
 I adopted Ableton Live as my primary DAW in 2009. The learning curve was frustrating and steep. It wasn't until about 2011 that I actually felt somewhat comfortable with the program. Now, in 2020, I'm still reluctant to call myself an expert, but I've certainly put in my 10,000 hours towards mastery.
 
@@ -41,11 +41,11 @@ This mastery does not come without drawbacks. My mind was very much locked into 
 
 Similarly, I've been performing with (and often without) a laptop since the mid 2000s. My live rig has gone through more iterations than I can count. At one extreme end of the spectrum was the maximalist shenanigans of the Northern Information Movement. At the other end I would go all the way down to a single delay pedal for of a solo ambient DJ set.
 
-![Northern Information Movement]/rm*ation/images/tyler-etters-adam-moore-paul-petrosyan-rakes-end.jpg)
-\_Northern Information Movement, 2013*
+![Northern Information Movement](/rm_ation/images/tyler-etters-adam-moore-paul-petrosyan-rakes-end.jpg)
+_Northern Information Movement, 2013_
 
-![Solo Set at The Hideout]/rm*ation/images/solo-set-at-the-hideout.jpg)
-\_Setting up for a show at [The Hideout](https://www.hideoutchicago.com/), 2014*
+![Solo Set at The Hideout](/rm_ation/images/solo-set-at-the-hideout.jpg)
+_Setting up for a show at [The Hideout](https://www.hideoutchicago.com/), 2014_
 
 Because I've used so many different types of electronic music software and hardware that all follow similar paradigms for so many years, Max was utterly alien to me.
 
