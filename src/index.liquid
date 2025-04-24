@@ -20,7 +20,7 @@ permalink: /
                   src="{{ release.cover_url }}"
                   alt="{{ release.title }}"
                   class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
-                >
+                />
               </a>
               <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
             </li>
@@ -62,7 +62,7 @@ permalink: /
                   src="{{ release.cover_url }}"
                   alt="{{ release.title }}"
                   class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
-                >
+                />
               </a>
               <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
             </li>
@@ -86,6 +86,41 @@ permalink: /
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row mb-10">
+    <div class="w-full md:w-1/2">
+      <div class="content p-2">
+        <h2 class="!my-0">Latest Video</h2>
+      </div>
+      <div class="w-full">
+        <video
+          class="aspect-video h-auto w-full mb-2"
+          src="https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/kowloon-walled-city-giga-mix/mobile-kowloon-city-leyline.mp4"
+          controls=""
+        ></video>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="content p-2">
+        <h2 class="!my-0">Latest Words</h2>
+      </div>
+      <div class="w-full p-2">
+        {% for group in collections.postsByYear %}
+          {% if '2025' == group.year %}
+            <div class="mb-10">
+              <ul class="list-none">
+                {% for post in group.posts %}
+                  {% assign thisPost = post.url == page.url %}
+                  <li class="mb-2">
+                    {% render postLink, post: post, thisPost: thisPost %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
