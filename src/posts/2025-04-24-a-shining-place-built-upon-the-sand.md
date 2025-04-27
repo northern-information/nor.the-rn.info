@@ -13,4 +13,4 @@ tags: ["Wildcard"]
 
 > Not that this mattered to most people in it, as it was more of a backdrop to their lives, in fact, most people didn't pick up a single book in their lifetimes. Their lives were spent within the walls of large octagonal rooms. Each room had 4 hallways connecting to other rooms. Restrooms, bedrooms, and other facilities were found in the gaps. Perpetual daylight radiated from the translucent glassy floor. At the center of some octagons grew fruit trees.
 
-[Watch the talk.](https://www.youtube.com/watch?v=EACF2VEpO3Q) Devine has a spectacularly beautiful mind. Who just dreams and entire palindromic spoken-computer-mystical language, remembers it, writes it down, and then shares it?!? Devine that's who!
+[Watch the talk.](https://www.youtube.com/watch?v=EACF2VEpO3Q) Devine has a spectacularly beautiful mind. Who just dreams an entire palindromic spoken-computer-mystical language, remembers it, writes it down, and then shares it?!? Devine that's who!
