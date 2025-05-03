@@ -17,6 +17,6 @@ export default {
     SOUNDCLOUD: 'https://soundcloud.com/tyleretters',
     TWITCH: 'https://twitch.tv/tyleretters',
     X: 'https://x.com/tyleretters',
-    YOUTUBE: 'https://www.youtube.com/channel/UCkZn9WNgPM3gVf9fiyuN1Mg',
+    YOUTUBE: 'https://www.youtube.com/@tyler.etters',
   },
 }
