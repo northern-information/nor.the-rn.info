@@ -52,21 +52,11 @@
     <span class="font-serif italic text-stone-500 group-hover:text-red-500 group-hover:underline">NPM</span>
   </a>
 </div>
-{% if mode contains 'list' %}
-  <ul class="list-none">
-    {% for release in mixPages %}
-      <li class="mb-5 flex justify-center">
-        {% render releaseList, release: release, isLink: true %}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
-{% if mode contains 'gallery' %}
-  <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
-    {% for release in mixPages %}
-      <li class="mb-10">
-        {% render releaseGallery, release: release %}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  {% for release in mixPages %}
+    <li class="mb-10">
+      {% render releases, release: release %}
+    </li>
+  {% endfor %}
+</ul>
+
