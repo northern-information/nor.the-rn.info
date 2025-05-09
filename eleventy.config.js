@@ -71,14 +71,15 @@ export default async (eleventyConfig) => {
     memoize((input) => {
       // prettier-ignore
       const ignoreList = [
-      'EP1', 'EP2', 'EP3', 'E.P.', 'FCIV',
-      'the geometrie of our lost cause',
-      'blue, the most celestial color', 'senescence',
-      'the phantoms of our lost cause', 'zulu',
-      'and though the soft apocalypse may yet overtake',
-      'the legacy of our lost cause',
-      'dispatches from the prime meridian', 'reverence',
-    ]
+        'A report on our findings',
+        'EP1', 'EP2', 'EP3', 'E.P.', 'FCIV',
+        'the geometrie of our lost cause',
+        'blue, the most celestial color', 'senescence',
+        'the phantoms of our lost cause', 'zulu',
+        'and though the soft apocalypse may yet overtake',
+        'the legacy of our lost cause',
+        'dispatches from the prime meridian', 'reverence',
+      ]
       if (ignoreList.includes(input)) {
         return input
       }
@@ -103,7 +104,7 @@ export default async (eleventyConfig) => {
   eleventyConfig.addFilter(
     'stripLeadingZero',
     memoize((input) => {
-      return input.replace('0', '')
+      return typeof input === 'string' ? input.replace(/^0/, '') : input
     })
   )
 

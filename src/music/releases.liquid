@@ -1,0 +1,52 @@
+---
+layout: base.liquid
+pagination:
+  data: collections.discographyPages
+  size: 1
+  alias: release
+permalink: /music/{{ release.slug }}
+eleventyComputed:
+  title: "{{ release.title }} by {{ release.project }}"
+---
+<div class="content">
+  {% render pageTitle, title: title %}
+</div>
+<div class="m-auto my-10 flex w-auto flex-col place-items-center overflow-hidden md:max-w-[616px] xl:max-w-[800px]">
+  <a href="{{ release.cover_url }}" target="_blank" class="mb-10">
+    <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full md:w-[616px] xl:w-[800px]">
+  </a>
+  <div class="w-full text-center text-sm text-stone-50">
+    <h3 class="mb-2 uppercase text-red-500">Tracks</h3>
+    <ol class="mb-10">
+      {% for track in release.tracks %}
+        <li class="mb-2">
+          {{ track.title -}}
+          <br>
+          <span class="font-serif italic text-stone-500">{{ track.length }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+    {% if release.streams.size > 0 %}
+      <h3 class="mb-2 uppercase text-red-500">Listen</h3>
+      <ol class="mb-10 w-full">
+        {% for stream in release.streams %}
+          <li class="mb-2 w-full overflow-ellipsis">
+            {{ stream.platform -}}
+            <br>
+            <a
+              href="{{ stream.url }}"
+              class="font-serif italic text-stone-500 hover:text-red-500 hover:underline"
+              target="_blank"
+            >
+              {{- stream.url -}}
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+    <h3 class="mb-2 uppercase text-red-500">Notes</h3>
+    <div class="release-notes mb-10 text-center">{{ release.notes }}</div>
+    <h3 class="mb-2 uppercase text-red-500">Credits</h3>
+    <div class="release-credits mb-10 text-center">{{ release.credits }}</div>
+  </div>
+</div>

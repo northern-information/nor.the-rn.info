@@ -4,7 +4,13 @@ layout: base.liquid
 <div class="content">
   {% render pageTitle, title: title %}
 </div>
-{% render discography, releases: collections.mixPages, mode: 'gallery', site: site %}
+<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+  {% for release in collections.mixPages %}
+    <li class="mb-10">
+      {% render release, release: release %}
+    </li>
+  {% endfor %}
+</ul>
 <div class="content">
   {% render pageTitle, title: 'Playlists' %}
 </div>
