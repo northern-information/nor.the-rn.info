@@ -1,12 +1,12 @@
 export default [
   {
-    url: '/music/gallery',
+    url: '/music/',
     label: 'Music Releases',
     match: 'contains',
     class: 'border-r-4 ',
   },
   {
-    url: '/mixes/gallery',
+    url: '/mixes/',
     label: 'Mixes',
     match: 'contains',
     class: 'md:border-r-4',
