@@ -58,6 +58,7 @@ export default [
   { url: 'https://julianoliver.com', title: 'Julian Oliver' },
   { url: 'https://www.jungantagen.xyz/', title: 'Jung An Tagen' },
   { url: 'https://k-punk.org', title: 'k-punk' },
+  { url: 'https://www.kelseymichellelegg.com/', title: 'Kelsey Legg'},
   { url: 'https://klangmag.co', title: 'Klang Magazine' },
   { url: 'https://soundslikefeelslike.com', title: 'Kelly Rodriguez' },
   { url: 'https://kennyzhao.com/', title: 'Kenny Zaho' },
