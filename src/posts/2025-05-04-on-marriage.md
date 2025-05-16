@@ -57,7 +57,7 @@ There were some particularly insidious second-order effects. Chain reactions of 
 
 ![Dissolution](/images/dissolution.jpg)
 
-I poured my heart into making a [mixtape](https://nor.the-rn.info/rm_ation/mixes/dj-stuxnet/dissolution/) for her - a little sentimental coda for our time together. I doubt she will ever listen, though. She ceased to have the capacity or interest to listen to my music a long time ago. It still hurts and I still don’t really know why.
+I poured my heart into making a [mixtape](https://nor.the-rn.info/rm_ation/mixes/dj-stuxnet/dissolution/) for her - a little sentimental coda for our time together.
 
 Divorce has a stigma around it in the west: failure, shame, embarrassment. People bottle it up and don't talk about it. Nonsense, in my opinion. I don't feel any of these things. Part of my healing process has been to talk about it. To let others know whats going on. This very post.
 
