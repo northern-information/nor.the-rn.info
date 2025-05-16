@@ -69,7 +69,7 @@ I still love Sage. After so much time together to believe anything less would be
 
 The actual break up took less than a minute.
 
-I had my bags packed and walked out the door, a one-way ticket to Chicago loaded up on my phone. At first, my departure was to give Sage some distance to process things. (And because I was in such a mental state that I couldn't spend another night under the same roof as her.) But as I was couch surfing with chosen family and an unknown return date, it became clear I was conducting a deeply personal re-connective rite. I spent so much time with so many people. The outpouring of love and support was overwhelming. [Rachel aka Octabat](https://www.instagram.com/octabat) gave me the most beautiful tattoos:
+I had my bags packed and walked out the door, a one-way ticket to Chicago loaded up on my phone. At first, my departure was to give Sage some distance to process things. But as I was couch surfing with chosen family and an unknown return date, it became clear I was conducting a deeply personal re-connective rite. I spent so much time with so many people. The outpouring of love and support was overwhelming. [Rachel aka Octabat](https://www.instagram.com/octabat) gave me the most beautiful tattoos:
 
 ![Octabat](/images/octabat.jpg)
 
