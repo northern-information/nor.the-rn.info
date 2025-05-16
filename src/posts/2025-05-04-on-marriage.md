@@ -63,14 +63,6 @@ Divorce has a stigma around it in the west: failure, shame, embarrassment. Peopl
 
 I still love Sage. After so much time together to believe anything less would be an exercise in self-deception. She has an enormous heart and a beautiful soul. The decision to end it was entirely mine. For me, extrapolating our timelines, lifestyles, interests, and goals left an increasingly tiny sliver of "success states" with each day. It's folk wisdom that marriage has ups and downs and you've just gotta ride it out. But after some number of years of downs... you also just have to know when to call it. So I did.
 
-Jeremy deftly became a gentle mirror, reflecting some observations and words back at me. The end of the conversation with him went something like this:
-
-"Yeah. But she's my ride or die!"
-
-"Bro... you're dying."
-
-"You're right."
-
 ![Tyler & Sage](/images/tyler-sage-last-anniversary.jpg)
 
 > Probably our our last selfie, taken at our last anniversary date (a BDSM class) circa Halloween 2024.
