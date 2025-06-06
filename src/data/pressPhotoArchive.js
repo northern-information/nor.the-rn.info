@@ -1,5 +1,11 @@
 export default [
   {
+    url: '/images/hemisync.jpg',
+    title: 'Hemisync, 2025',
+    photographer: 'Tyler Etters',
+    year: 2025,
+  },
+  {
     url: '/images/edgelord-vertical.jpg',
     title: 'Edgelord, 2025',
     photographer: 'Jeremy Tsipouras',
