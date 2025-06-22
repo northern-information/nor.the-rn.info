@@ -59,6 +59,8 @@ The package is [publicly available on npm](https://www.npmjs.com/package/@tylere
 
 I created a new React app and installed my `@tyleretters/discography` package. Since the package is written in TypeScript, I made sure to export the `Release` and `Track` interfaces. Ensuring my React components adhered to these interfaces made development fun because everything seemed to "just work." Here's what the interfaces look like as of writing:
 
+**Note to past self a year later I don't think you actually tested it. I just tried to import it and realized eleventy is still on JS.**
+
 ```typescript
 export interface Release {
   title: string
