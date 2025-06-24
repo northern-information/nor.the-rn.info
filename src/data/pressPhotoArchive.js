@@ -1,5 +1,11 @@
 export default [
   {
+    url: '/images/goth-pro-shops.jpg',
+    title: 'Goth Pro Shops, 2025',
+    photographer: 'Tyler Etters',
+    year: 2025,
+  },
+  {
     url: '/images/hemisync.jpg',
     title: 'Hemisync, 2025',
     photographer: 'Tyler Etters',
