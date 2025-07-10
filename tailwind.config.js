@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.liquid', './src/index.liquid'],
+  content: [
+    './src/**/*.{html,liquid,md,njk}',
+    './src/index.liquid',
+    './layouts/**/*.{liquid,html}',
+    './includes/**/*.{liquid,html}',
+  ],
+  plugins: [require('@tailwindcss/typography')],
   safelist: ['md:border-r-4'],
   theme: {
     fontFamily: {
@@ -67,5 +73,4 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
 }
