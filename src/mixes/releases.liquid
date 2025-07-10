@@ -9,17 +9,17 @@ eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
 <div class="mt-[4px] flex flex-col md:flex-row">
-  <div class="md:w-1/2 border-b-[4px] md:border-b-0 md:border-r-[4px] border-stone-950">
+  <div class="border-b-[4px] border-stone-950 md:w-1/2 md:border-b-0 md:border-r-[4px]">
     <a href="{{ release.cover_url }}" target="_blank">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
     </a>
   </div>
-  <div class="md:w-1/2 bg-stone-50 text-stone-950">
-    <div class="p-2 border-b-[4px] border-stone-950">
+  <div class="bg-stone-50 text-stone-950 md:w-1/2">
+    <div class="border-b-[4px] border-stone-950 p-2">
       <h1 class="text-4xl font-bold">{{ release.title }}</h1>
       <h2 class="text-lg">by {{ release.project }}, {{ release.released }}</h2>
     </div>
-    <div class="p-2 border-b-[4px] border-stone-950">
+    <div class="border-b-[4px] border-stone-950 p-2">
       <h3 class="text-lg font-bold">Tracklist</h3>
       <ol>
         {% for track in release.tracks %}
@@ -30,36 +30,38 @@ eleventyComputed:
             {% else %}
               {% assign displayIndex = index %}
             {% endif %}
-            <span class="font-mono text-stone-500 mr-2">
+            <span class="mr-2 font-mono text-stone-500">
               {{ displayIndex }}
             </span>
             <span class="mr-2">{{ track.title }}</span>
-            <span class="relative grow mr-2 before:content-['....................................................................................................................................................................................'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-stone-500 before:whitespace-nowrap before:overflow-hidden before:w-full before:h-full text-stone-500"></span>
+            <span
+              class="relative mr-2 grow text-stone-500 before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']"
+            ></span>
             <span class="font-mono text-stone-500">{{ track.length }}</span>
           </li>
         {% endfor %}
       </ol>
     </div>
     {% if release.streams.size > 0 %}
-      <div class="p-2 border-b-[4px] border-stone-950">
+      <div class="border-b-[4px] border-stone-950 p-2">
         <h3 class="text-lg font-bold">Listen</h3>
         <ol>
-        {% for stream in release.streams %}
-          <li class="w-full flex items-start">
-            <span class="font-mono text-stone-500 mr-1">-</span>
-            <a
-              href="{{ stream.url }}"
-              class="truncate overflow-hidden whitespace-nowrap text-blue-700 underline hover:text-blue-900 hover:no-underline"
-              target="_blank"
-            >
-              {{- stream.platform -}}
-            </a>
-          </li>
-        {% endfor %}
+          {% for stream in release.streams %}
+            <li class="flex w-full items-start">
+              <span class="mr-1 font-mono text-stone-500">-</span>
+              <a
+                href="{{ stream.url }}"
+                class="overflow-hidden truncate whitespace-nowrap text-blue-700 underline hover:text-blue-900 hover:no-underline"
+                target="_blank"
+              >
+                {{- stream.platform -}}
+              </a>
+            </li>
+          {% endfor %}
         </ol>
       </div>
     {% endif %}
-    <div class="p-2 border-b-[4px] border-stone-950">
+    <div class="border-b-[4px] border-stone-950 p-2">
       <h3 class="text-lg font-bold">Notes</h3>
       <p>{{ release.notes }}</p>
     </div>

@@ -9,20 +9,22 @@ permalink: /
         <h2 class="!my-0">Latest Music</h2>
       </div>
       <div class="w-full overflow-x-auto scroll-smooth">
-        <ul class="w-[1800px] list-none pb-5 h-[230px] md:h-[260px] md:w-[2300px]">
+        <ul class="h-[230px] w-[1800px] list-none pb-5 md:h-[260px] md:w-[2300px]">
           {% for release in collections.discographyPages limit: 10 %}
             <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
               <a
                 href="/music/{{ release.slug }}"
-                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
+                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px]"
               >
                 <img
                   src="{{ release.cover_url }}"
                   alt="{{ release.title }}"
                   class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
-                />
+                >
               </a>
-              <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
+              <p class="px-4 font-mono text-sm text-stone-50">
+                {{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
+              </p>
             </li>
           {% endfor %}
           <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
@@ -51,20 +53,22 @@ permalink: /
         <h2 class="!my-0">Latest Mixes</h2>
       </div>
       <div class="w-full overflow-x-auto scroll-smooth">
-        <ul class="w-[750px] md:w-[835px] list-none pb-5 h-[230px] md:h-[260px]">
+        <ul class="h-[230px] w-[750px] list-none pb-5 md:h-[260px] md:w-[835px]">
           {% for release in collections.mixPages limit: 3 %}
             <li class="float-left block h-[150px] w-[150px] md:me-2 md:h-[200px] md:w-[200px]">
               <a
                 href="/mixes/{{ release.slug }}"
-                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px] p-4"
+                class="block h-[150px] w-[150px] cursor-pointer border-4 border-solid border-transparent p-4 text-center transition-colors hover:border-red-500 hover:bg-red-950 md:h-[200px] md:w-[200px]"
               >
                 <img
                   src="{{ release.cover_url }}"
                   alt="{{ release.title }}"
                   class="h-[110px] w-[110px] md:h-[160px] md:w-[160px]"
-                />
+                >
               </a>
-              <p class="font-mono px-4 text-sm text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
+              <p class="px-4 font-mono text-sm text-stone-50">
+                {{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
+              </p>
             </li>
           {% endfor %}
           <li class="float-left me-2 block h-[150px] w-[150px] md:h-[200px] md:w-[200px]">
@@ -89,14 +93,14 @@ permalink: /
       </div>
     </div>
   </div>
-  <div class="flex flex-col md:flex-row mb-10">
+  <div class="mb-10 flex flex-col md:flex-row">
     <div class="w-full md:w-1/2">
       <div class="content p-2">
         <h2 class="!my-0">Latest Video</h2>
       </div>
       <div class="w-full">
         <video
-          class="aspect-video h-auto w-full mb-2"
+          class="mb-2 aspect-video h-auto w-full"
           src="https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/kowloon-walled-city-giga-mix/mobile-kowloon-city-leyline.mp4"
           controls=""
         ></video>
@@ -126,13 +130,13 @@ permalink: /
   </div>
   {% render spectrum %}
   {% render rule %}
-  <div class="bg-powerlines w-full h-auto bg-cover min-h-[400px] md:min-h-[600px] lg:min-h-[800px] pt-4 ps-4">
+  <div class="h-auto min-h-[400px] w-full bg-powerlines bg-cover ps-4 pt-4 md:min-h-[600px] lg:min-h-[800px]">
     <div class="content">
-      <h2 class="font-mono m-0 bg-stone-950 inline">
+      <h2 class="m-0 inline bg-stone-950 font-mono">
         "We build our computer systems the way we build our cities: over time, without a plan, on top of ruins."
       </h2>
-      <br/>
-      <p class="font-mono m-0 bg-stone-950 inline">&mdash; Ellen Ullman</p>
+      <br>
+      <p class="m-0 inline bg-stone-950 font-mono">&mdash; Ellen Ullman</p>
     </div>
   </div>
 </div>

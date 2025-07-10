@@ -7,5 +7,7 @@
   class="block cursor-pointer border-4 border-solid border-transparent p-4 transition-colors hover:border-red-500 hover:bg-red-950"
 >
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
-  <p class="font-mono text-sm pt-1 text-stone-50">{{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</p>
+  <p class="pt-1 font-mono text-sm text-stone-50">
+    {{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
+  </p>
 </a>

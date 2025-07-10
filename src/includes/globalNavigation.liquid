@@ -1,18 +1,23 @@
 <div class="grid grid-cols-2 gap-0 md:grid-cols-4">
   {% for item in navigation %}
     {% assign is_active = false %}
-    {% if item.match == "contains" and page.url contains item.url %}
+    {% if item.match == 'contains' and page.url contains item.url %}
       {% assign is_active = true %}
-    {% elsif item.match == "equals" and page.url == item.url %}
+    {% elsif item.match == 'equals' and page.url == item.url %}
       {% assign is_active = true %}
     {% endif %}
 
-    {% assign hover_classes = "hover:bg-red-500 hover:text-stone-50" %}
-    {% assign active_classes = "bg-red-500 text-stone-50" %}
-    {% assign persistent_classes = "border-stone-950 px-2 py-2 font-semibold border-b-4" %}
+    {% assign hover_classes = 'hover:bg-red-500 hover:text-stone-50' %}
+    {% assign active_classes = 'bg-red-500 text-stone-50' %}
+    {% assign persistent_classes = 'border-stone-950 px-2 py-2 font-semibold border-b-4' %}
 
-    <a href="{{ item.url }}"
-      class="{% if is_active %}{{ active_classes }}{% else %}{{ hover_classes }}{% endif %} {{ persistent_classes }} {{ item.class }}"{% if is_active %} aria-current="page"{% endif %}>
+    <a
+      href="{{ item.url }}"
+      class="{% if is_active %}{{ active_classes }}{% else %}{{ hover_classes }}{% endif %} {{ persistent_classes }} {{ item.class }}"
+      {% if is_active %}
+        aria-current="page"
+      {% endif %}
+    >
       {{ item.label }} &rarr;
     </a>
   {% endfor %}
