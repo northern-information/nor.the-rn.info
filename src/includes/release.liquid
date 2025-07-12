@@ -1,9 +1,17 @@
 <a
   href="/music/{{ release.slug }}"
-  class="block cursor-pointer border-4 border-solid border-transparent p-4 transition-colors hover:border-red-500 hover:bg-red-950"
+  class="block cursor-pointer hover:underline"
 >
   <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
-  <p class="pt-1 font-mono text-sm text-stone-50">
-    {{ release.title }}, {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
-  </p>
+  <div class="p-2">
+    <p class="font-mono text-sm">
+      {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
+    </p>
+    <p class="truncate w-full">
+      {{ release.title }}
+    </p>
+    <p class="truncate w-full">
+      {{ release.project }}
+    </p>
+  </div>
 </a>

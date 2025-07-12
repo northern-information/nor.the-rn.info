@@ -1,11 +1,15 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
-<ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
-  {% for release in collections.discography %}
-    <li class="mb-10">
-      {% render release, release: release %}
-    </li>
-  {% endfor %}
-</ul>
+<div class="bg-stone-50">
+  {% render rule %}
+  {% render pageTitle, title: title %}
+  {% render rule %}
+  <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+    {% for release in collections.discography %}
+      <li>
+        {% render release, release: release %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
