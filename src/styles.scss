@@ -16,39 +16,6 @@ body {
   @apply bg-stone-950;
 }
 
-.home-grid {
-  a {
-    @apply h-full w-full cursor-pointer;
-    img {
-      @apply h-full w-full object-cover transition-opacity;
-    }
-  }
-}
-
-.content {
-  @apply prose prose-stone prose-invert lg:prose-xl;
-  a {
-    @apply text-yellow-300 underline;
-  }
-  a:hover {
-    @apply text-yellow-500 no-underline;
-  }
-  img {
-    @apply h-auto w-full;
-  }
-  code::before,
-  code::after {
-    content: '';
-  }
-}
-
-.release-notes,
-.release-credits {
-  p {
-    @apply mb-2;
-  }
-}
-
 ::selection {
   @apply bg-yellow-300 text-stone-950;
 }

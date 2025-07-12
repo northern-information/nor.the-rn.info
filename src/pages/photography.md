@@ -1,6 +1,6 @@
 ---
 title: Photography
-layout: page.liquid
+layout: pagePhotography.liquid
 ---
 
 Shot with the trusty Canon AE-1 my mom pawned and passed down to me:

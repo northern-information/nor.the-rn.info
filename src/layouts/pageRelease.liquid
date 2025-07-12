@@ -1,9 +1,5 @@
 ---
-layout: release.liquid
-pagination:
-  data: collections.discographyPages
-  size: 1
-  alias: release
+layout: base.liquid
 permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
@@ -23,21 +19,21 @@ eleventyComputed:
       <h3 class="text-lg font-bold">Tracklist</h3>
       <ol>
         {% for track in release.tracks %}
-          <li class="flex justify-between">
+          <li class="flex items-baseline gap-2 justify-between">
             {% assign index = forloop.index %}
             {% if index < 10 %}
               {% assign displayIndex = '0' | append: index %}
             {% else %}
               {% assign displayIndex = index %}
             {% endif %}
-            <span class="mr-2 font-mono text-stone-500">
+            <div class="text-xs font-mono">
               {{ displayIndex }}
-            </span>
-            <span class="mr-2">{{ track.title }}</span>
-            <span
-              class="relative mr-2 grow text-stone-500 before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']"
-            ></span>
-            <span class="font-mono text-stone-500">{{ track.length }}</span>
+            </div>
+            <div>{{ track.title }}</div>
+              <div class="relative grow text-sm before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']">
+              &#8203;
+            </div>
+            <div class="font-mono text-sm text-stone-500">{{ track.length }}</div>
           </li>
         {% endfor %}
       </ol>

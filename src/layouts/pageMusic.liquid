@@ -1,14 +1,28 @@
 ---
 layout: base.liquid
 ---
-<div class="bg-stone-50">
-  {% render rule %}
-  {% render pageTitle, title: title %}
-  {% render rule %}
+<div class="bg-stone-50 overflow-hidden border-2 border-solid border-stone-950">
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
     {% for release in collections.discography %}
-      <li>
-        {% render release, release: release %}
+      <li class="group border-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300">
+        <a
+          href="/music/{{ release.slug }}"
+          class="block cursor-pointer"
+        >
+          <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full group-hover:invert">
+          <div class="relative p-2 border-t-4 border-stone-950 border-solid group-hover:border-yellow-300">
+            <p class="truncate w-full text-sm group-hover:underline">
+              <span class="font-mono"></span>{{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</span>
+              <span class="text-transparent group-hover:text-yellow-300">{{ release.type }}, {{ release.label }}: {{ release.format }}</span>
+            </p>
+            <p class="truncate w-full group-hover:underline">
+              {{ release.title }}
+            </p>
+            <p class="truncate w-full group-hover:underline">
+              {{ release.project }}
+            </p>
+          </div>
+        </a>
       </li>
     {% endfor %}
   </ul>
