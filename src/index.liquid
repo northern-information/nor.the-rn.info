@@ -1,13 +1,12 @@
----
-permalink: /
----
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <title>{% getTitle title %}</title>
+    {% render metaTags, site: site %}
     <meta http-equiv="refresh" content="0; url=/music">
     <link rel="canonical" href="/music" />
-    <title>Redirecting...</title>
   </head>
   <body style="background:#0c0a09;">
+    {{ content }}
   </body>
 </html>

@@ -1,9 +1,16 @@
----
-layout: abstract.liquid
-discographyPages: collections.discographyPages
----
-{% render nav, site: site, page: page, post: post, navigation: navigation %}
-<main class="container">
-  {{ content }}
-</main>
-{% render footer, site: site, page: page, post: post %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% getTitle title %}</title>
+    {% render metaTags, site: site %}
+    <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
+  </head>
+  <body>
+    {% render nav, site: site, page: page, post: post, navigation: navigation %}
+    <main class="container">
+      {{ content }}
+    </main>
+    {% render footer, site: site, page: page, post: post %}
+  </body>
+</html>
+

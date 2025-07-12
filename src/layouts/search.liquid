@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% getTitle title %}</title>
+    {% render metaTags, site: site %}
+    <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
+     <link href="/styles/pagefind-ui-custom.css?ver={% getTimestamp %}" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: '#search', showSubResults: true })
+        })
+      </script>
+  </head>
+  <body>
+    {% render nav, site: site, page: page, post: post, navigation: navigation %}
+    <main class="container">
+      <div class="bg-stone-50 overflow-hidden border-4 border-solid border-stone-950 p-2">
+        <p class="text-center">
+          Search the entire Northern Information site.
+          <br>
+          <span>Last indexed: <span class="font-mono text-sm">{{ site.META.BUILD_TIME }}</span></span></span>
+          <br>
+          &#8258;
+        </p>
+        <div id="search"></div>
+    </div>
+
+    </main>
+    {% render footer, site: site, page: page, post: post %}
+  </body>
+</html>
