@@ -6,7 +6,6 @@ export default {
     './layouts/**/*.{liquid,html}',
     './includes/**/*.{liquid,html}',
   ],
-  plugins: [require('@tailwindcss/typography')],
   safelist: ['md:border-r-4'],
   theme: {
     fontFamily: {
