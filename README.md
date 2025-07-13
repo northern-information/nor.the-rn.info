@@ -22,6 +22,7 @@ Automatic on push to `main` via Cloudflare integration.
 
 ```zsh
 eleventy.config.js
+./src/music/index.liquid
 ./src/pages/pages.json
 ./src/posts/posts.json
 ./src/data/site.js
