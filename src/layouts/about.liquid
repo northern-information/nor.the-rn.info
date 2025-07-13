@@ -32,7 +32,7 @@ layout: base.liquid
     {% for photo in photos %}
       <li class="group border-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50">
         <a
-          href="/music/{{ photo.url }}"
+          href="{{ photo.url }}"
           class="block cursor-pointer"
         >
           <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
