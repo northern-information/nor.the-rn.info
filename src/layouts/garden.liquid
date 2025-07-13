@@ -1,21 +1,33 @@
 ---
 layout: base.liquid
 ---
-<h1 class="text-4xl text-stone-50 text-center py-10">Under Construction</h1>
-{% comment %} <div class="grid grid-cols-1 xl:grid-cols-4">
-  <div class="post p-y xl:col-span-3 bg-stone-50">
-    <h1 class="mb-1 text-4xl">{{ title }}</h1>
-    {{ content }}
-  </div>
+<h1 class="text-4xl text-stone-50 text-center py-10">{{ title }}</h1>
+<div class="post p-2 bg-stone-50 flex flex-col items-center">
+  <img src="/images/akashic.gif" alt="Connectedness Locus Emergency Akashic Records" width="250" height="250" class="w-[250px] h-[250px]"/>
+  <p class="max-w-[600px] text-center"><em>"A man sets out to draw the world. As the years go by, he peoples a space with images of provinces, kingdoms, mountains, bays, ships, islands, fishes, rooms, instruments, stars, horses, and individuals. A short time before he dies, he discovers that the patient labyrinth of lines traces the lineaments of his own face."</em><br><br>― Jorge Luis Borges, The Aleph and Other Stories</p>
 </div>
-<ul class="grid grid-cols-1">
+
+<h2 class="text-4xl text-stone-50 text-center py-10">Resources</h2>
+<ul>
+  {% for resource in resources %}
+    <li class="post mb-1 p-2 bg-stone-50">
+      <h2>{{- resource.title -}}</h2>
+      <p>{{ resource.description }}</p>
+        <a
+          href="{{ resource.url }}"
+          target="_blank"
+        >
+          Download&nbsp;{{- resource.title -}}&nbsp;({{- resource.size -}})
+        </a>
+    </li>
+  {% endfor %}
+</ul>
+ 
+
+<h2 class="text-4xl text-stone-50 text-center py-10">Subsidiaries</h2>
+<ul>
   {% for subsidiary in subsidiaries %}
-    <li class="mb-10">
-      {% if subsidiary.title != 'Circular Ruin DSP' %}
-        <div class="-mx-2 h-10">
-          {% render spectrum %}
-        </div>
-      {% endif %}
+    <li class="post mb-1 p-2 bg-stone-50">
       <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="max-w-none md:pr-4">
           <h2>{{ subsidiary.title }}</h2>
@@ -31,37 +43,29 @@ layout: base.liquid
     </li>
   {% endfor %}
 </ul>
-<ul class="mb-10">
-  {% for resource in resources %}
-    <li class="mb-5">
-      <h2>{{- resource.title -}}</h2>
-      <p>{{ resource.description }}</p>
-      <div class="flex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-20 text-yellow-300"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
-        </svg>
-        <a
-          href="{{ resource.url }}"
-          target="_blank"
-          class="group h-fit w-full border-2 border-solid border-transparent bg-yellow-300 p-5 text-center font-mono text-xl hover:border-yellow-300"
-        >
-          <span class="px-2 !text-black group-hover:bg-black group-hover:!text-yellow-300">
-            Download&nbsp;
-            {{- resource.title -}}
-            &nbsp;(
-            {{- resource.size -}}
-            )
-          </span>
-        </a>
-      </div>
+
+
+
+<h2 class="text-4xl text-stone-50 text-center py-10">Playlists</h2>
+<ul class="grid grid-cols-1 xl:grid-cols-3 border-solid border-stone-950 border-t-4">
+  {% for playlist in playlists %}
+    <li class="
+      post bg-stone-50 p-2
+      
+      border-solid border-stone-950 border-b-4
+      
+      xl:border-r-4
+      xl:[&:nth-child(3n+1)]:border-l-2 
+      xl:[&:nth-child(3n)]:border-r-0
+    ">
+      <h2>{{ playlist.title }}</h2>
+      <ol>
+        {% for track in playlist.tracks %}
+          <li>{{ track }}</li>
+        {% endfor %}
+      </ol>
     </li>
   {% endfor %}
 </ul>
- {% endcomment %}
+
+

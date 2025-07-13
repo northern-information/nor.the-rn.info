@@ -40,9 +40,8 @@
   .post iframe,
   .post img,
   .post hr,
-  .post ol,
-  .post p,
-  .post ul {
+  .post li,
+  .post p {
     @apply mb-4;
   }
 
