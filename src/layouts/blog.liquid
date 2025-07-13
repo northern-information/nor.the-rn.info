@@ -1,10 +1,10 @@
 ---
 layout: base.liquid
 ---
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border-2 border-solid border-stone-950 text-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border-4 border-solid border-stone-950 text-stone-950">
   {% for group in collections.postsByYear %}
     <div>
-      <h2 class="p-2 text-4xl border-2 border-solid border-stone-950 bg-stone-50">{{ group.year }}</h2>
+      <h2 class="p-2 text-4xl font-bold border-solid border-stone-950 bg-stone-50">{{ group.year }}</h2>
       <ul class="list-none">
         {% for post in group.posts %}
           <li>{% render postLink, post: post %}</li>

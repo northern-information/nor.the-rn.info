@@ -1,18 +1,18 @@
 ---
 layout: base.liquid
 ---
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border-2 border-solid border-stone-950 text-stone-950">
-  <div class="post bg-stone-50 xl:col-span-3 p-2 border-2 border-solid border-stone-950">
+<div class="grid gap-0 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+  <div class="post bg-stone-50 xl:col-span-3 p-2 border-solid border-stone-950 border-4 md:border-r-0 text-stone-950">
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
         {{- page.date | date: '%B %d, %Y' -}}
       </time>
-      <h1 class="text-4xl font-bold mb-1">{{ title }}</h1>
+      <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
       {{ content }}
   </div>
   {% assign postDate = page.date | date: '%Y' %}
   {% for group in collections.postsByYear %}
     {% if postDate == group.year %}
-        <ul class="list-none">
+        <ul class="list-none border-solid border-stone-950 border-2">
           {% for post in group.posts %}
             {% assign thisPost = post.url == page.url %}
             <li>

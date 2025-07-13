@@ -1,4 +1,4 @@
-<nav class="container mx-auto overflow-hidden border-l-4 border-r-4 border-solid border-stone-950 bg-stone-50">
+<nav class="ni-container bg-stone-50">
   {% render rule %}
   {% render spectrum %}
   {% render rule %}
@@ -14,8 +14,8 @@
         {% assign is_active = true %}
       {% endif %}
 
-      {% assign hover_classes = 'hover:bg-red-500 hover:text-stone-50' %}
-      {% assign active_classes = 'bg-red-500 text-stone-50' %}
+      {% assign hover_classes = 'hover:bg-red-500 hover:text-stone-50 hover:underline' %}
+      {% assign active_classes = 'bg-red-500 text-stone-50 underline' %}
       {% assign persistent_classes = 'flex border-stone-950 px-2 py-2 font-semibold border-b-4' %}
 
       <a

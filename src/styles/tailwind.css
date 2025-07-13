@@ -13,6 +13,10 @@
     @apply bg-stone-950;
   }
 
+  .ni-container {
+    @apply container mx-auto overflow-hidden
+  }
+
   p {
     @apply mb-2;
   }
@@ -37,7 +41,7 @@
   .post ol,
   .post p,
   .post ul {
-    @apply mb-2;
+    @apply mb-4;
   }
 
   .post a {

@@ -1,15 +1,39 @@
 ---
 layout: base.liquid
 ---
-<div class="overflow-hidden border-2 border-solid border-stone-950">
+<div class="border-t-2 border-b-2 border-solid border-stone-950">
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
     {% for release in collections.discography %}
-      <li class="group border-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50">
+      <li
+        class="
+          flex flex-col
+
+          group border-t-2 border-b-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50
+
+          md:border-r-2
+          md:border-l-2
+
+          md:[&:nth-child(3n+1)]:border-l-0 
+          md:[&:nth-child(3n)]:border-r-0
+
+          xl:[&:nth-child(3n+1)]:border-l-2 
+          xl:[&:nth-child(3n)]:border-r-2
+          xl:[&:nth-child(5n+1)]:border-l-0 
+          xl:[&:nth-child(5n)]:border-r-0
+        "
+      >
         <a
           href="/music/{{ release.slug }}"
           class="block cursor-pointer"
         >
-          <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full group-hover:invert">
+          <div class="w-full aspect-[1/1] overflow-hidden">
+            <img
+              src="{{ release.cover_url }}"
+              alt="{{ release.title }}"
+              class="h-full w-full object-cover group-hover:invert"
+              loading="lazy"
+            />
+          </div>
           <ul class="relative p-2 border-t-4 border-stone-950 border-solid group-hover:border-yellow-300">
             <li class="truncate w-full text-sm group-hover:underline">
               <span class="font-mono"></span>{{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}</span>

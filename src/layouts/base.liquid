@@ -7,7 +7,7 @@
   </head>
   <body>
     {% render nav, site: site, page: page, post: post, navigation: navigation %}
-    <main class="container mx-auto">
+    <main class="container mx-auto overflow-hidden">
       {{ content }}
     </main>
     {% render footer, site: site, page: page, post: post %}
