@@ -1,6 +1,6 @@
 # [https://nor.the-rn.info/rm_ation](https://nor.the-rn.info/rm_ation)
 
-## Install & Develop
+## Develop
 
 ```zsh
 git clone git@github.com:tyleretters/rm_ation.git
