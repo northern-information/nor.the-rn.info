@@ -1,0 +1,48 @@
+---
+layout: base.liquid
+---
+<div class="overflow-hidden border-4 border-b-[2px] border-solid border-stone-950 flex flex-col md:flex-row">
+  <div class="w-full md:w-1/2 border-b-[4px] md:border-b-0 border-stone-950 md:border-r-[4px]">
+    <a href="/images/goth-pro-shops.jpg">
+      <img src="/images/goth-pro-shops.jpg" alt="Tyler Etters">
+    </a>
+  </div>
+  <div class="post p-2 bg-stone-50 md:w-1/2">
+    {{ content }}
+    <h2>Crumbling Social Azula:</h2>
+    <ul>
+      <li><a href="mailto:{{ site.ACCOUNTS.EMAIL }}">{{ site.ACCOUNTS.EMAIL }}</a></li>
+      <li><a href="{{ site.ACCOUNTS.BANDCAMP }}">Bandcamp</a></li>
+      <li><a href="{{ site.ACCOUNTS.BLUESKY }}">Bluesky</a></li>
+      <li><a href="{{ site.ACCOUNTS.DISCORD }}">Discord</a></li>
+      <li><a href="{{ site.ACCOUNTS.GEMINI }}">Gemini</a></li>
+      <li><a href="{{ site.ACCOUNTS.GITHUB }}">GitHub</a></li>
+      <li><a href="{{ site.ACCOUNTS.INSTAGRAM }}">Instagram</a></li>
+      <li><a href="{{ site.ACCOUNTS.LINKEDIN }}">LinkedIn</a></li>
+      <li><a href="{{ site.ACCOUNTS.MASTODON }}">Mastodon</a></li>
+      <li><a href="{{ site.ACCOUNTS.NEWSLETTER }}">Newsletter</a></li>
+      <li><a href="{{ site.ACCOUNTS.SOUNDCLOUD }}">SoundCloud</a></li>
+      <li><a href="{{ site.ACCOUNTS.TWITCH }}">Twitch</a></li>
+      <li><a href="{{ site.ACCOUNTS.YOUTUBE }}">YouTube</a></li>
+    </ul>
+  </div>
+</div>
+<div class="overflow-hidden border-b-2 border-solid border-stone-950">
+  <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+    {% for photo in pressPhotoArchive %}
+      <li class="group border-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50">
+        <a
+          href="/music/{{ photo.url }}"
+          class="block cursor-pointer"
+        >
+          <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
+          <ul class="relative p-2 border-t-4 border-stone-950 border-solid group-hover:border-yellow-300">
+            <li class="truncate w-full group-hover:underline">
+              {{ photo.title }}
+            </li>
+          </ul>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,15 +1,15 @@
 ---
 title: About
-layout: pageAbout.liquid
+layout: about.liquid
 ---
 
-Mission:
+## Mission:
 
 - Inspire with music.
 - Don't give up.
 - Help others not give up.
 
-My name is Tyler Etters. In 2025 I'm:
+## My name is Tyler Etters. In 2025 I'm:
 
 - engineering for [Discogs](https://discogs.com)
 - causing mayhem at [Circular Ruin DSP](https://circularruindsp.com)
