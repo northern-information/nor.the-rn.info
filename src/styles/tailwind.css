@@ -17,6 +17,54 @@
     @apply mb-2;
   }
 
+  .post h1,
+  .post h2,
+  .post h3,
+  .post h4,
+  .post h5,
+  .post h6,
+  .post iframe,
+  .post img,
+  .post hr,
+  .post ol,
+  .post p,
+  .post ul {
+    @apply mb-2;
+  }
+
+  .post a {
+    @apply text-blue-700 underline hover:text-blue-900 hover:no-underline;
+  }
+
+  .post blockquote {
+    @apply border-l-[1px] border-solid border-stone-500 pl-2 italic;
+  }
+
+  .post h1,
+  .post h2,
+  .post h3,
+  .post h4,
+  .post h5,
+  .post h6 {
+    @apply text-2xl font-bold;
+  }
+
+  .post img {
+    @apply h-auto w-full;
+  }
+
+  .post ol {
+    @apply list-inside list-decimal pl-2;
+  }
+
+  .post ul {
+    @apply list-inside list-disc pl-2;
+  }
+
+  .post p {
+    @apply max-w-[700px] leading-[1.4rem] font-[1.1rem];
+  }
+
   ::selection {
     @apply bg-yellow-300 text-stone-950;
   }

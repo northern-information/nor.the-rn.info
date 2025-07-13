@@ -1,4 +1,4 @@
 ---
 title: Blog
-layout: pageBlog.liquid
+layout: blog.liquid
 ---
