@@ -14,7 +14,6 @@ export const META = {
   BUILD_TIME: new Date().toISOString(),
   CANONICAL: 'https://nor.the-rn.info/rm_ation/',
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
-  DAUNTLESS_CHOIR_URL: '/dauntless-choir/',
   DESCRIPTION: 'LONG LIVE THE LOST ONES',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',

@@ -9,6 +9,5 @@ layout: pageGarden.liquid
 
 ― Jorge Luis Borges, The Aleph and Other Stories
 
-- [𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯](/dauntless-choir)
 - [Resources](/resources)
 - [Press Photo Archive](/press-photo-archive)
