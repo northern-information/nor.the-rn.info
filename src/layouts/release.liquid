@@ -13,7 +13,8 @@ eleventyComputed:
   <div class="bg-stone-50 text-stone-950 md:w-1/2">
     <div class="border-b-[4px] border-stone-950 p-2">
       <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-      <h2 class="text-lg">by {{ release.project }}, {{ release.released }}</h2>
+      <h2 class="text-lg">by {{ release.project }}</h2>
+      <h2>{{ release.released | stripLeadingZero | dateToUTC | date: '%h %d, %Y' }}</h2>
     </div>
     <div class="border-b-[4px] border-stone-950 p-2">
       <h3 class="text-lg font-bold">Tracklist</h3>
