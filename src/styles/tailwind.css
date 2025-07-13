@@ -17,6 +17,14 @@
     @apply mb-2;
   }
 
+  .av {
+    @apply px-[4px] pt-[4px];
+  }
+
+  .av img {
+    @apply mb-[4px] h-auto w-full;
+  }
+
   .post h1,
   .post h2,
   .post h3,

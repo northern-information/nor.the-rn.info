@@ -1,4 +1,4 @@
 ---
 title: Video
-layout: pageVideo.liquid
+layout: video.liquid
 ---
