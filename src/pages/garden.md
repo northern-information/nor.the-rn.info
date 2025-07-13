@@ -1,6 +1,6 @@
 ---
 title: Welcome to the Northern Information Data Gardens
-layout: pageGarden.liquid
+layout: garden.liquid
 ---
 
 ![Connectedness Locus Emergency Akashic Records](/images/akashic.gif)

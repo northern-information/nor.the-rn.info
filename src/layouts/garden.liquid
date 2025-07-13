@@ -1,6 +1,36 @@
 ---
 layout: base.liquid
 ---
+<h1 class="text-4xl text-stone-50 text-center py-10">Under Construction</h1>
+{% comment %} <div class="grid grid-cols-1 xl:grid-cols-4">
+  <div class="post p-y xl:col-span-3 bg-stone-50">
+    <h1 class="mb-1 text-4xl">{{ title }}</h1>
+    {{ content }}
+  </div>
+</div>
+<ul class="grid grid-cols-1">
+  {% for subsidiary in subsidiaries %}
+    <li class="mb-10">
+      {% if subsidiary.title != 'Circular Ruin DSP' %}
+        <div class="-mx-2 h-10">
+          {% render spectrum %}
+        </div>
+      {% endif %}
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="max-w-none md:pr-4">
+          <h2>{{ subsidiary.title }}</h2>
+          <p>{{ subsidiary.dates }}</p>
+          {{ subsidiary.content | markdown }}
+        </div>
+        <div class="md:col-span-2">
+          <a href="{{ subsidiary.image }}">
+            <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full">
+          </a>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
 <ul class="mb-10">
   {% for resource in resources %}
     <li class="mb-5">
@@ -34,3 +64,4 @@ layout: base.liquid
     </li>
   {% endfor %}
 </ul>
+ {% endcomment %}
