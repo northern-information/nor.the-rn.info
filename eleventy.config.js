@@ -38,7 +38,6 @@ export const DIRS = {
   OUTPUT: 'dist',
   PAGES: 'pages',
   POSTS: 'posts',
-  STYLES: 'styles',
 }
 
 export const getReleaseSlug = memoize((release) => {
@@ -141,18 +140,18 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
-    extensions: 'html,md,css,scss',
+    extensions: 'html,md,css',
   })
-
-  eleventyConfig.addWatchTarget('./src/styles/pagefind-ui-custom.css')
 
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.FONTS}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
-  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.STYLES}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
+  eleventyConfig.addPassthroughCopy(
+    `${DIRS.INPUT}/styles/pagefind-ui-custom.css`
+  )
 
   eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 

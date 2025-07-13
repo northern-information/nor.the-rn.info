@@ -3,11 +3,11 @@
   <head>
     <title>{% getTitle title %}</title>
     {% render metaTags, site: site %}
-    <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
+    <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
   </head>
   <body>
     {% render nav, site: site, page: page, post: post, navigation: navigation %}
-    <main class="container">
+    <main class="container mx-auto">
       {{ content }}
     </main>
     {% render footer, site: site, page: page, post: post %}

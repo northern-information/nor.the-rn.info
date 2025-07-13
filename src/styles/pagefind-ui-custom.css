@@ -442,6 +442,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 
 .pagefind-ui__form.svelte-e9gkc3 {
   position: relative;
+  max-width: 600px;
+  margin: auto;
 }
 
 .pagefind-ui__form.svelte-e9gkc3:before {
@@ -495,7 +497,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 
 .pagefind-ui__search-clear.svelte-e9gkc3 {
   position: absolute;
-  top: 20px;
+  top: 18px;
   right: 6px;
   color: #ffffff;
   font-weight: 700;
@@ -505,6 +507,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   border-radius: 0;
   text-align: center;
   width: 80px;
+  border: 2px solid #ef4444;
 }
 
 .pagefind-ui__search-clear.svelte-e9gkc3:hover {
@@ -542,21 +545,20 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 
 .pagefind-ui__button.svelte-e9gkc3 {
   margin-top: calc(40px * var(--pagefind-ui-scale));
-  border: var(--pagefind-ui-border-width) solid var(--pagefind-ui-border);
-  border-radius: 0;
   height: calc(48px * var(--pagefind-ui-scale));
   padding: 0 calc(12px * var(--pagefind-ui-scale));
   font-size: calc(16px * var(--pagefind-ui-scale));
-  color: var(--pagefind-ui-primary);
-  background: var(--pagefind-ui-background);
+  color: #ffffff;
+  background: #ef4444;
   width: 100%;
   text-align: center;
   font-weight: 700;
   cursor: pointer;
+  border: 2px solid #ef4444;
 }
 
+
 .pagefind-ui__button.svelte-e9gkc3:hover {
-  border-color: var(--pagefind-ui-primary);
-  color: var(--pagefind-ui-primary);
-  background: var(--pagefind-ui-background);
+  color: #ef4444;
+  background: #ffffff;
 }

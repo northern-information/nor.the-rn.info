@@ -3,7 +3,7 @@
   <head>
     <title>{% getTitle title %}</title>
     {% render metaTags, site: site %}
-    <link rel="stylesheet" href="/styles.css?ver={% getTimestamp %}">
+    <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
      <link href="/styles/pagefind-ui-custom.css?ver={% getTimestamp %}" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
     <script>
@@ -14,8 +14,8 @@
   </head>
   <body>
     {% render nav, site: site, page: page, post: post, navigation: navigation %}
-    <main class="container">
-      <div class="bg-stone-50 overflow-hidden border-4 border-solid border-stone-950 p-2">
+    <main class="container mx-auto">
+      <div class="bg-stone-50 overflow-hidden border-4 border-solid border-stone-950 p-2 pb-10">
         <p class="text-center">
           Search the entire Northern Information site.
           <br>
@@ -25,7 +25,6 @@
         </p>
         <div id="search"></div>
     </div>
-
     </main>
     {% render footer, site: site, page: page, post: post %}
   </body>

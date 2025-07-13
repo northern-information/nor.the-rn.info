@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @layer base {
   @font-face {
@@ -10,14 +8,14 @@
     font-display: swap;
     src: url('./fonts/GoudyTextMTStd.woff2') format('woff2');
   }
-}
 
-body {
-  @apply bg-stone-950;
-}
+  body {
+    @apply bg-stone-950;
+  }
 
-::selection {
-  @apply bg-yellow-300 text-stone-950;
+  ::selection {
+    @apply bg-yellow-300 text-stone-950;
+  }
 }
 
 @layer utilities {
@@ -38,16 +36,29 @@ body {
     background-size: 600% 600%;
     animation: spectrumAnimation 48s linear infinite;
   }
+
+  @keyframes spectrumAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .bg-four-oh-four {
+    background-image: url('/images/crown-via-phill-c-on-yelp.jpg');
+  }
 }
 
-@keyframes spectrumAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+/* SAFELIST */
+@layer utilities {
+  @media (min-width: 768px) {
+    .md\:border-r-4 {
+      border-right-width: 4px;
+    }
   }
 }

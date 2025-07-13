@@ -2,23 +2,23 @@
   "name": "northern-information",
   "type": "module",
   "scripts": {
+    "build": "npm run css:build && npm run eleventy:build && npm run pagefind",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist",
+    "css:base": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./dist/styles/tailwind.css",
+    "css:build": "npm run css:base -- --minify",
+    "css:watch": "npm run css:base -- --watch",
     "dev": "concurrently 'npm run eleventy:watch' 'npm run css:watch'",
-    "build": "npm run css:build && npm run eleventy:build && npx -y pagefind --site dist",
-    "pretty": "prettier --write .",
     "eleventy:base": "npx @11ty/eleventy",
     "eleventy:build": "npm run eleventy:base",
     "eleventy:watch": "npm run eleventy:base -- --serve --quiet",
-    "css:base": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css",
-    "css:build": "npm run css:base -- --minify",
-    "css:watch": "npm run css:base -- --watch",
-    "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"
+    "pagefind": "npx -y pagefind --site dist",
+    "pretty": "prettier --write ."
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@shopify/prettier-plugin-liquid": "^1.6.3",
     "@tyleretters/discography": "^2.0.21",
-    "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.2",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
@@ -27,7 +27,7 @@
     "pagefind": "^1.3.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9",
-    "tailwindcss": "^3.4.17"
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   }
 }
