@@ -4,7 +4,7 @@ permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
-<div class="mt-[4px] flex flex-col md:flex-row">
+<div class="bg-stone-50 overflow-hidden border-4 border-solid border-stone-950 flex flex-col md:flex-row">
   <div class="border-b-[4px] border-stone-950 md:w-1/2 md:border-b-0 md:border-r-[4px]">
     <a href="{{ release.cover_url }}" target="_blank">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
@@ -33,7 +33,7 @@ eleventyComputed:
               <div class="relative grow text-sm before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']">
               &#8203;
             </div>
-            <div class="font-mono text-sm text-stone-500">{{ track.length }}</div>
+            <div class="font-mono text-sm">{{ track.length }}</div>
           </li>
         {% endfor %}
       </ol>
@@ -44,7 +44,6 @@ eleventyComputed:
         <ol>
           {% for stream in release.streams %}
             <li class="flex w-full items-start">
-              <span class="mr-1 font-mono text-stone-500">-</span>
               <a
                 href="{{ stream.url }}"
                 class="overflow-hidden truncate whitespace-nowrap text-blue-700 underline hover:text-blue-900 hover:no-underline"
