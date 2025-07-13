@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 ---
-<div class="overflow-hidden border-4 border-b-[2px] border-solid border-stone-950 flex flex-col md:flex-row">
+<div class="overflow-hidden border-t-4 border-b-2 border-solid border-stone-950 flex flex-col md:flex-row">
   <div class="w-full md:w-1/2 border-b-[4px] md:border-b-0 border-stone-950 md:border-r-[4px]">
     <a href="/images/goth-pro-shops.jpg">
       <img src="/images/goth-pro-shops.jpg" alt="Tyler Etters">
@@ -30,7 +30,23 @@ layout: base.liquid
 <div class="overflow-hidden border-b-2 border-solid border-stone-950">
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
     {% for photo in photos %}
-      <li class="group border-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50">
+    <li
+      class="
+        flex flex-col
+
+        group border-t-2 border-b-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50
+
+        md:border-r-2
+        md:border-l-2
+
+        md:[&:nth-child(3n+1)]:border-l-0 
+        md:[&:nth-child(3n)]:border-r-0
+
+        xl:[&:nth-child(3n+1)]:border-l-2 
+        xl:[&:nth-child(3n)]:border-r-2
+        xl:[&:nth-child(5n+1)]:border-l-0 
+        xl:[&:nth-child(5n)]:border-r-0
+      ">
         <a
           href="{{ photo.url }}"
           class="block cursor-pointer"
