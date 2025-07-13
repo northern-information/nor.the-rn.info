@@ -1,16 +1,13 @@
 ---
 layout: base.liquid
 ---
-<div class="mb-10">
-  {% render pageTitle, title: title %}
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border-2 border-solid border-stone-950 text-stone-950">
   {% for group in collections.postsByYear %}
-    <div class="md:pe-2">
-      <h2 class="mb-2 text-4xl text-stone-50">{{ group.year }}</h2>
+    <div class="">
+      <h2 class="p-2 text-4xl border-2 border-solid border-stone-950 bg-stone-50">{{ group.year }}</h2>
       <ul class="list-none">
         {% for post in group.posts %}
-          <li class="mb-2">{% render postLink, post: post %}</li>
+          <li>{% render postLink, post: post %}</li>
         {% endfor %}
       </ul>
     </div>

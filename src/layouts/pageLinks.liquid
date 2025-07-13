@@ -1,7 +1,6 @@
 ---
 layout: base.liquid
 ---
-{% render pageTitle, title: title %}
 {{ content }}
 <ul class="mb-10 grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
   {% for link in links %}
@@ -16,7 +15,6 @@ layout: base.liquid
     </li>
   {% endfor %}
 </ul>
-{% render pageTitle, title: 'Webring' %}
 <a href="https://webring.xxiivv.com/" class="block w-[128px]"
   ><img src="https://webring.xxiivv.com/icon.white.svg"
 ></a>
