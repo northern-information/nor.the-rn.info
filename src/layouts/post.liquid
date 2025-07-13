@@ -1,25 +1,38 @@
 ---
 layout: base.liquid
 ---
-<div class="grid gap-0 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-  <div class="post bg-stone-50 xl:col-span-3 p-2 border-solid border-stone-950 border-4 md:border-r-0 text-stone-950">
+<div class="grid gap-0 grid-cols-1 md:grid-cols-5 xl:grid-cols-4">
+  <div class="post bg-stone-50 md:col-span-3 xl:col-span-3 p-2 border-solid border-stone-950 border-t-4 md:border-b-4 md:border-r-4 text-stone-950">
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
         {{- page.date | date: '%B %d, %Y' -}}
       </time>
       <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
       {{ content }}
   </div>
-  {% assign postDate = page.date | date: '%Y' %}
-  {% for group in collections.postsByYear %}
-    {% if postDate == group.year %}
-        <ul class="list-none border-solid border-stone-950 border-2">
+  <div class="md:col-span-2 xl:col-span-1">
+    {% assign postDate = page.date | date: '%Y' %}
+    {% for group in collections.postsByYear %}
+      {% if postDate == group.year %}
+        <ul class="list-none border-solid border-stone-950 border-y-2">
           {% for post in group.posts %}
             {% assign thisPost = post.url == page.url %}
             <li>
-              {% render postLink, post: post, thisPost: thisPost %}
+              <a
+                href="{{ post.url }}"
+                {% if thisPost %}
+                  class="block p-2 border-y-2 border-solid border-stone-950 bg-red-500 text-stone-50 underline"
+                {% else %}
+                  class="block p-2 border-y-2 border-solid border-stone-950 bg-stone-50 hover:underline hover:bg-red-500 hover:text-stone-50"
+                {% endif %}
+              >
+                <span class="font-semibold">{{ post.data.title }}</span>
+                <br>
+                <span class="text-sm no-underline">{{ post.data.date | date: '%B %d, %Y' }}</span>
+              </a>
             </li>
           {% endfor %}
         </ul>
-    {% endif %}
-  {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
