@@ -5,20 +5,20 @@ eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
 <div class="border-t-4 border-b-4 border-solid border-stone-950 flex flex-col md:flex-row">
-  <div class="border-b-[4px] border-stone-950 md:w-1/2 md:border-b-0 md:border-r-[4px]">
+  <div class="border-b-4 border-stone-950 md:w-1/2 md:border-b-0 md:border-r-4">
     <a href="{{ release.cover_url }}" target="_blank">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
     </a>
   </div>
   <div class="bg-stone-50 text-stone-950 md:w-1/2">
-    <div class="border-b-[4px] border-stone-950 p-2">
+    <div class="border-b-4 border-stone-950 p-2">
       <time datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}">
         {{- release.released | date: '%B %d, %Y' -}}
       </time>
       <h1 class="text-4xl font-bold">{{ release.title }}</h1>
       <h2 class="text-lg">by {{ release.project }}</h2>
     </div>
-    <div class="border-b-[4px] border-stone-950 p-2">
+    <div class="border-b-4 border-stone-950 p-2">
       <h3 class="text-lg font-bold">Tracklist</h3>
       <ol>
         {% for track in release.tracks %}
@@ -42,7 +42,7 @@ eleventyComputed:
       </ol>
     </div>
     {% if release.streams.size > 0 %}
-      <div class="border-b-[4px] border-stone-950 p-2">
+      <div class="border-b-4 border-stone-950 p-2">
         <h3 class="text-lg font-bold">Listen</h3>
         <ol>
           {% for stream in release.streams %}
@@ -59,7 +59,7 @@ eleventyComputed:
         </ol>
       </div>
     {% endif %}
-    <div class="border-b-[4px] border-stone-950 p-2">
+    <div class="border-b-4 border-stone-950 p-2">
       <h3 class="text-lg font-bold">Notes</h3>
       <p>{{ release.notes }}</p>
     </div>

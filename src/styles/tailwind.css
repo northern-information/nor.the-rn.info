@@ -50,7 +50,7 @@
   }
 
   .post blockquote {
-    @apply border-l-[1px] border-solid border-stone-500 pl-2 italic;
+    @apply border-l-1 border-solid border-stone-500 pl-2 italic;
   }
 
   .post h1,
