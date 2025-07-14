@@ -5,10 +5,6 @@
     @apply bg-stone-950;
   }
 
-  .ni-container {
-    @apply container mx-auto overflow-hidden
-  }
-
   p {
     @apply mb-1;
   }
