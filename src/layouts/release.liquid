@@ -33,11 +33,18 @@ eleventyComputed:
               {{ displayIndex }}
             </div>
             <div>{{ track.title }}</div>
-              <div class="relative grow text-sm before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']">
+            {% if track.mp3_url %}<div class="font-mono text-sm text-blue-700 underline hover:text-blue-900 hover:no-underline"><a href="{{ track.mp3_url }}" target="_blank">MP3</a></div>{% endif %}
+            {% if track.wav_url %}<div class="font-mono text-sm text-blue-700 underline hover:text-blue-900 hover:no-underline"><a href="{{ track.wav_url }}" target="_blank">WAV</a></div>{% endif %}
+            <div class="relative grow text-sm before:absolute before:left-0 before:top-1/2 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']">
               &#8203;
             </div>
             <div class="font-mono text-sm">{{ track.length }}</div>
           </li>
+          {% if track.mp3_url %}
+          <li>
+            <audio class="w-full" controls src="{{ track.mp3_url }}"></audio>
+          </li>
+          {% endif %}
         {% endfor %}
       </ol>
     </div>
