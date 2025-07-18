@@ -7,7 +7,7 @@
     "css": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./dist/styles/tailwind.css",
     "css:build": "npm run css -- --minify",
     "css:watch": "npm run css -- --watch",
-    "dev": "concurrently 'npx @11ty/eleventy -- --serve --quiet' 'npm run css:watch'",
+    "dev": "concurrently 'npx @11ty/eleventy --serve --quiet' 'npm run css:watch'",
     "pagefind": "npx -y pagefind --site dist",
     "pretty": "prettier --write ."
   },

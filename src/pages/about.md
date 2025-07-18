@@ -3,13 +3,19 @@ title: About
 layout: about.liquid
 ---
 
-## Mission:
+## Hello
 
-- Inspire with music.
-- Don't give up.
-- Help others not give up.
+- My name is Tyler Etters.
+- Northern Information is my garden.
+- I enjoy email correspondence: [tyler@etters.co](tyler@etters.co)
 
-## My name is Tyler Etters. In 2025 I'm:
+## My mission is to:
+
+- inspire with music.
+- don't give up.
+- help others not give up.
+
+## In 2025 I'm:
 
 - engineering for [Discogs](https://discogs.com).
 - causing mayhem at [Circular Ruin DSP](https://circularruindsp.com).
