@@ -1,17 +1,19 @@
 ---
 layout: base.liquid
 ---
-<div class="overflow-hidden border-t-4 border-b-2 border-solid border-stone-950 flex flex-col md:flex-row">
-  <div class="w-full md:w-1/2 border-b-4 md:border-b-0 border-stone-950 md:border-r-4">
+<div class="flex flex-col overflow-hidden border-t-4 border-b-2 border-solid border-stone-950 md:flex-row">
+  <div class="w-full border-b-4 border-stone-950 md:w-1/2 md:border-r-4 md:border-b-0">
     <a href="/images/goth-pro-shops.jpg">
       <img src="/images/goth-pro-shops.jpg" alt="Tyler Etters">
     </a>
   </div>
-  <div class="post p-2 bg-stone-50 md:w-1/2">
+  <div class="post bg-stone-50 p-2 md:w-1/2">
     {{ content }}
     <h2>Elsewhere:</h2>
     <ul>
-      <li><a href="mailto:{{ site.ACCOUNTS.EMAIL }}">{{ site.ACCOUNTS.EMAIL }}</a></li>
+      <li>
+        <a href="mailto:{{ site.ACCOUNTS.EMAIL }}">{{ site.ACCOUNTS.EMAIL }}</a>
+      </li>
       <li><a href="{{ site.ACCOUNTS.BANDCAMP }}">Bandcamp</a></li>
       <li><a href="{{ site.ACCOUNTS.BLUESKY }}">Bluesky</a></li>
       <li><a href="{{ site.ACCOUNTS.DISCORD }}">Discord</a></li>
@@ -30,30 +32,31 @@ layout: base.liquid
 <div class="overflow-hidden border-b-2 border-solid border-stone-950">
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
     {% for photo in photos %}
-    <li
-      class="
-        flex flex-col
+      <li
+        class="
+          group flex
 
-        group border-t-2 border-b-2 border-stone-950 border-solid hover:bg-stone-950 hover:text-yellow-300 bg-stone-50
+          flex-col border-t-2 border-b-2 border-solid border-stone-950 bg-stone-50 hover:bg-stone-950 hover:text-yellow-300
 
-        md:border-r-2
-        md:border-l-2
+          md:border-r-2
+          md:border-l-2
 
-        md:[&:nth-child(3n+1)]:border-l-0 
-        md:[&:nth-child(3n)]:border-r-0
+          md:[&:nth-child(3n)]:border-r-0
+          xl:[&:nth-child(3n)]:border-r-2
 
-        xl:[&:nth-child(3n+1)]:border-l-2 
-        xl:[&:nth-child(3n)]:border-r-2
-        xl:[&:nth-child(5n+1)]:border-l-0 
-        xl:[&:nth-child(5n)]:border-r-0
-      ">
+          md:[&:nth-child(3n+1)]:border-l-0
+          xl:[&:nth-child(3n+1)]:border-l-2
+          xl:[&:nth-child(5n)]:border-r-0
+          xl:[&:nth-child(5n+1)]:border-l-0
+        "
+      >
         <a
           href="{{ photo.url }}"
           class="block cursor-pointer"
         >
           <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
-          <ul class="relative p-2 border-t-4 border-stone-950 border-solid group-hover:border-yellow-300">
-            <li class="truncate w-full group-hover:underline">
+          <ul class="relative border-t-4 border-solid border-stone-950 p-2 group-hover:border-yellow-300">
+            <li class="w-full truncate group-hover:underline">
               {{ photo.title }}
             </li>
           </ul>

@@ -2,7 +2,7 @@
   {% render spectrum %}
   {% render rule %}
   <div class="grid lg:grid-cols-4">
-    <ul class="border-b-4 border-stone-950 px-2 py-2 lg:border-b-0 lg:border-r-4 lg:border-solid ">
+    <ul class="border-b-4 border-stone-950 px-2 py-2 lg:border-r-4 lg:border-b-0 lg:border-solid ">
       <li>{{ site.META.TITLE }}</li>
       <li>
         2008 &mdash; {{ site.META.YEAR }}
@@ -12,15 +12,16 @@
           >CC BY 4.0</a
         >
       </li>
-      <li>{{ site.META.INVOCATION }}</lip>
+      <li>{{ site.META.INVOCATION }}</li>
     </ul>
-    <ul class="border-b-4 border-solid border-stone-950 px-2 py-2 lg:col-span-2 lg:border-b-0 lg:border-r-4">
-      <li>You Are Here:
-      {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
+    <ul class="border-b-4 border-solid border-stone-950 px-2 py-2 lg:col-span-2 lg:border-r-4 lg:border-b-0">
+      <li>
+        You Are Here:
+        {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
         <a href="{{ path }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">
           {{ path }}
         </a>
-      <li>
+      </li>
       <li>Build Time: {{ site.META.BUILD_TIME }}</li>
       <li>
         Source Code:

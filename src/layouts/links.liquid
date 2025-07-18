@@ -1,9 +1,9 @@
 ---
 layout: base.liquid
 ---
-<div class="post p-2 my-1 bg-stone-50">
-{{ content }}
-  <ul class="p-0 grid list-none grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+<div class="post my-1 bg-stone-50 p-2">
+  {{ content }}
+  <ul class="grid list-none grid-cols-1 p-0 md:grid-cols-2 xl:grid-cols-4">
     {% for link in links %}
       <li class="mb-2">
         <a
@@ -18,6 +18,12 @@ layout: base.liquid
   <a href="https://webring.xxiivv.com/" class="block w-[128px]"
     ><img src="https://webring.xxiivv.com/icon.black.svg"
   ></a>
-  <p>This <a href="https://webring.xxiivv.com">webring</a> is an attempt to inspire artists &amp; developers to build their own website and share traffic among each other. The ring welcomes personalized websites such as diaries, wikis &amp; portfolios.<p>
-  <p>To add yourself to the ring, submit a <a href="https://github.com/XXIIVV/webring#join-the-webring">pull request</a>.</p>
+  <p>
+    This <a href="https://webring.xxiivv.com">webring</a> is an attempt to inspire artists &amp; developers to build
+    their own website and share traffic among each other. The ring welcomes personalized websites such as diaries, wikis
+    &amp; portfolios.
+  </p>
+  <p>
+    To add yourself to the ring, submit a <a href="https://github.com/XXIIVV/webring#join-the-webring">pull request</a>.
+  </p>
 </div>

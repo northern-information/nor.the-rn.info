@@ -4,27 +4,27 @@
     <title>{% getTitle title %}</title>
     {% render metaTags, site: site %}
     <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
-     <link href="/styles/pagefind-ui-custom.css?ver={% getTimestamp %}" rel="stylesheet">
+    <link href="/styles/pagefind-ui-custom.css?ver={% getTimestamp %}" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: '#search', showSubResults: true })
-        })
-      </script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: '#search', showSubResults: true })
+      })
+    </script>
   </head>
   <body>
     {% render nav, site: site, page: page, post: post, navigation: navigation %}
     <main class="container mx-auto">
-      <div class="bg-stone-50 overflow-hidden border-4 border-solid border-stone-950 p-2 pb-10">
+      <div class="overflow-hidden border-4 border-solid border-stone-950 bg-stone-50 p-2 pb-10">
         <p class="text-center">
           Search the entire Northern Information site.
           <br>
-          <span>Last indexed: <span class="font-mono text-sm">{{ site.META.BUILD_TIME }}</span></span></span>
+          Last indexed: <span class="font-mono text-sm">{{ site.META.BUILD_TIME }}</span>
           <br>
           &#8258;
         </p>
         <div id="search"></div>
-    </div>
+      </div>
     </main>
     {% render footer, site: site, page: page, post: post %}
   </body>
