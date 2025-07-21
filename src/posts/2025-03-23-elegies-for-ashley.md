@@ -1,5 +1,5 @@
 ---
-title: Elegies for Ashley [mixtape]
+title: ELEGIES FOR ASHLEY [mixtape]
 date: 2025-03-23
 tags: ["Releases"]
 ---
