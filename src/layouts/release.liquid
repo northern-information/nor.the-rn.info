@@ -12,24 +12,48 @@ eleventyComputed:
   </div>
   <div class="bg-stone-50 text-stone-950 md:w-1/2">
     <div class="border-b-4 border-stone-950 p-2">
-      <time datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}">
+      <time
+        class="font-mono text-sm"
+        datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}"
+      >
         {{- release.released | date: '%B %d, %Y' -}}
       </time>
       <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-      <h2 class="text-lg">by {{ release.project }}</h2>
+      <ul>
+        <li class="ellipses">
+          <div>By</div>
+          <div class="ellipses-fill">&#8203;</div>
+          <div>{{ release.project }}</div>
+        </li>
+        <li class="ellipses">
+          <div>Type</div>
+          <div class="ellipses-fill">&#8203;</div>
+          <div>{{ release.type }}</div>
+        </li>
+        <li class="ellipses">
+          <div>Label</div>
+          <div class="ellipses-fill">&#8203;</div>
+          <div>{{ release.label }}</div>
+        </li>
+        <li class="ellipses">
+          <div>Format</div>
+          <div class="ellipses-fill">&#8203;</div>
+          <div>{{ release.format }}</div>
+        </li>
+      </ul>
     </div>
     <div class="border-b-4 border-stone-950 p-2">
       <h3 class="text-lg font-bold">Tracklist</h3>
       <ol>
         {% for track in release.tracks %}
-          <li class="flex items-baseline justify-between gap-2">
+          <li class="ellipses">
             {% assign index = forloop.index %}
             {% if index < 10 %}
               {% assign displayIndex = '0' | append: index %}
             {% else %}
               {% assign displayIndex = index %}
             {% endif %}
-            <div class="font-mono text-xs">
+            <div class="font-mono text-sm">
               {{ displayIndex }}
             </div>
             <div>{{ track.title }}</div>
@@ -43,9 +67,7 @@ eleventyComputed:
                 <a href="{{ track.wav_url }}" target="_blank">WAV</a>
               </div>
             {% endif %}
-            <div class="relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................']">
-              &#8203;
-            </div>
+            <div class="ellipses-fill">&#8203;</div>
             <div class="font-mono text-sm">{{ track.length }}</div>
           </li>
           {% if track.mp3_url %}

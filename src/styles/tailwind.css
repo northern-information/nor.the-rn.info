@@ -66,6 +66,14 @@
     @apply max-w-[700px] leading-[1.4rem] font-[1.1rem];
   }
 
+  li.ellipses {
+    @apply flex items-baseline justify-between gap-2;
+  }
+
+  li.ellipses .ellipses-fill {
+    @apply relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................'];
+  }
+
   ::selection {
     @apply bg-yellow-300 text-stone-950;
   }

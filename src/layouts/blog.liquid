@@ -27,8 +27,8 @@ layout: base.liquid
               href="{{ post.url }}"
               class="block border-y-2 border-solid border-stone-950 bg-stone-50 p-2 hover:bg-red-500 hover:text-stone-50 hover:underline"
             >
-              <span class="text-sm no-underline">{{ post.data.date | date: '%B %d, %Y' }}</span>
-              <br/>
+              <span class="font-mono text-sm">{{ post.data.date | date: '%B %d, %Y' }}</span>
+              <br>
               <span class="font-semibold">{{ post.data.title }}</span>
             </a>
           </li>
