@@ -62,6 +62,7 @@ export default [
   { url: 'https://soundslikefeelslike.com', title: 'Kelly Rodriguez' },
   { url: 'https://kennyzhao.com/', title: 'Kenny Zaho' },
   { url: 'https://cargocollective.com/kimpimmel', title: 'Kim Pimmel' },
+  { url: 'https://koth.world', title: 'King of the Hole' },
   { url: 'https://kylemcdonald.net', title: 'Kyle McDonald' },
   { url: 'https://lakeradio.bandcamp.com', title: 'LAKE R▲DIO' },
   { url: 'https://lawrencelek.com', title: 'Lawrence Lek' },
