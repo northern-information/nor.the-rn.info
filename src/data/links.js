@@ -37,7 +37,6 @@ export default [
   { url: 'https://egressac.wordpress.com', title: 'Egress' },
   { url: 'https://emilysegal.net', title: 'Emily Segal' },
   { url: 'https://mlesprg.info', title: 'Emily Sprague' },
-  { url: 'https://erioldoesdesign.github.io', title: 'Eriol Fox' },
   { url: 'https://acrnm.com', title: 'Errolson Hugh' },
   { url: 'https://everest-pipkin.com', title: 'Everest Pipkin' },
   { url: 'https://www.extinctionsymbol.info', title: 'Extinction Symbol' },
