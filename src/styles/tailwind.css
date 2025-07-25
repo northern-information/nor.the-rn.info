@@ -19,6 +19,10 @@
     @apply mb-1 h-auto w-full;
   }
 
+  .post {
+    @apply bg-[black] text-stone-100;
+  }
+
   .post h1,
   .post h2,
   .post h3,
@@ -30,11 +34,11 @@
   .post hr,
   .post li,
   .post p {
-    @apply mb-4;
+    @apply mb-10;
   }
 
   .post a {
-    @apply text-blue-700 underline hover:text-blue-900 hover:no-underline;
+    @apply text-yellow-300 underline hover:text-white hover:no-underline;
   }
 
   .post blockquote {
@@ -63,7 +67,7 @@
   }
 
   .post p {
-    @apply max-w-[700px] leading-[1.4rem] font-[1.1rem];
+    @apply max-w-[600px] text-lg leading-8;
   }
 
   li.ellipses {
