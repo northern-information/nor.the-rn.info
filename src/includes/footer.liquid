@@ -1,8 +1,8 @@
-<footer class="container mx-auto overflow-hidden bg-stone-50 text-stone-950">
+<footer class="container mx-auto overflow-hidden">
   {% render spectrum %}
   {% render rule %}
-  <div class="grid lg:grid-cols-4">
-    <ul class="border-b-4 border-[black] px-2 py-2 lg:border-r-4 lg:border-b-0 lg:border-solid ">
+  <div class="grid gap-1 lg:grid-cols-4 ">
+    <ul class="bg-stone-50 px-2 py-2 text-stone-950">
       <li>{{ site.META.TITLE }}</li>
       <li>
         2008 &mdash; {{ site.META.YEAR }}
@@ -14,7 +14,7 @@
       </li>
       <li>{{ site.META.INVOCATION }}</li>
     </ul>
-    <ul class="border-b-4 border-solid border-[black] px-2 py-2 lg:col-span-2 lg:border-r-4 lg:border-b-0">
+    <ul class="bg-stone-50 px-2 py-2 text-stone-950 lg:col-span-2">
       <li>
         You Are Here:
         {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
@@ -45,7 +45,7 @@
     </ul>
     <a
       href="/"
-      class="flex h-full w-full items-center justify-center px-2 py-2 hover:bg-red-500"
+      class="flex h-full w-full items-center justify-center bg-stone-50 px-2 py-2 text-stone-950 hover:bg-red-500"
     >
       <img
         src="/images/applied-sciences-and-phantasms-working-division.svg"
