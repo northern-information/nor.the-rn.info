@@ -1,13 +1,13 @@
 ---
 layout: base.liquid
 ---
-<div class="flex flex-col overflow-hidden border-t-4 border-b-2 border-solid border-stone-950 md:flex-row">
-  <div class="w-full border-b-4 border-stone-950 md:w-1/2 md:border-r-4 md:border-b-0">
+<div class="flex flex-col overflow-hidden border-t-4 border-b-2 border-solid border-[black] md:flex-row">
+  <div class="w-full border-b-4 border-[black] md:w-1/2 md:border-r-4 md:border-b-0">
     <a href="/images/goth-pro-shops.jpg">
       <img src="/images/goth-pro-shops.jpg" alt="Tyler Etters">
     </a>
   </div>
-  <div class="post bg-stone-50 p-2 md:w-1/2">
+  <div class="post p-2 md:w-1/2">
     {{ content }}
     <h2>Social Media:</h2>
     <p>
@@ -20,33 +20,18 @@ layout: base.liquid
     </p>
   </div>
 </div>
-<div class="overflow-hidden border-b-2 border-solid border-stone-950">
-  <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+<div class="overflow-hidden border-b-2 border-solid border-[black]">
+  <ul class="grid grid-cols-1 gap-1 md:grid-cols-3 lg:grid-cols-5">
     {% for photo in photos %}
       <li
-        class="
-          group flex
-
-          flex-col border-t-2 border-b-2 border-solid border-stone-950 bg-stone-50 hover:bg-stone-950 hover:text-yellow-300
-
-          md:border-r-2
-          md:border-l-2
-
-          md:[&:nth-child(3n)]:border-r-0
-          xl:[&:nth-child(3n)]:border-r-2
-
-          md:[&:nth-child(3n+1)]:border-l-0
-          xl:[&:nth-child(3n+1)]:border-l-2
-          xl:[&:nth-child(5n)]:border-r-0
-          xl:[&:nth-child(5n+1)]:border-l-0
-        "
+        class="group text-stone-950 bg-stone-50 hover:bg-stone-950 hover:text-yellow-300"
       >
         <a
           href="{{ photo.url }}"
-          class="block cursor-pointer"
+          class="cursor-pointer w-full h-full"
         >
           <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
-          <ul class="relative border-t-4 border-solid border-stone-950 p-2 group-hover:border-yellow-300">
+          <ul class="relative border-t-4 border-solid border-[black] p-2 group-hover:border-yellow-300">
             <li class="w-full truncate group-hover:underline">
               {{ photo.title }}
             </li>

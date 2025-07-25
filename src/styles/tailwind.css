@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-stone-950;
+    @apply bg-[black] text-stone-100;
   }
 
   p {
@@ -20,7 +20,7 @@
   }
 
   .post {
-    @apply bg-[black] text-stone-100;
+    @apply md:pr-10;
   }
 
   .post h1,
@@ -29,11 +29,13 @@
   .post h4,
   .post h5,
   .post h6,
+  .post hr,
   .post iframe,
   .post img,
-  .post hr,
-  .post li,
-  .post p {
+  .post ol,
+  .post p,
+  .post pre,
+  .post ul {
     @apply mb-10;
   }
 
@@ -42,7 +44,17 @@
   }
 
   .post blockquote {
-    @apply border-l-1 border-solid border-stone-500 pl-2 italic;
+    @apply italic;
+  }
+
+  .post blockquote,
+  .post pre {
+    @apply border-l-1 border-solid border-stone-500 pl-2;
+  }
+
+  .post code,
+  .post pre {
+    @apply text-red-400;
   }
 
   .post h1,
@@ -58,14 +70,20 @@
     @apply h-auto w-full;
   }
 
+  .post ol,
+  .post ul {
+    @apply ml-6 list-outside;
+  }
+
   .post ol {
-    @apply list-inside list-decimal pl-2;
+    @apply list-decimal;
   }
 
   .post ul {
-    @apply list-inside list-disc pl-2;
+    @apply list-disc;
   }
 
+  .post li,
   .post p {
     @apply max-w-[600px] text-lg leading-8;
   }

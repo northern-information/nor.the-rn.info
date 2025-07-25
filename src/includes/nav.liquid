@@ -1,4 +1,4 @@
-<nav class="container mx-auto overflow-hidden bg-stone-50">
+<nav class="container mx-auto overflow-hidden bg-stone-50 text-stone-950">
   {% render rule %}
   {% render spectrum %}
   {% render rule %}
@@ -16,7 +16,7 @@
 
       {% assign hover_classes = 'hover:bg-red-500 hover:text-stone-50 hover:underline' %}
       {% assign active_classes = 'bg-red-500 text-stone-50 underline' %}
-      {% assign persistent_classes = 'flex border-stone-950 px-2 py-2 font-semibold border-b-4' %}
+      {% assign persistent_classes = 'flex border-[black] px-2 py-2 font-semibold border-b-4' %}
 
       <a
         href="{{ item.url }}"

@@ -1,14 +1,14 @@
 ---
 layout: base.liquid
 ---
-<div class="border-t-2 border-b-2 border-solid border-stone-950">
+<div class="border-t-2 border-b-2 border-solid border-[black]">
   <ul class="grid list-none grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
     {% for release in collections.discography %}
       <li
         class="
           group flex
 
-          flex-col border-t-2 border-b-2 border-solid border-stone-950 bg-stone-50 hover:bg-stone-950 hover:text-yellow-300
+          flex-col border-t-2 border-b-2 border-solid border-[black] bg-stone-50 hover:bg-stone-950 hover:text-yellow-300
 
           md:border-r-2
           md:border-l-2
@@ -34,7 +34,7 @@ layout: base.liquid
               loading="lazy"
             />
           </div>
-          <ul class="relative border-t-4 border-solid border-stone-950 p-2 group-hover:border-yellow-300">
+          <ul class="relative border-t-4 border-solid border-[black] p-2 group-hover:border-yellow-300">
             <li class="flex w-full gap-1 text-sm group-hover:underline">
               <span class="font-mono text-sm">
                 {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
