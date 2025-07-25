@@ -19,10 +19,6 @@
     @apply mb-1 h-auto w-full;
   }
 
-  .post {
-    @apply md:pr-10;
-  }
-
   .post h1,
   .post h2,
   .post h3,

@@ -1,86 +1,91 @@
 ---
 layout: base.liquid
 ---
-<h1 class="py-10 text-center text-4xl text-stone-50">{{ title }}</h1>
-<div class="post flex flex-col items-center bg-stone-50 p-2">
-  <img
-    src="/images/akashic.gif"
-    alt="Connectedness Locus Emergency Akashic Records"
-    width="250"
-    height="250"
-    class="h-[250px] w-[250px]"
-  >
-  <p class="max-w-[600px] text-center">
-    <em
-      >"A man sets out to draw the world. As the years go by, he peoples a space with images of provinces, kingdoms,
-      mountains, bays, ships, islands, fishes, rooms, instruments, stars, horses, and individuals. A short time before
-      he dies, he discovers that the patient labyrinth of lines traces the lineaments of his own face."</em
-    ><br>
-    <br>
-    ― Jorge Luis Borges, The Aleph and Other Stories
-  </p>
-</div>
+<div class="mt-5 mb-4">
+  <h1 class="text-center text-4xl">{{ title }}</h1>
+  <hr class="my-5">
 
-<h2 class="py-10 text-center text-4xl text-stone-50">Resources</h2>
-<ul>
-  {% for resource in resources %}
-    <li class="post mb-1 bg-stone-50 p-2">
-      <h2>{{- resource.title -}}</h2>
-      <p>{{ resource.description }}</p>
-      <a
-        href="{{ resource.url }}"
-        target="_blank"
-      >
-        Download&nbsp;
-        {{- resource.title -}}
-        &nbsp;(
-        {{- resource.size -}}
-        )
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2 class="py-10 text-center text-4xl text-stone-50">Subsidiaries</h2>
-<ul>
-  {% for subsidiary in subsidiaries %}
-    <li class="post mb-1 bg-stone-50 p-2">
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <div class="max-w-none md:pr-4">
-          <h2>{{ subsidiary.title }}</h2>
-          <p>{{ subsidiary.dates }}</p>
-          {{ subsidiary.content | markdown }}
-        </div>
-        <div class="md:col-span-2">
-          <a href="{{ subsidiary.image }}">
-            <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full">
-          </a>
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2 class="py-10 text-center text-4xl text-stone-50">Playlists</h2>
-<ul class="grid grid-cols-1 border-t-4 border-solid border-[black] xl:grid-cols-3">
-  {% for playlist in playlists %}
-    <li
-      class="
-        post border-b-4 border-solid
-
-        border-[black] bg-stone-50 p-2
-
-        xl:border-r-4
-        xl:[&:nth-child(3n)]:border-r-0
-        xl:[&:nth-child(3n+1)]:border-l-2
-      "
+  <div class="post flex flex-col items-center">
+    <img
+      src="/images/akashic.gif"
+      alt="Connectedness Locus Emergency Akashic Records"
+      width="250"
+      height="250"
+      class="h-[250px] w-[250px]"
     >
-      <h2>{{ playlist.title }}</h2>
-      <ol>
-        {% for track in playlist.tracks %}
-          <li>{{ track }}</li>
-        {% endfor %}
-      </ol>
-    </li>
-  {% endfor %}
-</ul>
+    <p class="max-w-[600px] text-center">
+      <em
+        >"A man sets out to draw the world. As the years go by, he peoples a space with images of provinces, kingdoms,
+        mountains, bays, ships, islands, fishes, rooms, instruments, stars, horses, and individuals. A short time before
+        he dies, he discovers that the patient labyrinth of lines traces the lineaments of his own face."</em
+      >
+      <br>
+      <br>
+      ― Jorge Luis Borges, The Aleph and Other Stories
+    </p>
+  </div>
+  <hr class="my-5">
+
+  <h2 class="text-center text-4xl">Resources</h2>
+  <hr class="my-5">
+
+  <ul>
+    {% for resource in resources %}
+      <li class="post">
+        <h2>{{- resource.title -}}</h2>
+        <p>{{ resource.description }}</p>
+        <a
+          href="{{ resource.url }}"
+          target="_blank"
+        >
+          Download&nbsp;
+          {{- resource.title -}}
+          &nbsp;(
+          {{- resource.size -}}
+          )
+        </a>
+        <hr class="my-5">
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="text-center text-4xl">Subsidiaries</h2>
+  <hr class="my-5">
+
+  <ul>
+    {% for subsidiary in subsidiaries %}
+      <li class="post">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="max-w-none md:pr-4">
+            <h2>{{ subsidiary.title }}</h2>
+            <p>{{ subsidiary.dates }}</p>
+            {{ subsidiary.content | markdown }}
+          </div>
+          <div class="md:col-span-2">
+            <a href="{{ subsidiary.image }}">
+              <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full">
+            </a>
+          </div>
+        </div>
+        <hr class="my-5">
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="text-center text-4xl">Playlists</h2>
+  <hr class="my-5">
+
+  <ul class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    {% for playlist in playlists %}
+      <li class="post border border-solid border-stone-50 p-4">
+        <h2 class="mb-0">{{ playlist.title }}</h2>
+        <hr class="my-5">
+        <ol>
+          {% for track in playlist.tracks %}
+            <li>{{ track }}</li>
+          {% endfor %}
+        </ol>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

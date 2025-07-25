@@ -14,7 +14,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
-    "@shopify/prettier-plugin-liquid": "^1.6.3",
+    "@shopify/prettier-plugin-liquid": "^1.9.3",
     "@tailwindcss/cli": "^4.1.11",
     "@tyleretters/discography": "^2.0.23",
     "concurrently": "^9.1.2",

@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 <div class="grid grid-cols-1 gap-0 md:grid-cols-5 xl:grid-cols-4">
-  <div class="post border-t-4 border-solid border-[black] md:col-span-3 md:border-r-4 md:border-b-4 xl:col-span-3">
+  <div class="post border-t-4 border-solid border-[black] md:col-span-3 md:border-r-4 md:border-b-4 md:pr-10 xl:col-span-3">
     <time class="font-mono text-sm" datetime="{{ page.date | date: '%Y-%m-%d' }}">
       {{- page.date | date: '%B %d, %Y' -}}
     </time>
@@ -22,7 +22,7 @@ layout: base.liquid
                 {% if thisPost %}
                   class="block border-y-2 border-solid border-[black] bg-red-500 p-2 text-stone-50 underline"
                 {% else %}
-                  class="block border-y-2 border-solid border-[black] bg-stone-50 text-stone-950 p-2 hover:bg-red-500 hover:text-stone-50 hover:underline"
+                  class="block border-y-2 border-solid border-[black] bg-stone-50 p-2 text-stone-950 hover:bg-red-500 hover:text-stone-50 hover:underline"
                 {% endif %}
               >
                 <span class="font-mono text-sm">{{ post.data.date | date: '%B %d, %Y' }}</span>

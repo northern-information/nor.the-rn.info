@@ -24,11 +24,11 @@ layout: base.liquid
   <ul class="grid grid-cols-1 gap-1 md:grid-cols-3 lg:grid-cols-5">
     {% for photo in photos %}
       <li
-        class="group text-stone-950 bg-stone-50 hover:bg-stone-950 hover:text-yellow-300"
+        class="group bg-stone-50 text-stone-950 hover:bg-stone-950 hover:text-yellow-300"
       >
         <a
           href="{{ photo.url }}"
-          class="cursor-pointer w-full h-full"
+          class="h-full w-full cursor-pointer"
         >
           <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
           <ul class="relative border-t-4 border-solid border-[black] p-2 group-hover:border-yellow-300">
