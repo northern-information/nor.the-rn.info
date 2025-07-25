@@ -1,10 +1,10 @@
-<nav class="container mx-auto overflow-hidden bg-stone-50 text-stone-950">
+<nav class="container mx-auto overflow-hidden text-stone-950 bg-stone-50">
   {% render rule %}
   {% render spectrum %}
   {% render rule %}
   {% render masthead %}
   {% render rule %}
-  <div class="grid grid-cols-2 gap-0 md:grid-cols-4">
+  <div class="grid grid-cols-2 gap-1 md:grid-cols-4 bg-stone-950 border-solid border-b-4 border-b-stone-950">
     {% for item in navigation %}
       {% assign is_active = false %}
       {% assign is_search = item.label == 'Search' %}
@@ -14,13 +14,11 @@
         {% assign is_active = true %}
       {% endif %}
 
-      {% assign hover_classes = 'hover:bg-red-500 hover:text-stone-50 hover:underline' %}
-      {% assign active_classes = 'bg-red-500 text-stone-50 underline' %}
-      {% assign persistent_classes = 'flex border-[black] px-2 py-2 font-semibold border-b-4' %}
+      {% assign active_classes = '!bg-red-500 !text-stone-50 underline' %}
 
       <a
         href="{{ item.url }}"
-        class="{% if is_active %}{{ active_classes }}{% else %}{{ hover_classes }}{% endif %} {{ persistent_classes }} {{ item.class }}"
+        class="{% if is_active %}{{ active_classes }}{% endif %} flex px-2 py-2 font-semibold bg-stone-50 text-stone-950 hover:bg-red-500 hover:text-stone-50 hover:underline"
         {% if is_active %}
           aria-current="page"
         {% endif %}
