@@ -17,13 +17,9 @@ eleventyComputed:
     >
       {{- release.released | date: '%B %d, %Y' -}}
     </time>
-    <h1 class="mb-10 text-4xl font-bold">{{ release.title }}</h1>
+    <h1 class="text-4xl font-bold">{{ release.title }}</h1>
+    <h2 class="mb-10">{{ release.project }}</h2>
     <ul class="mb-10">
-      <li class="ellipses">
-        <div>By</div>
-        <div class="ellipses-fill">&#8203;</div>
-        <div>{{ release.project }}</div>
-      </li>
       <li class="ellipses">
         <div>Type</div>
         <div class="ellipses-fill">&#8203;</div>
