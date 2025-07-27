@@ -11,12 +11,12 @@
 
   .av {
     @apply mt-1;
-  }
 
-  .av iframe,
-  .av img,
-  .av video {
-    @apply mb-1 h-auto w-full;
+    iframe,
+    img,
+    video {
+      @apply mb-1 h-auto w-full;
+    }
   }
 
   .post,
@@ -39,69 +39,69 @@
     }
   }
 
-  .post a {
-    @apply text-yellow-300 underline hover:text-white hover:no-underline;
-  }
+  .post {
+    a {
+      @apply text-yellow-300 underline hover:text-white hover:no-underline;
+    }
 
-  .post blockquote {
-    @apply italic;
-  }
+    blockquote {
+      @apply ml-2 border-l border-white pl-4 italic;
 
-  .post blockquote p {
-    @apply mb-5;
-  }
+      p {
+        @apply mb-5;
+      }
+    }
 
-  .post blockquote,
-  .post pre {
-    @apply ml-2 border-l-1 border-solid border-white pl-4;
-  }
+    pre {
+      @apply ml-2 border-l border-white pl-4 text-red-400;
+    }
 
-  .post code,
-  .post pre {
-    @apply text-red-400;
-  }
+    code {
+      @apply text-red-400;
+    }
 
-  .post h1,
-  .post h2,
-  .post h3,
-  .post h4,
-  .post h5,
-  .post h6 {
-    @apply text-2xl font-bold;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-2xl font-bold;
+    }
 
-  .post img {
-    @apply h-auto w-full;
-  }
+    img {
+      @apply h-auto w-full;
+    }
 
-  .post ol,
-  .post ul {
-    @apply ml-6 list-outside;
-  }
+    ol,
+    ul {
+      @apply ml-6 list-outside;
+    }
 
-  .post ol {
-    @apply list-decimal;
-  }
+    ol {
+      @apply list-decimal;
+    }
 
-  .post ul {
-    @apply list-disc;
-  }
+    ul {
+      @apply list-disc;
+    }
 
-  .post li,
-  .post p {
-    @apply max-w-[600px] text-lg leading-8;
+    li,
+    p {
+      @apply max-w-[600px] text-lg leading-8;
+    }
   }
 
   li.ellipses {
     @apply flex items-baseline justify-between gap-2;
-  }
 
-  li.ellipses .ellipses-fill {
-    @apply relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-white before:content-['....................................................................................................................................................................................'];
-  }
-
-  .release p {
-    @apply mb-5;
+    .ellipses-fill {
+      @apply relative grow text-sm;
+      &::before {
+        content: '....................................................................................................................................................................................';
+        @apply absolute top-1/2 left-0 h-full w-full -translate-y-1/2 overflow-hidden whitespace-nowrap text-white;
+      }
+    }
   }
 
   ::selection {
@@ -129,14 +129,12 @@
   }
 
   @keyframes spectrumAnimation {
-    0% {
+    0%,
+    100% {
       background-position: 0% 50%;
     }
     50% {
       background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
     }
   }
 
