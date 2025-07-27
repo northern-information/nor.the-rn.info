@@ -2,7 +2,7 @@
   {% render spectrum %}
   {% render rule %}
   <div class="grid gap-1 lg:grid-cols-4 ">
-    <ul class="bg-stone-50 px-2 py-2 text-stone-950">
+    <ul class="bg-white px-2 py-2 text-black">
       <li>{{ site.META.TITLE }}</li>
       <li>
         2008 &mdash; {{ site.META.YEAR }}
@@ -14,7 +14,7 @@
       </li>
       <li>{{ site.META.INVOCATION }}</li>
     </ul>
-    <ul class="bg-stone-50 px-2 py-2 text-stone-950 lg:col-span-2">
+    <ul class="bg-white px-2 py-2 text-black lg:col-span-2">
       <li>
         You Are Here:
         {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
@@ -45,7 +45,7 @@
     </ul>
     <a
       href="/"
-      class="flex h-full w-full items-center justify-center bg-stone-50 px-2 py-2 text-stone-950 hover:bg-red-500"
+      class="flex h-full w-full items-center justify-center bg-white px-2 py-2 text-black hover:bg-red-500"
     >
       <img
         src="/images/applied-sciences-and-phantasms-working-division.svg"

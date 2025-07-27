@@ -1,9 +1,9 @@
 ---
 layout: base.liquid
 ---
-<ul class="grid list-none grid-cols-1 gap-1 border-t-4 border-b-4 border-solid border-[black] md:grid-cols-3 xl:grid-cols-5">
+<ul class="grid list-none grid-cols-1 gap-1 border-t-4 border-b-4 border-solid border-black md:grid-cols-3 xl:grid-cols-5">
   {% for release in collections.discography %}
-    <li class="group flex flex-col  bg-stone-50 text-stone-950 hover:bg-stone-950 hover:text-yellow-300">
+    <li class="group flex flex-col  bg-white text-black hover:bg-black hover:text-yellow-300">
       <a
         href="/music/{{ release.slug }}"
         class="block cursor-pointer"
@@ -16,7 +16,7 @@ layout: base.liquid
             loading="lazy"
           >
         </div>
-        <ul class="relative border-t-4 border-solid border-[black] p-2 group-hover:border-yellow-300">
+        <ul class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
           <li class="flex w-full gap-1 text-sm group-hover:underline">
             <span class="font-mono text-sm">
               {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}

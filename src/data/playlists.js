@@ -1,6 +1,7 @@
 export default [
   {
     title: 'DISSOLUTION',
+    url: 'http://localhost:8080/music/dj-stuxnet/dissolution/',
     tracks: [
       'Not Afraid by アンジェラ (Vo.Alisa)',
       'In The Air Tonight by Phil Colins',
@@ -19,6 +20,7 @@ export default [
   },
   {
     title: 'Elegies for Ashley',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/elegies-for-ashley/',
     tracks: [
       'Lips Like Mrophine by Kill Hannah',
       'Razorblade Kiss by HIM',
@@ -33,6 +35,15 @@ export default [
       'Chasing Ghosts by The Amity Affliction',
       "Heaven's a Lie by Lacuna Coil",
       'Another Love by bvdub',
+    ],
+  },
+  {
+    title: 'baysinski event ii: world war iii',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/baysinski-event-ii-world-war-iii/',
+    tracks: [
+      'Red Horizon by Fit For An Autoposy',
+      'Blue Dream by Dance Gavin Dance',
+      'KIssing Cousins by Closure in Moscow',
     ],
   },
   {

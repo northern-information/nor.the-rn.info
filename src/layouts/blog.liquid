@@ -1,12 +1,12 @@
 ---
 layout: base.liquid
 ---
-<div class="grid grid-cols-1 gap-1 border-y-4 border-solid border-[black] text-stone-950 md:grid-cols-2 xl:grid-cols-4 ">
+<div class="grid grid-cols-1 gap-1 border-y-4 border-solid border-black text-black md:grid-cols-2 xl:grid-cols-4 ">
   {% for group in collections.postsByYear %}
     <div
       class=""
     >
-      <h2 class="border-b-4 border-solid border-[black] bg-stone-50 p-2 text-4xl font-bold">
+      <h2 class="border-b-4 border-solid border-black bg-white p-2 text-4xl font-bold">
         {{ group.year }}
       </h2>
       <ul class="grid list-none grid-cols-1 gap-1">
@@ -14,7 +14,7 @@ layout: base.liquid
           <li>
             <a
               href="{{ post.url }}"
-              class="block bg-stone-50 p-2 hover:bg-red-500 hover:text-stone-50 hover:underline"
+              class="block bg-white p-2 hover:bg-red-500 hover:text-white hover:underline"
             >
               <span class="font-mono text-sm">{{ post.data.date | date: '%B %d, %Y' }}</span>
               <br>

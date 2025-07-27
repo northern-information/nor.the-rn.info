@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-[black] text-stone-100;
+    @apply bg-black text-stone-100;
   }
 
   p {
@@ -19,6 +19,7 @@
     @apply mb-1 h-auto w-full;
   }
 
+  .post blockquote,
   .post h1,
   .post h2,
   .post h3,
@@ -32,7 +33,7 @@
   .post p,
   .post pre,
   .post ul {
-    @apply mb-10;
+    @apply mb-5;
   }
 
   .post a {
@@ -43,9 +44,13 @@
     @apply italic;
   }
 
+  .post blockquote p {
+    @apply mb-5;
+  }
+
   .post blockquote,
   .post pre {
-    @apply border-l-1 border-solid border-stone-500 pl-2;
+    @apply border-white0 ml-2 border-l-1 border-solid pl-4;
   }
 
   .post code,
@@ -89,11 +94,11 @@
   }
 
   li.ellipses .ellipses-fill {
-    @apply relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-stone-500 before:content-['....................................................................................................................................................................................'];
+    @apply before:text-white0 relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:content-['....................................................................................................................................................................................'];
   }
 
   ::selection {
-    @apply bg-yellow-300 text-stone-950;
+    @apply bg-yellow-300 text-black;
   }
 }
 
@@ -130,14 +135,5 @@
 
   .bg-four-oh-four {
     background-image: url('/images/crown-via-phill-c-on-yelp.jpg');
-  }
-}
-
-/* SAFELIST */
-@layer utilities {
-  @media (min-width: 768px) {
-    .md\:border-r-4 {
-      border-right-width: 4px;
-    }
   }
 }
