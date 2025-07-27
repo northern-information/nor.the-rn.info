@@ -148,9 +148,7 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
-  eleventyConfig.addPassthroughCopy(
-    `${DIRS.INPUT}/styles/pagefind-ui-custom.css`
-  )
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
 
   eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 
