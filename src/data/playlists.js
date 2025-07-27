@@ -44,6 +44,9 @@ export default [
       'Red Horizon by Fit For An Autoposy',
       'Blue Dream by Dance Gavin Dance',
       'KIssing Cousins by Closure in Moscow',
+      'Stronger by Britteny Spears',
+      'Last Resort by Papa Roach',
+      '',
     ],
   },
   {

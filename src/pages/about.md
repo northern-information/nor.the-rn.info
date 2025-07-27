@@ -3,8 +3,6 @@ title: About
 layout: about.liquid
 ---
 
-## Hello
-
 - My name is Tyler Etters.
 - Northern Information is my garden.
 - I enjoy email correspondence: [tyler@etters.co](tyler@etters.co)

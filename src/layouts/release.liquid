@@ -4,13 +4,13 @@ permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
-<div class="flex flex-col gap-1 border-y-4 border-solid border-black md:flex-row">
-  <div class="md:w-1/2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 my-1">
+  <div class="">
     <a href="{{ release.cover_url }}" target="_blank">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
     </a>
   </div>
-  <div class="pl-2 md:w-1/2">
+  <div class="pl-2 pt-3">
     <time
       class="font-mono text-sm"
       datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}"
