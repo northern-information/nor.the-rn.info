@@ -31,12 +31,10 @@ layout: base.liquid
           href="{{ photo.url }}"
           class="h-full w-full cursor-pointer"
         >
-          <img src="{{ photo.url }}" alt="{{ photo.title }} Cover" class="h-auto w-full group-hover:invert">
-          <ul class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
-            <li class="w-full truncate group-hover:underline">
-              {{ photo.title }}
-            </li>
-          </ul>
+          <img src="{{ photo.url }}" alt="{{ photo.title }}, {{ photo.year }}" class="h-auto w-full group-hover:invert">
+          <div class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
+            <p class="group-hover:underline">{{ photo.title }}, {{ photo.year }}</p>
+          </div>
         </a>
       </li>
     {% endfor %}
