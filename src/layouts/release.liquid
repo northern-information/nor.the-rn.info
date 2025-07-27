@@ -19,24 +19,22 @@ eleventyComputed:
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
     <h2 class="mb-10">{{ release.project }}</h2>
-    <ul class="mb-10">
-      <li class="ellipses">
-        <div>Type</div>
-        <div class="ellipses-fill">&#8203;</div>
-        <div>{{ release.type }}</div>
-      </li>
-      <li class="ellipses">
-        <div>Label</div>
-        <div class="ellipses-fill">&#8203;</div>
-        <div>{{ release.label }}</div>
-      </li>
-      <li class="ellipses">
-        <div>Format</div>
-        <div class="ellipses-fill">&#8203;</div>
-        <div>{{ release.format }}</div>
-      </li>
-    </ul>
+    <table class="mb-10">
+      <tr>
+        <td class="font-semibold pr-2">Type:</td>
+        <td class="font-mono">{{ release.type }}</td>
+      </tr>
+      <tr>
+        <td class="font-semibold pr-2">Label:</td>
+        <td class="font-mono">{{ release.label }}</td>
+      </tr>
+      <tr>
+        <td class="font-semibold pr-2">Format:</td>
+        <td class="font-mono">{{ release.format }}</td>
+      </tr>
+    </table>
     <h3 class="text-lg font-bold">Tracklist</h3>
+    <hr class="mb-4"/>
     <ol class="mb-4">
       {% for track in release.tracks %}
         <li class="ellipses">
@@ -72,6 +70,7 @@ eleventyComputed:
     </ol>
     {% if release.streams.size > 0 %}
       <h3 class="text-lg font-bold">Listen</h3>
+      <hr class="mb-4"/>
       <ol class="mb-4">
         {% for stream in release.streams %}
           <li class="flex w-full items-start">
@@ -87,8 +86,10 @@ eleventyComputed:
       </ol>
     {% endif %}
     <h3 class="text-lg font-bold">Notes</h3>
+    <hr class="mb-4"/>
     <div class="release mb-4">{{ release.notes }}</div>
     <h3 class="text-lg font-bold">Credits</h3>
+    <hr class="mb-4"/>
     <div class="release mb-4">{{ release.credits }}</div>
   </div>
 </div>
