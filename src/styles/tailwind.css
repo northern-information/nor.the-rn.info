@@ -19,21 +19,24 @@
     @apply mb-1 h-auto w-full;
   }
 
-  .post blockquote,
-  .post h1,
-  .post h2,
-  .post h3,
-  .post h4,
-  .post h5,
-  .post h6,
-  .post hr,
-  .post iframe,
-  .post img,
-  .post ol,
-  .post p,
-  .post pre,
-  .post ul {
-    @apply mb-5;
+  .post,
+  .release {
+    blockquote,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    iframe,
+    img,
+    ol,
+    p,
+    pre,
+    ul {
+      @apply mb-5;
+    }
   }
 
   .post a {
@@ -95,6 +98,10 @@
 
   li.ellipses .ellipses-fill {
     @apply relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-white before:content-['....................................................................................................................................................................................'];
+  }
+
+  .release p {
+    @apply mb-5;
   }
 
   ::selection {
