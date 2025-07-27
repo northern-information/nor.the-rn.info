@@ -50,7 +50,7 @@
 
   .post blockquote,
   .post pre {
-    @apply border-white0 ml-2 border-l-1 border-solid pl-4;
+    @apply ml-2 border-l-1 border-solid border-white pl-4;
   }
 
   .post code,
@@ -94,7 +94,7 @@
   }
 
   li.ellipses .ellipses-fill {
-    @apply before:text-white0 relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:content-['....................................................................................................................................................................................'];
+    @apply relative grow text-sm before:absolute before:top-1/2 before:left-0 before:h-full before:w-full before:-translate-y-1/2 before:overflow-hidden before:whitespace-nowrap before:text-white before:content-['....................................................................................................................................................................................'];
   }
 
   ::selection {
