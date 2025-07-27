@@ -81,8 +81,13 @@ layout: base.liquid
     {% for playlist in playlists %}
       <li class="post">
         <h2 class="mb-0">{{ playlist.title }}</h2>
+        {% if playlist.url %}
+          <div class="flex w-full">
+            <a href="{{ playlist.url }}" target="_blank" class="truncate overflow-hidden whitespace-nowrap  font-mono text-sm text-yellow-300 underline hover:text-yellow-500 hover:no-underline">{{playlist.url}}</a>
+          </div>
+        {%  endif%}
         <hr class="my-5">
-        <ol>
+        <ol class="pl-2">
           {% for track in playlist.tracks %}
             <li>{{ track }}</li>
           {% endfor %}
