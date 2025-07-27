@@ -182,7 +182,7 @@ export default [
   },
   {
     title: 'Kowloon City: Ｌｅｙｌｉｎｅ',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Zucht 2 by Machinefabriek',
       'Currents of Electrostaty by Tim Hecker',
@@ -199,7 +199,7 @@ export default [
   },
   {
     title: 'ЯΣBЯӨΛDCΛƧƬ [2/2] 𝘍𝘭𝘢𝘴𝘩 𝘊𝘳𝘢𝘴𝘩 𝘗𝘪𝘳𝘢𝘵𝘦 𝘙𝘢𝘥𝘪𝘰 𝘔𝘪𝘹 + 𝘵𝘦𝘩𝘯',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'What is Love by Haddaway',
       'Disorder by Chiasm',
@@ -216,7 +216,7 @@ export default [
   },
   {
     title: 'ЯΣBЯӨΛDCΛƧƬ [1/2] 𝘍𝘭𝘢𝘴𝘩 𝘊𝘳𝘢𝘴𝘩 𝘗𝘪𝘳𝘢𝘵𝘦 𝘙𝘢𝘥𝘪𝘰 𝘔𝘪𝘹 + 𝘵𝘦𝘩𝘯',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Be My Lover by La Bouche',
       '3 a.m. Eternal by KLF',
@@ -233,7 +233,7 @@ export default [
   },
   {
     title: 'Elegies for Anja',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'SOLSTICE by dreamstation, Nedaj',
       'Innocente (Falling in Love) by Delerium, Lost Witness, Leigh Nash',
@@ -251,7 +251,7 @@ export default [
   },
   {
     title: 'トランス',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Cruel Summer by Ace of Base',
       'Summer Jam by Underdog Project',
@@ -274,7 +274,7 @@ export default [
   },
   {
     title: 'THE CONTINUANCE',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Castles in the Sky Radio Mix by Ian Van Dahl, Marsha',
       'Blue Monday by HEALTH',
@@ -293,22 +293,22 @@ export default [
   },
   {
     title: 'broken promise (for timm)',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Elektrik by The Flying Steps',
       'Stem / Long Stem / Transmission 2 by DJ Shadow',
-      'Carbon Daate Piano by Ernst Reijseger',
+      'Carbon Date Piano by Ernst Reijseger',
       'Autobahn by Kraftwerk',
       'lines community stream 200509 by sunbeamer',
       'Ending Days by LAKE R▲DIO, Sioum, Connectedness Locus, Lunar Day',
       'Who Told You This Room Exists? by Belong',
-      'Broken Promise by Joe Boyd Vigil',
+      'Broken Promise [Dreams] by Joe Boyd Vigil',
       '失​落​之​地 by ESIAFI 1',
     ],
   },
   {
     title: '𝙵𝚘𝚐 𝚆𝚊𝚕𝚕𝚜',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Reminisence by Monolake',
       'Taken Effect by Shed',
@@ -326,7 +326,7 @@ export default [
   },
   {
     title: '𝓀𝒶𝓉𝒶𝒷𝒶𝓉𝒾𝒸 𝓌𝒾𝓃𝒹',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Deep Impact by Chris Veron',
       'Nothing Stops Detroit by Robert Hood',
@@ -341,7 +341,7 @@ export default [
   },
   {
     title: '𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯',
-    url: 'https://stuxnet.me/',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/kowloon-walled-city-giga-mix',
     tracks: [
       'Ghosts of Garden City by Caspian',
       'Hymn of the Cherubim by USSR Ministry of Culture Chamber Choir',
@@ -361,7 +361,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2024',
-    url: 'https://open.spotify.com/playlist/0zvzr1yMy2fuOU0wcvYzXT',
     tracks: [
       'SOLSTICE by dreamstation, Nedaj',
       'Temple Halls by Mountain Realm',
@@ -382,7 +381,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2023',
-    url: 'https://open.spotify.com/playlist/09IALkpxTC0cu5JwXFccmF',
     tracks: [
       'Perpetual Terminal by Darkest Hour',
       'MDMA by Emmure',
@@ -399,7 +397,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2022',
-    url: 'https://open.spotify.com/playlist/4ntC2zANB2uBWw0RDPgm3y',
     tracks: [
       'Let It Go by araabMUZIK',
       'Minus by Robert Hood',
@@ -423,7 +420,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2021',
-    url: 'https://open.spotify.com/playlist/4vD6aPCSEZloNP3RxHvKfJ',
     tracks: [
       'Old Snake by Harry Gregson-Williams',
       'Above Broken Hearts by Bvdub',
@@ -466,7 +462,6 @@ export default [
   },
   {
     title: 'In Which Everything Makes Sense',
-    url: 'https://open.spotify.com/playlist/1B6vT0iyiEeQtH0VNgxiPw',
     tracks: [
       'Savor The Kill by Darkest Hour',
       'Love As A Weapon by Darkest Hour',
@@ -540,7 +535,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2020',
-    url: 'https://open.spotify.com/playlist/12uTS1AQt209R1QI8KBmp8',
     tracks: [
       'Kasvetli Kutlama by She Past Away',
       "I'll Keep Coming by Low Roar",
@@ -569,7 +563,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2019',
-    url: 'https://open.spotify.com/playlist/4BYKttjBkFRQ1ALJys4Xxv',
     tracks: [
       'a younger version of myself by Telefon Tel Aviv',
       'On The Embankment by Huerco S.',
@@ -604,7 +597,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2018',
-    url: 'https://open.spotify.com/user/lagrangian/playlist/67QHIqu8UANrhptT6DQR5O',
     tracks: [
       'Come Thru for U by DJ Seinfeld',
       'Indefinite Fields by Rafael Anton Irisarri',
@@ -635,7 +627,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2017',
-    url: 'https://open.spotify.com/user/lagrangian/playlist/2a75EQ901dxhdWJJywZlHg',
     tracks: [
       'The Stars Drop Away (Equus Oils) by Ben Babbitt',
       'Flower by HKE',
@@ -667,7 +658,6 @@ export default [
   },
   {
     title: 'My Life In Playlists: 2016',
-    url: 'https://open.spotify.com/user/lagrangian/playlist/4Ajv1Jc1EedECyyfx7qfo1',
     tracks: [
       'Savor the Kill by Darkest Hour',
       'Love as a Weapon by Darkest Hour',
