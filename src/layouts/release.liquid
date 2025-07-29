@@ -10,7 +10,7 @@ eleventyComputed:
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
     </a>
   </div>
-  <div class="px-2 pt-3 md:pl-0">
+  <div class="px-2 pt-3 ">
     <time
       class="font-mono text-sm"
       datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}"
