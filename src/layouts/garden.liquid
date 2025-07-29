@@ -32,18 +32,20 @@ layout: base.liquid
   <ul>
     {% for resource in resources %}
       <li class="post">
-        <h2>{{- resource.title -}}</h2>
-        <p>{{ resource.description }}</p>
-        <a
-          href="{{ resource.url }}"
-          target="_blank"
-        >
-          Download&nbsp;
-          {{- resource.title -}}
-          &nbsp;(
-          {{- resource.size -}}
-          )
-        </a>
+        <div class="px-2 md:px-0">
+          <h2>{{- resource.title -}}</h2>
+          <p>{{ resource.description }}</p>
+          <a
+            href="{{ resource.url }}"
+            target="_blank"
+          >
+            Download&nbsp;
+            {{- resource.title -}}
+            &nbsp;(
+            {{- resource.size -}}
+            )
+          </a>
+        </div>
         <hr class="my-5">
       </li>
     {% endfor %}
@@ -55,7 +57,7 @@ layout: base.liquid
   <ul>
     {% for subsidiary in subsidiaries %}
       <li class="post">
-        <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="grid grid-cols-1 px-2 md:grid-cols-3 md:px-0">
           <div class="max-w-none md:pr-4">
             <time class="font-mono text-sm">
               {{ subsidiary.dates }}
@@ -80,24 +82,26 @@ layout: base.liquid
   <ul class="grid grid-cols-1 gap-4 lg:grid-cols-3">
     {% for playlist in playlists %}
       <li class="post">
-        <h2 class="mb-0">{{ playlist.title }}</h2>
-        {% if playlist.url %}
-          <div class="flex w-full">
-            <a
-              href="{{ playlist.url }}"
-              target="_blank"
-              class="truncate overflow-hidden font-mono  text-sm whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
-            >
-              {{- playlist.url -}}
-            </a>
-          </div>
-        {% endif %}
+        <div class="px-2 md:px-0">
+          <h2 class="mb-0">{{ playlist.title }}</h2>
+          {% if playlist.url %}
+            <div class="flex w-full">
+              <a
+                href="{{ playlist.url }}"
+                target="_blank"
+                class="truncate overflow-hidden font-mono  text-sm whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
+              >
+                {{- playlist.url -}}
+              </a>
+            </div>
+          {% endif %}
+          <ol class="mt-2 pl-2">
+            {% for track in playlist.tracks %}
+              <li>{{ track }}</li>
+            {% endfor %}
+          </ol>
+        </div>
         <hr class="my-5">
-        <ol class="pl-2">
-          {% for track in playlist.tracks %}
-            <li>{{ track }}</li>
-          {% endfor %}
-        </ol>
       </li>
     {% endfor %}
   </ul>
