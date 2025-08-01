@@ -4,7 +4,7 @@ permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
-<div class="mt-1 grid grid-cols-1 gap-1 md:grid-cols-2">
+<div class="my-1 grid grid-cols-1 gap-1 md:grid-cols-2">
   <div>
     <a href="{{ release.cover_url }}" target="_blank">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
