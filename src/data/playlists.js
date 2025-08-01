@@ -1,5 +1,22 @@
 export default [
   {
+    title: 'In Entropy [mixtape]',
+    url: 'https://soundcloud.com/tyleretters/in-breakdowns-entropy',
+    tracks: [
+      'Serenity <Remake ver.> by Kota Suzuki,千本木操',
+      'Trade Winds, White Heat by Tim Hecker',
+      'And the Birds Are About to Bust Their Guts with Singing by Set Fire to Flames',
+      '(B) by mewithoutYou',
+      'VLetrmx by Autechre',
+      'Leaving Hope by Nine Inch Nails',
+      'Merry Christmas Mr. Lawrence by Ryuichi Sakamoto',
+      'True North by Hilyard',
+      'Shadow by Ernst Reijseger',
+      'Mandy Love Theme by Jóhann Jóhannsson',
+      'at another working gate by tyler etters & the northern information movement',
+    ],
+  },
+  {
     title: 'In Breakdowns [mixtape]',
     url: 'https://soundcloud.com/tyleretters/in-breakdowns-mixtape',
     tracks: [
