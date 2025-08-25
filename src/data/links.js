@@ -1,4 +1,3 @@
-
 // prettier-ignore
 export default [
   { url: 'https://256klabs.com', title: '256klabs' },
@@ -65,6 +64,7 @@ export default [
   { url: 'https://kylemcdonald.net', title: 'Kyle McDonald' },
   { url: 'https://lakeradio.bandcamp.com', title: 'LAKE R▲DIO' },
   { url: 'https://lawrencelek.com', title: 'Lawrence Lek' },
+  { url: 'https://magnusmunktaekker.dk', title: 'Magnus Munk Taekker' },
   { url: 'https://www.marekpoliks.com', title: 'Marek Poliks' },
   { url: 'https://manovich.net', title: 'Lev Manovich' },
   { url: 'https://www.liamwong.com', title: 'Liam Wong' },
