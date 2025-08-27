@@ -1,9 +1,14 @@
 export default [
   // {
-  //   url: '/images/goth-pro-shops.jpg',
-  //   title: 'Goth Pro Shops',
+  //   url: '/images/celestial-construction.jpg',
+  //   title: 'Celestial Construction',
   //   year: 2025,
   // },
+  {
+    url: '/images/goth-pro-shops.jpg',
+    title: 'Goth Pro Shops',
+    year: 2025,
+  },
   {
     url: '/images/hemisync.jpg',
     title: 'Hemisync',
