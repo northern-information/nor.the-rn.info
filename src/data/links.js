@@ -45,6 +45,7 @@ export default [
   { url: 'https://fors.fm', title: 'Fors' },
   { url: 'https://foxriot.com/', title: 'Foxriot' },
   { url: 'http://paranom.asia/', title: 'Gabriele de Seta' },
+  { url: 'https://www.pichardo.dev/', title: 'Allan Pichardo'},
   { url: 'https://gavart.ist/', title: 'Gavin Gamboa' },
   { url: 'https://heavyghost.bandcamp.com', title: 'Heavy Ghost' },
   { url: 'https://100r.co', title: 'Hundred Rabbits' },
