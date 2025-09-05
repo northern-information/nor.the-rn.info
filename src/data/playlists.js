@@ -1,7 +1,26 @@
 export default [
   {
+    title: 'In Ecstasy [mixtape]',
+    url: 'https://soundcloud.com/tyleretters/in-ecstasy-mixtape',
+    tracks: [
+      'Count On You by Tokyo Tears',
+      '3AM by araabMUZIK',
+      'Four Walls by Massive Attack vs Burial',
+      'Precious by Depeche Mode',
+      'You And Me by Skeler',
+      'Silence (John Summit Remix) by Delerium, Sara McLachlan, John Summit',
+      'Drown U Out by 4K & Conni',
+      'We Are Free by Tokyo Tears & SAGE',
+      'As The Rush Comes (Gabriel & Dresden Chillout Mix) by Motorcycle',
+      'In The End (Mellen Gi Remix) by Tommee Profitt, Mellen Gi & Fleurie',
+      'Strangers by Portishead',
+      'Sound in a Dark Room by Telefon Tel Aviv',
+      'Afterglow (feat. Soundmouse) by Phaeleh',
+    ],
+  },
+  {
     title: 'In Entropy [mixtape]',
-    url: 'https://soundcloud.com/tyleretters/in-breakdowns-entropy',
+    url: 'https://soundcloud.com/tyleretters/in-entropy-mixtape',
     tracks: [
       'Serenity <Remake ver.> by Kota Suzuki,千本木操',
       'Trade Winds, White Heat by Tim Hecker',
@@ -61,7 +80,6 @@ export default [
   {
     title: '𝔓𝔰𝔞𝔩𝔪𝔰 [mixtape]',
     url: 'https://soundcloud.com/tyleretters/psalms-mixtape',
-
     tracks: [
       'inner universe by Origa',
       'Just Communication by TWO-MIX',
