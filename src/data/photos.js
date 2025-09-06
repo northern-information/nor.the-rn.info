@@ -39,16 +39,16 @@ export default [
     title: 'Flare',
     year: 2022,
   },
-  {
-    url: '/images/anthropocene.jpg',
-    title: 'Anthropocene',
-    year: 2021,
-  },
-  {
-    url: '/images/tyler-etters-mask.jpg',
-    title: 'Powerlines',
-    year: 2021,
-  },
+  // {
+  //   url: '/images/anthropocene.jpg',
+  //   title: 'Anthropocene',
+  //   year: 2021,
+  // },
+  // {
+  //   url: '/images/tyler-etters-mask.jpg',
+  //   title: 'Powerlines',
+  //   year: 2021,
+  // },
   {
     url: '/images/tyler-etters-illustration.jpg',
     title: 'Tyler Etters illustration by Gage Lindsten',
@@ -110,6 +110,11 @@ export default [
     title:
       'Pasha Petrosyan & Tyler Etters / Everything Comes in Cycles; Everything Fades in Shades',
     year: 2009,
+  },
+  {
+    url: '/images/080827.jpg',
+    title: 'Mist',
+    year: 2008,
   },
   {
     url: '/images/inocula.jpg',
