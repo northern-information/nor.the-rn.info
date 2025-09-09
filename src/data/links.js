@@ -88,6 +88,7 @@ export default [
   { url: 'https://www.punctr.art', title: 'PUNCTR ART' },
   { url: 'https://www.punk.ist', title: 'punk.ist' },
   { url: 'https://pullahs.bandcamp.com', title: 'Pullahs' },
+  { url: 'https://quietcast.art', title: 'Quiet Cast'},
   { url: 'https://www.nobadmemories.com', title: 'Rachel Simone Weil' },
   { url: 'https://rashomon.blue', title: 'Rashomon Blues' },
   { url: 'https://kokorobot.ca', title: 'Rekka Bellum' },
