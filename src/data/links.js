@@ -109,6 +109,7 @@ export default [
   { url: 'https://tai-studio.org', title: 'TAI Studio' },
   { url: 'https://taylorgarron.com', title: 'Taylor Garron' },
   { url: 'https://tenspeedmusic.bandcamp.com', title: 'ten-speed' },
+  { url: 'https://thomasmoynihan.xyz', title: 'Thomas Moynihan' },
   { url: 'https://newdesigncongress.org/en', title: 'The New Design Congress' },
   { url: 'https://tholme.myportfolio.com', title: 'Tiffany Holmes' },
   { url: 'http://todestroyacity.com', title: 'To Destroy a City' },
