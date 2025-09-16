@@ -4,6 +4,8 @@ date: 2021-10-01
 tags: ["S♯A♯B∞"]
 ---
 
+_This is [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/) of 3. [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/). [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/)._
+
 ![Transfiguration](/images/sab-transfiguration.jpg)
 
 Week three; act three. I am not on a commuter train today, but I am at O'hare. If you asked me how I was doing I might reply with, "cellular exhaustion." This trip has been beautiful and horrifying and gorgeous and wonderful and draining and terrifying and inspiring and absolutely too much but also precisely just enough and exactly what I needed.
@@ -105,3 +107,5 @@ Use encryption.
 Always crash.
 
 Tyler
+
+_This is [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/) of 3. [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/). [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/)._
