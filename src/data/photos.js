@@ -1,9 +1,9 @@
 export default [
-  // {
-  //   url: '/images/celestial-construction.jpg',
-  //   title: 'Celestial Construction',
-  //   year: 2025,
-  // },
+  {
+    url: '/images/celestial-construction.jpg',
+    title: 'Celestial Construction',
+    year: 2025,
+  },
   {
     url: '/images/goth-pro-shops.jpg',
     title: 'Goth Pro Shops',
