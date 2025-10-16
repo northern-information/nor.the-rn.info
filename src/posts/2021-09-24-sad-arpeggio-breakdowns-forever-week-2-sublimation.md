@@ -4,6 +4,8 @@ date: 2021-09-24
 tags: ["S♯A♯B∞"]
 ---
 
+_This is [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/) of 3. [Part 2](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/). [Part 1](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/)._
+
 ![Graffiti](/images/sab-graffiti.jpg)
 
 It is important for me to see the city. [Last I was here](/2020/03/12/the-covid-19-pandemic-day-2/) things were quite grim. That paranoid, phantom city haunted me.
@@ -57,3 +59,5 @@ Fred and I visit the [International Spy Museum](https://www.spymuseum.org/). It 
 ![Amtrak](/images/sab-amtrak.jpg)
 
 For the second time, I find myself on a commuter train on a Friday. I meet with Trent for coffee and lox during my brief layover in NYC. He hand delivers me to the Port Authority. I get on bus and begin the four hour journey into the Catskills...
+
+_This is [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/) of 3. [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/). [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/)._

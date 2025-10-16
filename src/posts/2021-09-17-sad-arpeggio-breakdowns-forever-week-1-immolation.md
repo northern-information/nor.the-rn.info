@@ -4,6 +4,8 @@ date: 2021-09-17
 tags: ["S♯A♯B∞"]
 ---
 
+_This is [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/) of 3. [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/). [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/)._
+
 ![Glass](/images/sab-glass.jpg)
 
 "Can I bum one?" I ask Uncle Wayne.
@@ -101,3 +103,5 @@ I get to have dinner with both my parents only every four years or so. We meet i
 I wrap up work a little early and head to the Metra station in Harvard, Illinois. It has been such a gift to spend a week at my Mom's place, to see my sibling, to be back in my ancestral homelands.
 
 I snap a photo on the Metra while writing this post...
+
+_This is [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/) of 3. [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/). [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/)._
