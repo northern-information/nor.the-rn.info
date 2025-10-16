@@ -22,16 +22,6 @@
           {{ path }}
         </a>
       </li>
-      <li>Build Time: {{ site.META.BUILD_TIME }}</li>
-      <li>
-        Source Code:
-        <a
-          href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}"
-          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
-        >
-          {{- site.META.GIT_HASH_SHORT -}}
-        </a>
-      </li>
       <li>
         Atom Feed:
         <a
@@ -42,6 +32,16 @@
           {{- site.META.FEED -}}
         </a>
       </li>
+      <li>
+        Source Code:
+        <a
+          href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}"
+          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+        >
+          {{- site.META.GIT_HASH_SHORT -}}
+        </a>
+      </li>
+      <li>Build Time: {{ site.META.BUILD_TIME }}</li>
     </ul>
     <a
       href="/"
