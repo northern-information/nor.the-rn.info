@@ -21,7 +21,7 @@ export default [
   { url: 'https://criticalengineering.org', title: 'Critical Engineering Manifesto', },
   { url: 'https://cthdrl.co', title: 'CTHDRL' },
   { url: 'https://damaged.bleu255.com', title: 'Damaged Earth Catalog' },
-  { url: 'https://dndrks.bandcamp.com', title: 'Dan Derks' },
+  { url: 'https://dndrks.bandcamp.com', title: 'Dani Derks' },
   { url: 'https://dzautner.com', title: 'Daniel Zautner' },
   { url: 'https://dark-mountain.net', title: 'Dark Mountain' },
   { url: 'https://datafruits.fm', title: 'DATAFRUITS.FM' },
