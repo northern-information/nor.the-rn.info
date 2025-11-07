@@ -1,5 +1,37 @@
 export default [
   {
+    title: 'In Abstraction, Part 1 [mixtape]',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/in-abstraction-part-1/',
+    tracks: [
+      'Blade Runner Blues by Vangelis',
+      'Reprocessing by Fireground',
+      'The Blue Notebooks by Max Richter, Tilda Swinton',
+      'Fenix Funk 5 by Aphex Twin',
+      'Give It All by Rise Against',
+      'fullmoon by Ryuichi Sakamoto',
+      'CONCRETE JUNGLE by Bad Omens',
+      'Imaginary Festival by Burial',
+      'Hybrid by Gary Numan',
+      'Disorder by Chiasm',
+      'Severed by Crossbreed',
+      'Hydropolis by LSTNGT',
+      'トルキア by Yoko Kanno, Gabriela Robin',
+    ],
+  },
+  {
+    title: 'In Abstraction, Part 2 [mixtape]',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/in-abstraction-part-2/',
+    tracks: [
+      'The Angels Fell (2015 Remaster) by Dillinja',
+      'hung over as the queen in maida vale by Godspeed You! Black Emperor',
+      'Music for 18 Musicians by Steve Reich',
+      'Flower by HKE',
+      'Save and Sound by bvdub',
+      'Treale by Autechre',
+      'Final Movement (feat. "Not At Home") by Clint Mansell, Peter Broderick',
+    ],
+  },
+  {
     title: 'In Ecstasy [mixtape]',
     url: 'https://soundcloud.com/tyleretters/in-ecstasy-mixtape',
     tracks: [
