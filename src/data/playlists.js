@@ -27,6 +27,7 @@ export default [
       'Music for 18 Musicians by Steve Reich',
       'Flower by HKE',
       'Save and Sound by bvdub',
+      'Xibalba by Clint Mansell',
       'Treale by Autechre',
       'Final Movement (feat. "Not At Home") by Clint Mansell, Peter Broderick',
     ],
