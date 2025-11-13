@@ -41,7 +41,7 @@
 
   .post {
     a {
-      @apply text-yellow-300 underline hover:text-white hover:no-underline;
+      @apply text-yellow-300 underline hover:text-yellow-500 hover:no-underline;
     }
 
     blockquote {
@@ -99,7 +99,7 @@
       @apply relative grow text-sm;
       &::before {
         content: '....................................................................................................................................................................................';
-        @apply absolute top-1/2 left-0 h-full w-full -translate-y-1/2 overflow-hidden whitespace-nowrap text-white;
+        @apply absolute top-1/2 left-0 h-full w-full -translate-y-1/2 overflow-hidden whitespace-nowrap text-gray-500;
       }
     }
   }

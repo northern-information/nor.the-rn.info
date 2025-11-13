@@ -12,29 +12,31 @@ eleventyComputed:
   </div>
   <div class="px-2 pt-3 ">
     <time
-      class="font-mono text-sm"
+      class="font-mono text-sm text-gray-400"
       datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}"
     >
       {{- release.released | date: '%B %d, %Y' -}}
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-    <h2 class="mb-10">{{ release.project }}</h2>
-    <table class="mb-10">
-      <tr>
-        <td class="pr-2 font-semibold">Type:</td>
-        <td class="font-mono">{{ release.type }}</td>
-      </tr>
-      <tr>
-        <td class="pr-2 font-semibold">Label:</td>
-        <td class="font-mono">{{ release.label }}</td>
-      </tr>
-      <tr>
-        <td class="pr-2 font-semibold">Format:</td>
-        <td class="font-mono">{{ release.format }}</td>
-      </tr>
-    </table>
+    <h2 class="text-lg font-bold mb-4">{{ release.project }}</h2>
+    <ul class="mb-4">
+      <li class="ellipses">
+        <div class="font-semibold">Type</div>
+        <div class="ellipses-fill">&#8203;</div>
+        <div class="font-mono">{{ release.type }}</div>
+      </li>
+      <li class="ellipses">
+        <div class="font-semibold">Label</div>
+        <div class="ellipses-fill">&#8203;</div>
+        <div class="font-mono">{{ release.label }}</div>
+      </li>
+      <li class="ellipses">
+        <div class="font-semibold">Format</div>
+        <div class="ellipses-fill">&#8203;</div>
+        <div class="font-mono">{{ release.format }}</div>
+      </li>
+    </ul>
     <h3 class="text-lg font-bold">Tracklist</h3>
-    <hr class="mb-4">
     <ol class="mb-4">
       {% for track in release.tracks %}
         <li class="ellipses">
@@ -44,7 +46,7 @@ eleventyComputed:
           {% else %}
             {% assign displayIndex = index %}
           {% endif %}
-          <div class="font-mono text-sm">
+          <div class="font-mono text-sm text-gray-400">
             {{ displayIndex }}
           </div>
           <div>{{ track.title }}</div>
@@ -70,7 +72,6 @@ eleventyComputed:
     </ol>
     {% if release.streams.size > 0 %}
       <h3 class="text-lg font-bold">Listen</h3>
-      <hr class="mb-4">
       <ol class="mb-4">
         {% for stream in release.streams %}
           <li class="flex w-full items-start">
@@ -86,10 +87,8 @@ eleventyComputed:
       </ol>
     {% endif %}
     <h3 class="text-lg font-bold">Notes</h3>
-    <hr class="mb-4">
     <div class="release mb-4">{{ release.notes }}</div>
     <h3 class="text-lg font-bold">Credits</h3>
-    <hr class="mb-4">
     <div class="release mb-4">{{ release.credits }}</div>
   </div>
 </div>
