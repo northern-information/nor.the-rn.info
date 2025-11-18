@@ -6,7 +6,7 @@ layout: base.liquid
     <div
       class=""
     >
-      <h2 class="border-b-4 border-solid border-black bg-white p-2 text-center text-4xl font-bold">
+      <h2 class="text-white p-2 font-mono text-4xl">
         {{ group.year }}
       </h2>
       <ul class="grid list-none grid-cols-1 gap-1">
@@ -14,9 +14,9 @@ layout: base.liquid
           <li>
             <a
               href="{{ post.url }}"
-              class="block bg-white p-2 hover:bg-red-500 hover:text-white hover:underline"
+              class="group block bg-white p-2 hover:bg-red-500 hover:text-white hover:underline"
             >
-              <span class="font-mono text-sm">{{ post.data.date | date: '%B %d, %Y' }}</span>
+              <span class="font-mono text-sm text-gray-400 group-hover:text-white">{{ post.data.date | date: '%B %d, %Y' }}</span>
               <br>
               <span class="font-semibold">{{ post.data.title }}</span>
             </a>
