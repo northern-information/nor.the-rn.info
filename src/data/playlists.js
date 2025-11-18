@@ -214,7 +214,7 @@ export default [
     title: 'Elegies for Ashley [mixtape]',
     url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/elegies-for-ashley-mixtape',
     tracks: [
-      'Lips Like Mrophine by Kill Hannah',
+      'Lips Like Morphine by Kill Hannah',
       'Razorblade Kiss by HIM',
       'Raindrops + Sunshowers by The Smashing Pumpkins',
       'The Hollow by A Perfect Circle',
