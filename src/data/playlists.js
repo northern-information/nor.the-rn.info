@@ -33,6 +33,26 @@ export default [
     ],
   },
   {
+    title: '𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶 𝒞𝒽𝒶𝓅𝓉𝑒𝓇 𝟤 [mixtape]',
+    url: 'https://soundcloud.com/tyleretters/hearts-in-valencia-chapter-2-mixtape',
+    tracks: [
+      'Wicked Game by Chris Isaak',
+      "Tearn' Up My Heart (Original Radio Edit) by *NSYNC",
+      'Bother by Stone Sour',
+      'All Fucked Up by The Amity Affliction',
+      'Misery Business by Paramore',
+      'You Give Love a Bad Name by Bon Jovi',
+      'Hurt by Johnny Cash',
+      'Poison Girl by HIM',
+      'End of the World by Cold',
+      'Closer by Nine Inch Nails',
+      'Over Each Other by Linkin Park',
+      'Get Together by Madonna',
+      'Kiss from a Rose by Seal',
+      'Desert Rose by Sting',
+    ],
+  },
+  {
     title: 'In Ecstasy [mixtape]',
     url: 'https://soundcloud.com/tyleretters/in-ecstasy-mixtape',
     tracks: [
@@ -90,8 +110,8 @@ export default [
     ],
   },
   {
-    title: '𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶 [mixtape]',
-    url: 'https://soundcloud.com/tyleretters/hearts-in-valencia-mixtape',
+    title: '𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶 𝒞𝒽𝒶𝓅𝓉𝑒𝓇 𝟣 [mixtape]',
+    url: 'https://soundcloud.com/tyleretters/hearts-in-valencia-chapter-1-mixtape',
     tracks: [
       'Radioactive by Imagine Dragons, Kendrick Lamar',
       'Breathless by The Corrs',
