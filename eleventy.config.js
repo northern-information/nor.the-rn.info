@@ -123,7 +123,10 @@ export default async (eleventyConfig) => {
     })
   )
 
-  const markdownLib = markdownIt({ html: true }).use(implicitFigures, {
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: true,
+  }).use(implicitFigures, {
     figcaption: false,
   })
 
