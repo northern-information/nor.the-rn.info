@@ -12,18 +12,18 @@ export default [
     content: `[Intertext](https://intertext.bandcamp.com) is where I release my music. It is a hermitic, one-man, non-label. Intertext has no branding, no lettermark, no mission, no social media presence, no marketing strategy. This paragraph is the only "about" section that exists. Mark Fisher introduced me to the word and if you're looking to get lost in a wormhole, I highly recommend [this Wikipedia article](https://en.wikipedia.org/wiki/Intertextuality).`,
   },
   {
-    title: 'norns community',
-    dates: '2021 - Present',
-    image: '/images/norns-community-v2-explore.png',
-    content: `[norns community](https://norns.community) is a script wiki for the monome norns sound computer. [Read about my redesign process here](/2023/05/27/rebuilding-norns-community).`,
-  },
-  {
     title: 'Photography',
     dates: '2005 - Present',
     image: '/images/manifesto.jpg',
     content: `I started working with film in 2005 at [Columbia College Chicago](https://www.colum.edu). After learning my way around the darkroom I started experimenting with crossprocessing and multiple exposures. This image is a manifesto of sorts: quadruple exposure, crossprocessed, no Photoshop.
 
     I used to have a bunch of my work on Flickr. Some of terms of the latest platform ownership transfer made me uncomfortable so I took it all down. [Some photos survive on the Photos page.](/photography)`,
+  },
+  {
+    title: 'norns community',
+    dates: '2021 - 2025',
+    image: '/images/norns-community-v2-explore.png',
+    content: `[norns community](https://norns.community) is a script wiki for the monome norns sound computer. [Read about my redesign process here](/2023/05/27/rebuilding-norns-community).`,
   },
   {
     title: 'Klang Magazine',
