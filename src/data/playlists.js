@@ -1,7 +1,7 @@
 export default [
   {
     title: '𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶 𝒞𝒽𝒶𝓅𝓉𝑒𝓇 𝟤 [mixtape]',
-    url: 'https://soundcloud.com/tyleretters/hearts-in-valencia-chapter-2-mixtape',
+    url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/hearts-in-valencia-chapter-2',
     tracks: [
       'Wicked Game by Chris Isaak',
       "Tearn' Up My Heart (Original Radio Edit) by *NSYNC",
