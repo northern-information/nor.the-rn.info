@@ -16,7 +16,7 @@ layout: base.liquid
               href="{{ post.url }}"
               class="group block bg-white p-2 hover:bg-red-500 hover:text-white hover:underline"
             >
-              <span class="font-mono text-sm text-gray-400 group-hover:text-white">{{ post.data.date | date: '%B %d, %Y' }}</span>
+              <span class="font-mono text-sm text-gray-400 group-hover:text-white">{{ post.data.date | dateToUTCFull }}</span>
               <br>
               <span class="font-semibold">{{ post.data.title }}</span>
             </a>

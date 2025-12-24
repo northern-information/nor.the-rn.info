@@ -117,6 +117,24 @@ export default async (eleventyConfig) => {
   )
 
   eleventyConfig.addFilter(
+    'dateToUTCFull',
+    memoize((date) => {
+      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
+        'LLLL dd, yyyy'
+      )
+    })
+  )
+
+  eleventyConfig.addFilter(
+    'dateToUTCISO',
+    memoize((date) => {
+      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
+        'yyyy-MM-dd'
+      )
+    })
+  )
+
+  eleventyConfig.addFilter(
     'toJson',
     memoize((json) => {
       return JSON.stringify(json, null, 2)

@@ -26,4 +26,11 @@ export default [
     description:
       'Anniversary Edition: Chains, Claps, Congas, Cymbals Hats, Journal Kicks, Loops, Noise, Other, Rides, Rims, Snares, Synths, Tambs, & Toms.',
   },
+  {
+    url: 'https://dop82cmkdnrqr.cloudfront.net/the-phantom-mk-racks.zip',
+    size: '26KB',
+    title: 'the phantom mk racks',
+    description:
+      'Excerpts from the vintage 2013 text file: built with stock fx racks from ableton live suite 8; will probably work with other versions of live; MK1 #shadow_fi; MK2 #shadow_fi ++; MK3 distortion delay; MK4 experimental resonance; MK5 signature reverb delay',
+  },
 ]

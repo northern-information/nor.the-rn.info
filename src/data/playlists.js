@@ -1,5 +1,23 @@
 export default [
   {
+    title: 'My Life In Playlists: 2025',
+    tracks: [
+      'Torukia by Gabriela Robin, Yoko Kanno',
+      'Belurat, Tower Settlement by Shoi Miyazawa',
+      'Vengeance. (feat. Graham Style) by Rainy Miller',
+      'You and Me by skeler.',
+      'Get Together by Madonna',
+      'Air For Life by Above & Beyond',
+      'The Realm by Charlotte de Witte',
+      'CONCRETE JUNGLE by Bad Omens',
+      'Like Love by The Amity Affliction',
+      'Hostage by Fit for An Autopsy',
+      "L'exquisite Douleur by Being As An Ocean",
+      'No Sleep in Medan by Celer',
+      'Ancient Sanctuary - Megabot#33 by Lorien Testard',
+    ],
+  },
+  {
     title: '𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶 𝒞𝒽𝒶𝓅𝓉𝑒𝓇 𝟤 [mixtape]',
     url: 'https://nor.the-rn.info/rm_ation/music/dj-stuxnet/hearts-in-valencia-chapter-2',
     tracks: [
