@@ -10,11 +10,6 @@ export default [
     year: 2025,
   },
   {
-    url: '/images/hemisync.jpg',
-    title: 'Hemisync',
-    year: 2025,
-  },
-  {
     url: '/images/edgelord-vertical.jpg',
     title: 'Edgelord',
     year: 2025,
