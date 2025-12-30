@@ -6,7 +6,7 @@ tags: ["Wildcard"]
 
 ![The Long Now At Work - my own past self's implementation of their principals forces me to think about it in the future](/images/long-now-at-work.png)
 
-As an artist, part of my job is to think about my audience. Who are they? Where do they come from? How are the like or unlike me? The interesting thing - for me specifically - is that my primary audience has always been precisely (unfortuntaely) the same person: myself.
+As an artist, part of my job is to think about my audience. Who are they? Where do they come from? How are the like or unlike me? The interesting thing - for me specifically - is that my primary audience has always been precisely (unfortunately) the same person: myself.
 
 _"All you touch and all you see is all your life will ever be." - Roger Waters_
 
