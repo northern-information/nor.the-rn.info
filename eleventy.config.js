@@ -126,6 +126,15 @@ export default async (eleventyConfig) => {
   )
 
   eleventyConfig.addFilter(
+    'dateToUTCYear',
+    memoize((date) => {
+      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
+        'yyyy'
+      )
+    })
+  )
+
+  eleventyConfig.addFilter(
     'dateToUTCISO',
     memoize((date) => {
       return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
@@ -189,7 +198,7 @@ export default async (eleventyConfig) => {
       `${DIRS.INPUT}/${DIRS.POSTS}/*`
     )
     const grouped = posts.reduce((acc, post) => {
-      const year = post.date.getFullYear()
+      const year = String(post.date.getUTCFullYear())
       if (!acc[year]) {
         acc[year] = []
       }

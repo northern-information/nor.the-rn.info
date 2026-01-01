@@ -1,5 +1,7 @@
 # [https://nor.the-rn.info/rm_ation](https://nor.the-rn.info/rm_ation)
 
+See `./CLAUDE.md` for more.
+
 ## Develop
 
 As of mid-2025 the repo weighs ~350MB. Almost all of this is from `/images`. I've considered a separate CDN solution for these but I consider them "part of the codebase" so it is probably fine as is...

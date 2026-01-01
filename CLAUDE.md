@@ -32,11 +32,12 @@ npm run build    # Production build
 
 Dates in frontmatter (e.g., `date: 2025-12-24`) are parsed as midnight UTC. To display dates correctly regardless of local timezone, use the UTC date filters defined in `eleventy.config.js`:
 
-- `dateToUTC` - Format: `yyyy/MM/dd` (accepts custom Luxon format string)
+- `dateToUTC` - Format: `yyyy/MM/dd` (accepts custom Luxon format string, but memoization may interfere with custom formats)
+- `dateToUTCYear` - Format: `2025` (year only)
 - `dateToUTCFull` - Format: `December 24, 2025`
 - `dateToUTCISO` - Format: `2025-12-24`
 
-Do NOT use Liquid's built-in `date` filter for post dates as it uses local timezone and will show the wrong date for users in different timezones.
+Do NOT use Liquid's built-in `date` filter or JavaScript's `getFullYear()` for post dates as they use local timezone and will show the wrong date for posts near year boundaries. Use `getUTCFullYear()` in JavaScript or the UTC filters in templates.
 
 ### Blog Posts
 

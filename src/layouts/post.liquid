@@ -10,7 +10,7 @@ layout: base.liquid
     {{ content }}
   </div>
   <div class="md:col-span-2 xl:col-span-1">
-    {% assign postDate = page.date | date: '%Y' %}
+    {% assign postDate = page.date | dateToUTCYear %}
     {% for group in collections.postsByYear %}
       {% if postDate == group.year %}
         <ul class="list-none border-y-2 border-black">
