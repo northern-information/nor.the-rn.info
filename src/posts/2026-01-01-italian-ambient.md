@@ -5,7 +5,7 @@ date: 2026-01-01
 tags: ["Wildcard"]
 ---
 
-[Anthony Ferraro](https://rashomon.blue/3-2011-2025/):
+[Anthony Ferraro](https://rashomon.blue/italian-ambient-pt-3/):
 
 > With limited hindsight, these years are difficult to historicize. Certainly they constitute a period of increasing referentiality, with artists climbing another rung up the ladder of abstraction. To the casual ear, the result may sometimes be ungrounded, vertiginous; for the deep listener, overtones from past and present meld into a rich and resonant whole.
 >
