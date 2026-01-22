@@ -37,7 +37,6 @@ layout: base.liquid
           <p>{{ resource.description }}</p>
           <a
             href="{{ resource.url }}"
-            target="_blank"
           >
             Download&nbsp;
             {{- resource.title -}}
@@ -67,7 +66,7 @@ layout: base.liquid
           </div>
           <div class="md:col-span-2">
             <a href="{{ subsidiary.image }}">
-              <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full">
+              <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full" loading="lazy">
             </a>
           </div>
         </div>
@@ -88,8 +87,7 @@ layout: base.liquid
             <div class="flex w-full">
               <a
                 href="{{ playlist.url }}"
-                target="_blank"
-                class="truncate overflow-hidden font-mono  text-sm whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
+                class="truncate overflow-hidden font-mono text-sm whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
               >
                 {{- playlist.url -}}
               </a>

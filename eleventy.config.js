@@ -11,6 +11,7 @@ import memoize from 'memoize'
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
+  EMAIL: 'tyler@etters.co',
   BUILD_TIME: new Date().toISOString(),
   CANONICAL: 'https://nor.the-rn.info/rm_ation/',
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
@@ -107,39 +108,59 @@ export default async (eleventyConfig) => {
     })
   )
 
+  // Helper to parse dates, handling:
+  // - 5-digit Long Now years (e.g., "02006" -> "2006")
+  // - Partial dates with ?? for unknown month/day (e.g., "02006-??-??")
+  const parseDate = (date) => {
+    // Strip leading zero from 5-digit years
+    const str = String(date).replace(/^0(\d{4})/, '$1')
+    const hasUnknown = str.includes('??')
+    if (hasUnknown) {
+      // Extract year from partial date like "2006-??-??"
+      const match = str.match(/^(\d{4})/)
+      return match ? { year: match[1], partial: true } : null
+    }
+    const dt = DateTime.fromJSDate(new Date(str), { zone: 'utc' })
+    return dt.isValid ? { dt, partial: false } : null
+  }
+
   eleventyConfig.addFilter(
     'dateToUTC',
     memoize((date, format = 'yyyy/MM/dd') => {
-      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
-        format
-      )
+      const parsed = parseDate(date)
+      if (!parsed) return ''
+      if (parsed.partial) return parsed.year
+      return parsed.dt.toFormat(format)
     })
   )
 
   eleventyConfig.addFilter(
     'dateToUTCFull',
     memoize((date) => {
-      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
-        'LLLL dd, yyyy'
-      )
+      const parsed = parseDate(date)
+      if (!parsed) return ''
+      if (parsed.partial) return parsed.year
+      return parsed.dt.toFormat('LLLL dd, yyyy')
     })
   )
 
   eleventyConfig.addFilter(
     'dateToUTCYear',
     memoize((date) => {
-      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
-        'yyyy'
-      )
+      const parsed = parseDate(date)
+      if (!parsed) return ''
+      if (parsed.partial) return parsed.year
+      return parsed.dt.toFormat('yyyy')
     })
   )
 
   eleventyConfig.addFilter(
     'dateToUTCISO',
     memoize((date) => {
-      return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat(
-        'yyyy-MM-dd'
-      )
+      const parsed = parseDate(date)
+      if (!parsed) return ''
+      if (parsed.partial) return parsed.year
+      return parsed.dt.toFormat('yyyy-MM-dd')
     })
   )
 

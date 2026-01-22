@@ -6,16 +6,16 @@ eleventyComputed:
 ---
 <div class="my-1 grid grid-cols-1 gap-1 md:grid-cols-2">
   <div>
-    <a href="{{ release.cover_url }}" target="_blank">
+    <a href="{{ release.cover_url }}">
       <img src="{{ release.cover_url }}" alt="{{ release.title }} Cover" class="h-auto w-full">
     </a>
   </div>
   <div class="px-2 pt-3 ">
     <time
       class="font-mono text-sm text-gray-400"
-      datetime="{{ release.released | stripLeadingZero | dateToUTC | date: '%Y-%m-%d' }}"
+      datetime="{{ release.released | dateToUTCISO }}"
     >
-      {{- release.released | date: '%B %d, %Y' -}}
+      {{- release.released | dateToUTCFull -}}
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
     <h2 class="text-lg font-bold mb-4">{{ release.project }}</h2>
@@ -52,12 +52,12 @@ eleventyComputed:
           <div>{{ track.title }}</div>
           {% if track.mp3_url %}
             <div class="font-mono text-sm text-yellow-300 underline hover:text-yellow-500 hover:no-underline">
-              <a href="{{ track.mp3_url }}" target="_blank">MP3</a>
+              <a href="{{ track.mp3_url }}">MP3</a>
             </div>
           {% endif %}
           {% if track.wav_url %}
             <div class="font-mono text-sm text-yellow-300 underline hover:text-yellow-500 hover:no-underline">
-              <a href="{{ track.wav_url }}" target="_blank">WAV</a>
+              <a href="{{ track.wav_url }}">WAV</a>
             </div>
           {% endif %}
           <div class="ellipses-fill">&#8203;</div>
@@ -78,7 +78,6 @@ eleventyComputed:
             <a
               href="{{ stream.url }}"
               class="truncate overflow-hidden whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
-              target="_blank"
             >
               {{- stream.platform -}}
             </a>

@@ -31,7 +31,7 @@ layout: base.liquid
           href="{{ photo.url }}"
           class="h-full w-full cursor-pointer"
         >
-          <img src="{{ photo.url }}" alt="{{ photo.title }}, {{ photo.year }}" class="h-auto w-full group-hover:invert">
+          <img src="{{ photo.url }}" alt="{{ photo.title }}, {{ photo.year }}" class="h-auto w-full group-hover:invert" loading="lazy">
           <div class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
             <p class="group-hover:underline">{{ photo.title }}, {{ photo.year }}</p>
           </div>

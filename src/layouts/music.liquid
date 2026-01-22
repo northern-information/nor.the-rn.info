@@ -19,9 +19,9 @@ layout: base.liquid
         <ul class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
           <li class="flex w-full gap-1 text-sm group-hover:underline">
             <span class="font-mono text-sm text-gray-400 group-hover:text-yellow-300">
-              {{ release.released | stripLeadingZero | dateToUTC | date: '%Y' }}
+              {{ release.released | dateToUTCYear }}
             </span>
-            <span class="transition-300 truncate overflow-hidden whitespace-nowrap text-transparent transition-all group-hover:text-yellow-300">
+            <span class="truncate overflow-hidden whitespace-nowrap text-transparent transition-all duration-300 group-hover:text-yellow-300">
               {{- release.type }}, {{ release.label }}: {{ release.format -}}
             </span>
           </li>
