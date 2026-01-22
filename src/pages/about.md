@@ -13,7 +13,7 @@ layout: about.liquid
 - Don't give up.
 - Help others not give up.
 
-## In 2025 I'm:
+## In 02025 I'm:
 
 - Engineering for [Discogs](https://discogs.com).
 - Causing mayhem at [Circular Ruin DSP](https://circularruindsp.com).

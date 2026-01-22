@@ -25,7 +25,7 @@ export const META = {
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
   DISCOGRAPHY_URL: 'http://npmjs.com/package/@tyleretters/discography',
   TITLE: 'Northern Information',
-  YEAR: new Date().getUTCFullYear(),
+  YEAR: String(new Date().getUTCFullYear()).padStart(5, '0'),
 }
 
 export const DIRS = {
@@ -109,6 +109,13 @@ export default async (eleventyConfig) => {
   )
 
   eleventyConfig.addFilter(
+    'toLongNowYear',
+    memoize((year) => {
+      return String(year).padStart(5, '0')
+    })
+  )
+
+  eleventyConfig.addFilter(
     'formatTrackLength',
     memoize((input) => {
       if (typeof input !== 'string') return input
@@ -148,8 +155,9 @@ export default async (eleventyConfig) => {
     memoize((date) => {
       const parsed = parseDate(date)
       if (!parsed) return ''
-      if (parsed.partial) return parsed.year
-      return parsed.dt.toFormat('LLLL dd, yyyy')
+      if (parsed.partial) return parsed.year.padStart(5, '0')
+      const longNowYear = parsed.dt.toFormat('yyyy').padStart(5, '0')
+      return `${parsed.dt.toFormat('LLLL dd')}, ${longNowYear}`
     })
   )
 
@@ -158,8 +166,8 @@ export default async (eleventyConfig) => {
     memoize((date) => {
       const parsed = parseDate(date)
       if (!parsed) return ''
-      if (parsed.partial) return parsed.year
-      return parsed.dt.toFormat('yyyy')
+      if (parsed.partial) return parsed.year.padStart(5, '0')
+      return parsed.dt.toFormat('yyyy').padStart(5, '0')
     })
   )
 
@@ -228,7 +236,7 @@ export default async (eleventyConfig) => {
       `${DIRS.INPUT}/${DIRS.POSTS}/*`
     )
     const grouped = posts.reduce((acc, post) => {
-      const year = String(post.date.getUTCFullYear())
+      const year = String(post.date.getUTCFullYear()).padStart(5, '0')
       if (!acc[year]) {
         acc[year] = []
       }
