@@ -108,6 +108,15 @@ export default async (eleventyConfig) => {
     })
   )
 
+  eleventyConfig.addFilter(
+    'formatTrackLength',
+    memoize((input) => {
+      if (typeof input !== 'string') return input
+      // Strip leading "00:" for tracks under an hour (e.g., "00:03:13" -> "03:13")
+      return input.replace(/^00:/, '')
+    })
+  )
+
   // Helper to parse dates, handling:
   // - 5-digit Long Now years (e.g., "02006" -> "2006")
   // - Partial dates with ?? for unknown month/day (e.g., "02006-??-??")

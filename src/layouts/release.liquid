@@ -61,7 +61,7 @@ eleventyComputed:
             </div>
           {% endif %}
           <div class="ellipses-fill">&#8203;</div>
-          <div class="font-mono text-sm">{{ track.length }}</div>
+          <div class="font-mono text-sm">{{ track.length | formatTrackLength }}</div>
         </li>
         {% if track.mp3_url %}
           <li class="mt-4 mb-8">
