@@ -18,7 +18,7 @@ eleventyComputed:
       {{- release.released | dateToUTCFull -}}
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-    <h2 class="text-lg font-bold mb-4">{{ release.project }}</h2>
+    <h2 class="text-lg font-bold mb-4"><a href="/project/{{ release.canonical_project_slug }}/" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">{{ release.project }}</a></h2>
     <ul class="mb-4">
       <li class="ellipses">
         <div class="font-semibold">Type</div>

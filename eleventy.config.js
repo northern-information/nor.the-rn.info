@@ -7,6 +7,7 @@ import implicitFigures from 'markdown-it-implicit-figures'
 import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
+import projects from './src/data/projects.js'
 
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
@@ -44,6 +45,17 @@ export const getReleaseSlug = memoize((release) => {
   const project = slugify(release.project, { lower: true, strict: true })
   const title = slugify(release.title, { lower: true, strict: true })
   return `${project}/${title}/`
+})
+
+// Map a release's project_slug to the canonical project slug
+const getCanonicalProjectSlug = memoize((projectSlug) => {
+  for (const project of projects) {
+    const allSlugs = project.slugs || [project.slug]
+    if (allSlugs.includes(projectSlug)) {
+      return project.slug
+    }
+  }
+  return projectSlug
 })
 
 export default async (eleventyConfig) => {
@@ -224,7 +236,60 @@ export default async (eleventyConfig) => {
     return discography.map((release) => ({
       ...release,
       slug: getReleaseSlug(release),
+      canonical_project_slug: getCanonicalProjectSlug(release.project_slug),
     }))
+  })
+
+  // Helper to extract year from Long Now date format (e.g., "02025-11-18" or "02006-??-??")
+  const getYearFromDate = (dateStr) => {
+    const match = String(dateStr).match(/^0?(\d{4})/)
+    return match ? parseInt(match[1], 10) : null
+  }
+
+  eleventyConfig.addCollection('projects', () => {
+    // Validate all discography projects are accounted for
+    const discographyProjectSlugs = [...new Set(discography.map((r) => r.project_slug))]
+    const allProjectSlugs = new Set(
+      projects.flatMap((p) => (p.slugs ? p.slugs : [p.slug]))
+    )
+    const missing = discographyProjectSlugs.filter((slug) => !allProjectSlugs.has(slug))
+    if (missing.length > 0) {
+      console.warn('WARNING: Missing projects in projects.js:', missing.join(', '))
+    }
+
+    return projects.map((project) => {
+      const matchSlugs = project.slugs || [project.slug]
+      const releases = discography
+        .filter((r) => matchSlugs.includes(r.project_slug))
+        .map((r) => ({ ...r, slug: getReleaseSlug(r) }))
+        .sort((a, b) => {
+          const dateA = new Date(String(a.released).replace(/^0/, '').replace(/\?\?/g, '01'))
+          const dateB = new Date(String(b.released).replace(/^0/, '').replace(/\?\?/g, '01'))
+          return dateB - dateA
+        })
+
+      const years = releases
+        .map((r) => getYearFromDate(r.released))
+        .filter((y) => y !== null)
+        .sort((a, b) => a - b)
+
+      const earliestYear = years.length > 0 ? String(years[0]).padStart(5, '0') : null
+      const latestYear = years.length > 0 ? String(years[years.length - 1]).padStart(5, '0') : null
+
+      return {
+        ...project,
+        releases,
+        earliestYear,
+        latestYear,
+        dateRange: earliestYear
+          ? project.active
+            ? `${earliestYear} — Present`
+            : earliestYear === latestYear
+              ? earliestYear
+              : `${earliestYear} — ${latestYear}`
+          : '',
+      }
+    })
   })
 
   eleventyConfig.addCollection('posts', (collectionApi) => {
