@@ -17,5 +17,5 @@ layout: about.liquid
 
 - Engineering for [Discogs](https://discogs.com).
 - Causing mayhem at [Circular Ruin DSP](https://circularruindsp.com).
-- Mixing as [DJ STUXNET](https://soundcloud.com/tyleretters).
-- Releasing music as [STUXNET](https://stuxnet.me), [They Became What They Beheld](https://tbwtb.com), [Northern Information](https://northerninformation.bandcamp.com/), et al.
+- Mixing as [DJ STUXNET](/project/dj-stuxnet).
+- Releasing music as [STUXNET](/project/stuxnet), [They Became What They Beheld](/project/they-became-what-they-beheld), [Northern Information](/project/northern-information), et al.

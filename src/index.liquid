@@ -12,7 +12,7 @@ title: Northern Information
 {% endfor %}
 
 {% if featured %}
-<section class="mb-1">
+<section class="mb-1 border-t-4 border-solid border-black">
   <a href="/project/{{ featured.slug }}/" class="group block">
     <div class="grain relative aspect-square w-full overflow-hidden md:aspect-21/9">
       <img
@@ -21,7 +21,7 @@ title: Northern Information
         class="z-0 h-full w-full object-cover object-top group-hover:invert"
       >
       <div class="burn pointer-events-none absolute inset-0 z-10"></div>
-      <div class="absolute bottom-0 left-0 right-0 z-20 p-4">
+      <div class="absolute bottom-0 left-0 right-0 z-20 p-2">
         <span class="font-mono text-sm text-yellow-300">{{ featured.dateRange }}</span>
         <h2 class="text-2xl font-bold text-white group-hover:underline md:text-4xl">{{ featured.name }}</h2>
       </div>
@@ -44,7 +44,7 @@ title: Northern Information
     {% for project in activeNotFeatured %}
       <li class="group">
         <a href="/project/{{ project.slug }}/" class="block cursor-pointer">
-          <div class="grain-hover relative aspect-square w-full overflow-hidden">
+          <div class="grain relative aspect-square w-full overflow-hidden">
             <img
               src="{{ project.image }}"
               alt="{{ project.name }}"
@@ -52,7 +52,7 @@ title: Northern Information
               loading="lazy"
             >
             <div class="burn pointer-events-none absolute inset-0 z-10"></div>
-            <div class="absolute bottom-0 left-0 right-0 z-20 p-4">
+            <div class="absolute bottom-0 left-0 right-0 z-20 p-2">
               <span class="font-mono text-sm text-yellow-300">{{ project.dateRange }}</span>
               <h3 class="w-full truncate font-bold text-white group-hover:underline">{{ project.name }}</h3>
             </div>
@@ -70,21 +70,3 @@ title: Northern Information
     {% assign inactive = inactive | push: project %}
   {% endunless %}
 {% endfor %}
-
-{% if inactive.size > 0 %}
-<section>
-  <ul class="border-b-4 border-solid border-black">
-    {% for project in inactive %}
-      <li class="group border-b border-gray-300 last:border-b-0">
-        <a
-          href="/project/{{ project.slug }}/"
-          class="flex items-center justify-between p-2 group-hover:bg-red-600 group-hover:text-white group-hover:underline"
-        >
-          <span class="font-semibold">{{ project.name }}</span>
-          <span class="font-mono text-sm text-yellow-300 group-hover:text-white">{{ project.dateRange }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
