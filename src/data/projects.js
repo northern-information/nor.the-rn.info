@@ -10,7 +10,7 @@ export default [
   {
     name: 'DJ STUXNET',
     slug: 'dj-stuxnet',
-    image: '/images/goth-pro-shops.jpg',
+    image: '/images/flare1-web.jpg',
     active: true,
     featured: false,
     bio: 'May we rave atop burning oil derricks... and sink into the sea.',
