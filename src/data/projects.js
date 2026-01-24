@@ -6,6 +6,7 @@ export default [
     active: true,
     featured: true,
     bio: 'The figure runs towards the door of the strip mall. He holds a designer computer and a bottle of Florida water. The door can only be opened from the other side.',
+    website: 'https://stuxnet.me',
   },
   {
     name: 'DJ STUXNET',
@@ -14,6 +15,7 @@ export default [
     active: true,
     featured: false,
     bio: 'May we rave atop burning oil derricks... and sink into the sea.',
+    website: 'https://stuxnet.me',
   },
   {
     name: 'They Became What They Beheld',
@@ -22,6 +24,7 @@ export default [
     active: true,
     featured: false,
     bio: 'Dangerous business, these orchestral loops. Dangerous, dangerous business...',
+    website: 'https://tbwtb.com',
   },
   {
     name: 'Northern Information',
@@ -34,6 +37,7 @@ export default [
     active: true,
     featured: false,
     bio: 'Loss. Memory. Transformation.',
+    website: 'https://northerninformation.bandcamp.com',
   },
   {
     name: 'Sidereal Lobby',
@@ -42,6 +46,7 @@ export default [
     active: false,
     featured: false,
     bio: 'APE SHALL NOT KILL APE.',
+    website: 'https://sidereallobby.bandcamp.com',
   },
   {
     name: 'Connectedness Locus',
@@ -50,6 +55,7 @@ export default [
     active: false,
     featured: false,
     bio: '...the moon sets, the batteries run dry, and a cold, dreamless sleep overcomes...',
+    website: 'https://connectednesslocus.bandcamp.com',
   },
   {
     name: 'Everything Comes in Cycles; Everything Fades in Shades',
@@ -57,7 +63,8 @@ export default [
     image: '/images/ecicefis.webp',
     active: false,
     featured: false,
-    bio: 'Post-Ix',
+    bio: 'Post-Ix.',
+    website: 'https://ecicefis.bandcamp.com',
   },
   {
     name: 'Inocula',
@@ -81,6 +88,7 @@ export default [
     image: '/images/ix.jpg',
     active: false,
     featured: false,
-    bio: 'Pre-Everything Comes in Cycles; Everything Fades in Shades',
+    bio: 'Precursor to Everything Comes in Cycles; Everything Fades in Shades.',
+    website: 'https://ixmusic.bandcamp.com',
   },
 ]
