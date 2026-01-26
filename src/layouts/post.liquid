@@ -20,12 +20,12 @@ layout: base.liquid
               <a
                 href="{{ post.url }}"
                 {% if thisPost %}
-                  class="group block border-y-2 border-solid border-black bg-red-500 p-2 text-white underline"
+                  class="group block border-y-2 border-solid border-black bg-red-500 p-2 text-white visited:text-white underline"
                 {% else %}
                   class="group block border-y-2 border-solid border-black bg-white p-2 text-black hover:bg-red-500 hover:text-white hover:underline"
                 {% endif %}
               >
-                <span class="font-mono text-gray-400 group-hover:text-white text-sm">{{ post.data.date | dateToUTCFull }}</span>
+                <span class="font-mono text-sm {% if thisPost %}text-white{% else %}text-gray-400 group-hover:text-white{% endif %}">{{ post.data.date | dateToUTCFull }}</span>
                 <br>
                 <span class="font-semibold">{{ post.data.title }}</span>
               </a>

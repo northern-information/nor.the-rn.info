@@ -8,6 +8,7 @@
     "css:build": "npm run css -- --minify",
     "css:watch": "npm run css -- --watch",
     "dev": "concurrently 'npx @11ty/eleventy --serve --quiet' 'npm run css:watch'",
+    "generate-release-posts": "node scripts/generate-release-posts.js",
     "pagefind": "npx -y pagefind --site dist",
     "pretty": "prettier --write ."
   },

@@ -3,7 +3,8 @@
     "allow": [
       "Bash(head:*)",
       "Bash(node -e:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npm run generate-release-posts:*)"
     ]
   }
 }
