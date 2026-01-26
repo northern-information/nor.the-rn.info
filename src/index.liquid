@@ -48,9 +48,17 @@ title: Northern Information
             <img
               src="{{ project.image }}"
               alt="{{ project.name }}"
-              class="z-0 h-full w-full object-cover object-top group-hover:invert"
+              class="z-0 h-full w-full object-cover object-top{% unless project.hoverImage %} group-hover:invert{% else %} group-hover:opacity-0{% endunless %}"
               loading="lazy"
             >
+            {% if project.hoverImage %}
+            <img
+              src="{{ project.hoverImage }}"
+              alt="{{ project.name }}"
+              class="absolute inset-0 z-0 h-full w-full object-cover object-top opacity-0 group-hover:opacity-100"
+              loading="lazy"
+            >
+            {% endif %}
             <div class="burn pointer-events-none absolute inset-0 z-10"></div>
             <div class="absolute bottom-0 left-0 right-0 z-20 p-2">
               <span class="font-mono text-sm text-yellow-300">{{ project.dateRange }}</span>

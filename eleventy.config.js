@@ -216,6 +216,20 @@ export default async (eleventyConfig) => {
     })
   )
 
+  eleventyConfig.addFilter('linkify', (content) => {
+    if (typeof content !== 'string') return content
+    // Match URLs (http, https) and convert to anchor tags
+    const urlRegex = /(https?:\/\/[^\s<>"']+)/gi
+    return content.replace(urlRegex, (url) => {
+      // Clean up trailing punctuation that's likely not part of the URL
+      const trailingPunct = /[.,;:!?)]+$/
+      const match = url.match(trailingPunct)
+      const cleanUrl = match ? url.slice(0, -match[0].length) : url
+      const trailing = match ? match[0] : ''
+      return `<a href="${cleanUrl}" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">${cleanUrl}</a>${trailing}`
+    })
+  })
+
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {

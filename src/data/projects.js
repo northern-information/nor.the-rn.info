@@ -20,7 +20,8 @@ export default [
   {
     name: 'They Became What They Beheld',
     slug: 'they-became-what-they-beheld',
-    image: '/images/intertext.jpg',
+    image: '/images/sunrise-hotel-day.jpg',
+    hoverImage: '/images/sunrise-hotel-night.jpg',
     active: true,
     featured: false,
     bio: 'Dangerous business, these orchestral loops. Dangerous, dangerous business...',
