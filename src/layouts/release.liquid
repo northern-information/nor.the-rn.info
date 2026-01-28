@@ -37,7 +37,7 @@ eleventyComputed:
       </li>
     </ul>
     <h3 class="text-lg font-bold">Tracklist</h3>
-    <ol class="mb-4">
+    <ol class="{% if release.trackIds.size > 0 %}mb-2{% else %}mb-4{% endif %}">
       {% for track in release.tracks %}
         <li class="ellipses">
           {% assign index = forloop.index %}
@@ -64,31 +64,27 @@ eleventyComputed:
           <div class="font-mono text-sm">{{ track.length | formatTrackLength }}</div>
         </li>
         {% if track.mp3_url %}
-          <li class="mt-4 mb-8">
+          {% assign hasTrackIds = track.trackIds.size > 0 %}
+          {% assign isLastTrackWithReleaseIds = forloop.last and release.trackIds.size > 0 %}
+          <li class="mt-4 {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}">
             <audio class="w-full" controls src="{{ track.mp3_url }}"></audio>
+          </li>
+        {% endif %}
+        {% if track.trackIds.size > 0 %}
+          <li class="mb-4">
+            <details>
+              <summary class="cursor-pointer text-gray-400 hover:text-gray-200">Track Ids</summary>
+              {% render trackIds, trackIds: track.trackIds %}
+            </details>
           </li>
         {% endif %}
       {% endfor %}
     </ol>
     {% if release.trackIds.size > 0 %}
-      <h3 class="text-lg font-bold">Track Ids</h3>
-      <ol class="mb-4">
-        {% for trackId in release.trackIds %}
-          <li class="ellipses">
-            {% assign index = forloop.index %}
-            {% if index < 10 %}
-              {% assign displayIndex = '0' | append: index %}
-            {% else %}
-              {% assign displayIndex = index %}
-            {% endif %}
-            <div class="font-mono text-sm text-gray-400">
-              {{ displayIndex }}
-            </div>
-            <div class="ellipses-fill">&#8203;</div>
-            <div>{{ trackId }}</div>
-          </li>
-        {% endfor %}
-      </ol>
+      <details class="mb-4">
+        <summary class="cursor-pointer text-gray-400 hover:text-gray-200">Track Ids</summary>
+        {% render trackIds, trackIds: release.trackIds %}
+      </details>
     {% endif %}
     {% if release.streams.size > 0 %}
       <h3 class="text-lg font-bold">Listen</h3>

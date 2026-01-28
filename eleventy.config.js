@@ -42,9 +42,7 @@ export const DIRS = {
 }
 
 export const getReleaseSlug = memoize((release) => {
-  const project = slugify(release.project, { lower: true, strict: true })
-  const title = slugify(release.title, { lower: true, strict: true })
-  return `${project}/${title}/`
+  return `${release.project_slug}/${release.release_slug}/`
 })
 
 // Map a release's project_slug to the canonical project slug
