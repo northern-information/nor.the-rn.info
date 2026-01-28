@@ -70,6 +70,26 @@ eleventyComputed:
         {% endif %}
       {% endfor %}
     </ol>
+    {% if release.trackIds.size > 0 %}
+      <h3 class="text-lg font-bold">Track Ids</h3>
+      <ol class="mb-4">
+        {% for trackId in release.trackIds %}
+          <li class="ellipses">
+            {% assign index = forloop.index %}
+            {% if index < 10 %}
+              {% assign displayIndex = '0' | append: index %}
+            {% else %}
+              {% assign displayIndex = index %}
+            {% endif %}
+            <div class="font-mono text-sm text-gray-400">
+              {{ displayIndex }}
+            </div>
+            <div class="ellipses-fill">&#8203;</div>
+            <div>{{ trackId }}</div>
+          </li>
+        {% endfor %}
+      </ol>
+    {% endif %}
     {% if release.streams.size > 0 %}
       <h3 class="text-lg font-bold">Listen</h3>
       <ol class="mb-4">
