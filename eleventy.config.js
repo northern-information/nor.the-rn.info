@@ -7,6 +7,9 @@ import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 import projects from './src/data/projects.js'
+import { readFileSync } from 'fs'
+
+const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'))
 
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
@@ -23,7 +26,8 @@ export const META = {
   GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
-  DISCOGRAPHY_URL: 'http://npmjs.com/package/@tyleretters/discography',
+  DISCOGRAPHY_URL: 'https://www.npmjs.com/package/@tyleretters/discography',
+  DISCOGRAPHY_VERSION: packageJson.devDependencies['@tyleretters/discography'].replace(/^\^/, ''),
   TITLE: 'Northern Information',
   YEAR: String(new Date().getUTCFullYear()).padStart(5, '0'),
 }

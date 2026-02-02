@@ -23,7 +23,7 @@
         </a>
       </li>
       <li>
-        Atom Feed:
+        RSS Feed:
         <a
           href="{{ site.META.CANONICAL }}{{ site.META.FEED }}"
           class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
@@ -39,6 +39,15 @@
           class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
         >
           {{- site.META.GIT_HASH_SHORT -}}
+        </a>
+      </li>
+      <li>
+        Discography:
+        <a
+          href="{{ site.META.DISCOGRAPHY_URL }}"
+          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+        >
+          v{{- site.META.DISCOGRAPHY_VERSION -}}
         </a>
       </li>
       <li>Build Time: 0{{ site.META.BUILD_TIME }}</li>
