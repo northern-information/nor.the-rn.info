@@ -67,6 +67,34 @@ Located in `eleventy.config.js`:
 - `postsByYear` - Posts grouped by year for archive display
 - `discography` - Music releases from `@tyleretters/discography` package
 
+### RSS Feed
+
+The site uses a **custom RSS 2.0 feed** at `/feed.xml` (generated from `src/feed.liquid`):
+
+**Features:**
+
+- 10 most recent posts (newest first)
+- Per-item image enclosures (extracted from first `<img>` in post content)
+- Feed-level `<image>` tag with site logo
+- HTML content wrapped in CDATA for proper XML parsing
+- UTC/GMT timestamps via custom `dateToRfc822Utc` filter
+- `<lastBuildDate>` tracks feed generation time
+
+**Implementation:**
+
+- `extractFirstImage` filter (eleventy.config.js) - Extracts first image URL from HTML content
+- `dateToRfc822Utc` filter (eleventy.config.js) - Formats dates as RFC 822 with GMT timezone
+- `convertHtmlToAbsoluteUrls` filter (eleventy.config.js) - Converts relative URLs to absolute for RSS feeds
+
+**OG Images:**
+
+The site also uses dynamic Open Graph images via `src/includes/ogImage.liquid`:
+
+- Releases → album covers
+- Projects → project images
+- Posts/Photography/About → first image from content
+- Fallback → site logo
+
 ## Dependencies
 
 - `@11ty/eleventy` - Static site generator

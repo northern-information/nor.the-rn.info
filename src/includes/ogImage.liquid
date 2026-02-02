@@ -1,0 +1,15 @@
+{% assign ogImage = null %}
+
+{% if release %}
+  {% assign ogImage = release.cover_url %}
+{% elsif project %}
+  {% assign ogImage = project.image %}
+{% elsif content %}
+  {% assign ogImage = content | extractFirstImage %}
+{% endif %}
+
+{% if ogImage %}
+  {{- ogImage -}}
+{% else %}
+  {{- site.META.CANONICAL -}}{{- site.META.LOGO -}}
+{% endif %}

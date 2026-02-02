@@ -1,5 +1,4 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
-import { feedPlugin } from '@11ty/eleventy-plugin-rss'
 import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
@@ -228,6 +227,48 @@ export default async (eleventyConfig) => {
     })
   })
 
+  eleventyConfig.addFilter('extractFirstImage', (content) => {
+    if (typeof content !== 'string') return null
+    // Match the first <img> tag and extract its src attribute
+    const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i)
+    return imgMatch ? imgMatch[1] : null
+  })
+
+  // RSS feed filters (for custom feed template in src/feed.liquid)
+  eleventyConfig.addFilter('toAbsoluteUrl', (url, baseUrl) => {
+    // Converts a URL to absolute if it's relative
+    if (!url || typeof url !== 'string') return url
+    if (url.startsWith('http://') || url.startsWith('https://')) return url
+    const base = baseUrl.replace(/\/$/, '')
+    return url.startsWith('/') ? base + url : `${base}/${url}`
+  })
+
+  eleventyConfig.addFilter('dateToRfc822Utc', (dateObj) => {
+    // Formats dates as RFC 822 with GMT timezone for RSS feeds
+    const date = new Date(dateObj)
+    return date.toUTCString()
+  })
+
+  eleventyConfig.addFilter('convertHtmlToAbsoluteUrls', (htmlContent, baseUrl) => {
+    // Converts relative URLs to absolute URLs in HTML content for RSS feeds
+    if (typeof htmlContent !== 'string') return htmlContent
+
+    // Remove trailing slash from baseUrl for consistent URL construction
+    const base = baseUrl.replace(/\/$/, '')
+
+    return htmlContent
+      // Convert relative src attributes (images, scripts, etc.)
+      .replace(/src=["'](?!https?:\/\/)([^"']+)["']/gi, (_, url) => {
+        const absoluteUrl = url.startsWith('/') ? base + url : `${base}/${url}`
+        return `src="${absoluteUrl}"`
+      })
+      // Convert relative href attributes (links)
+      .replace(/href=["'](?!https?:\/\/)(?!mailto:)(?!#)([^"']+)["']/gi, (_, url) => {
+        const absoluteUrl = url.startsWith('/') ? base + url : `${base}/${url}`
+        return `href="${absoluteUrl}"`
+      })
+  })
+
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
@@ -329,18 +370,20 @@ export default async (eleventyConfig) => {
       .sort((a, b) => b.year - a.year)
   })
 
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: 'atom',
-    outputPath: `/${META.FEED}`,
-    collection: { name: 'posts', limit: 10 },
-    metadata: {
-      language: 'en',
-      title: META.TITLE,
-      subtitle: META.DESCRIPTION,
-      base: META.CANONICAL,
-      author: { name: META.AUTHOR, email: META.EMAIL },
-    },
-  })
+  // Feed is now generated via src/feed.njk template
+  // eleventyConfig.addPlugin(feedPlugin, {
+  //   type: 'rss',
+  //   outputPath: `/${META.FEED}`,
+  //   collection: { name: 'posts', limit: 10 },
+  //   metadata: {
+  //     language: 'en',
+  //     title: META.TITLE,
+  //     subtitle: META.DESCRIPTION,
+  //     base: META.CANONICAL,
+  //     author: { name: META.AUTHOR, email: META.EMAIL },
+  //     image: `${META.CANONICAL}${META.LOGO}`,
+  //   },
+  // })
 
   return {
     markdownTemplateEngine: 'liquid',

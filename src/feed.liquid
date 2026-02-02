@@ -1,0 +1,37 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.META.TITLE }}</title>
+    <link>{{ site.META.CANONICAL }}</link>
+    <atom:link href="https://nor.the-rn.info/feed.xml" rel="self" type="application/rss+xml" />
+    <description>{{ site.META.DESCRIPTION }}</description>
+    <language>en</language>
+    <lastBuildDate>{{ site.META.BUILD_TIME | dateToRfc822Utc }}</lastBuildDate>
+    <image>
+      <url>{{ site.META.CANONICAL }}{{ site.META.LOGO }}</url>
+      <title>{{ site.META.TITLE }}</title>
+      <link>{{ site.META.CANONICAL }}</link>
+    </image>
+    {% assign sortedPosts = collections.posts | reverse %}
+    {% for post in sortedPosts limit:10 %}
+    {% assign postPath = post.url | remove_first: "/" %}
+    {% assign absolutePostUrl = site.META.CANONICAL | append: postPath %}
+    {% assign firstImage = post.content | extractFirstImage %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ absolutePostUrl }}</link>
+      <description><![CDATA[{{ post.content | convertHtmlToAbsoluteUrls: absolutePostUrl }}]]></description>
+      <pubDate>{{ post.date | dateToRfc822Utc }}</pubDate>
+      <dc:creator>{{ site.META.AUTHOR }}</dc:creator>
+      <guid>{{ absolutePostUrl }}</guid>
+      {% if firstImage %}
+      <enclosure url="{{ firstImage | toAbsoluteUrl: site.META.CANONICAL }}" type="image/jpeg" length="0"/>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
