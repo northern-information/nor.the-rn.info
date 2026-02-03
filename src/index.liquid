@@ -40,7 +40,7 @@ title: Northern Information
 
 {% if activeNotFeatured.size > 0 %}
 <section class="mb-1">
- <ul class="grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3">
+ <ul class="grid-projects">
     {% for project in activeNotFeatured %}
       <li class="group">
         <a href="/project/{{ project.slug }}/" class="block cursor-pointer">

@@ -13,7 +13,7 @@ layout: base.liquid
       <div class="mt-4">
         <a
           href="{{ project.website }}"
-          class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
+          class="link-primary"
         >
           {{ project.website }}
         </a>
@@ -21,7 +21,7 @@ layout: base.liquid
     {% endif %}
   </div>
 </div>
-<ul class="grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3 xl:grid-cols-5">
+<ul class="grid-releases">
   {% for release in project.releases %}
     {% render releaseCard, release: release %}
   {% endfor %}

@@ -134,6 +134,11 @@
 }
 
 @layer utilities {
+  /* Primary link styling - reusable utility */
+  .link-primary {
+    @apply text-yellow-300 underline hover:text-yellow-500 hover:no-underline;
+  }
+
   .grain,
   .grain-hover {
     position: relative;
@@ -237,6 +242,15 @@
       rgba(0, 0, 0, 0.4) 25%,
       rgba(0, 0, 0, 0) 100%
     );
+  }
+
+  /* Reusable grid patterns for releases and projects */
+  .grid-releases {
+    @apply grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3 xl:grid-cols-5;
+  }
+
+  .grid-projects {
+    @apply grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3;
   }
 
   /* Respect user's motion preferences */

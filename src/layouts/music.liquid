@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 ---
-<ul class="grid list-none grid-cols-1 gap-1 border-t-4 border-b-4 border-solid border-black md:grid-cols-3 xl:grid-cols-5">
+<ul class="grid-releases border-t-4">
   {% for release in collections.discography %}
     {% render releaseCard, release: release, showProject: true %}
   {% endfor %}

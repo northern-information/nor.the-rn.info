@@ -18,7 +18,7 @@ eleventyComputed:
       {{- release.released | dateToUTCFull -}}
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-    <h2 class="text-lg font-bold mb-4"><a href="/project/{{ release.canonical_project_slug }}/" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">{{ release.project }}</a></h2>
+    <h2 class="text-lg font-bold mb-4"><a href="/project/{{ release.canonical_project_slug }}/" class="link-primary">{{ release.project }}</a></h2>
     <ul class="mb-4">
       <li class="ellipses">
         <div class="font-semibold">Type</div>
@@ -51,12 +51,12 @@ eleventyComputed:
           </div>
           <div>{{ track.title }}</div>
           {% if track.mp3_url %}
-            <div class="font-mono text-sm text-yellow-300 underline hover:text-yellow-500 hover:no-underline">
+            <div class="link-primary font-mono text-sm">
               <a href="{{ track.mp3_url }}">MP3</a>
             </div>
           {% endif %}
           {% if track.wav_url %}
-            <div class="font-mono text-sm text-yellow-300 underline hover:text-yellow-500 hover:no-underline">
+            <div class="link-primary font-mono text-sm">
               <a href="{{ track.wav_url }}">WAV</a>
             </div>
           {% endif %}
@@ -93,7 +93,7 @@ eleventyComputed:
           <li class="flex w-full items-start">
             <a
               href="{{ stream.url }}"
-              class="truncate overflow-hidden whitespace-nowrap text-yellow-300 underline hover:text-yellow-500 hover:no-underline"
+              class="link-primary truncate overflow-hidden whitespace-nowrap"
             >
               {{- stream.platform -}}
             </a>
