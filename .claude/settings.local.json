@@ -12,7 +12,9 @@
       "Bash(npm uninstall:*)",
       "Bash(find:*)",
       "Bash(grep:*)",
-      "WebFetch(domain:webaim.org)"
+      "WebFetch(domain:webaim.org)",
+      "Bash(git log:*)",
+      "Bash(git ls-tree:*)"
     ]
   }
 }
