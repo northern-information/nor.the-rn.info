@@ -107,6 +107,30 @@
   ::selection {
     @apply bg-yellow-300 text-black;
   }
+
+  /* Focus styles for keyboard navigation */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  details:focus-visible {
+    @apply outline-2 outline-offset-2 outline-yellow-300;
+  }
+
+  /* Focus styles for grouped interactive elements */
+  .group:focus-within {
+    @apply outline-2 outline-offset-2 outline-yellow-300;
+  }
+
+  /* Skip link for keyboard accessibility */
+  .skip-link {
+    @apply absolute left-0 top-0 z-50 -translate-y-full bg-yellow-300 px-4 py-2 text-black transition-transform;
+  }
+
+  .skip-link:focus {
+    @apply translate-y-0;
+  }
 }
 
 @layer utilities {
@@ -213,5 +237,23 @@
       rgba(0, 0, 0, 0.4) 25%,
       rgba(0, 0, 0, 0) 100%
     );
+  }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .grain::after,
+    .grain-hover:hover::after {
+      animation: none;
+    }
+
+    .spectrum {
+      animation: none;
+      background-position: 0% 50%;
+    }
+
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
   }
 }

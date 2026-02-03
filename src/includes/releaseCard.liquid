@@ -1,0 +1,36 @@
+{%- comment -%}
+Reusable release card component
+Parameters:
+- release: The release object
+- showProject: Boolean to show/hide project name (default: false)
+{%- endcomment -%}
+<li class="group flex flex-col bg-white text-black hover:bg-black hover:text-yellow-300">
+  <a href="/music/{{ release.slug }}" class="block cursor-pointer">
+    <div class="grain-hover aspect-[1/1] w-full overflow-hidden">
+      <img
+        src="{{ release.cover_url }}"
+        alt="{{ release.title }}"
+        class="h-full w-full object-cover group-hover:invert"
+        loading="lazy"
+      >
+    </div>
+    <ul class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
+      <li class="flex w-full gap-1 text-sm group-hover:underline">
+        <span class="font-mono text-sm text-gray-400 group-hover:text-yellow-300">
+          {{ release.released | dateToUTCYear }}
+        </span>
+        <span class="truncate overflow-hidden whitespace-nowrap text-transparent transition-all duration-300 group-hover:text-yellow-300">
+          {{- release.type }}, {{ release.label }}: {{ release.format -}}
+        </span>
+      </li>
+      <li class="w-full truncate group-hover:underline">
+        <strong>{{ release.title }}</strong>
+      </li>
+      {% if showProject %}
+      <li class="w-full truncate group-hover:underline">
+        {{ release.project }}
+      </li>
+      {% endif %}
+    </ul>
+  </a>
+</li>

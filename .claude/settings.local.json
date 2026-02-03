@@ -9,7 +9,9 @@
       "Bash(npm run build:*)",
       "WebFetch(domain:www.11ty.dev)",
       "WebFetch(domain:github.com)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)"
     ]
   }
 }
