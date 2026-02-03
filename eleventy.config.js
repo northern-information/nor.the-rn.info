@@ -19,6 +19,7 @@ export const META = {
   CANONICAL: 'https://nor.the-rn.info/rm_ation/',
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DESCRIPTION: 'LONG LIVE THE LOST ONES',
+  DOMAIN: 'https://nor.the-rn.info',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
   GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),
