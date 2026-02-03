@@ -7,6 +7,7 @@ import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 import projects from './src/data/projects.js'
+import titleCaseExceptions from './src/data/titleCaseExceptions.js'
 import { readFileSync } from 'fs'
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'))
@@ -83,18 +84,8 @@ export default async (eleventyConfig) => {
   eleventyConfig.addFilter(
     'toTitleCase',
     memoize((input) => {
-      // prettier-ignore
-      const ignoreList = [
-        'A report on our findings',
-        'EP1', 'EP2', 'EP3', 'E.P.', 'FCIV',
-        'the geometrie of our lost cause',
-        'blue, the most celestial color', 'senescence',
-        'the phantoms of our lost cause', 'zulu',
-        'and though the soft apocalypse may yet overtake',
-        'the legacy of our lost cause',
-        'dispatches from the prime meridian', 'reverence',
-      ]
-      if (ignoreList.includes(input)) {
+      // Check if input is in the exceptions list (imported from data file)
+      if (titleCaseExceptions.includes(input)) {
         return input
       }
       // prettier-ignore

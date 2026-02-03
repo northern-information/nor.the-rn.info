@@ -95,6 +95,48 @@ The site also uses dynamic Open Graph images via `src/includes/ogImage.liquid`:
 - Posts/Photography/About → first image from content
 - Fallback → site logo
 
+## Accessibility Features
+
+The site follows WCAG 2.1 Level AA standards with several AAA enhancements:
+
+### Keyboard Navigation
+
+- **Focus-visible styles** - Yellow outline (`outline-yellow-300`) on all interactive elements
+- **Skip link** - "Skip to main content" link (hidden until focused) for keyboard/screen reader users
+- Focus styles apply to: links, buttons, inputs, textareas, selects, and details elements
+- Group focus-within for card components
+
+### Color Contrast
+
+- **Gray-400 text on black**: 8.3:1 contrast ratio (passes WCAG AAA)
+- **Red-500 active states**: 4.5:1 contrast ratio (passes WCAG AA)
+- Yellow links (`text-yellow-300`) on black meet AA/AAA standards
+
+### Motion Preferences
+
+- `prefers-reduced-motion` media query disables all animations for users who prefer reduced motion
+- Affects grain animation, spectrum animation, and all transitions
+
+### Semantic HTML
+
+- Proper landmark elements: `<nav>`, `<main>`, `<footer>`
+- `<time>` elements with `datetime` attributes for dates
+- `aria-current="page"` on active navigation items
+- `aria-hidden="true"` on decorative icons
+- All images have descriptive alt text
+
+### Reusable Patterns
+
+- `.link-primary` utility class for consistent link styling
+- `.grid-releases` and `.grid-projects` for consistent layouts
+- Component-based architecture (releaseCard.liquid) ensures consistent markup
+
+### Testing Notes
+
+- Test focus styles by tabbing through the site
+- Test skip link by pressing Tab on page load
+- Test reduced motion in browser/OS settings
+
 ## Dependencies
 
 - `@11ty/eleventy` - Static site generator

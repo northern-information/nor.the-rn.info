@@ -12,7 +12,7 @@ title: Northern Information
 {% endfor %}
 
 {% if featured %}
-<section class="mb-1 border-t-4 border-solid border-black">
+<section class="mb-1 border-t-4 border-solid border-black" aria-label="Featured project">
   <a href="/project/{{ featured.slug }}/" class="group block">
     <div class="grain relative aspect-square w-full overflow-hidden md:aspect-21/9">
       <img
@@ -39,7 +39,7 @@ title: Northern Information
 {% endfor %}
 
 {% if activeNotFeatured.size > 0 %}
-<section class="mb-1">
+<section class="mb-1" aria-label="Active projects">
  <ul class="grid-projects">
     {% for project in activeNotFeatured %}
       <li class="group">
