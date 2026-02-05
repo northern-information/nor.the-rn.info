@@ -1,0 +1,17 @@
+---
+layout: base.liquid
+---
+<div class="font-mono text-xs my-1">
+  {%- assign releases_with_tracks = collections.discography | where_exp: "r", "r.trackIds.size > 0" -%}
+  {%- for release in releases_with_tracks -%}
+    <span class="font-bold text-yellow-300">{{ release.title }}</span>, {% for track in release.trackIds %}{{ track }}{% unless forloop.last %}, {% endunless %}{% endfor %}, {% endfor -%}
+  {%- for release in collections.discography -%}
+    {%- for track in release.tracks -%}
+      {%- if track.trackIds.size > 0 -%}
+        <span class="font-bold text-yellow-300">{{ track.title }}</span>, {% for id in track.trackIds %}{{ id }}{% unless forloop.last %}, {% endunless %}{% endfor %}, {% endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- for playlist in playlists -%}
+    <span class="font-bold text-yellow-300">{{ playlist.title }}</span>, {% for track in playlist.tracks %}{{ track }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+</div>
