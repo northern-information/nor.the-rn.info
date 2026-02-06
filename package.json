@@ -16,7 +16,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@shopify/prettier-plugin-liquid": "^1.9.3",
     "@tailwindcss/cli": "^4.1.11",
-    "@tyleretters/discography": "^2.1.6",
+    "@tyleretters/discography": "^2.1.7",
     "concurrently": "^9.1.2",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
