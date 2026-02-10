@@ -5,7 +5,7 @@ layout: about.liquid
 
 - My name is Tyler Etters.
 - Northern Information is my garden.
-- I enjoy email correspondence: [tyler@etters.co](tyler@etters.co)
+- I enjoy email correspondence: [tyler@etters.co](mailto:tyler@etters.co)
 
 ## My mission is to:
 
