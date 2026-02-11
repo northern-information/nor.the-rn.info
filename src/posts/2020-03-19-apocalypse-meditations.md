@@ -1,5 +1,5 @@
 ---
-title: Apocalypse Meditations
+title: "Apocalypse Meditations"
 date: 2020-03-19
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: I Dream of Artificial Crickets & Weather Data
+title: "I Dream of Artificial Crickets & Weather Data"
 date: 2019-08-04
 ---
 

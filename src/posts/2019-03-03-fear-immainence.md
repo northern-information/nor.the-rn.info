@@ -1,5 +1,5 @@
 ---
-title: Fear Imm(a/i)nence
+title: "Fear Imm(a/i)nence"
 date: 2019-03-03
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: My Second Patch
+title: "My Second Patch"
 date: 2020-06-09
 ---
 

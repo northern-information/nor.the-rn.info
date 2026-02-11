@@ -1,5 +1,5 @@
 ---
-title: Web3 Hopeful Linkdump
+title: "Web3 Hopeful Linkdump"
 date: 2022-01-24
 ---
 

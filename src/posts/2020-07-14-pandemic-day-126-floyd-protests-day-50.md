@@ -1,5 +1,5 @@
 ---
-title: Pandemic Day 126 / Floyd Protests Day 50
+title: "Pandemic Day 126 / Floyd Protests Day 50"
 date: 2020-07-14
 ---
 

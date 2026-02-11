@@ -1,5 +1,5 @@
 ---
-title: Equal Parts LSD and Magnetic Tape
+title: "Equal Parts LSD and Magnetic Tape"
 date: 2021-12-12
 ---
 

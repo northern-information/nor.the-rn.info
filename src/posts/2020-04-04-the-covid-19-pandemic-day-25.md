@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 25
+title: "The COVID-19 Pandemic, Day 25"
 date: 2020-04-04
 ---
 

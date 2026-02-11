@@ -1,5 +1,5 @@
 ---
-title: CCI Update
+title: "CCI Update"
 date: 2022-04-23
 ---
 

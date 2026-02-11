@@ -1,5 +1,5 @@
 ---
-title: Ultra Lounge
+title: "Ultra Lounge"
 date: 2013-07-20
 ---
 

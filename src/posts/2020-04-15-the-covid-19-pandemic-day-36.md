@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 36
+title: "The COVID-19 Pandemic, Day 36"
 date: 2020-04-15
 ---
 

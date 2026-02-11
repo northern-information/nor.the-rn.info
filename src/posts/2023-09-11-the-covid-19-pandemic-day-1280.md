@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 1280
+title: "The COVID-19 Pandemic, Day 1280"
 date: 2023-09-11
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: The Type of World I Let in My Head
+title: "The Type of World I Let in My Head"
 date: 2021-08-05
 ---
 

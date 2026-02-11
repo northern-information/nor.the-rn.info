@@ -1,5 +1,5 @@
 ---
-title: Blue Moon Triptych
+title: "Blue Moon Triptych"
 date: 2024-05-24
 ---
 

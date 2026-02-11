@@ -1,5 +1,5 @@
 ---
-title: Still Mourning Mark Fisher
+title: "Still Mourning Mark Fisher"
 date: 2022-02-13
 ---
 

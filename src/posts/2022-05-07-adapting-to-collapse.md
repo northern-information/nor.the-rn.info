@@ -1,5 +1,5 @@
 ---
-title: This Civilization is Already Dead
+title: "This Civilization is Already Dead"
 date: 2022-05-07
 ---
 

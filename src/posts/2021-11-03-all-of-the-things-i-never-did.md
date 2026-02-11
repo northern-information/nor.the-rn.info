@@ -1,5 +1,5 @@
 ---
-title: All of the Things I Never Did
+title: "All of the Things I Never Did"
 date: 2021-11-03
 ---
 

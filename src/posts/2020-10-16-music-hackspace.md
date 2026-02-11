@@ -1,5 +1,5 @@
 ---
-title: Music Hackspace
+title: "Music Hackspace"
 date: 2020-10-16
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Lacuna / Muse
+title: "Lacuna / Muse"
 date: 2021-06-02
 ---
 

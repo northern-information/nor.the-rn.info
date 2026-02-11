@@ -1,5 +1,5 @@
 ---
-title: Beat Kitchen
+title: "Beat Kitchen"
 date: 2013-02-19
 ---
 

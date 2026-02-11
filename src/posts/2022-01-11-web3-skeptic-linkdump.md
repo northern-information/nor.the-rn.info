@@ -1,5 +1,5 @@
 ---
-title: Web3 Skeptic Linkdump
+title: "Web3 Skeptic Linkdump"
 date: 2022-01-11
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Hobby Lobby Gilgamesh
+title: "Hobby Lobby Gilgamesh"
 date: 2021-08-04
 ---
 

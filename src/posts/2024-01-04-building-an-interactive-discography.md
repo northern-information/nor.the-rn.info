@@ -1,5 +1,5 @@
 ---
-title: Building an Interactive Discography
+title: "Building an Interactive Discography"
 date: 2024-01-04
 ---
 

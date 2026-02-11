@@ -1,5 +1,5 @@
 ---
-title: Ending a Dream
+title: "Ending a Dream"
 date: 2023-11-20
 ---
 

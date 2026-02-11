@@ -1,5 +1,5 @@
 ---
-title: The Capitalist Nihilism of Alien & Squid Game
+title: "The Capitalist Nihilism of Alien & Squid Game"
 date: 2021-10-24
 ---
 

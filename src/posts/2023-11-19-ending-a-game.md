@@ -1,5 +1,5 @@
 ---
-title: Ending a Game
+title: "Ending a Game"
 date: 2023-11-19
 ---
 

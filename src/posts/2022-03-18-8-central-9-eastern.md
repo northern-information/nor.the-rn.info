@@ -1,5 +1,5 @@
 ---
-title: 8 Central / 9 Eastern
+title: "8 Central / 9 Eastern"
 date: 2022-03-18
 ---
 

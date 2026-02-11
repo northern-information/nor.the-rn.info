@@ -1,5 +1,5 @@
 ---
-title: Versions of Echo Vary in Fatally Incompatible Ways
+title: "Versions of Echo Vary in Fatally Incompatible Ways"
 date: 2023-02-27
 ---
 

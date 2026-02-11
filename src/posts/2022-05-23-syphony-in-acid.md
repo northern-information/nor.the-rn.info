@@ -1,5 +1,5 @@
 ---
-title: Symphony in Acid
+title: "Symphony in Acid"
 date: 2022-05-23
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Synergy Beat
+title: "Synergy Beat"
 date: 2018-10-31
 ---
 

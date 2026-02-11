@@ -1,5 +1,5 @@
 ---
-title: Vibe Shift
+title: "Vibe Shift"
 date: 2022-02-18
 ---
 

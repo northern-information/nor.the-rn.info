@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Double-Edged Sword
+title: "Double-Edged Sword"
 date: 2025-07-24
 ---
 

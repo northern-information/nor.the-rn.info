@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Listening Group
+title: "Listening Group"
 date: 2025-11-03
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: The House Cafe
+title: "The House Cafe"
 date: 2009-12-26
 ---
 

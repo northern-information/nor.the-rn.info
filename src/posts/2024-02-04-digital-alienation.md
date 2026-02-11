@@ -1,5 +1,5 @@
 ---
-title: Digital Alienation
+title: "Digital Alienation"
 date: 2024-02-04
 ---
 

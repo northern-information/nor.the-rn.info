@@ -1,5 +1,5 @@
 ---
-title: Earphoria
+title: "Earphoria"
 date: 2015-03-15
 ---
 

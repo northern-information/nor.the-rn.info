@@ -1,5 +1,5 @@
 ---
-title: The Hauntology of Godspeed You! Black Emperor
+title: "The Hauntology of Godspeed You! Black Emperor"
 date: 2021-08-20
 ---
 

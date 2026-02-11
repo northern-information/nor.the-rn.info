@@ -1,5 +1,5 @@
 ---
-title: Preparing for Defeat
+title: "Preparing for Defeat"
 date: 2022-03-14
 ---
 

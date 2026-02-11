@@ -1,5 +1,5 @@
 ---
-title: The Rigged Ouroboros of Discourse
+title: "The Rigged Ouroboros of Discourse"
 date: 2024-03-04
 ---
 

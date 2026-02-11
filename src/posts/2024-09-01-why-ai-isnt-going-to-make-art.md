@@ -1,5 +1,5 @@
 ---
-title: Why A.I. Isn't Going to Make Art
+title: "Why A.I. Isn't Going to Make Art"
 date: 2024-09-01
 ---
 

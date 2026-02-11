@@ -1,5 +1,5 @@
 ---
-title: Exponential Crush
+title: "Exponential Crush"
 date: 2022-06-07
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Before Times Travel Gallery
+title: "Before Times Travel Gallery"
 date: 2022-01-01
 ---
 

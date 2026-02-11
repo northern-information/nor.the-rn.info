@@ -1,5 +1,5 @@
 ---
-title: They Called Him a "Crypto Sigma" After He Burned His NFT
+title: "They Called Him a \"Crypto Sigma\" After He Burned His NFT"
 date: 2022-02-17
 ---
 

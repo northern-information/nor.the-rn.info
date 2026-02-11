@@ -1,5 +1,5 @@
 ---
-title: Brexit and the Wall
+title: "Brexit and the Wall"
 date: 2020-02-01
 ---
 

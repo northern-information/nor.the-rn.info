@@ -1,5 +1,5 @@
 ---
-title: Studio Improvisation Series
+title: "Studio Improvisation Series"
 date: 2022-03-28
 ---
 

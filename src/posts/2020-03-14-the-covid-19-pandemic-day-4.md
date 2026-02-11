@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 4
+title: "The COVID-19 Pandemic, Day 4"
 date: 2020-03-14
 ---
 

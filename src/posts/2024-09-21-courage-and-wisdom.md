@@ -1,5 +1,5 @@
 ---
-title: Courage & Wisdom
+title: "Courage & Wisdom"
 date: 2024-09-21
 ---
 

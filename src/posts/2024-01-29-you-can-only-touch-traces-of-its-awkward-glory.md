@@ -1,5 +1,5 @@
 ---
-title: You Can Only Touch Traces of its Awkward Glory
+title: "You Can Only Touch Traces of its Awkward Glory"
 date: 2024-01-29
 ---
 

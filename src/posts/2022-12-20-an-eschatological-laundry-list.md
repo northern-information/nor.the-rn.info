@@ -1,5 +1,5 @@
 ---
-title: An Eschatological Laundry List
+title: "An Eschatological Laundry List"
 date: 2022-12-20
 ---
 

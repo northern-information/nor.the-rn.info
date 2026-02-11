@@ -1,5 +1,5 @@
 ---
-title: generative
+title: "generative"
 date: 2014-07-28
 ---
 

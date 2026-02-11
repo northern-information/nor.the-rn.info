@@ -1,5 +1,5 @@
 ---
-title: Ukraine DAO
+title: "Ukraine DAO"
 date: 2022-02-27
 ---
 

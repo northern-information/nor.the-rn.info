@@ -1,5 +1,5 @@
 ---
-title: If This Is So, Why Not Die Now?
+title: "If This Is So, Why Not Die Now?"
 date: 2022-11-02
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 5
+title: "The COVID-19 Pandemic, Day 5"
 date: 2020-03-15
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: arcologies
+title: "arcologies"
 date: 2020-08-30
 ---
 

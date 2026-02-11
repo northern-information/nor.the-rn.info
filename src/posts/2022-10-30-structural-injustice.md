@@ -1,5 +1,5 @@
 ---
-title: Structural Injustice
+title: "Structural Injustice"
 date: 2022-10-30
 ---
 

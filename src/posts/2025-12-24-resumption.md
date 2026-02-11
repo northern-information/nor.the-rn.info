@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Resumption
+title: "Resumption"
 date: 2025-12-24
 ---
 

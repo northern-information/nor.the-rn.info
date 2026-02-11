@@ -1,5 +1,5 @@
 ---
-title: The Mission of Art is to Lie
+title: "The Mission of Art is to Lie"
 date: 2024-04-03
 ---
 

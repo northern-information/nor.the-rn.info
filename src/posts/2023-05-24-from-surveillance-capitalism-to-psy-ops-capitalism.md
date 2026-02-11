@@ -1,5 +1,5 @@
 ---
-title: From Surveillance Capitalism to Psy-Ops Capitalism
+title: "From Surveillance Capitalism to Psy-Ops Capitalism"
 date: 2023-05-24
 ---
 

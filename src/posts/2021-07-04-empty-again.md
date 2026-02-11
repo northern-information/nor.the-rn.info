@@ -1,5 +1,5 @@
 ---
-title: Empty, Again
+title: "Empty, Again"
 date: 2021-07-04
 ---
 

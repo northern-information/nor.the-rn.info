@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Our Theory of Collapse
+title: "Our Theory of Collapse"
 date: 2025-08-09
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Ethics of Wayward Otherness
+title: "Ethics of Wayward Otherness"
 date: 2023-05-28
 ---
 

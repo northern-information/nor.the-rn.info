@@ -1,5 +1,5 @@
 ---
-title: The Struggle for Devirtualization
+title: "The Struggle for Devirtualization"
 date: 2022-08-17
 ---
 

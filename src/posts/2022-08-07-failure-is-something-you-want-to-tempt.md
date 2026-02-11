@@ -1,5 +1,5 @@
 ---
-title: Failure is Something You Want to Tempt
+title: "Failure is Something You Want to Tempt"
 date: 2022-08-07
 ---
 

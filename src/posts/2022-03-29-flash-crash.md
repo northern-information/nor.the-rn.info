@@ -1,5 +1,5 @@
 ---
-title: Flash Crash
+title: "Flash Crash"
 date: 2022-03-29
 ---
 

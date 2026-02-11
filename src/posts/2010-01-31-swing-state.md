@@ -1,5 +1,5 @@
 ---
-title: Swing State
+title: "Swing State"
 date: 2010-01-31
 ---
 

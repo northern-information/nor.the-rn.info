@@ -1,5 +1,5 @@
 ---
-title: Nothing and Not
+title: "Nothing and Not"
 date: 2025-03-09
 ---
 

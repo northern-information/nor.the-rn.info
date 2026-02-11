@@ -1,5 +1,5 @@
 ---
-title: Endless Field Saga Tour
+title: "Endless Field Saga Tour"
 date: 2013-08-19
 ---
 

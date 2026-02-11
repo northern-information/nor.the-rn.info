@@ -1,5 +1,5 @@
 ---
-title: The Struggle for Meaning
+title: "The Struggle for Meaning"
 date: 2020-04-19
 ---
 

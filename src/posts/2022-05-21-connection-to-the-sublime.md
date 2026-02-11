@@ -1,5 +1,5 @@
 ---
-title: Connection to the Sublime
+title: "Connection to the Sublime"
 date: 2022-05-21
 ---
 

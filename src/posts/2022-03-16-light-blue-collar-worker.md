@@ -1,5 +1,5 @@
 ---
-title: Light Blue Collar Worker
+title: "Light Blue Collar Worker"
 date: 2022-03-16
 ---
 

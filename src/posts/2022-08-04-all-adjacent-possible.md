@@ -1,5 +1,5 @@
 ---
-title: All Adjacent Possible
+title: "All Adjacent Possible"
 date: 2022-08-04
 ---
 

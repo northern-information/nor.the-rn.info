@@ -1,5 +1,5 @@
 ---
-title: '"waking" by Matt Lowery'
+title: "'\"waking\" by Matt Lowery'"
 date: 2022-03-06
 ---
 

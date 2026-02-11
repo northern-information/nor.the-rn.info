@@ -1,5 +1,5 @@
 ---
-title: Open Source & Privacy Policy
+title: "Open Source & Privacy Policy"
 date: 2022-04-07
 ---
 

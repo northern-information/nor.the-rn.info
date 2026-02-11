@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 97 & (also) The George Floyd Protests, Day 21
+title: "The COVID-19 Pandemic, Day 97 & (also) The George Floyd Protests, Day 21"
 date: 2020-06-15
 ---
 

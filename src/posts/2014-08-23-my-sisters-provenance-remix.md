@@ -1,5 +1,5 @@
 ---
-title: my sisters (provenance remix)
+title: "my sisters (provenance remix)"
 date: 2014-08-23
 ---
 

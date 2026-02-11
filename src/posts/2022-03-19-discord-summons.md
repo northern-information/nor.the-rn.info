@@ -1,5 +1,5 @@
 ---
-title: Discord Summons
+title: "Discord Summons"
 date: 2022-03-19
 ---
 

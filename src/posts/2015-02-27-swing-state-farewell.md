@@ -1,5 +1,5 @@
 ---
-title: Swing State Farewell
+title: "Swing State Farewell"
 date: 2015-02-27
 ---
 

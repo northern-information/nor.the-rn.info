@@ -1,5 +1,5 @@
 ---
-title: The Burlington
+title: "The Burlington"
 date: 2015-07-15
 ---
 

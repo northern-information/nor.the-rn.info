@@ -1,5 +1,5 @@
 ---
-title: The Resistor
+title: "The Resistor"
 date: 2017-06-28
 ---
 

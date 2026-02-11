@@ -1,5 +1,5 @@
 ---
-title: Weathering Software Winter
+title: "Weathering Software Winter"
 date: 2022-11-26
 ---
 

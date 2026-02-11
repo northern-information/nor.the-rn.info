@@ -1,5 +1,5 @@
 ---
-title: The Story So Far
+title: "The Story So Far"
 date: 2011-07-20
 ---
 

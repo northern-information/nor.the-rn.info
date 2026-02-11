@@ -1,5 +1,5 @@
 ---
-title: We Are Drawn to the Monomyth
+title: "We Are Drawn to the Monomyth"
 date: 2019-11-10
 ---
 

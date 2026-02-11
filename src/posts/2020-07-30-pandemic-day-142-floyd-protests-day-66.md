@@ -1,5 +1,5 @@
 ---
-title: Pandemic Day 142 / Floyd Protests Day 66
+title: "Pandemic Day 142 / Floyd Protests Day 66"
 date: 2020-07-30
 ---
 

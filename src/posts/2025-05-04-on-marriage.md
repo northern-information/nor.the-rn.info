@@ -1,6 +1,5 @@
 ---
-layout: post
-title: On Marriage
+title: "On Marriage"
 date: 2025-05-04
 ---
 

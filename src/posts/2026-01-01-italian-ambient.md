@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Italian Ambient
+title: "Italian Ambient"
 date: 2026-01-01
 ---
 

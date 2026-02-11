@@ -1,5 +1,5 @@
 ---
-title: The Hideout
+title: "The Hideout"
 date: 2014-08-12
 ---
 

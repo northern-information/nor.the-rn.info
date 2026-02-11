@@ -1,5 +1,5 @@
 ---
-title: The Blinking Past
+title: "The Blinking Past"
 date: 2022-06-15
 ---
 

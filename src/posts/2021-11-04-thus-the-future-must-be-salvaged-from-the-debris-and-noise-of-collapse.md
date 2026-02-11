@@ -1,5 +1,5 @@
 ---
-title: Thus the Future Must Be Salvaged From the Debris and Noise of Collapse
+title: "Thus the Future Must Be Salvaged From the Debris and Noise of Collapse"
 date: 2021-11-03
 ---
 

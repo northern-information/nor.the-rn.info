@@ -1,5 +1,5 @@
 ---
-title: Hungry Brain
+title: "Hungry Brain"
 date: 2014-07-26
 ---
 

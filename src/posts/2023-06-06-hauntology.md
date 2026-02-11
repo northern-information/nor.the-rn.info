@@ -1,5 +1,5 @@
 ---
-title: Hauntology
+title: "Hauntology"
 date: 2023-06-06
 ---
 

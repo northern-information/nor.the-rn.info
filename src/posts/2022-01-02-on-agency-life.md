@@ -1,5 +1,5 @@
 ---
-title: On Agency Life
+title: "On Agency Life"
 date: 2022-01-02
 ---
 

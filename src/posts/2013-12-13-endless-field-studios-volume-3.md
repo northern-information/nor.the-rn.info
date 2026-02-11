@@ -1,5 +1,5 @@
 ---
-title: a certain darkness, first snow
+title: "a certain darkness, first snow"
 date: 2013-12-13
 ---
 

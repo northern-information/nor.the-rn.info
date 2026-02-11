@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 53
+title: "The COVID-19 Pandemic, Day 53"
 date: 2020-05-02
 ---
 

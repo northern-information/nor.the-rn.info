@@ -1,5 +1,5 @@
 ---
-title: Haunting Little Images
+title: "Haunting Little Images"
 date: 2020-07-17
 ---
 

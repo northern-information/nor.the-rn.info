@@ -1,5 +1,5 @@
 ---
-title: Double Door
+title: "Double Door"
 date: 2011-03-15
 ---
 

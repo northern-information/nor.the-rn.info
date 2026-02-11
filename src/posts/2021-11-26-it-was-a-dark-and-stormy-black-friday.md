@@ -1,5 +1,5 @@
 ---
-title: It Was a Dark and Stormy Black Friday
+title: "It Was a Dark and Stormy Black Friday"
 date: 2021-11-26
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Jester's Privilege
+title: "Jester's Privilege"
 date: 2022-02-19
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Parasocial
+title: "Parasocial"
 date: 2022-03-07
 ---
 

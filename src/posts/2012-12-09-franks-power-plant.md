@@ -1,5 +1,5 @@
 ---
-title: Franks Power Plant
+title: "Franks Power Plant"
 date: 2012-12-09
 ---
 

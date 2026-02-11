@@ -1,5 +1,5 @@
 ---
-title: Social Media Fast / OPSEC / Loose Lips Sink Ships
+title: "Social Media Fast / OPSEC / Loose Lips Sink Ships"
 date: 2022-04-27
 ---
 

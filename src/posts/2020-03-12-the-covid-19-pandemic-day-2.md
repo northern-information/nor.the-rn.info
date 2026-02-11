@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 2
+title: "The COVID-19 Pandemic, Day 2"
 date: 2020-03-12
 ---
 

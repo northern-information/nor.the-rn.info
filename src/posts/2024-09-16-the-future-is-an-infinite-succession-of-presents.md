@@ -1,5 +1,5 @@
 ---
-title: The Future is an Infinite Succession of Presents
+title: "The Future is an Infinite Succession of Presents"
 date: 2024-09-16
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Rebuilding "norns community"
+title: "Rebuilding \"norns community\""
 date: 2023-05-27
 ---
 

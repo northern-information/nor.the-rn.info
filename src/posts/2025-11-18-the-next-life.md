@@ -1,6 +1,5 @@
 ---
-layout: post
-title: The Next Life
+title: "The Next Life"
 date: 2025-11-18
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Ritual Scarification of the Blog
+title: "Ritual Scarification of the Blog"
 date: 2021-10-26
 ---
 

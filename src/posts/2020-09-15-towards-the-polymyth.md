@@ -1,5 +1,5 @@
 ---
-title: Towards the Polymyth
+title: "Towards the Polymyth"
 date: 2020-09-15
 ---
 

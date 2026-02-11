@@ -1,5 +1,5 @@
 ---
-title: Why I'm Streaming the Making of My Next Album
+title: "Why I'm Streaming the Making of My Next Album"
 date: 2021-03-06
 ---
 

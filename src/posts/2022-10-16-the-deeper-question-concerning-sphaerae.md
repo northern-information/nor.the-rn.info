@@ -1,5 +1,5 @@
 ---
-title: The Deeper Question Concerning Sphaerae
+title: "The Deeper Question Concerning Sphaerae"
 date: 2022-10-16
 ---
 

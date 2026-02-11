@@ -1,5 +1,5 @@
 ---
-title: Lines Community Stream
+title: "Lines Community Stream"
 date: 2020-06-09
 ---
 

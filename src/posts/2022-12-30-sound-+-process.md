@@ -1,5 +1,5 @@
 ---
-title: Sound + Process
+title: "Sound + Process"
 date: 2022-12-30
 ---
 

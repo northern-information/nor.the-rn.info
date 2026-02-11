@@ -1,5 +1,5 @@
 ---
-title: The Hegemony of the DAW
+title: "The Hegemony of the DAW"
 date: 2021-05-05
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Heat Death of the Internet
+title: "Heat Death of the Internet"
 date: 2024-05-21
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: The COVID-19 Pandemic, Day 1080
+title: "The COVID-19 Pandemic, Day 1080"
 date: 2023-02-23
 ---
 

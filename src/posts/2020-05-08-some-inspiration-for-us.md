@@ -1,5 +1,5 @@
 ---
-title: Some Inspiration for Us
+title: "Some Inspiration for Us"
 date: 2020-05-08
 ---
 

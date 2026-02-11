@@ -1,5 +1,5 @@
 ---
-title: Apocalypse Mudra
+title: "Apocalypse Mudra"
 date: 2022-03-08
 ---
 

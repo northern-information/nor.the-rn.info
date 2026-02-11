@@ -1,5 +1,5 @@
 ---
-title: Failed Blog Posts
+title: "Failed Blog Posts"
 date: 2022-12-18
 ---
 

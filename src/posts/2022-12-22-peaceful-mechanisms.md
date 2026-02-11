@@ -1,5 +1,5 @@
 ---
-title: Peaceful Mechanisms
+title: "Peaceful Mechanisms"
 date: 2022-12-22
 ---
 

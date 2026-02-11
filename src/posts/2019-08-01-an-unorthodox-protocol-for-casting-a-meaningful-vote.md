@@ -1,5 +1,5 @@
 ---
-title: An Unorthodox Protocol for Casting a Meaningful Vote
+title: "An Unorthodox Protocol for Casting a Meaningful Vote"
 date: 2019-08-01
 ---
 

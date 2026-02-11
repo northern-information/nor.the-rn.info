@@ -1,5 +1,5 @@
 ---
-title: The Greatest 5 Minutes in Music Education
+title: "The Greatest 5 Minutes in Music Education"
 date: 2020-05-15
 ---
 

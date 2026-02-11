@@ -1,5 +1,5 @@
 ---
-title: Taoist Sages in 2022
+title: "Taoist Sages in 2022"
 date: 2022-02-13
 ---
 

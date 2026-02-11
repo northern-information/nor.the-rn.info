@@ -1,5 +1,5 @@
 ---
-title: The EOY Info Sessions
+title: "The EOY Info Sessions"
 date: 2020-12-29
 ---
 

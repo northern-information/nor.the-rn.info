@@ -1,5 +1,5 @@
 ---
-title: Love As A Weapon
+title: "Love As A Weapon"
 date: 2025-01-07
 ---
 

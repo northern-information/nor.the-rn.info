@@ -1,5 +1,5 @@
 ---
-title: The Software Engineering Code of Ethics and Professional Practice, 1997
+title: "The Software Engineering Code of Ethics and Professional Practice, 1997"
 date: 2023-02-06
 ---
 

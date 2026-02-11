@@ -1,5 +1,5 @@
 ---
-title: A Time of Depth
+title: "A Time of Depth"
 date: 2020-04-13
 ---
 

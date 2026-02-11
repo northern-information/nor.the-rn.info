@@ -1,5 +1,5 @@
 ---
-title: Man from Utopia
+title: "Man from Utopia"
 date: 2022-03-21
 ---
 

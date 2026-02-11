@@ -1,5 +1,5 @@
 ---
-title: Ute Prayer
+title: "Ute Prayer"
 date: 2022-03-26
 ---
 

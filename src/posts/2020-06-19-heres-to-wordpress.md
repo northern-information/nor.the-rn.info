@@ -1,5 +1,5 @@
 ---
-title: Here's to WordPress
+title: "Here's to WordPress"
 date: 2020-06-19
 ---
 

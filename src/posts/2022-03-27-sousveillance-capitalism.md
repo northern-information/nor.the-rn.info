@@ -1,5 +1,5 @@
 ---
-title: Sousveillance Capitalism
+title: "Sousveillance Capitalism"
 date: 2022-03-27
 ---
 

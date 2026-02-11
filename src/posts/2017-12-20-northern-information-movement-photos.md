@@ -1,5 +1,5 @@
 ---
-title: Northern Information Movement Photos
+title: "Northern Information Movement Photos"
 date: 2017-12-20
 ---
 

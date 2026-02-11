@@ -1,5 +1,5 @@
 ---
-title: They Became What They Beheld
+title: "They Became What They Beheld"
 date: 2019-03-03
 ---
 

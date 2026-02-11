@@ -1,6 +1,5 @@
 ---
-layout: post
-title: 301 Permanently Moved
+title: "301 Permanently Moved"
 date: 2025-07-26
 ---
 

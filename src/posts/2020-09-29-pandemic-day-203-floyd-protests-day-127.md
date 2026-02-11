@@ -1,5 +1,5 @@
 ---
-title: Pandemic Day 203 / Floyd Protests Day 127
+title: "Pandemic Day 203 / Floyd Protests Day 127"
 date: 2020-09-29
 ---
 

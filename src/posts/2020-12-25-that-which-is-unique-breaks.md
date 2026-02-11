@@ -1,5 +1,5 @@
 ---
-title: That Which is Unique, Breaks
+title: "That Which is Unique, Breaks"
 date: 2020-12-25
 ---
 

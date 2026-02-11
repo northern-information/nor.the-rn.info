@@ -1,5 +1,5 @@
 ---
-title: Plain Text Sports
+title: "Plain Text Sports"
 date: 2022-03-22
 ---
 

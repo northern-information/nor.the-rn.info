@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Deliberate Punk Ethos
+title: "Deliberate Punk Ethos"
 date: 2025-04-07
 ---
 

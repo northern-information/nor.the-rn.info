@@ -1,5 +1,5 @@
 ---
-title: The Trilogy of Trilogies
+title: "The Trilogy of Trilogies"
 date: 2017-12-23
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Ending a Company
+title: "Ending a Company"
 date: 2023-11-18
 ---
 

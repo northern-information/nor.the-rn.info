@@ -1,5 +1,5 @@
 ---
-title: The Software Blues
+title: "The Software Blues"
 date: 2020-09-11
 ---
 

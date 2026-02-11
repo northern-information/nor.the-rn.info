@@ -1,5 +1,5 @@
 ---
-title: Lines Community Stream Video
+title: "Lines Community Stream Video"
 date: 2020-06-21
 ---
 

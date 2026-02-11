@@ -1,5 +1,5 @@
 ---
-title: Mayne Stage
+title: "Mayne Stage"
 date: 2014-11-02
 ---
 

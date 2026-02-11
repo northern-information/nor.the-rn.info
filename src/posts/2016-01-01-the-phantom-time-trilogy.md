@@ -1,5 +1,5 @@
 ---
-title: the phantom time trilogy
+title: "the phantom time trilogy"
 date: 2016-01-01
 ---
 

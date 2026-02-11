@@ -1,6 +1,5 @@
 ---
-layout: post
-title: A Shining Place Built Upon The Sand
+title: "A Shining Place Built Upon The Sand"
 date: 2025-04-24
 ---
 
