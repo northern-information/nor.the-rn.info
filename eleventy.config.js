@@ -3,7 +3,6 @@ import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
 import implicitFigures from 'markdown-it-implicit-figures'
-import slugify from 'slugify'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 import projects from './src/data/projects.js'
@@ -41,7 +40,7 @@ export const DIRS = {
   IMAGES: 'images',
   INCLUDES: 'includes',
   INPUT: 'src',
-  FONTS: 'fonts',
+
   LAYOUTS: 'layouts',
   OUTPUT: 'dist',
   PAGES: 'pages',
@@ -71,11 +70,6 @@ export default async (eleventyConfig) => {
     })
   )
 
-  eleventyConfig.addShortcode(
-    'getReleaseSlug',
-    memoize((release) => getReleaseSlug(release))
-  )
-
   eleventyConfig.addShortcode('getTimestamp', () => {
     return Math.floor(new Date().getTime() / 1000)
   })
@@ -102,20 +96,6 @@ export default async (eleventyConfig) => {
           return word.toLowerCase()
         })
         .join(' ')
-    })
-  )
-
-  eleventyConfig.addFilter(
-    'stripLeadingZero',
-    memoize((input) => {
-      return typeof input === 'string' ? input.replace(/^0/, '') : input
-    })
-  )
-
-  eleventyConfig.addFilter(
-    'toLongNowYear',
-    memoize((year) => {
-      return String(year).padStart(LONG_NOW_YEAR_DIGITS, '0')
     })
   )
 
@@ -189,13 +169,6 @@ export default async (eleventyConfig) => {
       if (!parsed) return ''
       if (parsed.partial) return parsed.year
       return parsed.dt.toFormat('yyyy-MM-dd')
-    })
-  )
-
-  eleventyConfig.addFilter(
-    'toJson',
-    memoize((json) => {
-      return JSON.stringify(json, null, 2)
     })
   )
 
@@ -284,7 +257,6 @@ export default async (eleventyConfig) => {
     extensions: 'html,md,css',
   })
 
-  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.FONTS}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)

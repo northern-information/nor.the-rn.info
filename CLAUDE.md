@@ -28,7 +28,7 @@ Do NOT use Liquid's built-in `date` filter or JavaScript's `getFullYear()` for p
 
 ### Long Now Year Formatting
 
-Years are displayed in 5-digit Long Now format (e.g., `02025`). The `LONG_NOW_YEAR_DIGITS` constant in `eleventy.config.js` controls padding. Use the `toLongNowYear` filter in templates or `padStart(LONG_NOW_YEAR_DIGITS, '0')` in JavaScript.
+Years are displayed in 5-digit Long Now format (e.g., `02025`). The `LONG_NOW_YEAR_DIGITS` constant in `eleventy.config.js` controls padding. Use `padStart(LONG_NOW_YEAR_DIGITS, '0')` in JavaScript.
 
 ### Blog Posts
 
@@ -58,15 +58,12 @@ Meta tags are rendered via `src/includes/metaTags.liquid`:
 Located in `eleventy.config.js`:
 
 - `toTitleCase` - Title case with exceptions for certain album/song titles
-- `stripLeadingZero` - Removes leading zeros from strings
-- `toLongNowYear` - Pads a year to 5 digits (e.g., 2025 -> "02025")
 - `padIndex` - Zero-pads a number to 2 digits (e.g., 1 -> "01")
 - `formatTrackLength` - Strips leading "00:" from track durations
 - `extractExcerpt` - Strips HTML and truncates to ~160 chars for meta descriptions
 - `extractFirstImage` - Gets first `<img>` src from HTML content
 - `markdown` - Renders markdown content
 - `linkify` - Converts URLs in text to anchor tags
-- `toJson` - JSON stringify with formatting
 - `toAbsoluteUrl` - Converts relative URLs to absolute
 - `dateToRfc822Utc` - RFC 822 date format for RSS feeds
 - `convertHtmlToAbsoluteUrls` - Converts relative URLs in HTML to absolute for RSS

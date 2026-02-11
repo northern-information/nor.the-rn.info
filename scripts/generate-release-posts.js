@@ -40,13 +40,11 @@ function parseReleaseDate(dateStr) {
 }
 
 /**
- * Generate a slug from release title
+ * Normalize Unicode fancy characters (e.g., Mathematical Script/Fraktur) to ASCII.
+ * Uses NFKD decomposition to convert styled Unicode to base characters.
  */
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+function normalizeUnicode(text) {
+  return text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
 }
 
 /**
@@ -66,7 +64,8 @@ function generatePostContent(release) {
 
   // Frontmatter
   lines.push('---');
-  lines.push(`title: "${release.title.replace(/"/g, '\\"')}"`);
+  const title = normalizeUnicode(release.title);
+  lines.push(`title: "${title.replace(/"/g, '\\"')}"`);
   lines.push(`date: ${parseReleaseDate(release.released)}`);
   lines.push(`tags: ["Music", "${release.project}"]`);
   lines.push('---');
@@ -74,7 +73,7 @@ function generatePostContent(release) {
 
   // Artwork
   if (release.cover_url) {
-    lines.push(`![${release.title}](${release.cover_url})`);
+    lines.push(`![${title}](${release.cover_url})`);
     lines.push('');
   }
 
@@ -98,7 +97,7 @@ function generatePostContent(release) {
     for (const track of release.tracks) {
       const duration = formatDuration(track.length);
       const durationStr = duration ? ` (${duration})` : '';
-      lines.push(`${track.number}. ${track.title}${durationStr}`);
+      lines.push(`${track.number}. ${normalizeUnicode(track.title)}${durationStr}`);
     }
     lines.push('');
   }
@@ -124,11 +123,12 @@ function generatePostContent(release) {
 
 /**
  * Generate filename for a release post
+ * Uses release_slug from discography as the canonical slug to handle
+ * titles with Unicode fancy characters, curly quotes, periods, etc.
  */
 function generateFilename(release) {
   const date = parseReleaseDate(release.released);
-  const slug = slugify(release.title);
-  return `${date}-${slug}.md`;
+  return `${date}-${release.release_slug}.md`;
 }
 
 /**
@@ -181,7 +181,7 @@ function main() {
   if (specificRelease) {
     // Find and generate specific release
     const release = discography.find(
-      (r) => r.title.toLowerCase() === specificRelease.toLowerCase()
+      (r) => normalizeUnicode(r.title).toLowerCase() === specificRelease.toLowerCase()
     );
 
     if (!release) {
