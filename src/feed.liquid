@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
   <channel>
     <title>{{ site.META.TITLE }}</title>
     <link>{{ site.META.CANONICAL }}</link>
-    <atom:link href="https://nor.the-rn.info/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.META.DOMAIN }}/{{ site.META.FEED }}" rel="self" type="application/rss+xml" />
     <description>{{ site.META.DESCRIPTION }}</description>
     <language>en</language>
     <lastBuildDate>{{ site.META.BUILD_TIME | dateToRfc822Utc }}</lastBuildDate>

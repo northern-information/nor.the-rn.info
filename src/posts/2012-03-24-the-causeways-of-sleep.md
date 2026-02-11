@@ -1,4 +1,4 @@
-﻿---
+---
 title: The Causeways of Sleep
 date: 2012-03-24
 ---

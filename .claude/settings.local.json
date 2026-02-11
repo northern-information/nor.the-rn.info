@@ -14,7 +14,13 @@
       "Bash(grep:*)",
       "WebFetch(domain:webaim.org)",
       "Bash(git log:*)",
-      "Bash(git ls-tree:*)"
+      "Bash(git ls-tree:*)",
+      "Bash(xargs -I {} bash -c 'echo $\\(\\({}  - 13\\)\\)')",
+      "Bash(file:*)",
+      "Bash(wc:*)",
+      "Bash(xxd:*)",
+      "Bash(LC_CTYPE=C sed:*)",
+      "Bash(done)"
     ]
   }
 }

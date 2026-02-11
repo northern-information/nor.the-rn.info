@@ -17,7 +17,7 @@
     <ul class="bg-white px-2 py-2 text-black lg:col-span-2">
       <li>
         You Are Here:
-        {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url | append: path.url %}
+        {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url %}
         <a href="{{ path }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">
           {{ path }}
         </a>

@@ -23,8 +23,8 @@ export const META = {
   DOMAIN: 'https://nor.the-rn.info',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
-  GIT_HASH_SHORT: execSync('git rev-parse --short HEAD').toString().trim(),
-  GIT_HASH: execSync('git rev-parse HEAD').toString().trim(),
+  GIT_HASH_SHORT: (() => { try { return execSync('git rev-parse --short HEAD').toString().trim() } catch { return 'unknown' } })(),
+  GIT_HASH: (() => { try { return execSync('git rev-parse HEAD').toString().trim() } catch { return 'unknown' } })(),
   GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
@@ -74,12 +74,9 @@ export default async (eleventyConfig) => {
     memoize((release) => getReleaseSlug(release))
   )
 
-  eleventyConfig.addShortcode(
-    'getTimestamp',
-    memoize(() => {
-      return Math.floor(new Date().getTime() / 1000)
-    })
-  )
+  eleventyConfig.addShortcode('getTimestamp', () => {
+    return Math.floor(new Date().getTime() / 1000)
+  })
 
   eleventyConfig.addFilter(
     'toTitleCase',
