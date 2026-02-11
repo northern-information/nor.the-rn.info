@@ -12,6 +12,8 @@ import { readFileSync } from 'fs'
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'))
 
+const LONG_NOW_YEAR_DIGITS = 5
+
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
@@ -31,7 +33,7 @@ export const META = {
   DISCOGRAPHY_URL: 'https://www.npmjs.com/package/@tyleretters/discography',
   DISCOGRAPHY_VERSION: packageJson.devDependencies['@tyleretters/discography'].replace(/^\^/, ''),
   TITLE: 'Northern Information',
-  YEAR: String(new Date().getUTCFullYear()).padStart(5, '0'),
+  YEAR: String(new Date().getUTCFullYear()).padStart(LONG_NOW_YEAR_DIGITS, '0'),
 }
 
 export const DIRS = {
@@ -113,7 +115,14 @@ export default async (eleventyConfig) => {
   eleventyConfig.addFilter(
     'toLongNowYear',
     memoize((year) => {
-      return String(year).padStart(5, '0')
+      return String(year).padStart(LONG_NOW_YEAR_DIGITS, '0')
+    })
+  )
+
+  eleventyConfig.addFilter(
+    'padIndex',
+    memoize((index) => {
+      return String(index).padStart(2, '0')
     })
   )
 
@@ -157,8 +166,8 @@ export default async (eleventyConfig) => {
     memoize((date) => {
       const parsed = parseDate(date)
       if (!parsed) return ''
-      if (parsed.partial) return parsed.year.padStart(5, '0')
-      const longNowYear = parsed.dt.toFormat('yyyy').padStart(5, '0')
+      if (parsed.partial) return parsed.year.padStart(LONG_NOW_YEAR_DIGITS, '0')
+      const longNowYear = parsed.dt.toFormat('yyyy').padStart(LONG_NOW_YEAR_DIGITS, '0')
       return `${parsed.dt.toFormat('LLLL dd')}, ${longNowYear}`
     })
   )
@@ -168,8 +177,8 @@ export default async (eleventyConfig) => {
     memoize((date) => {
       const parsed = parseDate(date)
       if (!parsed) return ''
-      if (parsed.partial) return parsed.year.padStart(5, '0')
-      return parsed.dt.toFormat('yyyy').padStart(5, '0')
+      if (parsed.partial) return parsed.year.padStart(LONG_NOW_YEAR_DIGITS, '0')
+      return parsed.dt.toFormat('yyyy').padStart(LONG_NOW_YEAR_DIGITS, '0')
     })
   )
 
@@ -218,6 +227,13 @@ export default async (eleventyConfig) => {
       const trailing = match ? match[0] : ''
       return `<a href="${cleanUrl}" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">${cleanUrl}</a>${trailing}`
     })
+  })
+
+  eleventyConfig.addFilter('extractExcerpt', (content, maxLength = 160) => {
+    if (typeof content !== 'string') return ''
+    const text = content.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+    if (text.length <= maxLength) return text
+    return text.slice(0, maxLength).replace(/\s\S*$/, '') + '...'
   })
 
   eleventyConfig.addFilter('extractFirstImage', (content) => {
@@ -319,8 +335,8 @@ export default async (eleventyConfig) => {
         .filter((y) => y !== null)
         .sort((a, b) => a - b)
 
-      const earliestYear = years.length > 0 ? String(years[0]).padStart(5, '0') : null
-      const latestYear = years.length > 0 ? String(years[years.length - 1]).padStart(5, '0') : null
+      const earliestYear = years.length > 0 ? String(years[0]).padStart(LONG_NOW_YEAR_DIGITS, '0') : null
+      const latestYear = years.length > 0 ? String(years[years.length - 1]).padStart(LONG_NOW_YEAR_DIGITS, '0') : null
 
       return {
         ...project,
@@ -347,7 +363,7 @@ export default async (eleventyConfig) => {
       `${DIRS.INPUT}/${DIRS.POSTS}/*`
     )
     const grouped = posts.reduce((acc, post) => {
-      const year = String(post.date.getUTCFullYear()).padStart(5, '0')
+      const year = String(post.date.getUTCFullYear()).padStart(LONG_NOW_YEAR_DIGITS, '0')
       if (!acc[year]) {
         acc[year] = []
       }
@@ -362,21 +378,6 @@ export default async (eleventyConfig) => {
       }))
       .sort((a, b) => b.year - a.year)
   })
-
-  // Feed is now generated via src/feed.njk template
-  // eleventyConfig.addPlugin(feedPlugin, {
-  //   type: 'rss',
-  //   outputPath: `/${META.FEED}`,
-  //   collection: { name: 'posts', limit: 10 },
-  //   metadata: {
-  //     language: 'en',
-  //     title: META.TITLE,
-  //     subtitle: META.DESCRIPTION,
-  //     base: META.CANONICAL,
-  //     author: { name: META.AUTHOR, email: META.EMAIL },
-  //     image: `${META.CANONICAL}${META.LOGO}`,
-  //   },
-  // })
 
   return {
     markdownTemplateEngine: 'liquid',

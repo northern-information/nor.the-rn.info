@@ -1,12 +1,7 @@
 <ol>
   {% for trackId in trackIds %}
     <li class="ellipses">
-      {% assign trackIdIndex = forloop.index %}
-      {% if trackIdIndex < 10 %}
-        {% assign displayIndex = '0' | append: trackIdIndex %}
-      {% else %}
-        {% assign displayIndex = trackIdIndex %}
-      {% endif %}
+      {% assign displayIndex = forloop.index | padIndex %}
       <div class="font-mono text-sm text-gray-400">{{ displayIndex }}</div>
       <div class="ellipses-fill">&#8203;</div>
       <div>{{ trackId }}</div>

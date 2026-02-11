@@ -40,12 +40,7 @@ eleventyComputed:
     <ol class="{% if release.trackIds.size > 0 %}mb-2{% else %}mb-4{% endif %}">
       {% for track in release.tracks %}
         <li class="ellipses">
-          {% assign index = forloop.index %}
-          {% if index < 10 %}
-            {% assign displayIndex = '0' | append: index %}
-          {% else %}
-            {% assign displayIndex = index %}
-          {% endif %}
+          {% assign displayIndex = forloop.index | padIndex %}
           <div class="font-mono text-sm text-gray-400">
             {{ displayIndex }}
           </div>
@@ -67,7 +62,7 @@ eleventyComputed:
           {% assign hasTrackIds = track.trackIds.size > 0 %}
           {% assign isLastTrackWithReleaseIds = forloop.last and release.trackIds.size > 0 %}
           <li class="mt-4 {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}">
-            <audio class="w-full" controls src="{{ track.mp3_url }}"></audio>
+            <audio class="w-full" controls src="{{ track.mp3_url }}">Your browser does not support the audio element.</audio>
           </li>
         {% endif %}
         {% if track.trackIds.size > 0 %}

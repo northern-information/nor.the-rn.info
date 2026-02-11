@@ -1,0 +1,21 @@
+<ul>
+  {% for subsidiary in subsidiaries %}
+    <li class="post">
+      <div class="grid grid-cols-1 px-2 md:grid-cols-3 md:px-0">
+        <div class="max-w-none md:pr-4">
+          <time class="font-mono text-sm text-gray-400">
+            {{ subsidiary.dates }}
+          </time>
+          <h2 class="mb-4 text-4xl font-bold">{{ subsidiary.title }}</h2>
+          {{ subsidiary.content | markdown }}
+        </div>
+        <div class="md:col-span-2">
+          <a href="{{ subsidiary.image }}">
+            <img src="{{ subsidiary.image }}" alt="{{ subsidiary.title }}" class="!mb-0 h-auto w-full" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <hr class="my-5">
+    </li>
+  {% endfor %}
+</ul>

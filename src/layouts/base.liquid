@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>{% getTitle title %}</title>
-    {% render metaTags, site: site, page: page, post: post, release: release, project: project, content: content, title: title %}
+    {% render metaTags, site: site, page: page, post: post, release: release, project: project, content: content, title: title, ogType: ogType %}
     <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
   </head>
   <body>
