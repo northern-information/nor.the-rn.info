@@ -1,7 +1,6 @@
 ---
 title: Synergy Beat
 date: 2018-10-31
-tags: ["Releases"]
 ---
 
 ![Synergy Beat](/images/synergy-beat.jpg)

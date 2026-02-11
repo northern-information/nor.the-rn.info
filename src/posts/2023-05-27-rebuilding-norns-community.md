@@ -1,7 +1,6 @@
 ---
 title: Rebuilding "norns community"
 date: 2023-05-27
-tags: ["Music Technology"]
 ---
 
 ![Always Has Been](/images/community-json.jpg)

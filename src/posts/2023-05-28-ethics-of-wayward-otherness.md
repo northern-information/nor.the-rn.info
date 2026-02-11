@@ -1,7 +1,6 @@
 ---
 title: Ethics of Wayward Otherness
 date: 2023-05-28
-tags: ["Wildcard"]
 ---
 
 [Erik Davis](https://www.burningshore.com/p/ai-eeeeeee), doing the vital work of metabolizing the ongoing weirdness of artificial intelligence:

@@ -1,7 +1,6 @@
 ---
 title: Operation March
 date: 2022-03-31
-tags: ["Wildcard"]
 ---
 
 Operation March is over. 30 posts in 31 days. (I finished an EP somewhere in there which explains the missing post.) What did I learn? What was the experiment? The hypothesis?

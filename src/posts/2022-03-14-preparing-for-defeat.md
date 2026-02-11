@@ -1,7 +1,6 @@
 ---
 title: Preparing for Defeat
 date: 2022-03-14
-tags: ["Collapse"]
 ---
 
 [Francis Fukuyama, writing for American Purpose:](https://www.americanpurpose.com/articles/preparing-for-defeat/)

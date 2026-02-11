@@ -1,7 +1,6 @@
 ---
 title: You Can Only Touch Traces of its Awkward Glory
 date: 2024-01-29
-tags: ["Wildcard"]
 ---
 
 [Bayo Akomolafe, Why I Sang in the Dungeons: A Prophecy to End the Year 2023:](https://www.bayoakomolafe.net/post/why-i-sang-in-the-dungeons-a-prophecy-to-end-the-year-2023)

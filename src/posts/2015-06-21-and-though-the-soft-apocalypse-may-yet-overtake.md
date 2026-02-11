@@ -1,7 +1,6 @@
 ---
 title: "and though the soft apocalypse may yet overtake"
 date: 2015-06-21
-tags: ["Music", "tyler etters & the northern information movement"]
 ---
 
 ![and though the soft apocalypse may yet overtake](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/and-though-the-soft-apocalypse-may-yet-overtake/and-though-the-soft-apocalypse-may-yet-overtake.jpg)

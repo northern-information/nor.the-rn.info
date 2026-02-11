@@ -1,7 +1,6 @@
 ---
 title: Equal Parts LSD and Magnetic Tape
 date: 2021-12-12
-tags: ["Wildcard"]
 ---
 
 [Erik Davis, writing for Burning Shore:](https://www.burningshore.com/p/beatles-and-blotters)

@@ -1,7 +1,6 @@
 ---
 title: Versions of Echo Vary in Fatally Incompatible Ways
 date: 2023-02-27
-tags: ["Wildcard"]
 ---
 
 I've been getting back to the basics lately. The following excerpt is from [opengroup.org](https://pubs.opengroup.org/onlinepubs/000095399/utilities/echo.html). `echo` is out. `printf` is in. I think I remember learning from my mentor, Stu, about 10 years ago...

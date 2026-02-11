@@ -1,7 +1,6 @@
 ---
 title: The Type of World I Let in My Head
 date: 2021-08-05
-tags: ["Collapse"]
 ---
 
 This is a tale about a piece of bloody tissue and an apartment complex.

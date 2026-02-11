@@ -1,7 +1,6 @@
 ---
 title: "LONG LIVE THE LOST ONES"
 date: 2021-05-01
-tags: ["Music", "STUXNET"]
 ---
 
 ![LONG LIVE THE LOST ONES](https://d107e1o0dn11sc.cloudfront.net/stuxnet/long-live-the-lost-ones/long-live-the-lost-ones.jpg)

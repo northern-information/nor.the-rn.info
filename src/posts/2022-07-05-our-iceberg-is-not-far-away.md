@@ -1,7 +1,6 @@
 ---
 title: Our Iceberg is Not Far Away
 date: 2022-07-05
-tags: ["Collapse"]
 ---
 
 [Francine Prose, writing for The Guardian:](https://www.theguardian.com/commentisfree/2022/jun/27/we-americans-are-dancing-on-the-titanic-our-iceberg-is-not-far-away)

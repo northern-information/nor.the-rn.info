@@ -1,7 +1,6 @@
 ---
 title: Earphoria
 date: 2015-03-15
-tags: ["Events"]
 ---
 
 [![Earphoria](/images/2015-04-11.jpg)](https://www.facebook.com/events/395973437253973/)

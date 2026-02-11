@@ -1,7 +1,6 @@
 ---
 title: Gardening Information
 date: 2021-07-24
-tags: ["Wildcard"]
 ---
 
 > Information can be thought of as the resolution of uncertainty; it answers the question of "What an entity is" and thus defines both its essence and the nature of its characteristics. The concept of information has different meanings in different contexts. Thus the concept becomes synonymous to notions of constraint, communication, control, data, form, education, knowledge, meaning, understanding, mental stimuli, pattern, perception, proposition, representation, and entropy. &mdash; [Wikipedia](https://en.wikipedia.org/wiki/Information)

@@ -1,7 +1,6 @@
 ---
 title: "Suntelia Aeon"
 date: 2008-01-01
-tags: ["Music", "Inocula"]
 ---
 
 ![Suntelia Aeon](https://d107e1o0dn11sc.cloudfront.net/inocula/suntelia-aeon/suntelia-aeon.jpg)

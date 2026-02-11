@@ -1,7 +1,6 @@
 ---
 title: Happiness Is
 date: 2024-08-12
-tags: ["Wildcard"]
 ---
 
 [Brianna Weist:](https://www.briannawiest.com/)

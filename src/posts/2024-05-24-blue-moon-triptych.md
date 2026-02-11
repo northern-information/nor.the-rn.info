@@ -1,7 +1,6 @@
 ---
 title: Blue Moon Triptych
 date: 2024-05-24
-tags: ["Events"]
 ---
 
 ![Blue Moon Triptych](/images/blue-moon-triptych.jpg)

@@ -1,7 +1,6 @@
 ---
 title: Discord Summons
 date: 2022-03-19
-tags: ["Wildcard"]
 ---
 
 Please enjoy this short video about various Northern Information initiatives, developments, and happenings.

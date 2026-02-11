@@ -1,7 +1,6 @@
 ---
 title: Ending a Company
 date: 2023-11-18
-tags: ["Wildcard"]
 ---
 
 _Northern Information_ emerged from the primordial mists of 2006. The logo first adorned the back of a certain series of metaphysical pamphlets known as _Guns of the Philosopher_.

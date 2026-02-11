@@ -1,7 +1,6 @@
 ---
 title: Jester's Privilege
 date: 2022-02-19
-tags: ["Wildcard"]
 ---
 
 [Wikipedia, tonight:](https://en.wikipedia.org/wiki/Jester%27s_privilege)

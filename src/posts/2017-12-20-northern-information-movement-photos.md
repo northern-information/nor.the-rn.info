@@ -1,7 +1,6 @@
 ---
 title: Northern Information Movement Photos
 date: 2017-12-20
-tags: ["Wildcard"]
 ---
 
 I'm taking down the photos page, but want to keep these around for posterity.

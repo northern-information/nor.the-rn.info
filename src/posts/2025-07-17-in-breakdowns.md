@@ -1,7 +1,6 @@
 ---
 title: "In Breakdowns"
 date: 2025-07-17
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![In Breakdowns](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/in-breakdowns/in-breakdowns.jpg)

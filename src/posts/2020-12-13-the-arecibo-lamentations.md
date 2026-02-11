@@ -1,7 +1,6 @@
 ---
 title: "The Arecibo Lamentations"
 date: 2020-12-13
-tags: ["Music", "Northern Information"]
 ---
 
 ![The Arecibo Lamentations](https://d107e1o0dn11sc.cloudfront.net/northern-information/the-arecibo-lamentations/the-arecibo-lamentations.jpg)

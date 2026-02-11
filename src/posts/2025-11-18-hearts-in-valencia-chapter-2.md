@@ -1,7 +1,6 @@
 ---
 title: "Hearts in Valencia Chapter 2"
 date: 2025-11-18
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![Hearts in Valencia Chapter 2](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/hearts-in-valencia-chapter-2/hearts-in-valencia-chapter-2.jpg)

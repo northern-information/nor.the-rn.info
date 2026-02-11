@@ -1,7 +1,6 @@
 ---
 title: All of the Things I Never Did
 date: 2021-11-03
-tags: ["Thinkpieces"]
 ---
 
 My grandfather offered me a wooden toy he made with his own hands I shook my head no because it looked fragile and I didn't want to break it and dishonor him but then never have I seen someone so sad when he put it back on the top shelf of his workshop a few years later he died and I never did see that toy again.

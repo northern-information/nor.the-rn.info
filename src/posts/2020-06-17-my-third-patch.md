@@ -1,7 +1,6 @@
 ---
 title: My Third Patch
 date: 2020-06-17
-tags: ["Music Technology"]
 ---
 
 ![My third patch](/images/my-third-patch.jpg)

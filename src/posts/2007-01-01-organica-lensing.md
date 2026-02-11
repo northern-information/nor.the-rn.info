@@ -1,7 +1,6 @@
 ---
 title: "Organica Lensing"
 date: 2007-01-01
-tags: ["Music", "Lucid End"]
 ---
 
 ![Organica Lensing](https://d107e1o0dn11sc.cloudfront.net/lucid-end/organica-lensing/organica-lensing.jpg)

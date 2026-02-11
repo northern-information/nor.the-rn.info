@@ -1,7 +1,6 @@
 ---
 title: "UI / UX Analysis of Elden Ring"
 date: 2022-03-24
-tags: ["Wildcard"]
 ---
 
 Tonight, on CRYPTOPYRE, we talked about the user interface and user experience of FromSoftware's latest game, Elden Ring.

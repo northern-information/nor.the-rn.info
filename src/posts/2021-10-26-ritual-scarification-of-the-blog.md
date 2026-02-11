@@ -1,7 +1,6 @@
 ---
 title: Ritual Scarification of the Blog
 date: 2021-10-26
-tags: ["Wildcard"]
 ---
 
 I recently removed the "[IBM Plex](https://fonts.google.com/specimen/IBM+Plex+Sans)" font and reverted to the [Digital Ocean Sans-Serif CSS Font Stack](https://www.digitalocean.com/community/tutorials/css-system-font-stack). I'd paraphrase for you but this is all gold:

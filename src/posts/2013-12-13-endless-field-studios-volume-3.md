@@ -1,7 +1,6 @@
 ---
 title: a certain darkness, first snow
 date: 2013-12-13
-tags: ["Releases"]
 ---
 
 [![Endless Field Studios, Volume 3](/images/endless-field-studios-volume-3.jpg)](https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-3)

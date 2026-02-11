@@ -1,7 +1,6 @@
 ---
 title: Swing State Farewell
 date: 2015-02-27
-tags: ["Events"]
 ---
 
 ![Swing State Farewell](/images/2015-02-27.jpg)

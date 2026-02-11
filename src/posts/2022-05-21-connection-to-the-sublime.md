@@ -1,7 +1,6 @@
 ---
 title: Connection to the Sublime
 date: 2022-05-21
-tags: ["Wildcard"]
 ---
 
 [Venkatesh Rao at Ribbonfarm](https://www.ribbonfarm.com/2022/05/18/crisis-mindsets/):

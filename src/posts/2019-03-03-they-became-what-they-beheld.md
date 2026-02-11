@@ -1,7 +1,6 @@
 ---
 title: They Became What They Beheld
 date: 2019-03-03
-tags: ["Releases"]
 ---
 
 ![EP1](/images/ep1.jpg)

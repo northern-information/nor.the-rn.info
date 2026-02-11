@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 2
 date: 2020-03-12
-tags: ["Collapse"]
 ---
 
 ![Chicago, March 12](/images/covid-19-pandemic-day-2.jpg)

@@ -1,7 +1,6 @@
 ---
 title: "Wiio's laws"
 date: 2022-05-04
-tags: ["Wildcard"]
 ---
 
 [Professor Osmo Antero Wiio in 1978:](https://en.wikipedia.org/wiki/Wiio%27s_laws)

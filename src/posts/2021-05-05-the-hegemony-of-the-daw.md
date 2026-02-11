@@ -1,7 +1,6 @@
 ---
 title: The Hegemony of the DAW
 date: 2021-05-05
-tags: ["Music Technology"]
 ---
 
 [Michael Terren, in The Hegemony of the DAW:](https://disclaimer.org.au/contents/where-and-how-to-gather/the-hegemony-of-the-daw)

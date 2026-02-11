@@ -1,7 +1,6 @@
 ---
 title: That was closer to then
 date: 2022-03-20
-tags: ["Releases"]
 ---
 
 I shot this 13-minute video in one take.

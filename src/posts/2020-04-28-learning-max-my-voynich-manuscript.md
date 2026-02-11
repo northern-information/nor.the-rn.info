@@ -1,7 +1,6 @@
 ---
 title: "Learning Max: My Voynich Manuscript"
 date: 2020-04-28
-tags: ["Music Technology"]
 ---
 
 If you want to skip a head to the end of this post, you can see the path I took to learn Max. If you want to hear about my experience, start here.

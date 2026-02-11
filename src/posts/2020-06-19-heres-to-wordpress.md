@@ -1,7 +1,6 @@
 ---
 title: Here's to WordPress
 date: 2020-06-19
-tags: ["Wildcard"]
 ---
 
 Until last night, I've had WP servers running continuously since 2009. Yes, I destroyed my last server. It was a long time coming. This is an ode to WP, the platform that jump-started my career and welcomed my plunge into web technology.

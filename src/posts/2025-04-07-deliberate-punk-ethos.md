@@ -2,7 +2,6 @@
 layout: post
 title: Deliberate Punk Ethos
 date: 2025-04-07
-tags: ["Wildcard"]
 ---
 
 [NEET Ozma](https://neetozma.wordpress.com/2025/02/05/what-ties-an-oil-refinery-a-hurricane-and-the-father-of-cyberpunk-together-norcos-southern-gothic-sci-fi/):

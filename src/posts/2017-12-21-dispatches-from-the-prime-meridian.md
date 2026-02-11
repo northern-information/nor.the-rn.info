@@ -1,7 +1,6 @@
 ---
 title: "dispatches from the prime meridian"
 date: 2017-12-21
-tags: ["Music", "tyler etters & the northern information movement"]
 ---
 
 ![dispatches from the prime meridian](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/dispatches-from-the-prime-meridian/dispatches-from-the-prime-meridian.jpg)

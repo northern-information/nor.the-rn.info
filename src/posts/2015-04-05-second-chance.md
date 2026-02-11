@@ -1,7 +1,6 @@
 ---
 title: second chance
 date: 2015-04-05
-tags: ["Music Technology", "Art"]
 ---
 
 ![second chance](/images/second-chance.jpg)

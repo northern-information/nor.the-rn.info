@@ -1,7 +1,6 @@
 ---
 title: Film Jive Podcast
 date: 2020-07-07
-tags: ["Collapse"]
 ---
 
 ![Film Jive](/images/film-jive.jpg)

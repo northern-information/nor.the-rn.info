@@ -2,7 +2,6 @@
 layout: post
 title: A Shining Place Built Upon The Sand
 date: 2025-04-24
-tags: ["Wildcard"]
 ---
 
 [Devine Lu Linvega](https://100r.co/site/shining_sand.html):

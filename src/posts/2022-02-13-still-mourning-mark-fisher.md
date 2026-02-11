@@ -1,7 +1,6 @@
 ---
 title: Still Mourning Mark Fisher
 date: 2022-02-13
-tags: ["Wildcard"]
 ---
 
 [Simon Reynolds, writing for blissblog:](https://blissout.blogspot.com/2022/01/hows-things.html?m=1)

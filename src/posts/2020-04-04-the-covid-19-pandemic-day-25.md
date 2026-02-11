@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 25
 date: 2020-04-04
-tags: ["Collapse"]
 ---
 
 ![X Marks the Distance](/images/x-marks-the-distance.jpg)

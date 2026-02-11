@@ -1,7 +1,6 @@
 ---
 title: "DISSOLUTION"
 date: 2025-04-05
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![DISSOLUTION](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/dissolution/dissolution.jpg)

@@ -1,7 +1,6 @@
 ---
 title: Hauntology
 date: 2023-06-06
-tags: ["Wildcard"]
 ---
 
 [Wikipedia's entry on January 30, 2010:](https://en.wikipedia.org/w/index.php?title=Hauntology&oldid=340965174)

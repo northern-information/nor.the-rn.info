@@ -1,7 +1,6 @@
 ---
 title: Ultra Lounge
 date: 2013-07-20
-tags: ["Events"]
 ---
 
 ![Ultra Lounge](/images/2013-08-10.jpg)

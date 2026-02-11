@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 9
 date: 2020-03-19
-tags: ["Collapse"]
 ---
 
 ![Self Isolation](/images/self-isolation.jpg)

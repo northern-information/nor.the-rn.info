@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 4
 date: 2020-03-14
-tags: ["Collapse"]
 ---
 
 ![John Hopkins COVID-19 Dashboard](/images/coronavirus-dashboard.png)

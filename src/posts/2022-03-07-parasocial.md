@@ -1,7 +1,6 @@
 ---
 title: Parasocial
 date: 2022-03-07
-tags: ["Wildcard"]
 ---
 
 [Jak Ritger, writing for Do Not Research:](https://donotresearch.net/posts/the-parasocial-spiral)

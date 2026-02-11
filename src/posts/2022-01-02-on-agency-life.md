@@ -1,7 +1,6 @@
 ---
 title: On Agency Life
 date: 2022-01-02
-tags: ["Wildcard"]
 ---
 
 I've worked at creative agencies for half my life. Even if you do not consider yourself a creative or white-collar professional, I think much of these lived experiences map neatly onto the state of work (remote or otherwise) in 2022.

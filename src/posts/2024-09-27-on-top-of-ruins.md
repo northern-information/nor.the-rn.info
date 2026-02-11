@@ -1,7 +1,6 @@
 ---
 title: On Top of Ruins
 date: 2024-09-27
-tags: ["Wildcard"]
 ---
 
 [Ellen Ullman](https://en.wikipedia.org/wiki/Ellen_Ullman):

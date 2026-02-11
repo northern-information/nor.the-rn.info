@@ -1,7 +1,6 @@
 ---
 title: The Software Blues
 date: 2020-09-11
-tags: ["Events", "Music Technology", "Art"]
 ---
 
 I'm going to be giving a talk for [Babycastles](https://babycastles.com) on September 20th.

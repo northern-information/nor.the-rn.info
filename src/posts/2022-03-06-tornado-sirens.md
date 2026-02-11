@@ -1,7 +1,6 @@
 ---
 title: Tornado Sirens
 date: 2022-03-05
-tags: ["Wildcard"]
 ---
 
 Question: When is a tornado siren not a bad portent?

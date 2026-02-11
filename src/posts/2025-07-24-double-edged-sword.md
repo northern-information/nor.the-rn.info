@@ -2,7 +2,6 @@
 layout: post
 title: Double-Edged Sword
 date: 2025-07-24
-tags: ["Wildcard"]
 ---
 
 [Charmaine Lee](https://archive.wetink.org/archive-01/reflections-on-building-a-personal-language):

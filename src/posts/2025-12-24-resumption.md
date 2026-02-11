@@ -2,7 +2,6 @@
 layout: post
 title: Resumption
 date: 2025-12-24
-tags: ["Wildcard"]
 ---
 
 ## The Past Year

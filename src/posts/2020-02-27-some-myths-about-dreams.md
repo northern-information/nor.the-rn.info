@@ -1,7 +1,6 @@
 ---
 title: Some Myths About Dreams
 date: 2020-02-27
-tags: ["Wildcard"]
 ---
 
 Any cursory dip into oneirology will present a number of myths about dreams. Believing these myths, I have found myself especially bewildered when I have experiences of the contrary.

@@ -1,7 +1,6 @@
 ---
 title: "S♯A♯B∞ Week 1: Immolation"
 date: 2021-09-17
-tags: ["S♯A♯B∞"]
 ---
 
 _This is [Part 1](/2021/09/17/sad-arpeggio-breakdowns-forever-week-1-immolation/) of 3. [Part 2](/2021/09/24/sad-arpeggio-breakdowns-forever-week-2-sublimation/). [Part 3](/2021/10/01/sad-arpeggio-breakdowns-forever-week-3-transfiguration/)._

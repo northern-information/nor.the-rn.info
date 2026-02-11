@@ -1,7 +1,6 @@
 ---
 title: The Rigged Ouroboros of Discourse
 date: 2024-03-04
-tags: ["Wildcard"]
 ---
 
 [P.E. Moskowitz, The Rigged Ouroboros of Discourse:](https://mentalhellth.xyz/p/the-rigged-ouroboros-of-discourse)

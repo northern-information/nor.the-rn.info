@@ -1,7 +1,6 @@
 ---
 title: "FOXFIRES / KYBALION"
 date: 2025-02-10
-tags: ["Music", "STUXNET"]
 ---
 
 ![FOXFIRES / KYBALION](https://d107e1o0dn11sc.cloudfront.net/stuxnet/foxfires-kybalion/foxfires-kybalion.jpg)

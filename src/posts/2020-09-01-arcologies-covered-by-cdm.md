@@ -1,7 +1,6 @@
 ---
 title: arcologies Covered by CDM
 date: 2020-09-01
-tags: ["Music Technology"]
 ---
 
 [Peter Kirn, writing for CDM:](https://cdm.link/2020/09/arcologies-is-wonderfully-archaic-music-art-for-monome-norns/)

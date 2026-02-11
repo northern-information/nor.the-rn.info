@@ -1,7 +1,6 @@
 ---
 title: "In Abstraction, Part 2"
 date: 2025-11-06
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![In Abstraction, Part 2](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/in-abstraction-part-2/in-abstraction-part-2.jpg)

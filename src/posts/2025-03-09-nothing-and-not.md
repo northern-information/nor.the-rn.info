@@ -1,7 +1,6 @@
 ---
 title: Nothing and Not
 date: 2025-03-09
-tags: ["Wildcard"]
 ---
 
 > Nature doesn't make long speeches.

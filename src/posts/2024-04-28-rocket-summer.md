@@ -1,7 +1,6 @@
 ---
 title: "Rocket Summer"
 date: 2024-04-28
-tags: ["Music", "They Became What They Beheld"]
 ---
 
 ![Rocket Summer](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/rocket-summer/rocket-summer.jpg)

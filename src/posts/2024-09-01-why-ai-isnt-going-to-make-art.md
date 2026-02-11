@@ -1,7 +1,6 @@
 ---
 title: Why A.I. Isn't Going to Make Art
 date: 2024-09-01
-tags: ["Wildcard"]
 ---
 
 [Ted Chiang writing for The New Yorker:](https://www.newyorker.com/culture/the-weekend-essay/why-ai-isnt-going-to-make-art)

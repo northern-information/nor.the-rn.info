@@ -1,7 +1,6 @@
 ---
 title: Coral Carrier Incarnadine
 date: 2022-03-25
-tags: ["Coral Carrier Incarnadine"]
 ---
 
 ![Coral Carrier Incarnadine](/images/coral-carrier-incarnadine.gif)

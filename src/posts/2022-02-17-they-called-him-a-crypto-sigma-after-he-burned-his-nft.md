@@ -1,7 +1,6 @@
 ---
 title: They Called Him a "Crypto Sigma" After He Burned His NFT
 date: 2022-02-17
-tags: ["Wildcard"]
 ---
 
 Livestream CRYPTOPYRE agenda:

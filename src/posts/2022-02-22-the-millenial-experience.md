@@ -1,7 +1,6 @@
 ---
 title: The Millenial Experience
 date: 2022-02-22
-tags: ["Wildcard"]
 ---
 
 I'm only sharing a small bit because this is for paid subscribers but here is [Natasha Stagg, writing for her Substack:](https://natashastagg.substack.com/p/not-the-end-of-the-world)

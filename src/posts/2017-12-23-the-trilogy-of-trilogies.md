@@ -1,7 +1,6 @@
 ---
 title: The Trilogy of Trilogies
 date: 2017-12-23
-tags: ["Releases"]
 ---
 
 ![Tyler Etters illustration by Gage Lindsten](/images/tyler-etters-illustration.jpg)

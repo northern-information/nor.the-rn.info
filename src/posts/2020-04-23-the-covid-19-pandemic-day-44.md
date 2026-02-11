@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 44
 date: 2020-04-23
-tags: ["Collapse"]
 ---
 
 ![Power Lines](/rm_ation/images/power-lines.png)

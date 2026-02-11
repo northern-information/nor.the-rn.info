@@ -1,7 +1,6 @@
 ---
 title: "Descent Into Dreams"
 date: 2007-04-08
-tags: ["Music", "Ix"]
 ---
 
 ![Descent Into Dreams](https://d107e1o0dn11sc.cloudfront.net/ix/descent-into-dreams/descent-into-dreams.jpg)

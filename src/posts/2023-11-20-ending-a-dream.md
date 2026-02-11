@@ -1,7 +1,6 @@
 ---
 title: Ending a Dream
 date: 2023-11-20
-tags: ["Wildcard"]
 ---
 
 I had very different dreams before 2020. I mean this both literally and metaphorically. After sharing some finer points about this matter with my best friend, he gently inquired if I suffered from PTSD. I had to think about that for a minute.

@@ -1,7 +1,6 @@
 ---
 title: "CARRIER (demo)"
 date: 2021-03-14
-tags: ["Music", "STUXNET"]
 ---
 
 ![CARRIER (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/carrier-demo/carrier-demo.jpg)

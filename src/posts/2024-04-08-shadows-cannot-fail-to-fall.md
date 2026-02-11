@@ -1,7 +1,6 @@
 ---
 title: Shadows Cannot Fail to Fall
 date: 2024-04-08
-tags: ["Wildcard"]
 ---
 
 ![Solar Eclipse Sketch](/images/solar-eclipse-889-jan-01-corona-todd.png)

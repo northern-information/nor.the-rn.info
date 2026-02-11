@@ -1,7 +1,6 @@
 ---
 title: Building "norns community"
 date: 2021-04-09
-tags: ["Music Technology"]
 ---
 
 ## Overview

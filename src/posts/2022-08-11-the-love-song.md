@@ -1,7 +1,6 @@
 ---
 title: The Love Song
 date: 2022-08-11
-tags: ["Events"]
 ---
 
 ![Live at The Love Song](/images/2022-08-21.jpg)

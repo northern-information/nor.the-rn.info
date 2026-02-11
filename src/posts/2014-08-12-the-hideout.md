@@ -1,7 +1,6 @@
 ---
 title: The Hideout
 date: 2014-08-12
-tags: ["Events"]
 ---
 
 ![The Hideout](/images/2014-08-23.jpg)

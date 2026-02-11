@@ -1,7 +1,6 @@
 ---
 title: musicForProgramming();
 date: 2012-05-14
-tags: ["Releases"]
 ---
 
 [![musicForProgramming();](/images/musicforprogramming.jpg)](http://musicforprogramming.net/)

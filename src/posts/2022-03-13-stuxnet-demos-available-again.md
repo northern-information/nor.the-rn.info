@@ -1,7 +1,6 @@
 ---
 title: Stuxnet Demos Available Again
 date: 2022-03-13
-tags: ["Releases"]
 ---
 
 ![Stuxnet Discography](/images/stuxnet-discography-2022.png)

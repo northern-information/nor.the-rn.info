@@ -1,7 +1,6 @@
 ---
 title: Grid Keyboard
 date: 2020-05-03
-tags: ["Music Technology"]
 ---
 
 ![Grid Keyboard](/images/grid-keyboard.png)

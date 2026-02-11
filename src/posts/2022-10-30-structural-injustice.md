@@ -1,7 +1,6 @@
 ---
 title: Structural Injustice
 date: 2022-10-30
-tags: ["Wildcard"]
 ---
 
 [Ariadne Conill](https://ariadne.space/2022/10/27/the-internet-is-broken-due-to-structural-injustice/):

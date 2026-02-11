@@ -1,7 +1,6 @@
 ---
 title: "Respect for the Medium"
 date: 2024-04-22
-tags: ["Music", "They Became What They Beheld"]
 ---
 
 ![Respect for the Medium](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/respect-for-the-medium/respect-for-the-medium.jpg)

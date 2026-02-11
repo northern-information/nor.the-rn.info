@@ -1,7 +1,6 @@
 ---
 title: "The Killing Tree"
 date: 2007-01-01
-tags: ["Music", "Lucid End"]
 ---
 
 ![The Killing Tree](https://d107e1o0dn11sc.cloudfront.net/lucid-end/the-killing-tree/the-killing-tree.jpg)

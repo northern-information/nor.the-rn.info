@@ -1,7 +1,6 @@
 ---
 title: Exponential Crush
 date: 2022-06-07
-tags: ["Wildcard"]
 ---
 
 [Jason Parham, at Wired](https://www.wired.com/story/buffalo-uvalde-shootings-breaking-point):

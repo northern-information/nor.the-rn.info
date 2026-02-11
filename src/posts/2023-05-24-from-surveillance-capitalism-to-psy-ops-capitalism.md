@@ -1,7 +1,6 @@
 ---
 title: From Surveillance Capitalism to Psy-Ops Capitalism
 date: 2023-05-24
-tags: ["Wildcard"]
 ---
 
 [Trevor Paglan:](https://news.artnet.com/art-world/trevor-paglen-psyops-pace-new-york-2307429)

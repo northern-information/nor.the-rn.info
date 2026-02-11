@@ -1,7 +1,6 @@
 ---
 title: Apocalypse Mudra
 date: 2022-03-08
-tags: ["Collapse"]
 ---
 
 This post is an attempt to tease out some more concrete thoughts about what I'm calling "apocalypse mudras" - stances, dispositions, and mental koans to ground myself in the inferno.

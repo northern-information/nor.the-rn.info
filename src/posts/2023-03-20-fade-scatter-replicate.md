@@ -1,7 +1,6 @@
 ---
 title: "FADE SCATTER REPLICATE"
 date: 2023-03-20
-tags: ["Music", "STUXNET"]
 ---
 
 ![FADE SCATTER REPLICATE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/fade-scatter-replicate/fade-scatter-replicate.jpg)

@@ -1,7 +1,6 @@
 ---
 title: "THE VULGAR FRACTIONS: PINNED IN TIME LIKE BUTTERFLIES BENEATH GLASS / APOTHECARY"
 date: 2025-06-21
-tags: ["Music", "STUXNET"]
 ---
 
 ![THE VULGAR FRACTIONS: PINNED IN TIME LIKE BUTTERFLIES BENEATH GLASS / APOTHECARY](https://d107e1o0dn11sc.cloudfront.net/stuxnet/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary.jpg)

@@ -1,7 +1,6 @@
 ---
 title: The Struggle for Devirtualization
 date: 2022-08-17
-tags: ["Wildcard"]
 ---
 
 Have you ever migrated 1.5 million lifeforms? When I was a kid my mom was a prairie steward. One time I got to help move insects from one prairie to another. Maybe in kindergarten. I captured them with nets and tubes. Then, miles away on yet another golden hill, we let them go. Clouds of triumphant of freedom. Quite literally escaping extinction.

@@ -1,7 +1,6 @@
 ---
 title: Lines Community Stream
 date: 2020-06-09
-tags: ["Events"]
 ---
 
 ![Lines Community Stream: "Outside"](/images/2020-06-20.jpg)

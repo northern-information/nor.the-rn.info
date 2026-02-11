@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 1280
 date: 2023-09-11
-tags: ["Collapse"]
 ---
 
 [Dougald Hine, from his 2023 book At Work in the Ruins:](https://www.chelseagreen.com/product/at-work-in-the-ruins/)

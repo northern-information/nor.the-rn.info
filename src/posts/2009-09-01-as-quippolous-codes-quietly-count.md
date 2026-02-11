@@ -1,7 +1,6 @@
 ---
 title: "As Quippolous Codes Quietly Count"
 date: 2009-09-01
-tags: ["Music", "Connectedness Locus"]
 ---
 
 ![As Quippolous Codes Quietly Count](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/as-quippolous-codes-quietly-count/as-quippolous-codes-quietly-count.jpg)

@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 1080
 date: 2023-02-23
-tags: ["Collapse"]
 ---
 
 [Jon Mooallem, writing for The New York Times:](https://www.nytimes.com/interactive/2023/02/22/magazine/covid-pandemic-oral-history.html)

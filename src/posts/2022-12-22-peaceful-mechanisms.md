@@ -1,7 +1,6 @@
 ---
 title: Peaceful Mechanisms
 date: 2022-12-22
-tags: ["Wildcard"]
 ---
 
 [Caroline Busta, writing for Document:](https://www.documentjournal.com/2021/01/the-internet-didnt-kill-counterculture-you-just-wont-find-it-on-instagram/)

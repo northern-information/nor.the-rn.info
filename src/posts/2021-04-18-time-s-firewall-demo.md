@@ -1,7 +1,6 @@
 ---
 title: "TIME'S FIREWALL (demo)"
 date: 2021-04-18
-tags: ["Music", "STUXNET"]
 ---
 
 ![TIME'S FIREWALL (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/times-firewall-demo/times-firewall-demo.jpg)

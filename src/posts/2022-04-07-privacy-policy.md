@@ -1,7 +1,6 @@
 ---
 title: Open Source & Privacy Policy
 date: 2022-04-07
-tags: ["Wildcard"]
 ---
 
 This website is now open source. I had it set to "private" for the longest time because I used to keep a `_drafts` directory with lunatic scrawlings and half-baked thoughts. I'm happy to report these have since been published or expunged.

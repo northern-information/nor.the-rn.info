@@ -1,7 +1,6 @@
 ---
 title: Sound + Process
 date: 2022-12-30
-tags: ["Wildcard"]
 ---
 
 It is excruciatingly difficult for me to put into English what I "do" with my time. So, of course, a podcast recorded two years ago and released this week manages to say it all. Dan Derks lovingly assembles each episode of Sound + Process. They are a some kind of techno-bodhisattva; adept at holding cyberspace, carrying the torch of hope, and passing around the love. I look up to them very much.

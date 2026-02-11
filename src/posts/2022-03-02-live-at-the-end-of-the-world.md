@@ -1,7 +1,6 @@
 ---
 title: Live @ The End of the World
 date: 2022-03-02
-tags: ["Events"]
 ---
 
 Surprise performance tonight:

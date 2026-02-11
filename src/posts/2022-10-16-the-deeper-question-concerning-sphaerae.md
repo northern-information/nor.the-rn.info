@@ -1,7 +1,6 @@
 ---
 title: The Deeper Question Concerning Sphaerae
 date: 2022-10-16
-tags: ["Wildcard"]
 ---
 
 [Mike Edmunds, writing for Inference:](https://inference-review.com/article/a-mirror-of-nature)

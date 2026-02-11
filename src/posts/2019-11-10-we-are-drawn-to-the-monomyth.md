@@ -1,7 +1,6 @@
 ---
 title: We Are Drawn to the Monomyth
 date: 2019-11-10
-tags: ["Thinkpieces"]
 ---
 
 We are drawn to the monomyth because it makes sense and our lives simply don't. We're afraid of our own stories because they are unlike the stories we're familiar with. These two forces create a feedback loop.

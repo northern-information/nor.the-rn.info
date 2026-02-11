@@ -1,7 +1,6 @@
 ---
 title: An Unorthodox Protocol for Casting a Meaningful Vote
 date: 2019-08-01
-tags: ["Wildcard"]
 ---
 
 From Greg Graffin's Punk Manifesto:

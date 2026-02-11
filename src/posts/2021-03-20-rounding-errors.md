@@ -1,7 +1,6 @@
 ---
 title: Rounding Errors
 date: 2021-03-20
-tags: ["Wildcard"]
 ---
 
 A collection of links and threads that demand pursuit // cannot be pursued.

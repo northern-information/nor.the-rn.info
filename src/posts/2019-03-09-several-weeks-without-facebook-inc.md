@@ -1,7 +1,6 @@
 ---
 title: Several Weeks Without Facebook, Inc.
 date: 2019-03-09
-tags: ["Wildcard"]
 ---
 
 This morning I found myself reeling from [a podcast featuring Gordon White and Jay Springett](https://www.occulturepodcast.com/archive/solarpunk-gordon-white-jay-springett) (spoiler, "trying to make forests have personhood under law so that AIs can run on top of that and serve on boards to represent the interests of the forest") but nonetheless listening to [Mat Dryhurst talk about pretty much everything that matters to me](https://soundcloud.com/ctm-festival/ctm-2019-protocolsduty-despair-and-decentralisation). I found both of these conversations via Twitter. I was profoundly filled with gratitude for having the chance to listen and engage with this stuff. Then I realized that I've consistently had this feeling for a while now.

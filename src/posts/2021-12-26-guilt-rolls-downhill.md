@@ -1,7 +1,6 @@
 ---
 title: "Guilt Rolls Downhill"
 date: 2021-12-26
-tags: ["Wildcard"]
 ---
 
 ![Silent Hill 2](/images/silent-hill-2.jpg)

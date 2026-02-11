@@ -1,7 +1,6 @@
 ---
 title: Sousveillance Capitalism
 date: 2022-03-27
-tags: ["Wildcard"]
 ---
 
 [Katherine Cross, writing for Wired:](https://www.wired.com/story/labor-surveillance-internet-culture/)

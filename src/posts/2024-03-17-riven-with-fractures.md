@@ -1,7 +1,6 @@
 ---
 title: Riven with Fractures
 date: 2024-03-17
-tags: ["Wildcard"]
 ---
 
 Two wonderful quotes from [John Doran at The Quietus about Squarepusher's latest.](https://thequietus.com/articles/33961-just-another-idm-lp-squarepusher-s-dostrotime-continuity-revolution)

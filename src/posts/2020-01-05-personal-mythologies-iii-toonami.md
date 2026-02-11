@@ -1,7 +1,6 @@
 ---
 title: "Personal Mythologies III: Toonami"
 date: 2020-01-05
-tags: ["Mythologies"]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SpTe49f5b1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -2,7 +2,6 @@
 layout: post
 title: Listening Group
 date: 2025-11-03
-tags: ["Wildcard"]
 ---
 
 New RSS "Listening Group" project from my friend, [Anthony Ferraro](https://rashomon.blue/01-italian-ambient-pt-1/):

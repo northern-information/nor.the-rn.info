@@ -1,7 +1,6 @@
 ---
 title: The Surveillance Transcendentalism of Spy Movies
 date: 2022-03-23
-tags: ["Thinkpieces"]
 ---
 
 ![The Bourne Legacy](/images/the-bourne-legacy.jpg)

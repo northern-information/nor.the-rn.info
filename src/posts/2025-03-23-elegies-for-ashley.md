@@ -1,7 +1,6 @@
 ---
 title: "ELEGIES FOR ASHLEY"
 date: 2025-03-23
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![ELEGIES FOR ASHLEY](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/elegies-for-ashley/elegies-for-ashley.jpg)

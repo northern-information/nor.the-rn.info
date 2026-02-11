@@ -1,7 +1,6 @@
 ---
 title: "MATRYOSHKA (demo)"
 date: 2021-04-10
-tags: ["Music", "STUXNET"]
 ---
 
 ![MATRYOSHKA (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/matryoshka-demo/matryoshka-demo.jpg)

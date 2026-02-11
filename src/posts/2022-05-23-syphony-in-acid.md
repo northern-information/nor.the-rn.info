@@ -1,7 +1,6 @@
 ---
 title: Symphony in Acid
 date: 2022-05-23
-tags: ["Wildcard"]
 ---
 
 [https://symphonyinacid.net/](https://symphonyinacid.net/):

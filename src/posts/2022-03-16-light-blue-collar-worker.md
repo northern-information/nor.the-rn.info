@@ -1,7 +1,6 @@
 ---
 title: Light Blue Collar Worker
 date: 2022-03-16
-tags: ["Wildcard"]
 ---
 
 ![Dirty Hands Clean Money](/images/dirty-hands-clean-money.jpg)

@@ -1,7 +1,6 @@
 ---
 title: "Terraforms"
 date: 2011-07-30
-tags: ["Music", "Connectedness Locus"]
 ---
 
 ![Terraforms](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/terraforms/terraforms.jpg)

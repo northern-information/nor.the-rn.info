@@ -1,7 +1,6 @@
 ---
 title: Failed Blog Posts
 date: 2022-12-18
-tags: ["Wildcard"]
 ---
 
 ![Dark Souls 3](/images/dark-souls-3.jpg)

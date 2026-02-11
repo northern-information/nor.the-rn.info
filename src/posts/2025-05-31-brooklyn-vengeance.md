@@ -1,7 +1,6 @@
 ---
 title: "Brooklyn Vengeance"
 date: 2025-05-31
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![Brooklyn Vengeance](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/brooklyn-vengeance/brooklyn-vengeance.jpg)

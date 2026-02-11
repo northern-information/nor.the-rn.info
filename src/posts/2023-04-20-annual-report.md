@@ -1,7 +1,6 @@
 ---
 title: Annual Report
 date: 2023-04-20
-tags: ["Wildcard"]
 ---
 
 ![Annual Report](/images/annual-report-2023.jpg)

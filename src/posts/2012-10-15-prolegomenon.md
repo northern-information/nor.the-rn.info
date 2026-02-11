@@ -1,7 +1,6 @@
 ---
 title: "Prolegomenon"
 date: 2012-10-15
-tags: ["Music", "Connectedness Locus"]
 ---
 
 ![Prolegomenon](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/prolegomenon/prolegomenon.jpg)

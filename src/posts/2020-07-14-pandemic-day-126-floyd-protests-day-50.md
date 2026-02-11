@@ -1,7 +1,6 @@
 ---
 title: Pandemic Day 126 / Floyd Protests Day 50
 date: 2020-07-14
-tags: ["Collapse"]
 ---
 
 [Al Tenhundfeld writing on Simple Thread's blog](https://www.simplethread.com/your-team-is-smoldering/):

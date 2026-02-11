@@ -1,7 +1,6 @@
 ---
 title: "IN DARKNESS RADIANT"
 date: 2023-12-22
-tags: ["Music", "STUXNET"]
 ---
 
 ![IN DARKNESS RADIANT](https://d107e1o0dn11sc.cloudfront.net/stuxnet/in-darkness-radiant/in-darkness-radiant.jpg)

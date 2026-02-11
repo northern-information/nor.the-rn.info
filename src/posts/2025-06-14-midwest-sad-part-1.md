@@ -1,7 +1,6 @@
 ---
 title: "midwest sad, part 1"
 date: 2025-06-14
-tags: ["Music", "DJ STUXNET"]
 ---
 
 ![midwest sad, part 1](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/midwest-sad-part-1/midwest-sad-part-1.jpg)

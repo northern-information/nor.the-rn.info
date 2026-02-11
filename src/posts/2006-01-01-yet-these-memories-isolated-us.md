@@ -1,7 +1,6 @@
 ---
 title: "Yet These Memories Isolated Us"
 date: 2006-01-01
-tags: ["Music", "Ix"]
 ---
 
 ![Yet These Memories Isolated Us](https://d107e1o0dn11sc.cloudfront.net/ix/yet-these-memories-isolated-us/yet-these-memories-isolated-us.jpg)

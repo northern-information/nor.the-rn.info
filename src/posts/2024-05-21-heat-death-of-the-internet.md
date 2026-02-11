@@ -1,7 +1,6 @@
 ---
 title: Heat Death of the Internet
 date: 2024-05-21
-tags: ["Collapse"]
 ---
 
 [Gregory Bennett, writing for Takahē magazine:](https://www.takahe.org.nz/heat-death-of-the-internet)

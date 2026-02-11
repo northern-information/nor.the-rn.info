@@ -1,7 +1,6 @@
 ---
 title: Digital Alienation
 date: 2024-02-04
-tags: ["Wildcard"]
 ---
 
 [Byung-Chul Han, on how we might respond to a world of digital alienation:](https://artreview.com/byung-chul-han-i-practise-philosophy-as-art/)

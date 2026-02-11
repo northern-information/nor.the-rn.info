@@ -1,7 +1,6 @@
 ---
 title: "The Adolescence of Technology"
 date: 2026-02-11
-tags: ["Wildcard"]
 ---
 
 [Dario Amodei](https://www.darioamodei.com/essay/the-adolescence-of-technology):

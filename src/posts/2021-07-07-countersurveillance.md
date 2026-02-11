@@ -1,7 +1,6 @@
 ---
 title: "COUNTERSURVEILLANCE"
 date: 2021-07-07
-tags: ["Music", "STUXNET"]
 ---
 
 ![COUNTERSURVEILLANCE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/countersurveillance/countersurveillance.jpg)

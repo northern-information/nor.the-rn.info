@@ -1,7 +1,6 @@
 ---
 title: Ute Prayer
 date: 2022-03-26
-tags: ["Wildcard"]
 ---
 
 > Earth teach me stillness<br>

@@ -1,7 +1,6 @@
 ---
 title: Before Times Travel Gallery
 date: 2022-01-01
-tags: ["Wildcard"]
 ---
 
 ![Magic Mountain Parkway](/images/magic-mountain-parkway.jpg)

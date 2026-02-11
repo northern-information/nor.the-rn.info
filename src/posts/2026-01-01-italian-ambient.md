@@ -2,7 +2,6 @@
 layout: post
 title: Italian Ambient
 date: 2026-01-01
-tags: ["Wildcard"]
 ---
 
 [Anthony Ferraro](https://rashomon.blue/italian-ambient-pt-3/):

@@ -1,7 +1,6 @@
 ---
 title: "reverence"
 date: 2017-12-22
-tags: ["Music", "tyler etters & the northern information movement"]
 ---
 
 ![reverence](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/reverence/reverence.jpg)

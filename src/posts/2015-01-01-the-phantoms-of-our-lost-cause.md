@@ -1,7 +1,6 @@
 ---
 title: "the phantoms of our lost cause"
 date: 2015-01-01
-tags: ["Music", "tyler etters & the northern information movement"]
 ---
 
 ![the phantoms of our lost cause](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/the-phantoms-of-our-lost-cause/the-phantoms-of-our-lost-cause.jpg)

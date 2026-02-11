@@ -1,7 +1,6 @@
 ---
 title: "Deep State Music"
 date: 2021-09-04
-tags: ["Music", "Sidereal Lobby"]
 ---
 
 ![Deep State Music](https://d107e1o0dn11sc.cloudfront.net/sidereal-lobby/deep-state-music/deep-state-music.jpg)

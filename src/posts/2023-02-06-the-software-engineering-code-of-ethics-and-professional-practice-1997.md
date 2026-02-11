@@ -1,7 +1,6 @@
 ---
 title: The Software Engineering Code of Ethics and Professional Practice, 1997
 date: 2023-02-06
-tags: ["Wildcard"]
 ---
 
 [The Software Engineering Code of Ethics and Professional Practice](https://ethics.acm.org/code-of-ethics/software-engineering-code/) was published twenty-five years ago in 1997. Just imagine a timeline where Meta or Twitter adopted and used this document. (It is never too late!) Here are of my favorites.

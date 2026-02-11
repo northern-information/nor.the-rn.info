@@ -1,7 +1,6 @@
 ---
 title: Love As A Weapon
 date: 2025-01-07
-tags: ["Wildcard"]
 ---
 
 ![The Long Now At Work - my own past self's implementation of their principals forces me to think about it in the future](/images/long-now-at-work.png)

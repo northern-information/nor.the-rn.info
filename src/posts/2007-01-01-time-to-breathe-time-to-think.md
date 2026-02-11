@@ -1,7 +1,6 @@
 ---
 title: "Time to Breathe; Time to Think"
 date: 2007-01-01
-tags: ["Music", "Lucid End"]
 ---
 
 ![Time to Breathe; Time to Think](https://d107e1o0dn11sc.cloudfront.net/lucid-end/time-to-breathe-time-to-think/time-to-breathe-time-to-think.jpg)

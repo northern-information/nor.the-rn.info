@@ -1,7 +1,6 @@
 ---
 title: "Radio Free Albemuth"
 date: 2024-05-26
-tags: ["Music", "They Became What They Beheld"]
 ---
 
 ![Radio Free Albemuth](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/radio-free-albemuth/radio-free-albemuth.jpg)

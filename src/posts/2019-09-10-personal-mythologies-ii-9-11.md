@@ -1,7 +1,6 @@
 ---
 title: "Personal Mythologies II: 9/11"
 date: 2019-09-11
-tags: ["Mythologies"]
 ---
 
 Where were you when it happened?

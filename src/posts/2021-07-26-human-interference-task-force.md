@@ -1,7 +1,6 @@
 ---
 title: "HUMAN INTERFERENCE TASK FORCE"
 date: 2021-07-26
-tags: ["Music", "STUXNET"]
 ---
 
 ![HUMAN INTERFERENCE TASK FORCE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/human-interference-task-force/human-interference-task-force.jpg)

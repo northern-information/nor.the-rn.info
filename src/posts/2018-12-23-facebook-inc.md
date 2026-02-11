@@ -1,7 +1,6 @@
 ---
 title: Facebook, Inc.
 date: 2018-12-23
-tags: ["Wildcard"]
 ---
 
 Deleting your account is no longer subversive. As recently as a year or two ago, my friends would generally respond with incredulous horror when I floated the idea by them. But now, the same people shrug and mumble something in the sympathetic affirmative. Deleting your account has gone from the fringe to the mainstream. Case in point: I'm not even going to go through my reasons for leaving because I'm willing to bet you already know them.

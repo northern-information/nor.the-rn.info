@@ -1,7 +1,6 @@
 ---
 title: Low-tech Web
 date: 2021-12-14
-tags: ["Wildcard"]
 ---
 
 ![The Tower of Babylon](/images/anker.jpg)

@@ -1,7 +1,6 @@
 ---
 title: "A report on our findings"
 date: 2025-05-08
-tags: ["Music", "Northern Information"]
 ---
 
 ![A report on our findings](https://d107e1o0dn11sc.cloudfront.net/northern-information/a-report-on-our-findings/a-report-on-our-findings.jpg)

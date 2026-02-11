@@ -1,7 +1,6 @@
 ---
 title: Plain Text Sports
 date: 2022-03-22
-tags: ["Wildcard"]
 ---
 
 ![Plain Text Sports ](/images/plain-text-sports.jpg)

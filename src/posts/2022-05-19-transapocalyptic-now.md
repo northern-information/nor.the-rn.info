@@ -1,7 +1,6 @@
 ---
 title: Transapocalyptic Now
 date: 2022-05-19
-tags: ["Collapse"]
 ---
 
 [Alex Steffen, writing for The Snap Forward](https://alexsteffen.substack.com/p/the-transapocalyptic-now):

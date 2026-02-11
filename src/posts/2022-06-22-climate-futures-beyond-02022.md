@@ -1,7 +1,6 @@
 ---
 title: "Climate Futures: Beyond 02022"
 date: 2022-06-22
-tags: ["Collapse"]
 ---
 
 I found this recent [Long Now Foundation](https://longnow.org/) talk by [Kim Stanley Robinson](https://www.kimstanleyrobinson.info/) insightful:

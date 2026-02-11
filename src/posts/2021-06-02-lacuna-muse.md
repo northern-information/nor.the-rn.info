@@ -1,7 +1,6 @@
 ---
 title: Lacuna / Muse
 date: 2021-06-02
-tags: ["Wildcard"]
 ---
 
 According to dictionary.com:

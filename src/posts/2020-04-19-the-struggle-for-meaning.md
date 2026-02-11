@@ -1,7 +1,6 @@
 ---
 title: The Struggle for Meaning
 date: 2020-04-19
-tags: ["Collapse", "Art"]
 ---
 
 ![The Sundered Electronicist, watercolor](/rm_ation/images/the-sundered-electronicist.jpg)

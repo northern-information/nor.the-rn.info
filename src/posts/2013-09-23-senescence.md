@@ -1,7 +1,6 @@
 ---
 title: "senescence"
 date: 2013-09-23
-tags: ["Music", "tyler etters & the northern information movement"]
 ---
 
 ![senescence](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/senescence/senescence.jpg)

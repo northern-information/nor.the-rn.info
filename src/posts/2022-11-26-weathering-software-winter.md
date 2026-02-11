@@ -1,7 +1,6 @@
 ---
 title: Weathering Software Winter
 date: 2022-11-26
-tags: ["Wildcard"]
 ---
 
 ![Weathering Software Winter](/images/weathering-software-winter.jpg)

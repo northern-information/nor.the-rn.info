@@ -1,7 +1,6 @@
 ---
 title: Endless Field Saga Tour
 date: 2013-08-19
-tags: ["Events"]
 ---
 
 ![Endless Field Saga Tour](/images/2013-08-31.jpg)

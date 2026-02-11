@@ -1,7 +1,6 @@
 ---
 title: The COVID-19 Pandemic, Day 5
 date: 2020-03-15
-tags: ["Collapse"]
 ---
 
 ![Cyberpunk AF](/rm_ation/images/cyberpunk-af.jpg)

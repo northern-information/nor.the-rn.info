@@ -1,7 +1,6 @@
 ---
 title: Man from Utopia
 date: 2022-03-21
-tags: ["Wildcard"]
 ---
 
 ![Man from Utopia](/images/man-from-utopia.jpg)

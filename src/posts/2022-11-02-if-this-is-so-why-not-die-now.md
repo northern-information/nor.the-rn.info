@@ -1,7 +1,6 @@
 ---
 title: If This Is So, Why Not Die Now?
 date: 2022-11-02
-tags: ["Wildcard"]
 ---
 
 [Sean Jewell, writing for Eternal Return Press:](https://eternalreturnpress.substack.com/p/in-search-of-perfect?sd=pf)

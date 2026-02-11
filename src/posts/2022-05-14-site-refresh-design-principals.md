@@ -1,7 +1,6 @@
 ---
 title: Site Refresh Design Principals
 date: 2022-05-14
-tags: ["Wildcard"]
 ---
 
 The Northern Information site refresh project was originally in a directory called `nobullshit`. Some things I've changed to meet the challenge:

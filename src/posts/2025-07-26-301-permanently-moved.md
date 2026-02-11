@@ -2,7 +2,6 @@
 layout: post
 title: 301 Permanently Moved
 date: 2025-07-26
-tags: ["Wildcard"]
 ---
 
 [Jay Springett](https://thejaymo.net/2025/07/26/2520-episode-301/):

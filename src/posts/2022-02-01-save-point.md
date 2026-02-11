@@ -1,7 +1,6 @@
 ---
 title: Save Point
 date: 2022-02-01
-tags: ["Wildcard"]
 ---
 
 [Gahlord Dewald, writing for his newsletter:](https://gahlorddewald.com/)

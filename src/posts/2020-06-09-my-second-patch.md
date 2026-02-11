@@ -1,7 +1,6 @@
 ---
 title: My Second Patch
 date: 2020-06-09
-tags: ["Music Technology"]
 ---
 
 ![My second patch](/images/my-second-patch.jpg)

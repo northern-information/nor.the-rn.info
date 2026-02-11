@@ -2,7 +2,6 @@
 layout: post
 title: Our Theory of Collapse
 date: 2025-08-09
-tags: ["Wildcard"]
 ---
 
 [Beau-Caprice Vetch and Richard Hames](https://crudefutures.substack.com/p/our-theory-of-collapse):
