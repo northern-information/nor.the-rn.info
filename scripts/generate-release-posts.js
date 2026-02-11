@@ -67,7 +67,6 @@ function generatePostContent(release) {
   const title = normalizeUnicode(release.title);
   lines.push(`title: "${title.replace(/"/g, '\\"')}"`);
   lines.push(`date: ${parseReleaseDate(release.released)}`);
-  lines.push(`tags: ["Music", "${release.project}"]`);
   lines.push('---');
   lines.push('');
 
