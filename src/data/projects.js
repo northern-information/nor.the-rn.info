@@ -68,6 +68,15 @@ export default [
     website: 'https://ecicefis.bandcamp.com',
   },
   {
+    name: 'Synergy Beat',
+    slug: 'synergy-beat',
+    image: '/images/synergy-beat.jpg',
+    active: false,
+    featured: false,
+    bio: 'Soundtrack to accompany the epynonymous cyberpunk anime zine',
+    website: 'https://synergybeat.bandcamp.com',
+  },
+  {
     name: 'Inocula',
     slug: 'inocula',
     image: '/images/inocula.jpg',

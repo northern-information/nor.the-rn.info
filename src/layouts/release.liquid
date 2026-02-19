@@ -44,7 +44,7 @@ eleventyComputed:
           <div class="font-mono text-sm text-gray-400">
             {{ displayIndex }}
           </div>
-          <div>{{ track.title }}</div>
+          <div>{{ track.title }}{% if track.artist %}<span class="text-gray-400"> by {{ track.artist }}</span>{% endif %}</div>
           {% if track.mp3_url %}
             <div class="link-primary font-mono text-sm">
               <a href="{{ track.mp3_url }}">MP3</a>
