@@ -73,7 +73,7 @@ export default [
     image: '/images/synergy-beat.jpg',
     active: false,
     featured: false,
-    bio: 'Soundtrack to accompany the epynonymous cyberpunk anime zine',
+    bio: 'Soundtrack to accompany the epynonymous cyberpunk anime zine.',
     website: 'https://synergybeat.bandcamp.com',
   },
   {
