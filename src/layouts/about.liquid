@@ -3,7 +3,7 @@ layout: base.liquid
 ---
 <div class="my-1 grid grid-cols-1 overflow-hidden md:grid-cols-2">
   <div class="w-full">
-    <a href="/images/edgelord-avatar.png">
+    <a href="/images/edgelord-avatar.png" class="grain-hover block overflow-hidden">
       <img src="/images/edgelord-avatar.png" alt="Tyler Etters">
     </a>
   </div>
@@ -31,7 +31,9 @@ layout: base.liquid
           href="{{ photo.url }}"
           class="h-full w-full cursor-pointer"
         >
-          <img src="{{ photo.url }}" alt="{{ photo.title }}, {{ photo.year }}" class="h-auto w-full group-hover:invert" loading="lazy">
+          <div class="grain-hover overflow-hidden">
+            <img src="{{ photo.url }}" alt="{{ photo.title }}, {{ photo.year }}" class="h-auto w-full group-hover:invert" loading="lazy">
+          </div>
           <div class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
             <p class="group-hover:underline">{{ photo.title }}, {{ photo.year }}</p>
           </div>
