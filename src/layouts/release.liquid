@@ -41,6 +41,7 @@ eleventyComputed:
         <div class="font-mono">{{ release.runtime | formatTrackLength }}</div>
       </li>
     </ul>
+    <div id="webamp-target"></div>
     <h3 class="text-lg font-bold">Tracklist</h3>
     <ol class="{% if release.trackIds.size > 0 %}mb-2{% else %}mb-4{% endif %}">
       {% for track in release.tracks %}
@@ -67,7 +68,7 @@ eleventyComputed:
           {% assign hasTrackIds = track.trackIds.size > 0 %}
           {% assign isLastTrackWithReleaseIds = forloop.last and release.trackIds.size > 0 %}
           <li class="mt-4 {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}">
-            <audio class="w-full" controls src="{{ track.mp3_url }}">Your browser does not support the audio element.</audio>
+            <audio class="w-full" controls src="{{ track.mp3_url }}" data-title="{{ track.title }}" data-artist="{{ track.artist | default: release.project }}" data-duration="{{ track.length }}">Your browser does not support the audio element.</audio>
           </li>
         {% endif %}
         {% if track.trackIds.size > 0 %}

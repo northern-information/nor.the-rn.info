@@ -263,6 +263,7 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
 
   eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 
