@@ -21,7 +21,9 @@
       "Bash(xxd:*)",
       "Bash(LC_CTYPE=C sed:*)",
       "Bash(done)",
-      "Bash(npm audit:*)"
+      "Bash(npm audit:*)",
+      "Bash(npm install)",
+      "Bash(npm ls --depth=0 --json)"
     ]
   }
 }

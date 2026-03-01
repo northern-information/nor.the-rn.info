@@ -2,7 +2,7 @@
   "name": "northern-information",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": "22.12.0"
   },
   "scripts": {
     "build": "npm run css:build && npx @11ty/eleventy && npm run pagefind",
@@ -14,9 +14,6 @@
     "generate-release-posts": "node scripts/generate-release-posts.js",
     "pagefind": "npx -y pagefind --site dist",
     "pretty": "prettier --write ."
-  },
-  "overrides": {
-    "minimatch": "10.2.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
