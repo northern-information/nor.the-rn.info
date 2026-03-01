@@ -12,8 +12,16 @@ const getMimeType = (url) => {
 }
 
 export default {
-  layout: 'post',
+  ogType: 'article',
   eleventyComputed: {
+    layout: 'post.liquid',
+    permalink: (data) => {
+      const date = new Date(data.page.date)
+      const y = date.getUTCFullYear()
+      const m = String(date.getUTCMonth() + 1).padStart(2, '0')
+      const d = String(date.getUTCDate()).padStart(2, '0')
+      return `/${y}/${m}/${d}/${data.page.fileSlug}/index.html`
+    },
     feedImage: (data) => {
       if (typeof data.content !== 'string') return null
       const imgMatch = data.content.match(/<img[^>]+src=["']([^"']+)["']/i)

@@ -30,6 +30,13 @@ Do NOT use Liquid's built-in `date` filter or JavaScript's `getFullYear()` for p
 
 Years are displayed in 5-digit Long Now format (e.g., `02025`). The `LONG_NOW_YEAR_DIGITS` constant in `eleventy.config.js` controls padding. Use `padStart(LONG_NOW_YEAR_DIGITS, '0')` in JavaScript.
 
+### Directory Data Files
+
+Use `.11tydata.js` files (not `.json`) for Eleventy directory data. JS files support computed data, static values, and helper functions in one place — no need to split across two files. Current data files:
+
+- `src/posts/posts.11tydata.js` — layout, permalink, ogType, RSS enclosure data
+- `src/pages/pages.11tydata.js` — permalink
+
 ### Blog Posts
 
 Posts are Markdown files in `src/posts/` with naming convention `YYYY-MM-DD-slug.md`. Frontmatter:
@@ -41,13 +48,13 @@ date: 2025-12-24
 ---
 ```
 
-Note: `layout` is set automatically via `src/posts/posts.json` — do not add it to individual post frontmatter. Titles should always be quoted.
+Note: `layout` is set automatically via `src/posts/posts.11tydata.js` — do not add it to individual post frontmatter. Titles should always be quoted.
 
 ### Meta Tags and Social Sharing
 
 Meta tags are rendered via `src/includes/metaTags.liquid`:
 
-- Blog posts have `og:type="article"` (set via `ogType` in `src/posts/posts.json`); all other pages default to `"website"`
+- Blog posts have `og:type="article"` (set via `ogType` in `src/posts/posts.11tydata.js`); all other pages default to `"website"`
 - Blog posts get dynamic descriptions extracted from content via the `extractExcerpt` filter; other pages fall back to `site.META.DESCRIPTION`
 - Twitter Card tags are included (`twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`)
 - OG images are resolved via `src/includes/ogImage.liquid` with cascading fallbacks (release cover > project image > first image in content > site logo)

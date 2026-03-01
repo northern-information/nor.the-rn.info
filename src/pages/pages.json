@@ -1,5 +1,0 @@
-{
-  "eleventyComputed": {
-    "permalink": "/{{ page.fileSlug }}/index.html"
-  }
-}
