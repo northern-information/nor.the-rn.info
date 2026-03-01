@@ -15,12 +15,14 @@
   <body>
     {% render nav, site: site, page: page, post: post, navigation: navigation %}
     <main class="container mx-auto">
-      <div class="overflow-hidden border-4 border-solid border-black p-2 pb-10">
-        <p class="text-center">
+      <div class="overflow-hidden text-center border-4 border-solid border-black p-2 pb-10">
+        <p class="font-mono">
           Search the entire Northern Information site.
           <br>
-          Last indexed: <span class="font-mono text-sm">{{ site.META.BUILD_TIME }}</span>
+          Last indexed: {{ site.META.BUILD_TIME | dateToUTCFull }}
           <br>
+        </p>
+        <p>
           &#8258;
         </p>
         <noscript>
