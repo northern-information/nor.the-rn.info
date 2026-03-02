@@ -108,13 +108,19 @@
     @apply bg-yellow-300 text-black;
   }
 
-  /* Focus styles for keyboard navigation */
+  /* Focus styles for keyboard navigation - outline only */
   a:focus-visible,
   button:focus-visible,
   input:focus-visible,
   textarea:focus-visible,
   select:focus-visible,
   details:focus-visible {
+    @apply outline-2 outline-offset-2 outline-yellow-300;
+  }
+
+  /* Click/mouse focus - outline only */
+  a:focus:not(:focus-visible),
+  button:focus:not(:focus-visible) {
     @apply outline-2 outline-offset-2 outline-yellow-300;
   }
 
