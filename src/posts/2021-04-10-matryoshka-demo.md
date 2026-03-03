@@ -16,7 +16,7 @@ Intertext · Digital
 2. Supply Chain Attack Surface (2:14)
 3. A White USB Drive With "HEXAGON" iStock Logo &num;1135496271 (3:09)
 4. At Least One Reseller of Microsoft Cloud Services Was Compromised (2:44)
-5. Matryoshka Shell 1 - Ransomware Was Discovered on the Executive’s Peloton (2:13)
+5. Matryoshka Shell 1 - Ransomware Was Discovered on the Executive's Peloton (2:13)
 6. Matryoshka Shell 2 - IoT Botnet DDoS (2:06)
 7. Matryoshka Shell 3 - Distributed Cryptocurrency Mining Operation (1:22)
 8. Matryoshka Shell 4 - International Date Line (2:46)

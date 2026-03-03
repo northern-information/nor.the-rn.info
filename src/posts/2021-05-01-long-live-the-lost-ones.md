@@ -28,4 +28,4 @@ Intertext · Digital
 
 ## Credits
 
-<p>Album title by Cory Salveson, encryption key by Matthew Marx, distress signals by Dan Derks, music by Tyler Etters.</p><p>Album art: "Kuwaiti oil wells set on fire by retreating Iraqi forces during Operation Desert Storm darken the sky with smoke, March 25, 1991. This image could have imperfections as it’s either historical or reportage."</p>
+<p>Album title by Cory Salveson, encryption key by Matthew Marx, distress signals by Dan Derks, music by Tyler Etters.</p><p>Album art: "Kuwaiti oil wells set on fire by retreating Iraqi forces during Operation Desert Storm darken the sky with smoke, March 25, 1991. This image could have imperfections as it's either historical or reportage."</p>

@@ -15,4 +15,4 @@ date: 2025-07-26
 >
 > But by Episode 240 I hit a wall. During 2023 the enjoyment was gone and making the show felt painful. But while walking along the Thames that summer, the idea of 301 episodes arrived in a flash and a finishing line rose over the horizon. At that moment the complete project snapped into focus; and the pleasure of creation returned.
 >
-> I am not sad the format is ending. Instead I feel proud, accomplished, complete. I’m excited for what’s next.
+> I am not sad the format is ending. Instead I feel proud, accomplished, complete. I'm excited for what's next.

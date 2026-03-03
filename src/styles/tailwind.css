@@ -45,7 +45,7 @@
     }
 
     blockquote {
-      @apply ml-2 border-l border-white pl-4 italic;
+      @apply ml-2 border-l border-white pl-4;
 
       p {
         @apply mb-5;
@@ -125,7 +125,7 @@
 
   /* Skip link for keyboard accessibility */
   .skip-link {
-    @apply absolute left-0 top-0 z-50 -translate-y-full bg-yellow-300 px-4 py-2 text-black transition-transform;
+    @apply absolute top-0 left-0 z-50 -translate-y-full bg-yellow-300 px-4 py-2 text-black transition-transform;
   }
 
   .skip-link:focus {
