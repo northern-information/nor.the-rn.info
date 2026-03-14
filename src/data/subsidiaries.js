@@ -1,9 +1,9 @@
 export default [
   {
-    title: 'Circular Ruin DSP',
+    title: 'Circular Ruin',
     dates: '02024 - Present',
     image: '/images/circular-ruin-dsp.png',
-    content: `[Circular Ruin DSP](https://circularruindsp.com) is an artist resource company.`,
+    content: `[Circular Ruin](https://circularruin.com) is a sound temple.`,
   },
   {
     title: 'Intertext',
