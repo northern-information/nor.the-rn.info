@@ -10,7 +10,6 @@ export default {
     EMAIL: 'tyler@etters.co',
     GEMINI: 'gemini://tilde.club/~tse/',
     GITHUB: 'https://github.com/tyleretters',
-    INSTAGRAM: 'https://instagram.com/tyleretters',
     LINKEDIN: 'https://www.linkedin.com/in/tyleretters',
     MASTODON: 'https://merveilles.town/web/@tyleretters',
     NEWSLETTER: 'https://us1.campaign-archive.com/home/?u=e82006751a8517b8fd440a182&id=68446b3abb',
