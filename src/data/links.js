@@ -84,6 +84,7 @@ export default [
   { url: 'https://www.theparisreview.org/blog/author/nmacluaghlin', title: 'Nina MacLaughlin', },
   { url: 'https://nowheregallery.co', title: 'Nowhere Gallery' },
   { url: 'https://paulpear.bandcamp.com', title: 'Paul Pear' },
+  { url: 'https://publicdomainreview.org/', 'title': 'Public Domain Review' },
   { url: 'https://www.punctr.art', title: 'PUNCTR ART' },
   { url: 'https://www.punk.ist', title: 'punk.ist' },
   { url: 'https://pullahs.bandcamp.com', title: 'Pullahs' },
