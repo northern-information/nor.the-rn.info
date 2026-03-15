@@ -49,6 +49,7 @@ export default [
   { url: 'https://heavyghost.bandcamp.com', title: 'Heavy Ghost' },
   { url: 'https://100r.co', title: 'Hundred Rabbits' },
   { url: 'https://www.interdependence.fm', title: 'Interdependence' },
+  { url: 'https://jakintosh.com', title: 'jak' },
   { url: 'https://www.thejaymo.net', title: 'Jay Springett' },
   { url: 'https://jcjcjc.hotglue.me', title: 'JC Leisure' },
   { url: 'http://systemsapproach.net', title: 'Jon Cates' },
