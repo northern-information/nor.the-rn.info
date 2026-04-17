@@ -23,7 +23,17 @@
       "Bash(done)",
       "Bash(npm audit:*)",
       "Bash(npm install)",
-      "Bash(npm ls --depth=0 --json)"
+      "Bash(npm ls --depth=0 --json)",
+      "Bash(git branch:*)",
+      "Bash(git worktree:*)",
+      "Bash(git remote:*)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(npm outdated:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm list:*)",
+      "Bash(npm update:*)",
+      "Bash(git -C /Users/tyleretters/projects/nor.the-rn.info count-objects -vH)"
     ]
   }
 }

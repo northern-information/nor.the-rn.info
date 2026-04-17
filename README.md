@@ -4,7 +4,7 @@ See `./CLAUDE.md` for more.
 
 ## Develop
 
-As of mid-2025 the repo weighs ~350MB. Almost all of this is from `/images`. I've considered a separate CDN solution for these but I consider them "part of the codebase" so it is probably fine as is...
+As of early 2026 the repo weighs ~350MB. Almost all of this is from `/images`. I've considered a separate CDN solution for these but I consider them "part of the codebase" so it is probably fine as is...
 
 ```zsh
 git clone git@github.com:tyleretters/nor.the-rn.info.git
@@ -27,7 +27,7 @@ Automatic on push to `main` via Cloudflare integration.
 ```zsh
 eleventy.config.js
 ./src/music/index.liquid
-./src/pages/pages.11tydata.json
-./src/posts/posts.11tydata.json
+./src/pages/pages.11tydata.js
+./src/posts/posts.11tydata.js
 ./src/data/site.js
 ```

@@ -2,7 +2,8 @@
   "name": "northern-information",
   "type": "module",
   "engines": {
-    "node": "22.12.0"
+    "node": "22.12.0",
+    "npm": ">=10.0.0"
   },
   "scripts": {
     "build": "npm run css:build && npx @11ty/eleventy && npm run pagefind",
@@ -12,22 +13,22 @@
     "css:watch": "npm run css -- --watch",
     "dev": "concurrently 'npx @11ty/eleventy --serve --quiet' 'npm run css:watch'",
     "generate-release-posts": "node scripts/generate-release-posts.js",
-    "pagefind": "npx -y pagefind --site dist",
+    "pagefind": "pagefind --site dist",
     "pretty": "prettier --write ."
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.2",
-    "@shopify/prettier-plugin-liquid": "1.10.0",
-    "@tailwindcss/cli": "4.2.0",
+    "@11ty/eleventy": "3.1.5",
+    "@shopify/prettier-plugin-liquid": "1.10.2",
+    "@tailwindcss/cli": "4.2.2",
     "@tyleretters/discography": "3.0.2",
     "concurrently": "9.2.1",
     "luxon": "3.7.2",
     "markdown-it": "14.1.1",
     "markdown-it-implicit-figures": "0.12.0",
     "memoize": "10.2.0",
-    "pagefind": "1.4.0",
-    "prettier": "3.8.1",
+    "pagefind": "1.5.2",
+    "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "0.7.2",
-    "tailwindcss": "4.2.0"
+    "tailwindcss": "4.2.2"
   }
 }
