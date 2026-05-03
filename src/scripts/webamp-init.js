@@ -73,7 +73,8 @@ async function initWebamp() {
     function findTransformWrapper(el) {
       let node = el.parentElement
       while (node && node !== webampEl) {
-        if (node.style.transform || node.style.position === 'absolute') return node
+        if (node.style.transform || node.style.position === 'absolute')
+          return node
         node = node.parentElement
       }
       return el.parentElement

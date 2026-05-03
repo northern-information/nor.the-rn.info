@@ -24,13 +24,27 @@ export const META = {
   DOMAIN: 'https://nor.the-rn.info',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
-  GIT_HASH_SHORT: (() => { try { return execSync('git rev-parse --short HEAD').toString().trim() } catch { return 'unknown' } })(),
-  GIT_HASH: (() => { try { return execSync('git rev-parse HEAD').toString().trim() } catch { return 'unknown' } })(),
+  GIT_HASH_SHORT: (() => {
+    try {
+      return execSync('git rev-parse --short HEAD').toString().trim()
+    } catch {
+      return 'unknown'
+    }
+  })(),
+  GIT_HASH: (() => {
+    try {
+      return execSync('git rev-parse HEAD').toString().trim()
+    } catch {
+      return 'unknown'
+    }
+  })(),
   GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
   DISCOGRAPHY_URL: 'https://www.npmjs.com/package/@tyleretters/discography',
-  DISCOGRAPHY_VERSION: packageJson.devDependencies['@tyleretters/discography'].replace(/^\^/, ''),
+  DISCOGRAPHY_VERSION: packageJson.devDependencies[
+    '@tyleretters/discography'
+  ].replace(/^\^/, ''),
   TITLE: 'Northern Information',
   YEAR: String(new Date().getUTCFullYear()).padStart(LONG_NOW_YEAR_DIGITS, '0'),
 }
@@ -147,7 +161,9 @@ export default async (eleventyConfig) => {
       const parsed = parseDate(date)
       if (!parsed) return ''
       if (parsed.partial) return parsed.year.padStart(LONG_NOW_YEAR_DIGITS, '0')
-      const longNowYear = parsed.dt.toFormat('yyyy').padStart(LONG_NOW_YEAR_DIGITS, '0')
+      const longNowYear = parsed.dt
+        .toFormat('yyyy')
+        .padStart(LONG_NOW_YEAR_DIGITS, '0')
       return `${parsed.dt.toFormat('LLLL dd')}, ${longNowYear}`
     })
   )
@@ -204,7 +220,10 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('extractExcerpt', (content, maxLength = 160) => {
     if (typeof content !== 'string') return ''
-    const text = content.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+    const text = content
+      .replace(/<[^>]+>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
     if (text.length <= maxLength) return text
     return text.slice(0, maxLength).replace(/\s\S*$/, '') + '...'
   })
@@ -231,25 +250,37 @@ export default async (eleventyConfig) => {
     return date.toUTCString()
   })
 
-  eleventyConfig.addFilter('convertHtmlToAbsoluteUrls', (htmlContent, baseUrl) => {
-    // Converts relative URLs to absolute URLs in HTML content for RSS feeds
-    if (typeof htmlContent !== 'string') return htmlContent
+  eleventyConfig.addFilter(
+    'convertHtmlToAbsoluteUrls',
+    (htmlContent, baseUrl) => {
+      // Converts relative URLs to absolute URLs in HTML content for RSS feeds
+      if (typeof htmlContent !== 'string') return htmlContent
 
-    // Remove trailing slash from baseUrl for consistent URL construction
-    const base = baseUrl.replace(/\/$/, '')
+      // Remove trailing slash from baseUrl for consistent URL construction
+      const base = baseUrl.replace(/\/$/, '')
 
-    return htmlContent
-      // Convert relative src attributes (images, scripts, etc.)
-      .replace(/src=["'](?!https?:\/\/)([^"']+)["']/gi, (_, url) => {
-        const absoluteUrl = url.startsWith('/') ? base + url : `${base}/${url}`
-        return `src="${absoluteUrl}"`
-      })
-      // Convert relative href attributes (links)
-      .replace(/href=["'](?!https?:\/\/)(?!mailto:)(?!#)([^"']+)["']/gi, (_, url) => {
-        const absoluteUrl = url.startsWith('/') ? base + url : `${base}/${url}`
-        return `href="${absoluteUrl}"`
-      })
-  })
+      return (
+        htmlContent
+          // Convert relative src attributes (images, scripts, etc.)
+          .replace(/src=["'](?!https?:\/\/)([^"']+)["']/gi, (_, url) => {
+            const absoluteUrl = url.startsWith('/')
+              ? base + url
+              : `${base}/${url}`
+            return `src="${absoluteUrl}"`
+          })
+          // Convert relative href attributes (links)
+          .replace(
+            /href=["'](?!https?:\/\/)(?!mailto:)(?!#)([^"']+)["']/gi,
+            (_, url) => {
+              const absoluteUrl = url.startsWith('/')
+                ? base + url
+                : `${base}/${url}`
+              return `href="${absoluteUrl}"`
+            }
+          )
+      )
+    }
+  )
 
   eleventyConfig.addPlugin(IdAttributePlugin)
 
@@ -283,13 +314,20 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addCollection('projects', () => {
     // Validate all discography projects are accounted for
-    const discographyProjectSlugs = [...new Set(discography.map((r) => r.project_slug))]
+    const discographyProjectSlugs = [
+      ...new Set(discography.map((r) => r.project_slug)),
+    ]
     const allProjectSlugs = new Set(
       projects.flatMap((p) => (p.slugs ? p.slugs : [p.slug]))
     )
-    const missing = discographyProjectSlugs.filter((slug) => !allProjectSlugs.has(slug))
+    const missing = discographyProjectSlugs.filter(
+      (slug) => !allProjectSlugs.has(slug)
+    )
     if (missing.length > 0) {
-      console.warn('WARNING: Missing projects in projects.js:', missing.join(', '))
+      console.warn(
+        'WARNING: Missing projects in projects.js:',
+        missing.join(', ')
+      )
     }
 
     return projects.map((project) => {
@@ -298,8 +336,12 @@ export default async (eleventyConfig) => {
         .filter((r) => matchSlugs.includes(r.project_slug))
         .map((r) => ({ ...r, slug: getReleaseSlug(r) }))
         .sort((a, b) => {
-          const dateA = new Date(String(a.released).replace(/^0/, '').replace(/\?\?/g, '01'))
-          const dateB = new Date(String(b.released).replace(/^0/, '').replace(/\?\?/g, '01'))
+          const dateA = new Date(
+            String(a.released).replace(/^0/, '').replace(/\?\?/g, '01')
+          )
+          const dateB = new Date(
+            String(b.released).replace(/^0/, '').replace(/\?\?/g, '01')
+          )
           return dateB - dateA
         })
 
@@ -308,8 +350,14 @@ export default async (eleventyConfig) => {
         .filter((y) => y !== null)
         .sort((a, b) => a - b)
 
-      const earliestYear = years.length > 0 ? String(years[0]).padStart(LONG_NOW_YEAR_DIGITS, '0') : null
-      const latestYear = years.length > 0 ? String(years[years.length - 1]).padStart(LONG_NOW_YEAR_DIGITS, '0') : null
+      const earliestYear =
+        years.length > 0
+          ? String(years[0]).padStart(LONG_NOW_YEAR_DIGITS, '0')
+          : null
+      const latestYear =
+        years.length > 0
+          ? String(years[years.length - 1]).padStart(LONG_NOW_YEAR_DIGITS, '0')
+          : null
 
       return {
         ...project,
@@ -336,7 +384,10 @@ export default async (eleventyConfig) => {
       `${DIRS.INPUT}/${DIRS.POSTS}/*`
     )
     const grouped = posts.reduce((acc, post) => {
-      const year = String(post.date.getUTCFullYear()).padStart(LONG_NOW_YEAR_DIGITS, '0')
+      const year = String(post.date.getUTCFullYear()).padStart(
+        LONG_NOW_YEAR_DIGITS,
+        '0'
+      )
       if (!acc[year]) {
         acc[year] = []
       }

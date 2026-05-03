@@ -18,7 +18,9 @@ eleventyComputed:
       {{- release.released | dateToUTCFull -}}
     </time>
     <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-    <h2 class="text-lg font-bold mb-4"><a href="/project/{{ release.canonical_project_slug }}/" class="link-primary">{{ release.project }}</a></h2>
+    <h2 class="mb-4 text-lg font-bold">
+      <a href="/project/{{ release.canonical_project_slug }}/" class="link-primary">{{ release.project }}</a>
+    </h2>
     <ul class="mb-4">
       <li class="ellipses">
         <div class="font-semibold">Type</div>
@@ -50,7 +52,12 @@ eleventyComputed:
           <div class="font-mono text-sm text-gray-400">
             {{ displayIndex }}
           </div>
-          <div>{{ track.title }}{% if track.artist %}<span class="text-gray-400"> by {{ track.artist }}</span>{% endif %}</div>
+          <div>
+            {{ track.title -}}
+            {%- if track.artist -%}
+              <span class="text-gray-400"> by {{ track.artist }}</span>
+            {%- endif %}
+          </div>
           {% if track.mp3_url %}
             <div class="link-primary font-mono text-sm">
               <a href="{{ track.mp3_url }}">MP3</a>
@@ -68,7 +75,16 @@ eleventyComputed:
           {% assign hasTrackIds = track.trackIds.size > 0 %}
           {% assign isLastTrackWithReleaseIds = forloop.last and release.trackIds.size > 0 %}
           <li class="mt-4 {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}">
-            <audio class="w-full" controls src="{{ track.mp3_url }}" data-title="{{ track.title }}" data-artist="{{ track.artist | default: release.project }}" data-duration="{{ track.length }}">Your browser does not support the audio element.</audio>
+            <audio
+              class="w-full"
+              controls
+              src="{{ track.mp3_url }}"
+              data-title="{{ track.title }}"
+              data-artist="{{ track.artist | default: release.project }}"
+              data-duration="{{ track.length }}"
+            >
+              Your browser does not support the audio element.
+            </audio>
           </li>
         {% endif %}
         {% if track.trackIds.size > 0 %}

@@ -1,8 +1,8 @@
 {%- comment -%}
-Reusable release card component
-Parameters:
-- release: The release object
-- showProject: Boolean to show/hide project name (default: false)
+  Reusable release card component
+  Parameters:
+  - release: The release object
+  - showProject: Boolean to show/hide project name (default: false)
 {%- endcomment -%}
 <li class="group flex flex-col bg-white text-black hover:bg-black hover:text-yellow-300">
   <a href="/music/{{ release.slug }}" class="block cursor-pointer">
@@ -27,9 +27,9 @@ Parameters:
         <strong>{{ release.title }}</strong>
       </li>
       {% if showProject %}
-      <li class="w-full truncate group-hover:underline">
-        {{ release.project }}
-      </li>
+        <li class="w-full truncate group-hover:underline">
+          {{ release.project }}
+        </li>
       {% endif %}
     </ul>
   </a>
