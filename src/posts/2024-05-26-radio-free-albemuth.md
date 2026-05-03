@@ -15,7 +15,7 @@ Intertext · Digital
 1. Radio Free Albemuth (1:34)
 1. Exegesis (12:15)
 1. Ichthys (2:31)
-4. Vast Active Living Intelligence System (31:18)
+1. Vast Active Living Intelligence System (31:18)
 
 ## Notes
 
