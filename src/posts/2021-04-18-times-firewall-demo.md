@@ -8,7 +8,7 @@ date: 2021-04-18
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/times-firewall-demo/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/times-firewall-demo/)
 
 ## Tracklist
 

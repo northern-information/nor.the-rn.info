@@ -8,7 +8,7 @@ date: 2025-03-23
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/elegies-for-ashley/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/elegies-for-ashley/)
 
 ## Tracklist
 

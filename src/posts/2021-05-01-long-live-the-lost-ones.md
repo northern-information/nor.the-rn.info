@@ -8,7 +8,7 @@ date: 2021-05-01
 **LP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/long-live-the-lost-ones/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/long-live-the-lost-ones/)
 
 ## Tracklist
 

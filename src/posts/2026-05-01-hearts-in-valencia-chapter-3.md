@@ -8,7 +8,7 @@ date: 2026-05-01
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/hearts-in-valencia-chapter-3/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/hearts-in-valencia-chapter-3/)
 
 ## Tracklist
 

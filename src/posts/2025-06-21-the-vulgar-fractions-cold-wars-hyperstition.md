@@ -8,7 +8,7 @@ date: 2025-06-21
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/the-vulgar-fractions-cold-wars-hyperstition/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/the-vulgar-fractions-cold-wars-hyperstition/)
 
 ## Tracklist
 

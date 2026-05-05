@@ -8,7 +8,7 @@ date: 2012-10-15
 **EP** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · Digital
 
-[Listen & Download](/music/connectedness-locus/prolegomenon/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/connectedness-locus/prolegomenon/)
 
 ## Tracklist
 

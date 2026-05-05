@@ -8,7 +8,7 @@ date: 2006-01-01
 **Single** by **[Ix](/project/ix/)**
 Endless Field Studios · CD-R
 
-[Listen & Download](/music/ix/yet-these-memories-isolated-us/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/ix/yet-these-memories-isolated-us/)
 
 ## Tracklist
 

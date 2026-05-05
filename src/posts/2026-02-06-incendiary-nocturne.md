@@ -8,7 +8,7 @@ date: 2026-02-06
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/incendiary-nocturne/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/incendiary-nocturne/)
 
 ## Tracklist
 

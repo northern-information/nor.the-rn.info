@@ -8,7 +8,7 @@ date: 2021-03-28
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/cipher-suite-demo/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/cipher-suite-demo/)
 
 ## Tracklist
 

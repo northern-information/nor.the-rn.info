@@ -8,7 +8,7 @@ date: 2007-01-01
 **LP** by **[Lucid End](/project/lucid-end/)**
 Independent · CD-R
 
-[Listen & Download](/music/lucid-end/time-to-breathe-time-to-think/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/lucid-end/time-to-breathe-time-to-think/)
 
 ## Tracklist
 

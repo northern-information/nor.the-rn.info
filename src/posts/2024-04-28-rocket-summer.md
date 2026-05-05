@@ -8,7 +8,7 @@ date: 2024-04-28
 **Single** by **[They Became What They Beheld](/project/they-became-what-they-beheld/)**
 Intertext · Digital
 
-[Listen & Download](/music/they-became-what-they-beheld/rocket-summer/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/they-became-what-they-beheld/rocket-summer/)
 
 ## Tracklist
 

@@ -8,7 +8,7 @@ date: 2008-01-01
 **LP** by **[Inocula](/project/inocula/)**
 Karma Productions · CD, Digital
 
-[Listen & Download](/music/inocula/suntelia-aeon/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/inocula/suntelia-aeon/)
 
 ## Tracklist
 

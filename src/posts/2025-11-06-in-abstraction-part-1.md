@@ -8,7 +8,7 @@ date: 2025-11-06
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/in-abstraction-part-1/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/in-abstraction-part-1/)
 
 ## Tracklist
 

@@ -8,7 +8,7 @@ date: 2015-06-21
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital
 
-[Listen & Download](/music/tyler-etters-and-the-northern-information-movement/and-though-the-soft-apocalypse-may-yet-overtake/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/tyler-etters-and-the-northern-information-movement/and-though-the-soft-apocalypse-may-yet-overtake/)
 
 ## Tracklist
 

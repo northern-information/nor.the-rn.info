@@ -8,7 +8,7 @@ date: 2021-03-14
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/carrier-demo/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/carrier-demo/)
 
 ## Tracklist
 

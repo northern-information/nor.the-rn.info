@@ -8,7 +8,7 @@ date: 2025-02-10
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/foxfires-kybalion/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/foxfires-kybalion/)
 
 ## Tracklist
 

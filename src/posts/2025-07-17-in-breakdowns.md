@@ -8,7 +8,7 @@ date: 2025-07-17
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/in-breakdowns/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/in-breakdowns/)
 
 ## Tracklist
 
