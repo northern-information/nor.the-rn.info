@@ -8,7 +8,7 @@ date: 2020-12-13
 **LP** by **[Northern Information](/project/northern-information/)**
 Intertext · Digital
 
-[Listen & Download](/music/northern-information/the-arecibo-lamentations/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/northern-information/the-arecibo-lamentations/)
 
 ## Tracklist
 

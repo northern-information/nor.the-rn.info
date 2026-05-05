@@ -8,7 +8,7 @@ date: 2013-01-01
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Cassette, Digital
 
-[Listen & Download](/music/tyler-etters-and-the-northern-information-movement/the-geometrie-of-our-lost-cause/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/tyler-etters-and-the-northern-information-movement/the-geometrie-of-our-lost-cause/)
 
 ## Tracklist
 

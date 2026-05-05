@@ -8,7 +8,7 @@ date: 2018-10-31
 **Compilation** by **[Synergy Beat](/project/synergy-beat/)**
 Synergy Beat · Digital
 
-[Listen & Download](/music/synergy-beat/synergy-beat-music-volume-1/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/synergy-beat/synergy-beat-music-volume-1/)
 
 ## Tracklist
 

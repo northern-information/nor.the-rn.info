@@ -8,7 +8,7 @@ date: 2011-07-30
 **LP** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · CD, Digital
 
-[Listen & Download](/music/connectedness-locus/terraforms/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/connectedness-locus/terraforms/)
 
 ## Tracklist
 

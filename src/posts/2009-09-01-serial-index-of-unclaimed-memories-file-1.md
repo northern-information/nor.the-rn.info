@@ -8,7 +8,7 @@ date: 2009-09-01
 **LP** by **[Everything Comes in Cycles; Everything Fades in Shades](/project/everything-comes-in-cycles-everything-fades-in-shades/)**
 Endless Field Studios · Digital
 
-[Listen & Download](/music/everything-comes-in-cycles-everything-fades-in-shades/serial-index-of-unclaimed-memories-file-1/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/everything-comes-in-cycles-everything-fades-in-shades/serial-index-of-unclaimed-memories-file-1/)
 
 ## Tracklist
 

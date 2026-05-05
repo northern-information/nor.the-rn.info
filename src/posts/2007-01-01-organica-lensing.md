@@ -8,7 +8,7 @@ date: 2007-01-01
 **Single** by **[Lucid End](/project/lucid-end/)**
 Independent · CD
 
-[Listen & Download](/music/lucid-end/organica-lensing/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/lucid-end/organica-lensing/)
 
 ## Tracklist
 

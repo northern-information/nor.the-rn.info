@@ -85,7 +85,7 @@ function generatePostContent(release) {
   lines.push('')
 
   // Listen & Download link
-  const releaseUrl = `/music/${release.project_slug}/${release.release_slug}/`
+  const releaseUrl = `https://nor.the-rn.info/rm_ation/music/${release.project_slug}/${release.release_slug}/`
   lines.push(`[Listen & Download](${releaseUrl})`)
   lines.push('')
 

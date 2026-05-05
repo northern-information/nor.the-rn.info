@@ -8,7 +8,7 @@ date: 2023-12-22
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/in-darkness-radiant/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/in-darkness-radiant/)
 
 ## Tracklist
 

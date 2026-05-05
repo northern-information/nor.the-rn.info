@@ -8,7 +8,7 @@ date: 2025-05-08
 **LP** by **[Northern Information](/project/northern-information/)**
 Intertext · Digital
 
-[Listen & Download](/music/northern-information/a-report-on-our-findings/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/northern-information/a-report-on-our-findings/)
 
 ## Tracklist
 

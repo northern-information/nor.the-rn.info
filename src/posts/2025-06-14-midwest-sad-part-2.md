@@ -8,7 +8,7 @@ date: 2025-06-14
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/midwest-sad-part-2/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/midwest-sad-part-2/)
 
 ## Tracklist
 

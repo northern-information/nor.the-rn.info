@@ -8,7 +8,7 @@ date: 2010-02-18
 **Single** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · Digital
 
-[Listen & Download](/music/connectedness-locus/when-the-paint-peels/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/connectedness-locus/when-the-paint-peels/)
 
 ## Tracklist
 

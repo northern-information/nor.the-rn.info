@@ -8,7 +8,7 @@ date: 2025-04-05
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/dj-stuxnet/dissolution/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/dj-stuxnet/dissolution/)
 
 ## Tracklist
 

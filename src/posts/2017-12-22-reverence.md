@@ -8,7 +8,7 @@ date: 2017-12-22
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital
 
-[Listen & Download](/music/tyler-etters-and-the-northern-information-movement/reverence/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/tyler-etters-and-the-northern-information-movement/reverence/)
 
 ## Tracklist
 

@@ -8,7 +8,7 @@ date: 2024-05-26
 **LP** by **[They Became What They Beheld](/project/they-became-what-they-beheld/)**
 Intertext · Digital
 
-[Listen & Download](/music/they-became-what-they-beheld/radio-free-albemuth/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/they-became-what-they-beheld/radio-free-albemuth/)
 
 ## Tracklist
 

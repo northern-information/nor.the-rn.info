@@ -8,7 +8,7 @@ date: 2007-04-08
 **LP** by **[Ix](/project/ix/)**
 Endless Field Studios · CD
 
-[Listen & Download](/music/ix/descent-into-dreams/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/ix/descent-into-dreams/)
 
 ## Tracklist
 

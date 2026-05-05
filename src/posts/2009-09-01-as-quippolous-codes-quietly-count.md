@@ -8,7 +8,7 @@ date: 2009-09-01
 **LP** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · CD, Digital
 
-[Listen & Download](/music/connectedness-locus/as-quippolous-codes-quietly-count/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/connectedness-locus/as-quippolous-codes-quietly-count/)
 
 ## Tracklist
 

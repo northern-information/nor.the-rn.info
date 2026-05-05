@@ -8,7 +8,7 @@ date: 2021-07-26
 **LP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/human-interference-task-force/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/human-interference-task-force/)
 
 ## Tracklist
 

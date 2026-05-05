@@ -8,7 +8,7 @@ date: 2021-07-07
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/countersurveillance/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/countersurveillance/)
 
 ## Tracklist
 

@@ -8,7 +8,7 @@ date: 2025-10-08
 **OST** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/continuum-hack-ost/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/continuum-hack-ost/)
 
 ## Tracklist
 

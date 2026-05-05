@@ -8,7 +8,7 @@ date: 2023-03-20
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
 
-[Listen & Download](/music/stuxnet/fade-scatter-replicate/)
+[Listen & Download](https://nor.the-rn.info/rm_ation/music/stuxnet/fade-scatter-replicate/)
 
 ## Tracklist
 
