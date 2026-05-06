@@ -1,12 +1,8 @@
 ---
-title: "The Crisis of the Modern World (01927)"
-date: 2026-04-09
+title: "Egregores"
+date: 2026-05-09
 ---
 
-René Guénon:
+[Myles Badger](https://mylesbadger.substack.com/p/my-own-personal-warp-god):
 
-> Those who might be tempted to give way to despair should realize that nothing accomplished in this order can ever be lost, that confusion, error and darkness can win the day only apparently and in a purely ephemeral way, that all partial and transitory disequilibrium must perforce contribute towards the greater equilibrium of the whole, and that nothing can ultimately prevail against the power of truth.
->
-> [...]
->
-> The falsification of everything has been shown to be one of the characteristic features of our period, but falsification is not in itself subversion properly so-called, though contributing directly to the preparation for it. Perhaps the clearest indication of this is what may be called the falsification of language, taking the form of the misuse of certain words that have been diverted from their true meaning; misuse of this kind is to some extent imposed by constant suggestion on the part of everyone who exercises any kind of influence over the mentality of the public.
+> Every egregore works like this: when enough people invest enough effort in a shared symbolic system, that system will start to take on a life of its own and develop an internal logic that no single contributor can fully control. It will also begin to exert a pull beyond the efforts of those contributors, who may begin to find themselves defending and advocating for the system without consciously choosing to do so. The strongest systems outlive even their most influential individual adherents.
