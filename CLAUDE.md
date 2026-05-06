@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code when working with this repository.
 
+## Writing style
+
+- Use sentence case for all prose — commit messages, comments, post frontmatter, chat replies. Capitalize the first word and proper nouns only.
+- Wrap code, identifiers, file paths, and commands in backticks. Use triple-backtick code fences for multi-line snippets with a language tag.
+- Preserve original casing for identifiers (PascalCase, camelCase, SCREAMING_SNAKE_CASE) and product names (GitHub, Eleventy, Tailwind, Luxon).
+
 ## Project Overview
 
 This is **Northern Information**, a personal website/blog built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. It uses Liquid templates, Tailwind CSS, and Luxon for date handling.
