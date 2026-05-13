@@ -1,4 +1,5 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
@@ -195,6 +196,21 @@ export default async (eleventyConfig) => {
     figcaption: false,
   })
 
+  // Tag remote and route-rewritten images so eleventyImageTransformPlugin skips them.
+  // CloudFront covers are already optimized; /rm_ation/ is a Cloudflare route rewrite
+  // and the plugin can't resolve the prefix to a local file.
+  const defaultImageRender =
+    markdownLib.renderer.rules.image ||
+    ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+  markdownLib.renderer.rules.image = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    const src = token.attrGet('src') || ''
+    if (/^https?:\/\//.test(src) || src.startsWith('/rm_ation/')) {
+      token.attrSet('eleventy:ignore', '')
+    }
+    return defaultImageRender(tokens, idx, options, env, self)
+  }
+
   eleventyConfig.setLibrary('md', markdownLib)
 
   eleventyConfig.addFilter(
@@ -286,6 +302,19 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     extensions: 'html,md,css',
+  })
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: 'html',
+    formats: ['avif', 'webp', 'auto'],
+    widths: [400, 800, 1600, 'auto'],
+    htmlOptions: {
+      imgAttributes: {
+        loading: 'lazy',
+        decoding: 'async',
+      },
+    },
+    failOnError: false,
   })
 
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
