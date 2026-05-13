@@ -33,7 +33,9 @@
       "Bash(npm ls:*)",
       "Bash(npm list:*)",
       "Bash(npm update:*)",
-      "Bash(git -C /Users/tyleretters/projects/nor.the-rn.info count-objects -vH)"
+      "Bash(git -C /Users/tyleretters/projects/nor.the-rn.info count-objects -vH)",
+      "Bash(awk '!seen[$0]++')",
+      "Bash(python3 *)"
     ]
   }
 }
