@@ -7,3 +7,4 @@ dist
 *.log
 .eleventy-cache/
 .cache/
+.claude/
