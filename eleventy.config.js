@@ -1,4 +1,5 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
@@ -195,6 +196,21 @@ export default async (eleventyConfig) => {
     figcaption: false,
   })
 
+  // Tag remote and route-rewritten images so eleventyImageTransformPlugin skips them.
+  // CloudFront covers are already optimized; /rm_ation/ is a Cloudflare route rewrite
+  // and the plugin can't resolve the prefix to a local file.
+  const defaultImageRender =
+    markdownLib.renderer.rules.image ||
+    ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+  markdownLib.renderer.rules.image = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    const src = token.attrGet('src') || ''
+    if (/^https?:\/\//.test(src) || src.startsWith('/rm_ation/')) {
+      token.attrSet('eleventy:ignore', '')
+    }
+    return defaultImageRender(tokens, idx, options, env, self)
+  }
+
   eleventyConfig.setLibrary('md', markdownLib)
 
   eleventyConfig.addFilter(
@@ -282,13 +298,52 @@ export default async (eleventyConfig) => {
     }
   )
 
+  // Replace the last occurrence of `find` with `replace` (Nunjucks lacks Liquid's replace_last).
+  eleventyConfig.addFilter('replaceLast', (s, find, replace) => {
+    if (typeof s !== 'string') return s
+    const i = s.lastIndexOf(find)
+    return i === -1 ? s : s.slice(0, i) + replace + s.slice(i + find.length)
+  })
+
+  // Remove the first occurrence of `find` (Nunjucks lacks Liquid's remove_first).
+  eleventyConfig.addFilter('removeFirst', (s, find) => {
+    if (typeof s !== 'string') return s
+    return s.replace(find, '')
+  })
+
+  // Preserve Liquid's no-autoescape behavior so existing templates render HTML directly
+  // without piping every interpolation through `| safe`. All template inputs are trusted
+  // (markdown content, YAML data files, code constants).
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    autoescape: false,
+  })
+
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     extensions: 'html,md,css',
   })
 
+  // eleventy-img writes derivatives into src/ (committed to git) and we passthrough
+  // them to dist/. Cloudflare clones the repo and skips Sharp processing when the
+  // hashed outputs already exist, so deploys stay fast.
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: 'html',
+    formats: ['avif', 'webp', 'auto'],
+    widths: [400, 800, 1600, 'auto'],
+    outputDir: `./${DIRS.INPUT}/img-optimized/`,
+    urlPath: '/img-optimized/',
+    htmlOptions: {
+      imgAttributes: {
+        loading: 'lazy',
+        decoding: 'async',
+      },
+    },
+    failOnError: false,
+  })
+
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/img-optimized`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
@@ -296,7 +351,18 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
 
-  eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
+  // Local dev: strip the /rm_ation/ prefix so links resolve from dist/ root.
+  // In production, Cloudflare handles this via a route rewrite (site root is /rm_ation/).
+  eleventyConfig.setServerOptions({
+    middleware: [
+      (req, res, next) => {
+        if (req.url.startsWith('/rm_ation/')) {
+          req.url = req.url.replace(/^\/rm_ation/, '') || '/'
+        }
+        next()
+      },
+    ],
+  })
 
   eleventyConfig.addCollection('discography', () => {
     return discography.map((release) => ({
@@ -404,7 +470,7 @@ export default async (eleventyConfig) => {
   })
 
   return {
-    markdownTemplateEngine: 'liquid',
+    markdownTemplateEngine: 'njk',
     dir: {
       input: DIRS.INPUT,
       data: DIRS.DATA,

@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+{% from "releaseCard.njk" import card %}
+<ul class="grid-releases border-t-4">
+  {% for release in collections.discography %}
+    {{ card(release, showProject=true) }}
+  {% endfor %}
+</ul>

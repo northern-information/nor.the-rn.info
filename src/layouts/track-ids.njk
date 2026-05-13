@@ -1,0 +1,35 @@
+---
+layout: base.njk
+---
+<div class="my-1 font-mono text-xs">
+  {%- for release in collections.discography -%}
+    {%- if (release.trackIds | length) > 0 -%}
+      <span class="font-bold text-yellow-300">{{ release.title }}</span>,
+      {% for track in release.trackIds -%}
+        {{- track -}}
+        {%- if not loop.last %}, {% endif -%}
+      {%- endfor -%}
+      ,
+    {%- endif -%}
+  {% endfor -%}
+  {%- for release in collections.discography -%}
+    {%- for track in release.tracks -%}
+      {%- if (track.trackIds | length) > 0 -%}
+        <span class="font-bold text-yellow-300">{{ track.title }}</span>,
+        {% for id in track.trackIds -%}
+          {{- id -}}
+          {%- if not loop.last %}, {% endif -%}
+        {%- endfor -%}
+        ,
+      {% endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- for playlist in playlists -%}
+    <span class="font-bold text-yellow-300">{{ playlist.title }}</span>,
+    {% for track in playlist.tracks -%}
+      {{- track -}}
+      {%- if not loop.last %}, {% endif -%}
+    {%- endfor -%}
+    {%- if not loop.last %}, {% endif %}
+  {%- endfor -%}
+</div>

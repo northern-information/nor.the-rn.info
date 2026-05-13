@@ -1,0 +1,41 @@
+---
+layout: base.njk
+---
+<div class="grid grid-cols-1 gap-1 md:grid-cols-5 xl:grid-cols-4">
+  <article class="post px-2 pt-3 md:col-span-3 md:pr-10 xl:col-span-3">
+    <time class="font-mono text-sm text-gray-400" datetime="{{ page.date | dateToUTCISO }}">
+      {{- page.date | dateToUTCFull -}}
+    </time>
+    <h1 class="mb-4 text-4xl font-bold">{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+  <aside class="md:col-span-2 xl:col-span-1" aria-label="Related posts from the same year">
+    {% set postDate = page.date | dateToUTCYear %}
+    {% for group in collections.postsByYear %}
+      {% if postDate == group.year %}
+        <ul class="list-none border-y-2 border-black">
+          {% for post in group.posts %}
+            {% set thisPost = post.url == page.url %}
+            <li>
+              <a
+                href="{{ post.url }}"
+                {% if thisPost %}
+                  class="group block border-y-2 border-solid border-black bg-red-500 p-2 text-white underline visited:text-white"
+                {% else %}
+                  class="group block border-y-2 border-solid border-black bg-white p-2 text-black hover:bg-red-500 hover:text-white hover:underline"
+                {% endif %}
+              >
+                <span class="font-mono text-sm {% if thisPost %}text-white{% else %}text-gray-400 group-hover:text-white{% endif %}">
+                  {{- post.data.date | dateToUTCFull -}}
+                </span>
+                <br>
+                <span class="font-semibold">{{ post.data.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+    <a href="/blog" class="link-primary mb-2 block px-2">All Posts &rarr;</a>
+  </aside>
+</div>

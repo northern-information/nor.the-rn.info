@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% getTitle title %}</title>
+    {% include "metaTags.njk" %}
+    <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
+    <link href="/styles/pagefind.css?ver={% getTimestamp %}" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: '#search', showSubResults: true })
+      })
+    </script>
+  </head>
+  <body>
+    {% include "nav.njk" %}
+    <main class="container mx-auto">
+      <div class="overflow-hidden border-4 border-solid border-black p-2 pb-10 text-center">
+        <p class="font-mono">
+          Search the entire Northern Information site.
+          <br>
+          Last indexed: {{ site.META.BUILD_TIME | dateToUTCFull }}
+          <br>
+        </p>
+        <p>&#8258;</p>
+        <noscript>
+          <p class="py-4 text-center">JavaScript is required for search.</p>
+        </noscript>
+        <div id="search"></div>
+      </div>
+    </main>
+    {% include "footer.njk" %}
+  </body>
+</html>

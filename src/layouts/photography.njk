@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+<div class="av">
+  {% for photo in photography %}
+    <a href="{{ photo.url }}">
+      <img src="{{ photo.url }}" alt="{{ photo.title }}" class="h-auto w-full" loading="lazy">
+    </a>
+  {% endfor %}
+</div>
