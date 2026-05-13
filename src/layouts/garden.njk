@@ -1,5 +1,5 @@
 ---
-layout: base.liquid
+layout: base.njk
 ---
 <div class="mt-5 mb-4">
   <h1 class="text-center text-4xl">{{ title }}</h1>
@@ -28,13 +28,13 @@ layout: base.liquid
 
   <h2 class="text-center text-4xl">Resources</h2>
   <hr class="my-5">
-  {% render gardenResources, resources: resources %}
+  {% include "gardenResources.njk" %}
 
   <h2 class="text-center text-4xl">Subsidiaries</h2>
   <hr class="my-5">
-  {% render gardenSubsidiaries, subsidiaries: subsidiaries %}
+  {% include "gardenSubsidiaries.njk" %}
 
   <h2 class="text-center text-4xl">Playlists</h2>
   <hr class="my-5">
-  {% render gardenPlaylists, playlists: playlists %}
+  {% include "gardenPlaylists.njk" %}
 </div>

@@ -1,4 +1,4 @@
 ---
 title: Photography
-layout: photography.liquid
+layout: photography.njk
 ---

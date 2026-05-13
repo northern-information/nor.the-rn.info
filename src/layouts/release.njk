@@ -1,9 +1,10 @@
 ---
-layout: base.liquid
+layout: base.njk
 permalink: /music/{{ release.slug }}
 eleventyComputed:
   title: "{{ release.title }} by {{ release.project }}"
 ---
+{% from "trackIds.njk" import list as trackIdsList %}
 <div class="my-1 grid grid-cols-1 gap-1 md:grid-cols-2">
   <div>
     <a href="{{ release.cover_url }}">
@@ -45,10 +46,10 @@ eleventyComputed:
     </ul>
     <div id="webamp-target"></div>
     <h3 class="text-lg font-bold">Tracklist</h3>
-    <ol class="{% if release.trackIds.size > 0 %}mb-2{% else %}mb-4{% endif %}">
+    <ol class="{% if release.trackIds.length > 0 %}mb-2{% else %}mb-4{% endif %}">
       {% for track in release.tracks %}
         <li class="ellipses">
-          {% assign displayIndex = forloop.index | padIndex %}
+          {% set displayIndex = loop.index | padIndex %}
           <div class="font-mono text-sm text-gray-400">
             {{ displayIndex }}
           </div>
@@ -72,38 +73,38 @@ eleventyComputed:
           <div class="font-mono text-sm">{{ track.length | formatTrackLength }}</div>
         </li>
         {% if track.mp3_url %}
-          {% assign hasTrackIds = track.trackIds.size > 0 %}
-          {% assign isLastTrackWithReleaseIds = forloop.last and release.trackIds.size > 0 %}
+          {% set hasTrackIds = (track.trackIds | length) > 0 %}
+          {% set isLastTrackWithReleaseIds = loop.last and (release.trackIds | length) > 0 %}
           <li class="mt-4 {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}">
             <audio
               class="w-full"
               controls
               src="{{ track.mp3_url }}"
               data-title="{{ track.title }}"
-              data-artist="{{ track.artist | default: release.project }}"
+              data-artist="{{ track.artist | default(release.project) }}"
               data-duration="{{ track.length }}"
             >
               Your browser does not support the audio element.
             </audio>
           </li>
         {% endif %}
-        {% if track.trackIds.size > 0 %}
+        {% if (track.trackIds | length) > 0 %}
           <li class="mb-4">
             <details>
               <summary class="cursor-pointer text-gray-400 hover:text-gray-200">Track Ids</summary>
-              {% render trackIds, trackIds: track.trackIds %}
+              {{ trackIdsList(track.trackIds) }}
             </details>
           </li>
         {% endif %}
       {% endfor %}
     </ol>
-    {% if release.trackIds.size > 0 %}
+    {% if (release.trackIds | length) > 0 %}
       <details class="mb-4">
         <summary class="cursor-pointer text-gray-400 hover:text-gray-200">Track Ids</summary>
-        {% render trackIds, trackIds: release.trackIds %}
+        {{ trackIdsList(release.trackIds) }}
       </details>
     {% endif %}
-    {% if release.streams.size > 0 %}
+    {% if (release.streams | length) > 0 %}
       <h3 class="text-lg font-bold">Listen</h3>
       <ol class="mb-4">
         {% for stream in release.streams %}
@@ -119,8 +120,8 @@ eleventyComputed:
       </ol>
     {% endif %}
     <h3 class="text-lg font-bold">Notes</h3>
-    <div class="release mb-4">{{ release.notes | linkify }}</div>
+    <div class="release mb-4">{{ release.notes | linkify | safe }}</div>
     <h3 class="text-lg font-bold">Credits</h3>
-    <div class="release mb-4">{{ release.credits | linkify }}</div>
+    <div class="release mb-4">{{ release.credits | linkify | safe }}</div>
   </div>
 </div>

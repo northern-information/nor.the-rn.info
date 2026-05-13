@@ -1,6 +1,6 @@
 ---
 title: About
-layout: about.liquid
+layout: about.njk
 ---
 
 - My name is Tyler Etters.

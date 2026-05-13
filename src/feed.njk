@@ -16,20 +16,20 @@ eleventyExcludeFromCollections: true
       <title>{{ site.META.TITLE }}</title>
       <link>{{ site.META.CANONICAL }}</link>
     </image>
-    {% assign sortedPosts = collections.posts | reverse %}
-    {% for post in sortedPosts limit:10 %}
-    {% assign postPath = post.url | remove_first: "/" %}
-    {% assign absolutePostUrl = site.META.CANONICAL | append: postPath %}
-    {% assign firstImage = post.content | extractFirstImage %}
+    {% set sortedPosts = (collections.posts | reverse).slice(0, 10) %}
+    {% for post in sortedPosts %}
+    {% set postPath = post.url | removeFirst("/") %}
+    {% set absolutePostUrl = site.META.CANONICAL + postPath %}
+    {% set firstImage = post.content | extractFirstImage %}
     <item>
       <title>{{ post.data.title }}</title>
       <link>{{ absolutePostUrl }}</link>
-      <description><![CDATA[{{ post.content | convertHtmlToAbsoluteUrls: absolutePostUrl }}]]></description>
+      <description><![CDATA[{{ post.content | convertHtmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></description>
       <pubDate>{{ post.date | dateToRfc822Utc }}</pubDate>
       <dc:creator>{{ site.META.AUTHOR }}</dc:creator>
       <guid>{{ absolutePostUrl }}</guid>
       {% if firstImage %}
-      <enclosure url="{{ firstImage | toAbsoluteUrl: site.META.CANONICAL }}" type="image/jpeg" length="0"/>
+      <enclosure url="{{ firstImage | toAbsoluteUrl(site.META.CANONICAL) }}" type="image/jpeg" length="0"/>
       {% endif %}
     </item>
     {% endfor %}

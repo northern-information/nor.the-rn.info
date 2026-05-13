@@ -1,5 +1,5 @@
 ---
-layout: base.liquid
+layout: base.njk
 ---
 <div class="my-1 grid grid-cols-1 overflow-hidden md:grid-cols-2">
   <div class="w-full">
@@ -9,7 +9,7 @@ layout: base.liquid
   </div>
   <div class="post pt-3 pl-2">
     <h1 class="text-4xl font-bold">Hello.</h1>
-    {{ content }}
+    {{ content | safe }}
     <h2>Social Media:</h2>
     <p>
       <a href="{{ site.ACCOUNTS.BANDCAMP }}">Bandcamp</a>, <a href="{{ site.ACCOUNTS.BLUESKY }}">Bluesky</a>,

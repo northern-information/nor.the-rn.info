@@ -1,4 +1,4 @@
 ---
 title: Music Releases
-layout: music.liquid
+layout: music.njk
 ---

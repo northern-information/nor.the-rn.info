@@ -14,7 +14,7 @@ const getMimeType = (url) => {
 export default {
   ogType: 'article',
   eleventyComputed: {
-    layout: 'post.liquid',
+    layout: 'post.njk',
     permalink: (data) => {
       const date = new Date(data.page.date)
       const y = date.getUTCFullYear()

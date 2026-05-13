@@ -1,4 +1,4 @@
 ---
 title: Links
-layout: links.liquid
+layout: links.njk
 ---

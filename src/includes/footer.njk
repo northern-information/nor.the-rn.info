@@ -1,6 +1,6 @@
 <footer class="container mx-auto overflow-hidden">
-  {% render spectrum %}
-  {% render rule %}
+  {% include "spectrum.njk" %}
+  {% include "rule.njk" %}
   <div class="grid gap-1 lg:grid-cols-4 ">
     <ul class="bg-white px-2 py-2 text-black">
       <li>{{ site.META.TITLE }}</li>
@@ -17,7 +17,7 @@
     <ul class="bg-white px-2 py-2 text-black lg:col-span-2">
       <li>
         You Are Here:
-        {% assign path = site.META.CANONICAL | replace_last: '/', '' | append: page.url %}
+        {% set path = (site.META.CANONICAL | replaceLast('/', '')) + page.url %}
         <a href="{{ path }}" class="text-blue-700 underline hover:text-blue-900 hover:no-underline">
           {{ path }}
         </a>
@@ -67,7 +67,7 @@
       >
     </a>
   </div>
-  {% render rule %}
-  {% render spectrum %}
-  {% render rule %}
+  {% include "rule.njk" %}
+  {% include "spectrum.njk" %}
+  {% include "rule.njk" %}
 </footer>

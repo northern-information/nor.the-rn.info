@@ -1,14 +1,9 @@
 ---
-layout: base.liquid
+layout: base.njk
 title: Northern Information
 ---
-{%- comment -%} Featured Project - Full Width {%- endcomment -%}
-{% assign featured = null %}
-{% for project in collections.projects %}
-  {% if project.featured %}
-    {% assign featured = project %}
-  {% endif %}
-{% endfor %}
+{# Featured Project - Full Width #}
+{% set featured = projectGroups.featured[0] %}
 
 {% if featured %}
   <section class="mb-1 border-t-4 border-solid border-black" aria-label="Featured project">
@@ -29,15 +24,10 @@ title: Northern Information
   </section>
 {% endif %}
 
-{%- comment -%} Active Projects - 3-column Grid (excluding featured) {%- endcomment -%}
-{% assign activeNotFeatured = '' | split: '' %}
-{% for project in collections.projects %}
-  {% if project.active and project.featured != true %}
-    {% assign activeNotFeatured = activeNotFeatured | push: project %}
-  {% endif %}
-{% endfor %}
+{# Active Projects - 3-column Grid (excluding featured) #}
+{% set activeNotFeatured = projectGroups.activeNotFeatured %}
 
-{% if activeNotFeatured.size > 0 %}
+{% if activeNotFeatured.length > 0 %}
   <section class="mb-1" aria-label="Active projects">
     <ul class="grid-projects">
       {% for project in activeNotFeatured %}
@@ -47,7 +37,7 @@ title: Northern Information
               <img
                 src="{{ project.image }}"
                 alt="{{ project.name }}"
-                class="z-0 h-full w-full object-cover object-top{% unless project.hoverImage %} group-hover:invert{% else %} group-hover:opacity-0{% endunless %}"
+                class="z-0 h-full w-full object-cover object-top{% if not project.hoverImage %} group-hover:invert{% else %} group-hover:opacity-0{% endif %}"
                 loading="lazy"
               >
               {% if project.hoverImage %}
@@ -70,10 +60,3 @@ title: Northern Information
     </ul>
   </section>
 {% endif %}
-
-{% assign inactive = '' | split: '' %}
-{% for project in collections.projects %}
-  {% unless project.active %}
-    {% assign inactive = inactive | push: project %}
-  {% endunless %}
-{% endfor %}
