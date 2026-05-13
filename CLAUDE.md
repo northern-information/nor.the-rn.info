@@ -12,6 +12,10 @@ This file provides guidance to Claude Code when working with this repository.
 
 This is **Northern Information**, a personal website/blog built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. It uses Nunjucks templates, Tailwind CSS, and Luxon for date handling.
 
+**Nunjucks autoescape is disabled** (`setNunjucksEnvironmentOptions({ autoescape: false })` in `eleventy.config.js`). All template inputs come from trusted sources (markdown content, YAML data files, package constants). If you ever introduce user-supplied input into a template, escape it explicitly with the `| escape` filter.
+
+**Local dev includes a `/rm_ation/` middleware** that strips the prefix so links resolve from `dist/` root. On production, Cloudflare's route rewrite handles this (the site root is `/rm_ation/`). See `setServerOptions` in `eleventy.config.js`.
+
 ## Build Commands
 
 ```bash
@@ -42,6 +46,7 @@ Use `.11tydata.js` files (not `.json`) for Eleventy directory data. JS files sup
 
 - `src/posts/posts.11tydata.js` — layout, permalink, ogType, RSS enclosure data
 - `src/pages/pages.11tydata.js` — permalink
+- `src/index.11tydata.js` — `projectGroups` computed data (featured, activeNotFeatured, inactive) for the homepage
 
 ### Blog Posts
 
@@ -84,6 +89,8 @@ Located in `eleventy.config.js`:
 - `toAbsoluteUrl` - Converts relative URLs to absolute
 - `dateToRfc822Utc` - RFC 822 date format for RSS feeds
 - `convertHtmlToAbsoluteUrls` - Converts relative URLs in HTML to absolute for RSS
+- `replaceLast` - Replaces the last occurrence of a substring (Nunjucks lacks Liquid's `replace_last`)
+- `removeFirst` - Removes the first occurrence of a substring (Nunjucks lacks Liquid's `remove_first`)
 
 ### Shortcodes
 
