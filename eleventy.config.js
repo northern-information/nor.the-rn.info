@@ -304,10 +304,15 @@ export default async (eleventyConfig) => {
     extensions: 'html,md,css',
   })
 
+  // eleventy-img writes derivatives into src/ (committed to git) and we passthrough
+  // them to dist/. Cloudflare clones the repo and skips Sharp processing when the
+  // hashed outputs already exist, so deploys stay fast.
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: 'html',
     formats: ['avif', 'webp', 'auto'],
     widths: [400, 800, 1600, 'auto'],
+    outputDir: `./${DIRS.INPUT}/img-optimized/`,
+    urlPath: '/img-optimized/',
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
@@ -318,6 +323,7 @@ export default async (eleventyConfig) => {
   })
 
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/img-optimized`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
