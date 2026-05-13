@@ -333,6 +333,19 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 
+  // Local dev: strip the /rm_ation/ prefix so links resolve from dist/ root.
+  // In production, Cloudflare handles this via a route rewrite (site root is /rm_ation/).
+  eleventyConfig.setServerOptions({
+    middleware: [
+      (req, res, next) => {
+        if (req.url.startsWith('/rm_ation/')) {
+          req.url = req.url.replace(/^\/rm_ation/, '') || '/'
+        }
+        next()
+      },
+    ],
+  })
+
   eleventyConfig.addCollection('discography', () => {
     return discography.map((release) => ({
       ...release,
