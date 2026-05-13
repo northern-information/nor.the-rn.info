@@ -25,7 +25,7 @@
     "luxon": "3.7.2",
     "markdown-it": "14.1.1",
     "markdown-it-implicit-figures": "0.12.0",
-    "memoize": "10.2.0",
+    "memoize": "11.0.0",
     "pagefind": "1.5.2",
     "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "0.8.0",
