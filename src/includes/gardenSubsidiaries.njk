@@ -7,7 +7,7 @@
             {{ subsidiary.dates }}
           </time>
           <h2 class="mb-4 text-4xl font-bold">{{ subsidiary.title }}</h2>
-          {{ subsidiary.content | markdown }}
+          {{ subsidiary.content | markdown | safe }}
         </div>
         <div class="md:col-span-2">
           <a href="{{ subsidiary.image }}">

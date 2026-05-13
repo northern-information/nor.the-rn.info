@@ -54,7 +54,7 @@ eleventy.config.js
 ./src/data/projects.js
 ./src/data/site.js
 ./src/data/titleCaseExceptions.js
-./src/music/index.liquid
+./src/music/index.njk
 ./src/pages/pages.11tydata.js
 ./src/posts/posts.11tydata.js
 ./scripts/generate-release-posts.js

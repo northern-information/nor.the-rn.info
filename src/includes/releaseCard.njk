@@ -1,9 +1,4 @@
-{%- comment -%}
-  Reusable release card component
-  Parameters:
-  - release: The release object
-  - showProject: Boolean to show/hide project name (default: false)
-{%- endcomment -%}
+{% macro card(release, showProject=false) %}
 <li class="group flex flex-col bg-white text-black hover:bg-black hover:text-yellow-300">
   <a href="/music/{{ release.slug }}" class="block cursor-pointer">
     <div class="grain-hover aspect-[1/1] w-full overflow-hidden">
@@ -34,3 +29,4 @@
     </ul>
   </a>
 </li>
+{% endmacro %}

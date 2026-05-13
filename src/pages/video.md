@@ -1,6 +1,6 @@
 ---
 title: Video
-layout: video.liquid
+layout: video.njk
 videoSrc: "https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/kowloon-walled-city-giga-mix/mobile-kowloon-city-leyline.mp4"
 videos:
   - id: eZtNgGEeGo4

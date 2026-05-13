@@ -298,6 +298,26 @@ export default async (eleventyConfig) => {
     }
   )
 
+  // Replace the last occurrence of `find` with `replace` (Nunjucks lacks Liquid's replace_last).
+  eleventyConfig.addFilter('replaceLast', (s, find, replace) => {
+    if (typeof s !== 'string') return s
+    const i = s.lastIndexOf(find)
+    return i === -1 ? s : s.slice(0, i) + replace + s.slice(i + find.length)
+  })
+
+  // Remove the first occurrence of `find` (Nunjucks lacks Liquid's remove_first).
+  eleventyConfig.addFilter('removeFirst', (s, find) => {
+    if (typeof s !== 'string') return s
+    return s.replace(find, '')
+  })
+
+  // Preserve Liquid's no-autoescape behavior so existing templates render HTML directly
+  // without piping every interpolation through `| safe`. All template inputs are trusted
+  // (markdown content, YAML data files, code constants).
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    autoescape: false,
+  })
+
   eleventyConfig.addPlugin(IdAttributePlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
@@ -330,8 +350,6 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
-
-  eleventyConfig.setLiquidOptions({ jsTruthy: true, dynamicPartials: false })
 
   // Local dev: strip the /rm_ation/ prefix so links resolve from dist/ root.
   // In production, Cloudflare handles this via a route rewrite (site root is /rm_ation/).
@@ -452,7 +470,7 @@ export default async (eleventyConfig) => {
   })
 
   return {
-    markdownTemplateEngine: 'liquid',
+    markdownTemplateEngine: 'njk',
     dir: {
       input: DIRS.INPUT,
       data: DIRS.DATA,

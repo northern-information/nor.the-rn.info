@@ -1,17 +1,17 @@
 <nav class="container mx-auto overflow-hidden bg-white text-black">
-  {%- render rule -%}
-  {%- render spectrum -%}
-  {%- render rule -%}
-  {%- render masthead -%}
-  {%- render rule -%}
+  {%- include "rule.njk" -%}
+  {%- include "spectrum.njk" -%}
+  {%- include "rule.njk" -%}
+  {%- include "masthead.njk" -%}
+  {%- include "rule.njk" -%}
   <div class="grid grid-cols-2 gap-1 border-b-4 border-solid border-b-black bg-black md:grid-cols-4">
     {%- for item in navigation -%}
-      {%- assign is_active = false -%}
-      {%- assign is_search = item.label == 'Search' -%}
-      {%- if item.match == 'contains' and page.url contains item.url -%}
-        {%- assign is_active = true -%}
-      {%- elsif item.match == 'equals' and page.url == item.url -%}
-        {%- assign is_active = true -%}
+      {%- set is_active = false -%}
+      {%- set is_search = item.label == 'Search' -%}
+      {%- if item.match == 'contains' and (item.url in page.url) -%}
+        {%- set is_active = true -%}
+      {%- elif item.match == 'equals' and page.url == item.url -%}
+        {%- set is_active = true -%}
       {%- endif -%}
       <a
         href="{{ item.url }}"
@@ -37,5 +37,5 @@
       </a>
     {%- endfor -%}
   </div>
-  {%- render spectrum -%}
+  {%- include "spectrum.njk" -%}
 </nav>

@@ -1,3 +1,4 @@
+{% macro list(trackIds) %}
 <ol class="list-inside list-decimal">
   {% for trackId in trackIds %}
     <li class="text-gray-400">
@@ -5,3 +6,4 @@
     </li>
   {% endfor %}
 </ol>
+{% endmacro %}

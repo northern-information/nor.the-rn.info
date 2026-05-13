@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>{% getTitle title %}</title>
-    {% render metaTags, site: site %}
+    {% include "metaTags.njk" %}
     <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
     <link href="/styles/pagefind.css?ver={% getTimestamp %}" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    {% render nav, site: site, page: page, post: post, navigation: navigation %}
+    {% include "nav.njk" %}
     <main class="container mx-auto">
       <div class="overflow-hidden border-4 border-solid border-black p-2 pb-10 text-center">
         <p class="font-mono">
@@ -29,6 +29,6 @@
         <div id="search"></div>
       </div>
     </main>
-    {% render footer, site: site, page: page, post: post %}
+    {% include "footer.njk" %}
   </body>
 </html>

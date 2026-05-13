@@ -1,5 +1,5 @@
 ---
-layout: base.liquid
+layout: base.njk
 ---
 <div class="grid grid-cols-1 gap-1 md:grid-cols-5 xl:grid-cols-4">
   <article class="post px-2 pt-3 md:col-span-3 md:pr-10 xl:col-span-3">
@@ -7,15 +7,15 @@ layout: base.liquid
       {{- page.date | dateToUTCFull -}}
     </time>
     <h1 class="mb-4 text-4xl font-bold">{{ title }}</h1>
-    {{ content }}
+    {{ content | safe }}
   </article>
   <aside class="md:col-span-2 xl:col-span-1" aria-label="Related posts from the same year">
-    {% assign postDate = page.date | dateToUTCYear %}
+    {% set postDate = page.date | dateToUTCYear %}
     {% for group in collections.postsByYear %}
       {% if postDate == group.year %}
         <ul class="list-none border-y-2 border-black">
           {% for post in group.posts %}
-            {% assign thisPost = post.url == page.url %}
+            {% set thisPost = post.url == page.url %}
             <li>
               <a
                 href="{{ post.url }}"

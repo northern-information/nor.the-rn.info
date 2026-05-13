@@ -2,25 +2,16 @@
 <html lang="en">
   <head>
     <title>{% getTitle title %}</title>
-    {% render metaTags,
-      site: site,
-      page: page,
-      post: post,
-      release: release,
-      project: project,
-      content: content,
-      title: title,
-      ogType: ogType
-    %}
+    {% include "metaTags.njk" %}
     <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    {% render nav, site: site, page: page, post: post, navigation: navigation %}
+    {% include "nav.njk" %}
     <main id="main" class="container mx-auto">
-      {{ content }}
+      {{ content | safe }}
     </main>
-    {% render footer, site: site, page: page, post: post %}
+    {% include "footer.njk" %}
     <script type="module" src="/scripts/webamp-init.js?ver={% getTimestamp %}"></script>
   </body>
 </html>

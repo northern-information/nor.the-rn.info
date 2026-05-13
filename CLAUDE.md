@@ -10,7 +10,7 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project Overview
 
-This is **Northern Information**, a personal website/blog built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. It uses Liquid templates, Tailwind CSS, and Luxon for date handling.
+This is **Northern Information**, a personal website/blog built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. It uses Nunjucks templates, Tailwind CSS, and Luxon for date handling.
 
 ## Build Commands
 
@@ -30,7 +30,7 @@ Dates in frontmatter (e.g., `date: 2025-12-24`) are parsed as midnight UTC. To d
 - `dateToUTCFull` - Format: `December 24, 2025`
 - `dateToUTCISO` - Format: `2025-12-24`
 
-Do NOT use Liquid's built-in `date` filter or JavaScript's `getFullYear()` for post dates as they use local timezone and will show the wrong date for posts near year boundaries. Use `getUTCFullYear()` in JavaScript or the UTC filters in templates.
+Do NOT use Nunjucks' built-in `date` filter (if used) or JavaScript's `getFullYear()` for post dates as they use local timezone and will show the wrong date for posts near year boundaries. Use `getUTCFullYear()` in JavaScript or the UTC filters in templates.
 
 ### Long Now Year Formatting
 
@@ -58,13 +58,13 @@ Note: `layout` is set automatically via `src/posts/posts.11tydata.js` — do not
 
 ### Meta Tags and Social Sharing
 
-Meta tags are rendered via `src/includes/metaTags.liquid`:
+Meta tags are rendered via `src/includes/metaTags.njk`:
 
 - Blog posts have `og:type="article"` (set via `ogType` in `src/posts/posts.11tydata.js`); all other pages default to `"website"`
 - Blog posts get dynamic descriptions extracted from content via the `extractExcerpt` filter; other pages fall back to `site.META.DESCRIPTION`
 - Twitter Card tags are included (`twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`)
-- OG images are resolved via `src/includes/ogImage.liquid` with cascading fallbacks (release cover > project image > first image in content > site logo)
-- When adding new page types, pass `ogType` through the data cascade and ensure `base.liquid` forwards it to metaTags
+- OG images are resolved via `src/includes/ogImage.njk` with cascading fallbacks (release cover > project image > first image in content > site logo)
+- When adding new page types, pass `ogType` through the data cascade and ensure `base.njk` forwards it to metaTags
 
 ### Custom Filters
 
@@ -99,7 +99,7 @@ Located in `eleventy.config.js`:
 
 ### RSS Feed
 
-Custom RSS 2.0 feed at `/feed.xml` (generated from `src/feed.liquid`) with 10 most recent posts, per-item image enclosures, and HTML content in CDATA.
+Custom RSS 2.0 feed at `/feed.xml` (generated from `src/feed.njk`) with 10 most recent posts, per-item image enclosures, and HTML content in CDATA.
 
 ### Image Handling
 
@@ -116,7 +116,7 @@ Image references inside templates (e.g., the site logo via `META.LOGO`) are proc
 
 ### Search
 
-[Pagefind](https://pagefind.app) generates a static search index from the built `dist/` directory at the end of `npm run build`. The index lives at `dist/pagefind/` and is fetched by the search UI on `/search/` (driven by `src/layouts/search.liquid`). Pagefind reads all `<body>` content by default; there's no `data-pagefind-body` attribute scoping in templates.
+[Pagefind](https://pagefind.app) generates a static search index from the built `dist/` directory at the end of `npm run build`. The index lives at `dist/pagefind/` and is fetched by the search UI on `/search/` (driven by `src/layouts/search.njk`). Pagefind reads all `<body>` content by default; there's no `data-pagefind-body` attribute scoping in templates.
 
 ### Release Post Generation
 
