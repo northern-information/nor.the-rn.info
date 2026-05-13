@@ -1,15 +1,19 @@
 ---
 layout: base.liquid
 ---
-<div class="av">
-  {% if videoSrc %}
-    <video
-      class="aspect-video h-auto w-full"
-      src="{{ videoSrc }}"
-      controls=""
-    >
-      Your browser does not support the video element.
-    </video>
+<div class="av grid gap-8">
+  {% if videos %}
+    {% for video in videos %}
+      <iframe
+        class="aspect-video h-auto w-full"
+        src="https://www.youtube.com/embed/{{ video.id }}"
+        title="{{ video.title }}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    {% endfor %}
   {% endif %}
   {% if youtubeSrc %}
     <iframe
@@ -20,5 +24,14 @@ layout: base.liquid
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
+  {% endif %}
+  {% if videoSrc %}
+  <video
+    class="aspect-video h-auto w-full"
+    src="{{ videoSrc }}"
+    controls=""
+  >
+    Your browser does not support the video element.
+  </video>
   {% endif %}
 </div>
