@@ -201,7 +201,8 @@ export default async (eleventyConfig) => {
   // and the plugin can't resolve the prefix to a local file.
   const defaultImageRender =
     markdownLib.renderer.rules.image ||
-    ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+    ((tokens, idx, options, env, self) =>
+      self.renderToken(tokens, idx, options))
   markdownLib.renderer.rules.image = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
     const src = token.attrGet('src') || ''
