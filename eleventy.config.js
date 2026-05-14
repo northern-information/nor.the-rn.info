@@ -252,7 +252,7 @@ export default async (eleventyConfig) => {
     return imgMatch ? imgMatch[1] : null
   })
 
-  // RSS feed filters (for custom feed template in src/feed.liquid)
+  // RSS feed filters (for custom feed template in src/feed.njk)
   eleventyConfig.addFilter('toAbsoluteUrl', (url, baseUrl) => {
     // Converts a URL to absolute if it's relative
     if (!url || typeof url !== 'string') return url
