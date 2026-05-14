@@ -45,7 +45,21 @@ Scaffolds blog posts from new entries in `@tyleretters/discography`. See `script
 
 ## Deploy
 
-Automatic on push to `main` via Cloudflare Pages integration. Build settings configured in the Cloudflare dashboard.
+Automatic on push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). The workflow runs `npm ci`, then `npm run build`, then `wrangler deploy` to push `dist/` to a Cloudflare Worker (`northern-information`) using Workers Static Assets.
+
+The Worker code is a thin shim at `worker/index.js`: it strips the `/rm_ation/` prefix from incoming requests and forwards to the `ASSETS` binding. Config is in `wrangler.jsonc`.
+
+Required GitHub Actions secret: `CLOUDFLARE_API_TOKEN`. Create it in the Cloudflare dashboard under Manage Account → Account API Tokens → Create Token, using the **Edit Cloudflare Workers** template. Scope the account and zone resources down to this site.
+
+To preview the Worker locally against a built `dist/`:
+
+```zsh
+npm run build
+npm run worker:dev
+# open http://localhost:8787/rm_ation/
+```
+
+For day-to-day editing, keep using `npm run dev` (Eleventy + Tailwind, with the `/rm_ation/` prefix handled by the dev-server middleware in `eleventy.config.js`).
 
 ### Files to Remember
 

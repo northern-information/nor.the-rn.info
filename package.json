@@ -14,7 +14,9 @@
     "dev": "concurrently 'npx @11ty/eleventy --serve --quiet' 'npm run css:watch'",
     "generate-release-posts": "node scripts/generate-release-posts.js",
     "pagefind": "pagefind --site dist",
-    "pretty": "prettier --write ."
+    "pretty": "prettier --write .",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.5",
@@ -29,6 +31,7 @@
     "pagefind": "1.5.2",
     "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "0.8.0",
-    "tailwindcss": "4.3.0"
+    "tailwindcss": "4.3.0",
+    "wrangler": "4.91.0"
   }
 }

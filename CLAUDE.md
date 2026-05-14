@@ -14,7 +14,7 @@ This is **Northern Information**, a personal website/blog built with [Eleventy](
 
 **Nunjucks autoescape is disabled** (`setNunjucksEnvironmentOptions({ autoescape: false })` in `eleventy.config.js`). All template inputs come from trusted sources (markdown content, YAML data files, package constants). If you ever introduce user-supplied input into a template, escape it explicitly with the `| escape` filter.
 
-**Local dev includes a `/rm_ation/` middleware** that strips the prefix so links resolve from `dist/` root. On production, Cloudflare's route rewrite handles this (the site root is `/rm_ation/`). See `setServerOptions` in `eleventy.config.js`.
+**Local dev includes a `/rm_ation/` middleware** that strips the prefix so links resolve from `dist/` root. See `setServerOptions` in `eleventy.config.js`. On production, the Cloudflare Worker at `worker/index.js` strips the same prefix before forwarding to the `ASSETS` binding — Eleventy continues to emit flat URLs into `dist/`.
 
 ## Build Commands
 
@@ -117,7 +117,7 @@ Outputs are written to `src/img-optimized/` (committed to git) and passthrough-c
 Two categories of images are deliberately skipped by tagging the markdown-it image renderer with `eleventy:ignore`:
 
 - Remote URLs (`http://`, `https://`) — the 71 CloudFront cover images on release pages. Already optimized on the CDN.
-- `/rm_ation/` prefixed URLs — these go through Cloudflare's route rewrite (the site root is `/rm_ation/`); the plugin can't resolve the prefix to a local file.
+- `/rm_ation/` prefixed URLs — these go through the production Worker's prefix strip (the site root is `/rm_ation/`); the plugin can't resolve the prefix to a local file.
 
 Image references inside templates (e.g., the site logo via `META.LOGO`) are processed the same way as markdown images.
 
@@ -128,6 +128,10 @@ Image references inside templates (e.g., the site logo via `META.LOGO`) are proc
 ### Release Post Generation
 
 `scripts/generate-release-posts.js` (run via `npm run generate-release-posts`) scaffolds blog post files in `src/posts/` for new entries in the `@tyleretters/discography` package. Useful after bumping the discography devDep version.
+
+### Deployment
+
+The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare Pages. On push to `main`, `.github/workflows/deploy.yml` runs `npm ci`, `npm run build`, and `wrangler deploy`. The Worker entry point is `worker/index.js`; its only job is to strip the `/rm_ation/` prefix off incoming requests before forwarding to the `ASSETS` binding. Worker config lives in `wrangler.jsonc`. Required GitHub secret: `CLOUDFLARE_API_TOKEN`. Local Worker preview: `npm run build && npm run worker:dev` then open `http://localhost:8787/rm_ation/`.
 
 ## Accessibility
 
