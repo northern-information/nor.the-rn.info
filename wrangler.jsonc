@@ -12,5 +12,11 @@
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "routes": [
+    {
+      "pattern": "nor.the-rn.info/*",
+      "zone_name": "the-rn.info"
+    }
+  ]
 }
