@@ -1,14 +1,9 @@
 const PREFIX = '/rm_ation'
 const CANONICAL_HOST = 'nor.the-rn.info'
 
-// Hostnames that 301-redirect to the canonical site (with the prefix).
-// Folded in from northern-information-sentinel and etters-co-sentinel.
-const ALIAS_HOSTS = new Set([
-  'the-rn.info',
-  'www.the-rn.info',
-  'etters.co',
-  'www.etters.co',
-])
+// Apex and www of the-rn.info redirect to the canonical site (with the prefix).
+// etters.co has its own dedicated Worker (tyleretters/etters.co).
+const ALIAS_HOSTS = new Set(['the-rn.info', 'www.the-rn.info'])
 
 export default {
   async fetch(request, env) {
