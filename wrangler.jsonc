@@ -25,14 +25,6 @@
     {
       "pattern": "www.the-rn.info/*",
       "zone_name": "the-rn.info"
-    },
-    {
-      "pattern": "etters.co/*",
-      "zone_name": "etters.co"
-    },
-    {
-      "pattern": "www.etters.co/*",
-      "zone_name": "etters.co"
     }
   ]
 }
