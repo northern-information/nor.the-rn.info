@@ -47,7 +47,7 @@ Scaffolds blog posts from new entries in `@tyleretters/discography`. See `script
 
 Automatic on push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). The workflow runs `npm ci`, then `npm run build`, then `wrangler deploy` to push `dist/` to a Cloudflare Worker (`northern-information`) using Workers Static Assets.
 
-The Worker code is a thin shim at `worker/index.js`: it strips the `/rm_ation/` prefix from incoming requests and forwards to the `ASSETS` binding. Config is in `wrangler.jsonc`.
+The Worker code is a thin shim at `worker/index.js`: it strips the `/rm_ation/` prefix from incoming requests and forwards to the `ASSETS` binding. Config is in `wrangler.jsonc`, which also pins the production hostname binding (`nor.the-rn.info/*`) via a Workers Route on the `the-rn.info` zone.
 
 Required GitHub Actions secret: `CLOUDFLARE_API_TOKEN`. Create it in the Cloudflare dashboard under Manage Account → Account API Tokens → Create Token, using the **Edit Cloudflare Workers** template. Scope the account and zone resources down to this site.
 

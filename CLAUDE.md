@@ -131,7 +131,9 @@ Image references inside templates (e.g., the site logo via `META.LOGO`) are proc
 
 ### Deployment
 
-The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare Pages. On push to `main`, `.github/workflows/deploy.yml` runs `npm ci`, `npm run build`, and `wrangler deploy`. The Worker entry point is `worker/index.js`; its only job is to strip the `/rm_ation/` prefix off incoming requests before forwarding to the `ASSETS` binding. Worker config lives in `wrangler.jsonc`. Required GitHub secret: `CLOUDFLARE_API_TOKEN`. Local Worker preview: `npm run build && npm run worker:dev` then open `http://localhost:8787/rm_ation/`.
+The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare Pages. On push to `main`, `.github/workflows/deploy.yml` runs `npm ci`, `npm run build`, and `wrangler deploy`. The Worker entry point is `worker/index.js`; its only job is to strip the `/rm_ation/` prefix off incoming requests before forwarding to the `ASSETS` binding. Worker config lives in `wrangler.jsonc`, including the `routes` block that binds the Worker to `nor.the-rn.info/*` on the `the-rn.info` zone. Required GitHub secret: `CLOUDFLARE_API_TOKEN`. Local Worker preview: `npm run build && npm run worker:dev` then open `http://localhost:8787/rm_ation/`.
+
+Note: the `www.the-rn.info/*` and `the-rn.info/*` zone routes are still bound to a separate, pre-existing Worker (`northern-information-sentinel`) that predates this migration. Those are out of scope for the static-assets Worker.
 
 ## Accessibility
 
