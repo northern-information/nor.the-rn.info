@@ -12,6 +12,10 @@ npm i
 npm run dev
 ```
 
+### Node version
+
+Pinned to an exact patch in `.node-version`, `.nvmrc`, and `package.json` `engines.node` — all three must stay in sync. See `CLAUDE.md` for details.
+
 ## Build
 
 ```zsh

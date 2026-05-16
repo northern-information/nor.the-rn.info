@@ -23,6 +23,16 @@ npm run dev      # Start development server
 npm run build    # Production build
 ```
 
+## Node version
+
+The Node version is pinned in three places that must stay in sync:
+
+- `.node-version` — read by nodenv
+- `.nvmrc` — read by nvm
+- `package.json` `engines.node`
+
+Use the exact patch version (e.g. `24.13.0`), never a range or major-only (`^24`, `24`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
+
 ## Key Patterns
 
 ### Date Handling
