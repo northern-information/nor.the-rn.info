@@ -3,7 +3,7 @@ title: "Organica Lensing"
 date: 2007-01-01
 ---
 
-![Organica Lensing](https://d107e1o0dn11sc.cloudfront.net/lucid-end/organica-lensing/organica-lensing.jpg)
+![Organica Lensing](https://assets.the-rn.info/lucid-end/organica-lensing/organica-lensing.jpg)
 
 **Single** by **[Lucid End](/project/lucid-end/)**
 Independent · CD

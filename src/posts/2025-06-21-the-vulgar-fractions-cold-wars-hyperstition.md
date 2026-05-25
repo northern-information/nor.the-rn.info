@@ -3,7 +3,7 @@ title: "THE VULGAR FRACTIONS: COLD WARS / HYPERSTITION"
 date: 2025-06-21
 ---
 
-![THE VULGAR FRACTIONS: COLD WARS / HYPERSTITION](https://d107e1o0dn11sc.cloudfront.net/stuxnet/the-vulgar-fractions-cold-wars-hyperstition/the-vulgar-fractions-cold-wars-hyperstition.jpg)
+![THE VULGAR FRACTIONS: COLD WARS / HYPERSTITION](https://assets.the-rn.info/stuxnet/the-vulgar-fractions-cold-wars-hyperstition/the-vulgar-fractions-cold-wars-hyperstition.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

@@ -3,7 +3,7 @@ title: "DISSOLUTION"
 date: 2025-04-05
 ---
 
-![DISSOLUTION](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/dissolution/dissolution.jpg)
+![DISSOLUTION](https://assets.the-rn.info/dj-stuxnet/dissolution/dissolution.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

@@ -3,7 +3,7 @@ title: "blue, the most celestial color"
 date: 2013-06-21
 ---
 
-![blue, the most celestial color](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/blue-the-most-celestial-color/blue-the-most-celestial-color.jpg)
+![blue, the most celestial color](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/blue-the-most-celestial-color/blue-the-most-celestial-color.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital

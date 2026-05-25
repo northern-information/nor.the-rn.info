@@ -3,7 +3,7 @@ title: "HUMAN INTERFERENCE TASK FORCE"
 date: 2021-07-26
 ---
 
-![HUMAN INTERFERENCE TASK FORCE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/human-interference-task-force/human-interference-task-force.jpg)
+![HUMAN INTERFERENCE TASK FORCE](https://assets.the-rn.info/stuxnet/human-interference-task-force/human-interference-task-force.jpg)
 
 **LP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

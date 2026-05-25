@@ -3,7 +3,7 @@ title: "When the Paint Peels"
 date: 2010-02-18
 ---
 
-![When the Paint Peels](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/when-the-paint-peels/when-the-paint-peels.jpg)
+![When the Paint Peels](https://assets.the-rn.info/connectedness-locus/when-the-paint-peels/when-the-paint-peels.jpg)
 
 **Single** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · Digital

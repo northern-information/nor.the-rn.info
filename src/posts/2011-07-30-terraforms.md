@@ -3,7 +3,7 @@ title: "Terraforms"
 date: 2011-07-30
 ---
 
-![Terraforms](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/terraforms/terraforms.jpg)
+![Terraforms](https://assets.the-rn.info/connectedness-locus/terraforms/terraforms.jpg)
 
 **LP** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · CD, Digital

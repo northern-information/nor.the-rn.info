@@ -3,7 +3,7 @@ title: "the phantoms of our lost cause"
 date: 2015-01-01
 ---
 
-![the phantoms of our lost cause](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/the-phantoms-of-our-lost-cause/the-phantoms-of-our-lost-cause.jpg)
+![the phantoms of our lost cause](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/the-phantoms-of-our-lost-cause/the-phantoms-of-our-lost-cause.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital

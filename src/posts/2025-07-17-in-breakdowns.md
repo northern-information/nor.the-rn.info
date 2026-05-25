@@ -3,7 +3,7 @@ title: "In Breakdowns"
 date: 2025-07-17
 ---
 
-![In Breakdowns](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/in-breakdowns/in-breakdowns.jpg)
+![In Breakdowns](https://assets.the-rn.info/dj-stuxnet/in-breakdowns/in-breakdowns.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

@@ -3,7 +3,7 @@ title: "SINGULARITY PROTOCOL"
 date: 2026-04-02
 ---
 
-![SINGULARITY PROTOCOL](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/singularity-protocol/singularity-protocol.jpg)
+![SINGULARITY PROTOCOL](https://assets.the-rn.info/dj-stuxnet/singularity-protocol/singularity-protocol.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

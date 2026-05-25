@@ -3,7 +3,7 @@ title: "In Entropy"
 date: 2025-07-31
 ---
 
-![In Entropy](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/in-entropy/in-entropy.jpg)
+![In Entropy](https://assets.the-rn.info/dj-stuxnet/in-entropy/in-entropy.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

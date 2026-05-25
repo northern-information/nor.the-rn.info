@@ -3,7 +3,7 @@ title: "Descent Into Dreams"
 date: 2007-04-08
 ---
 
-![Descent Into Dreams](https://d107e1o0dn11sc.cloudfront.net/ix/descent-into-dreams/descent-into-dreams.jpg)
+![Descent Into Dreams](https://assets.the-rn.info/ix/descent-into-dreams/descent-into-dreams.jpg)
 
 **LP** by **[Ix](/project/ix/)**
 Endless Field Studios · CD

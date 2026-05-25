@@ -3,7 +3,7 @@ title: "dispatches from the prime meridian"
 date: 2017-12-21
 ---
 
-![dispatches from the prime meridian](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/dispatches-from-the-prime-meridian/dispatches-from-the-prime-meridian.jpg)
+![dispatches from the prime meridian](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/dispatches-from-the-prime-meridian/dispatches-from-the-prime-meridian.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital
