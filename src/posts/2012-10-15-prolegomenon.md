@@ -3,7 +3,7 @@ title: "Prolegomenon"
 date: 2012-10-15
 ---
 
-![Prolegomenon](https://d107e1o0dn11sc.cloudfront.net/connectedness-locus/prolegomenon/prolegomenon.jpg)
+![Prolegomenon](https://assets.the-rn.info/connectedness-locus/prolegomenon/prolegomenon.jpg)
 
 **EP** by **[Connectedness Locus](/project/connectedness-locus/)**
 Endless Field Studios · Digital

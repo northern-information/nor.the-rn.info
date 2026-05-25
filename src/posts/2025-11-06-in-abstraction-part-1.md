@@ -3,7 +3,7 @@ title: "In Abstraction, Part 1"
 date: 2025-11-06
 ---
 
-![In Abstraction, Part 1](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/in-abstraction-part-1/in-abstraction-part-1.jpg)
+![In Abstraction, Part 1](https://assets.the-rn.info/dj-stuxnet/in-abstraction-part-1/in-abstraction-part-1.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

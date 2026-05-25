@@ -3,7 +3,7 @@ title: "midwest sad, part 2"
 date: 2025-06-14
 ---
 
-![midwest sad, part 2](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/midwest-sad-part-2/midwest-sad-part-2.jpg)
+![midwest sad, part 2](https://assets.the-rn.info/dj-stuxnet/midwest-sad-part-2/midwest-sad-part-2.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

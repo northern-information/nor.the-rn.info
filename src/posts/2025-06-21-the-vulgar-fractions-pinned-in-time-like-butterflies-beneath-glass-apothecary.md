@@ -3,7 +3,7 @@ title: "THE VULGAR FRACTIONS: PINNED IN TIME LIKE BUTTERFLIES BENEATH GLASS / AP
 date: 2025-06-21
 ---
 
-![THE VULGAR FRACTIONS: PINNED IN TIME LIKE BUTTERFLIES BENEATH GLASS / APOTHECARY](https://d107e1o0dn11sc.cloudfront.net/stuxnet/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary.jpg)
+![THE VULGAR FRACTIONS: PINNED IN TIME LIKE BUTTERFLIES BENEATH GLASS / APOTHECARY](https://assets.the-rn.info/stuxnet/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary/the-vulgar-fractions-pinned-in-time-like-butterflies-beneath-glass-apothecary.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

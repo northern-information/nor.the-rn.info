@@ -3,7 +3,7 @@ title: "The Arecibo Lamentations"
 date: 2020-12-13
 ---
 
-![The Arecibo Lamentations](https://d107e1o0dn11sc.cloudfront.net/northern-information/the-arecibo-lamentations/the-arecibo-lamentations.jpg)
+![The Arecibo Lamentations](https://assets.the-rn.info/northern-information/the-arecibo-lamentations/the-arecibo-lamentations.jpg)
 
 **LP** by **[Northern Information](/project/northern-information/)**
 Intertext · Digital

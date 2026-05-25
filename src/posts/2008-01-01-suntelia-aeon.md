@@ -3,7 +3,7 @@ title: "Suntelia Aeon"
 date: 2008-01-01
 ---
 
-![Suntelia Aeon](https://d107e1o0dn11sc.cloudfront.net/inocula/suntelia-aeon/suntelia-aeon.jpg)
+![Suntelia Aeon](https://assets.the-rn.info/inocula/suntelia-aeon/suntelia-aeon.jpg)
 
 **LP** by **[Inocula](/project/inocula/)**
 Karma Productions · CD, Digital

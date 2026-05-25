@@ -106,7 +106,7 @@ I'm a musician. At the end of the day I'm here to make squiggly air and help oth
 I've been working with AI for years. One of my favorite pieces was this promo video for [Flash Crash](https://flashcrash.net). The music is original, but the video itself was from AI-generated video trained on classical (thus public domain) paintings of angels:
 
 <video width="4000" height="4000" controls="">
-  <source src="https://northerninformation.s3.us-east-2.amazonaws.com/flash-crash/fc220806.mp4" type="video/mp4">
+  <source src="https://dl.the-rn.info/flash-crash/fc220806.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

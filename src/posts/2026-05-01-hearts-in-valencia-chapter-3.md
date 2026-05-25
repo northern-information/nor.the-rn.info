@@ -3,7 +3,7 @@ title: "𝐻𝑒𝒶𝓇𝓉𝓈 𝒾𝓃 𝒱𝒶𝓁𝑒𝓃𝒸𝒾𝒶, 𝒞
 date: 2026-05-01
 ---
 
-![Hearts in Valencia, Chapter 3](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/hearts-in-valencia-chapter-3/hearts-in-valencia-chapter-3.jpg)
+![Hearts in Valencia, Chapter 3](https://assets.the-rn.info/dj-stuxnet/hearts-in-valencia-chapter-3/hearts-in-valencia-chapter-3.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

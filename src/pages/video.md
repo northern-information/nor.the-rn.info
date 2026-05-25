@@ -1,7 +1,7 @@
 ---
 title: Video
 layout: video.njk
-videoSrc: "https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/kowloon-walled-city-giga-mix/mobile-kowloon-city-leyline.mp4"
+videoSrc: "https://assets.the-rn.info/dj-stuxnet/kowloon-walled-city-giga-mix/mobile-kowloon-city-leyline.mp4"
 videos:
   - id: eZtNgGEeGo4
     title: "fc211016_09 //// Sidereal Lobby (2021)"

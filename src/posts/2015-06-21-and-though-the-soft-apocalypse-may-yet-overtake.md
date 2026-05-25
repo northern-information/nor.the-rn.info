@@ -3,7 +3,7 @@ title: "and though the soft apocalypse may yet overtake"
 date: 2015-06-21
 ---
 
-![and though the soft apocalypse may yet overtake](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/and-though-the-soft-apocalypse-may-yet-overtake/and-though-the-soft-apocalypse-may-yet-overtake.jpg)
+![and though the soft apocalypse may yet overtake](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/and-though-the-soft-apocalypse-may-yet-overtake/and-though-the-soft-apocalypse-may-yet-overtake.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital

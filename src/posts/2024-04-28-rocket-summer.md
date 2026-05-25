@@ -3,7 +3,7 @@ title: "Rocket Summer"
 date: 2024-04-28
 ---
 
-![Rocket Summer](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/rocket-summer/rocket-summer.jpg)
+![Rocket Summer](https://assets.the-rn.info/they-became-what-they-beheld/rocket-summer/rocket-summer.jpg)
 
 **Single** by **[They Became What They Beheld](/project/they-became-what-they-beheld/)**
 Intertext · Digital

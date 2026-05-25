@@ -3,7 +3,7 @@ title: "Synergy Beat Music, Volume 1"
 date: 2018-10-31
 ---
 
-![Synergy Beat Music, Volume 1](https://d107e1o0dn11sc.cloudfront.net/synergy-beat/synergy-beat-music-volume-1/synergy-beat-music-volume-1.jpg)
+![Synergy Beat Music, Volume 1](https://assets.the-rn.info/synergy-beat/synergy-beat-music-volume-1/synergy-beat-music-volume-1.jpg)
 
 **Compilation** by **[Synergy Beat](/project/synergy-beat/)**
 Synergy Beat · Digital

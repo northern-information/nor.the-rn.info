@@ -79,7 +79,7 @@ Other than that I'm going about my usual end of year digital gardening ritual of
 
 ![the phantom mk racks](/images/phantom-racks-mk1.png)
 
-Also, I've exhumed and made available [the phantom mk racks](https://dop82cmkdnrqr.cloudfront.net/the-phantom-mk-racks.zip), a collection of Ableton Live FX racks I made for the #shadow_fi trilogy back around 2013.
+Also, I've exhumed and made available [the phantom mk racks](https://dl.the-rn.info/the-phantom-mk-racks.zip), a collection of Ableton Live FX racks I made for the #shadow_fi trilogy back around 2013.
 
 ## The Next Year
 

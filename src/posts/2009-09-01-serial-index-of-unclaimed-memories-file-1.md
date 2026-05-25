@@ -3,7 +3,7 @@ title: "Serial Index of Unclaimed Memories, File 1"
 date: 2009-09-01
 ---
 
-![Serial Index of Unclaimed Memories, File 1](https://d107e1o0dn11sc.cloudfront.net/everything-comes-in-cycles-everything-fades-in-shades/serial-index-of-unclaimed-memories-file-1/serial-index-of-unclaimed-memories-file-1.jpg)
+![Serial Index of Unclaimed Memories, File 1](https://assets.the-rn.info/everything-comes-in-cycles-everything-fades-in-shades/serial-index-of-unclaimed-memories-file-1/serial-index-of-unclaimed-memories-file-1.jpg)
 
 **LP** by **[Everything Comes in Cycles; Everything Fades in Shades](/project/everything-comes-in-cycles-everything-fades-in-shades/)**
 Endless Field Studios · Digital

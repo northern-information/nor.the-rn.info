@@ -3,7 +3,7 @@ title: "LONG LIVE THE LOST ONES"
 date: 2021-05-01
 ---
 
-![LONG LIVE THE LOST ONES](https://d107e1o0dn11sc.cloudfront.net/stuxnet/long-live-the-lost-ones/long-live-the-lost-ones.jpg)
+![LONG LIVE THE LOST ONES](https://assets.the-rn.info/stuxnet/long-live-the-lost-ones/long-live-the-lost-ones.jpg)
 
 **LP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

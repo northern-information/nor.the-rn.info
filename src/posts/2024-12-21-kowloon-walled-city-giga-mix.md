@@ -3,7 +3,7 @@ title: "KOWLOON WALLED CITY GIGA MIX"
 date: 2024-12-21
 ---
 
-![KOWLOON WALLED CITY GIGA MIX](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/kowloon-walled-city-giga-mix/kowloon-walled-city-giga-mix.jpg)
+![KOWLOON WALLED CITY GIGA MIX](https://assets.the-rn.info/dj-stuxnet/kowloon-walled-city-giga-mix/kowloon-walled-city-giga-mix.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

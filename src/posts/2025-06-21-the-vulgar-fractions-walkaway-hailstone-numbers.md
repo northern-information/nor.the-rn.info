@@ -3,7 +3,7 @@ title: "THE VULGAR FRACTIONS: WALKAWAY / HAILSTONE NUMBERS"
 date: 2025-06-21
 ---
 
-![THE VULGAR FRACTIONS: WALKAWAY / HAILSTONE NUMBERS](https://d107e1o0dn11sc.cloudfront.net/stuxnet/the-vulgar-fractions-walkaway-hailstone-numbers/the-vulgar-fractions-walkaway-hailstone-numbers.jpg)
+![THE VULGAR FRACTIONS: WALKAWAY / HAILSTONE NUMBERS](https://assets.the-rn.info/stuxnet/the-vulgar-fractions-walkaway-hailstone-numbers/the-vulgar-fractions-walkaway-hailstone-numbers.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

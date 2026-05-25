@@ -3,7 +3,7 @@ title: "CONTINUUM HACK OST"
 date: 2025-10-08
 ---
 
-![CONTINUUM HACK OST](https://d107e1o0dn11sc.cloudfront.net/stuxnet/continuum-hack-ost/continuum-hack-ost.jpg)
+![CONTINUUM HACK OST](https://assets.the-rn.info/stuxnet/continuum-hack-ost/continuum-hack-ost.jpg)
 
 **OST** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

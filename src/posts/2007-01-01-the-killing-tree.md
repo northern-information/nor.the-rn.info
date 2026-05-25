@@ -3,7 +3,7 @@ title: "The Killing Tree"
 date: 2007-01-01
 ---
 
-![The Killing Tree](https://d107e1o0dn11sc.cloudfront.net/lucid-end/the-killing-tree/the-killing-tree.jpg)
+![The Killing Tree](https://assets.the-rn.info/lucid-end/the-killing-tree/the-killing-tree.jpg)
 
 **Single** by **[Lucid End](/project/lucid-end/)**
 Independent · CD-R

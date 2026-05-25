@@ -3,7 +3,7 @@ title: "CIPHER SUITE (demo)"
 date: 2021-03-28
 ---
 
-![CIPHER SUITE (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/cipher-suite-demo/cipher-suite-demo.jpg)
+![CIPHER SUITE (demo)](https://assets.the-rn.info/stuxnet/cipher-suite-demo/cipher-suite-demo.jpg)
 
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

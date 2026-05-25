@@ -3,7 +3,7 @@ title: "reverence"
 date: 2017-12-22
 ---
 
-![reverence](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/reverence/reverence.jpg)
+![reverence](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/reverence/reverence.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital

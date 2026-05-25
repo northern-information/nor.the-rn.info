@@ -3,7 +3,7 @@ title: "COUNTERSURVEILLANCE"
 date: 2021-07-07
 ---
 
-![COUNTERSURVEILLANCE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/countersurveillance/countersurveillance.jpg)
+![COUNTERSURVEILLANCE](https://assets.the-rn.info/stuxnet/countersurveillance/countersurveillance.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

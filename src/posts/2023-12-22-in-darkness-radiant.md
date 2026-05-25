@@ -3,7 +3,7 @@ title: "IN DARKNESS RADIANT"
 date: 2023-12-22
 ---
 
-![IN DARKNESS RADIANT](https://d107e1o0dn11sc.cloudfront.net/stuxnet/in-darkness-radiant/in-darkness-radiant.jpg)
+![IN DARKNESS RADIANT](https://assets.the-rn.info/stuxnet/in-darkness-radiant/in-darkness-radiant.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

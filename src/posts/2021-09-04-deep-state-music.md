@@ -3,7 +3,7 @@ title: "Deep State Music"
 date: 2021-09-04
 ---
 
-![Deep State Music](https://d107e1o0dn11sc.cloudfront.net/sidereal-lobby/deep-state-music/deep-state-music.jpg)
+![Deep State Music](https://assets.the-rn.info/sidereal-lobby/deep-state-music/deep-state-music.jpg)
 
 **Triple LP** by **[Sidereal Lobby](/project/sidereal-lobby/)**
 Map Corps · Digital

@@ -3,7 +3,7 @@ title: "baysinski event ii world war iii"
 date: 2025-02-12
 ---
 
-![baysinski event ii world war iii](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/baysinski-event-ii-world-war-iii/baysinski-event-ii-world-war-iii.jpg)
+![baysinski event ii world war iii](https://assets.the-rn.info/dj-stuxnet/baysinski-event-ii-world-war-iii/baysinski-event-ii-world-war-iii.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

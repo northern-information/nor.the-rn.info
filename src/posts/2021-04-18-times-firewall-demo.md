@@ -3,7 +3,7 @@ title: "TIME'S FIREWALL (demo)"
 date: 2021-04-18
 ---
 
-![TIME'S FIREWALL (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/times-firewall-demo/times-firewall-demo.jpg)
+![TIME'S FIREWALL (demo)](https://assets.the-rn.info/stuxnet/times-firewall-demo/times-firewall-demo.jpg)
 
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

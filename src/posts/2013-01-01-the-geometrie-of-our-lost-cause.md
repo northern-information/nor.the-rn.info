@@ -3,7 +3,7 @@ title: "the geometrie of our lost cause"
 date: 2013-01-01
 ---
 
-![the geometrie of our lost cause](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/the-geometrie-of-our-lost-cause/the-geometrie-of-our-lost-cause.jpg)
+![the geometrie of our lost cause](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/the-geometrie-of-our-lost-cause/the-geometrie-of-our-lost-cause.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Cassette, Digital

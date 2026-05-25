@@ -3,7 +3,7 @@ title: "ELEGIES FOR ASHLEY"
 date: 2025-03-23
 ---
 
-![ELEGIES FOR ASHLEY](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/elegies-for-ashley/elegies-for-ashley.jpg)
+![ELEGIES FOR ASHLEY](https://assets.the-rn.info/dj-stuxnet/elegies-for-ashley/elegies-for-ashley.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

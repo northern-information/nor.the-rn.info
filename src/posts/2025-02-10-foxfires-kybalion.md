@@ -3,7 +3,7 @@ title: "FOXFIRES / KYBALION"
 date: 2025-02-10
 ---
 
-![FOXFIRES / KYBALION](https://d107e1o0dn11sc.cloudfront.net/stuxnet/foxfires-kybalion/foxfires-kybalion.jpg)
+![FOXFIRES / KYBALION](https://assets.the-rn.info/stuxnet/foxfires-kybalion/foxfires-kybalion.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital
