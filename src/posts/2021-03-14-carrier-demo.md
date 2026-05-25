@@ -3,7 +3,7 @@ title: "CARRIER (demo)"
 date: 2021-03-14
 ---
 
-![CARRIER (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/carrier-demo/carrier-demo.jpg)
+![CARRIER (demo)](https://assets.the-rn.info/stuxnet/carrier-demo/carrier-demo.jpg)
 
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

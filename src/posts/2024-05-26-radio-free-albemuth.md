@@ -3,7 +3,7 @@ title: "Radio Free Albemuth"
 date: 2024-05-26
 ---
 
-![Radio Free Albemuth](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/radio-free-albemuth/radio-free-albemuth.jpg)
+![Radio Free Albemuth](https://assets.the-rn.info/they-became-what-they-beheld/radio-free-albemuth/radio-free-albemuth.jpg)
 
 **LP** by **[They Became What They Beheld](/project/they-became-what-they-beheld/)**
 Intertext · Digital

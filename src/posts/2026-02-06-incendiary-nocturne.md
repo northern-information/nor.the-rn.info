@@ -3,7 +3,7 @@ title: "Incendiary Nocturne"
 date: 2026-02-06
 ---
 
-![Incendiary Nocturne](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/incendiary-nocturne/incendiary-nocturne.jpg)
+![Incendiary Nocturne](https://assets.the-rn.info/dj-stuxnet/incendiary-nocturne/incendiary-nocturne.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital

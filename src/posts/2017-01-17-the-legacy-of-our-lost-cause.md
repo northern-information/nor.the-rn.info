@@ -3,7 +3,7 @@ title: "the legacy of our lost cause"
 date: 2017-01-17
 ---
 
-![the legacy of our lost cause](https://d107e1o0dn11sc.cloudfront.net/tyler-etters-and-the-northern-information-movement/the-legacy-of-our-lost-cause/the-legacy-of-our-lost-cause.jpg)
+![the legacy of our lost cause](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/the-legacy-of-our-lost-cause/the-legacy-of-our-lost-cause.jpg)
 
 **LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
 Endless Field Studios · Digital

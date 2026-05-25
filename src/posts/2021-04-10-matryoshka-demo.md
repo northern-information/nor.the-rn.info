@@ -3,7 +3,7 @@ title: "MATRYOSHKA (demo)"
 date: 2021-04-10
 ---
 
-![MATRYOSHKA (demo)](https://d107e1o0dn11sc.cloudfront.net/stuxnet/matryoshka-demo/matryoshka-demo.jpg)
+![MATRYOSHKA (demo)](https://assets.the-rn.info/stuxnet/matryoshka-demo/matryoshka-demo.jpg)
 
 **Demo** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

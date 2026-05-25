@@ -3,7 +3,7 @@ title: "FADE SCATTER REPLICATE"
 date: 2023-03-20
 ---
 
-![FADE SCATTER REPLICATE](https://d107e1o0dn11sc.cloudfront.net/stuxnet/fade-scatter-replicate/fade-scatter-replicate.jpg)
+![FADE SCATTER REPLICATE](https://assets.the-rn.info/stuxnet/fade-scatter-replicate/fade-scatter-replicate.jpg)
 
 **EP** by **[STUXNET](/project/stuxnet/)**
 Intertext · Digital

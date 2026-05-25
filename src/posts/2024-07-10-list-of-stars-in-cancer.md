@@ -3,7 +3,7 @@ title: "List of Stars in Cancer"
 date: 2024-07-10
 ---
 
-![List of Stars in Cancer](https://d107e1o0dn11sc.cloudfront.net/they-became-what-they-beheld/list-of-stars-in-cancer/list-of-stars-in-cancer.jpg)
+![List of Stars in Cancer](https://assets.the-rn.info/they-became-what-they-beheld/list-of-stars-in-cancer/list-of-stars-in-cancer.jpg)
 
 **LP** by **[They Became What They Beheld](/project/they-became-what-they-beheld/)**
 Intertext · Digital

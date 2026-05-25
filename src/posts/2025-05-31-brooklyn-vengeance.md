@@ -3,7 +3,7 @@ title: "Brooklyn Vengeance"
 date: 2025-05-31
 ---
 
-![Brooklyn Vengeance](https://d107e1o0dn11sc.cloudfront.net/dj-stuxnet/brooklyn-vengeance/brooklyn-vengeance.jpg)
+![Brooklyn Vengeance](https://assets.the-rn.info/dj-stuxnet/brooklyn-vengeance/brooklyn-vengeance.jpg)
 
 **Mix** by **[DJ STUXNET](/project/dj-stuxnet/)**
 Intertext · Digital
