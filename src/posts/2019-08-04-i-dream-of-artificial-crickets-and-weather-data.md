@@ -13,4 +13,4 @@ The program allows you to select a weather station. It then grabs the temperatur
 
 I love the idea of remotely experiencing temperature via something other than a number (i.e. 72°) or color (i.e. red). There is also something I can't quite put my finger on... Perhaps related to simulating crickets in places where they shouldn't be? And during seasons when they might normally be dormant?
 
-[Download the Max patch here.](https://dop82cmkdnrqr.cloudfront.net/crickets.zip)
+[Download the Max patch here.](https://dl.the-rn.info/crickets.zip)

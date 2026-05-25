@@ -91,7 +91,7 @@ export default [
     image: '/images/cascade.png',
     content: `Cascade is a M4L sequencer that holds every combination of eighth notes possible in a 4/4 bar. I wrote a [lengthly post about it on Highland's blog](https://journal.highlandsolutions.com/meet-cascade-a-piece-of-music-software-i-built-with-max-and-rapid-prototyping-d8ce9bda3a5b) and made [a short demo video](https://www.youtube.com/watch?v=VQhQaYClE78&feature=youtu.be).
 
-    [Download the patch, M4L Device, and demo.](https://s3.us-east-2.amazonaws.com/northerninformation/cascade.zip)`,
+    [Download the patch, M4L Device, and demo.](https://dl.the-rn.info/cascade.zip)`,
   },
   {
     title: 'Endless Field Studios',
@@ -105,7 +105,7 @@ export default [
     image: '/images/second-chance.jpg',
     content: `Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](http://gli.tc/h/2112/). Don't fall.
 
-    [Download for macOS.](https://s3.us-east-2.amazonaws.com/northerninformation/second-chance.app.zip)`,
+    [Download for macOS.](https://dl.the-rn.info/second-chance.app.zip)`,
   },
   {
     title: 'Epicycle',
