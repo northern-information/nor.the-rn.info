@@ -5,7 +5,7 @@ layout: about.njk
 
 - My name is Tyler Etters.
 - Northern Information is my garden.
-- Email me: [tyler@etters.co](mailto:tyler@etters.co)
+- [tyler@etters.co](mailto:tyler@etters.co)
 
 ## My mission is to:
 
