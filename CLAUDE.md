@@ -145,6 +145,25 @@ The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare 
 
 Note: the `www.the-rn.info/*` and `the-rn.info/*` zone routes are still bound to a separate, pre-existing Worker (`northern-information-sentinel`) that predates this migration. Those are out of scope for the static-assets Worker.
 
+### R2 asset buckets
+
+Release media (cover art, MP3/WAV, zip downloads) is served from two Cloudflare R2 buckets with custom domains:
+
+- `assets.the-rn.info` → `intertext` bucket
+- `dl.the-rn.info` → `northerninformation` bucket
+
+CORS is owned **only** by each bucket's own CORS Policy (Cloudflare dashboard → R2 → bucket → Settings → CORS Policy). Do not add zone-level Transform Rules or Page Rules that set `Access-Control-*` headers for these hostnames — during the AWS → R2 migration there was a temporary Transform Rule on the `the-rn.info` zone (`R2 assets — force CORS allow-origin`) that layered headers on top of R2's, producing duplicate `Access-Control-Allow-Origin` response headers and browser CORS errors (Webamp's Web Audio fetch was the canary). The rule was removed once R2 CORS was configured; don't reintroduce it.
+
+Each bucket must keep a **single rule with `AllowedOrigins: ["*"]`** (the assets are public, unauthenticated media). Two overlapping rules on the same bucket would re-create the duplicate-header problem.
+
+Verify with:
+
+```bash
+curl -sI -H "Origin: https://nor.the-rn.info" <asset-url> | grep -i '^access-control'
+```
+
+Expect exactly one of each `access-control-*` header. Edge cache (`cf-cache-status: HIT`) can mask policy changes — purge the affected URLs after editing.
+
 ## Accessibility
 
 The site follows WCAG 2.1 Level AA with several AAA enhancements:
