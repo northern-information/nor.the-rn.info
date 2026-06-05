@@ -9,7 +9,7 @@ layout: base.njk
         {{- track -}}
         {%- if not loop.last %}, {% endif -%}
       {%- endfor -%}
-      ,
+      {{- ". " -}}
     {%- endif -%}
   {% endfor -%}
   {%- for release in collections.discography -%}
@@ -20,8 +20,8 @@ layout: base.njk
           {{- id -}}
           {%- if not loop.last %}, {% endif -%}
         {%- endfor -%}
-        ,
-      {% endif -%}
+        {{- ". " -}}
+      {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
   {%- for playlist in playlists -%}
@@ -30,6 +30,6 @@ layout: base.njk
       {{- track -}}
       {%- if not loop.last %}, {% endif -%}
     {%- endfor -%}
-    {%- if not loop.last %}, {% endif %}
+    {%- if not loop.last %}. {% endif %}
   {%- endfor -%}
 </div>
