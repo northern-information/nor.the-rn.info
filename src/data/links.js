@@ -42,6 +42,7 @@ export default [
   { url: 'https://everest-pipkin.com', title: 'Everest Pipkin' },
   { url: 'https://www.extinctionsymbol.info', title: 'Extinction Symbol' },
   { url: 'https://flashflash.bandcamp.com', title: 'Flash Flash Comfort' },
+  { url: 'https://forgotten-industries.net/', title: 'Forgotten Industries'},
   { url: 'https://fors.fm', title: 'Fors' },
   { url: 'https://foxriot.com', title: 'Foxriot' },
   { url: 'http://paranom.asia', title: 'Gabriele de Seta' },
