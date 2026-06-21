@@ -6,6 +6,12 @@ layout: base.njk
     <time class="font-mono text-sm text-gray-400" datetime="{{ page.date | dateToUTCISO }}">
       {{- page.date | dateToUTCFull -}}
     </time>
+    <a
+      href="https://github.com/northern-information/nor.the-rn.info/edit/main/{{ page.inputPath | removeFirst('./') }}"
+      class="link-primary ml-2 font-mono text-sm"
+    >
+      Edit
+    </a>
     <h1 class="mb-4 text-4xl font-bold">{{ title }}</h1>
     {{ content | safe }}
   </article>
