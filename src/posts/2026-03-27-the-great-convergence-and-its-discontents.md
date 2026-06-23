@@ -1,5 +1,5 @@
 ---
-title: "The Great Convergence and its Discontents"
+title: "The Great Convergence and Its Discontents"
 date: 2026-03-27
 ---
 

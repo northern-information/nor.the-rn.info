@@ -1,5 +1,5 @@
 ---
-title: "Who Will Remember Us When The Servers Go Dark?"
+title: "Who Will Remember Us When the Servers Go Dark?"
 date: 2026-03-11
 ---
 

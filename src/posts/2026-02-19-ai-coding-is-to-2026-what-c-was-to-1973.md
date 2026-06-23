@@ -1,5 +1,5 @@
 ---
-title: "AI coding is to 2026 what C was to 1973"
+title: "AI Coding Is to 2026 What C Was to 1973"
 date: 2026-02-19
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "A Shining Place Built Upon The Sand"
+title: "A Shining Place Built upon the Sand"
 date: 2025-04-24
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Wiio's laws"
+title: "Wiio's Laws"
 date: 2022-05-04
 ---
 
