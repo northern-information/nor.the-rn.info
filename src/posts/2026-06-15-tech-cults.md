@@ -1,8 +1,6 @@
 ---
-layout: post
-title: Tech Cults
+title: "Tech Cults"
 date: 2026-06-15
-tags: ["Wildcard"]
 ---
 
 [John Gruber](https://daringfireball.net/linked/2026/06/15/anthropic-safety-superpower):
