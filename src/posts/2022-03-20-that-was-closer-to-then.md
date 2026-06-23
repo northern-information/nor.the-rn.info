@@ -1,5 +1,5 @@
 ---
-title: "That Was Closer to Then"
+title: "That was closer to then"
 date: 2022-03-20
 ---
 

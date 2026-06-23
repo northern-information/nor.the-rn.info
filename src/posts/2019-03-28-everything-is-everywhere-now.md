@@ -1,5 +1,5 @@
 ---
-title: "Everything Is Everywhere Now"
+title: "Everything is everywhere now"
 date: 2019-03-28
 ---
 

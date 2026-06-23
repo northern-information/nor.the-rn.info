@@ -83,7 +83,7 @@ These conventions apply to **prose blog posts only**. Music release posts are ma
 
 **Preserve, don't normalize:**
 
-- Intentionally stylized titles — all-caps (`DISSOLUTION`), all-lowercase (`midwest sad, part 1`), mixed/Unicode (`eXistenZ`, fancy script). Leave casing untouched.
+- Intentionally stylized titles — all-caps (`DISSOLUTION`), all-lowercase (`midwest sad, part 1`), mixed/Unicode (`eXistenZ`, fancy script). Leave casing untouched. Known intentional examples: `Everything is everywhere now`, `That was closer to then` (lowercase mid-phrase), `arcologies Covered by CDM` (lowercase `arcologies`), and `norns community` (always lowercase, e.g. `Building "norns community"`).
 - Proper nouns, acronyms, and product/domain names (`COVID-19`, `CDM`, `pi-hole.net`). Preserve original casing.
 - The title of a referenced work that the author lowercases deliberately (`waking by Matt Lowery`).
 
