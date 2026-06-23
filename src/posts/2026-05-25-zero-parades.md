@@ -1,8 +1,6 @@
 ---
-layout: post
 title: "Zero Parades"
 date: 2026-05-25
-tags: ["Wildcard"]
 ---
 
 [Ela Bambust](https://www.patreon.com/posts/zero-parades-for-159036113):
