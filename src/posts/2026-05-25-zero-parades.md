@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zero Parades
+title: "Zero Parades"
 date: 2026-05-25
 tags: ["Wildcard"]
 ---

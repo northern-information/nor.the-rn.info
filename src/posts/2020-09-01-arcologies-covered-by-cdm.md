@@ -1,5 +1,5 @@
 ---
-title: "arcologies Covered by CDM"
+title: "Arcologies Covered by CDM"
 date: 2020-09-01
 ---
 
