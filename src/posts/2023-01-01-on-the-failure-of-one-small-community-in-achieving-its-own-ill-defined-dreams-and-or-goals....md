@@ -1,5 +1,5 @@
 ---
-title: "On the Failure of One Small Community in Achieving its Own Ill-defined Dreams and/or Goals..."
+title: "On the Failure of One Small Community in Achieving Its Own Ill-defined Dreams and/or Goals..."
 date: 2023-01-01
 ---
 
