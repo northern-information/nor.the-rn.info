@@ -23,18 +23,14 @@ I'm happy with what I do each day. I connect people with music. I build tools fo
 
 But.
 
-I've been working these fields for a long time. In some regards it's the "same as it's always been," in that folk music is the only real carrier of cultural information. To unpack that a bit: I think the idea of the "pop star" like The Beatles or Elvis or Madonna was nothing but a quaint blip in the cultural radar. This idea that you could blow up and capture the imagination and mindshare of most of the planet? Very 20th century. Centralized, syndicated radio. Ed Sullivan Show shit.
+Carrying this torch forward is now, in my opinion, primarily the responsibility of folk musicians. I don't mean "folk music" in the genre/style sense. Vaporwave is folk music. Trap is folk music. Ambient is folk music. It is the music that shared and emulated and innovated and not necessarily taught in colleges. Folk music has proven to be one of the only true carriers of durable cultural information. Unlike text, language, and videos, it is strangely resistant to corruption. I think this is worth exploring.
 
-We've seen this fragmentation in recent years. Blame it on apps, blame it on streaming, it really doesn't matter. Things are emphatically not like they used to be. I let go of my delusions of becoming famous like NIN or whatever a long time ago. That was such a brief flicker of a moment where that could happen.
+Music has the power to make people move and dance and sing and be merry. This is holy. This is why I say music is my religion and concerts are my church. It cuts across cultures.
 
-Today, the bands that get popular are largely engineered. I share this from "insider" knowledge. (I live in Los Angeles, you see.)
+I saw The Amity Affliction (arguably the premier Australian "folk metalcore" band) a few weeks ago. I screamed every word and cried several times. They played a deeeeeep cut b-side and I lost my mind because it is perhaps my favorite song by them. The catharsis was intense. I am so thankful for the experience, packed like sardines up against the front railing, singing along with strangers. We were all connected and all communing with something higher.
 
-But the thing of it is: it is still music.
+Experiences like that concert are why I won't give up, despite all the futures I tried to land in have elluded me.
 
-It is still a sacred collection of squiggly air that has the power to make people move and dance and sing and be merry. This is holy. This is why I say music is my religion and concerts are my church.
-
-I saw The Amity Affliction a few weeks ago. I screamed every word and cried several times. They played a deep cut b-side and I lost my mind because it is perhaps my favorite song by them. The catharsis was intense. I am so thankful for the experience, packed like sardines up against the front railing, singing along with strangers. We were all connected and all communing with something higher.
-
-This is why I won't give up. Even though the future that never was never really arrived I'm still here.
+Music remains.
 
 And I refuse to give up.
