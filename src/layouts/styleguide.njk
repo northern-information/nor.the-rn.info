@@ -1,0 +1,153 @@
+---
+layout: base.njk
+---
+{% include "spectrum.njk" %}
+
+{# ---------- Header ---------- #}
+<header class="px-2 py-8">
+  <h1 class="text-4xl font-bold">Styleguide</h1>
+  <p class="mt-2 max-w-[600px] text-lg leading-8 text-gray-400">
+    The design language of Northern Information &mdash; type, color, components, and
+    the heuristics that hold them together. Every specimen below is rendered with the
+    same classes the rest of the site uses, so this page can never drift from reality.
+  </p>
+</header>
+
+{# ---------- Typography ---------- #}
+<h2 class="bg-white px-2 py-3 text-2xl font-bold text-black">Typography</h2>
+<section class="px-2">
+  <div class="border-b border-gray-500 py-5">
+    <p class="text-4xl font-bold">Don&rsquo;t give up.</p>
+    <p class="mt-2 font-mono text-sm text-gray-400">text-4xl font-bold &middot; page titles (h1)</p>
+  </div>
+  <div class="border-b border-gray-500 py-5">
+    <p class="text-2xl font-bold">Help others not give up.</p>
+    <p class="mt-2 font-mono text-sm text-gray-400">text-2xl font-bold &middot; post headings (h1&ndash;h6)</p>
+  </div>
+  <div class="border-b border-gray-500 py-5">
+    <p class="max-w-[600px] text-lg leading-8">
+      Northern Information is a garden. Body copy is set at the reading measure used
+      across posts &mdash; comfortable line length, generous leading, sentence case.
+    </p>
+    <p class="mt-2 font-mono text-sm text-gray-400">text-lg leading-8 max-w-[600px] &middot; body copy (.post)</p>
+  </div>
+  <div class="border-b border-gray-500 py-5">
+    <p class="text-sm text-gray-400">Posted on a quiet afternoon, near the prime meridian.</p>
+    <p class="mt-2 font-mono text-sm text-gray-400">text-sm text-gray-400 &middot; meta, captions, dates</p>
+  </div>
+  <div class="border-b border-gray-500 py-5">
+    <p class="font-mono text-2xl">02026 &middot; June 25, 2026</p>
+    <p class="mt-2 font-mono text-sm text-gray-400">font-mono &middot; Long Now years &amp; dates (dateToUTCFull)</p>
+  </div>
+  <div class="py-5">
+    <p class="max-w-[600px] text-lg leading-8">
+      Inline treatments: a <a href="/styleguide/" class="link-primary">primary link</a> with its underline,
+      and inline <code class="text-red-400">code</code> rendered in red. Select this text to see the yellow
+      <code class="text-red-400">::selection</code> highlight.
+    </p>
+    <p class="mt-2 font-mono text-sm text-gray-400">.link-primary (= .post a) &middot; code (text-red-400) &middot; ::selection (bg-yellow-300)</p>
+  </div>
+</section>
+
+{# ---------- Color ---------- #}
+<h2 class="bg-white px-2 py-3 text-2xl font-bold text-black">Color</h2>
+<section class="px-2 py-5">
+  <ul class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+    {#- bg classes are written as full literal strings so Tailwind v4's source scanner generates them -#}
+    {%- set swatches = [
+      { name: 'black',      bg: 'bg-black',      hex: '#000000', use: 'Base background' },
+      { name: 'gray-500',   bg: 'bg-gray-500',   hex: '#6a7282', use: 'Ellipses fill, rules' },
+      { name: 'gray-400',   bg: 'bg-gray-400',   hex: '#99a1af', use: 'Dates, meta text' },
+      { name: 'stone-100',  bg: 'bg-stone-100',  hex: '#f5f5f4', use: 'Body text' },
+      { name: 'white',      bg: 'bg-white',      hex: '#ffffff', use: 'Surfaces (nav, footer, cards)' },
+      { name: 'red-500',    bg: 'bg-red-500',    hex: '#fb2c36', use: 'Active nav state' },
+      { name: 'red-400',    bg: 'bg-red-400',    hex: '#ff6467', use: 'Code & pre' },
+      { name: 'yellow-300', bg: 'bg-yellow-300', hex: '#ffdf20', use: 'Links, focus outline, ::selection' },
+      { name: 'yellow-500', bg: 'bg-yellow-500', hex: '#f0b100', use: 'Link hover' },
+      { name: 'blue-700',   bg: 'bg-blue-700',   hex: '#1447e6', use: 'Footer links' },
+      { name: 'blue-900',   bg: 'bg-blue-900',   hex: '#1c398e', use: 'Footer link hover' }
+    ] -%}
+    {%- for swatch in swatches -%}
+      <li>
+        <div class="h-24 w-full border border-gray-500 {{ swatch.bg }}"></div>
+        <div class="pt-2 font-mono text-sm">
+          <div>{{ swatch.name }}</div>
+          <div class="text-gray-400">{{ swatch.hex }}</div>
+          <div class="text-gray-400">{{ swatch.use }}</div>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+  <p class="mt-5 font-mono text-sm text-gray-400">
+    Hex values resolved from Tailwind v4&rsquo;s OKLCH default palette.
+  </p>
+</section>
+
+{# ---------- Components ---------- #}
+<h2 class="bg-white px-2 py-3 text-2xl font-bold text-black">Components</h2>
+<section class="px-2 py-5">
+
+  <div class="border-b border-gray-500 py-5">
+    {% include "spectrum.njk" %}
+    <p class="mt-2 font-mono text-sm text-gray-400">.spectrum &middot; animated gradient bar (nav &amp; footer)</p>
+  </div>
+
+  <div class="border-b border-gray-500 py-5">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div>
+        <a href="/images/tyler-etters-a-glass-reality.jpg" class="grain-hover block overflow-hidden">
+          <img src="/images/tyler-etters-a-glass-reality.jpg" alt="Grain overlay specimen" class="h-auto w-full">
+        </a>
+        <p class="mt-2 font-mono text-sm text-gray-400">.grain-hover + overflow-hidden &middot; hover for the clipped noise overlay (respects prefers-reduced-motion)</p>
+      </div>
+      <div>
+        <a href="/styleguide/" class="group block bg-white text-black hover:bg-black hover:text-yellow-300">
+          <div class="grain-hover overflow-hidden">
+            <img src="/images/tyler-etters-a-glass-reality.jpg" alt="Card specimen" class="h-auto w-full group-hover:invert">
+          </div>
+          <div class="border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
+            <p class="group-hover:underline">Card title</p>
+          </div>
+        </a>
+        <p class="mt-2 font-mono text-sm text-gray-400">card &middot; group-hover invert + color swap (see photography, about)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-b border-gray-500 py-5">
+    <div class="grid grid-cols-2 gap-1 md:grid-cols-4">
+      <span class="flex bg-red-500 p-2 font-semibold text-white underline" aria-current="page">Active</span>
+      <a href="/styleguide/" class="flex bg-white p-2 font-semibold text-black hover:bg-red-500 hover:text-white hover:underline">Default</a>
+    </div>
+    <p class="mt-2 font-mono text-sm text-gray-400">nav links &middot; active (bg-red-500) vs default (hover to compare)</p>
+  </div>
+
+  <div class="border-b border-gray-500 py-5">
+    <p><a href="/styleguide/" class="link-primary">Primary link</a> &mdash; yellow, underlined, drops underline on hover.</p>
+    <p class="mt-2 font-mono text-sm text-gray-400">.link-primary &middot; text-yellow-300 underline hover:text-yellow-500</p>
+  </div>
+
+  <div class="py-5">
+    <div class="flex flex-wrap items-center gap-4">
+      <button type="button" class="bg-white px-4 py-2 font-semibold text-black">Focusable button</button>
+      <a href="/styleguide/" class="link-primary">Focusable link</a>
+    </div>
+    <p class="mt-2 font-mono text-sm text-gray-400">focus state &middot; tab here for the outline-2 outline-yellow-300 ring</p>
+  </div>
+
+</section>
+
+{# ---------- Heuristics ---------- #}
+<h2 class="bg-white px-2 py-3 text-2xl font-bold text-black">Heuristics</h2>
+<section class="post px-2 py-5">
+  <ul>
+    <li>Brutalist and high contrast: black and white first, with sharp <code>border-black</code> rules at 2px and 4px. No rounded corners, no shadows.</li>
+    <li>Sentence case for prose; Title Case for labels, headings, and menu items.</li>
+    <li>Years use the 5-digit Long Now format (<code>02026</code>). All post dates render through the UTC date filters so they never shift across timezones.</li>
+    <li>Accessibility targets WCAG 2.1 AA with AAA enhancements: a yellow focus outline on every interactive element, a skip link, and documented color contrast.</li>
+    <li><code>prefers-reduced-motion</code> disables the grain, spectrum, and transition animations.</li>
+    <li>Semantic HTML throughout: landmarks, <code>&lt;time&gt;</code> elements, <code>aria-current="page"</code>, and <code>aria-hidden</code> on decorative elements.</li>
+  </ul>
+</section>
+
+{% include "spectrum.njk" %}
