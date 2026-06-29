@@ -3,6 +3,13 @@
   <head>
     <title>{% getTitle title %}</title>
     {% include "metaTags.njk" %}
+    <link
+      rel="preload"
+      href="/fonts/ibm-plex-mono-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
     <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
   </head>
   <body>
