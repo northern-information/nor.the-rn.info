@@ -5,7 +5,7 @@
     <ul class="bg-white px-2 py-2 text-black">
       <li>{{ site.META.TITLE }}</li>
       <li>
-        02008 &mdash; {{ site.META.YEAR }}
+        <span class="font-mono">02008 &mdash; {{ site.META.YEAR }}</span>
         <a
           href="{{ site.META.CREATIVE_COMMONS }}"
           class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
@@ -36,7 +36,7 @@
         Source Code:
         <a
           href="{{ site.META.GITHUB_URL }}/commit/{{ site.META.GIT_HASH }}"
-          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+          class="font-mono text-blue-700 underline hover:text-blue-900 hover:no-underline"
         >
           {{- site.META.GIT_HASH_SHORT -}}
         </a>
@@ -45,13 +45,13 @@
         Discography:
         <a
           href="{{ site.META.DISCOGRAPHY_URL }}"
-          class="text-blue-700 underline hover:text-blue-900 hover:no-underline"
+          class="font-mono text-blue-700 underline hover:text-blue-900 hover:no-underline"
         >
           v
           {{- site.META.DISCOGRAPHY_VERSION -}}
         </a>
       </li>
-      <li>Build Time: 0{{ site.META.BUILD_TIME }}</li>
+      <li>Build Time: <span class="font-mono">0{{ site.META.BUILD_TIME }}</span></li>
     </ul>
     <a
       href="/"
