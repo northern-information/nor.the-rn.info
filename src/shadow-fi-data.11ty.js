@@ -65,6 +65,9 @@ export default class ShadowFiData {
         continue
       }
 
+      // Mixtapes (DJ mixes) are excluded — the radio is songs, not sets.
+      if (release.type === 'Mix') continue
+
       // Per-release: one station carrying its streamable tracks.
       const tracks = mp3Tracks(release)
       stations.push({

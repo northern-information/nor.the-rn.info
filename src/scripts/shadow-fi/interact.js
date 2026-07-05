@@ -8,7 +8,7 @@ import { MAX_IMPULSES } from './gl.js'
 import { KIND_LABEL } from './field.js'
 
 const DWELL_SECONDS = 0.6
-const FOCUS_TIMEOUT = 14
+const FOCUS_TIMEOUT = 60 // a tuned station keeps playing a good while
 const IDLE_AFTER = 30
 const TOUCH_RADIUS_CSS = 48
 const HOVER_PAD_CSS = 8

@@ -148,7 +148,7 @@ export class FragmentSlots {
         if (elapsed >= slot.duration) {
           slot.phase = PHASE.LEGIBLE
           slot.phaseStart = time
-          slot.duration = rand(6, 10)
+          slot.duration = rand(18, 30) // hold so the song plays a good while
           tunedIn.push(i)
         }
       } else if (slot.phase === PHASE.LEGIBLE) {
