@@ -8,7 +8,7 @@
 // capped so the dial never becomes a mob. No autoplay: enable() must be called
 // from a user gesture.
 
-const MAX_VOICES = 2
+const MAX_VOICES = 1 // one track at a time — no overlapping songs
 const TUNE_IN = 1.4 // s, gain ramp as a station locks in
 const TUNE_OUT = 2.6 // s, gain ramp as it detunes back into static
 const STATIC_BASE = 0.14
@@ -131,27 +131,25 @@ export function createAudio() {
   }
 
   function pickTrackUrl(fragment) {
-    if (fragment.audio) return fragment.audio
-    if (fragment.tracks && fragment.tracks.length) {
-      const idx = Math.floor(strHash(fragment.id) * fragment.tracks.length)
-      const t = fragment.tracks[Math.min(idx, fragment.tracks.length - 1)]
-      return t && t.audio
-    }
-    return null
+    // field.js already resolved the one track this station plays.
+    return fragment.audio || null
   }
 
-  function freeAVoice(priority) {
-    // Evict the oldest non-priority active voice to make room.
-    let oldest = null
-    let oldestAt = Infinity
+  // The tuner interrupts whatever's playing with a quick fade, freeing the
+  // single voice immediately for the station it summoned.
+  function hardEvict() {
     for (const [idx, v] of voices) {
-      if (v.priority && !priority) continue
-      if (v.startedAt < oldestAt) {
-        oldestAt = v.startedAt
-        oldest = idx
+      const now = ctx.currentTime
+      try {
+        v.gain.gain.cancelScheduledValues(now)
+        v.gain.gain.setValueAtTime(v.gain.gain.value, now)
+        v.gain.gain.linearRampToValueAtTime(0.0001, now + 0.3)
+      } catch {
+        /* context may be closing */
       }
+      voices.delete(idx)
+      setTimeout(() => disposeVoice(v), 350)
     }
-    if (oldest !== null) tuneOut(oldest)
   }
 
   function buildVoice(url, pan) {
@@ -232,12 +230,14 @@ export function createAudio() {
           disposeVoice(v)
           return
         }
+        // One at a time: an ambient station waits its turn (including while the
+        // previous one fades out); only the tuner interrupts.
         if (voices.size >= MAX_VOICES) {
           if (!priority) {
-            disposeVoice(v) // lost the race for a voice
+            disposeVoice(v)
             return
           }
-          freeAVoice(true)
+          hardEvict()
         }
         const dur = v.el.duration
         if (Number.isFinite(dur) && dur > 8) {
@@ -273,8 +273,10 @@ export function createAudio() {
       return
     }
     const voice = voices.get(slotIndex)
-    if (!voice) return
-    voices.delete(slotIndex)
+    if (!voice || voice.fading) return
+    // Keep the voice counted while it fades, so the next track doesn't start on
+    // top of it — it waits until this one is fully gone.
+    voice.fading = true
     const now = ctx.currentTime
     try {
       voice.gain.gain.cancelScheduledValues(now)
@@ -283,7 +285,11 @@ export function createAudio() {
     } catch {
       /* context may be closing */
     }
-    setTimeout(() => disposeVoice(voice), TUNE_OUT * 1000 + 100)
+    setTimeout(() => {
+      voices.delete(slotIndex)
+      disposeVoice(voice)
+      duckStatic()
+    }, TUNE_OUT * 1000 + 100)
     duckStatic()
   }
 

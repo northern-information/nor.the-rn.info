@@ -96,6 +96,12 @@ export function createInteraction({
     titleEl.className = 'sf-focus-title'
     titleEl.textContent = fragment.title
     focusCard.append(kindEl, titleEl)
+    if (fragment.trackTitle) {
+      const trackEl = document.createElement('span')
+      trackEl.className = 'sf-focus-track'
+      trackEl.textContent = fragment.trackTitle
+      focusCard.append(trackEl)
+    }
     if (fragment.url) {
       const link = document.createElement('a')
       link.href = fragment.url
@@ -267,14 +273,17 @@ export function renderPanel(container, heading, fragments) {
       const kind = document.createElement('span')
       kind.className = 'sf-kind'
       kind.textContent = `${KIND_LABEL[fragment.kind] || 'SIGNAL'}${fragment.date ? ` · ${fragment.date}` : ''}`
+      const label = fragment.trackTitle
+        ? `${fragment.title} — ${fragment.trackTitle}`
+        : fragment.title
       if (fragment.url) {
         const link = document.createElement('a')
         link.href = fragment.url
-        link.textContent = fragment.title
+        link.textContent = label
         item.append(kind, link)
       } else {
         const span = document.createElement('span')
-        span.textContent = fragment.title
+        span.textContent = label
         item.append(kind, span)
       }
       list.appendChild(item)

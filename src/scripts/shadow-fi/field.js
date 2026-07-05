@@ -25,6 +25,17 @@ export const KIND_LABEL = {
   project: 'PROJECT',
 }
 
+// Deterministic 0..1 from a string, so a release station always resolves to the
+// same track (its own "frequency") for both the picture and the audio.
+function hash01(str) {
+  let h = 2166136261
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i)
+    h = Math.imul(h, 16777619)
+  }
+  return (h >>> 0) / 4294967295
+}
+
 export async function loadFragmentPool() {
   const res = await fetch('/shadow-fi.json')
   if (!res.ok) throw new Error(`station index fetch failed: ${res.status}`)
@@ -33,18 +44,35 @@ export async function loadFragmentPool() {
   for (const s of index.stations || []) {
     if (!s || !s.title || !s.kind) continue
     const kind = KIND_WEIGHT[s.kind] ? s.kind : 'project'
+    const id = s.id || `${kind}:${s.title}`
+
+    // Resolve the one track this station plays, up front.
+    let audio = s.audio || null
+    let trackTitle = ''
+    if (!audio && Array.isArray(s.tracks) && s.tracks.length) {
+      const idx = Math.min(
+        s.tracks.length - 1,
+        Math.floor(hash01(id) * s.tracks.length)
+      )
+      const track = s.tracks[idx]
+      if (track) {
+        audio = track.audio
+        trackTitle = track.title || ''
+      }
+    }
+
     pool.push({
       kind,
       weight: KIND_WEIGHT[kind],
-      id: s.id || `${kind}:${s.title}`,
-      docId: s.id || `${kind}:${s.title}`,
+      id,
+      docId: id,
       title: s.title,
+      trackTitle,
       date: s.date || '',
       url: s.url || '',
-      text: s.title,
-      // audio payload (undefined for silent kinds)
-      audio: s.audio || null,
-      tracks: Array.isArray(s.tracks) ? s.tracks : null,
+      // Field text shows both the release and the track it's tuned to.
+      text: trackTitle ? `${s.title} — ${trackTitle}` : s.title,
+      audio,
       length: s.length || '',
     })
   }

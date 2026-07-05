@@ -31,7 +31,10 @@ export function createTuner({ dial, needle, readout, pool, onTune }) {
 
   function label(fragment, lead) {
     const kind = KIND_LABEL[fragment.kind] || 'SIGNAL'
-    return `${lead} ${fragment.title} · ${kind}`
+    const title = fragment.trackTitle
+      ? `${fragment.title} — ${fragment.trackTitle}`
+      : fragment.title
+    return `${lead} ${title} · ${kind}`
   }
 
   function scanTo(p) {
