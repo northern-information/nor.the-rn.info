@@ -38,7 +38,7 @@ function makeShaperCurve(amount) {
   return curve
 }
 
-export function createAudio() {
+export function createAudio(handlers = {}) {
   let ctx = null
   let master = null
   let staticGain = null
@@ -51,6 +51,23 @@ export function createAudio() {
   const voices = new Map() // slotIndex -> active (playing) voice
   const pending = new Map() // slotIndex -> voice still loading (no slot claimed yet)
   const deadUrls = new Set() // audio that 404s (e.g. journal not yet uploaded)
+  let lastNowPlayingId
+
+  // Report the one track currently sounding (or null) so the dial tracks it 1:1.
+  function refreshNowPlaying() {
+    let active = null
+    for (const v of voices.values()) {
+      if (!v.fading) {
+        active = v
+        break
+      }
+    }
+    if (!active) for (const v of voices.values()) active = v
+    const id = active && active.fragment ? active.fragment.id : null
+    if (id === lastNowPlayingId) return
+    lastNowPlayingId = id
+    if (handlers.onNowPlaying) handlers.onNowPlaying(active ? active.fragment : null)
+  }
 
   function readVolume() {
     const v = parseFloat(localStorage.getItem(LS_VOL))
@@ -210,6 +227,7 @@ export function createAudio() {
     }
     v.priority = priority
     v.cancelled = false
+    v.fragment = fragment
     pending.set(slotIndex, v)
 
     v.el.addEventListener(
@@ -253,12 +271,14 @@ export function createAudio() {
           voices.delete(slotIndex)
           disposeVoice(v)
           duckStatic()
+          refreshNowPlaying()
         })
         const now = ctx.currentTime
         v.gain.gain.cancelScheduledValues(now)
         v.gain.gain.setValueAtTime(0.0001, now)
         v.gain.gain.linearRampToValueAtTime(VOICE_LEVEL, now + TUNE_IN)
         duckStatic()
+        refreshNowPlaying()
       },
       { once: true }
     )
@@ -289,8 +309,10 @@ export function createAudio() {
       voices.delete(slotIndex)
       disposeVoice(voice)
       duckStatic()
+      refreshNowPlaying()
     }, TUNE_OUT * 1000 + 100)
     duckStatic()
+    refreshNowPlaying()
   }
 
   function setFocusPan(slotIndex, pan) {

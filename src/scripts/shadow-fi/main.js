@@ -87,7 +87,14 @@ async function boot() {
 
   const small = Math.min(window.innerWidth, window.innerHeight) < 700
   slots = new FragmentSlots(createPicker(pool), small ? 4 : MAX_FRAGS)
-  audio = createAudio()
+  // The dial follows whatever is actually playing, 1:1 — ambient scans included.
+  audio = createAudio({
+    onNowPlaying: (fragment) => {
+      if (!tuner) return
+      if (fragment) tuner.setReadout(fragment)
+      else tuner.setIdle()
+    },
+  })
   interaction = createInteraction({
     canvas,
     slots,
@@ -100,14 +107,8 @@ async function boot() {
       sheetW: slots.canvas.width,
       sheetH: slots.canvas.height,
     }),
-    onFocus: (index, fragment, pan) => {
-      audio.tuneIn(index, fragment, pan, true)
-      if (tuner) tuner.setReadout(fragment)
-    },
-    onBlur: (index) => {
-      audio.tuneOut(index)
-      if (tuner) tuner.setIdle()
-    },
+    onFocus: (index, fragment, pan) => audio.tuneIn(index, fragment, pan, true),
+    onBlur: (index) => audio.tuneOut(index),
   })
 
   if (tunerDial) {
