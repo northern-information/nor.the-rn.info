@@ -39,6 +39,17 @@ let slots = null
 let interaction = null
 let audio = null
 let tuner = null
+let focusedFragment = null // what you manually tuned to (click / dial)
+let nowPlayingFragment = null // what's actually sounding (ambient scans)
+
+// The dial shows what you tuned to if you're holding a station, otherwise what
+// is currently playing, otherwise static.
+function updateDial() {
+  if (!tuner) return
+  const fragment = focusedFragment || nowPlayingFragment
+  if (fragment) tuner.setReadout(fragment)
+  else tuner.setIdle()
+}
 let rafId = 0
 let cssW = 0
 let cssH = 0
@@ -87,12 +98,10 @@ async function boot() {
 
   const small = Math.min(window.innerWidth, window.innerHeight) < 700
   slots = new FragmentSlots(createPicker(pool), small ? 4 : MAX_FRAGS)
-  // The dial follows whatever is actually playing, 1:1 — ambient scans included.
   audio = createAudio({
     onNowPlaying: (fragment) => {
-      if (!tuner) return
-      if (fragment) tuner.setReadout(fragment)
-      else tuner.setIdle()
+      nowPlayingFragment = fragment
+      updateDial()
     },
   })
   interaction = createInteraction({
@@ -107,8 +116,17 @@ async function boot() {
       sheetW: slots.canvas.width,
       sheetH: slots.canvas.height,
     }),
-    onFocus: (index, fragment, pan) => audio.tuneIn(index, fragment, pan, true),
-    onBlur: (index) => audio.tuneOut(index),
+    onFocus: (index, fragment, pan) => {
+      // Move the dial to the tuned station immediately, before the audio loads.
+      focusedFragment = fragment
+      updateDial()
+      audio.tuneIn(index, fragment, pan, true)
+    },
+    onBlur: (index) => {
+      focusedFragment = null
+      updateDial()
+      audio.tuneOut(index)
+    },
     onTuneTrack: (fragment) => {
       const i = slots.tuneTo(fragment, getTime())
       if (i >= 0) interaction.tune(i)
