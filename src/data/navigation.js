@@ -15,6 +15,11 @@ export default [
     match: 'equals',
   },
   {
+    url: '/projects/',
+    label: 'Projects',
+    match: 'equals',
+  },
+  {
     url: '/about/',
     label: 'About',
     match: 'equals',

@@ -1,0 +1,334 @@
+// SHADOW FI sound layer — the haunted radio.
+//
+// Synthesized static bed (looped noise → wandering bandpass) is always on once
+// enabled. Stations are Tyler's REAL tracks: streamed via HTMLAudioElement +
+// MediaElementAudioSourceNode (never fetch+decode, so ~4h of journal doesn't
+// download), seeked to a random offset so you catch a broadcast already in
+// progress, and routed through a lo-fi "radio character" chain. Voices are
+// capped so the dial never becomes a mob. No autoplay: enable() must be called
+// from a user gesture.
+
+const MAX_VOICES = 2
+const TUNE_IN = 1.4 // s, gain ramp as a station locks in
+const TUNE_OUT = 2.6 // s, gain ramp as it detunes back into static
+const STATIC_BASE = 0.14
+const VOICE_LEVEL = 0.9
+
+const LS_VOL = 'shadow-fi:volume'
+const LS_MUTED = 'shadow-fi:muted'
+
+function strHash(str) {
+  let h = 2166136261
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i)
+    h = Math.imul(h, 16777619)
+  }
+  return (h >>> 0) / 4294967295
+}
+
+// Soft-clip curve for the radio grit.
+function makeShaperCurve(amount) {
+  const n = 1024
+  const curve = new Float32Array(n)
+  const k = amount
+  for (let i = 0; i < n; i++) {
+    const x = (i / (n - 1)) * 2 - 1
+    curve[i] = ((1 + k) * x) / (1 + k * Math.abs(x))
+  }
+  return curve
+}
+
+export function createAudio() {
+  let ctx = null
+  let master = null
+  let staticGain = null
+  let staticBp = null
+  let staticSrc = null
+  let enabled = false
+  let volume = readVolume()
+  let muted = readMuted()
+
+  const voices = new Map() // slotIndex -> voice
+
+  function readVolume() {
+    const v = parseFloat(localStorage.getItem(LS_VOL))
+    return Number.isFinite(v) ? Math.min(1, Math.max(0, v)) : 0.8
+  }
+  function readMuted() {
+    return localStorage.getItem(LS_MUTED) === '1'
+  }
+
+  function applyMasterGain(immediate) {
+    if (!master) return
+    const target = muted ? 0 : volume
+    const now = ctx.currentTime
+    master.gain.cancelScheduledValues(now)
+    if (immediate) master.gain.setValueAtTime(target, now)
+    else master.gain.linearRampToValueAtTime(target, now + 0.15)
+  }
+
+  function duckStatic() {
+    if (!staticGain) return
+    const target = STATIC_BASE / (1 + 0.85 * voices.size)
+    const now = ctx.currentTime
+    staticGain.gain.cancelScheduledValues(now)
+    staticGain.gain.linearRampToValueAtTime(target, now + 0.4)
+  }
+
+  function startStatic() {
+    const buf = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate)
+    const d = buf.getChannelData(0)
+    for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * 0.7
+    staticSrc = ctx.createBufferSource()
+    staticSrc.buffer = buf
+    staticSrc.loop = true
+    staticBp = ctx.createBiquadFilter()
+    staticBp.type = 'bandpass'
+    staticBp.frequency.value = 1800
+    staticBp.Q.value = 0.6
+    staticGain = ctx.createGain()
+    staticGain.gain.value = STATIC_BASE
+    staticSrc.connect(staticBp)
+    staticBp.connect(staticGain)
+    staticGain.connect(master)
+    staticSrc.start()
+    wanderStatic()
+  }
+
+  // Slow random walk of the static's centre frequency — the sound of a dial
+  // drifting between stations.
+  function wanderStatic() {
+    if (!staticBp || !ctx) return
+    const now = ctx.currentTime
+    const target = 900 + Math.random() * 2600
+    staticBp.frequency.cancelScheduledValues(now)
+    staticBp.frequency.linearRampToValueAtTime(target, now + 4 + Math.random() * 4)
+  }
+
+  async function enable() {
+    if (enabled) return true
+    try {
+      const AC = window.AudioContext || window.webkitAudioContext
+      if (!AC) return false
+      ctx = new AC()
+      master = ctx.createGain()
+      const comp = ctx.createDynamicsCompressor()
+      master.connect(comp)
+      comp.connect(ctx.destination)
+      applyMasterGain(true)
+      startStatic()
+      await ctx.resume()
+      enabled = true
+      // Keep drifting the static forever.
+      setInterval(wanderStatic, 6000)
+      return true
+    } catch (err) {
+      console.error('[shadow-fi] audio enable failed:', err)
+      return false
+    }
+  }
+
+  function pickTrackUrl(fragment) {
+    if (fragment.audio) return fragment.audio
+    if (fragment.tracks && fragment.tracks.length) {
+      const idx = Math.floor(strHash(fragment.id) * fragment.tracks.length)
+      const t = fragment.tracks[Math.min(idx, fragment.tracks.length - 1)]
+      return t && t.audio
+    }
+    return null
+  }
+
+  function freeAVoice(priority) {
+    // Evict the oldest non-priority voice to make room.
+    let oldest = null
+    let oldestAt = Infinity
+    for (const [idx, v] of voices) {
+      if (v.priority && !priority) continue
+      if (v.startedAt < oldestAt) {
+        oldestAt = v.startedAt
+        oldest = idx
+      }
+    }
+    if (oldest !== null) tuneOut(oldest)
+  }
+
+  function tuneIn(slotIndex, fragment, pan = 0, priority = false) {
+    if (!enabled || !ctx) return
+    if (voices.has(slotIndex)) return
+    const url = pickTrackUrl(fragment)
+    if (!url) return // silent kind (project) — dead air
+    if (voices.size >= MAX_VOICES) {
+      if (!priority) return
+      freeAVoice(true)
+    }
+
+    let el
+    try {
+      el = new Audio()
+      el.crossOrigin = 'anonymous'
+      el.preload = 'auto'
+      el.src = url
+    } catch (err) {
+      console.error('[shadow-fi] audio element failed:', err)
+      return
+    }
+
+    let srcNode
+    try {
+      srcNode = ctx.createMediaElementSource(el)
+    } catch (err) {
+      console.error('[shadow-fi] media source failed:', err)
+      return
+    }
+
+    const bp = ctx.createBiquadFilter()
+    bp.type = 'bandpass'
+    bp.frequency.value = 1600
+    bp.Q.value = 0.9
+    const shaper = ctx.createWaveShaper()
+    shaper.curve = makeShaperCurve(4)
+    const panner = ctx.createStereoPanner
+      ? ctx.createStereoPanner()
+      : null
+    if (panner) panner.pan.value = Math.max(-1, Math.min(1, pan))
+    const gain = ctx.createGain()
+    gain.gain.value = 0.0001
+
+    srcNode.connect(bp)
+    bp.connect(shaper)
+    if (panner) {
+      shaper.connect(panner)
+      panner.connect(gain)
+    } else {
+      shaper.connect(gain)
+    }
+    gain.connect(master)
+
+    const voice = {
+      el,
+      srcNode,
+      bp,
+      shaper,
+      panner,
+      gain,
+      priority,
+      startedAt: ctx.currentTime,
+      dead: false,
+    }
+    voices.set(slotIndex, voice)
+
+    const seekAndPlay = () => {
+      if (voice.dead) return
+      const dur = el.duration
+      if (Number.isFinite(dur) && dur > 8) {
+        try {
+          el.currentTime = Math.random() * (dur * 0.8)
+        } catch {
+          /* seeking not ready; play from wherever */
+        }
+      }
+      el.play().catch(() => {
+        // play() interrupted by a rapid tune-out, or blocked — expected, quiet.
+        tuneOut(slotIndex)
+      })
+    }
+    el.addEventListener('loadedmetadata', seekAndPlay, { once: true })
+    el.addEventListener(
+      'error',
+      () => {
+        // A station with no audio on the CDN (e.g. not yet uploaded) simply
+        // stays silent — dead air. Expected and recoverable; debug only.
+        console.debug('[shadow-fi] no signal:', url)
+        tuneOut(slotIndex)
+      },
+      { once: true }
+    )
+
+    const now = ctx.currentTime
+    gain.gain.cancelScheduledValues(now)
+    gain.gain.setValueAtTime(0.0001, now)
+    gain.gain.linearRampToValueAtTime(VOICE_LEVEL, now + TUNE_IN)
+    duckStatic()
+  }
+
+  function tuneOut(slotIndex) {
+    const voice = voices.get(slotIndex)
+    if (!voice) return
+    voices.delete(slotIndex)
+    voice.dead = true
+    const now = ctx.currentTime
+    try {
+      voice.gain.gain.cancelScheduledValues(now)
+      voice.gain.gain.setValueAtTime(voice.gain.gain.value, now)
+      voice.gain.gain.linearRampToValueAtTime(0.0001, now + TUNE_OUT)
+    } catch {
+      /* context may be closing */
+    }
+    setTimeout(
+      () => {
+        try {
+          voice.el.pause()
+          voice.el.src = ''
+          voice.srcNode.disconnect()
+          voice.gain.disconnect()
+        } catch {
+          /* already gone */
+        }
+      },
+      TUNE_OUT * 1000 + 100
+    )
+    duckStatic()
+  }
+
+  function setFocusPan(slotIndex, pan) {
+    const v = voices.get(slotIndex)
+    if (v && v.panner) v.panner.pan.value = Math.max(-1, Math.min(1, pan))
+  }
+
+  function suspend() {
+    if (!enabled || !ctx) return
+    for (const v of voices.values()) {
+      try {
+        v.el.pause()
+      } catch {
+        /* ignore */
+      }
+    }
+    ctx.suspend().catch(() => {})
+  }
+
+  function resume() {
+    if (!enabled || !ctx) return
+    ctx.resume().catch(() => {})
+    for (const v of voices.values()) {
+      if (!v.dead) v.el.play().catch(() => {})
+    }
+  }
+
+  function toggleMute() {
+    muted = !muted
+    localStorage.setItem(LS_MUTED, muted ? '1' : '0')
+    applyMasterGain(false)
+    return muted
+  }
+
+  function setVolume(v) {
+    volume = Math.min(1, Math.max(0, v))
+    localStorage.setItem(LS_VOL, String(volume))
+    applyMasterGain(false)
+  }
+
+  return {
+    enable,
+    tuneIn,
+    tuneOut,
+    setFocusPan,
+    suspend,
+    resume,
+    toggleMute,
+    setVolume,
+    isEnabled: () => enabled,
+    isMuted: () => muted,
+    getVolume: () => volume,
+  }
+}
