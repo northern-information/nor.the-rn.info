@@ -1,0 +1,264 @@
+<style>
+  #shadow-fi {
+    --sf-ember: #fa9e3d;
+    --sf-link: #fde047;
+    --sf-dim: #9ca3af;
+    --sf-text: #e5e5e5;
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  #sf-stage {
+    position: relative;
+    width: 100%;
+    height: clamp(360px, 68vh, 820px);
+    background: #000;
+    overflow: hidden;
+  }
+  #sf-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  #sf-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    touch-action: none;
+    cursor: crosshair;
+    z-index: 1;
+  }
+  #sf-focus {
+    position: absolute;
+    max-width: min(26rem, calc(100% - 2rem));
+    padding: 0.9rem 1rem;
+    background: rgb(0 0 0 / 0.9);
+    border: 1px solid rgb(255 255 255 / 0.18);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    z-index: 3;
+    color: var(--sf-text);
+  }
+  #sf-focus .sf-focus-kind {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--sf-ember);
+    margin-bottom: 0.35rem;
+  }
+  #sf-focus .sf-focus-title {
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+  #sf-focus .sf-focus-note {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--sf-dim);
+  }
+  #sf-focus a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 0 0.25rem;
+    color: var(--sf-link);
+    letter-spacing: 0.12em;
+    text-decoration: none;
+  }
+  #sf-focus a:hover,
+  #sf-focus a:focus-visible {
+    text-decoration: underline;
+  }
+  #sf-fallback {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    z-index: 2;
+    color: var(--sf-text);
+    background: rgb(0 0 0 / 0.8);
+  }
+  #shadow-fi .sf-panel-heading {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    color: var(--sf-dim);
+    margin: 0 0 1.5rem;
+    max-width: 34rem;
+    line-height: 1.7;
+  }
+  #shadow-fi .sf-panel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 34rem;
+  }
+  #shadow-fi .sf-panel-list li {
+    margin-bottom: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+  #shadow-fi .sf-panel-list a {
+    color: var(--sf-link);
+    text-decoration: none;
+  }
+  #shadow-fi .sf-panel-list a:hover,
+  #shadow-fi .sf-panel-list a:focus-visible {
+    text-decoration: underline;
+  }
+  #shadow-fi .sf-panel-list .sf-kind {
+    display: block;
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    color: var(--sf-ember);
+  }
+  #sf-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.75rem 0 1rem;
+  }
+  #sf-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  #sf-sound {
+    appearance: none;
+    background: transparent;
+    border: 1px solid rgb(255 255 255 / 0.18);
+    color: var(--sf-text);
+    font-family: inherit;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    padding: 0.5rem 0.9rem;
+    min-height: 44px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 160ms ease;
+  }
+  #sf-sound:hover:not([disabled]),
+  #sf-sound:focus-visible {
+    opacity: 1;
+  }
+  #sf-sound[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    border-color: rgb(255 255 255 / 0.08);
+  }
+  #sf-volume {
+    width: 120px;
+    accent-color: var(--sf-ember);
+  }
+  #sf-tuner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  #sf-dial {
+    position: relative;
+    height: 26px;
+    cursor: ew-resize;
+    touch-action: none;
+    border-top: 1px solid rgb(255 255 255 / 0.14);
+    border-bottom: 1px solid rgb(255 255 255 / 0.14);
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.22) 0 1px,
+      transparent 1px 15px
+    );
+  }
+  #sf-needle {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: 0;
+    width: 2px;
+    background: var(--sf-ember);
+    box-shadow: 0 0 6px 1px rgb(250 158 61 / 0.7);
+    pointer-events: none;
+    transition: left 90ms linear;
+  }
+  #sf-readout {
+    text-align: center;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: var(--sf-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #sf-dial:focus-visible,
+  #sf-sound:focus-visible,
+  #sf-focus a:focus-visible,
+  #sf-fallback a:focus-visible {
+    outline: 2px solid var(--sf-link);
+    outline-offset: 3px;
+  }
+  /* Respect reduced motion: no background video. */
+  @media (prefers-reduced-motion: reduce) {
+    #sf-video {
+      display: none;
+    }
+  }
+</style>
+<div id="shadow-fi">
+  <div id="sf-stage">
+    <video
+      id="sf-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    >
+      <source
+        src="/videos/northern-information-owl-pair.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <canvas id="sf-canvas" aria-hidden="true"></canvas>
+    <div id="sf-focus" hidden></div>
+    <section id="sf-fallback" hidden aria-label="Archive stations"></section>
+  </div>
+  <div id="sf-bar">
+    <div id="sf-controls">
+      <button id="sf-sound" type="button">enable audio</button>
+      <input
+        id="sf-volume"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        aria-label="Signal volume"
+        hidden
+      />
+    </div>
+    <div id="sf-tuner">
+      <div
+        id="sf-dial"
+        role="slider"
+        tabindex="0"
+        aria-label="Tune the band"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div id="sf-needle"></div>
+      </div>
+      <div id="sf-readout" aria-live="polite">— static —</div>
+    </div>
+  </div>
+  <noscript>
+    <p class="sf-panel-heading">
+      SHADOW FI requires script execution.
+      <a href="/music/">The music</a> remains.
+    </p>
+  </noscript>
+</div>

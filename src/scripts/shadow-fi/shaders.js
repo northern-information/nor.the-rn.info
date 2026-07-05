@@ -147,7 +147,12 @@ void main() {
   col *= 0.92 + 0.08 * sin(gl_FragCoord.y * 3.14159);
   col += (hash(gl_FragCoord.xy + uGrainSeed + fract(uTime) * 61.7) - 0.5) * 0.05;
 
-  outColor = vec4(max(col, vec3(0.0)), 1.0);
+  // Alpha lets the background video show through: dark/empty areas are a light
+  // veil, snow and station text are opaque. A moody transmission over the owls.
+  col = max(col, vec3(0.0));
+  float lum = dot(col, vec3(0.299, 0.587, 0.114));
+  float alpha = clamp(0.32 + lum * 2.4, 0.0, 1.0);
+  outColor = vec4(col, alpha);
 }
 `
 }

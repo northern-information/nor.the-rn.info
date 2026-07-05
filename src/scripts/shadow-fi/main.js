@@ -19,6 +19,7 @@ const STATIC_HEADING =
   'SHADOW FI / STILL FRAME — motion suppressed per instrument settings.'
 
 const canvas = document.getElementById('sf-canvas')
+const stage = document.getElementById('sf-stage')
 const focusCard = document.getElementById('sf-focus')
 const fallbackPanel = document.getElementById('sf-fallback')
 const soundBtn = document.getElementById('sf-sound')
@@ -199,8 +200,9 @@ function trackPerformance(time) {
 }
 
 function resizeAll() {
-  cssW = window.innerWidth
-  cssH = window.innerHeight
+  // Embedded: the canvas fills its stage, not the viewport.
+  cssW = stage.clientWidth
+  cssH = stage.clientHeight
   const small = Math.min(cssW, cssH) < 700
   const dprCap = Math.min(window.devicePixelRatio || 1, small ? 1.25 : 1.5)
   renderer.resize(cssW, cssH, dprCap * renderScale)
@@ -211,37 +213,26 @@ function resizeAll() {
 
 // The sound control is the required user gesture: first activation enables the
 // AudioContext; after that it toggles mute. Volume appears once enabled.
+// Enable-only: the button is the required gesture to start audio, then it's
+// done. No toggle-off (mute lives in the volume slider if you want silence).
 function setupSoundControl() {
   if (!soundBtn) return
-  const paint = () => {
-    if (!audio.isEnabled()) {
-      soundBtn.textContent = '[ turn on the signal ]'
-      soundBtn.setAttribute('aria-pressed', 'false')
-    } else if (audio.isMuted()) {
-      soundBtn.textContent = '[ signal muted ]'
-      soundBtn.setAttribute('aria-pressed', 'false')
-    } else {
-      soundBtn.textContent = '[ signal on ]'
-      soundBtn.setAttribute('aria-pressed', 'true')
-    }
-    if (volumeInput) volumeInput.hidden = !audio.isEnabled()
-  }
   soundBtn.addEventListener('click', async () => {
-    if (!audio.isEnabled()) {
-      const ok = await audio.enable()
-      if (ok && volumeInput) volumeInput.value = String(audio.getVolume())
-    } else {
-      audio.toggleMute()
+    if (audio.isEnabled()) return
+    const ok = await audio.enable()
+    if (!ok) return
+    soundBtn.textContent = 'audio on'
+    soundBtn.disabled = true
+    if (volumeInput) {
+      volumeInput.hidden = false
+      volumeInput.value = String(audio.getVolume())
     }
-    paint()
   })
   if (volumeInput) {
-    volumeInput.value = String(audio.getVolume())
     volumeInput.addEventListener('input', () => {
       audio.setVolume(parseFloat(volumeInput.value))
     })
   }
-  paint()
 }
 
 function wireLifecycle() {
@@ -288,8 +279,8 @@ function wireLifecycle() {
 
 // prefers-reduced-motion: one frozen frame, then a readable list. No audio.
 async function staticResolution(poolPromise) {
-  cssW = window.innerWidth
-  cssH = window.innerHeight
+  cssW = stage.clientWidth
+  cssH = stage.clientHeight
   const dprCap = Math.min(window.devicePixelRatio || 1, 1.5)
   renderer.resize(cssW, cssH, dprCap)
   renderer.draw({

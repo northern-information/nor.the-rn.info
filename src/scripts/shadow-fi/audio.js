@@ -48,7 +48,9 @@ export function createAudio() {
   let volume = readVolume()
   let muted = readMuted()
 
-  const voices = new Map() // slotIndex -> voice
+  const voices = new Map() // slotIndex -> active (playing) voice
+  const pending = new Map() // slotIndex -> voice still loading (no slot claimed yet)
+  const deadUrls = new Set() // audio that 404s (e.g. journal not yet uploaded)
 
   function readVolume() {
     const v = parseFloat(localStorage.getItem(LS_VOL))
@@ -139,7 +141,7 @@ export function createAudio() {
   }
 
   function freeAVoice(priority) {
-    // Evict the oldest non-priority voice to make room.
+    // Evict the oldest non-priority active voice to make room.
     let oldest = null
     let oldestAt = Infinity
     for (const [idx, v] of voices) {
@@ -152,48 +154,22 @@ export function createAudio() {
     if (oldest !== null) tuneOut(oldest)
   }
 
-  function tuneIn(slotIndex, fragment, pan = 0, priority = false) {
-    if (!enabled || !ctx) return
-    if (voices.has(slotIndex)) return
-    const url = pickTrackUrl(fragment)
-    if (!url) return // silent kind (project) — dead air
-    if (voices.size >= MAX_VOICES) {
-      if (!priority) return
-      freeAVoice(true)
-    }
-
-    let el
-    try {
-      el = new Audio()
-      el.crossOrigin = 'anonymous'
-      el.preload = 'auto'
-      el.src = url
-    } catch (err) {
-      console.error('[shadow-fi] audio element failed:', err)
-      return
-    }
-
-    let srcNode
-    try {
-      srcNode = ctx.createMediaElementSource(el)
-    } catch (err) {
-      console.error('[shadow-fi] media source failed:', err)
-      return
-    }
-
+  function buildVoice(url, pan) {
+    const el = new Audio()
+    el.crossOrigin = 'anonymous'
+    el.preload = 'auto'
+    el.src = url
+    const srcNode = ctx.createMediaElementSource(el)
     const bp = ctx.createBiquadFilter()
     bp.type = 'bandpass'
-    bp.frequency.value = 1600
-    bp.Q.value = 0.9
+    bp.frequency.value = 1500
+    bp.Q.value = 0.5 // gentle — the track stays present, just radio-tinted
     const shaper = ctx.createWaveShaper()
-    shaper.curve = makeShaperCurve(4)
-    const panner = ctx.createStereoPanner
-      ? ctx.createStereoPanner()
-      : null
+    shaper.curve = makeShaperCurve(2.5)
+    const panner = ctx.createStereoPanner ? ctx.createStereoPanner() : null
     if (panner) panner.pan.value = Math.max(-1, Math.min(1, pan))
     const gain = ctx.createGain()
     gain.gain.value = 0.0001
-
     srcNode.connect(bp)
     bp.connect(shaper)
     if (panner) {
@@ -203,59 +179,102 @@ export function createAudio() {
       shaper.connect(gain)
     }
     gain.connect(master)
+    return { el, srcNode, gain, panner, url }
+  }
 
-    const voice = {
-      el,
-      srcNode,
-      bp,
-      shaper,
-      panner,
-      gain,
-      priority,
-      startedAt: ctx.currentTime,
-      dead: false,
+  function disposeVoice(v) {
+    try {
+      v.el.pause()
+      v.el.removeAttribute('src')
+      v.el.load()
+      v.srcNode.disconnect()
+      v.gain.disconnect()
+    } catch {
+      /* already gone */
     }
-    voices.set(slotIndex, voice)
+  }
 
-    const seekAndPlay = () => {
-      if (voice.dead) return
-      const dur = el.duration
-      if (Number.isFinite(dur) && dur > 8) {
-        try {
-          el.currentTime = Math.random() * (dur * 0.8)
-        } catch {
-          /* seeking not ready; play from wherever */
-        }
-      }
-      el.play().catch(() => {
-        // play() interrupted by a rapid tune-out, or blocked — expected, quiet.
-        tuneOut(slotIndex)
-      })
+  // A station only claims one of the (few) voice slots once its audio actually
+  // loads — so tracks that 404 (the journal, until it's uploaded) never starve
+  // the tracks that do play.
+  function tuneIn(slotIndex, fragment, pan = 0, priority = false) {
+    if (!enabled || !ctx) return
+    if (voices.has(slotIndex) || pending.has(slotIndex)) return
+    const url = pickTrackUrl(fragment)
+    if (!url || deadUrls.has(url)) return // project (silent) or known-dead audio
+
+    let v
+    try {
+      v = buildVoice(url, pan)
+    } catch (err) {
+      console.debug('[shadow-fi] audio build failed:', err)
+      return
     }
-    el.addEventListener('loadedmetadata', seekAndPlay, { once: true })
-    el.addEventListener(
+    v.priority = priority
+    v.cancelled = false
+    pending.set(slotIndex, v)
+
+    v.el.addEventListener(
       'error',
       () => {
-        // A station with no audio on the CDN (e.g. not yet uploaded) simply
-        // stays silent — dead air. Expected and recoverable; debug only.
-        console.debug('[shadow-fi] no signal:', url)
-        tuneOut(slotIndex)
+        deadUrls.add(url) // no signal on the CDN — don't try this one again
+        pending.delete(slotIndex)
+        disposeVoice(v)
       },
       { once: true }
     )
 
-    const now = ctx.currentTime
-    gain.gain.cancelScheduledValues(now)
-    gain.gain.setValueAtTime(0.0001, now)
-    gain.gain.linearRampToValueAtTime(VOICE_LEVEL, now + TUNE_IN)
-    duckStatic()
+    v.el.addEventListener(
+      'loadedmetadata',
+      () => {
+        pending.delete(slotIndex)
+        if (v.cancelled) {
+          disposeVoice(v)
+          return
+        }
+        if (voices.size >= MAX_VOICES) {
+          if (!priority) {
+            disposeVoice(v) // lost the race for a voice
+            return
+          }
+          freeAVoice(true)
+        }
+        const dur = v.el.duration
+        if (Number.isFinite(dur) && dur > 8) {
+          try {
+            v.el.currentTime = Math.random() * (dur * 0.8) // caught mid-broadcast
+          } catch {
+            /* not seekable yet */
+          }
+        }
+        v.startedAt = ctx.currentTime
+        voices.set(slotIndex, v)
+        v.el.play().catch(() => {
+          voices.delete(slotIndex)
+          disposeVoice(v)
+          duckStatic()
+        })
+        const now = ctx.currentTime
+        v.gain.gain.cancelScheduledValues(now)
+        v.gain.gain.setValueAtTime(0.0001, now)
+        v.gain.gain.linearRampToValueAtTime(VOICE_LEVEL, now + TUNE_IN)
+        duckStatic()
+      },
+      { once: true }
+    )
   }
 
   function tuneOut(slotIndex) {
+    const p = pending.get(slotIndex)
+    if (p) {
+      p.cancelled = true
+      pending.delete(slotIndex)
+      disposeVoice(p)
+      return
+    }
     const voice = voices.get(slotIndex)
     if (!voice) return
     voices.delete(slotIndex)
-    voice.dead = true
     const now = ctx.currentTime
     try {
       voice.gain.gain.cancelScheduledValues(now)
@@ -264,19 +283,7 @@ export function createAudio() {
     } catch {
       /* context may be closing */
     }
-    setTimeout(
-      () => {
-        try {
-          voice.el.pause()
-          voice.el.src = ''
-          voice.srcNode.disconnect()
-          voice.gain.disconnect()
-        } catch {
-          /* already gone */
-        }
-      },
-      TUNE_OUT * 1000 + 100
-    )
+    setTimeout(() => disposeVoice(voice), TUNE_OUT * 1000 + 100)
     duckStatic()
   }
 

@@ -423,6 +423,7 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/fonts`)
+  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/videos`)
 
   // Local dev: strip the /rm_ation/ prefix so links resolve from dist/ root.
   // In production, Cloudflare handles this via a route rewrite (site root is /rm_ation/).

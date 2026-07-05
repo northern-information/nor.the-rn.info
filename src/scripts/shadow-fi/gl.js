@@ -31,7 +31,8 @@ export { MAX_IMPULSES, MAX_FRAGS }
 export function createRenderer(canvas) {
   const gl = canvas.getContext('webgl2', {
     antialias: false,
-    alpha: false,
+    alpha: true, // transparent so the background video shows through
+    premultipliedAlpha: false,
     depth: false,
     stencil: false,
     powerPreference: 'high-performance',

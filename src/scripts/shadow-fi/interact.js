@@ -139,7 +139,9 @@ export function createInteraction({
   function onPointerMove(event) {
     const time = getTime()
     lastInputAt = time
-    const { x, y } = { x: event.clientX, y: event.clientY }
+    const r = canvas.getBoundingClientRect()
+    const x = event.clientX - r.left
+    const y = event.clientY - r.top
     if (lastPointer && time > lastPointer.t) {
       const speed =
         Math.hypot(x - lastPointer.x, y - lastPointer.y) / (time - lastPointer.t)
@@ -160,12 +162,12 @@ export function createInteraction({
   }
 
   function onPointerDown(event) {
-    if (focusCard.contains(event.target) || event.target.closest('#sf-bar')) {
-      return
-    }
     const time = getTime()
     lastInputAt = time
-    const p = toSheet(event.clientX, event.clientY)
+    const r = canvas.getBoundingClientRect()
+    const x = event.clientX - r.left
+    const y = event.clientY - r.top
+    const p = toSheet(x, y)
     const radius =
       event.pointerType === 'touch'
         ? TOUCH_RADIUS_CSS * p.scale
@@ -176,7 +178,7 @@ export function createInteraction({
       focus(hit)
     } else if (hit < 0) {
       dismiss(time)
-      stir(event.clientX, event.clientY, 0.22, time)
+      stir(x, y, 0.22, time)
     }
   }
 
@@ -189,8 +191,9 @@ export function createInteraction({
     }
   }
 
-  window.addEventListener('pointermove', onPointerMove, { passive: true })
-  window.addEventListener('pointerdown', onPointerDown)
+  // Listen on the canvas so the header, footer, and tuner don't stir the field.
+  canvas.addEventListener('pointermove', onPointerMove, { passive: true })
+  canvas.addEventListener('pointerdown', onPointerDown)
   window.addEventListener('keydown', onKeyDown)
 
   return {

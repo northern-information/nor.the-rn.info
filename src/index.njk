@@ -1,4 +1,9 @@
 ---
-layout: shadow-fi.njk
+layout: base.njk
 permalink: /
 ---
+{% include "shadow-fi.njk" %}
+<script
+  type="module"
+  src="/scripts/shadow-fi/main.js?ver={% getTimestamp %}"
+></script>
