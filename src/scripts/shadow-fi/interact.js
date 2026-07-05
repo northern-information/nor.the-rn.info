@@ -23,6 +23,7 @@ export function createInteraction({
   metrics,
   onFocus,
   onBlur,
+  onTuneTrack,
 }) {
   const impulses = new Float32Array(MAX_IMPULSES * 4)
   let impulseCursor = 0
@@ -97,9 +98,14 @@ export function createInteraction({
     titleEl.textContent = fragment.title
     focusCard.append(kindEl, titleEl)
     if (fragment.trackTitle) {
-      const trackEl = document.createElement('span')
+      const trackEl = document.createElement('button')
+      trackEl.type = 'button'
       trackEl.className = 'sf-focus-track'
-      trackEl.textContent = fragment.trackTitle
+      trackEl.textContent = `▸ ${fragment.trackTitle}`
+      trackEl.addEventListener('click', (event) => {
+        event.stopPropagation()
+        if (onTuneTrack) onTuneTrack(fragment)
+      })
       focusCard.append(trackEl)
     }
     if (fragment.url) {

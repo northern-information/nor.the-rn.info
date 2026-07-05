@@ -109,6 +109,10 @@ async function boot() {
     }),
     onFocus: (index, fragment, pan) => audio.tuneIn(index, fragment, pan, true),
     onBlur: (index) => audio.tuneOut(index),
+    onTuneTrack: (fragment) => {
+      const i = slots.tuneTo(fragment, getTime())
+      if (i >= 0) interaction.tune(i)
+    },
   })
 
   if (tunerDial) {
