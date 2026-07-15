@@ -77,6 +77,67 @@ const getCanonicalProjectSlug = memoize((projectSlug) => {
   return projectSlug
 })
 
+// Collect the site's public page URLs from a collection (e.g. `collections.all`)
+// as deduped, sorted flat pathnames. These match the canonical URLs emitted in
+// metaTags.njk (DOMAIN + page.url) and seed both the XML and HTML sitemaps.
+const collectSitemapUrls = (collection) => {
+  const seen = new Set()
+  for (const item of collection || []) {
+    const url = item && item.url
+    if (typeof url !== 'string' || !url.startsWith('/')) continue
+    if (!(url.endsWith('/') || url.endsWith('.html'))) continue
+    if (/\.(xml|txt|json)$/.test(url)) continue
+    seen.add(url)
+  }
+  return [...seen].sort((a, b) => a.localeCompare(b))
+}
+
+// Build a single directory-style tree rooted at "/" from flat pathnames. Each
+// URL segment becomes a node; a node is a linkable page when a pathname
+// terminates on it, otherwise a structural directory. A trailing slash marks a
+// directory (a node with descendants); leaf pages read as files without one.
+const buildSitemapTree = (pathnames) => {
+  const root = { segment: '/', url: null, isHtml: false, children: new Map() }
+
+  for (const pathname of pathnames) {
+    if (pathname === '/') {
+      root.url = '/'
+      continue
+    }
+    const isHtml = pathname.endsWith('.html')
+    const segments = pathname.replace(/\/+$/, '').split('/').filter(Boolean)
+    let node = root
+    segments.forEach((segment, index) => {
+      if (!node.children.has(segment)) {
+        node.children.set(segment, {
+          segment,
+          url: null,
+          isHtml: false,
+          children: new Map(),
+        })
+      }
+      node = node.children.get(segment)
+      if (index === segments.length - 1) {
+        node.url = pathname
+        node.isHtml = isHtml
+      }
+    })
+  }
+
+  const finalize = (node) => {
+    const children = [...node.children.values()]
+      .map(finalize)
+      .sort((a, b) => a.name.localeCompare(b.name))
+    let name
+    if (node.segment === '/') name = '/'
+    else if (node.isHtml) name = node.segment
+    else name = node.segment + (children.length ? '/' : '')
+    return { name, url: node.url || null, children }
+  }
+
+  return finalize(root)
+}
+
 export default async (eleventyConfig) => {
   eleventyConfig.addShortcode(
     'getTitle',
@@ -311,6 +372,16 @@ export default async (eleventyConfig) => {
     if (typeof s !== 'string') return s
     return s.replace(find, '')
   })
+
+  // Absolute page URLs for the XML sitemap (src/sitemap.njk).
+  eleventyConfig.addFilter('sitemapUrls', (collection, domain) =>
+    collectSitemapUrls(collection).map((url) => `${domain}${url}`)
+  )
+
+  // Nested directory tree for the human-readable sitemap (src/pages/sitemap.njk).
+  eleventyConfig.addFilter('sitemapTree', (collection) =>
+    buildSitemapTree(collectSitemapUrls(collection))
+  )
 
   // Preserve Liquid's no-autoescape behavior so existing templates render HTML directly
   // without piping every interpolation through `| safe`. All template inputs are trusted

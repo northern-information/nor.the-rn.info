@@ -291,3 +291,62 @@
     }
   }
 }
+
+/* Sitemap directory tree: nodes wired together with branch rails drawn from
+   pseudo-elements, echoing a terminal `tree` listing. Leaf pages are yellow
+   links; structural directories are dimmed. */
+.sitemap-tree {
+  --tree-rail: #57534e; /* stone-600 */
+}
+
+.sitemap-tree-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap-tree-list:not(.is-root) {
+  padding-left: 1.4rem;
+}
+
+.sitemap-tree-list:not(.is-root) > li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.sitemap-tree-list:not(.is-root) > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -0.2em;
+  bottom: 0;
+  border-left: 1px solid var(--tree-rail);
+}
+
+.sitemap-tree-list:not(.is-root) > li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 0.8rem;
+  border-top: 1px solid var(--tree-rail);
+}
+
+.sitemap-tree-list:not(.is-root) > li:last-child::before {
+  bottom: auto;
+  height: 1.05em;
+}
+
+.sitemap-tree .node-link {
+  color: #fde047; /* yellow-300 */
+  text-decoration: none;
+}
+
+.sitemap-tree .node-link:hover {
+  color: #eab308; /* yellow-500 */
+  text-decoration: underline;
+}
+
+.sitemap-tree .node-branch {
+  color: #a8a29e; /* stone-400 */
+}
