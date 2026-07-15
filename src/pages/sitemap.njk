@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Sitemap
+---
+{% include "spectrum.njk" %}
+
+<header class="px-2 py-8">
+  <h1 class="text-4xl font-bold">Sitemap</h1>
+</header>
+
+{% set tree = collections.all | sitemapTree %}
+{% macro renderTree(nodes, root) %}
+<ul class="sitemap-tree-list{% if root %} is-root{% endif %}">
+  {%- for node in nodes %}
+  <li>
+    {%- if node.url -%}
+    <a class="node-link" href="{{ node.url }}">{{ node.name }}</a>
+    {%- else -%}
+    <span class="node-branch">{{ node.name }}</span>
+    {%- endif -%}
+    {% if node.children.length %}{{ renderTree(node.children, false) }}{% endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{% endmacro %}
+
+<section class="sitemap-tree px-2 py-5 font-mono leading-loose">
+  {{ renderTree([tree], true) }}
+</section>
