@@ -1,0 +1,66 @@
+---
+permalink: /feed.json
+eleventyExcludeFromCollections: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": {{ site.META.TITLE | dump }},
+  "home_page_url": {{ site.META.DOMAIN | dump }},
+  "feed_url": {{ (site.META.DOMAIN + "/feed.json") | dump }},
+  "description": {{ site.META.DESCRIPTION | dump }},
+  "language": "en",
+  "authors": [{ "name": {{ site.META.AUTHOR | dump }} }],
+  "items": [
+    {%- for post in (collections.posts | reverse) -%}
+    {%- set postPath = post.url | removeFirst("/") -%}
+    {%- set absolutePostUrl = site.META.CANONICAL + postPath -%}
+    {
+      "id": {{ absolutePostUrl | dump }},
+      "url": {{ absolutePostUrl | dump }},
+      "title": {{ post.data.title | dump }},
+      "date_published": {{ post.date.toISOString() | dump }},
+      "content_html": {{ (post.content | convertHtmlToAbsoluteUrls(absolutePostUrl)) | dump }},
+      "summary": {{ (post.content | extractExcerpt) | dump }},
+      "_nor": { "type": "post" }
+      {%- if post.data.tags %},
+      "tags": {{ post.data.tags | dump }}
+      {%- endif %}
+    }{%- if not loop.last -%},{%- endif -%}
+    {%- endfor -%}
+
+    {%- if collections.posts.length > 0 and collections.discography.length > 0 -%},{%- endif -%}
+
+    {%- for release in collections.discography -%}
+    {%- set releaseUrl = site.META.CANONICAL + "music/" + release.slug -%}
+    {%- set releaseHtml = (release.notes or "") + (release.credits or "") + "<p>" + ((release.trackIds or []) | join(", ")) + "</p>" -%}
+    {
+      "id": {{ releaseUrl | dump }},
+      "url": {{ releaseUrl | dump }},
+      "title": {{ release.title | dump }},
+      {%- if "?" not in release.released %}
+      "date_published": {{ ((release.released | dateToUTCISO) + "T00:00:00Z") | dump }},
+      {%- endif %}
+      "content_html": {{ (releaseHtml | convertHtmlToAbsoluteUrls(releaseUrl)) | dump }},
+      "summary": {{ (release.project + " · " + release.type + " · " + release.format) | dump }},
+      "tags": {{ [release.type, release.format, release.role, release.label, release.project] | dump }},
+      "_nor": { "type": "release", "project_slug": {{ (release.project_slug or "") | dump }}, "cover": {{ (release.cover_url or "") | dump }} }
+    }{%- if not loop.last -%},{%- endif -%}
+    {%- endfor -%}
+
+    {%- if (collections.posts.length + collections.discography.length) > 0 and collections.projects.length > 0 -%},{%- endif -%}
+
+    {%- for project in collections.projects -%}
+    {%- set projectUrl = site.META.CANONICAL + "project/" + project.slug + "/" -%}
+    {%- set projectStatus = "active" if project.active else "inactive" -%}
+    {
+      "id": {{ projectUrl | dump }},
+      "url": {{ projectUrl | dump }},
+      "title": {{ project.name | dump }},
+      "content_text": {{ (project.bio or "") | dump }},
+      "summary": {{ (project.bio or "") | dump }},
+      "tags": {{ ["project", projectStatus] | dump }},
+      "_nor": { "type": "project" }
+    }{%- if not loop.last -%},{%- endif -%}
+    {%- endfor %}
+  ]
+}
