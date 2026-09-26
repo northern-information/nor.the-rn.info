@@ -1,31 +1,35 @@
-{%- if ogType == 'article' -%}{%- set excerpt = content | extractExcerpt -%}{%- endif -%}
+{#- For posts, derive the excerpt and first image from the post body itself.
+    `content` here is already wrapped by post.njk (date, Edit link, title), so
+    render the raw markdown instead. -#}
+{%- if ogType == 'article' and page.rawInput -%}
+  {%- set articleHtml = page.rawInput | markdown -%}
+  {%- set excerpt = articleHtml | extractExcerpt -%}
+{%- endif -%}
 {%- if not excerpt -%}{%- set excerpt = site.META.DESCRIPTION -%}{%- endif -%}
+{%- set pageTitle = (title + " | " + site.META.TITLE) if (title and title != site.META.TITLE) else site.META.TITLE -%}
+{%- set canonicalUrl = site.META.CANONICAL + (page.url | removeFirst("/")) -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ excerpt }}">
-<link rel="canonical" href="{{ site.META.DOMAIN }}{{ page.url }}">
-<meta
-  property="og:title"
-  content="{% if title %}{{ title }} | {{ site.META.TITLE }}{% else %}{{ site.META.TITLE }}{% endif %}"
->
-<meta property="og:site_name" content="{{ site.META.TITLE }}">
-<meta property="og:url" content="{{ site.META.DOMAIN }}{{ page.url }}">
+<meta name="description" content="{{ excerpt | escape }}">
+<link rel="canonical" href="{{ canonicalUrl }}">
+<meta property="og:title" content="{{ pageTitle | escape }}">
+<meta property="og:site_name" content="{{ site.META.TITLE | escape }}">
+<meta property="og:url" content="{{ canonicalUrl }}">
 <meta property="og:type" content="{% if ogType %}{{ ogType }}{% else %}website{% endif %}">
 <meta
   property="og:image"
   content="{%- include "ogImage.njk" -%}"
 >
-<meta property="og:description" content="{{ excerpt }}">
+<meta property="og:description" content="{{ excerpt | escape }}">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta
-  name="twitter:title"
-  content="{% if title %}{{ title }} | {{ site.META.TITLE }}{% else %}{{ site.META.TITLE }}{% endif %}"
->
-<meta name="twitter:description" content="{{ excerpt }}">
+<meta name="twitter:title" content="{{ pageTitle | escape }}">
+<meta name="twitter:description" content="{{ excerpt | escape }}">
 <meta
   name="twitter:image"
   content="{%- include "ogImage.njk" -%}"
 >
-<link rel="icon" href="{{ site.META.DOMAIN }}/{{ site.META.FAVICON }}">
-<link rel="apple-touch-icon" href="{{ site.META.DOMAIN }}/{{ site.META.APPLE_TOUCH_ICON }}">
+<link rel="icon" href="/{{ site.META.FAVICON }}">
+<link rel="apple-touch-icon" href="/{{ site.META.APPLE_TOUCH_ICON }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.META.TITLE | escape }}" href="/{{ site.META.FEED }}">
+<link rel="alternate" type="application/feed+json" title="{{ site.META.TITLE | escape }}" href="/feed.json">

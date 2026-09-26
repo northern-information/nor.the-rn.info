@@ -3,11 +3,9 @@
   {%- set ogImage = release.cover_url -%}
 {%- elif project -%}
   {%- set ogImage = project.image -%}
+{%- elif articleHtml -%}
+  {%- set ogImage = articleHtml | extractFirstImage -%}
 {%- elif content -%}
   {%- set ogImage = content | extractFirstImage -%}
 {%- endif -%}
-{%- if ogImage -%}
-  {{- ogImage | toAbsoluteUrl(site.META.DOMAIN) -}}
-{%- else -%}
-  {{- site.META.LOGO | toAbsoluteUrl(site.META.CANONICAL) -}}
-{%- endif -%}
+{{- (ogImage or site.META.LOGO) | toAbsoluteUrl(site.META.CANONICAL) -}}
