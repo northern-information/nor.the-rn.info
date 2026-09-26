@@ -5,8 +5,8 @@ eleventyExcludeFromCollections: true
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": {{ site.META.TITLE | dump }},
-  "home_page_url": {{ site.META.DOMAIN | dump }},
-  "feed_url": {{ (site.META.DOMAIN + "/feed.json") | dump }},
+  "home_page_url": {{ site.META.CANONICAL | dump }},
+  "feed_url": {{ (site.META.CANONICAL + "feed.json") | dump }},
   "description": {{ site.META.DESCRIPTION | dump }},
   "language": "en",
   "authors": [{ "name": {{ site.META.AUTHOR | dump }} }],
@@ -42,7 +42,7 @@ eleventyExcludeFromCollections: true
       {%- endif %}
       "content_html": {{ (releaseHtml | convertHtmlToAbsoluteUrls(releaseUrl)) | dump }},
       "summary": {{ (release.project + " · " + release.type + " · " + release.format) | dump }},
-      "tags": {{ [release.type, release.format, release.role, release.label, release.project] | dump }},
+      "tags": {{ [release.type, release.format, release.role, release.label, release.project] | select | dump }},
       "_nor": { "type": "release", "project_slug": {{ (release.project_slug or "") | dump }}, "cover": {{ (release.cover_url or "") | dump }} }
     }{%- if not loop.last -%},{%- endif -%}
     {%- endfor -%}

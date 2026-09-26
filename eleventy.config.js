@@ -7,19 +7,30 @@ import implicitFigures from 'markdown-it-implicit-figures'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 import projects from './src/data/projects.js'
-import titleCaseExceptions from './src/data/titleCaseExceptions.js'
 import { readFileSync } from 'fs'
 
-const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'))
+const discographyPackageJson = JSON.parse(
+  readFileSync(
+    new URL(
+      './node_modules/@tyleretters/discography/package.json',
+      import.meta.url
+    ),
+    'utf8'
+  )
+)
 
 const LONG_NOW_YEAR_DIGITS = 5
+
+// The site is served from this prefix. Eleventy's pathPrefix + HtmlBasePlugin
+// rewrite root-relative URLs in the output; dist/ itself stays flat and the
+// Worker strips the prefix before hitting the ASSETS binding.
+export const PATH_PREFIX = '/rm_ation/'
 
 export const META = {
   APPLE_TOUCH_ICON: 'apple-touch-icon.png',
   AUTHOR: 'Tyler Etters',
-  EMAIL: 'tyler@etters.co',
   BUILD_TIME: new Date().toISOString(),
-  CANONICAL: 'https://nor.the-rn.info/rm_ation/',
+  CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DESCRIPTION: 'LONG LIVE THE LOST ONES',
   DOMAIN: 'https://nor.the-rn.info',
@@ -39,13 +50,11 @@ export const META = {
       return 'unknown'
     }
   })(),
-  GITHUB_URL: 'https://github.com/tyleretters/nor.the-rn.info',
+  GITHUB_URL: 'https://github.com/northern-information/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
   DISCOGRAPHY_URL: 'https://www.npmjs.com/package/@tyleretters/discography',
-  DISCOGRAPHY_VERSION: packageJson.devDependencies[
-    '@tyleretters/discography'
-  ].replace(/^\^/, ''),
+  DISCOGRAPHY_VERSION: discographyPackageJson.version,
   TITLE: 'Northern Information',
   YEAR: String(new Date().getUTCFullYear()).padStart(LONG_NOW_YEAR_DIGITS, '0'),
 }
@@ -67,7 +76,7 @@ export const getReleaseSlug = memoize((release) => {
 })
 
 // Map a release's project_slug to the canonical project slug
-const getCanonicalProjectSlug = memoize((projectSlug) => {
+export const getCanonicalProjectSlug = memoize((projectSlug) => {
   for (const project of projects) {
     const allSlugs = project.slugs || [project.slug]
     if (allSlugs.includes(projectSlug)) {
@@ -78,8 +87,9 @@ const getCanonicalProjectSlug = memoize((projectSlug) => {
 })
 
 // Collect the site's public page URLs from a collection (e.g. `collections.all`)
-// as deduped, sorted flat pathnames. These match the canonical URLs emitted in
-// metaTags.njk (DOMAIN + page.url) and seed both the XML and HTML sitemaps.
+// as deduped, sorted flat pathnames (unprefixed, as Eleventy's `page.url`).
+// Prefixed with META.CANONICAL they match the canonical URLs emitted in
+// metaTags.njk, and they seed both the XML and HTML sitemaps.
 const collectSitemapUrls = (collection) => {
   const seen = new Set()
   for (const item of collection || []) {
@@ -138,84 +148,55 @@ const buildSitemapTree = (pathnames) => {
   return finalize(root)
 }
 
-export default async (eleventyConfig) => {
-  eleventyConfig.addShortcode(
-    'getTitle',
-    memoize((title) => {
-      return title ? `${title} | ${META.TITLE}` : META.TITLE
-    })
-  )
-
-  eleventyConfig.addShortcode('getTimestamp', () => {
-    return Math.floor(new Date().getTime() / 1000)
-  })
-
-  eleventyConfig.addFilter(
-    'toTitleCase',
-    memoize((input) => {
-      // Check if input is in the exceptions list (imported from data file)
-      if (titleCaseExceptions.includes(input)) {
-        return input
-      }
-      // prettier-ignore
-      const exceptions = ['of', 'a', 'the', 'and', 'in', 
-      'on', 'with', 'at', 'by', 'from', 'to']
-      return input
-        .split(' ')
-        .map((word, index) => {
-          if (/^[A-Z]\.[A-Z](\.[A-Z])?$/i.test(word)) {
-            return word.toUpperCase()
-          }
-          if (index === 0 || !exceptions.includes(word.toLowerCase())) {
-            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-          }
-          return word.toLowerCase()
-        })
-        .join(' ')
-    })
-  )
-
-  eleventyConfig.addFilter(
-    'padIndex',
-    memoize((index) => {
-      return String(index).padStart(2, '0')
-    })
-  )
-
-  eleventyConfig.addFilter(
-    'formatTrackLength',
-    memoize((input) => {
-      if (typeof input !== 'string') return input
-      // Strip leading "00:" for tracks under an hour (e.g., "00:03:13" -> "03:13")
-      return input.replace(/^00:/, '')
-    })
-  )
-
-  // Helper to parse dates, handling:
-  // - 5-digit Long Now years (e.g., "02006" -> "2006")
-  // - Partial dates with ?? for unknown month/day (e.g., "02006-??-??")
-  const parseDate = (date) => {
-    // Strip leading zero from 5-digit years
-    const str = String(date).replace(/^0(\d{4})/, '$1')
-    const hasUnknown = str.includes('??')
-    if (hasUnknown) {
-      // Extract year from partial date like "2006-??-??"
-      const match = str.match(/^(\d{4})/)
-      return match ? { year: match[1], partial: true } : null
-    }
-    const dt = DateTime.fromJSDate(new Date(str), { zone: 'utc' })
+// Helper to parse dates, handling:
+// - JS Date objects from frontmatter (midnight UTC)
+// - 5-digit Long Now years (e.g., "02006-01-01" -> "2006-01-01")
+// - Partial dates with ?? for unknown month/day (e.g., "02006-??-??")
+const parseDate = (date) => {
+  if (date instanceof Date) {
+    const dt = DateTime.fromJSDate(date, { zone: 'utc' })
     return dt.isValid ? { dt, partial: false } : null
   }
+  const str = String(date).replace(/^0(\d{4})/, '$1')
+  if (str.includes('??')) {
+    const match = str.match(/^(\d{4})/)
+    return match ? { year: match[1], partial: true } : null
+  }
+  const dt = DateTime.fromISO(str, { zone: 'utc' })
+  return dt.isValid ? { dt, partial: false } : null
+}
 
-  eleventyConfig.addFilter(
-    'dateToUTC',
-    memoize((date, format = 'yyyy/MM/dd') => {
-      const parsed = parseDate(date)
-      if (!parsed) return ''
-      if (parsed.partial) return parsed.year
-      return parsed.dt.toFormat(format)
-    })
-  )
+// Sortable timestamp for a Long Now release date; unknown month/day sort as
+// January 1st, unparseable dates sort last (descending).
+const getReleaseTimestamp = (date) => {
+  const parsed = parseDate(date)
+  if (!parsed) return Number.MIN_SAFE_INTEGER
+  if (parsed.partial) return Date.UTC(Number(parsed.year), 0, 1)
+  return parsed.dt.toMillis()
+}
+
+export default async (eleventyConfig) => {
+  eleventyConfig.addShortcode('getTitle', (title) => {
+    return title && title !== META.TITLE
+      ? `${title} | ${META.TITLE}`
+      : META.TITLE
+  })
+
+  // Cache-busting query param for CSS/JS. Uses the build start time so every
+  // page in a build shares one value (a per-render timestamp would differ
+  // between pages and defeat browser caching).
+  const buildTimestamp = Math.floor(new Date(META.BUILD_TIME).getTime() / 1000)
+  eleventyConfig.addShortcode('getTimestamp', () => buildTimestamp)
+
+  eleventyConfig.addFilter('padIndex', (index) => {
+    return String(index).padStart(2, '0')
+  })
+
+  eleventyConfig.addFilter('formatTrackLength', (input) => {
+    if (typeof input !== 'string') return input
+    // Strip leading "00:" for tracks under an hour (e.g., "00:03:13" -> "03:13")
+    return input.replace(/^00:/, '')
+  })
 
   eleventyConfig.addFilter(
     'dateToUTCFull',
@@ -257,9 +238,8 @@ export default async (eleventyConfig) => {
     figcaption: false,
   })
 
-  // Tag remote and route-rewritten images so eleventyImageTransformPlugin skips them.
-  // CloudFront covers are already optimized; /rm_ation/ is a Cloudflare route rewrite
-  // and the plugin can't resolve the prefix to a local file.
+  // Tag remote images so eleventyImageTransformPlugin skips them. Release covers
+  // on the R2 asset buckets are already optimized.
   const defaultImageRender =
     markdownLib.renderer.rules.image ||
     ((tokens, idx, options, env, self) =>
@@ -267,7 +247,7 @@ export default async (eleventyConfig) => {
   markdownLib.renderer.rules.image = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
     const src = token.attrGet('src') || ''
-    if (/^https?:\/\//.test(src) || src.startsWith('/rm_ation/')) {
+    if (/^https?:\/\//.test(src)) {
       token.attrSet('eleventy:ignore', '')
     }
     return defaultImageRender(tokens, idx, options, env, self)
@@ -282,24 +262,50 @@ export default async (eleventyConfig) => {
     })
   )
 
+  const linkifyUrl = (url) => {
+    // Clean up trailing punctuation that's likely not part of the URL
+    const trailingPunct = /[.,;:!?)]+$/
+    const match = url.match(trailingPunct)
+    const cleanUrl = match ? url.slice(0, -match[0].length) : url
+    const trailing = match ? match[0] : ''
+    return `<a href="${cleanUrl}" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">${cleanUrl}</a>${trailing}`
+  }
+
   eleventyConfig.addFilter('linkify', (content) => {
     if (typeof content !== 'string') return content
-    // Match URLs (http, https) and convert to anchor tags
-    const urlRegex = /(https?:\/\/[^\s<>"']+)/gi
-    return content.replace(urlRegex, (url) => {
-      // Clean up trailing punctuation that's likely not part of the URL
-      const trailingPunct = /[.,;:!?)]+$/
-      const match = url.match(trailingPunct)
-      const cleanUrl = match ? url.slice(0, -match[0].length) : url
-      const trailing = match ? match[0] : ''
-      return `<a href="${cleanUrl}" class="text-yellow-300 underline hover:text-yellow-500 hover:no-underline">${cleanUrl}</a>${trailing}`
-    })
+    // Convert bare URLs (http, https) in text to anchor tags. Existing <a>
+    // elements and all tags (and therefore attribute values) are passed through
+    // untouched, so already-linked URLs are not wrapped a second time.
+    // split() with a capture group puts the skipped markup at odd indexes.
+    const skipRegex = /(<a\b[\s\S]*?<\/a>|<[^>]*>)/gi
+    const urlRegex = /https?:\/\/[^\s<>"']+/gi
+    return content
+      .split(skipRegex)
+      .map((part, i) =>
+        i % 2 === 1 ? part : part.replace(urlRegex, linkifyUrl)
+      )
+      .join('')
   })
 
+  // Plain-text excerpt (tags stripped, common entities decoded). Escape it at
+  // the point of use, e.g. `| escape` inside an HTML attribute.
   eleventyConfig.addFilter('extractExcerpt', (content, maxLength = 160) => {
     if (typeof content !== 'string') return ''
+    const entities = {
+      amp: '&',
+      lt: '<',
+      gt: '>',
+      quot: '"',
+      apos: "'",
+      nbsp: ' ',
+    }
     const text = content
       .replace(/<[^>]+>/g, '')
+      .replace(/&(?:#(\d+)|#x([\da-f]+)|(\w+));/gi, (match, dec, hex, name) => {
+        if (dec) return String.fromCodePoint(Number(dec))
+        if (hex) return String.fromCodePoint(parseInt(hex, 16))
+        return entities[name.toLowerCase()] ?? match
+      })
       .replace(/\s+/g, ' ')
       .trim()
     if (text.length <= maxLength) return text
@@ -322,41 +328,60 @@ export default async (eleventyConfig) => {
     return url.startsWith('/') ? base + url : `${base}/${url}`
   })
 
+  // MIME type for an RSS <enclosure> from the image URL's extension.
+  eleventyConfig.addFilter('imageMimeType', (url) => {
+    const ext = String(url).split(/[?#]/)[0].split('.').pop().toLowerCase()
+    const types = {
+      avif: 'image/avif',
+      gif: 'image/gif',
+      jpeg: 'image/jpeg',
+      jpg: 'image/jpeg',
+      png: 'image/png',
+      svg: 'image/svg+xml',
+      webp: 'image/webp',
+    }
+    return types[ext] || 'application/octet-stream'
+  })
+
   eleventyConfig.addFilter('dateToRfc822Utc', (dateObj) => {
     // Formats dates as RFC 822 with GMT timezone for RSS feeds
     const date = new Date(dateObj)
     return date.toUTCString()
   })
 
+  // Converts relative src/href/srcset URLs in HTML to absolute URLs for feeds.
+  // Root-relative URLs (`/images/x.png`) resolve against the site root
+  // (META.DOMAIN + PATH_PREFIX); document-relative ones (`x.png`) resolve
+  // against `pageUrl`. Content here has not been through HtmlBasePlugin yet, so
+  // root-relative URLs are still unprefixed. URLs with a scheme (`https:`,
+  // `mailto:`, `data:`), protocol-relative `//` URLs, and `#` fragments pass
+  // through untouched.
   eleventyConfig.addFilter(
     'convertHtmlToAbsoluteUrls',
-    (htmlContent, baseUrl) => {
-      // Converts relative URLs to absolute URLs in HTML content for RSS feeds
+    (htmlContent, pageUrl) => {
       if (typeof htmlContent !== 'string') return htmlContent
 
-      // Remove trailing slash from baseUrl for consistent URL construction
-      const base = baseUrl.replace(/\/$/, '')
+      const toAbsolute = (url) => {
+        if (/^([a-z][a-z0-9+.-]*:|\/\/|#)/i.test(url)) return url
+        if (url.startsWith('/')) {
+          return new URL(url.slice(1), META.CANONICAL).toString()
+        }
+        return new URL(url, pageUrl).toString()
+      }
 
-      return (
-        htmlContent
-          // Convert relative src attributes (images, scripts, etc.)
-          .replace(/src=["'](?!https?:\/\/)([^"']+)["']/gi, (_, url) => {
-            const absoluteUrl = url.startsWith('/')
-              ? base + url
-              : `${base}/${url}`
-            return `src="${absoluteUrl}"`
+      return htmlContent
+        .replace(
+          /(?<![\w-])(src|href)=(["'])(.*?)\2/gi,
+          (_, attr, quote, url) =>
+            `${attr}=${quote}${toAbsolute(url.trim())}${quote}`
+        )
+        .replace(/(?<![\w-])srcset=(["'])(.*?)\1/gi, (_, quote, srcset) => {
+          const candidates = srcset.split(',').map((candidate) => {
+            const [url, ...descriptor] = candidate.trim().split(/\s+/)
+            return [toAbsolute(url), ...descriptor].join(' ')
           })
-          // Convert relative href attributes (links)
-          .replace(
-            /href=["'](?!https?:\/\/)(?!mailto:)(?!#)([^"']+)["']/gi,
-            (_, url) => {
-              const absoluteUrl = url.startsWith('/')
-                ? base + url
-                : `${base}/${url}`
-              return `href="${absoluteUrl}"`
-            }
-          )
-      )
+          return `srcset=${quote}${candidates.join(', ')}${quote}`
+        })
     }
   )
 
@@ -373,9 +398,12 @@ export default async (eleventyConfig) => {
     return s.replace(find, '')
   })
 
-  // Absolute page URLs for the XML sitemap (src/sitemap.njk).
-  eleventyConfig.addFilter('sitemapUrls', (collection, domain) =>
-    collectSitemapUrls(collection).map((url) => `${domain}${url}`)
+  // Absolute page URLs for the XML sitemap (src/sitemap.njk). `base` is
+  // META.CANONICAL, which already carries the path prefix and trailing slash.
+  eleventyConfig.addFilter('sitemapUrls', (collection, base) =>
+    collectSitemapUrls(collection).map((url) =>
+      new URL(url.slice(1), base).toString()
+    )
   )
 
   // Nested directory tree for the human-readable sitemap (src/pages/sitemap.njk).
@@ -424,19 +452,6 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/fonts`)
 
-  // Local dev: strip the /rm_ation/ prefix so links resolve from dist/ root.
-  // In production, Cloudflare handles this via a route rewrite (site root is /rm_ation/).
-  eleventyConfig.setServerOptions({
-    middleware: [
-      (req, res, next) => {
-        if (req.url.startsWith('/rm_ation/')) {
-          req.url = req.url.replace(/^\/rm_ation/, '') || '/'
-        }
-        next()
-      },
-    ],
-  })
-
   eleventyConfig.addCollection('discography', () => {
     return discography.map((release) => ({
       ...release,
@@ -445,10 +460,11 @@ export default async (eleventyConfig) => {
     }))
   })
 
-  // Helper to extract year from Long Now date format (e.g., "02025-11-18" or "02006-??-??")
-  const getYearFromDate = (dateStr) => {
-    const match = String(dateStr).match(/^0?(\d{4})/)
-    return match ? parseInt(match[1], 10) : null
+  // Year from a Long Now date (e.g., "02025-11-18" or "02006-??-??")
+  const getYearFromDate = (date) => {
+    const parsed = parseDate(date)
+    if (!parsed) return null
+    return parsed.partial ? Number(parsed.year) : parsed.dt.year
   }
 
   eleventyConfig.addCollection('projects', () => {
@@ -474,15 +490,10 @@ export default async (eleventyConfig) => {
       const releases = discography
         .filter((r) => matchSlugs.includes(r.project_slug))
         .map((r) => ({ ...r, slug: getReleaseSlug(r) }))
-        .sort((a, b) => {
-          const dateA = new Date(
-            String(a.released).replace(/^0/, '').replace(/\?\?/g, '01')
-          )
-          const dateB = new Date(
-            String(b.released).replace(/^0/, '').replace(/\?\?/g, '01')
-          )
-          return dateB - dateA
-        })
+        .sort(
+          (a, b) =>
+            getReleaseTimestamp(b.released) - getReleaseTimestamp(a.released)
+        )
 
       const years = releases
         .map((r) => getYearFromDate(r.released))
@@ -539,10 +550,11 @@ export default async (eleventyConfig) => {
         year,
         posts: posts.sort((a, b) => b.date - a.date),
       }))
-      .sort((a, b) => b.year - a.year)
+      .sort((a, b) => b.year.localeCompare(a.year))
   })
 
   return {
+    pathPrefix: PATH_PREFIX,
     markdownTemplateEngine: 'njk',
     dir: {
       input: DIRS.INPUT,

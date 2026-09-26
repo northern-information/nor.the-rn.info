@@ -2,7 +2,7 @@
   "name": "northern-information",
   "type": "module",
   "engines": {
-    "node": "24.13.0",
+    "node": "24.21.0",
     "npm": ">=10.0.0"
   },
   "scripts": {
@@ -19,19 +19,19 @@
     "worker:deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.5",
-    "@11ty/eleventy-img": "6.0.4",
-    "@tailwindcss/cli": "4.3.0",
+    "@11ty/eleventy": "3.1.6",
+    "@11ty/eleventy-img": "7.0.0",
+    "@tailwindcss/cli": "4.3.3",
     "@tyleretters/discography": "4.0.0",
-    "concurrently": "9.2.1",
+    "concurrently": "10.0.5",
     "luxon": "3.7.2",
-    "markdown-it": "14.1.1",
+    "markdown-it": "15.0.2",
     "markdown-it-implicit-figures": "0.12.0",
     "memoize": "11.0.0",
     "pagefind": "1.5.2",
-    "prettier": "3.8.3",
-    "prettier-plugin-tailwindcss": "0.8.0",
-    "tailwindcss": "4.3.0",
-    "wrangler": "4.91.0"
+    "prettier": "3.9.9",
+    "prettier-plugin-tailwindcss": "0.8.1",
+    "tailwindcss": "4.3.3",
+    "wrangler": "4.141.0"
   }
 }

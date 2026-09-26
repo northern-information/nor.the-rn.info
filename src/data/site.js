@@ -3,7 +3,6 @@ import { META } from '../../eleventy.config.js'
 // prettier-ignore
 export default {
   META,
-  EMAIL: 'tyler@etters.co',
   ACCOUNTS: [
     { label: 'Bandcamp', url: 'https://intertext.bandcamp.com' },
     { label: 'Bluesky', url: 'https://bsky.app/profile/tyleretters.bsky.social' },

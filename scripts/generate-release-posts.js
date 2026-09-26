@@ -13,6 +13,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import discography from '@tyleretters/discography'
+import { META, getCanonicalProjectSlug } from '../eleventy.config.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -21,19 +22,14 @@ const POSTS_DIR = path.join(__dirname, '../src/posts')
 /**
  * Convert discography date to blog-friendly date
  * Handles: "02025-11-18", "2006-??-??", "2006-05-??"
+ * Unknown month/day become 01 (so partial dates post on January 1st).
  */
 function parseReleaseDate(dateStr) {
   // Remove leading zero for Long Now format (02025 -> 2025)
-  let normalized = dateStr.replace(/^0+/, '')
+  const normalized = dateStr.replace(/^0+/, '').replace(/\?\?/g, '01')
 
-  // Replace unknown parts with defaults (01 for month/day)
-  normalized = normalized.replace(/\?\?/g, (match, offset) => '01')
-
-  // Validate we have a proper date
-  const parts = normalized.split('-')
-  if (parts.length !== 3) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(normalized)) {
     console.warn(`  Warning: Could not parse date "${dateStr}", using as-is`)
-    return normalized
   }
 
   return normalized
@@ -65,7 +61,7 @@ function generatePostContent(release) {
   // Frontmatter
   lines.push('---')
   const title = normalizeUnicode(release.title)
-  lines.push(`title: "${title.replace(/"/g, '\\"')}"`)
+  lines.push(`title: "${title.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`)
   lines.push(`date: ${parseReleaseDate(release.released)}`)
   lines.push('---')
   lines.push('')
@@ -77,15 +73,16 @@ function generatePostContent(release) {
   }
 
   // Release info
-  const projectUrl = `/project/${release.project_slug}/`
+  // Project pages only exist for canonical slugs (see src/data/projects.js)
+  const projectUrl = `/project/${getCanonicalProjectSlug(release.project_slug)}/`
   lines.push(`**${release.type}** by **[${release.project}](${projectUrl})**`)
   if (release.label) {
-    lines.push(`${release.label} · ${release.format}`)
+    lines.push([release.label, release.format].filter(Boolean).join(' · '))
   }
   lines.push('')
 
   // Listen & Download link
-  const releaseUrl = `https://nor.the-rn.info/rm_ation/music/${release.project_slug}/${release.release_slug}/`
+  const releaseUrl = `${META.CANONICAL}music/${release.project_slug}/${release.release_slug}/`
   lines.push(`[Listen & Download](${releaseUrl})`)
   lines.push('')
 

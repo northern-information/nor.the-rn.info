@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+<h1 class="sr-only">{{ title }}</h1>
 {% from "releaseCard.njk" import card %}
 <ul class="grid-releases border-t-4">
   {% for release in collections.discography %}

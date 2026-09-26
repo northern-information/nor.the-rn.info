@@ -1,10 +1,10 @@
 {% macro card(release, showProject=false) %}
 <li class="group flex flex-col bg-white text-black hover:bg-black hover:text-yellow-300">
   <a href="/music/{{ release.slug }}" class="block cursor-pointer">
-    <div class="grain-hover aspect-[1/1] w-full overflow-hidden">
+    <div class="grain-hover aspect-square w-full overflow-hidden">
       <img
         src="{{ release.cover_url }}"
-        alt="{{ release.title }}"
+        alt="{{ release.title | escape }}"
         class="h-full w-full object-cover group-hover:invert"
         loading="lazy"
         eleventy:ignore
@@ -15,7 +15,7 @@
         <span class="font-mono text-sm text-gray-400 group-hover:text-yellow-300">
           {{ release.released | dateToUTCYear }}
         </span>
-        <span class="truncate overflow-hidden whitespace-nowrap text-transparent transition-all duration-300 group-hover:text-yellow-300">
+        <span class="truncate text-transparent transition-all duration-300 group-hover:text-yellow-300">
           {{- release.type }}, {{ release.label }}: {{ release.format -}}
         </span>
       </li>

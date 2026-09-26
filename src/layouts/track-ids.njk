@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+<h1 class="sr-only">{{ title }}</h1>
 <div class="my-1 font-mono text-xs">
   {%- for release in collections.discography -%}
     {%- if (release.trackIds | length) > 0 -%}

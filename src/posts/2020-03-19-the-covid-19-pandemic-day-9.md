@@ -15,8 +15,8 @@ San Francisco is ordered to shelter-in-place and here, in Santa Clarita, in the 
 
 I got home, washed all my clothing, took a shower, and started playing Skyrim.
 
-![Timefall](/rm_ation/images/timefall.jpg)
+![Timefall](/images/timefall.jpg)
 _Timefall._
 
-![Roaring 20s](/rm_ation/images/roaring-20s.jpg)
+![Roaring 20s](/images/roaring-20s.jpg)
 _The Roaring 20s indeed._

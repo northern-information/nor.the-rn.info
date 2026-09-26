@@ -2,12 +2,12 @@
   {% for playlist in playlists %}
     <li class="post">
       <div class="px-2 md:px-0">
-        <h2 class="mb-0">{{ playlist.title }}</h2>
+        <h3 class="mb-0">{{ playlist.title }}</h3>
         {% if playlist.url %}
           <div class="flex w-full">
             <a
               href="{{ playlist.url }}"
-              class="link-primary truncate overflow-hidden font-mono text-sm whitespace-nowrap"
+              class="link-primary truncate font-mono text-sm"
             >
               {{- playlist.url -}}
             </a>

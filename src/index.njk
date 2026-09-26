@@ -2,6 +2,8 @@
 layout: base.njk
 title: Northern Information
 ---
+<h1 class="sr-only">{{ title }}</h1>
+
 {# Featured Project - Full Width #}
 {% set featured = projectGroups.featured[0] %}
 
@@ -11,7 +13,7 @@ title: Northern Information
       <div class="grain relative aspect-square w-full overflow-hidden md:aspect-21/9">
         <img
           src="{{ featured.image }}"
-          alt="{{ featured.name }}"
+          alt="{{ featured.name | escape }}"
           class="z-0 h-full w-full object-cover object-top group-hover:invert"
         >
         <div class="burn pointer-events-none absolute inset-0 z-10"></div>
@@ -36,14 +38,14 @@ title: Northern Information
             <div class="grain relative aspect-square w-full overflow-hidden">
               <img
                 src="{{ project.image }}"
-                alt="{{ project.name }}"
+                alt="{{ project.name | escape }}"
                 class="z-0 h-full w-full object-cover object-top{% if not project.hoverImage %} group-hover:invert{% else %} group-hover:opacity-0{% endif %}"
                 loading="lazy"
               >
               {% if project.hoverImage %}
                 <img
                   src="{{ project.hoverImage }}"
-                  alt="{{ project.name }}"
+                  alt=""
                   class="absolute inset-0 z-0 h-full w-full object-cover object-top opacity-0 group-hover:opacity-100"
                   loading="lazy"
                 >
@@ -51,7 +53,7 @@ title: Northern Information
               <div class="burn pointer-events-none absolute inset-0 z-10"></div>
               <div class="absolute right-0 bottom-0 left-0 z-20 p-2">
                 <span class="font-mono text-sm text-yellow-300">{{ project.dateRange }}</span>
-                <h3 class="w-full truncate font-bold text-white group-hover:underline">{{ project.name }}</h3>
+                <h2 class="w-full truncate font-bold text-white group-hover:underline">{{ project.name }}</h2>
               </div>
             </div>
           </a>

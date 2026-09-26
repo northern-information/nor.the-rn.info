@@ -3,7 +3,7 @@ title: "The COVID-19 Pandemic, Day 44"
 date: 2020-04-23
 ---
 
-![Power Lines](/rm_ation/images/power-lines.png)
+![Power Lines](/images/power-lines.png)
 _Still from a video I took last year... I mean two days ago._
 
 This week marks some psychological shift in me. What are these new sensations of time? I joked with friends today that we are now over the [event horizon](https://en.wikipedia.org/wiki/Event_horizon) of the [singularity](https://en.wikipedia.org/wiki/Technological_singularity). We just didn't think it would be this boring.

@@ -432,8 +432,16 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   color: #ffffff;
   outline: none !important;
   box-shadow: none !important;
-  border: 2px solid #ef4444;
+  border: 2px solid var(--color-red-500, #ef4444);
   text-align: center;
+}
+
+/* Keyboard focus indicator (WCAG 2.4.7). The base rule above strips outline
+   with !important and a doubled Svelte-hash class, so this is scoped under the
+   #search container id to outrank it without depending on the hash. */
+#search .pagefind-ui__search-input:focus-visible {
+  outline: 2px solid var(--color-yellow-300, #fde047) !important;
+  outline-offset: 2px;
 }
 
 .pagefind-ui__search-input.svelte-e9gkc3::placeholder {
@@ -451,7 +459,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 }
 
 .pagefind-ui__search-clear.svelte-e9gkc3:hover {
-  color: #ef4444;
+  color: var(--color-red-500, #ef4444);
   background-color: #ffffff;
 }
 
@@ -491,15 +499,15 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   padding: 0 calc(12px * var(--pagefind-ui-scale));
   font-size: calc(16px * var(--pagefind-ui-scale));
   color: #ffffff;
-  background: #ef4444;
+  background: var(--color-red-500, #ef4444);
   width: 100%;
   text-align: center;
   font-weight: 700;
   cursor: pointer;
-  border: 2px solid #ef4444;
+  border: 2px solid var(--color-red-500, #ef4444);
 }
 
 .pagefind-ui__button.svelte-e9gkc3:hover {
-  color: #ef4444;
+  color: var(--color-red-500, #ef4444);
   background: #ffffff;
 }

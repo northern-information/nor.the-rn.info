@@ -7,10 +7,10 @@ layout: base.njk
       {{- page.date | dateToUTCFull -}}
     </time>
     <a
-      href="https://github.com/northern-information/nor.the-rn.info/edit/main/{{ page.inputPath | removeFirst('./') }}"
+      href="{{ site.META.GITHUB_URL }}/edit/main/{{ page.inputPath | removeFirst('./') }}"
       class="link-primary ml-2 font-mono text-sm"
     >
-      Edit
+      Edit<span class="sr-only"> on GitHub</span>
     </a>
     <h1 class="mb-4 text-4xl font-bold">{{ title }}</h1>
     {{ content | safe }}
@@ -26,6 +26,7 @@ layout: base.njk
               <a
                 href="{{ post.url }}"
                 {% if thisPost %}
+                  aria-current="page"
                   class="group block border-y-2 border-solid border-black bg-red-500 p-2 text-white underline visited:text-white"
                 {% else %}
                   class="group block border-y-2 border-solid border-black bg-white p-2 text-black hover:bg-red-500 hover:text-white hover:underline"
