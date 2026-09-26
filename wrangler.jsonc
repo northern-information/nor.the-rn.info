@@ -8,23 +8,23 @@
     "binding": "ASSETS",
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash",
-    "run_worker_first": true
+    "run_worker_first": true,
   },
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "routes": [
     {
       "pattern": "nor.the-rn.info/*",
-      "zone_name": "the-rn.info"
+      "zone_name": "the-rn.info",
     },
     {
       "pattern": "the-rn.info/*",
-      "zone_name": "the-rn.info"
+      "zone_name": "the-rn.info",
     },
     {
       "pattern": "www.the-rn.info/*",
-      "zone_name": "the-rn.info"
-    }
-  ]
+      "zone_name": "the-rn.info",
+    },
+  ],
 }
