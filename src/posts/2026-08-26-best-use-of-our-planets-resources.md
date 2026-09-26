@@ -15,7 +15,7 @@ Here's what came back.
 
 Big question, and an honest one. Let me answer it straight rather than dodge into "it depends" — though it does depend, and I'll say on what.
 
-The trap in the question is that "best" smuggles in a goal. Best *for* what — human welfare now, human survival over centuries, the biosphere on its own terms, total sentient wellbeing? Those point different directions, and most fights about resources are really fights about that hidden variable, not the resources.
+The trap in the question is that "best" smuggles in a goal. Best _for_ what — human welfare now, human survival over centuries, the biosphere on its own terms, total sentient wellbeing? Those point different directions, and most fights about resources are really fights about that hidden variable, not the resources.
 
 But here's the useful part: across almost every reasonable goal, a few things converge. That convergence is where I'd put weight.
 
