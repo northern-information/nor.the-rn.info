@@ -5,7 +5,7 @@ date: 2017-01-17
 
 ![the legacy of our lost cause](https://assets.the-rn.info/tyler-etters-and-the-northern-information-movement/the-legacy-of-our-lost-cause/the-legacy-of-our-lost-cause.jpg)
 
-**LP** by **[tyler etters & the northern information movement](/project/tyler-etters-and-the-northern-information-movement/)**
+**LP** by **[tyler etters & the northern information movement](/project/northern-information/)**
 Endless Field Studios · Digital
 
 [Listen & Download](https://nor.the-rn.info/rm_ation/music/tyler-etters-and-the-northern-information-movement/the-legacy-of-our-lost-cause/)

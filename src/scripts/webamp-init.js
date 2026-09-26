@@ -16,7 +16,7 @@ async function initWebamp() {
 
   let Webamp
   try {
-    const module = await import('https://unpkg.com/webamp@^2')
+    const module = await import('https://unpkg.com/webamp@2.3.1')
     Webamp = module.default
   } catch (err) {
     console.error('[webamp] import failed:', err)

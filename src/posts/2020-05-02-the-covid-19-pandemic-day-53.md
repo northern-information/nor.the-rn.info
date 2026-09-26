@@ -19,18 +19,18 @@ Crown was one of my favorite bars. It was a cultural institution and the type of
 
 Digital mourning gallery:
 
-![Google Streetview](/rm_ation/images/crown-google-streetview.png)
+![Google Streetview](/images/crown-google-streetview.png)
 _Google Streetview_
 
-![Via Stacie K. on Yelp](/rm_ation/images/crown-via-stacie-k-on-yelp.jpg)
+![Via Stacie K. on Yelp](/images/crown-via-stacie-k-on-yelp.jpg)
 _Via Stacie K. on Yelp_
 
-![Neobeat](/rm_ation/images/crown-neobeat.jpg) _[Neobeat](http://neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played..._
+![Neobeat](/images/crown-neobeat.jpg) _[Neobeat](http://neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played..._
 
-![Gaming with the guys](/rm_ation/images/crown-gaming.jpg)
+![Gaming with the guys](/images/crown-gaming.jpg)
 _Gaming with the guys._
 
-![Via Phill C. on Yelp](/rm_ation/images/crown-via-phill-c-on-yelp.jpg)
+![Via Phill C. on Yelp](/images/crown-via-phill-c-on-yelp.jpg)
 _Via Phill C. on Yelp_
 
 ---
