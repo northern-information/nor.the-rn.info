@@ -22,7 +22,7 @@
     "@11ty/eleventy": "3.1.6",
     "@11ty/eleventy-img": "7.0.0",
     "@tailwindcss/cli": "4.3.3",
-    "@tyleretters/discography": "4.0.0",
+    "@tyleretters/discography": "4.0.1",
     "concurrently": "10.0.5",
     "luxon": "3.7.2",
     "markdown-it": "15.0.2",
