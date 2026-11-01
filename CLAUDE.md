@@ -182,6 +182,8 @@ Remote URLs (`http://`, `https://`) are deliberately skipped by tagging them `el
 
 Image references inside templates (e.g., the site logo via `META.LOGO`) are processed the same way as markdown images.
 
+An `<img>` that overrides `loading` (e.g. `loading="eager"` for an above-the-fold hero) MUST also set `sizes` (e.g. `sizes="100vw"`). The default `loading="lazy"` is what supplies `sizes="auto"`; without either, eleventy-img throws "Missing `sizes` attribute", and because the plugin runs with `failOnError: false` the build still succeeds but the tag ships unoptimized with a broken `src` (`src/images/...`). After touching image markup, grep `dist/` for the `<picture>` output rather than trusting a clean build.
+
 ### Search
 
 [Pagefind](https://pagefind.app) generates a static search index from the built `dist/` directory at the end of `npm run build`. The index lives at `dist/pagefind/` and is fetched by the search UI on `/search/` (driven by `src/layouts/search.njk`, which chains to `base.njk` and loads the Pagefind UI script and `src/styles/pagefind.css` in the body). Pagefind reads all `<body>` content by default; there's no `data-pagefind-body` attribute scoping in templates.
