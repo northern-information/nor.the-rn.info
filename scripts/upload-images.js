@@ -98,18 +98,33 @@ if (DRY_RUN) {
 }
 
 // `wrangler r2 bulk put` sets one content type and cache policy per call, so
-// group the files by both.
+// group the files by both. Each call paces itself to the API limit of 1,200
+// requests per 5 minutes, but a new call starts a new count. Split the groups
+// into batches and wait one window between batches.
+const BATCH_SIZE = 1000
+const RATE_WINDOW_MS = 5 * 60 * 1000
+
 const groups = Map.groupBy(
   uploads,
   (upload) => `${upload.contentType}|${upload.cacheControl}`
 )
+const batches = [...groups].flatMap(([group, entries]) =>
+  Array.from({ length: Math.ceil(entries.length / BATCH_SIZE) }, (_, i) => [
+    group,
+    entries.slice(i * BATCH_SIZE, (i + 1) * BATCH_SIZE),
+  ])
+)
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'upload-images-'))
 
-for (const [group, entries] of groups) {
+for (const [index, [group, entries]] of batches.entries()) {
+  if (index > 0 && !LOCAL) {
+    console.log('Waiting 5 minutes for the R2 API rate limit')
+    await new Promise((resolve) => setTimeout(resolve, RATE_WINDOW_MS))
+  }
   const [contentType, cacheControl] = group.split('|')
   const listFile = path.join(
     tmpDir,
-    `${entries.length}-${contentType.replace('/', '-')}.json`
+    `${index}-${contentType.replace('/', '-')}.json`
   )
   fs.writeFileSync(
     listFile,
