@@ -6,6 +6,8 @@ See `./CLAUDE.md` for more.
 
 Site images live in Cloudflare R2, not in git. See "Image workflow" below.
 
+History was rewritten on 02026-11-03 to remove about 900 MB of images (first new commit `204c0d0`). A clone from before that date still holds the old history: delete it and clone again, and do not push from it.
+
 ```zsh
 git clone git@github.com:northern-information/nor.the-rn.info.git
 npm i
@@ -32,7 +34,9 @@ The build reads image metadata from `images.manifest.json` and does not process 
 1. Add the original to `src/images/foo.jpg` (gitignored)
 2. Reference it root-relative and without the prefix: `![alt](/images/foo.jpg)`
 3. Run `npm run images` — processes `src/images/` with eleventy-img, uploads new files to R2, and updates `images.manifest.json` (needs `wrangler login`)
-4. Commit the page and `images.manifest.json`
+4. Commit the page and `images.manifest.json`, never the image files
+
+`npm run check:repo` fails a PR that tracks a file under `src/images/` or `src/img-optimized/`, any other image except the favicon, touch icon and logo, or any file over 1 MB.
 
 The Worker serves `/images/*` and `/img-optimized/*` from R2. A build fails when a page references an image that is not in the manifest. `npm run dev` serves local files from `src/images/` and `src/img-optimized/` and redirects missing ones to `https://assets.the-rn.info/site/`.
 
@@ -52,9 +56,9 @@ Scaffolds blog posts from new entries in `@tyleretters/discography`. See `script
 
 ## Deploy
 
-Automatic on push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). The workflow runs `npm ci`, then `npm run build`, then `wrangler deploy` (via `cloudflare/wrangler-action`) to push `dist/` to a Cloudflare Worker (`northern-information`) using Workers Static Assets.
+Automatic on push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). The workflow runs `npm ci`, `npm run check:repo`, `npm test`, `npm run build` and `npm run check:dist`, then `wrangler deploy` (via `cloudflare/wrangler-action`) to push `dist/` to a Cloudflare Worker (`northern-information`) using Workers Static Assets. The deploy does not upload images; `npm run images` does that before the merge.
 
-The Worker code is a thin shim at `worker/index.js`: it strips the `/rm_ation/` prefix from incoming requests and forwards to the `ASSETS` binding, and 301-redirects unprefixed paths and the `the-rn.info` / `www.the-rn.info` aliases to the prefixed canonical URL. Config is in `wrangler.jsonc`, which also pins the hostname bindings (`nor.the-rn.info/*`, `the-rn.info/*`, `www.the-rn.info/*`) via Workers Routes on the `the-rn.info` zone.
+The Worker code is a thin shim at `worker/index.js`: it strips the `/rm_ation/` prefix from incoming requests and forwards to the `ASSETS` binding, and 301-redirects unprefixed paths and the `the-rn.info` / `www.the-rn.info` aliases to the prefixed canonical URL. It serves `/images/*` and `/img-optimized/*` from the `IMAGES` R2 binding (`intertext` bucket, `site/` prefix) through the edge cache. Config is in `wrangler.jsonc`, which also sets the account ID, the R2 binding, and the hostname bindings (`nor.the-rn.info/*`, `the-rn.info/*`, `www.the-rn.info/*`) via Workers Routes on the `the-rn.info` zone.
 
 Required GitHub Actions secret: `CLOUDFLARE_API_TOKEN`. Create it in the Cloudflare dashboard under Manage Account → Account API Tokens → Create Token, using the **Edit Cloudflare Workers** template. Scope the account and zone resources down to this site.
 
@@ -62,6 +66,7 @@ To preview the Worker locally against a built `dist/`:
 
 ```zsh
 npm run build
+node scripts/upload-images.js --local   # fill wrangler's local R2, once
 npm run worker:dev
 # open http://localhost:8787/rm_ation/
 ```
@@ -72,6 +77,8 @@ For day-to-day editing, keep using `npm run dev` (Eleventy + Tailwind). The dev 
 
 ```zsh
 eleventy.config.js
+./images.manifest.json
+./lib/images.js
 ./src/data/projects.js
 ./src/data/site.js
 ./src/music/index.njk
