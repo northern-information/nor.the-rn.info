@@ -20,6 +20,7 @@ import path from 'path'
 import { execFileSync } from 'child_process'
 import { fileURLToPath } from 'url'
 import {
+  fetchPublic,
   getManifestFiles,
   OPTIMIZED_URL_PATH,
   R2,
@@ -59,7 +60,7 @@ const files = getManifestFiles(readManifest(ROOT), ROOT).map((file) => ({
 }))
 
 const exists = async (url) => {
-  const response = await fetch(`${R2.PUBLIC_URL}${url}`, { method: 'HEAD' })
+  const response = await fetchPublic(url, { method: 'HEAD' })
   if (response.ok) return true
   if (response.status === 404) return false
   throw new Error(`HEAD ${R2.PUBLIC_URL}${url} returned ${response.status}`)

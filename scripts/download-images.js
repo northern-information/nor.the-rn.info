@@ -18,7 +18,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { getManifestFiles, R2, readManifest } from '../lib/images.js'
+import { fetchPublic, getManifestFiles, readManifest } from '../lib/images.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const ROOT = path.join(path.dirname(__filename), '..')
@@ -34,7 +34,7 @@ const files = getManifestFiles(readManifest(ROOT), ROOT)
 console.log(`${files.length} files to download`)
 
 const download = async ({ url, file }) => {
-  const response = await fetch(`${R2.PUBLIC_URL}${url}`)
+  const response = await fetchPublic(url)
   if (!response.ok) throw new Error(`GET ${url} returned ${response.status}`)
   fs.mkdirSync(path.dirname(file), { recursive: true })
   // Write to a temporary name first, so an interrupted run leaves no partial
