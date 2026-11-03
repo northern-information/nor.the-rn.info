@@ -26,6 +26,13 @@ Use the exact patch version (e.g. `24.21.0`), never a range or major-only (`^24`
 
 npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless they're listed in `allowScripts`. None are currently approved: `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. If a future bump needs one, approve it with `npm install-scripts approve <pkg>`.
 
+## Testing
+
+- `npm test` — unit tests in `test/` (Node's built-in test runner, no framework). `test/filters.test.js` runs the real `eleventy.config.js` against a stub config to get the filters. The script sets `TZ=America/Los_Angeles` so a filter that formats in local time fails.
+- `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on image or asset URLs that do not resolve in `dist/`, `src` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
+- `.github/workflows/check.yml` runs both on every PR. `deploy.yml` runs them before `wrangler deploy`.
+- `dist/` is not cleaned between builds. Delete it before `check:dist` locally, or stale pages can fail the check.
+
 ## Key Patterns
 
 ### Date Handling
