@@ -1,6 +1,8 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "northern-information",
+  // Northern Information. A login with more than one account must not guess.
+  "account_id": "cbe8e84757316e274a5960cf13836119",
   "main": "worker/index.js",
   "compatibility_date": "2026-05-14",
   "assets": {
