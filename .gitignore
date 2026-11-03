@@ -8,3 +8,6 @@ dist
 .eleventy-cache/
 .cache/
 .claude
+# Site images live in R2 (see lib/images.js)
+src/images/
+src/img-optimized/

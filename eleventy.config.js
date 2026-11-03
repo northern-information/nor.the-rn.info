@@ -1,5 +1,4 @@
 import { EleventyHtmlBasePlugin, IdAttributePlugin } from '@11ty/eleventy'
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import markdownIt from 'markdown-it'
 import { DateTime } from 'luxon'
 import { execSync } from 'child_process'
@@ -7,7 +6,15 @@ import implicitFigures from 'markdown-it-implicit-figures'
 import discography from '@tyleretters/discography'
 import memoize from 'memoize'
 import projects from './src/data/projects.js'
-import { readFileSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
+import {
+  imagesPlugin,
+  OPTIMIZED_DIR,
+  OPTIMIZED_URL_PATH,
+  R2,
+  SOURCE_DIR,
+  SOURCE_URL_PATH,
+} from './lib/images.js'
 
 const discographyPackageJson = JSON.parse(
   readFileSync(
@@ -61,7 +68,6 @@ export const META = {
 
 export const DIRS = {
   DATA: 'data',
-  IMAGES: 'images',
   INCLUDES: 'includes',
   INPUT: 'src',
 
@@ -238,7 +244,7 @@ export default async (eleventyConfig) => {
     figcaption: false,
   })
 
-  // Tag remote images so eleventyImageTransformPlugin skips them. Release covers
+  // Tag remote images so imagesPlugin skips them. Release covers
   // on the R2 asset buckets are already optimized.
   const defaultImageRender =
     markdownLib.renderer.rules.image ||
@@ -424,26 +430,49 @@ export default async (eleventyConfig) => {
     extensions: 'html,md,css',
   })
 
-  // eleventy-img writes derivatives into src/ (committed to git) and we passthrough
-  // them to dist/. Cloudflare clones the repo and skips Sharp processing when the
-  // hashed outputs already exist, so deploys stay fast.
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    extensions: 'html',
-    formats: ['avif', 'webp', 'auto'],
-    widths: [400, 800, 1600, 'auto'],
-    outputDir: `./${DIRS.INPUT}/img-optimized/`,
-    urlPath: '/img-optimized/',
-    htmlOptions: {
-      imgAttributes: {
-        loading: 'lazy',
-        decoding: 'async',
-      },
-    },
-    failOnError: false,
+  // Site images live in R2 and the Worker serves them (see lib/images.js).
+  // `npm run images` and the dev server process local files in src/images/;
+  // a production build reads only images.manifest.json.
+  const isServe = process.env.ELEVENTY_RUN_MODE === 'serve'
+  eleventyConfig.addPlugin(imagesPlugin, {
+    process: isServe || process.env.IMAGES_PROCESS === '1',
   })
 
-  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${DIRS.IMAGES}`)
-  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/img-optimized`)
+  if (isServe) {
+    // Serve local image files when they exist, and redirect to the public
+    // R2 domain when they do not. The dev server serves passthrough files in
+    // place, so they never land in dist/ and a later deploy cannot ship them.
+    eleventyConfig.setServerPassthroughCopyBehavior('passthrough')
+    eleventyConfig.addPassthroughCopy({ [SOURCE_DIR]: SOURCE_URL_PATH })
+    eleventyConfig.addPassthroughCopy({ [OPTIMIZED_DIR]: OPTIMIZED_URL_PATH })
+    const localDirs = {
+      [SOURCE_URL_PATH]: SOURCE_DIR,
+      [OPTIMIZED_URL_PATH]: OPTIMIZED_DIR,
+    }
+    eleventyConfig.setServerOptions({
+      middleware: [
+        (req, res, next) => {
+          const pathname = req.url.split(/[?#]/)[0]
+          const unprefixed = pathname.startsWith(PATH_PREFIX)
+            ? pathname.slice(PATH_PREFIX.length - 1)
+            : pathname
+          const urlPath = Object.keys(localDirs).find((dir) =>
+            unprefixed.startsWith(dir)
+          )
+          if (!urlPath) return next()
+          const name = unprefixed.slice(urlPath.length)
+          if (existsSync(`${localDirs[urlPath]}/${decodeURIComponent(name)}`)) {
+            return next()
+          }
+          res.writeHead(302, {
+            Location: `${R2.PUBLIC_URL}${urlPath}${name}`,
+          })
+          res.end()
+        },
+      ],
+    })
+  }
+
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)

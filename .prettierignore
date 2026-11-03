@@ -8,3 +8,4 @@ package-lock.json
 node_modules
 src/images
 src/img-optimized
+images.manifest.json

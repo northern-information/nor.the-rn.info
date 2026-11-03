@@ -13,6 +13,7 @@
     "css:watch": "npm run css -- --watch",
     "dev": "concurrently 'npx @11ty/eleventy --serve --quiet' 'npm run css:watch'",
     "generate-release-posts": "node scripts/generate-release-posts.js",
+    "images": "IMAGES_PROCESS=1 npx @11ty/eleventy --quiet && node scripts/upload-images.js",
     "pagefind": "pagefind --site dist",
     "pretty": "prettier --write .",
     "test": "TZ=America/Los_Angeles node --test 'test/*.test.js'",
