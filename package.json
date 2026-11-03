@@ -19,6 +19,7 @@
     "pretty": "prettier --write .",
     "test": "TZ=America/Los_Angeles node --test 'test/*.test.js'",
     "check:dist": "node scripts/check-dist.js",
+    "check:repo": "node scripts/check-repo.js",
     "worker:dev": "wrangler dev",
     "worker:deploy": "wrangler deploy"
   },

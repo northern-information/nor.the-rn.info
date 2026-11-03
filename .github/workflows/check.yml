@@ -22,6 +22,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npm run check:repo
+
       - run: npm test
 
       - run: npm run build

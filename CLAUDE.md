@@ -30,7 +30,8 @@ npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless th
 
 - `npm test` — unit tests in `test/` (Node's built-in test runner, no framework). `test/filters.test.js` runs the real `eleventy.config.js` against a stub config to get the filters. The script sets `TZ=America/Los_Angeles` so a filter that formats in local time fails.
 - `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on asset URLs that do not resolve in `dist/`, image URLs that are not in `images.manifest.json`, `src` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
-- `.github/workflows/check.yml` runs both on every PR. `deploy.yml` runs them before `wrangler deploy`.
+- `npm run check:repo` — `scripts/check-repo.js` fails on tracked files under `src/images/` or `src/img-optimized/`, image files other than the favicon, touch icon and logo, and any tracked file over 1 MB.
+- `.github/workflows/check.yml` runs all three on every PR. `deploy.yml` runs them before `wrangler deploy`.
 - `dist/` is not cleaned between builds. Delete it before `check:dist` locally, or stale pages can fail the check.
 
 ## Key Patterns
@@ -90,9 +91,11 @@ Meta tags are rendered via `src/includes/metaTags.njk`:
 Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/images/` and `src/img-optimized/` are gitignored local copies. `lib/images.js` replaces `eleventyImageTransformPlugin`: it renders `<picture>` markup from the committed `images.manifest.json` with eleventy-img's own `generateObject`.
 
 - Add an image: put it in `src/images/`, reference it as `/images/<name>`, run `npm run images`, commit `images.manifest.json` with the page. `npm run images` needs `wrangler login`.
+- Never commit image files, not even with `git add -f`. `check:repo` fails the PR. History was rewritten on 02026-11-03 to remove them (first new commit `204c0d0`). Re-clone any clone from before that date instead of pushing from it.
 - Upload before merge. The deploy does not upload, and a page whose image is not in the manifest fails the build.
 - `npm run images:download` fills `src/images/` and `src/img-optimized/` from the public R2 domain. Run it on a fresh clone before `npm run images`, or `npm run images` regenerates every derivative.
 - `npm run dev` processes local files it finds and redirects missing ones to `https://assets.the-rn.info/site/`. A production build never reads `src/images/`.
+- `npm run worker:dev` uses an empty local R2, so every image is a 404. Run `node scripts/upload-images.js --local` first.
 - Keep `IMAGE_OPTIONS` in `lib/images.js` equal for every run. Changing widths or formats needs a new `npm run images` with all originals present.
 - Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build.
 - An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
