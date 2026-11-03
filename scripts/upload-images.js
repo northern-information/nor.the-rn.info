@@ -20,12 +20,10 @@ import path from 'path'
 import { execFileSync } from 'child_process'
 import { fileURLToPath } from 'url'
 import {
-  getDerivativeUrls,
-  OPTIMIZED_DIR,
+  getManifestFiles,
   OPTIMIZED_URL_PATH,
   R2,
   readManifest,
-  SOURCE_DIR,
   SOURCE_URL_PATH,
 } from '../lib/images.js'
 
@@ -53,30 +51,12 @@ const CACHE_CONTROL = {
   [OPTIMIZED_URL_PATH]: 'public, max-age=31536000, immutable',
 }
 
-const LOCAL_DIRS = {
-  [SOURCE_URL_PATH]: SOURCE_DIR,
-  [OPTIMIZED_URL_PATH]: OPTIMIZED_DIR,
-}
-
-const manifest = readManifest(ROOT)
-const urls = [
-  ...manifest.originals.map((name) => `${SOURCE_URL_PATH}${name}`),
-  ...new Set(Object.values(manifest.images).flatMap(getDerivativeUrls)),
-]
-
-const toUpload = (url) => {
-  const urlPath = url.startsWith(SOURCE_URL_PATH)
-    ? SOURCE_URL_PATH
-    : OPTIMIZED_URL_PATH
-  const name = url.slice(urlPath.length)
-  return {
-    url,
-    key: `${R2.PREFIX}${url}`,
-    file: path.join(ROOT, LOCAL_DIRS[urlPath], name),
-    contentType: CONTENT_TYPES[path.extname(name).toLowerCase()],
-    cacheControl: CACHE_CONTROL[urlPath],
-  }
-}
+const files = getManifestFiles(readManifest(ROOT), ROOT).map((file) => ({
+  ...file,
+  contentType: CONTENT_TYPES[path.extname(file.file).toLowerCase()],
+  cacheControl:
+    CACHE_CONTROL[file.isOriginal ? SOURCE_URL_PATH : OPTIMIZED_URL_PATH],
+}))
 
 const exists = async (url) => {
   const response = await fetch(`${R2.PUBLIC_URL}${url}`, { method: 'HEAD' })
@@ -86,20 +66,21 @@ const exists = async (url) => {
 }
 
 // The local R2 is empty at first, so --local uploads everything.
-let missing = urls
+let uploads = files
 if (!LOCAL) {
-  missing = []
-  for (let i = 0; i < urls.length; i += CHECK_CONCURRENCY) {
-    const batch = urls.slice(i, i + CHECK_CONCURRENCY)
-    const results = await Promise.all(batch.map(exists))
-    missing.push(...batch.filter((_, index) => !results[index]))
+  uploads = []
+  for (let i = 0; i < files.length; i += CHECK_CONCURRENCY) {
+    const batch = files.slice(i, i + CHECK_CONCURRENCY)
+    const results = await Promise.all(batch.map((file) => exists(file.url)))
+    uploads.push(...batch.filter((_, index) => !results[index]))
   }
 }
 
-console.log(`${urls.length} files in the manifest, ${missing.length} to upload`)
-if (!missing.length) process.exit(0)
+console.log(
+  `${files.length} files in the manifest, ${uploads.length} to upload`
+)
+if (!uploads.length) process.exit(0)
 
-const uploads = missing.map(toUpload)
 const problems = uploads.flatMap((upload) => [
   ...(fs.existsSync(upload.file)
     ? []

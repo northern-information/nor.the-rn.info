@@ -9,8 +9,11 @@ Site images live in Cloudflare R2, not in git. See "Image workflow" below.
 ```zsh
 git clone git@github.com:northern-information/nor.the-rn.info.git
 npm i
+npm run images:download   # optional: local copies of the R2 images
 npm run dev
 ```
+
+`npm run images:download` fetches every file in `images.manifest.json` from `https://assets.the-rn.info/site/` that is not local yet. No Cloudflare login is necessary. Add `-- --originals` to fetch only the originals (about a third of the size); the dev server redirects missing derivatives to R2.
 
 ### Node version
 

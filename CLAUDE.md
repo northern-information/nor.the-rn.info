@@ -91,6 +91,7 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 
 - Add an image: put it in `src/images/`, reference it as `/images/<name>`, run `npm run images`, commit `images.manifest.json` with the page. `npm run images` needs `wrangler login`.
 - Upload before merge. The deploy does not upload, and a page whose image is not in the manifest fails the build.
+- `npm run images:download` fills `src/images/` and `src/img-optimized/` from the public R2 domain. Run it on a fresh clone before `npm run images`, or `npm run images` regenerates every derivative.
 - `npm run dev` processes local files it finds and redirects missing ones to `https://assets.the-rn.info/site/`. A production build never reads `src/images/`.
 - Keep `IMAGE_OPTIONS` in `lib/images.js` equal for every run. Changing widths or formats needs a new `npm run images` with all originals present.
 - Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build.
