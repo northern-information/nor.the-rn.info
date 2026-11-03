@@ -29,7 +29,7 @@ npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless th
 ## Testing
 
 - `npm test` — unit tests in `test/` (Node's built-in test runner, no framework). `test/filters.test.js` runs the real `eleventy.config.js` against a stub config to get the filters. The script sets `TZ=America/Los_Angeles` so a filter that formats in local time fails.
-- `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on image or asset URLs that do not resolve in `dist/`, `src` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
+- `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on asset URLs that do not resolve in `dist/`, image URLs that are not in `images.manifest.json`, `src` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
 - `.github/workflows/check.yml` runs both on every PR. `deploy.yml` runs them before `wrangler deploy`.
 - `dist/` is not cleaned between builds. Delete it before `check:dist` locally, or stale pages can fail the check.
 
@@ -87,11 +87,15 @@ Meta tags are rendered via `src/includes/metaTags.njk`:
 
 ### Image Handling
 
-`@11ty/eleventy-img` outputs are written to `src/img-optimized/` (committed to git) and passthrough-copied to `dist/img-optimized/` on every build. The directory MUST be committed so Cloudflare deploys reuse the derivatives instead of regenerating them. After adding a new image to `src/images/`, run `npm run build` before committing so the new entries in `src/img-optimized/` are included.
+Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/images/` and `src/img-optimized/` are gitignored local copies. `lib/images.js` replaces `eleventyImageTransformPlugin`: it renders `<picture>` markup from the committed `images.manifest.json` with eleventy-img's own `generateObject`.
 
-Remote URLs (`http://`, `https://`) are deliberately skipped by tagging them `eleventy:ignore` in the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`) — release covers on the R2 asset buckets are already optimized.
-
-An `<img>` that overrides `loading` (e.g. `loading="eager"` for an above-the-fold hero) MUST also set `sizes` (e.g. `sizes="100vw"`). The default `loading="lazy"` is what supplies `sizes="auto"`; without either, eleventy-img throws "Missing `sizes` attribute", and because the plugin runs with `failOnError: false` the build still succeeds but the tag ships unoptimized with a broken `src` (`src/images/...`). After touching image markup, grep `dist/` for the `<picture>` output rather than trusting a clean build.
+- Add an image: put it in `src/images/`, reference it as `/images/<name>`, run `npm run images`, commit `images.manifest.json` with the page. `npm run images` needs `wrangler login`.
+- Upload before merge. The deploy does not upload, and a page whose image is not in the manifest fails the build.
+- `npm run images:download` fills `src/images/` and `src/img-optimized/` from the public R2 domain. Run it on a fresh clone before `npm run images`, or `npm run images` regenerates every derivative.
+- `npm run dev` processes local files it finds and redirects missing ones to `https://assets.the-rn.info/site/`. A production build never reads `src/images/`.
+- Keep `IMAGE_OPTIONS` in `lib/images.js` equal for every run. Changing widths or formats needs a new `npm run images` with all originals present.
+- Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build.
+- An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
 
 ### Search
 
@@ -105,7 +109,7 @@ See `scripts/CLAUDE.md` for the release-post scaffolding workflow (run after bum
 
 The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare Pages.
 
-The Worker entry point (`worker/index.js`) strips `/rm_ation` from prefixed requests and forwards them to the `ASSETS` binding, re-prefixing the `Location` of any redirect ASSETS returns (e.g. `html_handling`'s `/about` → `/about/`) so clients take one hop, not two.
+The Worker entry point (`worker/index.js`) strips `/rm_ation` from prefixed requests and forwards them to the `ASSETS` binding, re-prefixing the `Location` of any redirect ASSETS returns (e.g. `html_handling`'s `/about` → `/about/`) so clients take one hop, not two. It serves `/images/*` and `/img-optimized/*` from the `IMAGES` R2 binding through the edge cache instead.
 
 ### R2 asset buckets
 
