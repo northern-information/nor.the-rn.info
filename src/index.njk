@@ -4,11 +4,15 @@ title: Northern Information
 ---
 <h1 class="sr-only">{{ title }}</h1>
 
-<img
-  src="/images/tse26.png"
-  alt="Tyler Etters performing at a table of gear under purple stage light"
-  class="h-auto w-full"
-  sizes="100vw"
-  loading="eager"
-  fetchpriority="high"
->
+<div class="grain overflow-hidden">
+  <img
+    src="/images/tyler-etters-261031.webp"
+    alt="Tyler Etters performing at a table of gear under purple stage light"
+    class="h-auto w-full"
+    sizes="(min-width: 1536px) 1536px, 100vw"
+    eleventy:widths="400,800,1600,2400,3200"
+    eleventy:formats="avif,webp,jpeg"
+    loading="eager"
+    fetchpriority="high"
+  >
+</div>
