@@ -11,7 +11,7 @@ This file provides guidance to Claude Code when working with this repository.
 Rules that follow from this:
 
 - Write internal links and image paths root-relative and **unprefixed** (`/music/`, `/images/foo.jpg`). A hard-coded `/rm_ation/...` would be prefixed a second time (`/rm_ation/rm_ation/...`).
-- Absolute URLs (canonical, `og:*`, sitemap, feeds) are built from `META.CANONICAL` (`https://nor.the-rn.info/rm_ation/`), never `META.DOMAIN` — the Worker 301-redirects unprefixed paths.
+- Absolute URLs (canonical, `og:*`, sitemap, feeds) are built from `META.CANONICAL` (`https://nor.the-rn.info/rm_ation/`), never the bare domain — the Worker 301-redirects unprefixed paths.
 - CSS built by the Tailwind CLI is not processed by the base plugin, so `url()` references in `src/styles/tailwind.css` are relative (`../fonts/...`).
 
 ## Node version

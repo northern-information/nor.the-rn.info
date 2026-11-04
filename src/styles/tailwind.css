@@ -255,22 +255,9 @@
     background-image: url('../images/crown-via-phill-c-on-yelp.jpg');
   }
 
-  .burn {
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.4) 25%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
-
-  /* Reusable grid patterns for releases and projects */
+  /* Release card grid (music and project pages) */
   .grid-releases {
     @apply grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3 xl:grid-cols-5;
-  }
-
-  .grid-projects {
-    @apply grid list-none grid-cols-1 gap-1 border-b-4 border-solid border-black md:grid-cols-3;
   }
 
   /* Respect user's motion preferences */
