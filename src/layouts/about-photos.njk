@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<h1 class="sr-only">{{ title }}</h1>
+<div class="my-1 overflow-hidden border-b-2 border-solid border-black">
+  <ul class="grid grid-cols-1 gap-1 md:grid-cols-3 lg:grid-cols-5">
+    {% for photo in about %}
+      <li
+        class="group bg-white text-black hover:bg-black hover:text-yellow-300"
+      >
+        <a
+          href="{{ photo.url }}"
+          class="block h-full w-full cursor-pointer"
+        >
+          <div class="grain-hover overflow-hidden">
+            <img
+              src="{{ photo.url }}"
+              alt=""
+              class="h-auto w-full group-hover:invert"
+              loading="lazy"
+            >
+          </div>
+          <div class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
+            <p class="group-hover:underline">{{ photo.title }}, {{ photo.year }}</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -23,31 +23,7 @@ layout: base.njk
         <a href="{{ account.url }}">{{ account.label }}</a>{% if not loop.last %}, {% endif %}
       {%- endfor %}.
     </p>
+    <h2>Photos:</h2>
+    <p><a href="/about/photos/">More photos of me</a>.</p>
   </div>
-</div>
-<div class="overflow-hidden border-b-2 border-solid border-black">
-  <ul class="grid grid-cols-1 gap-1 md:grid-cols-3 lg:grid-cols-5">
-    {% for photo in about %}
-      <li
-        class="group bg-white text-black hover:bg-black hover:text-yellow-300"
-      >
-        <a
-          href="{{ photo.url }}"
-          class="block h-full w-full cursor-pointer"
-        >
-          <div class="grain-hover overflow-hidden">
-            <img
-              src="{{ photo.url }}"
-              alt=""
-              class="h-auto w-full group-hover:invert"
-              loading="lazy"
-            >
-          </div>
-          <div class="relative border-t-4 border-solid border-black p-2 group-hover:border-yellow-300">
-            <p class="group-hover:underline">{{ photo.title }}, {{ photo.year }}</p>
-          </div>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
 </div>

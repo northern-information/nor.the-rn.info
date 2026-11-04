@@ -17,7 +17,7 @@ export default [
   {
     url: '/about/',
     label: 'About',
-    match: 'equals',
+    match: 'contains',
   },
   {
     url: '/blog/',
