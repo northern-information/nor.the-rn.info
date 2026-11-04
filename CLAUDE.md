@@ -24,7 +24,7 @@ The Node version is pinned in three places that must stay in sync:
 
 Use the exact patch version (e.g. `24.21.0`), never a range or major-only (`^24`, `24`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
 
-npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless they're listed in `allowScripts`. None are currently approved: `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. If a future bump needs one, approve it with `npm install-scripts approve <pkg>`.
+npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless they're listed in `allowScripts`. `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` are explicitly denied (`false`) in `package.json` so `npm ci` doesn't warn about them: they fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. A new dependency with an install script will warn again; review it, then run `npm install-scripts deny <pkg>` or `npm install-scripts approve <pkg>`. `approve` won't override an existing `false` entry, so to allow one of the four, change its value to `true` by hand.
 
 ## Testing
 
