@@ -40,7 +40,6 @@ export const META = {
   CANONICAL: `https://nor.the-rn.info${PATH_PREFIX}`,
   CREATIVE_COMMONS: 'https://creativecommons.org/licenses/by/4.0/',
   DESCRIPTION: 'LONG LIVE THE LOST ONES',
-  DOMAIN: 'https://nor.the-rn.info',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
   GIT_HASH_SHORT: (() => {
@@ -70,10 +69,8 @@ export const DIRS = {
   DATA: 'data',
   INCLUDES: 'includes',
   INPUT: 'src',
-
   LAYOUTS: 'layouts',
   OUTPUT: 'dist',
-  PAGES: 'pages',
   POSTS: 'posts',
 }
 
@@ -357,7 +354,7 @@ export default async (eleventyConfig) => {
 
   // Converts relative src/href/srcset URLs in HTML to absolute URLs for feeds.
   // Root-relative URLs (`/images/x.png`) resolve against the site root
-  // (META.DOMAIN + PATH_PREFIX); document-relative ones (`x.png`) resolve
+  // (META.CANONICAL, which carries PATH_PREFIX); document-relative ones (`x.png`) resolve
   // against `pageUrl`. Content here has not been through HtmlBasePlugin yet, so
   // root-relative URLs are still unprefixed. URLs with a scheme (`https:`,
   // `mailto:`, `data:`), protocol-relative `//` URLs, and `#` fragments pass
@@ -417,9 +414,9 @@ export default async (eleventyConfig) => {
     buildSitemapTree(collectSitemapUrls(collection))
   )
 
-  // Preserve Liquid's no-autoescape behavior so existing templates render HTML directly
-  // without piping every interpolation through `| safe`. All template inputs are trusted
-  // (markdown content, YAML data files, code constants).
+  // Templates render HTML directly without piping every interpolation through
+  // `| safe`. All template inputs are trusted (markdown content, JS data files
+  // in src/data/, package constants); escape attribute values with `| escape`.
   eleventyConfig.setNunjucksEnvironmentOptions({
     autoescape: false,
   })

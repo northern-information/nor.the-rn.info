@@ -9955,59 +9955,6 @@
         }
       ]
     },
-    "/images/edgelord-avatar.png": {
-      "avif": [
-        {
-          "width": 400,
-          "height": 400,
-          "url": "/img-optimized/Z2IAFsdr90-400.avif"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "url": "/img-optimized/Z2IAFsdr90-800.avif"
-        },
-        {
-          "width": 883,
-          "height": 883,
-          "url": "/img-optimized/Z2IAFsdr90-883.avif"
-        }
-      ],
-      "webp": [
-        {
-          "width": 400,
-          "height": 400,
-          "url": "/img-optimized/Z2IAFsdr90-400.webp"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "url": "/img-optimized/Z2IAFsdr90-800.webp"
-        },
-        {
-          "width": 883,
-          "height": 883,
-          "url": "/img-optimized/Z2IAFsdr90-883.webp"
-        }
-      ],
-      "png": [
-        {
-          "width": 400,
-          "height": 400,
-          "url": "/img-optimized/Z2IAFsdr90-400.png"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "url": "/img-optimized/Z2IAFsdr90-800.png"
-        },
-        {
-          "width": 883,
-          "height": 883,
-          "url": "/img-optimized/Z2IAFsdr90-883.png"
-        }
-      ]
-    },
     "/images/edgelord-vertical.jpg": {
       "avif": [
         {
