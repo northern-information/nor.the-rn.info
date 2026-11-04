@@ -3,19 +3,4 @@ title: About
 layout: about.njk
 ---
 
-- My name is Tyler Etters.
-- Northern Information is my garden.
-- [tyler@etters.co](mailto:tyler@etters.co)
-
-## My mission is to:
-
-- Inspire with music.
-- Don't give up.
-- Help others not give up.
-
-## In 02026 I'm:
-
-- Engineering for [Discogs](https://discogs.com).
-- Causing mayhem at [Circular Ruin](https://circularruindsp.com).
-- Mixing as [DJ STUXNET](/project/dj-stuxnet).
-- Releasing music as [STUXNET](/project/stuxnet), [They Became What They Beheld](/project/they-became-what-they-beheld), [Northern Information](/project/northern-information), et al.
+Hello. My name is Tyler Etters. Northern Information is my garden. My mission is to inspire with music, to not give up, and to help others not give up. I spend most of my time building plugins at [Circular Ruin](https://circularruin.com), engineering for [Discogs](https://discogs.com), and releasing [lots of music](/music).
