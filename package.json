@@ -26,7 +26,7 @@
   "devDependencies": {
     "@11ty/eleventy": "3.1.8",
     "@11ty/eleventy-img": "7.1.1",
-    "@tailwindcss/cli": "4.3.4",
+    "@tailwindcss/cli": "4.3.5",
     "@tyleretters/discography": "4.0.2",
     "concurrently": "10.0.6",
     "luxon": "3.7.2",
@@ -36,8 +36,8 @@
     "pagefind": "1.6.0",
     "prettier": "3.9.10",
     "prettier-plugin-tailwindcss": "0.8.1",
-    "tailwindcss": "4.3.4",
-    "wrangler": "4.157.0"
+    "tailwindcss": "4.3.5",
+    "wrangler": "4.158.0"
   },
   "allowScripts": {
     "@parcel/watcher": false,
