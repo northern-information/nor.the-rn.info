@@ -3025,25 +3025,18 @@
       ]
     },
     "/images/akashic.gif|w=250": {
-      "avif": [
-        {
-          "width": 250,
-          "height": 250,
-          "url": "/img-optimized/exqJ2S5mx0-250.avif"
-        }
-      ],
       "webp": [
         {
           "width": 250,
           "height": 250,
-          "url": "/img-optimized/exqJ2S5mx0-250.webp"
+          "url": "/img-optimized/_8Lc1DlI-G-250.webp"
         }
       ],
       "gif": [
         {
           "width": 250,
           "height": 250,
-          "url": "/img-optimized/exqJ2S5mx0-250.gif"
+          "url": "/img-optimized/_8Lc1DlI-G-250.gif"
         }
       ]
     },
@@ -7916,66 +7909,66 @@
         {
           "width": 400,
           "height": 259,
-          "url": "/img-optimized/HRZceFTvaW-400.avif"
+          "url": "/img-optimized/fT8aMwZ1iA-400.avif"
         },
         {
           "width": 800,
           "height": 519,
-          "url": "/img-optimized/HRZceFTvaW-800.avif"
+          "url": "/img-optimized/fT8aMwZ1iA-800.avif"
         },
         {
           "width": 1600,
           "height": 1039,
-          "url": "/img-optimized/HRZceFTvaW-1600.avif"
+          "url": "/img-optimized/fT8aMwZ1iA-1600.avif"
         },
         {
           "width": 1920,
           "height": 1247,
-          "url": "/img-optimized/HRZceFTvaW-1920.avif"
+          "url": "/img-optimized/fT8aMwZ1iA-1920.avif"
         }
       ],
       "webp": [
         {
           "width": 400,
           "height": 259,
-          "url": "/img-optimized/HRZceFTvaW-400.webp"
+          "url": "/img-optimized/fT8aMwZ1iA-400.webp"
         },
         {
           "width": 800,
           "height": 519,
-          "url": "/img-optimized/HRZceFTvaW-800.webp"
+          "url": "/img-optimized/fT8aMwZ1iA-800.webp"
         },
         {
           "width": 1600,
           "height": 1039,
-          "url": "/img-optimized/HRZceFTvaW-1600.webp"
+          "url": "/img-optimized/fT8aMwZ1iA-1600.webp"
         },
         {
           "width": 1920,
           "height": 1247,
-          "url": "/img-optimized/HRZceFTvaW-1920.webp"
+          "url": "/img-optimized/fT8aMwZ1iA-1920.webp"
         }
       ],
       "gif": [
         {
           "width": 400,
           "height": 259,
-          "url": "/img-optimized/HRZceFTvaW-400.gif"
+          "url": "/img-optimized/fT8aMwZ1iA-400.gif"
         },
         {
           "width": 800,
           "height": 519,
-          "url": "/img-optimized/HRZceFTvaW-800.gif"
+          "url": "/img-optimized/fT8aMwZ1iA-800.gif"
         },
         {
           "width": 1600,
           "height": 1039,
-          "url": "/img-optimized/HRZceFTvaW-1600.gif"
+          "url": "/img-optimized/fT8aMwZ1iA-1600.gif"
         },
         {
           "width": 1920,
           "height": 1247,
-          "url": "/img-optimized/HRZceFTvaW-1920.gif"
+          "url": "/img-optimized/fT8aMwZ1iA-1920.gif"
         }
       ]
     },
@@ -8858,55 +8851,38 @@
       ]
     },
     "/images/dark-tower.gif": {
-      "avif": [
-        {
-          "width": 400,
-          "height": 204,
-          "url": "/img-optimized/YS8kK7g7ly-400.avif"
-        },
-        {
-          "width": 800,
-          "height": 408,
-          "url": "/img-optimized/YS8kK7g7ly-800.avif"
-        },
-        {
-          "width": 1200,
-          "height": 612,
-          "url": "/img-optimized/YS8kK7g7ly-1200.avif"
-        }
-      ],
       "webp": [
         {
           "width": 400,
           "height": 204,
-          "url": "/img-optimized/YS8kK7g7ly-400.webp"
+          "url": "/img-optimized/DnpC1JGZMU-400.webp"
         },
         {
           "width": 800,
           "height": 408,
-          "url": "/img-optimized/YS8kK7g7ly-800.webp"
+          "url": "/img-optimized/DnpC1JGZMU-800.webp"
         },
         {
           "width": 1200,
           "height": 612,
-          "url": "/img-optimized/YS8kK7g7ly-1200.webp"
+          "url": "/img-optimized/DnpC1JGZMU-1200.webp"
         }
       ],
       "gif": [
         {
           "width": 400,
           "height": 204,
-          "url": "/img-optimized/YS8kK7g7ly-400.gif"
+          "url": "/img-optimized/DnpC1JGZMU-400.gif"
         },
         {
           "width": 800,
           "height": 408,
-          "url": "/img-optimized/YS8kK7g7ly-800.gif"
+          "url": "/img-optimized/DnpC1JGZMU-800.gif"
         },
         {
           "width": 1200,
           "height": 612,
-          "url": "/img-optimized/YS8kK7g7ly-1200.gif"
+          "url": "/img-optimized/DnpC1JGZMU-1200.gif"
         }
       ]
     },
@@ -12114,40 +12090,28 @@
       ]
     },
     "/images/generative.gif": {
-      "avif": [
-        {
-          "width": 400,
-          "height": 225,
-          "url": "/img-optimized/oFlWzIH-ze-400.avif"
-        },
-        {
-          "width": 568,
-          "height": 320,
-          "url": "/img-optimized/oFlWzIH-ze-568.avif"
-        }
-      ],
       "webp": [
         {
           "width": 400,
           "height": 225,
-          "url": "/img-optimized/oFlWzIH-ze-400.webp"
+          "url": "/img-optimized/-w6T0uRYNw-400.webp"
         },
         {
           "width": 568,
           "height": 320,
-          "url": "/img-optimized/oFlWzIH-ze-568.webp"
+          "url": "/img-optimized/-w6T0uRYNw-568.webp"
         }
       ],
       "gif": [
         {
           "width": 400,
           "height": 225,
-          "url": "/img-optimized/oFlWzIH-ze-400.gif"
+          "url": "/img-optimized/-w6T0uRYNw-400.gif"
         },
         {
           "width": 568,
           "height": 320,
-          "url": "/img-optimized/oFlWzIH-ze-568.gif"
+          "url": "/img-optimized/-w6T0uRYNw-568.gif"
         }
       ]
     },

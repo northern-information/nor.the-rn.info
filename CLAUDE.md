@@ -97,6 +97,7 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 - `npm run dev` processes local files it finds and redirects missing ones to `https://assets.the-rn.info/site/`. A production build never reads `src/images/`.
 - `npm run worker:dev` uses an empty local R2, so every image is a 404. Run `node scripts/upload-images.js --local` first.
 - Keep `IMAGE_OPTIONS` in `lib/images.js` equal for every run. Changing widths or formats needs a new `npm run images` with all originals present.
+- GIF sources get `sharpOptions: { animated: true }` from `getSourceOptions` in `lib/images.js`. Without it eleventy-img keeps only the first frame. Animated GIFs output WebP and GIF only (no AVIF). Don't move the option into `IMAGE_OPTIONS`: it is part of the derivative hash, so every image would be renamed. Animated WebP sources are not supported: with the option on, eleventy-img drops AVIF and JPEG output for static WebPs too.
 - Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build.
 - An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
 
