@@ -1,7 +1,7 @@
 {% macro card(release, showProject=false) %}
 <li class="group flex flex-col bg-white text-black hover:bg-black hover:text-yellow-300">
   <a href="/music/{{ release.slug }}" class="block cursor-pointer">
-    <div class="grain-hover aspect-square w-full overflow-hidden">
+    <div class="grain-hover aspect-square w-full overflow-hidden bg-black">
       <img
         src="{{ release.cover_url }}"
         alt="{{ release.title | escape }}"
