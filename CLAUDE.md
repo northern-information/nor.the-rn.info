@@ -22,14 +22,14 @@ The Node version is pinned in three places that must stay in sync:
 - `.nvmrc` — read by nvm and by CI (`actions/setup-node` `node-version-file`)
 - `package.json` `engines.node`
 
-Use the exact patch version (e.g. `24.21.0`), never a range or major-only (`^24`, `24`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
+Use the exact patch version (e.g. `24.22.2`), never a range or major-only (`^24`, `24`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
 
-npm 11.19+ (bundled with Node 24.21) blocks dependency install scripts unless they're listed in `allowScripts`. `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` are explicitly denied (`false`) in `package.json` so `npm ci` doesn't warn about them: they fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. A new dependency with an install script will warn again; review it, then run `npm install-scripts deny <pkg>` or `npm install-scripts approve <pkg>`. `approve` won't override an existing `false` entry, so to allow one of the four, change its value to `true` by hand.
+npm 11.19+ (bundled with Node 24.21 and later) blocks dependency install scripts unless they're listed in `allowScripts`. `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` are explicitly denied (`false`) in `package.json` so `npm ci` doesn't warn about them: they fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. A new dependency with an install script will warn again; review it, then run `npm install-scripts deny <pkg>` or `npm install-scripts approve <pkg>`. `approve` won't override an existing `false` entry, so to allow one of the four, change its value to `true` by hand.
 
 ## Testing
 
 - `npm test` — unit tests in `test/` (Node's built-in test runner, no framework). `test/filters.test.js` runs the real `eleventy.config.js` against a stub config to get the filters. The script sets `TZ=America/Los_Angeles` so a filter that formats in local time fails.
-- `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on asset URLs that do not resolve in `dist/`, image URLs that are not in `images.manifest.json`, `src` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
+- `npm run check:dist` — run after `npm run build`. `scripts/check-dist.js` fails on asset URLs that do not resolve in `dist/`, image URLs that are not in `images.manifest.json`, `src`, `href` or `srcset` values that point into `src/`, a doubled `/rm_ation/` prefix, and pages built from `CLAUDE.md` or `AGENTS.md`.
 - `npm run check:repo` — `scripts/check-repo.js` fails on tracked files under `src/images/` or `src/img-optimized/`, image files other than the favicon, touch icon and logo, and any tracked file over 1 MB.
 - `.github/workflows/check.yml` runs all three on every PR. `deploy.yml` runs them before `wrangler deploy`.
 - `dist/` is not cleaned between builds. Delete it before `check:dist` locally, or stale pages can fail the check.
@@ -84,7 +84,7 @@ These conventions apply to **prose blog posts only**. Music release posts are ma
 Meta tags are rendered via `src/includes/metaTags.njk`:
 
 - Blog posts get dynamic descriptions from `page.rawInput | markdown | extractExcerpt` — the post body itself, not `content`, which by the time `base.njk` renders is already wrapped in `post.njk`'s date/Edit/title chrome. Other pages fall back to `site.META.DESCRIPTION`
-- When adding new page types, pass `ogType` through the data cascade and ensure `base.njk` forwards it to metaTags
+- When adding new page types, set `ogType` in the data cascade (posts get `article` from `src/posts/posts.11tydata.js`). `base.njk` includes `metaTags.njk`, which reads it from the page data and defaults to `website`
 
 ### Image Handling
 
@@ -98,7 +98,7 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 - `npm run worker:dev` uses an empty local R2, so every image is a 404. Run `node scripts/upload-images.js --local` first.
 - Keep `IMAGE_OPTIONS` in `lib/images.js` equal for every run. Changing widths or formats needs a new `npm run images` with all originals present.
 - GIF sources get `sharpOptions: { animated: true }` from `getSourceOptions` in `lib/images.js`. Without it eleventy-img keeps only the first frame. Animated GIFs output WebP and GIF only (no AVIF). Don't move the option into `IMAGE_OPTIONS`: it is part of the derivative hash, so every image would be renamed. Animated WebP sources are not supported: with the option on, eleventy-img drops AVIF and JPEG output for static WebPs too.
-- Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build.
+- Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build. SVGs under `/images/` (the footer logo in `footer.njk`, the webring icon in `links.njk`) also carry `eleventy:ignore`, so they are served as-is from R2 with no derivatives.
 - An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
 
 ### Search
@@ -141,7 +141,7 @@ R2 only sends `Access-Control-Allow-Origin` (and `Vary: Origin`) when the reques
 The site follows WCAG 2.1 Level AA with several AAA enhancements:
 
 - **Focus styles** - Yellow outline (`outline-yellow-300`) on all interactive elements, including the Pagefind search input (`src/styles/pagefind.css`)
-- **Color contrast** - Gray-400 on black (8.3:1 AAA), Red-500 active states (4.5:1 AA), Yellow-300 links on black (AA/AAA)
+- **Color contrast** (Tailwind v4 OKLCH values) - Gray-400 on black (8.1:1 AAA), Yellow-300 links on black (15.9:1 AAA). White text on the Red-600 active and hover states (4.8:1 AA). Keep white text off Red-500 (3.8:1); the footer's Red-500 hover uses black text (5.5:1 AA)
 - **Reduced motion** - `prefers-reduced-motion` disables grain, spectrum, and transition animations (including on pseudo-elements)
 - **Semantic HTML** - Proper landmarks, `<time datetime>` only for machine-readable dates, `aria-current="page"`, `aria-hidden` on decorative elements (`rule.njk`, `spectrum.njk`)
 - **One `<h1>` per page** - The masthead is not a heading. Every layout renders the page's own `<h1>`; layouts without a visible title use `<h1 class="sr-only">{{ title }}</h1>`. Headings don't skip levels (garden items are `<h3>` under section `<h2>`s)
