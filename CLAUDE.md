@@ -141,7 +141,7 @@ R2 only sends `Access-Control-Allow-Origin` (and `Vary: Origin`) when the reques
 The site follows WCAG 2.1 Level AA with several AAA enhancements:
 
 - **Focus styles** - Yellow outline (`outline-yellow-300`) on all interactive elements, including the Pagefind search input (`src/styles/pagefind.css`)
-- **Color contrast** (Tailwind v4 OKLCH values) - Gray-400 on black (8.1:1 AAA), Yellow-300 links on black (15.9:1 AAA). White text on the Red-500 active and hover states is 3.8:1, below AA's 4.5:1 for text at nav size
+- **Color contrast** (Tailwind v4 OKLCH values) - Gray-400 on black (8.1:1 AAA), Yellow-300 links on black (15.9:1 AAA). White text on the Red-600 active and hover states (4.8:1 AA). Keep white text off Red-500 (3.8:1); the footer's Red-500 hover uses black text (5.5:1 AA)
 - **Reduced motion** - `prefers-reduced-motion` disables grain, spectrum, and transition animations (including on pseudo-elements)
 - **Semantic HTML** - Proper landmarks, `<time datetime>` only for machine-readable dates, `aria-current="page"`, `aria-hidden` on decorative elements (`rule.njk`, `spectrum.njk`)
 - **One `<h1>` per page** - The masthead is not a heading. Every layout renders the page's own `<h1>`; layouts without a visible title use `<h1 class="sr-only">{{ title }}</h1>`. Headings don't skip levels (garden items are `<h3>` under section `<h2>`s)
