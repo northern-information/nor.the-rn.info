@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 <div class="mt-5 mb-4">
-  <h1 class="text-center text-4xl">{{ title }}</h1>
+  <h1 class="text-center text-4xl font-bold">{{ title }}</h1>
   <hr class="my-5">
 
   <div class="post flex flex-col items-center">
@@ -11,6 +11,8 @@ layout: base.njk
       alt="Connectedness Locus Emergency Akashic Records"
       width="250"
       height="250"
+      loading="eager"
+      sizes="250px"
       class="size-[250px]"
     >
     <p class="max-w-[600px] text-center">
@@ -26,15 +28,15 @@ layout: base.njk
   </div>
   <hr class="my-5">
 
-  <h2 class="text-center text-4xl">Resources</h2>
+  <h2 class="text-center text-4xl font-bold">Resources</h2>
   <hr class="my-5">
   {% include "gardenResources.njk" %}
 
-  <h2 class="text-center text-4xl">Subsidiaries</h2>
+  <h2 class="text-center text-4xl font-bold">Subsidiaries</h2>
   <hr class="my-5">
   {% include "gardenSubsidiaries.njk" %}
 
-  <h2 class="text-center text-4xl">Playlists</h2>
+  <h2 class="text-center text-4xl font-bold">Playlists</h2>
   <hr class="my-5">
   {% include "gardenPlaylists.njk" %}
 </div>
