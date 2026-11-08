@@ -185,15 +185,13 @@
     &::after {
       content: '';
       position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
+      inset: 0;
       opacity: 0;
       pointer-events: none;
       mix-blend-mode: hard-light;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='discrete' tableValues='0 1'/%3E%3CfeFuncG type='discrete' tableValues='0 1'/%3E%3CfeFuncB type='discrete' tableValues='0 1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
       background-repeat: repeat;
+      background-size: 150px 150px;
       transition: opacity 0.2s ease;
     }
 
@@ -208,37 +206,39 @@
     animation: grain 0.12s steps(1) infinite;
   }
 
+  /* Shift the noise tile, not the layer. Moving an oversized ::after with
+     transform made a layer too big for some GPUs to draw (homepage, Brave). */
   @keyframes grain {
     0%,
     100% {
-      transform: translate(0, 0);
+      background-position: 0 0;
     }
     10% {
-      transform: translate(-2%, -4%);
+      background-position: -37px -61px;
     }
     20% {
-      transform: translate(-6%, 2%);
+      background-position: -92px 29px;
     }
     30% {
-      transform: translate(3%, -8%);
+      background-position: 46px -123px;
     }
     40% {
-      transform: translate(-2%, 8%);
+      background-position: -31px 118px;
     }
     50% {
-      transform: translate(-6%, 4%);
+      background-position: -88px 57px;
     }
     60% {
-      transform: translate(6%, 0%);
+      background-position: 89px 0;
     }
     70% {
-      transform: translate(0%, 6%);
+      background-position: 0 86px;
     }
     80% {
-      transform: translate(1%, 12%);
+      background-position: 14px 137px;
     }
     90% {
-      transform: translate(-4%, 4%);
+      background-position: -58px 63px;
     }
   }
 
