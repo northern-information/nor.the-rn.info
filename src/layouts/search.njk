@@ -1,13 +1,9 @@
 ---
 layout: base.njk
 ---
+<link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">
 <link rel="stylesheet" href="/styles/pagefind.css?ver={% getTimestamp %}">
-<script src="/pagefind/pagefind-ui.js"></script>
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    new PagefindUI({ element: '#search', showSubResults: true })
-  })
-</script>
+<script type="module" src="/pagefind/pagefind-component-ui.js"></script>
 <h1 class="sr-only">{{ title }}</h1>
 <div class="overflow-hidden border-4 border-solid border-black p-2 pb-10 text-center">
   <p class="font-mono">
@@ -20,5 +16,14 @@ layout: base.njk
   <noscript>
     <p class="py-4 text-center">JavaScript is required for search.</p>
   </noscript>
-  <div id="search"></div>
+  {#- The base plugin does not rewrite these attributes, so add the prefix here. #}
+  <pagefind-config
+    bundle-path="{{ site.META.PATH_PREFIX }}pagefind/"
+    base-url="{{ site.META.PATH_PREFIX }}"
+  ></pagefind-config>
+  <div id="search" class="search">
+    <pagefind-input placeholder="Search"></pagefind-input>
+    <pagefind-summary></pagefind-summary>
+    <pagefind-results></pagefind-results>
+  </div>
 </div>

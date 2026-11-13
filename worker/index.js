@@ -12,35 +12,103 @@ const R2_PATHS = {
   '/img-optimized/': 'site/img-optimized/',
 }
 
+// RFC 9116 puts security.txt at the host root, outside the prefix.
+const SECURITY_TXT_PATH = '/.well-known/security.txt'
+
+// Report-only until the browser consoles show no violations. Webamp sets
+// inline styles, and Pagefind compiles WebAssembly.
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "script-src 'self' 'wasm-unsafe-eval'",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://assets.the-rn.info",
+  "media-src 'self' blob: https://assets.the-rn.info https://dl.the-rn.info",
+  "connect-src 'self' https://assets.the-rn.info https://dl.the-rn.info",
+  "font-src 'self' data:",
+  'frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://bandcamp.com',
+  "worker-src 'self' blob:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+].join('; ')
+
+const SECURITY_HEADERS = {
+  'Content-Security-Policy-Report-Only': CONTENT_SECURITY_POLICY,
+  'Permissions-Policy': 'camera=(), geolocation=(), microphone=()',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Strict-Transport-Security': 'max-age=31536000',
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'SAMEORIGIN',
+}
+
+const IMMUTABLE = 'public, max-age=31536000, immutable'
+
+// A URL that changes when its content changes can be cached for a year:
+// a `ver` query value, or a font (rename it to change it).
+function isVersioned(url) {
+  return url.searchParams.has('ver') || url.pathname.startsWith('/fonts/')
+}
+
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url)
-
-    if (ALIAS_HOSTS.has(url.hostname)) {
-      const target = new URL(request.url)
-      target.hostname = CANONICAL_HOST
-      target.pathname = `${PREFIX}${url.pathname}`
-      return Response.redirect(target.toString(), 301)
+    const response = await route(request, env, ctx)
+    const headers = new Headers(response.headers)
+    for (const [name, value] of Object.entries(SECURITY_HEADERS)) {
+      headers.set(name, value)
     }
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    })
+  },
+}
 
-    // Bare prefix: redirect to the directory form so relative URLs resolve.
-    if (url.pathname === PREFIX) {
-      url.pathname = `${PREFIX}/`
-      return Response.redirect(url.toString(), 301)
-    }
+async function route(request, env, ctx) {
+  const url = new URL(request.url)
 
-    if (url.pathname.startsWith(`${PREFIX}/`)) {
-      url.pathname = url.pathname.slice(PREFIX.length)
-      const imageResponse = await fetchImage(request, url, env, ctx)
-      if (imageResponse) return imageResponse
-      const response = await env.ASSETS.fetch(new Request(url, request))
-      return withPrefixedLocation(response, url)
-    }
+  if (url.pathname === SECURITY_TXT_PATH) {
+    url.pathname = '/security.txt'
+    return env.ASSETS.fetch(new Request(url, request))
+  }
 
+  if (ALIAS_HOSTS.has(url.hostname)) {
     const target = new URL(request.url)
+    target.hostname = CANONICAL_HOST
     target.pathname = `${PREFIX}${url.pathname}`
     return Response.redirect(target.toString(), 301)
-  },
+  }
+
+  // Bare prefix: redirect to the directory form so relative URLs resolve.
+  if (url.pathname === PREFIX) {
+    url.pathname = `${PREFIX}/`
+    return Response.redirect(url.toString(), 301)
+  }
+
+  if (url.pathname.startsWith(`${PREFIX}/`)) {
+    url.pathname = url.pathname.slice(PREFIX.length)
+    const imageResponse = await fetchImage(request, url, env, ctx)
+    if (imageResponse) return imageResponse
+    const response = await env.ASSETS.fetch(new Request(url, request))
+    return withCacheControl(withPrefixedLocation(response, url), url)
+  }
+
+  const target = new URL(request.url)
+  target.pathname = `${PREFIX}${url.pathname}`
+  return Response.redirect(target.toString(), 301)
+}
+
+// ASSETS sends `max-age=0, must-revalidate` for every file.
+function withCacheControl(response, url) {
+  if (!response.ok || !isVersioned(url)) return response
+  const headers = new Headers(response.headers)
+  headers.set('Cache-Control', IMMUTABLE)
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  })
 }
 
 // ASSETS issues its own redirects (e.g. `/about` -> `/about/` via
