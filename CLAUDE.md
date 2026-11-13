@@ -129,9 +129,10 @@ The Worker also:
 
 - Adds security headers to every response. The CSP is `Content-Security-Policy-Report-Only`. Add a new embed or media host to `CONTENT_SECURITY_POLICY` before you change it to an enforced `Content-Security-Policy`.
 - Sets `Cache-Control: public, max-age=31536000, immutable` on URLs with a `ver` query value and on `/fonts/*`. Change a font's file name when its content changes. A file without `?ver=` keeps the ASSETS default (`max-age=0, must-revalidate`).
+- The `ver` value comes from the `assetVersion` shortcode (`lib/assetVersion.js`): a hash of the files you pass it, so a deploy that does not change a file keeps it cached. Pass every file the URL serves or imports. Under `wrangler dev`, a changed file needs a full `npm run build` to get a new `ver`. ASSETS ignores the query string, so the `ver` must come from the file it names.
 - Serves `/.well-known/security.txt` on every host from `dist/security.txt` (`src/security.txt.njk`). Its `Expires` value is 364 days after the build, so deploy at least once a year.
 
-Webamp is a devDependency. `eleventy.config.js` copies its bundle to `/scripts/vendor/webamp.mjs`, and `webamp-init.js` imports it with its own `?ver=` value.
+Webamp is a devDependency. `eleventy.config.js` copies its bundle to `/scripts/vendor/webamp.mjs`, and `webamp-init.js` imports it with its own `?ver=` value. That value hashes both `webamp-init.js` and the Webamp bundle (`base.njk`), so a Webamp upgrade alone also changes it.
 
 ### R2 asset buckets
 

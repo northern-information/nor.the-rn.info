@@ -16,6 +16,7 @@ import {
   SOURCE_URL_PATH,
 } from './lib/images.js'
 import { sectionAnchorsPlugin } from './lib/sectionAnchors.js'
+import { assetVersion } from './lib/assetVersion.js'
 
 const discographyPackageJson = JSON.parse(
   readFileSync(
@@ -250,9 +251,18 @@ export default async (eleventyConfig) => {
       : META.TITLE
   })
 
-  // Cache-busting value for CSS/JS. One value per build, not per page.
-  const buildTimestamp = Math.floor(new Date(META.BUILD_TIME).getTime() / 1000)
-  eleventyConfig.addShortcode('getTimestamp', () => buildTimestamp)
+  // `?ver=` for CSS and JS: a hash of the listed files (see lib/assetVersion.js).
+  // Paths are from the project root. dist/styles/tailwind.css exists because
+  // `npm run build` runs the Tailwind CLI first. The dev server starts both at
+  // once, so a file can be missing there; the Worker is not in that path.
+  eleventyConfig.addShortcode('assetVersion', (...files) => {
+    try {
+      return assetVersion(...files)
+    } catch (error) {
+      if (process.env.ELEVENTY_RUN_MODE === 'serve') return 'dev'
+      throw error
+    }
+  })
 
   eleventyConfig.addFilter('padIndex', (index) => {
     return String(index).padStart(2, '0')

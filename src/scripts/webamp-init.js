@@ -16,7 +16,7 @@ async function initWebamp() {
 
   let Webamp
   try {
-    // Pass on this module's `?ver=` so the Worker caches both for a year.
+    // This module's `?ver=` hashes both files (base.njk), so pass it on.
     const { search } = new URL(import.meta.url)
     const module = await import(`./vendor/webamp.mjs${search}`)
     Webamp = module.default
