@@ -12,6 +12,13 @@ const R2_PATHS = {
   '/img-optimized/': 'site/img-optimized/',
 }
 
+// Pages that moved, keyed by the old path without the prefix. A key with `+`
+// needs its `%2B` form too, because URL keeps the encoding the client sent.
+const MOVED = new Map([
+  ['/2022/12/30/sound-+-process/', '/2022/12/30/sound-and-process/'],
+  ['/2022/12/30/sound-%2B-process/', '/2022/12/30/sound-and-process/'],
+])
+
 // RFC 9116 puts security.txt at the host root, outside the prefix.
 const SECURITY_TXT_PATH = '/.well-known/security.txt'
 
@@ -100,6 +107,11 @@ async function route(request, env, ctx) {
 
   if (url.pathname.startsWith(`${PREFIX}/`)) {
     url.pathname = url.pathname.slice(PREFIX.length)
+    const moved = MOVED.get(url.pathname) ?? MOVED.get(`${url.pathname}/`)
+    if (moved) {
+      url.pathname = `${PREFIX}${moved}`
+      return Response.redirect(url.toString(), 301)
+    }
     const imageResponse = await fetchImage(request, url, env, ctx)
     if (imageResponse) return imageResponse
     const response = await env.ASSETS.fetch(new Request(url, request))

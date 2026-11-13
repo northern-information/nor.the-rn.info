@@ -43,9 +43,18 @@ const files = fs.readdirSync(DIST_DIR, { recursive: true })
 const htmlFiles = files.filter((file) => file.endsWith('.html'))
 const errors = []
 
+// ASSETS redirects a page path with `+` to its percent-encoded form. Headless
+// Chromium got a redirect loop on /2022/12/30/sound-+-process/.
+const SAFE_PAGE_PATH = /^[A-Za-z0-9_\-/.]+$/
+
 for (const file of files) {
   if (AGENT_FILES.test(file)) {
     errors.push(`${file}: built from an agent instruction file`)
+  }
+  if (file.endsWith('.html') && !SAFE_PAGE_PATH.test(file)) {
+    errors.push(
+      `${file}: page path has characters other than letters, digits, -, _ and /`,
+    )
   }
 }
 
