@@ -15,26 +15,37 @@ const R2_PATHS = {
 // RFC 9116 puts security.txt at the host root, outside the prefix.
 const SECURITY_TXT_PATH = '/.well-known/security.txt'
 
-// Report-only until the browser consoles show no violations. Webamp sets
-// inline styles, and Pagefind compiles WebAssembly.
-const CONTENT_SECURITY_POLICY = [
-  "default-src 'self'",
-  "script-src 'self' 'wasm-unsafe-eval'",
-  "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://assets.the-rn.info",
-  "media-src 'self' blob: https://assets.the-rn.info https://dl.the-rn.info",
-  "connect-src 'self' https://assets.the-rn.info https://dl.the-rn.info",
-  "font-src 'self' data:",
-  'frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://bandcamp.com',
-  "worker-src 'self' blob:",
-  "object-src 'none'",
-  "base-uri 'self'",
-  "form-action 'self'",
-  "frame-ancestors 'self'",
-].join('; ')
+// Report-only until the live site shows Cloudflare's injected scripts with
+// the nonce and no violations. Change it to 'Content-Security-Policy' then.
+const CSP_HEADER = 'Content-Security-Policy-Report-Only'
+
+// Webamp sets inline styles, and Pagefind compiles WebAssembly.
+// Cloudflare injects two scripts at the edge: the Web Analytics beacon
+// (static.cloudflareinsights.com, reports to cloudflareinsights.com) and an
+// inline JavaScript Detections script. Cloudflare reads the nonce from this
+// header and adds it to the inline script.
+const contentSecurityPolicy = (nonce) =>
+  [
+    "default-src 'self'",
+    `script-src 'self' 'nonce-${nonce}' 'wasm-unsafe-eval' https://static.cloudflareinsights.com`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: blob: https://assets.the-rn.info",
+    "media-src 'self' blob: https://assets.the-rn.info https://dl.the-rn.info",
+    "connect-src 'self' https://assets.the-rn.info https://dl.the-rn.info https://cloudflareinsights.com",
+    "font-src 'self' data:",
+    'frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://bandcamp.com',
+    "worker-src 'self' blob:",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'self'",
+  ].join('; ')
+
+// A new nonce for every response, as the CSP spec requires.
+const createNonce = () =>
+  btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16))))
 
 const SECURITY_HEADERS = {
-  'Content-Security-Policy-Report-Only': CONTENT_SECURITY_POLICY,
   'Permissions-Policy': 'camera=(), geolocation=(), microphone=()',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Strict-Transport-Security': 'max-age=31536000',
@@ -57,6 +68,7 @@ export default {
     for (const [name, value] of Object.entries(SECURITY_HEADERS)) {
       headers.set(name, value)
     }
+    headers.set(CSP_HEADER, contentSecurityPolicy(createNonce()))
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
