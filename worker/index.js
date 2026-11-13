@@ -15,9 +15,9 @@ const R2_PATHS = {
 // RFC 9116 puts security.txt at the host root, outside the prefix.
 const SECURITY_TXT_PATH = '/.well-known/security.txt'
 
-// Report-only until the live site shows Cloudflare's injected scripts with
-// the nonce and no violations. Change it to 'Content-Security-Policy' then.
-const CSP_HEADER = 'Content-Security-Policy-Report-Only'
+// Enforced. To debug a new embed without breaking pages, change it to
+// 'Content-Security-Policy-Report-Only' for one deploy.
+const CSP_HEADER = 'Content-Security-Policy'
 
 // Webamp sets inline styles, and Pagefind compiles WebAssembly.
 // Cloudflare injects two scripts at the edge: the Web Analytics beacon
