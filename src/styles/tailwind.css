@@ -180,8 +180,18 @@
 
   /* § self-links from lib/sectionAnchors.js. The link follows the heading in
      the DOM, and `order` shows it first. */
+  /* The wrapper takes the heading's margin, so `items-center` centers the §
+     on the heading text and not on its margin box. */
   .section-heading {
-    @apply flex items-baseline gap-2;
+    @apply flex items-center gap-2;
+
+    > :first-child {
+      @apply my-0;
+    }
+  }
+
+  :is(.post, .release) .section-heading {
+    @apply mb-5;
   }
 
   .section-anchor {
