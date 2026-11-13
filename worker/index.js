@@ -40,7 +40,7 @@ const contentSecurityPolicy = (nonce) =>
     "media-src 'self' blob: https://assets.the-rn.info https://dl.the-rn.info",
     "connect-src 'self' https://assets.the-rn.info https://dl.the-rn.info https://cloudflareinsights.com",
     "font-src 'self' data:",
-    'frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com https://bandcamp.com',
+    'frame-src https://www.youtube.com https://w.soundcloud.com https://open.spotify.com',
     "worker-src 'self' blob:",
     "object-src 'none'",
     "base-uri 'self'",

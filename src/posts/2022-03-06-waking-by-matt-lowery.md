@@ -37,4 +37,4 @@ All in it was probably around 50 hours of work. This includes conversations, pai
 
 I'm proud of the work we did together.
 
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=42238277/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://mattlowery.bandcamp.com/album/waking">Waking by Matt Lowery</a></iframe>
+[Listen to waking by Matt Lowery on Bandcamp](https://mattlowery.bandcamp.com/album/waking).
