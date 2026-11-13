@@ -31,7 +31,7 @@ export default [
   },
   {
     url: '/garden/',
-    label: 'More',
+    label: 'Data Gardens',
     match: 'equals',
   },
   {

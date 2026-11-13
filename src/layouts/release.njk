@@ -78,6 +78,7 @@ eleventyComputed:
             <audio
               class="mt-4 w-full {% if hasTrackIds or isLastTrackWithReleaseIds %}mb-4{% else %}mb-8{% endif %}"
               controls
+              preload="none"
               crossorigin="anonymous"
               src="{{ track.mp3_url }}"
               data-title="{{ track.title | escape }}"
