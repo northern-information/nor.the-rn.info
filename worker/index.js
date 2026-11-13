@@ -46,6 +46,7 @@ const contentSecurityPolicy = (nonce) =>
     "base-uri 'self'",
     "form-action 'self'",
     "frame-ancestors 'self'",
+    'upgrade-insecure-requests',
   ].join('; ')
 
 // A new nonce for every response, as the CSP spec requires.

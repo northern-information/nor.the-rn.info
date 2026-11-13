@@ -70,7 +70,7 @@ Narita International Airport, Oct 6, 2017 @ Tokyo, Japan
 Vine Angel, Aug 9, 2017 @ Buchanan, Michigan
 
 ![Lost Arts](/images/lost-arts.jpg)
-Lost Arts, Jul 20, 2017 @ Goose Island, Chicago [http://lostarts.co/](http://lostarts.co/)
+Lost Arts, Jul 20, 2017 @ Goose Island, Chicago [https://lostarts.co/](https://lostarts.co/)
 
 ![Cliffside Park](/images/summer-adventures.jpg)
 Cliffside Park, Jul 2, 2017 @ Cliffside Park, Wisconsin

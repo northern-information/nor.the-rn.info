@@ -5,7 +5,7 @@ date: 2020-06-08
 
 ![My first patch](/images/my-first-patch.jpg)
 
-I've made the plunge into modular. This is my first patch: [Doepfer A-110-1 Standard VCO](http://www.doepfer.de/home_e.htm) into [Intellijel Outs](https://intellijel.com/shop/eurorack/outs/). The result? A sine wave and bottomless joy.
+I've made the plunge into modular. This is my first patch: [Doepfer A-110-1 Standard VCO](https://www.doepfer.de/home_e.htm) into [Intellijel Outs](https://intellijel.com/shop/eurorack/outs/). The result? A sine wave and bottomless joy.
 
 ## TIL
 

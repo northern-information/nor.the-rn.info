@@ -41,7 +41,7 @@ Did we ever heal from 9/11? Why do I feel like we never talk about it anymore? D
 
 ---
 
-I visited the [Vietnam Traveling Memorial Wall](http://www.travelingwall.us/) this year. It was 4th of July and I went with my dad. We talked with a kind docent, walked the entire wall, read many of the names, wandered a forest of American flags.
+I visited the [Vietnam Traveling Memorial Wall](https://www.travelingwall.us/) this year. It was 4th of July and I went with my dad. We talked with a kind docent, walked the entire wall, read many of the names, wandered a forest of American flags.
 
 Maybe I ought to plan a pilgrimage to the 9/11 memorial.
 
@@ -55,5 +55,5 @@ Maybe I ought to plan a pilgrimage to the 9/11 memorial.
 
 It seems either there is something in the air or I'm particularly sensitive to [apophenia](https://en.wikipedia.org/wiki/Apophenia) (again). I read two articles from Wired after I published this that are perfect compliments:
 
-- [Pagers, Pay Phones, and Dialup: How We Communicated on 9/11](https://www.wired.com/story/pagers-pay-phones-and-dialup-how-we-communicated-on-911/) by [Garrett M. Graff](http://www.twitter.com/vermontgmg)
+- [Pagers, Pay Phones, and Dialup: How We Communicated on 9/11](https://www.wired.com/story/pagers-pay-phones-and-dialup-how-we-communicated-on-911/) by [Garrett M. Graff](https://www.twitter.com/vermontgmg)
 - [The Day After 9/11](https://www.wired.com/story/the-day-after-911/) by [Virginia Heffernan](https://twitter.com/page88)

@@ -17,7 +17,7 @@ Dan:
 >
 > this episode is comprised of separate but dovetailing conversations with tyler, ryan and zack — **each recorded almost two years ago**. in the time since, lines and the community surrounding norns have gone through immense changes — and as i revisited this audio, i was struck by how much _possibility_ was still latent in these reflections. their perspectives remain incredibly energizing + inspiring and i'm so humbled to be able to share them as the 23rd episode of this project.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1410615934&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1410615934&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
 Ryan and Zack are two finest travel companions one could ever hope for. I'm holding back tears just thinking about their kindness, artistry, and tenacity. [Everything we do is open source so consider this is a standing invitation for you to join us.](https://github.com/northern-information)
 
