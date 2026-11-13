@@ -2,7 +2,7 @@
   "name": "northern-information",
   "type": "module",
   "engines": {
-    "node": "24.22.3",
+    "node": "26.13.1",
     "npm": ">=10.0.0"
   },
   "scripts": {
