@@ -5,25 +5,55 @@ layout: base.njk
 <link rel="stylesheet" href="/styles/pagefind.css?ver={% getTimestamp %}">
 <script type="module" src="/pagefind/pagefind-component-ui.js"></script>
 <h1 class="sr-only">{{ title }}</h1>
-<div class="overflow-hidden border-4 border-solid border-black p-2 pb-10 text-center">
-  <p class="font-mono">
-    Search the entire Northern Information site.
-    <br>
-    Last indexed: {{ site.META.BUILD_TIME | dateToUTCFull }}
-    <br>
+<div class="mx-auto max-w-3xl px-2 pt-6 pb-16">
+  <p class="mb-4 font-mono text-xs text-gray-400">
+    Index built {{ site.META.BUILD_TIME | dateToUTCFull }}
   </p>
-  <p>&#8258;</p>
   <noscript>
-    <p class="py-4 text-center">JavaScript is required for search.</p>
+    <p class="font-mono text-sm">JavaScript is required for search.</p>
   </noscript>
   {#- The base plugin does not rewrite these attributes, so add the prefix here. #}
   <pagefind-config
     bundle-path="{{ site.META.PATH_PREFIX }}pagefind/"
     base-url="{{ site.META.PATH_PREFIX }}"
+    excerpt-length="24"
   ></pagefind-config>
-  <div id="search" class="search">
+  <div class="search">
     <pagefind-input placeholder="Search"></pagefind-input>
-    <pagefind-summary></pagefind-summary>
-    <pagefind-results></pagefind-results>
+    {#- Components reset their own margins, so space them with wrappers. #}
+    <div class="mt-2 mb-1">
+      <pagefind-summary></pagefind-summary>
+    </div>
+    <pagefind-results max-sub-results="2">
+      {#- Pagefind templates use {{ }} too, so Nunjucks must not render them.
+          Template markup inherits `all: initial`, so set font and color on it. -#}
+      {% raw %}
+      <script type="text/pagefind-template">
+        <li class="border-t border-stone-800 py-3 font-sans text-stone-100">
+          <a href="{{ meta.url | default(url) | safeUrl }}" class="text-base leading-tight font-semibold text-yellow-300 underline decoration-1 underline-offset-2 hover:text-yellow-500 hover:no-underline">{{ meta.title }}</a>
+          {{#if excerpt}}
+          <p class="search-excerpt mt-1 line-clamp-2 text-sm leading-snug text-stone-300">{{+ excerpt +}}</p>
+          {{/if}}
+          {{#if sub_results}}
+          <ul>
+            {{#each sub_results as sub}}
+            {{#if ne(sub.title, meta.title)}}
+            <li class="mt-1 truncate border-l border-stone-700 pl-2 font-mono text-xs leading-5">
+              <a href="{{ sub.url | safeUrl }}" class="text-stone-300 underline decoration-stone-600 underline-offset-2 hover:text-yellow-300">§ {{ sub.title }}</a>
+            </li>
+            {{/if}}
+            {{/each}}
+          </ul>
+          {{/if}}
+        </li>
+      </script>
+      <script type="text/pagefind-template" data-template="placeholder">
+        <li aria-hidden="true" class="border-t border-stone-800 py-3">
+          <div class="h-4 w-1/2 bg-stone-800"></div>
+          <div class="mt-2 h-3 w-5/6 bg-stone-900"></div>
+        </li>
+      </script>
+      {% endraw %}
+    </pagefind-results>
   </div>
 </div>

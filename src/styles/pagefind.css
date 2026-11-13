@@ -1,42 +1,31 @@
 /*
  * Theme for the Pagefind Component UI (src/layouts/search.njk). Components
  * reset inherited styles with `all: initial` and boost their own selectors,
- * so the --pf-* properties are the only supported way to theme them. Custom
- * properties still inherit, so a property set on one element themes only it.
+ * so the --pf-* properties theme the built-in parts. Result markup comes from
+ * the templates in search.njk and uses Tailwind classes.
  */
 .search {
-  --pf-font: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
-  --pf-text: #0c0a09;
-  --pf-text-secondary: #44403c;
-  --pf-text-muted: #57534e;
-  --pf-background: #ffffff;
-  --pf-border: #e7e5e4;
+  --pf-font: 'IBM Plex Mono', ui-monospace, monospace;
+  --pf-text: #f5f5f4;
+  --pf-text-secondary: #a8a29e;
+  --pf-text-muted: #a8a29e;
+  --pf-background: #000000;
+  --pf-border: #44403c;
   --pf-border-focus: #fde047;
-  --pf-hover: #f5f5f4;
-  --pf-mark: #000000;
+  --pf-hover: #1c1917;
   --pf-outline-focus: #fde047;
   --pf-outline-width: 2px;
   --pf-outline-offset: 2px;
   --pf-border-radius: 0;
-  --pf-input-height: 64px;
-  --pf-input-font-size: 21px;
-  --pf-summary-font-size: 16px;
-  --pf-result-title-font-size: 21px;
-  --pf-result-excerpt-font-size: 16px;
+  --pf-input-height: 44px;
+  --pf-input-font-size: 16px;
+  --pf-summary-font-size: 12px;
+  --pf-results-gap: 0;
 }
 
-/* The input and summary sit on the black page, the results on white. */
-.search pagefind-summary {
-  --pf-text: #d6d3d1;
-  --pf-text-secondary: #d6d3d1;
-  --pf-text-muted: #d6d3d1;
-}
-
-.search pagefind-input {
-  --pf-text: #ffffff;
-  --pf-text-secondary: #d6d3d1;
-  --pf-text-muted: #a8a29e;
-  --pf-background: #0c0a09;
-  --pf-border: oklch(63.7% 0.237 25.331);
-  --pf-hover: #292524;
+/* Matches the excerpt markup from Pagefind: <mark> around each hit. */
+.search-excerpt mark {
+  background: none;
+  color: #fde047;
+  font-weight: 600;
 }

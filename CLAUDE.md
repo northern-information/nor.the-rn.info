@@ -105,7 +105,9 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 
 `src/layouts/search.njk` uses the Pagefind Component UI (`<pagefind-input>`, `<pagefind-summary>`, `<pagefind-results>`). `<pagefind-config>` sets `bundle-path` and `base-url` from `site.META.PATH_PREFIX`, because the base plugin does not rewrite those attributes.
 
-`src/styles/pagefind.css` themes the components with `--pf-*` custom properties only. The components reset inherited styles with `all: initial` and raise their own selector specificity, so rules on the inner `.pf-*` classes lose. A property set on one component element (for example `pagefind-input`) themes only that element.
+`src/styles/pagefind.css` themes the built-in parts (input, summary) with `--pf-*` custom properties. The components reset inherited styles with `all: initial` and raise their own selector specificity, so rules on the inner `.pf-*` classes lose, and margins on the component elements are reset (space them with wrapper elements).
+
+Result markup comes from the `<script type="text/pagefind-template">` blocks in `search.njk`, which use Tailwind classes. Keep them inside `{% raw %}`, because Pagefind's template syntax also uses `{{ }}`. Template markup inherits the `all: initial` values, so set font and color classes on it. Each result link must be an `<a>`, because arrow-key navigation moves between `<a>` elements.
 
 ### Release Post Generation
 
