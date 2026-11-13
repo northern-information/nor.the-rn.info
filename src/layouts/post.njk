@@ -3,12 +3,13 @@ layout: base.njk
 ---
 <div class="grid grid-cols-1 gap-1 md:grid-cols-5 xl:grid-cols-4">
   <article class="post px-2 pt-3 md:col-span-3 md:pr-10 xl:col-span-3" data-section-anchors="h2,h3">
-    <time class="font-mono text-sm text-gray-400" datetime="{{ page.date | dateToUTCISO }}">
+    <time class="font-mono text-sm text-gray-400" datetime="{{ page.date | dateToUTCISO }}" data-pagefind-ignore>
       {{- page.date | dateToUTCFull -}}
     </time>
     <a
       href="{{ site.META.GITHUB_URL }}/edit/main/{{ page.inputPath | removeFirst('./') }}"
       class="link-primary ml-2 font-mono text-sm"
+      data-pagefind-ignore
     >
       Edit<span class="sr-only"> on GitHub</span>
     </a>

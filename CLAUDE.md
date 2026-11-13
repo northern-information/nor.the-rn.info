@@ -111,7 +111,7 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 
 `src/styles/pagefind.css` themes the built-in parts (input, summary) with `--pf-*` custom properties. The components reset inherited styles with `all: initial` and raise their own selector specificity, so rules on the inner `.pf-*` classes lose, and margins on the component elements are reset (space them with wrapper elements).
 
-Pagefind indexes everything in `<body>` except `nav` and `footer`. Put `data-pagefind-ignore="all"` on repeated page chrome, such as the related-posts `<aside>` in `post.njk`, or every page that shows it matches the same words.
+Pagefind indexes only `<main data-pagefind-body>` (`base.njk`) and drops pages without it. Set `searchIndex: false` in frontmatter for pages that only list other pages (blog, sitemap) or must not be found (404, search). Inside `<main>`, put `data-pagefind-ignore` on repeated chrome, such as the post date, the Edit link and the related-posts `<aside>`. Before, every 02025 post matched "301 Permanently Moved" through that aside.
 
 Result markup comes from the `<script type="text/pagefind-template">` blocks in `search.njk`, which use Tailwind classes. Keep them inside `{% raw %}`, because Pagefind's template syntax also uses `{{ }}`. Template markup inherits the `all: initial` values, so set font and color classes on it. Each result link must be an `<a>`, because arrow-key navigation moves between `<a>` elements.
 

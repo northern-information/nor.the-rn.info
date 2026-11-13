@@ -22,7 +22,9 @@
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     {% include "nav.njk" %}
-    <main id="main" class="container mx-auto">
+    {#- Pagefind indexes only data-pagefind-body, and drops pages without it.
+        Listing pages set `searchIndex: false`, because they repeat every title. #}
+    <main id="main" class="container mx-auto"{% if searchIndex != false %} data-pagefind-body{% endif %}>
       {{ content | safe }}
     </main>
     {% include "footer.njk" %}
