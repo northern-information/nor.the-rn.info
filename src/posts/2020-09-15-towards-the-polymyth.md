@@ -56,7 +56,7 @@ Working together can be hard. For each project listed in my [discography](/disco
 I write, release, and perform music for two reasons. Firstly for myself - because I love the craft, I love the expression, I love the joy of creating. Secondly for you - as an offering, a gift, a chance to have experiences like those I've had in mosh pits where I've simultaneously lost and found myself.
 
 This year has marked a huge shift in my practice. I still write music, but I've gravitated towards programming tools _for others_ to write music.
-[Cascades](http://l.llllllll.co/cascades), [Conway Music](http://l.llllllll.co/conway), [Markov Music](http://l.llllllll.co/markov), [dronecaster](http://l.llllllll.co/dronecaster), and [arcologies](http://l.llllllll.co/arcologies) are each expressions of my aesthetics translated into code. Making tools for others is fun, and [watching what people make with them is totally surreal](https://tyleretters.github.io/arcologies-docs/gallery).
+[Cascades](https://l.llllllll.co/cascades), [Conway Music](https://l.llllllll.co/conway), [Markov Music](https://l.llllllll.co/markov), [dronecaster](https://l.llllllll.co/dronecaster), and [arcologies](https://l.llllllll.co/arcologies) are each expressions of my aesthetics translated into code. Making tools for others is fun, and [watching what people make with them is totally surreal](https://tyleretters.github.io/arcologies-docs/gallery).
 
 All these pieces of software share a common thread, and that thread is [monome](https://monome.org). A long time ago I saw the grid and knew one day I would get one and make really cool shit with it. The monome community has helped me stay anchored to myself through the solstagia, anxiety, and depression of 2020.
 

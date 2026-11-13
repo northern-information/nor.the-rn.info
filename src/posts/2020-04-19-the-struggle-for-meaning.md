@@ -10,7 +10,7 @@ The great struggles of my life have always been near the peak of [Maslow's hiera
 
 > _What a man can be, he must be._ This quotation forms the basis of the perceived need for self-actualization. This level of need refers to the realization of one's full potential. Maslow describes this as the desire to accomplish everything that one can, to become the most that one can be.
 
-Recommended listening for this post: [http://northerninformation.bandcamp.com/album/blue-the-most-celestial-color](http://northerninformation.bandcamp.com/album/blue-the-most-celestial-color)
+Recommended listening for this post: [https://northerninformation.bandcamp.com/album/blue-the-most-celestial-color](https://northerninformation.bandcamp.com/album/blue-the-most-celestial-color)
 
 ## Self-Actualization
 
@@ -26,7 +26,7 @@ I've had many six minute miles in my life. Beyond finishing college to earn my B
 - Writing [Serial Index of Unclaimed Memories](https://ecicefis.bandcamp.com/album/serial-index-of-unclaimed-memories-file-1) and [Gates](https://ecicefis.bandcamp.com/album/gates-ep) with Pasha.
 - Photographing a cicada emerging from its shell.
 - Jamming electronic music with Adam and Pasha.
-- Coding the early versions of [endlessfieldstudios.com](https://web.archive.org/web/20120308041423/http://endlessfieldstudios.com/).
+- Coding the early versions of [endlessfieldstudios.com](https://web.archive.org/web/20120308041423/https://endlessfieldstudios.com/).
 - Meeting & marrying [Sage](https://etters.co).
 - Writing [Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms).
 - Playing at Swing State.
@@ -44,7 +44,7 @@ Another interesting commonality is that everything on this list was, to some deg
 _Cicada Emerging by Tyler Etters, photograph, 2009_
 
 ![Terraforms](/images/terraforms.jpg)
-_[Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms) music by Tyler Etters, illustration by [Lynda Wallis](http://www.freelanceillustrations.com/), 2011_
+_[Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms) music by Tyler Etters, illustration by [Lynda Wallis](https://www.freelanceillustrations.com/), 2011_
 
 The cicada became a powerful symbol to me after I photographed it that summer day in 2009. I was at my grandmother's house in Crystal Lake, Illinois. The whole family was over for a party. I went off to a stand of pines with my camera.
 

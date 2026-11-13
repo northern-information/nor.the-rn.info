@@ -59,7 +59,7 @@ I wake up and head to work. It's an intense day of cleaning, IT, organizing, get
 
 After work I meet with Glenn for sushi. He drove up from Michigan just to see me.
 
-Then something happens to me. I still cannot quite put my finger on it. I find myself at the [Skylark](http://www.skylarkchicago.com/). I'm walking up Halsted. I meet people. I see neon angels. I visit a shoppe. Paranoia sets in.
+Then something happens to me. I still cannot quite put my finger on it. I find myself at the [Skylark](https://www.skylarkchicago.com/). I'm walking up Halsted. I meet people. I see neon angels. I visit a shoppe. Paranoia sets in.
 
 Higher planes probing. Lower planes striving.
 
