@@ -7,7 +7,7 @@ function parseDuration(timeStr) {
 }
 
 async function initWebamp() {
-  // Only run on pages with an explicit target (release pages)
+  // Release pages only.
   const target = document.getElementById('webamp-target')
   if (!target) return
 
@@ -50,8 +50,6 @@ async function initWebamp() {
 
   if (tracks.length === 0) return
 
-  const container = target
-
   try {
     const webamp = new Webamp({
       initialTracks: tracks,
@@ -61,15 +59,15 @@ async function initWebamp() {
         playlist: { position: { top: 232, left: 0 } },
       },
     })
-    await webamp.renderWhenReady(container)
+    await webamp.renderWhenReady(target)
 
-    // Move #webamp into our container if Webamp rendered it elsewhere
+    // Webamp can render #webamp outside the target.
     const webampEl = document.querySelector('#webamp')
-    if (webampEl && !container.contains(webampEl)) {
-      container.appendChild(webampEl)
+    if (webampEl && !target.contains(webampEl)) {
+      target.appendChild(webampEl)
     }
 
-    // Walk up from a window element to find the positioned wrapper
+    // The positioned ancestor of a Webamp window.
     function findTransformWrapper(el) {
       let node = el.parentElement
       while (node && node !== webampEl) {
@@ -102,7 +100,6 @@ async function initWebamp() {
     }
 
     function enforcePositions() {
-      // Position the 3 known windows
       for (const { id, top, left } of windowPositions) {
         const win = document.getElementById(id)
         if (!win) continue
@@ -114,7 +111,7 @@ async function initWebamp() {
         }
       }
 
-      // Force #webamp into document flow
+      // Keep #webamp in document flow.
       if (webampEl) {
         webampEl.style.setProperty('position', 'relative', 'important')
         webampEl.style.setProperty('top', 'auto', 'important')
@@ -124,9 +121,9 @@ async function initWebamp() {
         webampEl.style.setProperty('transform', 'none', 'important')
         webampEl.style.height = nativeHeight + 'px'
 
-        container.style.height = nativeHeight + 'px'
-        container.style.marginBottom = '1rem'
-        container.style.overflow = 'hidden'
+        target.style.height = nativeHeight + 'px'
+        target.style.marginBottom = '1rem'
+        target.style.overflow = 'hidden'
       }
 
       const desktop = document.querySelector('.webamp-desktop')
@@ -154,8 +151,8 @@ async function initWebamp() {
     webamp.onClose(() => {
       observer.disconnect()
       window.removeEventListener('resize', enforcePositions)
-      container.style.height = ''
-      container.style.marginBottom = ''
+      target.style.height = ''
+      target.style.marginBottom = ''
     })
   } catch (err) {
     console.error('[webamp-init] error:', err)

@@ -87,10 +87,14 @@ async function fetchImage(request, url, env, ctx) {
   let response = await cache.match(cacheKey)
 
   if (!response) {
-    const key =
-      R2_PATHS[pathPrefix] +
-      decodeURIComponent(url.pathname.slice(pathPrefix.length))
-    const object = await env.IMAGES.get(key)
+    let name
+    try {
+      name = decodeURIComponent(url.pathname.slice(pathPrefix.length))
+    } catch {
+      // A malformed escape such as `%E0` is not an object name.
+      return null
+    }
+    const object = await env.IMAGES.get(R2_PATHS[pathPrefix] + name)
     if (!object) return null
 
     const headers = new Headers()

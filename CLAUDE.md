@@ -22,7 +22,7 @@ The Node version is pinned in three places that must stay in sync:
 - `.nvmrc` — read by nvm and by CI (`actions/setup-node` `node-version-file`)
 - `package.json` `engines.node`
 
-Use the exact patch version (e.g. `24.22.2`), never a range or major-only (`^24`, `24`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
+Use the exact patch version (e.g. `26.13.1`), never a range or major-only (`^26`, `26`). When bumping Node, update all three files in the same commit and regenerate `package-lock.json`.
 
 npm 11.19+ (bundled with Node 24.21 and later) blocks dependency install scripts unless they're listed in `allowScripts`. `esbuild`, `workerd`, `@parcel/watcher` and `fsevents` are explicitly denied (`false`) in `package.json` so `npm ci` doesn't warn about them: they fall back to their prebuilt binaries, and `npm run build`, `wrangler dev` and `wrangler deploy` all work without them. A new dependency with an install script will warn again; review it, then run `npm install-scripts deny <pkg>` or `npm install-scripts approve <pkg>`. `approve` won't override an existing `false` entry, so to allow one of the four, change its value to `true` by hand.
 
@@ -103,7 +103,7 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 
 ### Search
 
-`src/styles/pagefind.css` is a customized copy of Pagefind's default UI stylesheet and targets its Svelte hash classes (`.svelte-e9gkc3` etc.). Re-check it after bumping `pagefind`.
+`src/styles/pagefind.css` is a customized copy of Pagefind's default UI stylesheet and targets its Svelte hash classes (`.svelte-e9gkc3` etc.). Re-check it after bumping `pagefind`: `grep -rho 'svelte-[a-z0-9]*' dist/pagefind/ | sort -u` must list the same classes. Pagefind 1.6 marks the Default UI as deprecated in favor of the Component UI.
 
 ### Release Post Generation
 

@@ -19,13 +19,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const POSTS_DIR = path.join(__dirname, '../src/posts')
 
-/**
- * Convert discography date to blog-friendly date
- * Handles: "02025-11-18", "2006-??-??", "2006-05-??"
- * Unknown month/day become 01 (so partial dates post on January 1st).
- */
+// "02025-11-18" -> "2025-11-18". Unknown month or day ("2006-??-??") becomes 01.
 function parseReleaseDate(dateStr) {
-  // Remove leading zero for Long Now format (02025 -> 2025)
   const normalized = dateStr.replace(/^0+/, '').replace(/\?\?/g, '01')
 
   if (!/^\d{4}-\d{2}-\d{2}$/.test(normalized)) {
@@ -35,30 +30,20 @@ function parseReleaseDate(dateStr) {
   return normalized
 }
 
-/**
- * Normalize Unicode fancy characters (e.g., Mathematical Script/Fraktur) to ASCII.
- * Uses NFKD decomposition to convert styled Unicode to base characters.
- */
+// NFKD turns styled Unicode (Mathematical Script, Fraktur) into base letters.
 function normalizeUnicode(text) {
   return text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
 }
 
-/**
- * Format track duration (handles various formats)
- */
+// "00:03:45" -> "3:45"
 function formatDuration(length) {
   if (!length) return ''
-  // Remove leading zeros from hours if present (00:03:45 -> 3:45)
   return length.replace(/^00:/, '').replace(/^0/, '')
 }
 
-/**
- * Generate markdown content for a release
- */
 function generatePostContent(release) {
   const lines = []
 
-  // Frontmatter
   lines.push('---')
   const title = normalizeUnicode(release.title)
   lines.push(`title: "${title.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`)
@@ -66,14 +51,11 @@ function generatePostContent(release) {
   lines.push('---')
   lines.push('')
 
-  // Artwork
   if (release.cover_url) {
     lines.push(`![${title}](${release.cover_url})`)
     lines.push('')
   }
 
-  // Release info
-  // Project pages only exist for canonical slugs (see src/data/projects.js)
   const projectUrl = `/project/${getCanonicalProjectSlug(release.project_slug)}/`
   lines.push(`**${release.type}** by **[${release.project}](${projectUrl})**`)
   if (release.label) {
@@ -81,12 +63,10 @@ function generatePostContent(release) {
   }
   lines.push('')
 
-  // Listen & Download link
   const releaseUrl = `${META.CANONICAL}music/${release.project_slug}/${release.release_slug}/`
   lines.push(`[Listen & Download](${releaseUrl})`)
   lines.push('')
 
-  // Track list
   if (release.tracks && release.tracks.length > 0) {
     lines.push('## Tracklist')
     lines.push('')
@@ -100,7 +80,6 @@ function generatePostContent(release) {
     lines.push('')
   }
 
-  // Notes
   if (release.notes && release.notes.trim()) {
     lines.push('## Notes')
     lines.push('')
@@ -108,7 +87,6 @@ function generatePostContent(release) {
     lines.push('')
   }
 
-  // Credits
   if (release.credits && release.credits.trim()) {
     lines.push('## Credits')
     lines.push('')
@@ -119,27 +97,12 @@ function generatePostContent(release) {
   return lines.join('\n')
 }
 
-/**
- * Generate filename for a release post
- * Uses release_slug from discography as the canonical slug to handle
- * titles with Unicode fancy characters, curly quotes, periods, etc.
- */
+// release_slug is safe for file names. Titles can hold fancy Unicode and quotes.
 function generateFilename(release) {
   const date = parseReleaseDate(release.released)
   return `${date}-${release.release_slug}.md`
 }
 
-/**
- * Check if a post already exists for a release
- */
-function postExists(release) {
-  const filename = generateFilename(release)
-  return fs.existsSync(path.join(POSTS_DIR, filename))
-}
-
-/**
- * Write a post for a release
- */
 function writePost(release, overwrite = false) {
   const filename = generateFilename(release)
   const filepath = path.join(POSTS_DIR, filename)
@@ -155,9 +118,6 @@ function writePost(release, overwrite = false) {
   return true
 }
 
-/**
- * Main function
- */
 function main() {
   const args = process.argv.slice(2)
   const overwriteAll = args.includes('--all')
@@ -168,16 +128,12 @@ function main() {
   console.log('======================')
   console.log(`Found ${discography.length} releases in discography\n`)
 
-  // Ensure posts directory exists
-  if (!fs.existsSync(POSTS_DIR)) {
-    fs.mkdirSync(POSTS_DIR, { recursive: true })
-  }
+  fs.mkdirSync(POSTS_DIR, { recursive: true })
 
   let created = 0
   let skipped = 0
 
   if (specificRelease) {
-    // Find and generate specific release
     const release = discography.find(
       (r) =>
         normalizeUnicode(r.title).toLowerCase() ===
@@ -196,7 +152,6 @@ function main() {
       created++
     }
   } else {
-    // Generate all releases
     console.log(
       overwriteAll
         ? 'Regenerating ALL posts...\n'
