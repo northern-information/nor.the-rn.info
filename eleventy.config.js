@@ -28,9 +28,17 @@ const discographyPackageJson = JSON.parse(
 
 const LONG_NOW_YEAR_DIGITS = 5
 
-// The site is served from this prefix. Eleventy's pathPrefix + HtmlBasePlugin
-// rewrite root-relative URLs in the output; dist/ itself stays flat and the
-// Worker strips the prefix before hitting the ASSETS binding.
+const git = (...args) => {
+  try {
+    return execSync(`git ${args.join(' ')}`)
+      .toString()
+      .trim()
+  } catch {
+    return 'unknown'
+  }
+}
+
+// HtmlBasePlugin adds this prefix to output URLs. The Worker strips it.
 export const PATH_PREFIX = '/rm_ation/'
 
 export const META = {
@@ -42,20 +50,8 @@ export const META = {
   DESCRIPTION: 'LONG LIVE THE LOST ONES',
   FAVICON: 'favicon.ico',
   FEED: 'feed.xml',
-  GIT_HASH_SHORT: (() => {
-    try {
-      return execSync('git rev-parse --short HEAD').toString().trim()
-    } catch {
-      return 'unknown'
-    }
-  })(),
-  GIT_HASH: (() => {
-    try {
-      return execSync('git rev-parse HEAD').toString().trim()
-    } catch {
-      return 'unknown'
-    }
-  })(),
+  GIT_HASH_SHORT: git('rev-parse', '--short', 'HEAD'),
+  GIT_HASH: git('rev-parse', 'HEAD'),
   GITHUB_URL: 'https://github.com/northern-information/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
@@ -78,7 +74,7 @@ export const getReleaseSlug = memoize((release) => {
   return `${release.project_slug}/${release.release_slug}/`
 })
 
-// Map a release's project_slug to the canonical project slug
+// Releases use alias slugs. Project pages exist only for the canonical slug.
 export const getCanonicalProjectSlug = memoize((projectSlug) => {
   for (const project of projects) {
     const allSlugs = project.slugs || [project.slug]
@@ -89,10 +85,7 @@ export const getCanonicalProjectSlug = memoize((projectSlug) => {
   return projectSlug
 })
 
-// Collect the site's public page URLs from a collection (e.g. `collections.all`)
-// as deduped, sorted flat pathnames (unprefixed, as Eleventy's `page.url`).
-// Prefixed with META.CANONICAL they match the canonical URLs emitted in
-// metaTags.njk, and they seed both the XML and HTML sitemaps.
+// Sorted, unprefixed page URLs for the XML and HTML sitemaps.
 const collectSitemapUrls = (collection) => {
   const seen = new Set()
   for (const item of collection || []) {
@@ -105,10 +98,7 @@ const collectSitemapUrls = (collection) => {
   return [...seen].sort((a, b) => a.localeCompare(b))
 }
 
-// Build a single directory-style tree rooted at "/" from flat pathnames. Each
-// URL segment becomes a node; a node is a linkable page when a pathname
-// terminates on it, otherwise a structural directory. A trailing slash marks a
-// directory (a node with descendants); leaf pages read as files without one.
+// A directory tree from flat pathnames. A name with a trailing slash has children.
 const buildSitemapTree = (pathnames) => {
   const root = { segment: '/', url: null, isHtml: false, children: new Map() }
 
@@ -151,10 +141,8 @@ const buildSitemapTree = (pathnames) => {
   return finalize(root)
 }
 
-// Helper to parse dates, handling:
-// - JS Date objects from frontmatter (midnight UTC)
-// - 5-digit Long Now years (e.g., "02006-01-01" -> "2006-01-01")
-// - Partial dates with ?? for unknown month/day (e.g., "02006-??-??")
+// Accepts frontmatter Dates (midnight UTC), Long Now strings ("02006-01-01")
+// and partial dates ("02006-??-??").
 const parseDate = (date) => {
   if (date instanceof Date) {
     const dt = DateTime.fromJSDate(date, { zone: 'utc' })
@@ -169,8 +157,7 @@ const parseDate = (date) => {
   return dt.isValid ? { dt, partial: false } : null
 }
 
-// Sortable timestamp for a Long Now release date; unknown month/day sort as
-// January 1st, unparseable dates sort last (descending).
+// Partial dates sort as January 1st. Unparseable dates sort last (descending).
 const getReleaseTimestamp = (date) => {
   const parsed = parseDate(date)
   if (!parsed) return Number.MIN_SAFE_INTEGER
@@ -185,9 +172,7 @@ export default async (eleventyConfig) => {
       : META.TITLE
   })
 
-  // Cache-busting query param for CSS/JS. Uses the build start time so every
-  // page in a build shares one value (a per-render timestamp would differ
-  // between pages and defeat browser caching).
+  // Cache-busting value for CSS/JS. One value per build, not per page.
   const buildTimestamp = Math.floor(new Date(META.BUILD_TIME).getTime() / 1000)
   eleventyConfig.addShortcode('getTimestamp', () => buildTimestamp)
 
@@ -197,7 +182,6 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('formatTrackLength', (input) => {
     if (typeof input !== 'string') return input
-    // Strip leading "00:" for tracks under an hour (e.g., "00:03:13" -> "03:13")
     return input.replace(/^00:/, '')
   })
 
@@ -241,8 +225,7 @@ export default async (eleventyConfig) => {
     figcaption: false,
   })
 
-  // Tag remote images so imagesPlugin skips them. Release covers
-  // on the R2 asset buckets are already optimized.
+  // Remote images (release covers on R2) skip imagesPlugin.
   const defaultImageRender =
     markdownLib.renderer.rules.image ||
     ((tokens, idx, options, env, self) =>
@@ -266,7 +249,6 @@ export default async (eleventyConfig) => {
   )
 
   const linkifyUrl = (url) => {
-    // Clean up trailing punctuation that's likely not part of the URL
     const trailingPunct = /[.,;:!?)]+$/
     const match = url.match(trailingPunct)
     const cleanUrl = match ? url.slice(0, -match[0].length) : url
@@ -276,10 +258,7 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('linkify', (content) => {
     if (typeof content !== 'string') return content
-    // Convert bare URLs (http, https) in text to anchor tags. Existing <a>
-    // elements and all tags (and therefore attribute values) are passed through
-    // untouched, so already-linked URLs are not wrapped a second time.
-    // split() with a capture group puts the skipped markup at odd indexes.
+    // Link bare URLs. Tags and existing <a> elements land at odd indexes.
     const skipRegex = /(<a\b[\s\S]*?<\/a>|<[^>]*>)/gi
     const urlRegex = /https?:\/\/[^\s<>"']+/gi
     return content
@@ -317,21 +296,17 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addFilter('extractFirstImage', (content) => {
     if (typeof content !== 'string') return null
-    // Match the first <img> tag and extract its src attribute
     const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i)
     return imgMatch ? imgMatch[1] : null
   })
 
-  // RSS feed filters (for custom feed template in src/feed.njk)
   eleventyConfig.addFilter('toAbsoluteUrl', (url, baseUrl) => {
-    // Converts a URL to absolute if it's relative
     if (!url || typeof url !== 'string') return url
     if (url.startsWith('http://') || url.startsWith('https://')) return url
     const base = baseUrl.replace(/\/$/, '')
     return url.startsWith('/') ? base + url : `${base}/${url}`
   })
 
-  // MIME type for an RSS <enclosure> from the image URL's extension.
   eleventyConfig.addFilter('imageMimeType', (url) => {
     const ext = String(url).split(/[?#]/)[0].split('.').pop().toLowerCase()
     const types = {
@@ -346,19 +321,13 @@ export default async (eleventyConfig) => {
     return types[ext] || 'application/octet-stream'
   })
 
-  eleventyConfig.addFilter('dateToRfc822Utc', (dateObj) => {
-    // Formats dates as RFC 822 with GMT timezone for RSS feeds
-    const date = new Date(dateObj)
-    return date.toUTCString()
-  })
+  eleventyConfig.addFilter('dateToRfc822Utc', (dateObj) =>
+    new Date(dateObj).toUTCString()
+  )
 
-  // Converts relative src/href/srcset URLs in HTML to absolute URLs for feeds.
-  // Root-relative URLs (`/images/x.png`) resolve against the site root
-  // (META.CANONICAL, which carries PATH_PREFIX); document-relative ones (`x.png`) resolve
-  // against `pageUrl`. Content here has not been through HtmlBasePlugin yet, so
-  // root-relative URLs are still unprefixed. URLs with a scheme (`https:`,
-  // `mailto:`, `data:`), protocol-relative `//` URLs, and `#` fragments pass
-  // through untouched.
+  // Feed content has not been through HtmlBasePlugin, so root-relative URLs
+  // are unprefixed and resolve against META.CANONICAL. Relative URLs resolve
+  // against `pageUrl`. Schemes, `//` and `#` URLs pass through.
   eleventyConfig.addFilter(
     'convertHtmlToAbsoluteUrls',
     (htmlContent, pageUrl) => {
@@ -388,35 +357,30 @@ export default async (eleventyConfig) => {
     }
   )
 
-  // Replace the last occurrence of `find` with `replace` (Nunjucks lacks Liquid's replace_last).
+  // Nunjucks has no replace_last or remove_first.
   eleventyConfig.addFilter('replaceLast', (s, find, replace) => {
     if (typeof s !== 'string') return s
     const i = s.lastIndexOf(find)
     return i === -1 ? s : s.slice(0, i) + replace + s.slice(i + find.length)
   })
 
-  // Remove the first occurrence of `find` (Nunjucks lacks Liquid's remove_first).
   eleventyConfig.addFilter('removeFirst', (s, find) => {
     if (typeof s !== 'string') return s
     return s.replace(find, '')
   })
 
-  // Absolute page URLs for the XML sitemap (src/sitemap.njk). `base` is
-  // META.CANONICAL, which already carries the path prefix and trailing slash.
+  // `base` is META.CANONICAL, with the prefix and trailing slash.
   eleventyConfig.addFilter('sitemapUrls', (collection, base) =>
     collectSitemapUrls(collection).map((url) =>
       new URL(url.slice(1), base).toString()
     )
   )
 
-  // Nested directory tree for the human-readable sitemap (src/pages/sitemap.njk).
   eleventyConfig.addFilter('sitemapTree', (collection) =>
     buildSitemapTree(collectSitemapUrls(collection))
   )
 
-  // Templates render HTML directly without piping every interpolation through
-  // `| safe`. All template inputs are trusted (markdown content, JS data files
-  // in src/data/, package constants); escape attribute values with `| escape`.
+  // All inputs are trusted. Escape attribute values with `| escape`.
   eleventyConfig.setNunjucksEnvironmentOptions({
     autoescape: false,
   })
@@ -427,18 +391,15 @@ export default async (eleventyConfig) => {
     extensions: 'html,md,css',
   })
 
-  // Site images live in R2 and the Worker serves them (see lib/images.js).
-  // `npm run images` and the dev server process local files in src/images/;
-  // a production build reads only images.manifest.json.
+  // A production build reads only images.manifest.json (see lib/images.js).
   const isServe = process.env.ELEVENTY_RUN_MODE === 'serve'
   eleventyConfig.addPlugin(imagesPlugin, {
     process: isServe || process.env.IMAGES_PROCESS === '1',
   })
 
   if (isServe) {
-    // Serve local image files when they exist, and redirect to the public
-    // R2 domain when they do not. The dev server serves passthrough files in
-    // place, so they never land in dist/ and a later deploy cannot ship them.
+    // Serve local images in place (never copied to dist/). Redirect missing
+    // ones to R2.
     eleventyConfig.setServerPassthroughCopyBehavior('passthrough')
     eleventyConfig.addPassthroughCopy({ [SOURCE_DIR]: SOURCE_URL_PATH })
     eleventyConfig.addPassthroughCopy({ [OPTIMIZED_DIR]: OPTIMIZED_URL_PATH })
@@ -458,9 +419,13 @@ export default async (eleventyConfig) => {
           )
           if (!urlPath) return next()
           const name = unprefixed.slice(urlPath.length)
-          if (existsSync(`${localDirs[urlPath]}/${decodeURIComponent(name)}`)) {
+          let file
+          try {
+            file = `${localDirs[urlPath]}/${decodeURIComponent(name)}`
+          } catch {
             return next()
           }
+          if (existsSync(file)) return next()
           res.writeHead(302, {
             Location: `${R2.PUBLIC_URL}${urlPath}${name}`,
           })
@@ -486,7 +451,6 @@ export default async (eleventyConfig) => {
     }))
   })
 
-  // Year from a Long Now date (e.g., "02025-11-18" or "02006-??-??")
   const getYearFromDate = (date) => {
     const parsed = parseDate(date)
     if (!parsed) return null
@@ -494,7 +458,6 @@ export default async (eleventyConfig) => {
   }
 
   eleventyConfig.addCollection('projects', () => {
-    // Validate all discography projects are accounted for
     const discographyProjectSlugs = [
       ...new Set(discography.map((r) => r.project_slug)),
     ]
