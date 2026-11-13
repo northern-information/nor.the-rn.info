@@ -15,6 +15,7 @@ import {
   SOURCE_DIR,
   SOURCE_URL_PATH,
 } from './lib/images.js'
+import { sectionAnchorsPlugin } from './lib/sectionAnchors.js'
 
 const discographyPackageJson = JSON.parse(
   readFileSync(
@@ -471,6 +472,7 @@ export default async (eleventyConfig) => {
   })
 
   eleventyConfig.addPlugin(IdAttributePlugin)
+  eleventyConfig.addPlugin(sectionAnchorsPlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     extensions: 'html,md,css',

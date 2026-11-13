@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 <div class="grid grid-cols-1 gap-1 md:grid-cols-5 xl:grid-cols-4">
-  <article class="post px-2 pt-3 md:col-span-3 md:pr-10 xl:col-span-3">
+  <article class="post px-2 pt-3 md:col-span-3 md:pr-10 xl:col-span-3" data-section-anchors="h2,h3">
     <time class="font-mono text-sm text-gray-400" datetime="{{ page.date | dateToUTCISO }}">
       {{- page.date | dateToUTCFull -}}
     </time>
@@ -15,7 +15,8 @@ layout: base.njk
     <h1 class="mb-4 text-4xl font-bold">{{ title }}</h1>
     {{ content | safe }}
   </article>
-  <aside class="md:col-span-2 xl:col-span-1" aria-label="Related posts from the same year">
+  {#- Not indexed: every post from a year lists the same titles here. #}
+  <aside class="md:col-span-2 xl:col-span-1" aria-label="Related posts from the same year" data-pagefind-ignore="all">
     {% set postDate = page.date | dateToUTCYear %}
     {% for group in collections.postsByYear %}
       {% if postDate == group.year %}

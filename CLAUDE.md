@@ -101,11 +101,17 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 - Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build. SVGs under `/images/` (the footer logo in `footer.njk`, the webring icon in `links.njk`) also carry `eleventy:ignore`, so they are served as-is from R2 with no derivatives.
 - An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
 
+### Section anchors
+
+`lib/sectionAnchors.js` adds a `§` self-link to each heading inside an element with `data-section-anchors` (the value lists the tags, for example `"h2,h3"` on the post `<article>`, `"h3"` on the release details). It reads the `id` that `IdAttributePlugin` assigns, so it must run after that plugin. CSS draws the `§` with `::before`, so search, feeds and excerpts do not contain it.
+
 ### Search
 
 `src/layouts/search.njk` uses the Pagefind Component UI (`<pagefind-input>`, `<pagefind-summary>`, `<pagefind-results>`). `<pagefind-config>` sets `bundle-path` and `base-url` from `site.META.PATH_PREFIX`, because the base plugin does not rewrite those attributes.
 
 `src/styles/pagefind.css` themes the built-in parts (input, summary) with `--pf-*` custom properties. The components reset inherited styles with `all: initial` and raise their own selector specificity, so rules on the inner `.pf-*` classes lose, and margins on the component elements are reset (space them with wrapper elements).
+
+Pagefind indexes everything in `<body>` except `nav` and `footer`. Put `data-pagefind-ignore="all"` on repeated page chrome, such as the related-posts `<aside>` in `post.njk`, or every page that shows it matches the same words.
 
 Result markup comes from the `<script type="text/pagefind-template">` blocks in `search.njk`, which use Tailwind classes. Keep them inside `{% raw %}`, because Pagefind's template syntax also uses `{{ }}`. Template markup inherits the `all: initial` values, so set font and color classes on it. Each result link must be an `<a>`, because arrow-key navigation moves between `<a>` elements.
 

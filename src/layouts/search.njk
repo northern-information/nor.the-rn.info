@@ -5,7 +5,7 @@ layout: base.njk
 <link rel="stylesheet" href="/styles/pagefind.css?ver={% getTimestamp %}">
 <script type="module" src="/pagefind/pagefind-component-ui.js"></script>
 <h1 class="sr-only">{{ title }}</h1>
-<div class="mx-auto max-w-3xl px-2 pt-6 pb-16">
+<div class="mx-auto max-w-3xl px-2 pt-6 pb-16" data-pagefind-ignore="all">
   <p class="mb-4 font-mono text-xs text-gray-400">
     Index built {{ site.META.BUILD_TIME | dateToUTCFull }}
   </p>

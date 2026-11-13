@@ -178,6 +178,20 @@
     @apply text-yellow-300 underline hover:text-yellow-500 hover:no-underline;
   }
 
+  /* § self-links from lib/sectionAnchors.js. The link follows the heading in
+     the DOM, and `order` shows it first. */
+  .section-heading {
+    @apply flex items-baseline gap-2;
+  }
+
+  .section-anchor {
+    @apply order-first font-mono text-gray-400 no-underline hover:text-yellow-300;
+
+    &::before {
+      content: '§';
+    }
+  }
+
   .grain,
   .grain-hover {
     position: relative;

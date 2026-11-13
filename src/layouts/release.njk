@@ -10,7 +10,7 @@ eleventyComputed:
       <img src="{{ release.cover_url }}" alt="{{ release.title | escape }} cover" class="h-auto w-full" eleventy:ignore>
     </a>
   </div>
-  <div class="px-2 pt-3">
+  <div class="px-2 pt-3" data-section-anchors="h3">
     <time
       class="font-mono text-sm text-gray-400"
       datetime="{{ release.released | dateToUTCISO }}"
