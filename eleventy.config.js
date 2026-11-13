@@ -15,6 +15,8 @@ import {
   SOURCE_DIR,
   SOURCE_URL_PATH,
 } from './lib/images.js'
+import { sectionAnchorsPlugin } from './lib/sectionAnchors.js'
+import { assetVersion } from './lib/assetVersion.js'
 
 const discographyPackageJson = JSON.parse(
   readFileSync(
@@ -55,6 +57,8 @@ export const META = {
   GITHUB_URL: 'https://github.com/northern-information/nor.the-rn.info',
   INVOCATION: 'cd LOST_DIR && ./DISAPPEAR',
   LOGO: 'applied-sciences-and-phantasms-working-division.png',
+  PATH_PREFIX,
+  THEME_COLOR: '#000000',
   DISCOGRAPHY_URL: 'https://www.npmjs.com/package/@tyleretters/discography',
   DISCOGRAPHY_VERSION: discographyPackageJson.version,
   TITLE: 'Northern Information',
@@ -165,16 +169,100 @@ const getReleaseTimestamp = (date) => {
   return parsed.dt.toMillis()
 }
 
+// "00:03:13" -> "PT0H3M13S" (ISO 8601 duration for schema.org).
+const toIsoDuration = (length) => {
+  const parts = String(length || '')
+    .split(':')
+    .map(Number)
+  if (parts.length !== 3 || parts.some(Number.isNaN)) return undefined
+  const [h, m, s] = parts
+  return `PT${h}H${m}M${s}S`
+}
+
+const toIsoDate = (date) => {
+  const parsed = parseDate(date)
+  if (!parsed) return undefined
+  return parsed.partial ? parsed.year : parsed.dt.toFormat('yyyy-MM-dd')
+}
+
+// schema.org JSON-LD for release, project and post pages. Returns null for
+// other pages. `url` and `image` are absolute.
+export const getStructuredData = ({
+  release,
+  project,
+  isPost,
+  title,
+  date,
+  url,
+  image,
+}) => {
+  if (release) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'MusicAlbum',
+      name: release.title,
+      url,
+      image,
+      datePublished: toIsoDate(release.released),
+      byArtist: { '@type': 'MusicGroup', name: release.project },
+      numTracks: release.tracks?.length,
+      track: release.tracks?.map((track) => ({
+        '@type': 'MusicRecording',
+        name: track.title,
+        duration: toIsoDuration(track.length),
+      })),
+    }
+  }
+  if (project) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'MusicGroup',
+      name: project.name,
+      url,
+      image,
+      description: project.bio,
+      sameAs: project.website ? [project.website] : undefined,
+    }
+  }
+  if (isPost) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: title,
+      url,
+      image,
+      datePublished: toIsoDate(date),
+      author: { '@type': 'Person', name: META.AUTHOR },
+    }
+  }
+  return null
+}
+
 export default async (eleventyConfig) => {
+  // JSON for a <script> element: `<` is escaped so `</script>` cannot occur.
+  eleventyConfig.addFilter('jsonLd', (data) =>
+    data ? JSON.stringify(data).replace(/</g, '\\u003c') : ''
+  )
+  eleventyConfig.addFilter('structuredData', getStructuredData)
+
   eleventyConfig.addShortcode('getTitle', (title) => {
     return title && title !== META.TITLE
       ? `${title} | ${META.TITLE}`
       : META.TITLE
   })
 
-  // Cache-busting value for CSS/JS. One value per build, not per page.
-  const buildTimestamp = Math.floor(new Date(META.BUILD_TIME).getTime() / 1000)
-  eleventyConfig.addShortcode('getTimestamp', () => buildTimestamp)
+  // `?ver=` for CSS and JS: a hash of the listed files (see lib/assetVersion.js).
+  // Paths are from the project root. dist/styles/tailwind.css exists because
+  // `npm run build` runs the Tailwind CLI first. The dev server starts both at
+  // once, so a file can be missing there; the Worker is not in that path.
+  eleventyConfig.addShortcode('assetVersion', (...files) => {
+    try {
+      return assetVersion(...files)
+    } catch (error) {
+      if (process.env.ELEVENTY_RUN_MODE === 'serve') return 'dev'
+      throw error
+    }
+  })
 
   eleventyConfig.addFilter('padIndex', (index) => {
     return String(index).padStart(2, '0')
@@ -325,6 +413,14 @@ export default async (eleventyConfig) => {
     new Date(dateObj).toUTCString()
   )
 
+  // security.txt `Expires`: RFC 9116 asks for less than a year.
+  eleventyConfig.addFilter('securityTxtExpires', (date) =>
+    DateTime.fromISO(date, { zone: 'utc' })
+      .plus({ days: 364 })
+      .startOf('second')
+      .toISO({ suppressMilliseconds: true })
+  )
+
   // Feed content has not been through HtmlBasePlugin, so root-relative URLs
   // are unprefixed and resolve against META.CANONICAL. Relative URLs resolve
   // against `pageUrl`. Schemes, `//` and `#` URLs pass through.
@@ -386,6 +482,7 @@ export default async (eleventyConfig) => {
   })
 
   eleventyConfig.addPlugin(IdAttributePlugin)
+  eleventyConfig.addPlugin(sectionAnchorsPlugin)
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     extensions: 'html,md,css',
@@ -438,9 +535,12 @@ export default async (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.APPLE_TOUCH_ICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.FAVICON}`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/${META.LOGO}`)
-  eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/robots.txt`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/styles/pagefind.css`)
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/scripts`)
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/webamp/built/webamp.bundle.min.mjs':
+      'scripts/vendor/webamp.mjs',
+  })
   eleventyConfig.addPassthroughCopy(`${DIRS.INPUT}/fonts`)
 
   eleventyConfig.addCollection('discography', () => {

@@ -37,6 +37,7 @@
     "prettier": "3.10.1",
     "prettier-plugin-tailwindcss": "0.8.1",
     "tailwindcss": "4.3.5",
+    "webamp": "2.3.1",
     "wrangler": "4.162.0"
   },
   "allowScripts": {

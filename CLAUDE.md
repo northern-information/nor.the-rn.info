@@ -101,9 +101,19 @@ Site images live in R2 (`intertext` bucket, `site/` prefix), not git. `src/image
 - Remote URLs get `eleventy:ignore` from the markdown-it image renderer (and directly in `release.njk` / `releaseCard.njk`). Any other `<img>` not under `/images/` fails the build. SVGs under `/images/` (the footer logo in `footer.njk`, the webring icon in `links.njk`) also carry `eleventy:ignore`, so they are served as-is from R2 with no derivatives.
 - An `<img>` that overrides `loading` (e.g. `loading="eager"`) MUST also set `sizes` (e.g. `sizes="100vw"`). Without it the build fails with "Missing `sizes` attribute".
 
+### Section anchors
+
+`lib/sectionAnchors.js` adds a `§` self-link to each heading inside an element with `data-section-anchors` (the value lists the tags, for example `"h2,h3"` on the post `<article>`, `"h3"` on the release details). It reads the `id` that `IdAttributePlugin` assigns, so it must run after that plugin. CSS draws the `§` with `::before`, so search, feeds and excerpts do not contain it.
+
 ### Search
 
-`src/styles/pagefind.css` is a customized copy of Pagefind's default UI stylesheet and targets its Svelte hash classes (`.svelte-e9gkc3` etc.). Re-check it after bumping `pagefind`: `grep -rho 'svelte-[a-z0-9]*' dist/pagefind/ | sort -u` must list the same classes. Pagefind 1.6 marks the Default UI as deprecated in favor of the Component UI.
+`src/layouts/search.njk` uses the Pagefind Component UI (`<pagefind-input>`, `<pagefind-summary>`, `<pagefind-results>`). `<pagefind-config>` sets `bundle-path` and `base-url` from `site.META.PATH_PREFIX`, because the base plugin does not rewrite those attributes.
+
+`src/styles/pagefind.css` themes the built-in parts (input, summary) with `--pf-*` custom properties. The components reset inherited styles with `all: initial` and raise their own selector specificity, so rules on the inner `.pf-*` classes lose, and margins on the component elements are reset (space them with wrapper elements).
+
+Pagefind indexes only `<main data-pagefind-body>` (`base.njk`) and drops pages without it. Set `searchIndex: false` in frontmatter for pages that only list other pages (blog, sitemap) or must not be found (404, search). Inside `<main>`, put `data-pagefind-ignore` on repeated chrome, such as the post date, the Edit link and the related-posts `<aside>`. Before, every 02025 post matched "301 Permanently Moved" through that aside.
+
+Result markup comes from the `<script type="text/pagefind-template">` blocks in `search.njk`, which use Tailwind classes. Keep them inside `{% raw %}`, because Pagefind's template syntax also uses `{{ }}`. Template markup inherits the `all: initial` values, so set font and color classes on it. Each result link must be an `<a>`, because arrow-key navigation moves between `<a>` elements.
 
 ### Release Post Generation
 
@@ -114,6 +124,15 @@ See `scripts/CLAUDE.md` for the release-post scaffolding workflow (run after bum
 The site deploys to a Cloudflare Worker (Workers Static Assets), not Cloudflare Pages.
 
 The Worker entry point (`worker/index.js`) strips `/rm_ation` from prefixed requests and forwards them to the `ASSETS` binding, re-prefixing the `Location` of any redirect ASSETS returns (e.g. `html_handling`'s `/about` → `/about/`) so clients take one hop, not two. It serves `/images/*` and `/img-optimized/*` from the `IMAGES` R2 binding through the edge cache instead.
+
+The Worker also:
+
+- Adds security headers to every response. The CSP is `Content-Security-Policy-Report-Only`. Add a new embed or media host to `CONTENT_SECURITY_POLICY` before you change it to an enforced `Content-Security-Policy`.
+- Sets `Cache-Control: public, max-age=31536000, immutable` on URLs with a `ver` query value and on `/fonts/*`. Change a font's file name when its content changes. A file without `?ver=` keeps the ASSETS default (`max-age=0, must-revalidate`).
+- The `ver` value comes from the `assetVersion` shortcode (`lib/assetVersion.js`): a hash of the files you pass it, so a deploy that does not change a file keeps it cached. Pass every file the URL serves or imports. Under `wrangler dev`, a changed file needs a full `npm run build` to get a new `ver`. ASSETS ignores the query string, so the `ver` must come from the file it names.
+- Serves `/.well-known/security.txt` on every host from `dist/security.txt` (`src/security.txt.njk`). Its `Expires` value is 364 days after the build, so deploy at least once a year.
+
+Webamp is a devDependency. `eleventy.config.js` copies its bundle to `/scripts/vendor/webamp.mjs`, and `webamp-init.js` imports it with its own `?ver=` value. That value hashes both `webamp-init.js` and the Webamp bundle (`base.njk`), so a Webamp upgrade alone also changes it.
 
 ### R2 asset buckets
 
@@ -140,7 +159,7 @@ R2 only sends `Access-Control-Allow-Origin` (and `Vary: Origin`) when the reques
 
 The site follows WCAG 2.1 Level AA with several AAA enhancements:
 
-- **Focus styles** - Yellow outline (`outline-yellow-300`) on all interactive elements, including the Pagefind search input (`src/styles/pagefind.css`)
+- **Focus styles** - Yellow outline (`outline-yellow-300`) on all interactive elements, including the Pagefind search input (`--pf-outline-focus` in `src/styles/pagefind.css`)
 - **Color contrast** (Tailwind v4 OKLCH values) - Gray-400 on black (8.1:1 AAA), Yellow-300 links on black (15.9:1 AAA). White text on the Red-600 active and hover states (4.8:1 AA). Keep white text off Red-500 (3.8:1); the footer's Red-500 hover uses black text (5.5:1 AA)
 - **Reduced motion** - `prefers-reduced-motion` disables grain, spectrum, and transition animations (including on pseudo-elements)
 - **Semantic HTML** - Proper landmarks, `<time datetime>` only for machine-readable dates, `aria-current="page"`, `aria-hidden` on decorative elements (`rule.njk`, `spectrum.njk`)

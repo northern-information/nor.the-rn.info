@@ -17,15 +17,18 @@
       type="font/woff2"
       crossorigin
     >
-    <link rel="stylesheet" href="/styles/tailwind.css?ver={% getTimestamp %}">
+    <link rel="stylesheet" href="/styles/tailwind.css?ver={% assetVersion "dist/styles/tailwind.css" %}">
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     {% include "nav.njk" %}
-    <main id="main" class="container mx-auto">
+    {#- Pagefind indexes only data-pagefind-body, and drops pages without it.
+        Listing pages set `searchIndex: false`, because they repeat every title. #}
+    <main id="main" class="container mx-auto"{% if searchIndex != false %} data-pagefind-body{% endif %}>
       {{ content | safe }}
     </main>
     {% include "footer.njk" %}
-    <script type="module" src="/scripts/webamp-init.js?ver={% getTimestamp %}"></script>
+    {#- webamp-init.js passes its ?ver= to the Webamp bundle, so hash both. #}
+    <script type="module" src="/scripts/webamp-init.js?ver={% assetVersion "src/scripts/webamp-init.js", "node_modules/webamp/built/webamp.bundle.min.mjs" %}"></script>
   </body>
 </html>

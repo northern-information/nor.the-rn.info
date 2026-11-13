@@ -16,7 +16,9 @@ async function initWebamp() {
 
   let Webamp
   try {
-    const module = await import('https://unpkg.com/webamp@2.3.1')
+    // This module's `?ver=` hashes both files (base.njk), so pass it on.
+    const { search } = new URL(import.meta.url)
+    const module = await import(`./vendor/webamp.mjs${search}`)
     Webamp = module.default
   } catch (err) {
     console.error('[webamp] import failed:', err)

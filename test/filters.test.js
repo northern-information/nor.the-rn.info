@@ -105,6 +105,50 @@ test('imageMimeType', () => {
   assert.equal(filters.imageMimeType('/x/y'), 'application/octet-stream')
 })
 
+test('jsonLd escapes < so a value cannot close the script element', () => {
+  assert.equal(
+    filters.jsonLd({ name: '</script><b>' }),
+    '{"name":"\\u003c/script>\\u003cb>"}'
+  )
+  assert.equal(filters.jsonLd(null), '')
+})
+
+test('structuredData builds MusicAlbum, MusicGroup and BlogPosting', () => {
+  const album = filters.structuredData({
+    release: {
+      title: 'T',
+      project: 'P',
+      released: '02006-??-??',
+      tracks: [{ title: 'one', length: '01:02:03' }],
+    },
+    url: 'https://x/',
+  })
+  assert.equal(album['@type'], 'MusicAlbum')
+  assert.equal(album.datePublished, '2006')
+  assert.equal(album.track[0].duration, 'PT1H2M3S')
+
+  const group = filters.structuredData({ project: { name: 'P', bio: 'b' } })
+  assert.equal(group['@type'], 'MusicGroup')
+  assert.equal(group.sameAs, undefined)
+
+  const post = filters.structuredData({
+    isPost: true,
+    title: 'T',
+    date: new Date('2025-12-31T00:00:00Z'),
+  })
+  assert.equal(post['@type'], 'BlogPosting')
+  assert.equal(post.datePublished, '2025-12-31')
+
+  assert.equal(filters.structuredData({}), null)
+})
+
+test('securityTxtExpires is under a year away, in whole seconds', () => {
+  assert.equal(
+    filters.securityTxtExpires('2026-11-13T21:01:40.470Z'),
+    '2027-11-12T21:01:40Z'
+  )
+})
+
 test('replaceLast and removeFirst', () => {
   assert.equal(filters.replaceLast('a/b/c/', '/', ''), 'a/b/c')
   assert.equal(filters.removeFirst('a-b-c', '-'), 'ab-c')
