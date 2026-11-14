@@ -25,7 +25,7 @@ _Google Streetview_
 ![Via Stacie K. on Yelp](/images/crown-via-stacie-k-on-yelp.jpg)
 _Via Stacie K. on Yelp_
 
-![Neobeat](/images/crown-neobeat.jpg) _[Neobeat](http://neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played..._
+![Neobeat](/images/crown-neobeat.jpg) _[Neobeat](https://web.archive.org/web/20200221071134/http://www.neobeat.pro/) that time [Ben Babbitt](https://benbabbitt.bandcamp.com) played..._
 
 ![Gaming with the guys](/images/crown-gaming.jpg)
 _Gaming with the guys._

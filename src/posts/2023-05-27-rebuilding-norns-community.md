@@ -143,7 +143,7 @@ If you want to help maintain this website, you can run it locally and test your 
 5. in the directory execute: `bundle install`
 6. then execute: `bundle exec jekyll serve --baseurl ''` (save memory/energy and cancel this process while `./02-build.py` is running.)
 7. tip: see scripts `package.json` for various shortcuts of the above.
-8. you can now visit [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser
+8. you can now visit `http://127.0.0.1:4000` in your browser
 
 This site was built with `ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [arm64-darwin21]`
 

@@ -77,7 +77,7 @@ Grieving is what you do internally, personally.
 
 Mourning is what you do externally, publicly.
 
-Today I mourn with a tattoo from [Dark Heart](http://darkhearttattoo.com) and the incredible [Rachel Garrison](https://instagram.com/octabat).
+Today I mourn with a tattoo from [Dark Heart](https://web.archive.org/web/20211130180734/http://darkhearttattoo.com/) and the incredible [Rachel Garrison](https://instagram.com/octabat).
 
 Timm died the day of [Flash Crash 210904](https://flashcrash.net) and the debut of my new band, [Sidereal Lobby](https://sidereallobby.com).
 

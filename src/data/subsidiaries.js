@@ -103,7 +103,7 @@ export default [
     title: 'Second Chance',
     dates: '02015',
     image: '/images/second-chance.jpg',
-    content: `Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](http://gli.tc/h/2112/). Don't fall.
+    content: `Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](https://web.archive.org/web/20150408232318/http://gli.tc/h/2112/). Don't fall.
 
     [Download for macOS.](https://dl.the-rn.info/second-chance.app.zip)`,
   },

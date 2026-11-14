@@ -23,7 +23,7 @@ I moved. Moving is tiring and expensive. I haven't really written any music in t
 
 ![This had better be part of some grand occult process](/images/this-had-better-be-part-of-some-grand-occult-process.jpg)
 
-On the other hand, I've produced about a dozen mixes this year which I am supremely proud of. [STUXNET](https://stuxnet.me) has also released several major arcana. There turned out to be no [They Became What They Beheld](https://tbwtb.co) which surprised me. There was, however, a [Northern Information](http://localhost:8080/music/northern-information/a-report-on-our-findings/) release which really surprised me. I also helped get several other musician's records over the line such as [This had better be part of some grand occult process](https://rgbrgbrgb.bandcamp.com/album/this-had-better-be-part-of-some-grand-occult-process).
+On the other hand, I've produced about a dozen mixes this year which I am supremely proud of. [STUXNET](https://stuxnet.me) has also released several major arcana. There turned out to be no [They Became What They Beheld](https://tbwtb.co) which surprised me. There was, however, a [Northern Information](/music/northern-information/a-report-on-our-findings/) release which really surprised me. I also helped get several other musician's records over the line such as [This had better be part of some grand occult process](https://rgbrgbrgb.bandcamp.com/album/this-had-better-be-part-of-some-grand-occult-process).
 
 ![Blood Meridian & Moby Dick](/images/blood-meridian-moby-dick.jpg)
 

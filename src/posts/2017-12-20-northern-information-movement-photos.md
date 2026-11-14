@@ -9,7 +9,7 @@ I'm taking down the photos page, but want to keep these around for posterity.
 Tyler Etters illustration by [Gage Lindsten](https://gagelindsten.tumblr.com), 2017
 
 ![Tyler Etters, Arthur Zdrinc, and Adam Moore at The Burlington, 2015](/images/the-burlington.jpg)
-Tyler Etters, [Arthur Zdrinc](http://arthurzdrinc.com), and Adam Moore at [The Burlington](https://www.theburlingtonbar.com), 2015
+Tyler Etters, [Arthur Zdrinc](https://web.archive.org/web/20171027082343/http://arthurzdrinc.com/), and Adam Moore at [The Burlington](https://www.theburlingtonbar.com), 2015
 
 ![Tyler Etters © Sage Etters, 2015](/images/tyler-etters-ophelia.jpg)
 Tyler Etters &copy; [Sage Etters](https://sageetters.com), 2015
@@ -27,13 +27,13 @@ Tyler Etters at Mayne Stage &copy; Jordan Nelson, 2014
 Tyler Etters, Adam Moore, and [Pasha Petrosyan](https://paulpear.bandcamp.com) at Rake's End &copy; [People Flavored](https://facebook.com/people-flavored), 2013
 
 ![Adam Moore, Pasha Petrosyan, Tyler Etters and Arthur Zdrinc at Ultra Lounge, 2013](/images/adam-paul-tyler-arthur.jpg)
-Adam Moore, [Pasha Petrosyan](https://paulpear.bandcamp.com), Tyler Etters and [Arthur Zdrinc](http://arthurzdrinc.com) at Ultra Lounge, 2013
+Adam Moore, [Pasha Petrosyan](https://paulpear.bandcamp.com), Tyler Etters and [Arthur Zdrinc](https://web.archive.org/web/20171027082343/http://arthurzdrinc.com/) at Ultra Lounge, 2013
 
 ![Tyler Etters at Magic Beach © Sage Etters, 2013](/images/tyler-etters-magic-beach.jpg)
 Tyler Etters at Magic Beach &copy; [Sage Etters](https://sageetters.com), 2013
 
 ![Arthur Zdrinc & Tyler Etters, 2013](/images/tyler-etters-and-arthur-zdrinc.jpg)
-[Arthur Zdrinc](http://arthurzdrinc.com) &amp; Tyler Etters, 2013
+[Arthur Zdrinc](https://web.archive.org/web/20171027082343/http://arthurzdrinc.com/) &amp; Tyler Etters, 2013
 
 ![Tyler Etters / Connectedness Locus live, 2011](/images/tyler-etters-live.jpg)
 Tyler Etters / Connectedness Locus live, 2011

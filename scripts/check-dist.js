@@ -95,6 +95,12 @@ for (const file of htmlFiles) {
         errors.push(`${file}: ${attr} points into src/ (${url})`)
         continue
       }
+      // Link to an archived copy (https://web.archive.org/web/...) if the
+      // host has no HTTPS.
+      if (/^http:/i.test(url)) {
+        errors.push(`${file}: ${attr} uses http: (${url})`)
+        continue
+      }
       const problem = findMissing(url)
       if (problem) errors.push(`${file}: ${attr} ${problem} (${url})`)
     }
