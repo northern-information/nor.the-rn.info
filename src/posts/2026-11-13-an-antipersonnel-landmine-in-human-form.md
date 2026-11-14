@@ -13,4 +13,4 @@ Cascade isn't necessarily malicious. She's dangerous by nature, someone whose br
 
 The tragedy is implicit: even those who love her might not survive getting close.
 
-This is my game of of the year. I'm on playthrough number four.
+This is my game of the year. I'm on playthrough number four.
