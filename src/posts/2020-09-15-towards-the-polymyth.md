@@ -45,7 +45,7 @@ It all exists within the same reality. I do not find the distinction of "artific
 
 Just as we need each other we also need the earth. We always have. Geo-engineering isn't going to save us. The climate crisis is our crisis.
 
-[Viznut, writing on his blog:](http://viznut.fi/texts-en/resource_leak_bug_of_our_civilization.html)
+[Viznut, writing on his blog:](https://web.archive.org/web/20201107224604/http://viznut.fi/texts-en/resource_leak_bug_of_our_civilization.html)
 
 > I am convinced that our civilization is already falling and this fall cannot be prevented. What we can do, however, is create seeds for something better. Now is the best time for doing this, as we still have plenty of spare time and resources especially in rich countries. We especially need to propagate the seeds towards laypeople who are already suffering from increasing alienation because of the ever more computerized technological culture. The masses must realize that alternatives are possible.
 

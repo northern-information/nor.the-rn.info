@@ -5,7 +5,7 @@ date: 2015-04-05
 
 ![second chance](/images/second-chance.jpg)
 
-Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](http://gli.tc/h/2112/). Don't fall.
+Explore the world of 'second chance' with your mouse and the WASD keys. Principal development occurred during a Unity workshop at [gli.tc/h 2112](https://web.archive.org/web/20150408232318/http://gli.tc/h/2112/). Don't fall.
 
 [Download for macOS](https://dl.the-rn.info/second-chance.app.zip)
 
