@@ -56,7 +56,9 @@ const createNonce = () =>
 const SECURITY_HEADERS = {
   'Permissions-Policy': 'camera=(), geolocation=(), microphone=()',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
-  'Strict-Transport-Security': 'max-age=31536000',
+  // includeSubDomains: every the-rn.info host serves HTTPS. A browser applies
+  // it to assets. and dl. only after it gets this header from the apex.
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
   'X-Content-Type-Options': 'nosniff',
   'X-Frame-Options': 'SAMEORIGIN',
 }
@@ -88,16 +90,23 @@ export default {
 async function route(request, env, ctx) {
   const url = new URL(request.url)
 
-  if (url.pathname === SECURITY_TXT_PATH) {
-    url.pathname = '/security.txt'
-    return env.ASSETS.fetch(new Request(url, request))
-  }
-
   if (ALIAS_HOSTS.has(url.hostname)) {
     const target = new URL(request.url)
+    target.protocol = 'https:'
     target.hostname = CANONICAL_HOST
     target.pathname = `${PREFIX}${url.pathname}`
     return Response.redirect(target.toString(), 301)
+  }
+
+  // Only the production host: `wrangler dev` serves localhost over HTTP.
+  if (url.protocol === 'http:' && url.hostname === CANONICAL_HOST) {
+    url.protocol = 'https:'
+    return Response.redirect(url.toString(), 301)
+  }
+
+  if (url.pathname === SECURITY_TXT_PATH) {
+    url.pathname = '/security.txt'
+    return env.ASSETS.fetch(new Request(url, request))
   }
 
   // Bare prefix: redirect to the directory form so relative URLs resolve.
