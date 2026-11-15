@@ -11,7 +11,7 @@ Brian Crabtree via the [monome](https://monome.org) newsletter:
 
 [Warp Earth Catalog, Issue 2](https://mailchi.mp/warprecords/warp-earth-catalog-02):
 
-> Warp Earth Catalog is a weekly mixtape of ideas to inspire, inform, enable and energize creativity and positivity in a time of global disruption and uncertainty. Based on the classic countercultural guide the Whole Earth Catalog and its credo of ‘access to tools', these are tools for strength, awareness and thoughtful entertainment. From wherever in the world we are, let's support each other, make things and help maintain the ecosystem of independent creativity.
+> Warp Earth Catalog is a weekly mixtape of ideas to inspire, inform, enable and energize creativity and positivity in a time of global disruption and uncertainty. Based on the classic countercultural guide the Whole Earth Catalog and its credo of 'access to tools', these are tools for strength, awareness and thoughtful entertainment. From wherever in the world we are, let's support each other, make things and help maintain the ecosystem of independent creativity.
 
 [Arrows of Time via Quantam Magazine](https://www.quantamagazine.org/what-is-time-a-history-of-physics-biology-clocks-and-culture-20200504/):
 
