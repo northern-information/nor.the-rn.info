@@ -3,7 +3,7 @@ title: "You Don’t Have to Be an Accelerationist to Acknowledge That It Is All 
 date: 2026-11-15
 ---
 
-[Hearing Things](https://www.hearingthings.co/godspeed-you-black-emperor-profile-interview/):
+[Grayson Haver Currin](https://www.hearingthings.co/godspeed-you-black-emperor-profile-interview/):
 
 > “You don’t have to be an accelerationist to acknowledge that it is all fucking collapsing. The only terrifying thing is that the future is either fascism or liberation,” he says, landing on a line he repeats six times during the 10 hours or so we spend speaking. “There is no center anymore, and there has to be a negation of the status quo. The status quo is a dead, rotting whale carcass on a beach. It’s going to explode. I still feel hopeful, you know?”
 >
