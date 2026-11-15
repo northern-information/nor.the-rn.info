@@ -79,6 +79,10 @@ These conventions apply to **prose blog posts only**. Music release posts are ma
 - Always quote titles. Use double quotes: `title: "Post Title"`.
 - If the title contains a literal `"`, use single quotes instead so the inner quotes don't need escaping: `title: 'Building "norns community"'`.
 
+#### Straight quotes
+
+Use straight quotes (`"` and `'`) in all prose, titles, and data, never curly quotes (`“ ” ‘ ’`). This includes text pasted from elsewhere: straighten the quotes and apostrophes in quoted passages and copied link text. markdown-it's `typographer` option is off, so the site renders quotes exactly as typed.
+
 ### Meta Tags and Social Sharing
 
 Meta tags are rendered via `src/includes/metaTags.njk`:
