@@ -1,5 +1,5 @@
 ---
-title: "Pick a Side"
+title: "You Don’t Have to Be an Accelerationist to Acknowledge That It Is All Fucking Collapsing"
 date: 2026-11-15
 ---
 
