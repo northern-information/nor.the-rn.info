@@ -17,6 +17,7 @@ import {
 } from './lib/images.js'
 import { sectionAnchorsPlugin } from './lib/sectionAnchors.js'
 import { assetVersion } from './lib/assetVersion.js'
+import { deadLinksPlugin } from './lib/deadLinks.js'
 
 const discographyPackageJson = JSON.parse(
   readFileSync(
@@ -483,6 +484,9 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addPlugin(IdAttributePlugin)
   eleventyConfig.addPlugin(sectionAnchorsPlugin)
+  eleventyConfig.addPlugin(deadLinksPlugin, {
+    rootDir: new URL('.', import.meta.url).pathname,
+  })
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     extensions: 'html,md,css',

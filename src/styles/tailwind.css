@@ -178,6 +178,41 @@
     @apply text-yellow-300 underline hover:text-yellow-500 hover:no-underline;
   }
 
+  /* Dead external links from lib/deadLinks.js. Red mirrors the yellow link
+     style: Red-400 on black is 7.3:1 (AAA) and the Red-500 hover is 5.5:1
+     (AA). Keep it off Red-600 (4.4:1).
+     `a.` beats `.post a` and the yellow utility classes. */
+  a.link-dead {
+    @apply text-red-400 underline;
+
+    &:hover {
+      @apply text-red-500 no-underline;
+    }
+  }
+
+  /* ☠ is not in IBM Plex, so a system font draws it. font-variant-emoji is a
+     second hint (after U+FE0E) to draw it as text, not as an emoji. */
+  .link-dead-skull {
+    @apply ml-1 cursor-help border-0 bg-transparent p-0 align-baseline text-[1.25em] leading-none text-red-400 hover:text-red-500;
+    font-variant-emoji: text;
+  }
+
+  .link-dead-note {
+    @apply m-auto max-w-xs border border-red-400 bg-black px-2 py-1 font-mono text-sm text-stone-100;
+  }
+
+  /* Next to the ☠ where the browser supports anchor positioning. The inline
+     anchor-name and position-anchor come from lib/deadLinks.js. Otherwise the
+     popover is centered in the viewport. */
+  @supports (position-area: top) {
+    .link-dead-note {
+      @apply mb-1;
+      inset: auto;
+      position-area: top;
+      position-try-fallbacks: flip-block;
+    }
+  }
+
   /* § self-links from lib/sectionAnchors.js. The link follows the heading in
      the DOM, and `order` shows it first. */
   /* The wrapper takes the heading's margin, so `items-center` centers the §

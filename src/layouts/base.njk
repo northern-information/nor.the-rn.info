@@ -29,6 +29,7 @@
     </main>
     {% include "footer.njk" %}
     {#- webamp-init.js passes its ?ver= to the Webamp bundle, so hash both. #}
+    <script type="module" src="/scripts/dead-links.js?ver={% assetVersion "src/scripts/dead-links.js" %}"></script>
     <script type="module" src="/scripts/webamp-init.js?ver={% assetVersion "src/scripts/webamp-init.js", "node_modules/webamp/built/webamp.bundle.min.mjs" %}"></script>
   </body>
 </html>
