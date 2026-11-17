@@ -15,7 +15,7 @@ Yet other streams will be focused on jamming/writing. These will will serve as m
 
 ![Drone Patch](/images/patch.png)
 
-[I've produced a lot of music.](/discography) The releases I'm proudest of tend to have some some number of unique aspects: a new instrument, a dream, a new apartment, a breakup... one of these aspects that I've only recently become aware of is the notion of "just enough experimentation". When there is too much experimentation, the scientific method dissolves, there are no controls, and the work ends up unfocused and incoherent. When there is not enough experimentation, the work is just boring.
+[I've produced a lot of music.](/music/) The releases I'm proudest of tend to have some some number of unique aspects: a new instrument, a dream, a new apartment, a breakup... one of these aspects that I've only recently become aware of is the notion of "just enough experimentation". When there is too much experimentation, the scientific method dissolves, there are no controls, and the work ends up unfocused and incoherent. When there is not enough experimentation, the work is just boring.
 
 This is a spectacularly public experiment. I'm only a week into the project but it has already completely warped my process and I love it.
 

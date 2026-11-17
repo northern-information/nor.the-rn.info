@@ -47,7 +47,7 @@ To start: I'm 34. I've run the numbers. I am not going to be alive when I'm "ret
 
 I am not being hyperbolic when I say dying in anthropocene is my retirement strategy.
 
-So, I liquidated my 401k last week. There wasn't much in there. I've had a 401k since the early 2010s. Some years, I'd open my annual summary to be greeted with something like, "Sorry, you lost 20%. (Sucks to suck!)" I even checked the "ethical investing" option next to the [Corporate Memphis](https://en.wikipedia.org/wiki/Corporate_Memphishttps://) cartoons, knowing this meant I wasn't putting money into supposed "unethical" stocks but also knowing I would get worse returns.
+So, I liquidated my 401k last week. There wasn't much in there. I've had a 401k since the early 2010s. Some years, I'd open my annual summary to be greeted with something like, "Sorry, you lost 20%. (Sucks to suck!)" I even checked the "ethical investing" option next to the [Corporate Memphis](https://en.wikipedia.org/wiki/Corporate_Memphis) cartoons, knowing this meant I wasn't putting money into supposed "unethical" stocks but also knowing I would get worse returns.
 
 The way I see it, if I'm opting into a system that can just magick away 20% of my assets, then the least I can do is reclaim my dignity and do it myself. I am more than capable of losing 20% of my assets on my own, thank you very much.
 

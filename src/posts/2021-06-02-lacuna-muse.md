@@ -27,7 +27,7 @@ When I was just starting out as an artist, my muse was typically a person (read:
 
 With this shift I began thinking about myself as the primary audience for my work. And not just my present self, but specifically my future self.
 
-Another shift happened in 2019. I was deep into [theory](/2019/05/24/coordinated-universal-time/), reading about hyperobjects, thinking about the anthropocene. [As my work output shows](/discography) this was not a particularly productive time. EP1 came out at the beginning of 2019, Arcologies at the end of 2020. In retrospect I see I swung too far into theory and lost touch with praxis.
+Another shift happened in 2019. I was deep into [theory](/2019/05/24/coordinated-universal-time/), reading about hyperobjects, thinking about the anthropocene. [As my work output shows](/music/) this was not a particularly productive time. EP1 came out at the beginning of 2019, Arcologies at the end of 2020. In retrospect I see I swung too far into theory and lost touch with praxis.
 
 2020 brought about another shift. Urgency, a sense of hopelessness, a sense of possiblity, very real fears about death and mortality for myself and my loved ones.
 

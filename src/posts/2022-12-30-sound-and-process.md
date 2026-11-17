@@ -13,7 +13,7 @@ Dan:
 >
 > he found his first collaborator in `@license`, who helped build a SuperCollider template which not only deployed Tyler's initial vision, but made it easy for others to contribute as well. among those was `@infinitedigits`, whose norns scripts [Blndr](https://llllllll.co/t/blndr/35106) and [Barcode](https://llllllll.co/t/barcode/35297) were already instant classics among y'all `:sparkles:`
 >
-> the energy exchanged between these three artists, all collaborating remotely in the early days of the pandemic, helped establish a lines-centric chapter for the polymyth of [Northern Information](https://nor.the-rn.info), which has become home to a growing group of musicians and developers navigating the late stages of the Anthropocene.
+> the energy exchanged between these three artists, all collaborating remotely in the early days of the pandemic, helped establish a lines-centric chapter for the polymyth of [Northern Information](/), which has become home to a growing group of musicians and developers navigating the late stages of the Anthropocene.
 >
 > this episode is comprised of separate but dovetailing conversations with tyler, ryan and zack — **each recorded almost two years ago**. in the time since, lines and the community surrounding norns have gone through immense changes — and as i revisited this audio, i was struck by how much _possibility_ was still latent in these reflections. their perspectives remain incredibly energizing + inspiring and i'm so humbled to be able to share them as the 23rd episode of this project.
 
@@ -23,7 +23,7 @@ Ryan and Zack are two finest travel companions one could ever hope for. I'm hold
 
 The `llllllll` community has become the sangra I didn't know I needed, but always yearned for. And please know, or already understand, I do not invoke spiritual terms like "sangra" or "bodhisattva" lightly. Music is my religion. I'm proud to [work at a company](https://output.com) where Gregg, the CEO, is known to say things like, "Concerts are my church."
 
-Shortly after the [COVID-19 pandemic started](https://nor.the-rn.info/2020/05/03/grid-keyboard/), I purchased some [monome](https://monome.org) hardware. What kind of hardware does monome make?
+Shortly after the [COVID-19 pandemic started](/2020/05/03/grid-keyboard/), I purchased some [monome](https://monome.org) hardware. What kind of hardware does monome make?
 
 > sound machines for
 >

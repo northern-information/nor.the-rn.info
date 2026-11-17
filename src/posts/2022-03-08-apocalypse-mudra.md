@@ -5,7 +5,7 @@ date: 2022-03-08
 
 This post is an attempt to tease out some more concrete thoughts about what I'm calling "apocalypse mudras" - stances, dispositions, and mental koans to ground myself in the inferno.
 
-I've had an impossible time articulating these concepts. The mudras are intimate, personal, and mostly invisible. I am going to use [DXMC](https://deusexmachina.company)'s virtues - themselves based off the [four cardinal virtues of antiquity](https://en.wikipedia.org/wiki/Cardinal_virtues) - as containers.
+I've had an impossible time articulating these concepts. The mudras are intimate, personal, and mostly invisible. I am going to use [DXMC](https://github.com/tyleretters/deusexmachina.company)'s virtues - themselves based off the [four cardinal virtues of antiquity](https://en.wikipedia.org/wiki/Cardinal_virtues) - as containers.
 
 ## Prudence
 

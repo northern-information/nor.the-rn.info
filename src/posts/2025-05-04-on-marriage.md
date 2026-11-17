@@ -49,13 +49,13 @@ Our partnership was a garden sown during the apocalypse. Wild flowers grew every
 
 > Cringe Christmas Card, 2017
 
-I think it was the pandemic that first sundered our kingdom beyond recognition. It affected each of us differently and in not fully compatible ways. My half of it is sad and [well chronicled](https://nor.the-rn.info/rm_ation/2020/03/14/the-covid-19-pandemic-day-4/). Her half is her story to tell.
+I think it was the pandemic that first sundered our kingdom beyond recognition. It affected each of us differently and in not fully compatible ways. My half of it is sad and [well chronicled](/2020/03/14/the-covid-19-pandemic-day-4/). Her half is her story to tell.
 
 There were some particularly insidious second-order effects. Chain reactions of dysfunction. I did my fucking best. I take responsibility for my half. I said things that were unkind, did things out of anger I wish I hadn't. Not regrets, exactly, but not things I'm proud of either.
 
 ![Dissolution](/images/dissolution.jpg)
 
-I poured my heart into making a [mixtape](https://nor.the-rn.info/rm_ation/mixes/dj-stuxnet/dissolution/) for her - a little sentimental coda for our time together.
+I poured my heart into making a [mixtape](/music/dj-stuxnet/dissolution/) for her - a little sentimental coda for our time together.
 
 Divorce has a stigma around it in the west: failure, shame, embarrassment. People bottle it up and don't talk about it. Nonsense, in my opinion. I don't feel any of these things. Part of my healing process has been to talk about it. To let others know whats going on. This very post.
 
