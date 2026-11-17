@@ -13,7 +13,7 @@ Time's passage has revealed new realities. The slow-burners decelerated further.
 
 In short, I'm saying "no" much more than usual. The increased focus and slower pace has felt healthy, though uncomfortable.
 
-[Flash Crash](https://flashcrash.net), [Deus Ex Machina Company](https://tyleretters.github.io/deusexmachina.company), and [FoundSound](https://foundsound.me) are just some of the fallen.
+[Flash Crash](https://flashcrash.net), [Deus Ex Machina Company](https://github.com/tyleretters/deusexmachina.company), and [FoundSound](https://foundsound.me) are just some of the fallen.
 
 ## Major Arcana
 
@@ -27,7 +27,7 @@ In short, I'm saying "no" much more than usual. The increased focus and slower p
 
 ![Northern Information](/images/website-portrait-2022-04-19.jpg)
 
-I share my work on multiple channels. [https://nor.the-rn.info](https://nor.the-rn.info) continues to be the primary source for updates. The website [featured heavy redesigns this year](https://github.com/tyleretters/nor.the-rn.info).
+I share my work on multiple channels. [https://nor.the-rn.info](/) continues to be the primary source for updates. The website [featured heavy redesigns this year](https://github.com/tyleretters/nor.the-rn.info).
 
 Secondary channels include [stuxnet.me](https://stuxnet.me), [Intertext](https://intertext.bandcamp.com), [GitHub](https://github.com/tyleretters), [Discord](https://discord.gg/FHDdUJugzU), [SoundCloud](https://soundcloud.com/tyleretters), [YouTube](https://www.youtube.com/@tyleretters7237), and [Instagram](https://instagram.com/tyleretters).
 
@@ -83,7 +83,7 @@ I played my first show since the pandemic started at [The Love Song](https://www
 
 [Rylee](https://ryleealanza.org/) and I are working on something special for norns.
 
-[Jordan](https://norns.community/en/authors/eigen), [Brian](https://nnnnnnnn.co), [Dan](https://dndrks.bandcamp.com/album/mirrored-heart) and I are working on [norns.community](https://norns.community) version 2.0. [See my writeup on version 1.0 here.](https://nor.the-rn.info/2021/04/09/building-norns-community/)
+[Jordan](https://norns.community/en/authors/eigen), [Brian](https://nnnnnnnn.co), [Dan](https://dndrks.bandcamp.com/album/mirrored-heart) and I are working on [norns.community](https://norns.community) version 2.0. [See my writeup on version 1.0 here.](/2021/04/09/building-norns-community/)
 
 I've helped some friends with Discord bots & integrations.
 

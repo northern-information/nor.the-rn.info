@@ -25,7 +25,7 @@ Despite a record high number of sleepless nights, "Is this real life?" moments, 
 
 This year, I got involved with the [monome community](https://llllllll.co/). Learned [Lua](https://www.lua.org/). Started learning modular. Made [dronecaster](https://l.llllllll.co/dronecaster), [arcologies](https://northern-information.github.io/arcologies-docs), [Yggdrasil](https://northern-information.github.io/yggdrasil-docs), and other scripts. I wrote and [released](https://northerninformation.bandcamp.com/album/the-arecibo-lamentations) the first Northern Information (_sans "movement"_) album. I mobilized [The First Arclogists](https://goodglassrecords.bandcamp.com/album/the-first-arcologists). I made lots of [videos](https://www.youtube.com/channel/UCkZn9WNgPM3gVf9fiyuN1Mg), conducted [workshops](https://musichackspace.org/events/arcologies-a-workshop-for-monome-norns-grid/), contributed to [podcasts](/2020/07/07/film-jive-podcast/), and [gave talks](https://www.youtube.com/watch?v=mzo5rovx9nE).
 
-I read [a lot of books](/book-reviews) and [discovered a ton of new music](https://open.spotify.com/playlist/12uTS1AQt209R1QI8KBmp8?si=08v9obMNQdCaRoTk8UnV9Q).
+I read a lot of books and [discovered a ton of new music](https://open.spotify.com/playlist/12uTS1AQt209R1QI8KBmp8?si=08v9obMNQdCaRoTk8UnV9Q).
 
 We successfully navigated [Highland](https://highlandsolutions.com) through what was perhaps the company's most complex season in its 21 year history.
 

@@ -1,0 +1,206 @@
+{
+  "https://alanza.xyz": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://ariadne.space/2021/05/20/the-whole-freenode-kerfluffle/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://ariadne.space/2022/10/27/the-internet-is-broken-due-to-structural-injustice/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://arthurzdrinc.com": {
+    "status": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+    "since": "2026-11-17"
+  },
+  "https://bridgesofkonigsberg.com": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://consciouscompanyleadersforum.com/": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://discography.tyleretters.com": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://eco-futurism-corp.bandcamp.com/album/life-in-warp": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-1": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-2": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-3": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://github.com/monome-community/norns-community/blob/main/assets/javascript/script.ts": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://history.fnal.gov/neutrino.html": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://jamtaba-music-web-site.appspot.com/": {
+    "status": 503,
+    "since": "2026-11-17"
+  },
+  "https://journal.highlandsolutions.com/meet-cascade-a-piece-of-music-software-i-built-with-max-and-rapid-prototyping-d8ce9bda3a5b": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/arcologies": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/cascades": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/cci": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/conway": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/dronecaster": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/goldeneye": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/markov": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/u": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://l.llllllll.co/yggdrasil": {
+    "status": "CERT_HAS_EXPIRED",
+    "since": "2026-11-17"
+  },
+  "https://mapcorps.net/2021/09/09/1-caveman-dot-sh/": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://monome.org/norns": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://musichackspace.org/events/arcologies-a-workshop-for-monome-norns-grid/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.community/assets/covers/dronecaster.png": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.community/assets/readmes/dronecaster.md": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.community/en/authors/dan_derks": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.community/en/authors/eigen": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.community/study-group": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://norns.study.online": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://nowheregallery.co": {
+    "status": 503,
+    "since": "2026-11-17"
+  },
+  "https://rashomon.blue/01-italian-ambient-pt-1/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://sidereallobby.com": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://synergybeat.club/": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://tbwtb.co": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://twitter.com/argotechnica": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://twitter.com/neural_shroud": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://twitter.com/ntnfrno": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://withkoji.com/@tief.link": {
+    "status": "ERR_TLS_CERT_ALTNAME_INVALID",
+    "since": "2026-11-17"
+  },
+  "https://www.cnet.com/personal-finance/crypto/heres-how-much-electricity-it-takes-to-mine-bitcoin-and-why-people-are-worried/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://www.eigenbahn.com/": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://www.eigenbahn.com/2021/05/10/norns-community": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://www.kotaku.com.au/2014/05/the-beauty-of-weird-military-infographics/": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://www.naiveweekly.com/p/yatu-espinosa-usb-club": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://www.pichardo.dev": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://www.rasplyn.com/": {
+    "status": "ENOTFOUND",
+    "since": "2026-11-17"
+  },
+  "https://www.theparisreview.org/blog/author/nmacluaghlin": {
+    "status": 404,
+    "since": "2026-11-17"
+  },
+  "https://www.youtube.com/@tyleretters7237": {
+    "status": 404,
+    "since": "2026-11-17"
+  }
+}

@@ -21,7 +21,7 @@ I built it with these values in mind:
 
 This project was heavily inspired by [my experience building norns.community](/2023/05/27/rebuilding-norns-community/).
 
-The source code for the [React frontend is here](https://github.com/tyleretters/discography-frontend) and the [@tyleretters/discography NPM package is here](https://github.com/tyleretters/discography).
+The source code for the React frontend is no longer public and the [@tyleretters/discography NPM package is here](https://github.com/tyleretters/discography).
 
 The final result can be explored at: [discography.tyleretters.com](https://discography.tyleretters.com)
 
@@ -33,7 +33,7 @@ The domain of "discographies" is rich. Individuals are can be part of many diffe
 
 My discography dates back to 2005 and I knew I'd be entering a lot of data by hand. I didn't want to manage a database for a number of reasons. First, it adds cost, overhead, and a bigger attack surface. Second, I have less than 50 releases, so a text file of some sort seemed just fine from a scale standpoint.
 
-I chose YML because it is nice to work with. I spent a day or two enriching the [discography data](https://github.com/tyleretters/nor.the-rn.info/blob/main/_data/discography.yml) I had already built for [the discography page](https://nor.the-rn.info/discography).
+I chose YML because it is nice to work with. I spent a day or two enriching the [discography data](https://github.com/tyleretters/discography) I had already built for [the discography page](/music/).
 
 I then wrote a [YML to JSON converter in Python](https://github.com/tyleretters/discography/blob/main/src/convert.py). Publishing my discography as JSON means that multiple applications can consume it in an open format.
 

@@ -43,7 +43,7 @@ I think of myself as a careful and technical fellow. I lean chaotic-good with mo
 - I use 2FA.
 - I use biometrics.
 - I use virtual private networks.
-- I use [pi-holes](https://nor.the-rn.info/2022/03/17/cryptopyre-pi-hole.net/).
+- I use [pi-holes](/2022/03/17/cryptopyre-pi-hole.net/).
 - I keep my applications patched and updated.
 - I use encryption.
 - I write software that uses encryption.

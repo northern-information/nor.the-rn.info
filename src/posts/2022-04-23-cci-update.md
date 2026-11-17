@@ -153,7 +153,7 @@ I've shared many sketches and designs. I'm thinking about this project as someth
 
 [@ngwese](https://llllllll.co/u/ngwese)'s latest `screen.display_image_region()` feature arrived _just in time_ for this and has enabled me to design with [sprites](<https://en.wikipedia.org/wiki/Sprite_(computer_graphics)>) in mind. (With arcologies and yggdrasil, I programed each glyph pixel-by-pixel.)
 
-Only a few concepts have made it all the way to programming spikes. A "spike" is a small piece of (typically) disposable code used to prove an idea. One spike turned into the (now mythical) unreleased roguelike ASCII game called [HIVERUNNER](https://nor.the-rn.info/2022/03/30/hiverunner/). Other spikes made their way into utility scripts like [u/KEY, u/DCE, & u/REF](https://l.llllllll.co/u).
+Only a few concepts have made it all the way to programming spikes. A "spike" is a small piece of (typically) disposable code used to prove an idea. One spike turned into the (now mythical) unreleased roguelike ASCII game called [HIVERUNNER](/2022/03/30/hiverunner/). Other spikes made their way into utility scripts like [u/KEY, u/DCE, & u/REF](https://l.llllllll.co/u).
 
 ## Quality Assurance
 

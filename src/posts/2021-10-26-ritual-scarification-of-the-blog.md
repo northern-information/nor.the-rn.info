@@ -21,7 +21,7 @@ It is a absolutely stunning piece of scientific/aesthetic functional-art:
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }`
 
-Anyways, funny thing about IBM Plex: [its got a history](https://www.ibm.com/plex/). Not unrelated, I also removed Google Analytics this week. And a funny thing about GA: not once have I leveraged its auspices for [https://nor.the-rn.info](https://nor.the-rn.info).
+Anyways, funny thing about IBM Plex: [its got a history](https://www.ibm.com/plex/). Not unrelated, I also removed Google Analytics this week. And a funny thing about GA: not once have I leveraged its auspices for [https://nor.the-rn.info](/).
 
 Why?
 

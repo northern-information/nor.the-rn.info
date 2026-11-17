@@ -3,7 +3,7 @@ title: "Coordinated Universal Time"
 date: 2019-05-24
 ---
 
-As I type, episode one of [Coordinated Universal Time](https://apodcastfornow.com) is merrily propagating its little way through the RSS mycelium of the internet. We uploaded it to [Anchor.fm](https://anchor.fm/apodcastfornow) a couple days ago.
+As I type, episode one of [Coordinated Universal Time](https://tyleretters.github.io/apodcastfornow.com) is merrily propagating its little way through the RSS mycelium of the internet. We uploaded it to [Anchor.fm](https://anchor.fm/apodcastfornow) a couple days ago.
 
 On April 3rd, I shared an idea in the Locutory:
 
@@ -112,7 +112,7 @@ We interviewed some people.
 
 We recorded some fields. And we fielded some recordings.
 
-I wrote [A Shard of the Origin Story](https://apodcastfornow.com/2019/04/21/a-shard-of-the-origin-story/) and recorded it down by the Fox River.
+I wrote [A Shard of the Origin Story](https://tyleretters.github.io/apodcastfornow.com/2019/04/21/a-shard-of-the-origin-story/) and recorded it down by the Fox River.
 
 All the while a constant drip of collective text and ideas bubbling in the Discord channels.
 
@@ -166,6 +166,6 @@ I like this story. It is the story of communal labor and ideals. The story of a 
 
 I hold UTC lightly. It is not mine. It is ours. UTC brings me joy. And part of that joy is the labor, the pain, the agony of micro-deicisions around adding .1 dB to voice or subtracting .05 dB from music. That is the work. So are the conversations about it all. So are the blog posts like these and those yet unwritten.
 
-[Coordinated Universal Time](https://apodcastfornow.com) is not an endpoint or the apotheosis of my practice. But it sure is the most fun I've had making stuff in a really long time.
+[Coordinated Universal Time](https://tyleretters.github.io/apodcastfornow.com) is not an endpoint or the apotheosis of my practice. But it sure is the most fun I've had making stuff in a really long time.
 
 I won't get too much into the meaning of vision of UTC here, because in many ways that is not my story to tell. It is all of ours to discover.

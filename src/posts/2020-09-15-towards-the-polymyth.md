@@ -51,12 +51,12 @@ Just as we need each other we also need the earth. We always have. Geo-engineeri
 
 ## Bands, Collectives, and Communities
 
-Working together can be hard. For each project listed in my [discography](/discography/) there are probably twice that number that are unlisted. Failed, false-started, disbanded, dissolved. I'm an atheist and music venues have always been my places of worship. The communal experience of music is one of the most powerful things I've ever felt.
+Working together can be hard. For each project listed in my [discography](/music/) there are probably twice that number that are unlisted. Failed, false-started, disbanded, dissolved. I'm an atheist and music venues have always been my places of worship. The communal experience of music is one of the most powerful things I've ever felt.
 
 I write, release, and perform music for two reasons. Firstly for myself - because I love the craft, I love the expression, I love the joy of creating. Secondly for you - as an offering, a gift, a chance to have experiences like those I've had in mosh pits where I've simultaneously lost and found myself.
 
 This year has marked a huge shift in my practice. I still write music, but I've gravitated towards programming tools _for others_ to write music.
-[Cascades](https://l.llllllll.co/cascades), [Conway Music](https://l.llllllll.co/conway), [Markov Music](https://l.llllllll.co/markov), [dronecaster](https://l.llllllll.co/dronecaster), and [arcologies](https://l.llllllll.co/arcologies) are each expressions of my aesthetics translated into code. Making tools for others is fun, and [watching what people make with them is totally surreal](https://tyleretters.github.io/arcologies-docs/gallery).
+[Cascades](https://l.llllllll.co/cascades), [Conway Music](https://l.llllllll.co/conway), [Markov Music](https://l.llllllll.co/markov), [dronecaster](https://l.llllllll.co/dronecaster), and [arcologies](https://l.llllllll.co/arcologies) are each expressions of my aesthetics translated into code. Making tools for others is fun, and [watching what people make with them is totally surreal](https://northern-information.github.io/arcologies-docs/gallery).
 
 All these pieces of software share a common thread, and that thread is [monome](https://monome.org). A long time ago I saw the grid and knew one day I would get one and make really cool shit with it. The monome community has helped me stay anchored to myself through the solstagia, anxiety, and depression of 2020.
 
