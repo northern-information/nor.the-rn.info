@@ -91,6 +91,7 @@ These rules apply to prose posts and follow Chicago style. Don't change titles i
 - Italicize titles of long or standalone works: books, magazines and newspapers, films, TV series, albums, video games, plays, long poems, and paintings or other artworks. Use underscores: `_Zero Parades_`, `_Capitalist Realism_`.
 - Put titles of shorter works and parts of a larger work in double quotes: songs and tracks, articles and blog posts, book chapters, TV episodes, short stories, and short poems.
 - Put the italics inside a link: `[_Zero Parades_](https://...)`.
+- In a caption that is otherwise italic, set the title in roman (reverse italics): `Dawn _by Tyler Etters, watercolor, 2020_`.
 - Italics in Markdown titles aren't rendered, so write the title without underscores in `title:` frontmatter.
 
 ### Meta Tags and Social Sharing

@@ -4,7 +4,7 @@ date: 2020-04-19
 ---
 
 ![The Sundered Electronicist, watercolor](/images/the-sundered-electronicist.jpg)
-_The Sundered Electronicist by Tyler Etters, watercolor, 2020_
+The Sundered Electronicist _by Tyler Etters, watercolor, 2020_
 
 The great struggles of my life have always been near the peak of [Maslow's hierarchy of needs](https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs). To quote Wikipedia:
 
@@ -41,10 +41,10 @@ Another interesting commonality is that everything on this list was, to some deg
 ## The Cicadas
 
 ![Cicada Emerging, photograph](/images/cicada.jpg)
-_Cicada Emerging by Tyler Etters, photograph, 2009_
+Cicada Emerging _by Tyler Etters, photograph, 2009_
 
 ![Terraforms](/images/terraforms.jpg)
-_[Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms) music by Tyler Etters, illustration by [Lynda Wallis](https://www.freelanceillustrations.com/), 2011_
+[Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms) _music by Tyler Etters, illustration by [Lynda Wallis](https://www.freelanceillustrations.com/), 2011_
 
 The cicada became a powerful symbol to me after I photographed it that summer day in 2009. I was at my grandmother's house in Crystal Lake, Illinois. The whole family was over for a party. I went off to a stand of pines with my camera.
 
