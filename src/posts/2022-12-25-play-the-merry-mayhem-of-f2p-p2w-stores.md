@@ -9,7 +9,7 @@ Free-to-play (F2P) and Pay-to-win (P2W) games are a relatively recent innovation
 
 Like F2P games, P2W games are typically "free" but also contain micro-transactions which yield higher-quality items and abilities. These are always somehow _better than_ their free analogs: guns that shoot further, armor with more hit points, special shoes that make you run faster. You get the idea.
 
-The development of [Coral Carrier Incarnadine](https://cci.dev) has lead me down numerous paths of research, and micro-transactions are no exception. In the name of science, I've opened up the Northern Information coffers and gone on a little spending spree. What follows are my discoveries from Call of Duty® Modern Warfare® II Warzone™ 2.0, Fortnite, and Magic the Gathering Arena.
+The development of [_Coral Carrier Incarnadine_](https://cci.dev) has lead me down numerous paths of research, and micro-transactions are no exception. In the name of science, I've opened up the Northern Information coffers and gone on a little spending spree. What follows are my discoveries from _Call of Duty® Modern Warfare® II Warzone™ 2.0_, _Fortnite_, and _Magic the Gathering Arena_.
 
 This is a photojournalism assignment of the dread capital-extraction zones of video games. These "vaporware malls" are corporate virtual-freeholds and panopticons of self-isolation. Our every disembodied-action is surveilled by the builders, but paradoxically, we can't see each other even though we're all passing through the same antechambers to get to the actual game.
 
@@ -21,21 +21,21 @@ First up: a calculated detour to the Epic Games store.
 
 ![Epic Games, Holiday Sale](/images/epic-01-games-holiday-sale.jpg)
 
-The only way to launch Fortnite or Arena is via the Epic Games launcher. We're not even in the game and we're already being solicited. The main call to action reminds us to "Save Now."
+The only way to launch _Fortnite_ or _Arena_ is via the Epic Games launcher. We're not even in the game and we're already being solicited. The main call to action reminds us to "Save Now."
 
-I click on Magic: the Gathering Arena and eagerly wonder what holiday offers await.
+I click on _Magic: The Gathering Arena_ and eagerly wonder what holiday offers await.
 
 ## Magic: the Gathering Arena
 
 ![MTG Arena, Home](/images/arena-01-home.jpg)
 
-Magic: the Gathering made history in 1993 by becoming the first P2W game of the modern era. For a nominal cost, you can buy some cards (either pre-constructed or fully randomized) with which to build your deck. If you and all your friends are playing this way, things might stay even for a while. But then someone will get the idea that, "Hey, I always win with this card... What if I just bought some more of this specific card?" Thirty years later and the Magic secondary market is as strong as ever. [Ebay recently acquired TCG Player](https://www.ebayinc.com/stories/news/ebay-acquires-tcgplayer/), solidifying their monopoly. [There are individual Magic cards that sell for over $10,000 USD.](https://www.ebay.com/sch/i.html?_from=R40&_nkw=black+lotus&_sacat=0&LH_Complete=1&LH_PrefLoc=2&_oaa=1&_fsrp=1&_dcat=183454&_sop=16)
+_Magic: The Gathering_ made history in 1993 by becoming the first P2W game of the modern era. For a nominal cost, you can buy some cards (either pre-constructed or fully randomized) with which to build your deck. If you and all your friends are playing this way, things might stay even for a while. But then someone will get the idea that, "Hey, I always win with this card... What if I just bought some more of this specific card?" Thirty years later and the _Magic_ secondary market is as strong as ever. [Ebay recently acquired TCG Player](https://www.ebayinc.com/stories/news/ebay-acquires-tcgplayer/), solidifying their monopoly. [There are individual _Magic_ cards that sell for over $10,000 USD.](https://www.ebay.com/sch/i.html?_from=R40&_nkw=black+lotus&_sacat=0&LH_Complete=1&LH_PrefLoc=2&_oaa=1&_fsrp=1&_dcat=183454&_sop=16)
 
 Part of the cost is due to the power-level and, therefore, demand. Another component is artificial-scarcity and an eldritch construct known as the [Reserved List](https://mtg.fandom.com/wiki/Reserved_List).
 
 How do these mechanics translate to virtual cards? Quite well. You can win (or buy) booster packs which have some random cards and wildcards. Wildcards come in four flavors (common, uncommon, rare, mythic) which map to the card rarities. A wildcard can be redeemed for any card of that rarity. If you want to play a competitive deck, you'll need a lot of mythic and rare wildcards...
 
-The landing page is loud, confusing, and always changing. It is a grotesque chimera of micro-transactions, daily quests, and content. I see I have a balance of 21,700 gold and 4,080 gems. I briefly forget which is purchased with fiat and which is harvested from winning, even though I've been playing Arena for years.
+The landing page is loud, confusing, and always changing. It is a grotesque chimera of micro-transactions, daily quests, and content. I see I have a balance of 21,700 gold and 4,080 gems. I briefly forget which is purchased with fiat and which is harvested from winning, even though I've been playing _Arena_ for years.
 
 ![MTG Arena, Store](/images/arena-02-store.jpg)
 
@@ -43,7 +43,7 @@ The Store tab is glowing, so I click it. Deals. Limited time offers. One time pu
 
 ![MTG Arena, Transformers](/images/arena-03-transformers.jpg)
 
-On second thought, how much is 3,000 gems, again? I'm not really into TRANSFOMERS™, though I did enjoy Beast Wars...
+On second thought, how much is 3,000 gems, again? I'm not really into TRANSFOMERS™, though I did enjoy _Beast Wars_...
 
 ![MTG Arena, Gems](/images/arena-04-gems.jpg)
 
@@ -71,7 +71,7 @@ The problem, though, is tomorrow might never come and the object of my desires m
 
 ![Fortnite, Loading](/images/fortnite-01-loading.jpg)
 
-I login to Fortnite (after a brief return to the Epic Games antechamber) and am greeted with time-sensitive offer: Melatcore Mina Pack.
+I login to _Fortnite_ (after a brief return to the Epic Games antechamber) and am greeted with time-sensitive offer: Melatcore Mina Pack.
 
 ![Fortnite, Landing](/images/fortnite-02-landing.jpg)
 
@@ -99,9 +99,9 @@ I hit `Esc` which, according to the lower right corner affordance, is supposed t
 
 ![Fortnite, Battlepass](/images/fortnite-06-battlepass.jpg)
 
-I still get thoroughly overloaded by this screen, even though I've seen it a million times. Like the Arena home page, the Fortnite Battle Pass is a menagerie of desires, rewards, levels, challenges, and short shelf lives...
+I still get thoroughly overloaded by this screen, even though I've seen it a million times. Like the _Arena_ home page, the _Fortnite_ Battle Pass is a menagerie of desires, rewards, levels, challenges, and short shelf lives...
 
-Interestingly, literally everything you can spend money on in Fortnite is cosmetic. It won't give you an edge mechanically.
+Interestingly, literally everything you can spend money on in _Fortnite_ is cosmetic. It won't give you an edge mechanically.
 
 ![Fortnite, Buy Levels](/images/fortnite-07-buy-levels.jpg)
 
@@ -109,7 +109,7 @@ Buying levels is another shell game. It unlocks progression in the Battle Pass -
 
 ![Fortnite, Doom](/images/fortnite-08-doom.jpg)
 
-Battle Passes let you spend Battle Stars which can be purchased with V-Bucks. Fortnite Battle Stars are to V-Bucks what Arena gold are to gems: a resource unlocked by simply playing the game. But they can also be purchased...
+Battle Passes let you spend Battle Stars which can be purchased with V-Bucks. _Fortnite_ Battle Stars are to V-Bucks what _Arena_ gold are to gems: a resource unlocked by simply playing the game. But they can also be purchased...
 
 ![Fortnite, V-Bucks](/images/fortnite-09-vbucks.jpg)
 
@@ -139,7 +139,7 @@ My gift is a "vinyl" record. These items allow me to change the music I hear in 
 
 I realize opening these presents has resulted in a strange type of brand loyalty. Nauseating self-loathing. I've opened more presents from Epic Games than I have from any of my family or loved ones. And Epic has gifted me more presents than I've given...
 
-Well, on that note... I'm almost done with my jolly journey of a blog post. Time for Call of Duty.
+Well, on that note... I'm almost done with my jolly journey of a blog post. Time for _Call of Duty_.
 
 ## Steam
 
@@ -163,7 +163,7 @@ The CoD franchise is such a large cultural phenomenon, it is practically invisib
 
 ![Call of Duty MW2, Battle Pass](/images/cod-02-battle-pass.jpg)
 
-Like Fortnite, CoD has a Battle Pass. It also has scrip. There is an item represented by an icon of burning money. I wonder what that might symbolize? The layout and design of these pages are actually quite rational when compared to Arena and Fortnite. Perhaps a necessity given the target demographics and subject matter of the game?
+Like _Fortnite_, CoD has a Battle Pass. It also has scrip. There is an item represented by an icon of burning money. I wonder what that might symbolize? The layout and design of these pages are actually quite rational when compared to _Arena_ and _Fortnite_. Perhaps a necessity given the target demographics and subject matter of the game?
 
 ![Call of Duty MW2, Purchase Tokens](/images/cod-03-purchase-tokens.jpg)
 
@@ -177,7 +177,7 @@ Again, scrip values are hopelessly obfuscated.
 
 ... which means this gold encrusted `KING'S RANSOM VII: GREED` bundle costs $18.46 USD.
 
-CoD isn't quite as P2W as Arena, but it is certainly a factor. Guns can be upgraded, offering quicker reload times or more stopping power. I have questions around the precise numbers.
+CoD isn't quite as P2W as _Arena_, but it is certainly a factor. Guns can be upgraded, offering quicker reload times or more stopping power. I have questions around the precise numbers.
 
 How much of an edge do they really confer?
 

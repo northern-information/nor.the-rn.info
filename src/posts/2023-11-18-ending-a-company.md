@@ -7,11 +7,11 @@ _Northern Information_ emerged from the primordial mists of 2006. The logo first
 
 ![Guns of the Philosopher](/images/guns-of-the-philosopher.jpg)
 
-Seven years later, it mutated into _tyler etters & the northern information movement_ with the release of [the geometrie of our lost cause](https://northerninformation.bandcamp.com/album/the-geometrie-of-our-lost-cause). This marked chapter one of a nine album project called _the trilogy of trilogies_.
+Seven years later, it mutated into _tyler etters & the northern information movement_ with the release of [_the geometrie of our lost cause_](https://northerninformation.bandcamp.com/album/the-geometrie-of-our-lost-cause). This marked chapter one of a nine album project called _the trilogy of trilogies_.
 
 ![The Northern Information Movement](/images/the-northern-information-movement-ink.jpg)
 
-2020's [The Arecibo Lamentations](https://northerninformation.bandcamp.com/album/the-arecibo-lamentations) saw the designation return to simply _Northern Information_.
+2020's [_The Arecibo Lamentations_](https://northerninformation.bandcamp.com/album/the-arecibo-lamentations) saw the designation return to simply _Northern Information_.
 
 ![The Arecibo Lamentations](/images/the-arecibo-lamentations.jpg)
 

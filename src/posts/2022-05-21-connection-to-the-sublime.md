@@ -3,7 +3,7 @@ title: "Connection to the Sublime"
 date: 2022-05-21
 ---
 
-[Venkatesh Rao at Ribbonfarm](https://www.ribbonfarm.com/2022/05/18/crisis-mindsets/):
+[Venkatesh Rao at _Ribbonfarm_](https://www.ribbonfarm.com/2022/05/18/crisis-mindsets/):
 
 > On the other hand, if you're an older adult in a place that was peaceful through much of your life, but is unraveling into a generalized crisis in your old age, you face a different problem — though your crisis bandwidth has expanded with age, it is not up to the challenge the times are throwing at you in your old age. You will be overwhelmed.
 >

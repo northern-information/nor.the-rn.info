@@ -5,7 +5,7 @@ date: 2022-03-25
 
 ![Coral Carrier Incarnadine](/images/coral-carrier-incarnadine.gif)
 
-A small team and I have been working on a game for several months. It is called Coral Carrier Incarnadine. You can follow development here: [https://cci.dev](https://cci.dev)
+A small team and I have been working on a game for several months. It is called _Coral Carrier Incarnadine_. You can follow development here: [https://cci.dev](https://cci.dev)
 
 > Lead the CC Incarnadine and her crew of climate-punks, nautical drones, and GMO algae on a mission to heal the desiccated coral reefs.
 

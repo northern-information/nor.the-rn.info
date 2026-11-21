@@ -17,11 +17,11 @@ In short, I'm saying "no" much more than usual. The increased focus and slower p
 
 ## Major Arcana
 
-- [Coral Carrier Incarnadine](https://cci.dev) began her multi-decade voyage.
-- [FADE SCATTER REPLICATE](https://stuxnet.bandcamp.com/album/fade-scatter-replicate) marked the return of Stuxnet.
-- Sound + Process [interviewed the Northern Information Applied Sciences & Phantasms Working Division](https://soundcloud.com/sound-and-process/episode-23).
+- [_Coral Carrier Incarnadine_](https://cci.dev) began her multi-decade voyage.
+- [_FADE SCATTER REPLICATE_](https://stuxnet.bandcamp.com/album/fade-scatter-replicate) marked the return of Stuxnet.
+- _Sound + Process_ [interviewed the Northern Information Applied Sciences & Phantasms Working Division](https://soundcloud.com/sound-and-process/episode-23).
 - Flash Crash, [crashed](https://llllllll.co/t/flash-crash-end/).
-- They Became What They Beheld performed [Live @ The End of the World](https://www.youtube.com/watch?v=pN-PgfJKYy4) and released [EP2](https://theybecamewhattheybeheld.bandcamp.com/album/ep2).
+- They Became What They Beheld performed [Live @ The End of the World](https://www.youtube.com/watch?v=pN-PgfJKYy4) and released [_EP2_](https://theybecamewhattheybeheld.bandcamp.com/album/ep2).
 
 ## Channels
 
@@ -39,7 +39,7 @@ Tertiary channels include the [email newsletter](https://us1.campaign-archive.co
 
 The Stuxnet project continues.
 
-[FADE SCATTER REPLICATE](https://stuxnet.bandcamp.com/album/fade-scatter-replicate) is the latest. Part two of that saga is in the works.
+[_FADE SCATTER REPLICATE_](https://stuxnet.bandcamp.com/album/fade-scatter-replicate) is the latest. Part two of that saga is in the works.
 
 I am toying with the idea of with singles. Radio mix. Club mix. Slow mix. All that. I realized I've compromised some of my songs by trying to confine them to a single cut. So many deserve more room to breathe.
 

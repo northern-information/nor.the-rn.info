@@ -3,11 +3,11 @@ title: "CCI Update"
 date: 2022-04-23
 ---
 
-Welcome to a leviathan [Coral Carrier Incarnadine](https://cci.dev) update!
+Welcome to a leviathan [_Coral Carrier Incarnadine_](https://cci.dev) update!
 
 CCI is an [open source](https://github.com/northern-information/cci) game for the [monome norns](https://monome.org) sound computer in which players lead the CC Incarnadine and her crew of climate-punks, nautical drones, and GMO algae on a mission to heal the desiccated coral reefs.
 
-We open the update with a canonical short story written by Coral Carrier Incarnadine contributor, [@pleco](https://llllllll.co/u/pleco). Afterwards, I'll share what I've been up to for the last several months.
+We open the update with a canonical short story written by _Coral Carrier Incarnadine_ contributor, [@pleco](https://llllllll.co/u/pleco). Afterwards, I'll share what I've been up to for the last several months.
 
 ## Obibe's Descent
 
@@ -47,7 +47,7 @@ My thinking evolved into several concurrent streams.
 
 CCI contains gene sequences from all the games I've ever played. What are the touchstones the game is anchored in? Who's made similar games? Who's told similar stories? What can I learn from them?
 
-Growing up, Magic: The Gathering, Battlefleet: Gothic, and Warhammer 40,000 were some of my favorite tabletop games. Metal Gear Solid, Starcraft, Doom, Diablo 2, Resident Evil, Armored Core, Abe's Odyssey, Another World, Flashback, Humans, Kings Quest IV, and MechWarrior were some of my favorite video games. I got a GameBoy Color and Pokemon: Blue right when they came out came out and was hooked for years...
+Growing up, _Magic: The Gathering_, _Battlefleet: Gothic_, and _Warhammer 40,000_ were some of my favorite tabletop games. _Metal Gear Solid_, _Starcraft_, _Doom_, _Diablo 2_, _Resident Evil_, _Armored Core_, _Abe's Odyssey_, _Another World_, _Flashback_, _Humans_, _Kings Quest IV_, and _MechWarrior_ were some of my favorite video games. I got a GameBoy Color and _Pokemon: Blue_ right when they came out came out and was hooked for years...
 
 ![Battlefleet Gothic](/images/cci-update-battlefleet-gothic.jpg)
 
@@ -59,11 +59,11 @@ Growing up, Magic: The Gathering, Battlefleet: Gothic, and Warhammer 40,000 were
 
 ![Starcraft](/images/cci-update-starcraft.jpg)
 
-And any of my [Instagram](https://instagram.com/tyleretters) followers know I'm way into Kentucky Route Zero, Elden Ring, and Bloodborne.
+And any of my [Instagram](https://instagram.com/tyleretters) followers know I'm way into _Kentucky Route Zero_, _Elden Ring_, and _Bloodborne_.
 
 ![Bloodborne](/images/cci-update-bloodborne.jpg)
 
-It has been an absolute joy to return to my old strategy guides and rulebooks with "developer tools enabled." All these games look so different through this lens. ([Did you know Magic is Turing complete?](https://arxiv.org/abs/1904.09828))
+It has been an absolute joy to return to my old strategy guides and rulebooks with "developer tools enabled." All these games look so different through this lens. ([Did you know _Magic_ is Turing complete?](https://arxiv.org/abs/1904.09828))
 
 ![Prince of Persia](/images/cci-update-prince-of-persia.jpg)
 
@@ -95,7 +95,7 @@ The question becomes one of _resolution_ - how deep do you need to go with the d
 
 One of CCI's fundamental concepts - like [arcologies](https://northern-information.github.io/arcologies-docs), and many of my other pieces - is emergence. Small, seemingly simple decisions that yield massive ramifications later.
 
-I share this scenario because it reminds me of my favorite bug of all time. It is from [Dwarf Fortress](https://bay12games.com/dwarves/). Players were reporting cats getting drunk. No one could figure out why. Then, one of the creators cracked the case:
+I share this scenario because it reminds me of my favorite bug of all time. It is from [_Dwarf Fortress_](https://bay12games.com/dwarves/). Players were reporting cats getting drunk. No one could figure out why. Then, one of the creators cracked the case:
 
 > Now, the cats would walk into the taverns, right, and because of the old blood footprint code from, like, eight years ago or something, they would get alcohol on their feet. It was originally so people could pad blood around, but now any liquid, right, so they get alcohol on their feet. And then I wanted to add cleaning stuff so when people were bathing, or I even made eyelids work for no reason, because I do random things sometimes. So cats will lick and clean themselves, and on a lark, when I made them clean themselves I'm like, "Well, it's a cat. When you do lick cleaning, you actually ingest the thing that you're cleaning off, right? They make hairballs, so they must swallow something, right?" And so the cats, when they cleaned the alcohol off their feet, they all got drunk. Because they were drinking.
 
@@ -119,7 +119,7 @@ Which aspects of the world show up in the game? What are the mechanics? How can 
 
 ![Sepulchre Punk](/images/cci-update-sepulchre-punk.jpg)
 
-I am just now getting into designing how the main "game loop" works. A game loop can be thought of as a "turn cycle" or a sequence of events that repeats. If we're talking in musical terms it could be compared to a measure or bar. The game loop of Chess is: white, black. In basketball: pass, dribble, shoot. In Magic: untap, upkeep, draw, main, combat, main, end.
+I am just now getting into designing how the main "game loop" works. A game loop can be thought of as a "turn cycle" or a sequence of events that repeats. If we're talking in musical terms it could be compared to a measure or bar. The game loop of Chess is: white, black. In basketball: pass, dribble, shoot. In _Magic_: untap, upkeep, draw, main, combat, main, end.
 
 CCI has several game loops that interconnect and operate on different timescales. Roughly, they are:
 
@@ -153,7 +153,7 @@ I've shared many sketches and designs. I'm thinking about this project as someth
 
 [@ngwese](https://llllllll.co/u/ngwese)'s latest `screen.display_image_region()` feature arrived _just in time_ for this and has enabled me to design with [sprites](<https://en.wikipedia.org/wiki/Sprite_(computer_graphics)>) in mind. (With arcologies and yggdrasil, I programed each glyph pixel-by-pixel.)
 
-Only a few concepts have made it all the way to programming spikes. A "spike" is a small piece of (typically) disposable code used to prove an idea. One spike turned into the (now mythical) unreleased roguelike ASCII game called [HIVERUNNER](/2022/03/30/hiverunner/). Other spikes made their way into utility scripts like [u/KEY, u/DCE, & u/REF](https://l.llllllll.co/u).
+Only a few concepts have made it all the way to programming spikes. A "spike" is a small piece of (typically) disposable code used to prove an idea. One spike turned into the (now mythical) unreleased roguelike ASCII game called [_HIVERUNNER_](/2022/03/30/hiverunner/). Other spikes made their way into utility scripts like [u/KEY, u/DCE, & u/REF](https://l.llllllll.co/u).
 
 ## Quality Assurance
 

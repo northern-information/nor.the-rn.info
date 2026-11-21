@@ -3,7 +3,7 @@ title: "An Eschatological Laundry List"
 date: 2022-12-20
 ---
 
-A curious artifact from the past found me today. It is "A Partial Register of the 927 (or was in 928?) Eternal Truths" from Sheldon Kopp's 1974 book, "If you meet the Buddha on the road, kill him!" And — sorry to listicle you — but numbers 29, 41, and 18 are resonating particularly hard these days:
+A curious artifact from the past found me today. It is "A Partial Register of the 927 (or was in 928?) Eternal Truths" from Sheldon Kopp's 1974 book, _If You Meet the Buddha on the Road, Kill Him!_ And — sorry to listicle you — but numbers 29, 41, and 18 are resonating particularly hard these days:
 
 1. This is it!
 2. There are no hidden meanings.

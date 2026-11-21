@@ -3,7 +3,7 @@ title: "I Don't Understand Anything Anymore"
 date: 2022-04-20
 ---
 
-[KC Cole, writing for Wired:](https://www.wired.com/story/i-dont-understand-anything-anymore/)
+[KC Cole, writing for _Wired_:](https://www.wired.com/story/i-dont-understand-anything-anymore/)
 
 > One thing I love about science is that much of what's true, what's interesting, makes no sense (to us) at all. All of life encoded in some silly spiral ladder of molecules that spells out how to grow, when to stop, whether to flower or swim or study the universe? Give me a break. Curved spacetime doesn't make sense; time dilation doesn't make sense; quantum mechanics isn't even supposed to make sense.
 >

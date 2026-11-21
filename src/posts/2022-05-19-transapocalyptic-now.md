@@ -3,7 +3,7 @@ title: "Transapocalyptic Now"
 date: 2022-05-19
 ---
 
-[Alex Steffen, writing for The Snap Forward](https://alexsteffen.substack.com/p/the-transapocalyptic-now):
+[Alex Steffen, writing for _The Snap Forward_](https://alexsteffen.substack.com/p/the-transapocalyptic-now):
 
 > Of all the fairy tales that have blinded us to the realities of this new era, this is the most seductive — that the future ahead of us offers a simple, stark moral choice with a simple, stark outcome: we will rise to triumph and all will be well, or we will fall. Victory, or death!
 >

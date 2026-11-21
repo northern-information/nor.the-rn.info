@@ -17,7 +17,7 @@ Somewhere, months later, I saw "online-ness" offered as another axis with to gau
 
 Now, I go into the "office" once a week. Tuesday is the day. I have two accountability buddies. It is good for each of us. Devirtualize. Sometimes we all pull up. Sometimes two. Sometimes only one. Last Tuesday I was alone.
 
-(But yesterday-Tuesday I got to interact with humans! Isaac and I hacked the Gibson. Arthur played Aerials and Chop Suey on drums. Jack shredded bass and spoke of distant horizons. Erik plotted empires.)
+(But yesterday-Tuesday I got to interact with humans! Isaac and I hacked the Gibson. Arthur played "Aerials" and "Chop Suey" on drums. Jack shredded bass and spoke of distant horizons. Erik plotted empires.)
 
 "Office" in scare-quotes because Output HQ is the most comfortable professional domicile within which I've ever had the pleasure of conducting business. Drum machines and instruments just sorta float around in slow eddies which can only map to employee devirtualization-cycles.
 
