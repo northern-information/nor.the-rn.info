@@ -84,6 +84,15 @@ These conventions apply to **prose blog posts only**. Music release posts are ma
 
 Use straight quotes (`"` and `'`) in all prose, titles, and data, never curly quotes (`“ ” ‘ ’`). This includes text pasted from elsewhere: straighten the quotes and apostrophes in quoted passages and copied link text. markdown-it's `typographer` option is off, so the site renders quotes exactly as typed.
 
+#### Titles of works
+
+These rules apply to prose posts and follow Chicago style. Leave older posts as they are, and apply the rules to new posts and edits.
+
+- Italicize titles of long or standalone works: books, magazines and newspapers, films, TV series, albums, video games, plays, long poems, and paintings or other artworks. Use underscores: `_Zero Parades_`, `_Capitalist Realism_`.
+- Put titles of shorter works and parts of a larger work in double quotes: songs and tracks, articles and blog posts, book chapters, TV episodes, short stories, and short poems.
+- Put the italics inside a link: `[_Zero Parades_](https://...)`.
+- Italics in Markdown titles aren't rendered, so write the title without underscores in `title:` frontmatter.
+
 ### Meta Tags and Social Sharing
 
 Meta tags are rendered via `src/includes/metaTags.njk`:
