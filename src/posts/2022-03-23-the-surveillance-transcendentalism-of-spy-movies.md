@@ -23,7 +23,7 @@ Rachel Weisz conveys a measure of grace and authenticity while Oscarr Isaac is e
 
 Nevertheless, _THE BOURNE LEGACY_ offers plenty of kicks from an intoxicating doctor/patient romance to rugged survivalist milieu in an arctic wilderness. And I will never ever get sick of successfully picking up the cache of cash, weapons, and papers in from a car in the long-term parking garage at the airport! Evergreen!
 
-(NB: has anyone ever written about the appearance of snowy worlds in sequels? _Empire Strikes Back_, _Die Hard 2_, _Batman Returns_, _Dark Souls 2_, _Red Alert: Counterstrike_... Maybe it is apophenia on my part but I feel like frozen worlds always appear in the second installment. So, if you're writing a sequel, just add snow! (Yes, this is technically BOURNE #4 but ostensibly was the start of a second trilogy. Leave me alone, this is my blog.))
+(NB: has anyone ever written about the appearance of snowy worlds in sequels? _The Empire Strikes Back_, _Die Hard 2_, _Batman Returns_, _Dark Souls 2_, _Red Alert: Counterstrike_... Maybe it is apophenia on my part but I feel like frozen worlds always appear in the second installment. So, if you're writing a sequel, just add snow! (Yes, this is technically BOURNE #4 but ostensibly was the start of a second trilogy. Leave me alone, this is my blog.))
 
 Unlike BOURNE, entries in the BOND (1962 - 2021) franchise have only the thinnest layer of canonical persistence. This quality has allowed each entry to begin with a perfectly neutral status-quo, thereby liberating writers and producers to do whatever strikes their fancy. MISSION IMPOSSIBLE enjoys a similar framing, with events from preceding installments only loosely impacting today's crisis.
 
