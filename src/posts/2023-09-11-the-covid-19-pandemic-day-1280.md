@@ -3,7 +3,7 @@ title: "The COVID-19 Pandemic, Day 1280"
 date: 2023-09-11
 ---
 
-[Dougald Hine, from his 2023 book At Work in the Ruins:](https://www.chelseagreen.com/product/at-work-in-the-ruins/)
+[Dougald Hine, from his 2023 book _At Work in the Ruins_:](https://www.chelseagreen.com/product/at-work-in-the-ruins/)
 
 > In April 2020, Cayley turned his attention to the recently declared pandemic and the measures being taken against it. His purpose was not to offer policy prescriptions but to draw into view 'the practised certainties that make our current policy seem incontestable'. How was it that, almost overnight, the concept of 'lockdown' - previously a measure used by prison authorities against rioting inmates - had come to seem obvious, not just accepted but demanded, on the scale of whole countries? He was struck by the ease with which we grant authority to 'models' of how this new disease would spread that could only be based, at best, on educated guesswork. What were the longer trends in our understanding of ourselves and our societies that laid the foundations for such a response and where would this take us next?
 

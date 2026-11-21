@@ -86,7 +86,7 @@ Use straight quotes (`"` and `'`) in all prose, titles, and data, never curly qu
 
 #### Titles of works
 
-These rules apply to prose posts and follow Chicago style. Leave older posts as they are, and apply the rules to new posts and edits.
+These rules apply to prose posts and follow Chicago style. Don't change titles inside passages quoted from someone else.
 
 - Italicize titles of long or standalone works: books, magazines and newspapers, films, TV series, albums, video games, plays, long poems, and paintings or other artworks. Use underscores: `_Zero Parades_`, `_Capitalist Realism_`.
 - Put titles of shorter works and parts of a larger work in double quotes: songs and tracks, articles and blog posts, book chapters, TV episodes, short stories, and short poems.

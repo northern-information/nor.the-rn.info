@@ -22,16 +22,16 @@ I've had many six minute miles in my life. Beyond finishing college to earn my B
 
 - Screening _A Glass Reality_ at the Wauconda Public Library.
 - Performing with Inocula at JFF and Clearwater.
-- Opening the the box of [Descent into Dreams](https://ixmusic.bandcamp.com/album/descent-into-dreams) CDs with Pasha.
-- Writing [Serial Index of Unclaimed Memories](https://ecicefis.bandcamp.com/album/serial-index-of-unclaimed-memories-file-1) and [Gates](https://ecicefis.bandcamp.com/album/gates-ep) with Pasha.
+- Opening the the box of [_Descent into Dreams_](https://ixmusic.bandcamp.com/album/descent-into-dreams) CDs with Pasha.
+- Writing [_Serial Index of Unclaimed Memories_](https://ecicefis.bandcamp.com/album/serial-index-of-unclaimed-memories-file-1) and [_Gates_](https://ecicefis.bandcamp.com/album/gates-ep) with Pasha.
 - Photographing a cicada emerging from its shell.
 - Jamming electronic music with Adam and Pasha.
 - Coding the early versions of [endlessfieldstudios.com](https://web.archive.org/web/20120308041423/https://endlessfieldstudios.com/).
 - Meeting & marrying [Sage](https://etters.co).
-- Writing [Terraforms](https://connectednesslocus.bandcamp.com/album/terraforms).
+- Writing [_Terraforms_](https://connectednesslocus.bandcamp.com/album/terraforms).
 - Playing at Swing State.
 - Finishing the [Trilogy of Trilogies](/2017/12/23/the-trilogy-of-trilogies).
-- Writing [Fear Imm(a/i)nence](/2019/03/03/fear-immainence/).
+- Writing ["Fear Imm(a/i)nence"](/2019/03/03/fear-immainence/).
 - [The early days of UTC.](/2019/05/24/coordinated-universal-time/)
 
 That is an impressive list. Look at the verbs: writing, jamming, meeting, finishing, photographing, screening, performing. Each enables a state of [flow](<https://en.wikipedia.org/wiki/Flow_(psychology)>). Time dissolves, the ego forgets about itself and something new is created.
@@ -56,7 +56,7 @@ I pride myself in not being superstitious... but years later, during the [Endles
 
 I'm 32 now. What's "the hill" these days? 40?
 
-For my favorite artists and musicians, I compulsively crunch the numbers. How old were they when they broke out? Godspeed You! Black Emperor formed when they were all in their 20s. Richard D. James was just 21 when SAW 85-92 came out. Brian Eno was 23 when he got started with Roxy Music. Reznor was 24 when...
+For my favorite artists and musicians, I compulsively crunch the numbers. How old were they when they broke out? Godspeed You! Black Emperor formed when they were all in their 20s. Richard D. James was just 21 when _SAW 85-92_ came out. Brian Eno was 23 when he got started with Roxy Music. Reznor was 24 when...
 
 The thing is, I am actually mostly indifferent to fame and celebrity. If anything, I lean towards seeing fame as a burden. I don't particularly want people critiquing my work. Getting a 4.3 on Pitchfork. Being recognized at the airport. The whole thing sounds awful.
 

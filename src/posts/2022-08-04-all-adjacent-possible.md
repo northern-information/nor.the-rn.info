@@ -3,7 +3,7 @@ title: "All Adjacent Possible"
 date: 2022-08-04
 ---
 
-[Venkatesh Rao at Ribbonfarm](https://www.ribbonfarm.com/2022/08/04/a-dreaming-world/):
+[Venkatesh Rao at _Ribbonfarm_](https://www.ribbonfarm.com/2022/08/04/a-dreaming-world/):
 
 > Tik-tok strikes me as a curiously appropriate social medium for these tenuous times. The things that spread on and out of Tik-tok seem culturally energized, but unvectored, and ultimately self-contained in a way that makes it hard to call them trends, let alone cohering into bundles worth labeling torrents.
 >

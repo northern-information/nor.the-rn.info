@@ -3,7 +3,7 @@ title: "An Antipersonnel Landmine in Human Form"
 date: 2026-11-13
 ---
 
-In _Zero Parades_, PSEUDOPOD describes CASCADE (Hershel Wilk) with [a particularly memorable line](https://zeroparadesdb.com/de/dialogabl%C3%A4ufe/ich-kannte-mal-eine-spionin):
+In [_Zero Parades_](https://zeroparades.com/), PSEUDOPOD describes CASCADE (Hershel Wilk) with [a particularly memorable line](https://zeroparadesdb.com/de/dialogabl%C3%A4ufe/ich-kannte-mal-eine-spionin):
 
 > "She was brilliant, unpredictable, cursed. An antipersonnel landmine in human form."
 

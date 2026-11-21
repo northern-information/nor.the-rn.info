@@ -31,7 +31,7 @@ I did an un-planned, un-promoted, un-rehearsed live stream two nights ago. I thi
 
 [CCI](https://cci.dev) development continues. The spirals are contracting.
 
-## Continuum Hack
+## _Continuum Hack_
 
 ![Wilson](/images/wilson.jpg)
 

@@ -13,7 +13,7 @@ I saw two other people with face masks.
 
 San Francisco is ordered to shelter-in-place and here, in Santa Clarita, in the same state, people are continuing on like nothing is wrong.
 
-I got home, washed all my clothing, took a shower, and started playing Skyrim.
+I got home, washed all my clothing, took a shower, and started playing _Skyrim_.
 
 ![Timefall](/images/timefall.jpg)
 _Timefall._

@@ -3,7 +3,7 @@ title: "Preparing for Defeat"
 date: 2022-03-14
 ---
 
-[Francis Fukuyama, writing for American Purpose:](https://www.americanpurpose.com/articles/preparing-for-defeat/)
+[Francis Fukuyama, writing for _American Purpose_:](https://www.americanpurpose.com/articles/preparing-for-defeat/)
 
 > Russia is heading for an outright defeat in Ukraine. Russian planning was incompetent, based on a flawed assumption that Ukrainians were favorable to Russia and that their military would collapse immediately following an invasion. Russian soldiers were evidently carrying dress uniforms for their victory parade in Kyiv rather than extra ammo and rations. Putin at this point has committed the bulk of his entire military to this operation—there are no vast reserves of forces he can call up to add to the battle. Russian troops are stuck outside various Ukrainian cities where they face huge supply problems and constant Ukrainian attacks.
 >

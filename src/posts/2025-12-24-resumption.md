@@ -17,17 +17,17 @@ I [broke up with my partner of fifteen years](/2025/05/04/on-marriage/). It has 
 
 ![Continuum Hack](/images/continuum-hack-ost.jpg)
 
-We finished [Continuum Hack](https://continuumhack.com) and premiered it at several festivals and online. That film was about four years in the making.
+We finished [_Continuum Hack_](https://continuumhack.com) and premiered it at several festivals and online. That film was about four years in the making.
 
 I moved. Moving is tiring and expensive. I haven't really written any music in the new studio yet. I don't exactly have guilt about that, but I also feel like the volume of original output is a good indicator of my health.
 
 ![This had better be part of some grand occult process](/images/this-had-better-be-part-of-some-grand-occult-process.jpg)
 
-On the other hand, I've produced about a dozen mixes this year which I am supremely proud of. [STUXNET](https://stuxnet.me) has also released several major arcana. There turned out to be no [They Became What They Beheld](https://tbwtb.co) which surprised me. There was, however, a [Northern Information](/music/northern-information/a-report-on-our-findings/) release which really surprised me. I also helped get several other musician's records over the line such as [This had better be part of some grand occult process](https://rgbrgbrgb.bandcamp.com/album/this-had-better-be-part-of-some-grand-occult-process).
+On the other hand, I've produced about a dozen mixes this year which I am supremely proud of. [STUXNET](https://stuxnet.me) has also released several major arcana. There turned out to be no [They Became What They Beheld](https://tbwtb.co) which surprised me. There was, however, a [Northern Information](/music/northern-information/a-report-on-our-findings/) release which really surprised me. I also helped get several other musician's records over the line such as [_This had better be part of some grand occult process_](https://rgbrgbrgb.bandcamp.com/album/this-had-better-be-part-of-some-grand-occult-process).
 
 ![Blood Meridian & Moby Dick](/images/blood-meridian-moby-dick.jpg)
 
-𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯, the Northern Information Discord server, was a joy. In particular the bookclub. We read [Walkaway](<https://en.wikipedia.org/wiki/Walkaway_(Doctorow_novel)>), [The Mushroom at the End of the World](https://en.wikipedia.org/wiki/The_Mushroom_at_the_End_of_the_World), and a "simultaneous read" of [Blood Meridian](https://en.wikipedia.org/wiki/Blood_Meridian) and [Moby Dick](https://en.wikipedia.org/wiki/Moby-Dick).
+𝔡𝔞𝔲𝔫𝔱𝔩𝔢𝔰𝔰 𝔠𝔥𝔬𝔦𝔯, the Northern Information Discord server, was a joy. In particular the bookclub. We read [_Walkaway_](<https://en.wikipedia.org/wiki/Walkaway_(Doctorow_novel)>), [_The Mushroom at the End of the World_](https://en.wikipedia.org/wiki/The_Mushroom_at_the_End_of_the_World), and a "simultaneous read" of [_Blood Meridian_](https://en.wikipedia.org/wiki/Blood_Meridian) and [_Moby Dick_](https://en.wikipedia.org/wiki/Moby-Dick).
 
 When asked for feedback about the community a close friend shared:
 
@@ -49,25 +49,25 @@ Moving into the word of macOS/Win/Linux && VST/AU/AAX/CLAP makes my work wildly 
 
 My albums of the year in no particular order are:
 
-- [Charlotte De Witte](https://charlottedewittemusic.bandcamp.com/album/charlotte-de-witte)
-- [Joseph, What Have You Done?](https://rainymiller.bandcamp.com/album/joseph-what-have-you-done)
-- [Dead Channel Sky](https://clppng.bandcamp.com/album/dead-channel-sky)
+- [_Charlotte De Witte_](https://charlottedewittemusic.bandcamp.com/album/charlotte-de-witte)
+- [_Joseph, What Have You Done?_](https://rainymiller.bandcamp.com/album/joseph-what-have-you-done)
+- [_Dead Channel Sky_](https://clppng.bandcamp.com/album/dead-channel-sky)
 
 My songs of the year in thematic order are:
 
-- Torukia by Gabriela Robin, Yoko Kanno
-- Belurat, Tower Settlement by Shoi Miyazawa
-- Vengeance. (feat. Graham Style) by Rainy Miller
-- You and Me by skeler.
-- Get Together by Madonna
-- Air For Life by Above & Beyond
-- The Realm by Charlotte de Witte
-- CONCRETE JUNGLE by Bad Omens
-- Like Love by The Amity Affliction
-- Hostage by Fit for An Autopsy
-- L'exquisite Douleur by Being As An Ocean
-- No Sleep in Medan by Celer
-- Ancient Sanctuary - Megabot#33 by Lorien Testard
+- "Torukia" by Gabriela Robin, Yoko Kanno
+- "Belurat, Tower Settlement" by Shoi Miyazawa
+- "Vengeance." (feat. Graham Style) by Rainy Miller
+- "You and Me" by skeler.
+- "Get Together" by Madonna
+- "Air for Life" by Above & Beyond
+- "The Realm" by Charlotte de Witte
+- "CONCRETE JUNGLE" by Bad Omens
+- "Like Love" by The Amity Affliction
+- "Hostage" by Fit for An Autopsy
+- "L'exquisite Douleur" by Being As An Ocean
+- "No Sleep in Medan" by Celer
+- "Ancient Sanctuary - Megabot#33" by Lorien Testard
 
 ## Now
 

@@ -3,7 +3,7 @@ title: "Failure Is Something You Want to Tempt"
 date: 2022-08-07
 ---
 
-[Simon Sarris, writing for The Map is Mostly Water:](https://simonsarris.substack.com/p/start-with-creation)
+[Simon Sarris, writing for _The Map is Mostly Water_:](https://simonsarris.substack.com/p/start-with-creation)
 
 > So it is an error to wait around for inspiration, or to demand some feeling of readiness for an undertaking, or for a teacher or some other golden opportunity. I think these slouching inclinations come partly from an overly-systematized experience during childhood school years, and partly from a fear of failure. In fact, when you stop waiting for others—for either their permission or instruction—and instead begin on your own, fumbling through, regardless of how ready you are, this could be considered one of the true beginnings of adulthood.
 >

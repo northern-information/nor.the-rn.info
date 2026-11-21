@@ -81,13 +81,13 @@ Today I mourn with a tattoo from [Dark Heart](https://web.archive.org/web/202111
 
 Timm died the day of [Flash Crash 210904](https://flashcrash.net) and the debut of my new band, [Sidereal Lobby](https://sidereallobby.com).
 
-## Day 6: Night of the Living Dead
+## Day 6: _Night of the Living Dead_
 
 ![Glass](/images/sab-dead.jpg)
 
 Mom, Willow, Will, and I sift through my old possessions. I give most of them away to Willow and Will. They are newly wed and have a new house.
 
-We enjoy a home-cooked dinner. For the first time, we smoke marijuana together. We settle in to watch Night of the Living Dead.
+We enjoy a home-cooked dinner. For the first time, we smoke marijuana together. We settle in to watch _Night of the Living Dead_.
 
 ## Day 7: Only Every Four Years or So
 

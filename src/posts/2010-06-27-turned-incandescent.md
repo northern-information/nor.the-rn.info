@@ -5,6 +5,6 @@ date: 2010-06-27
 
 [![Endless Field Studios, Volume 1](/images/endless-field-studios-volume-1.jpg)](https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-1)
 
-I've got a new track on [Endless Field Studios, Volume 1](https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-1).
+I've got a new track on [_Endless Field Studios, Volume 1_](https://endlessfieldstudios.bandcamp.com/album/endless-field-studios-volume-1).
 
 It is called "Turned Incandescent".

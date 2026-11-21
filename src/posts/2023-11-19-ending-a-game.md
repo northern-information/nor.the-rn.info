@@ -3,7 +3,7 @@ title: "Ending a Game"
 date: 2023-11-19
 ---
 
-It is with a heavy and clear heart I am announcing the end of [Coral Carrier Incarnadine](https://llllllll.co/t/51866).
+It is with a heavy and clear heart I am announcing the end of [_Coral Carrier Incarnadine_](https://llllllll.co/t/51866).
 
 I started development of the game in 2022 knowing it was unfathomably large, that by the time it was complete most of the coral reefs could be dead, that it would be an endurance testing multi-media and multi-decade endeavor.
 

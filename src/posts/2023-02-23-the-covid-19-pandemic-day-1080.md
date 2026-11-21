@@ -3,7 +3,7 @@ title: "The COVID-19 Pandemic, Day 1080"
 date: 2023-02-23
 ---
 
-[Jon Mooallem, writing for The New York Times:](https://www.nytimes.com/interactive/2023/02/22/magazine/covid-pandemic-oral-history.html)
+[Jon Mooallem, writing for _The New York Times_:](https://www.nytimes.com/interactive/2023/02/22/magazine/covid-pandemic-oral-history.html)
 
 > Now, it's as though we've been staring into a fun-house mirror for a long time and our vision is correcting — but it's correcting imperfectly, so that we may not pick up on all the bulges and dents. We are awash in what Hagen referred to as an "onslaught of narrative repair," scattershot attempts to clarify or justify our experiences, assignments of blame, misunderstandings and misinformation flying in all directions. It will play out and reverberate for years or decades, Hagen told me. "And I wouldn't have been sensitive to that, I don't think, if I hadn't watched, in these interviews, people struggling to do it hundreds of times in real time."
 >
@@ -19,7 +19,7 @@ It is day 1080 and I am still suffering from this socio-material crisis, general
 
 It is like we were lobotomized. We don't know how to talk about it. We don't know when to talk about it. And frighteningly few works of art have been made to confront it.
 
-Taylor Garron's [As of Yet](https://www.rottentomatoes.com/m/as_of_yet) stands out as the only new media I've seen that even _acknowledges_ the pandemic.
+Taylor Garron's [_As of Yet_](https://www.rottentomatoes.com/m/as_of_yet) stands out as the only new media I've seen that even _acknowledges_ the pandemic.
 
 > Told entirely through video calls and digital diaries, Naomi (Taylor Garron who also wrote and co-directs) navigates a problematic roommate and a burgeoning romance all while locked down during the Coronavirus pandemic.
 

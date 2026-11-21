@@ -9,4 +9,4 @@ date: 2019-03-28
 
 – Edmund Snow Carpenter, 1970
 
-Video sourced from [Los Angeles Area, Railroad Process Plates](https://archive.org/details/PET1018_R-2_LA) and processed with [MaskRCNN](https://github.com/matterport/Mask_RCNN) by [Cory Salveson](https://twitter.com/argotechnica), 2019.
+Video sourced from [_Los Angeles Area, Railroad Process Plates_](https://archive.org/details/PET1018_R-2_LA) and processed with [MaskRCNN](https://github.com/matterport/Mask_RCNN) by [Cory Salveson](https://twitter.com/argotechnica), 2019.

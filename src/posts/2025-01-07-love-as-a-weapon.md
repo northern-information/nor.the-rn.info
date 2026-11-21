@@ -11,7 +11,7 @@ _"All you touch and all you see is all your life will ever be." - Roger Waters_
 
 I am a time artist. Music is my favorite expression of this class-alignment. Music requires time to operate in ways that other media do not. Imagine being able to read 1,000 words per minute. (As of writing this there are probably AIs that are optimized to do much better.)
 
-At 1,000 words per minute you could read the entirety of Blood Meridian in about two hours.
+At 1,000 words per minute you could read the entirety of _Blood Meridian_ in about two hours.
 
 But there's no way to increase your "listenings per minute."
 

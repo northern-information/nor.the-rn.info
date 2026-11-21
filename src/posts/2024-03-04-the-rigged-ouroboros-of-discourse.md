@@ -3,7 +3,7 @@ title: "The Rigged Ouroboros of Discourse"
 date: 2024-03-04
 ---
 
-[P.E. Moskowitz, The Rigged Ouroboros of Discourse:](https://mentalhellth.xyz/p/the-rigged-ouroboros-of-discourse)
+[P.E. Moskowitz, "The Rigged Ouroboros of Discourse":](https://mentalhellth.xyz/p/the-rigged-ouroboros-of-discourse)
 
 > In believing the issues we face are systemic (true), and that there are no individual solutions to systemic issues (mostly true), we've jumped the gun to the point that it feels like any display of personal agency is viewed as pointless, or not-enough, or besides-the-point, or even downright impossible to actualize. We've (rightly) reacted to capitalism's pull-yourself-up-by-your-bootstraps mentality by saying that only collective change will change the world, but then, perhaps, gone too far into believing that means nothing we do individually really matters. Which, I think, is actually a sign of the way the internet has infected our brains.
 >

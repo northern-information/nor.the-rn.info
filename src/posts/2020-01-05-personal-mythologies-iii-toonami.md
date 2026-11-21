@@ -11,7 +11,7 @@ Toonami was a programming block on Cartoon Network that specialzed in Japense im
 
 > A boy has the right to dream. There are endless possibilities stretched out before him.
 
-This video is a montage of shots from several of my favorite series, but most prominently Outlaw Star. Downtempo dubby music, which I believe was composed Joe Boyd Vigil, plays under a smattering of monologues and inspirational dialog.
+This video is a montage of shots from several of my favorite series, but most prominently _Outlaw Star_. Downtempo dubby music, which I believe was composed Joe Boyd Vigil, plays under a smattering of monologues and inspirational dialog.
 
 > Whatever happens from now on, you stand firm and face your desinty without fear, but with courage.
 

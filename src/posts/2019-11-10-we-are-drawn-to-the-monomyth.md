@@ -7,7 +7,7 @@ We are drawn to the monomyth because it makes sense and our lives simply don't. 
 
 The monomyth is the "only story" there is to tell. It is the hero's journey: a step into the unknown, meeting a mentor, the darkest hour, then triumph, the return home.
 
-Homer's Iliad is one of the oldest stories to follow this template. You learn about these intricacies whenever you take a fiction writing class. It isn't a secret. It is just the mechanics of how good stories work. Do it right, and your audience will feel comfort, cohesion, and continuity.
+Homer's _Iliad_ is one of the oldest stories to follow this template. You learn about these intricacies whenever you take a fiction writing class. It isn't a secret. It is just the mechanics of how good stories work. Do it right, and your audience will feel comfort, cohesion, and continuity.
 
 If only our lives were so tidy.
 

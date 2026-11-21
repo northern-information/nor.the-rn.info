@@ -3,7 +3,7 @@ title: "Coordinated Universal Time"
 date: 2019-05-24
 ---
 
-As I type, episode one of [Coordinated Universal Time](https://tyleretters.github.io/apodcastfornow.com) is merrily propagating its little way through the RSS mycelium of the internet. We uploaded it to [Anchor.fm](https://anchor.fm/apodcastfornow) a couple days ago.
+As I type, episode one of [_Coordinated Universal Time_](https://tyleretters.github.io/apodcastfornow.com) is merrily propagating its little way through the RSS mycelium of the internet. We uploaded it to [Anchor.fm](https://anchor.fm/apodcastfornow) a couple days ago.
 
 On April 3rd, I shared an idea in the Locutory:
 
@@ -76,9 +76,9 @@ More notes:
 - Field notes books with the logo printed on it as a gift to patrons?
 - On air: "So what would be fun to do together? A book club? A writing prompt? A field recording assignment? Let us know."
 
-It should be noted that before we started on UTC, we had setup a GitHub repository and Discord server to work on _some type of project_ together, but we weren't sure what. So all of our thoughts and ideas were well captured and documented with version control.
+It should be noted that before we started on _UTC_, we had setup a GitHub repository and Discord server to work on _some type of project_ together, but we weren't sure what. So all of our thoughts and ideas were well captured and documented with version control.
 
-One morning, I found myself at the Pacific Ocean before sunrise. Instead of enjoying the waves and strange, early morning humans that inhabit such shores I recorded a reading of Neuromancer and:
+One morning, I found myself at the Pacific Ocean before sunrise. Instead of enjoying the waves and strange, early morning humans that inhabit such shores I recorded a reading of _Neuromancer_ and:
 
 > I'm thinking the pod structure ought to be as high level as possible. Basically: intro w/ patreon, announcements, etc., middle, and outro with credits.
 
@@ -112,11 +112,11 @@ We interviewed some people.
 
 We recorded some fields. And we fielded some recordings.
 
-I wrote [A Shard of the Origin Story](https://tyleretters.github.io/apodcastfornow.com/2019/04/21/a-shard-of-the-origin-story/) and recorded it down by the Fox River.
+I wrote ["A Shard of the Origin Story"](https://tyleretters.github.io/apodcastfornow.com/2019/04/21/a-shard-of-the-origin-story/) and recorded it down by the Fox River.
 
 All the while a constant drip of collective text and ideas bubbling in the Discord channels.
 
-All the while, I navigated one of the most emotionally turbulent times of my life. Therapists, doctors, worries, anxieties. Somehow all unrelated to UTC but also impossibly intertwined.
+All the while, I navigated one of the most emotionally turbulent times of my life. Therapists, doctors, worries, anxieties. Somehow all unrelated to _UTC_ but also impossibly intertwined.
 
 We launched a [Nextcloud](https://nextcloud.com) server.
 
@@ -164,8 +164,8 @@ Seven short weeks was all it took. It was possible. You can do it, too.
 
 I like this story. It is the story of communal labor and ideals. The story of a bunch of people coming together with a mutually compatible vision and creating something awesome. Maybe learning a thing or two about themselves, each other, and the world along the way.We made it for us. We made it for you. But I don't care if no one listens.
 
-I hold UTC lightly. It is not mine. It is ours. UTC brings me joy. And part of that joy is the labor, the pain, the agony of micro-deicisions around adding .1 dB to voice or subtracting .05 dB from music. That is the work. So are the conversations about it all. So are the blog posts like these and those yet unwritten.
+I hold _UTC_ lightly. It is not mine. It is ours. _UTC_ brings me joy. And part of that joy is the labor, the pain, the agony of micro-deicisions around adding .1 dB to voice or subtracting .05 dB from music. That is the work. So are the conversations about it all. So are the blog posts like these and those yet unwritten.
 
-[Coordinated Universal Time](https://tyleretters.github.io/apodcastfornow.com) is not an endpoint or the apotheosis of my practice. But it sure is the most fun I've had making stuff in a really long time.
+[_Coordinated Universal Time_](https://tyleretters.github.io/apodcastfornow.com) is not an endpoint or the apotheosis of my practice. But it sure is the most fun I've had making stuff in a really long time.
 
-I won't get too much into the meaning of vision of UTC here, because in many ways that is not my story to tell. It is all of ours to discover.
+I won't get too much into the meaning of vision of _UTC_ here, because in many ways that is not my story to tell. It is all of ours to discover.
