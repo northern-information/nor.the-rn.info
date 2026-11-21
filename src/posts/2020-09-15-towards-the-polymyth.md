@@ -3,7 +3,7 @@ title: "Towards the Polymyth"
 date: 2020-09-15
 ---
 
-This post has been rattling around in my head for a few months now. It picks up on threads I started in [Fear Imm(a/i)nnence](/2019/03/03/fear-immainence/) and [The Struggle for Meaning](/2020/04/19/the-struggle-for-meaning/).
+This post has been rattling around in my head for a few months now. It picks up on threads I started in ["Fear Imm(a/i)nnence"](/2019/03/03/fear-immainence/) and ["The Struggle for Meaning"](/2020/04/19/the-struggle-for-meaning/).
 
 Recommended listening for this post: [https://theybecamewhattheybeheld.bandcamp.com/album/ep1](https://theybecamewhattheybeheld.bandcamp.com/album/ep1)
 
@@ -11,13 +11,13 @@ Recommended listening for this post: [https://theybecamewhattheybeheld.bandcamp.
 
 The hero's journey - or monomyth - is a dangerous lie. As a template for storytelling it dutifully gets the job done, but the the problem is that it doesn't work in real life. This is a rhetorical generalization, but: we tend to anchor our personal narratives in the media we consume.
 
-As an aside, I think this is one of the reasons why representation in media become a subject of discourse lately. A superhero fan I am not, but I couldn't help but notice all the positive responses from people of color in regards to Black Panther, all the little girls in regards to Wonder Woman. Storytelling 101: we relate to characters who are like us.
+As an aside, I think this is one of the reasons why representation in media become a subject of discourse lately. A superhero fan I am not, but I couldn't help but notice all the positive responses from people of color in regards to _Black Panther_, all the little girls in regards to _Wonder Woman_. Storytelling 101: we relate to characters who are like us.
 
 The monomyth is dangerous because it transitively promulgates the _myth_ that you are a solitary hero. Locked in some struggle of man v man, man v nature (more on this one later), man v god, or man v self: it is all up to you.
 
 This myth of radical self-reliance is further reinforced by folklore such as the American Dream and aphorisms like, "you are responsible for you," or "early to bed early to rise makes a man healthy, wealthy, and wise."
 
-Many facets of our culture are built on this idea. In _Capitalist Realism (2009)_, Mark Fisher pointed to "the privatization of stress," - this notion that we've accepted it as incumbent on individuals to resolve their own psychological distress which our society and/or culture created.
+Many facets of our culture are built on this idea. In _Capitalist Realism_ (2009), Mark Fisher pointed to "the privatization of stress," - this notion that we've accepted it as incumbent on individuals to resolve their own psychological distress which our society and/or culture created.
 
 Student debt? _Your_ problem. Neigh! Your responsibility! No one gets a free ticket! Addiction? _You_ didn't get enough love as a child. Depression? Must've been _your_ childhood, too. Or maybe _your_ genetics? Anxiety? _You've_ made bad life decisions. Change _your_ circumstances.
 

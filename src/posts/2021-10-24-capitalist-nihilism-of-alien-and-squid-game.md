@@ -7,7 +7,7 @@ date: 2021-10-24
 
 If sacrificing a child for personal monetary gain is not an example of capitalist nihilism, I don't know what is.
 
-This is exactly what Carter J. Burke (Paul Reiser) in ALIENS (1986), attempts to do when he locks Ripley (Sigourney Weaver) and Newt (Carrie Henn) in the medbay with a facehugger. He plans to return with their impregnated bodies and receive a fat Company bonus check. A few shots linger on his haunted face as he reckons with the decision. But of course he flips the camera off and tries not to think about it.
+This is exactly what Carter J. Burke (Paul Reiser) in _ALIENS_ (1986), attempts to do when he locks Ripley (Sigourney Weaver) and Newt (Carrie Henn) in the medbay with a facehugger. He plans to return with their impregnated bodies and receive a fat Company bonus check. A few shots linger on his haunted face as he reckons with the decision. But of course he flips the camera off and tries not to think about it.
 
 Fortune favors the bold!
 
@@ -17,7 +17,7 @@ There's a new question on the block now: "Would you sacrifice the life of a huma
 
 Burke, of course, has no interest in buying the safety of the world, or otherwise. He's selling the lives of Ripley and Newt for a personal gain.
 
-## Would You Play Squid Game?
+## Would You Play _Squid Game_?
 
 ![Oh Il-nam, Squid Game](/images/capitalist-nihilism-2.jpg)
 
@@ -31,7 +31,7 @@ Burke, of course, has no interest in buying the safety of the world, or otherwis
 
 I largely read the the Alien films through a feminist, pro-choice lens. There is so much to pull from: the strength of Ripley, the non-assignment of genders in the original script, the medical pod that "is not configured" for women, life forms that reproduce through non-consensual means. Setting that lens aside for a moment, let us turn to capital.
 
-In the opening scene of Alien, we learn that the Nostromo is a salvage ship (named after the [1904 novel](https://en.wikipedia.org/wiki/Nostromo).) Consider how staggering a departure from established sci-fi norms. Star Trek is about exploration. Star Wars is about light versus dark. Dune is about time. Bladerunner is about humanity.
+In the opening scene of _Alien_, we learn that the Nostromo is a salvage ship (named after the [1904 novel](https://en.wikipedia.org/wiki/Nostromo).) Consider how staggering a departure from established sci-fi norms. Star Trek is about exploration. Star Wars is about light versus dark. _Dune_ is about time. _Bladerunner_ is about humanity.
 
 The salvage ship could have just as easily been a scientific expedition.
 
@@ -45,7 +45,7 @@ Their friendships: of convenience.
 
 Here and there through the various films, characters will make mention of, "wife and kids." This is absurd. Decades of hypersleep are necessary for deep space travel. Your wife and kids are gone. We cannot possibly take these statements for at face value.
 
-The opening scene (and childhood flashbacks) in Prometheus are so out of place they can perhaps be dismissed. The archeologists, appearing to have just come back from company sponsored trip to REI, are happily doing their work among _green_ mountains and _breathable_ air. Notably, this is perhaps the only scene in the entire franchise where individual expression via clothing (unique colors, different styles) appears. Everywhere else it is standard issue fatigues, suits, and uniforms.
+The opening scene (and childhood flashbacks) in _Prometheus_ are so out of place they can perhaps be dismissed. The archeologists, appearing to have just come back from company sponsored trip to REI, are happily doing their work among _green_ mountains and _breathable_ air. Notably, this is perhaps the only scene in the entire franchise where individual expression via clothing (unique colors, different styles) appears. Everywhere else it is standard issue fatigues, suits, and uniforms.
 
 ## CCK's Video About Berserk, Nietzsche, and Tragedy Made Me Think of You
 
@@ -59,9 +59,9 @@ The opening scene (and childhood flashbacks) in Prometheus are so out of place t
 
 No, it would appear as though the manifest destiny colonialism of Weyland-Yutani was a staggering success. To fathom the megastructures of Fiorina "Fury" 161 and Acheron (LV-426) were just plopped down on orbiting backwater stars... the financial implications are staggering.
 
-So again, what exactly does everyone spend their money on? It has long been posited that Bladerunner exists in the same universe as Alien. The first replicants appear to have two primary functions: manual labor and sex work. Do people spend their time in Company-sponsored brothels with Company-made replicants on Company-designed barbiturates?
+So again, what exactly does everyone spend their money on? It has long been posited that _Bladerunner_ exists in the same universe as _Alien_. The first replicants appear to have two primary functions: manual labor and sex work. Do people spend their time in Company-sponsored brothels with Company-made replicants on Company-designed barbiturates?
 
-Or perhaps they too, like everyone in Squid Game, is drowning in debt?
+Or perhaps they too, like everyone in _Squid Game_, is drowning in debt?
 
 ## "... Yes, but everyone else gets more than us."
 

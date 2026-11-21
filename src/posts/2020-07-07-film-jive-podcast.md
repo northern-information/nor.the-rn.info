@@ -5,7 +5,7 @@ date: 2020-07-07
 
 ![Film Jive](/images/film-jive.jpg)
 
-I was invited to participate in the latest episode of Film Jive. It was a great experience and I'm really moved to have been asked to be a part of it.
+I was invited to participate in the latest episode of _Film Jive_. It was a great experience and I'm really moved to have been asked to be a part of it.
 
 Here it is on [Apple Podcasts](https://podcasts.apple.com/us/podcast/episode-99-tutorials-in-self-isolation/id479559706?i=1000483130629), [Spotify](https://open.spotify.com/episode/2kt01EmSyCuYilkHP7looi?si=Vvyc8SBgQ42fE8gIxBIDPw), and [Google Podcasts](https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL0ZpbG1KaXZl/episode/aHR0cHM6Ly9maWxtLWppdmUuY2FzdG9zLmNvbS9wb2RjYXN0cy84MjM3L2VwaXNvZGVzL2VwaXNvZGUtOTktdHV0b3JpYWxzLWluLXNlbGYtaXNvbGF0aW9u?ved=0CAIQkfYCahcKEwjA8s3_zbvqAhUAAAAAHQAAAAAQBQ).
 

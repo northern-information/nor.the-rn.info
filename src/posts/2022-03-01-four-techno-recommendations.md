@@ -3,7 +3,7 @@ title: "Four Techno Recommendations"
 date: 2022-03-01
 ---
 
-## Birth of a New Day, 2015
+## _Birth of a New Day_, 2015
 
 ![Birth of a New Day](/images/birth-of-a-new-day.jpg)
 
@@ -11,7 +11,7 @@ date: 2022-03-01
 
 [https://2814.bandcamp.com/album/birth-of-a-new-day](https://dreamcatalogue.bandcamp.com/album/--18)
 
-## Rhythm & Sound, 2001
+## _Rhythm & Sound_, 2001
 
 ![Rhythm & Sound](/images/rhythm-and-sound.jpg)
 
@@ -19,7 +19,7 @@ The Beatles were to rock 'n roll what Rhythm & Sound were to to dub techno. If n
 
 [https://www.discogs.com/master/506510-Rhythm-Sound-Rhythm-Sound](https://www.discogs.com/master/506510-Rhythm-Sound-Rhythm-Sound)
 
-## Serenity, 2012
+## _Serenity_, 2012
 
 ![Serenity](/images/serenity.jpg)
 
@@ -27,7 +27,7 @@ This one from bvdub is sensual, passionate, intoxicating stuff. [He's got an onl
 
 [https://darla.com/products/bvdub-serenity](https://darla.com/products/bvdub-serenity)
 
-## Boundary Object, 2022
+## _Boundary Object_, 2022
 
 ![Boundary Object](/images/boundary-object.jpg)
 

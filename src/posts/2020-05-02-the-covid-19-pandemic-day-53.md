@@ -3,7 +3,7 @@ title: "The COVID-19 Pandemic, Day 53"
 date: 2020-05-02
 ---
 
-[Kim Stanley Robinson writing for The New Yorker:](https://www.newyorker.com/culture/annals-of-inquiry/the-coronavirus-and-our-future)
+[Kim Stanley Robinson writing for _The New Yorker_:](https://www.newyorker.com/culture/annals-of-inquiry/the-coronavirus-and-our-future)
 
 > Now comes this disease that can kill anyone on the planet. It's invisible; it spreads because of the way we move and congregate. Instantly, we've changed. As a society, we're watching the statistics, following the recommendations, listening to the scientists. Do we believe in science? Go outside and you'll see the proof that we do everywhere you look. We're learning to trust our science as a society. That's another part of the new structure of feeling.
 

@@ -6,7 +6,7 @@ date: 2019-09-08
 > The more clever and crafty the men,  
 > The oftener strange things happen.
 
-- Tao Te Ching, Ch. 57, John C. H. Wu Translation
+- _Tao Te Ching_, Ch. 57, John C. H. Wu Translation
 
 Ain't it the truth? My anxiety of the news on any given day is allayed by these two lines.
 
@@ -18,7 +18,7 @@ Ain't it the truth? My anxiety of the news on any given day is allayed by these 
 
 Stories like these typically send my imagination into [places I do not enjoy](/2019/03/03/fear-immainence/). But still, I seek out this type of news. I do this because I am curious about the world. I am almost in a perpetual state of awe at everything that happens on this little speck of dust we call Earth.
 
-I am an existential athiest with a frosting of Taoism and Zen to account for the rounding errors. I'm not sure when I first read the Tao Te Ching, but the evidence points towards early high school.
+I am an existential athiest with a frosting of Taoism and Zen to account for the rounding errors. I'm not sure when I first read the _Tao Te Ching_, but the evidence points towards early high school.
 
 I've had numerous translations over the years. My favorite is the John C. H. Wu translation. I keep a pocket version of it with me all the time.
 
@@ -32,4 +32,4 @@ There are probably other forces.
 
 Whether you believe mind gives rise to matter or the other way around, I think it is unarguable that we don't have everything figured out yet. In high school and through most of my twenties, all I cared about were the "big" questions: ontology, eschatology, epistomology... These days, my mind usually spends energy pondering the "little" questions: family, friends, relationships, society, culture, the next 50 years of human civilization.
 
-I always assumed the Tao Te Ching was more readily applied with the big questions, but I've increasingly turned to it for help with the little, human ones. The ones the Standard Model can't touch. Context is everything. For me, I need some type of mysticism to account for all the messy and complicated human and cultural interactions out there. Perhaps this is an act of [bad faith](https://en.wikipedia.org/wiki/Bad_faith#Ethics,_phenomenology,_existentialism) on my part, but I haven't found any better explanation. And maybe there isn't one.
+I always assumed the _Tao Te Ching_ was more readily applied with the big questions, but I've increasingly turned to it for help with the little, human ones. The ones the Standard Model can't touch. Context is everything. For me, I need some type of mysticism to account for all the messy and complicated human and cultural interactions out there. Perhaps this is an act of [bad faith](https://en.wikipedia.org/wiki/Bad_faith#Ethics,_phenomenology,_existentialism) on my part, but I haven't found any better explanation. And maybe there isn't one.

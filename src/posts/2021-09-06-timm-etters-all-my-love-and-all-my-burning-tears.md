@@ -19,7 +19,7 @@ That night he picked me up from my therapist's office. It was a cold and shitty 
 
 ![Timm Etters Graffiti Adventure 4](/images/timm-etters-graffiti-adventure-4.jpg)
 
-Aside from my parents, Timm was the singularly most influential role model / human / mentor / artist / source-of-positivity in my life. According to our bloodline, he was my uncle, but our relationship was always more of a big brother/little brother thing. And not just any big brother. The cool big brother. The big brother that let you stay up late with him and order pizza and watch David Lynch's Dune when you were 10.
+Aside from my parents, Timm was the singularly most influential role model / human / mentor / artist / source-of-positivity in my life. According to our bloodline, he was my uncle, but our relationship was always more of a big brother/little brother thing. And not just any big brother. The cool big brother. The big brother that let you stay up late with him and order pizza and watch David Lynch's _Dune_ when you were 10.
 
 I have so much to say about him and it is all trying to come out at once. Saturday was both [Flash Crash](https://flashcrash.net) and the debut of my new band [Sidereal Lobby](https://sidereallobby.com). I got the news from my dad right as the show started. I stuffed it away in a dark corner of my brain and glanced at the clock - seven hours to go before the show was over. Perhaps I could cry then.
 
@@ -39,7 +39,7 @@ Today, I put on bvdub's new album and the tears came. Great heaving sobs and eve
 
 Timm was one of the most passionate people who ever lived. He was a voracious consumer of All Things Cool. My first memory of him was going to his apartment with my dad when I was 3 or 4. And what does he do? He pulls out a Teenage Mutant Ninja Turtle "pizza tank" for me.
 
-Once I got a little older, I would spend a weekend with him once or twice a year. I always looked forward to it. This was in the late 90s. We'd play video games like Rogue Squadron (PC, with joystick) and Emperor Battle for Dune. We'd build massive Lego bases. He showed me how to make our Lego spaceships actually fly: add some components and string them up with fishing line. They'd be whizzing down his hallways and crashing into their landing pads.
+Once I got a little older, I would spend a weekend with him once or twice a year. I always looked forward to it. This was in the late 90s. We'd play video games like _Rogue Squadron_ (PC, with joystick) and _Emperor Battle for Dune_. We'd build massive Lego bases. He showed me how to make our Lego spaceships actually fly: add some components and string them up with fishing line. They'd be whizzing down his hallways and crashing into their landing pads.
 
 ## Working with Timm
 
@@ -67,7 +67,7 @@ Timm took me to my first concert: Linkin Park in 2004. I was 16 and had braces a
 
 He made CD mixes for me. He named them "The Journey..." because we always listened to music while traveling.
 
-Timm introduced me to all the right films at just the points in my life. Star Wars (it is hard to remember now, but there was a time before the franchise was fully enshrined in popular culture), Dune (before I had ever used drugs!), Pulp Fiction (when I was probably 2 or 3 years too young...) His VHS/DVD/Laser-disc library was formidable.
+Timm introduced me to all the right films at just the points in my life. _Star Wars_ (it is hard to remember now, but there was a time before the franchise was fully enshrined in popular culture), _Dune_ (before I had ever used drugs!), _Pulp Fiction_ (when I was probably 2 or 3 years too young...) His VHS/DVD/Laser-disc library was formidable.
 
 As I grew up, it was a joy to share my music with him. He could trace every influence and homage. This was one of our last text message exchanges:
 

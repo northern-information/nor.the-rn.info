@@ -117,7 +117,7 @@ I spent another half-day harvesting images, updating the NPM package accordingly
 
 It quickly became clear this was going to be one of those "lifetime projects" I'll curate for many years to come. In these cases, it is important for me to declare a MVP (minimum viable product) and give it the old `v1.0.0` release number sooner than later.
 
-As of today, I only have MP3's from my latest release [IN DARKNESS RADIANT](https://stuxnet.bandcamp.com/album/in-darkness-radiant) available, but in the coming days and weeks I plan on adding:
+As of today, I only have MP3's from my latest release [_IN DARKNESS RADIANT_](https://stuxnet.bandcamp.com/album/in-darkness-radiant) available, but in the coming days and weeks I plan on adding:
 
 - MP3s for each release.
 - WAVs for each release, if I can find them.

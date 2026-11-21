@@ -13,7 +13,7 @@ Where were you when it happened?
 
 [I wrote about 9/11 at length earlier this year.](/2019/03/03/fear-immainence/) Obviously it is still on my mind. I have more to say.
 
-The Simpsons had to be disrupted for me to understand the enormity of what happened. With age, I've come to associate the moment I realized I didn't get to watch another Simpsons re-run with my loss of innocence. I was 13, a little angsty, and in the early throes of puberty. Something shifted in that instant and never shifted back.
+_The Simpsons_ had to be disrupted for me to understand the enormity of what happened. With age, I've come to associate the moment I realized I didn't get to watch another _Simpsons_ re-run with my loss of innocence. I was 13, a little angsty, and in the early throes of puberty. Something shifted in that instant and never shifted back.
 
 I've been itching to write a story about a world where 9/11 didn't happen. It always stalls out during development. How do you tell a story based on the negation of an event? Even though the whole genre of alternative history is based on this conceit, I can't figure this one out.
 
@@ -53,7 +53,7 @@ Maybe I ought to plan a pilgrimage to the 9/11 memorial.
 
 **Addendum**
 
-It seems either there is something in the air or I'm particularly sensitive to [apophenia](https://en.wikipedia.org/wiki/Apophenia) (again). I read two articles from Wired after I published this that are perfect compliments:
+It seems either there is something in the air or I'm particularly sensitive to [apophenia](https://en.wikipedia.org/wiki/Apophenia) (again). I read two articles from _Wired_ after I published this that are perfect compliments:
 
-- [Pagers, Pay Phones, and Dialup: How We Communicated on 9/11](https://www.wired.com/story/pagers-pay-phones-and-dialup-how-we-communicated-on-911/) by [Garrett M. Graff](https://www.twitter.com/vermontgmg)
-- [The Day After 9/11](https://www.wired.com/story/the-day-after-911/) by [Virginia Heffernan](https://twitter.com/page88)
+- ["Pagers, Pay Phones, and Dialup: How We Communicated on 9/11"](https://www.wired.com/story/pagers-pay-phones-and-dialup-how-we-communicated-on-911/) by [Garrett M. Graff](https://www.twitter.com/vermontgmg)
+- ["The Day After 9/11"](https://www.wired.com/story/the-day-after-911/) by [Virginia Heffernan](https://twitter.com/page88)

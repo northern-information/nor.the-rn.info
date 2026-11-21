@@ -17,7 +17,7 @@ I'm here in the magical two week window between summer and fall. Everything is b
 
 ![Magic](/images/sab-magic.jpg)
 
-A dozen of my closest friends gather to play Magic at [The Boiler Room](https://www.boilerroomlogansquare.com/). I intentionally build a "Tier 2.5 Deck" (translation: bad) with Greg's substantial collection. We eat pizza and drink PBR and get into all sorts of trouble.
+A dozen of my closest friends gather to play _Magic_ at [The Boiler Room](https://www.boilerroomlogansquare.com/). I intentionally build a "Tier 2.5 Deck" (translation: bad) with Greg's substantial collection. We eat pizza and drink PBR and get into all sorts of trouble.
 
 ## Day 10: Arcane Framework
 
@@ -51,7 +51,7 @@ I cry often. I cannot believe all the love in the world, all these people that c
 
 ![Stuxnet](/images/sab-stuxnet.jpg)
 
-Fred and I visit the [International Spy Museum](https://www.spymuseum.org/). It is an absolute blast. We geek out about our love for Metal Gear Solid, Mr. Robot, and infosec. I share stories of [Stuxnet the worm](https://en.wikipedia.org/wiki/Stuxnet) and how that inspired [my Stuxnet project](https://stuxnet.me). We turn the corner and there is an exhibit on Stuxnet.
+Fred and I visit the [International Spy Museum](https://www.spymuseum.org/). It is an absolute blast. We geek out about our love for _Metal Gear Solid_, _Mr. Robot_, and infosec. I share stories of [Stuxnet the worm](https://en.wikipedia.org/wiki/Stuxnet) and how that inspired [my Stuxnet project](https://stuxnet.me). We turn the corner and there is an exhibit on Stuxnet.
 
 ## Day 15: To Delhi
 

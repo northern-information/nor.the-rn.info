@@ -13,10 +13,10 @@ Why do we find dystopian futures so exciting? What is it about ruin porn and gri
 
 It is comfort food for the brain. We get it. Dark future. Evil mega-corp. Conspiracy. Heroic character (usually white, male) ready to project yourself on to. Much has been written about this elsewhere, but here's a shortlist of some of the messages this type of fiction tends to reinforce:
 
-- **Xenophobia**: anything that isn't human is dangerous and must be destroyed (ET, Independence Day, Men in Black, Aliens, The Forever War).
-- **Blade Runner Syndrome**: The future will be neon and rainy. Advertising is everywhere.
-- **Human Rights Don't Matter**: Social and economical inequalities are not only tolerable, but inevitable. Those who live in the margins are expendable and don't matter. See almost everyone in Akira or the sanitation worker in Ghost in the Shell.
-- **Fetishization of Violence**: The fascist militarism of Starship Troopers and authoritarian police states of Judge Dredd are to be celebrated.
+- **Xenophobia**: anything that isn't human is dangerous and must be destroyed (_ET_, _Independence Day_, _Men in Black_, _Aliens_, _The Forever War_).
+- **_Blade Runner_ Syndrome**: The future will be neon and rainy. Advertising is everywhere.
+- **Human Rights Don't Matter**: Social and economical inequalities are not only tolerable, but inevitable. Those who live in the margins are expendable and don't matter. See almost everyone in _Akira_ or the sanitation worker in _Ghost in the Shell_.
+- **Fetishization of Violence**: The fascist militarism of _Starship Troopers_ and authoritarian police states of _Judge Dredd_ are to be celebrated.
 - **Robots Are Scary**: All artificial intelligence is evil and will Terminator you.
 
 We create what we consume. We're raised with these futures and then go about our merry way building them.
@@ -26,7 +26,7 @@ What do all these stories have in common? Besides Will Smith, most of these cast
 ![Congratulations!](/images/congratulations.jpg)
 _Congratulations!_
 
-Before I started thinking critically about the media I consume and what it might be doing to me, I was a just another nerdy kid. I was really into science fiction movies, fantasy books, military video games... Independence Day and Men in Black were probably my family's favorite VHS tapes, right behind My Neighbor Totoro. I'll write more on what an incredible panacea that one is another time. In middle school I was already reading a lot of Lovecraft, Dune, Tolkien. I was 12 or so when I exposed myself to Neon Genesis Evangelion and the existential/eschatological horrors of the final few acts. My best friend and I were very keen on warning our classmates and teachers of the impending 2012 apocalypse.
+Before I started thinking critically about the media I consume and what it might be doing to me, I was a just another nerdy kid. I was really into science fiction movies, fantasy books, military video games... _Independence Day_ and _Men in Black_ were probably my family's favorite VHS tapes, right behind _My Neighbor Totoro_. I'll write more on what an incredible panacea that one is another time. In middle school I was already reading a lot of Lovecraft, _Dune_, Tolkien. I was 12 or so when I exposed myself to _Neon Genesis Evangelion_ and the existential/eschatological horrors of the final few acts. My best friend and I were very keen on warning our classmates and teachers of the impending 2012 apocalypse.
 
 > Then an actual apocalyptic event happened, live on television.
 
@@ -34,7 +34,7 @@ During first period English class, our social studies teacher popped his head in
 
 In the hall, our normally jubilant and compassionate health teacher was weeping. Her partner was apparently a pilot for American Airlines and flying the east coast that day. This was before cell phones.
 
-I got off the bus and my mom was outside gardening and listening to NPR. She had a calm but wild look in her eye about it all. I was upset I couldn't watch the Simpsons. News was on every channel.
+I got off the bus and my mom was outside gardening and listening to NPR. She had a calm but wild look in her eye about it all. I was upset I couldn't watch _The Simpsons_. News was on every channel.
 
 ## Forever Wars
 
@@ -51,7 +51,7 @@ As an aside, I still don't really have an opinion on American foreign policy, 9/
 
 I didn't know what to "do" with the Iraq War. Support it? Protest it? Talk to people about it? Enlist to a military academy? Is that even a thing? Those stern looking fellas from the Army and Navy sometimes have tables setup in the cafeteria. Surely they'd know what to do?
 
-My closest mental model was all the action and science fiction films I saw. Needless to say, it wasn't a clean 1:1 mapping. Iraq is sorta like Arrakis and oil is sorta like the spice, right? But... then we're the Harkonens? That can't be right. Maybe this was more like Starship Troopers? Err, there's some problems there too...
+My closest mental model was all the action and science fiction films I saw. Needless to say, it wasn't a clean 1:1 mapping. Iraq is sorta like Arrakis and oil is sorta like the spice, right? But... then we're the Harkonens? That can't be right. Maybe this was more like _Starship Troopers_? Err, there's some problems there too...
 
 > I learned about the Iraq War before I learned about World Wars 1 and 2.
 
@@ -63,7 +63,7 @@ If my life were to be made a movie, 9/11 would be the MacGuffin. That cataclysmi
 
 ## Coping Mechanisms
 
-Somewhere in my confusion and anger I fell down the conspiracy theory rabbit hole. I was obsessed with finding the truth and the answers to everything. After school and work, I'd come home and continue the _real_ work. I'd merrily bounce from learning about true age of the Great Pyramid to the machinations of secret societies, from archaeological proof of alien civilizations on Mars to 9/11 conspiracy theories, from harrowing tales former Area 51 employees on Coast to Coast AM to... you get the point. I was extremely convicted to the veracity of my newfound knowledge.
+Somewhere in my confusion and anger I fell down the conspiracy theory rabbit hole. I was obsessed with finding the truth and the answers to everything. After school and work, I'd come home and continue the _real_ work. I'd merrily bounce from learning about true age of the Great Pyramid to the machinations of secret societies, from archaeological proof of alien civilizations on Mars to 9/11 conspiracy theories, from harrowing tales former Area 51 employees on _Coast to Coast AM_ to... you get the point. I was extremely convicted to the veracity of my newfound knowledge.
 
 ![Timewave Zero](/images/timewave-zero.jpg)
 _You can make any data prove your point if you work backwards._

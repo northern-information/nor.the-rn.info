@@ -17,6 +17,6 @@ date: 2022-03-18
 
 I learned about the vastness of space through the measurement of time. In the midwest, TV syndication always stated "8 central / 9 eastern." Confusion compounded when I learned of the pacific and mountain timezones. Why weren't they mentioned in the [Nickelodeon](https://en.wikipedia.org/wiki/Nickelodeon) commercials? Why not, "6 pacific / 7 mountain / 8 central / 9 eastern?"
 
-I later sussed out western timezones aired _afterwards_. One could theoretically watch the new episode of Ren & Stimpy, travel fast enough west, then watch it again.
+I later sussed out western timezones aired _afterwards_. One could theoretically watch the new episode of _Ren & Stimpy_, travel fast enough west, then watch it again.
 
 I learned about the vastness of time through the measurement of space. And Commander Höek & Cadet Stimpy, of course.

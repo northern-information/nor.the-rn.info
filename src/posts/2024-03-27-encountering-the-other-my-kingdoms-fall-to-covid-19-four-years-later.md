@@ -25,7 +25,7 @@ Sunday I was still testing positive but we'd managed to keep Sage virus-free so 
 
 It is now Tuesday and I'm still testing positive. Day nine or ten depending how you count. I feel like I've been torn down to my very core. Which is sleep, apparently. I miss playing with the cats.
 
-_New Confusion_ is frequently listed as one of the symptoms of COVID. [LIL INTERNET](https://lilinter.net/), stalwart decrypter of the zeitgeist, championed the term on the [New Models](https://newmodels.io) podcast as an apt descriptor for our current age. I couldn't agree more because my thoughts have turned especially weird and ingrown. I go for walks, yes, but this isolation has changed me. Too much time to think... or maybe finally enough? Self similar simulacra. That one technique whereby images are enlarged with fractal algorithms, essentially filling in the digital blanks with smaller versions of the image itself.
+_New Confusion_ is frequently listed as one of the symptoms of COVID. [LIL INTERNET](https://lilinter.net/), stalwart decrypter of the zeitgeist, championed the term on the [_New Models_](https://newmodels.io) podcast as an apt descriptor for our current age. I couldn't agree more because my thoughts have turned especially weird and ingrown. I go for walks, yes, but this isolation has changed me. Too much time to think... or maybe finally enough? Self similar simulacra. That one technique whereby images are enlarged with fractal algorithms, essentially filling in the digital blanks with smaller versions of the image itself.
 
 I've finally shaken hands with the COVID cerebus. This is it. This is them. They are legion. They go by many names and forms. To me, they are called COVID: The Virus, COVID: The Symbol, and COVID: The Hyperobject.
 
@@ -105,6 +105,6 @@ The future I now call the present is haunted by _the very vision of what I thoug
 
 Images in this post:
 
-- And Then We Saw the Daughter of The Minotaur, by Leonora Carrington 1953
+- _And Then We Saw the Daughter of the Minotaur_, by Leonora Carrington 1953
 - Three works by Zdzislaw Beksinski
-- The Concert in the Egg, by Hieronymus Bosh, 1480
+- _The Concert in the Egg_, by Hieronymus Bosh, 1480

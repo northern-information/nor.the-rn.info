@@ -35,7 +35,7 @@ I was so full of rage and anger when the Russia/Ukraine war started. I had the u
 
 > Also known as restraint, the practice of self-control, abstention, discretion, and moderation tempering the appetition. Plato considered Sōphrosynē, which may also be translated as sound-mindedness, to be the most important virtue.
 
-Temperance is all about not succumbing into the luxuries and hedonism of the modern world. Cook dinner or order take out? Read or play Elden Ring? Write music or go for a walk? All things in moderation. It's not about morality but scale.
+Temperance is all about not succumbing into the luxuries and hedonism of the modern world. Cook dinner or order take out? Read or play _Elden Ring_? Write music or go for a walk? All things in moderation. It's not about morality but scale.
 
 ## Encryption
 
