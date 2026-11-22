@@ -203,6 +203,7 @@
     "endless-field-studios-volume-3.jpg",
     "ep1.jpg",
     "epic-01-games-holiday-sale.jpg",
+    "epicycle-orrery.png",
     "epicycle.png",
     "europa-jupiter.jpg",
     "fade-scatter-replicate.jpg",
@@ -10256,6 +10257,59 @@
           "width": 1831,
           "height": 995,
           "url": "/img-optimized/9eckKx-yhM-1831.jpeg"
+        }
+      ]
+    },
+    "/images/epicycle-orrery.png": {
+      "avif": [
+        {
+          "width": 400,
+          "height": 260,
+          "url": "/img-optimized/5Ax9WGPT1R-400.avif"
+        },
+        {
+          "width": 800,
+          "height": 521,
+          "url": "/img-optimized/5Ax9WGPT1R-800.avif"
+        },
+        {
+          "width": 1392,
+          "height": 908,
+          "url": "/img-optimized/5Ax9WGPT1R-1392.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 400,
+          "height": 260,
+          "url": "/img-optimized/5Ax9WGPT1R-400.webp"
+        },
+        {
+          "width": 800,
+          "height": 521,
+          "url": "/img-optimized/5Ax9WGPT1R-800.webp"
+        },
+        {
+          "width": 1392,
+          "height": 908,
+          "url": "/img-optimized/5Ax9WGPT1R-1392.webp"
+        }
+      ],
+      "png": [
+        {
+          "width": 400,
+          "height": 260,
+          "url": "/img-optimized/5Ax9WGPT1R-400.png"
+        },
+        {
+          "width": 800,
+          "height": 521,
+          "url": "/img-optimized/5Ax9WGPT1R-800.png"
+        },
+        {
+          "width": 1392,
+          "height": 908,
+          "url": "/img-optimized/5Ax9WGPT1R-1392.png"
         }
       ]
     },
