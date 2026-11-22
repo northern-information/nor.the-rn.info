@@ -20,6 +20,12 @@ export default [
     I used to have a bunch of my work on Flickr. Some of terms of the latest platform ownership transfer made me uncomfortable so I took it all down. [Some photos survive on the Photos page.](/photography)`,
   },
   {
+    title: 'Epicycle Orrery',
+    dates: '02026',
+    image: '/images/epicycle-orrery.png',
+    content: `[Epicycle Orrery](https://northern-information.github.io/epicycle-orrery-demo/) is an interactive 3D model of a Ptolemaic cosmos built as if it were physically real: Earth fixed at the center, brass deferents and epicycles turning inside nested crystal spheres. The circles run on Ptolemy's own numbers from the _Almagest_, so Mars still goes retrograde right on schedule. The source is [on GitHub](https://github.com/northern-information/epicycle-orrery-demo).`,
+  },
+  {
     title: 'norns community',
     dates: '02021 - 02025',
     image: '/images/norns-community-v2-explore.png',
