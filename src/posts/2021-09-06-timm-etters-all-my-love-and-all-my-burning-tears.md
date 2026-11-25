@@ -25,7 +25,7 @@ I have so much to say about him and it is all trying to come out at once. Saturd
 
 Sunday, the news was still in the dark corner. I was highly aware of it but couldn't look at it.
 
-<iframe src="https://open.spotify.com/embed/album/0KuioRfvsgH5LVhyvby29p?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=993599178/size=large/bgcol=000000/linkcol=fde047/tracklist=false/transparent=true/" title="Hard Times, Hard Hearts by bvdub . Brock Van Wey" seamless><a href="https://bvdub.bandcamp.com/album/hard-times-hard-hearts">Hard Times, Hard Hearts by bvdub . Brock Van Wey</a></iframe>
 
 Today, I put on bvdub's new album and the tears came. Great heaving sobs and even some wailing. No one this close to me has died before. I didn't know this kind of pain was possible.
 
